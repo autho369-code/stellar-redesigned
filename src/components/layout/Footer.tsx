@@ -27,7 +27,7 @@ const legalLinks = [
 
 const credentials = ['CAI Certified', 'IREM Member', 'IDFPR Licensed', 'CCIM Designated'];
 
-const PORTAL_URL = 'https://stellarpropertygrp.appfolio.com/oportal';
+const PORTAL_URL = 'https://stellarpropertygrp.appfolio.com/connect/';
 
 export default function Footer() {
   const year = new Date().getFullYear();

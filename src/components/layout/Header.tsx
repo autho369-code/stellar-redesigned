@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, ExternalLink, Phone } from 'lucide-react';
 
-const PORTAL_URL = 'https://stellarpropertygrp.appfolio.com/oportal';
+const PORTAL_URL = 'https://stellarpropertygrp.appfolio.com/connect/';
 
 interface DropItem {
   name: string;

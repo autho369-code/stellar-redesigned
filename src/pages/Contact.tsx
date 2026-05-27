@@ -130,7 +130,7 @@ export default function Contact() {
                       and view documents.
                     </p>
                     <a
-                      href="https://stellarpropertygrp.appfolio.com/oportal"
+                      href="https://stellarpropertygrp.appfolio.com/connect/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-white px-4 py-2 text-xs font-semibold text-brand-700 transition-colors hover:bg-brand-50"
