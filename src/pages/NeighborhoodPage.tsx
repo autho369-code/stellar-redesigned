@@ -91,20 +91,27 @@ export default function NeighborhoodPage() {
 
   const relatedNeighborhoods = getRelatedNeighborhoods(neighborhood.slug, 3);
 
-  // Service schema referencing the single canonical business entity — 72
+  // Chicago neighborhoods are "<Name>, Chicago"; North Shore suburbs are
+  // their own municipalities — "<Name>, Illinois".
+  const isSuburb = neighborhood.region === 'north-shore';
+  const locale = isSuburb ? 'Illinois' : 'Chicago';
+  const placeName = isSuburb ? `${neighborhood.name}, IL` : `${neighborhood.name}, Chicago, IL`;
+  const atlasLabel = isSuburb ? 'The Atlas · North Shore' : 'The Atlas · Chicago';
+
+  // Service schema referencing the single canonical business entity —
   // duplicate LocalBusiness entities would compete with the homepage entity.
   const schemaMarkup = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Service',
-        name: `Property Management in ${neighborhood.name}, Chicago`,
-        description: `Professional condominium, HOA, and townhome association management in ${neighborhood.name}, Chicago.`,
+        name: `Property Management in ${neighborhood.name}, ${locale}`,
+        description: `Professional condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale}.`,
         url: `https://stellarpropertygroup.com/property-management-${neighborhood.slug}`,
         serviceType: 'Community Association Management',
         areaServed: {
           '@type': 'Place',
-          name: `${neighborhood.name}, Chicago, IL`
+          name: placeName
         },
         provider: {
           '@id': 'https://stellarpropertygroup.com/#business'
@@ -127,7 +134,7 @@ export default function NeighborhoodPage() {
         <title>Property Management in {neighborhood.name} | Stellar Property Management</title>
         <meta
           name="description"
-          content={`Professional condominium, HOA, and townhome management in ${neighborhood.name}, Chicago. Trusted by local boards since 2007. Get a free quote today.`}
+          content={`Professional condominium, HOA, and townhome management in ${neighborhood.name}, ${locale}. Trusted by local boards since 2007. Get a free quote today.`}
         />
         <link
           rel="canonical"
@@ -159,12 +166,12 @@ export default function NeighborhoodPage() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                The Atlas · Chicago
+                {atlasLabel}
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] mb-10 text-balance">
                 Property Management in
                 <br />
-                <em className="font-medium text-gold-600">{neighborhood.name},</em> Chicago
+                <em className="font-medium text-gold-600">{neighborhood.name}{isSuburb ? '' : ','}</em> {isSuburb ? '' : 'Chicago'}
               </h1>
               <div className="flex flex-wrap items-center gap-5">
                 <Link

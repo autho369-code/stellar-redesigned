@@ -26,13 +26,13 @@ export default function ServiceAreas() {
     '@type': 'Service',
     name: 'Chicago Property Management Service Areas',
     description:
-      'Professional property management serving Chicago neighborhoods. Condominium, HOA, and townhome management.',
+      'Professional property management serving Chicago neighborhoods and North Shore communities. Condominium, HOA, and townhome management.',
     url: 'https://stellarpropertygroup.com/service-areas',
     serviceType: 'Community Association Management',
     provider: { '@id': 'https://stellarpropertygroup.com/#business' },
     areaServed: neighborhoods.map((n) => ({
       '@type': 'Place',
-      name: `${n.name}, Chicago, IL`
+      name: n.region === 'north-shore' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
     }))
   };
 
@@ -42,7 +42,7 @@ export default function ServiceAreas() {
         <title>Chicago Property Management Service Areas | Stellar Property Management</title>
         <meta
           name="description"
-          content="Stellar Property Management provides professional condominium, HOA, and townhome management across 24 Chicago neighborhoods. Find your neighborhood and get a free quote."
+          content="Stellar Property Management provides professional condominium, HOA, and townhome management across Chicago neighborhoods and North Shore communities including Evanston, Wilmette, Winnetka, and Highland Park. Find your community and get a free quote."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
@@ -71,7 +71,7 @@ export default function ServiceAreas() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                The Atlas · {neighborhoods.length} Neighborhoods
+                The Atlas · Chicago &amp; The North Shore
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Chicago Property Management
@@ -81,12 +81,12 @@ export default function ServiceAreas() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Stellar Property Management proudly serves {neighborhoods.length} neighborhoods across
-                Chicago. From lakefront high-rises to neighborhood townhome communities, we deliver
-                professional management wherever you call home.
+                Stellar Property Management proudly serves {neighborhoods.length} communities across
+                Chicago and the North Shore. From lakefront high-rises to suburban townhome
+                communities, we deliver professional management wherever you call home.
               </p>
               <p className="text-[10px] uppercase tracking-luxe text-slate-500">
-                {neighborhoods.length} Neighborhoods &bull; Condominiums &bull; HOAs &bull; Townhomes
+                {neighborhoods.length} Communities &bull; Condominiums &bull; HOAs &bull; Townhomes
               </p>
             </div>
           </div>

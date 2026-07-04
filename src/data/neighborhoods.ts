@@ -4,6 +4,8 @@ export interface Neighborhood {
   description: string;
   propertyTypes: string[];
   zipCodes: string[];
+  /** 'chicago' (default) = city neighborhood; 'north-shore' = suburb */
+  region?: 'chicago' | 'north-shore';
 }
 
 export const neighborhoods: Neighborhood[] = [
@@ -510,6 +512,94 @@ export const neighborhoods: Neighborhood[] = [
     description: 'Goose Island is a unique Chicago neighborhood undergoing a dramatic transformation from its industrial past into a modern mixed-use destination with new residential developments. Property management on Goose Island requires navigating new construction challenges and establishing association operations from the ground up. We specialize in helping newly developed Goose Island communities build strong management foundations.',
     propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
     zipCodes: ['60642', '60622']
+  },
+  {
+    name: 'Evanston',
+    slug: 'evanston',
+    description: 'Evanston is the North Shore\'s most vibrant lakefront city, home to Northwestern University, a thriving downtown, and an exceptional mix of vintage lakefront condominiums, mid-century co-ops, and modern transit-oriented developments. Property management in Evanston requires fluency with the city\'s own landlord-tenant and building regulations layered on top of Illinois condominium law. We serve Evanston associations with the responsive, detail-driven management its engaged, well-informed boards expect.',
+    propertyTypes: ['condominiums', 'high-rises', 'HOAs', 'townhomes'],
+    zipCodes: ['60201', '60202'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Skokie',
+    slug: 'skokie',
+    description: 'Skokie is one of Chicagoland\'s most diverse and well-run suburbs, with a strong stock of condominium buildings, townhome communities, and homeowner associations near the Yellow Line and Old Orchard corridor. Boards in Skokie value fiscal discipline and clear communication, and our management approach delivers both — transparent budgets, dependable maintenance, and multilingual resident support where communities need it.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60076', '60077'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Glenview',
+    slug: 'glenview',
+    description: 'Glenview blends established tree-lined neighborhoods with newer master-planned communities like The Glen, creating steady demand for professional townhome and condominium association management. Associations here expect polished common areas, proactive reserve planning, and vendors who show up on time. We bring North Shore-calibre service to Glenview communities of every size, from boutique condo buildings to large multi-phase HOAs.',
+    propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
+    zipCodes: ['60025', '60026'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Wilmette',
+    slug: 'wilmette',
+    description: 'Wilmette is a premier North Shore village known for its lakefront beauty, top-rated schools, and meticulously maintained housing stock, including elegant vintage condominium buildings near the Metra and CTA. Boards in Wilmette hold high standards for appearance, communication, and financial stewardship. We manage Wilmette properties with the discretion and precision this distinguished community expects.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60091'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Winnetka',
+    slug: 'winnetka',
+    description: 'Winnetka is among the most prestigious addresses on the North Shore, with landmark estates, refined village-center condominiums, and associations that expect white-glove attention to every detail. Property management here means premium vendor relationships, immaculate common areas, and board reporting polished enough for the financially sophisticated residents who call Winnetka home.',
+    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
+    zipCodes: ['60093'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Highland Park',
+    slug: 'highland-park',
+    description: 'Highland Park pairs dramatic lakefront ravines and a celebrated arts scene with a diverse mix of condominium buildings, townhome enclaves, and homeowner associations. Managing property here requires sensitivity to mature landscaping, ravine and bluff maintenance, and the high service expectations of long-tenured owners. We deliver attentive, proactive management worthy of one of the North Shore\'s flagship communities.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60035'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Northbrook',
+    slug: 'northbrook',
+    description: 'Northbrook is a thriving suburb with an exceptional concentration of townhome and condominium associations built from the 1970s through today — many now facing major capital projects like roofing, siding, and private road replacement. Our strength in reserve planning and capital project oversight makes us a natural partner for Northbrook boards navigating aging infrastructure with confidence.',
+    propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
+    zipCodes: ['60062'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Glencoe',
+    slug: 'glencoe',
+    description: 'Glencoe is an intimate lakefront village renowned for the Chicago Botanic Garden, outstanding schools, and some of the North Shore\'s most carefully preserved residential architecture. Its boutique condominium buildings and small associations benefit from hands-on, personal management rather than big-firm bureaucracy — exactly the model Stellar was built on.',
+    propertyTypes: ['condominiums', 'HOAs'],
+    zipCodes: ['60022'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Kenilworth',
+    slug: 'kenilworth',
+    description: 'Kenilworth is the smallest and one of the most exclusive villages on the North Shore, a designated historic district where property stewardship is taken seriously at every level. Associations here require discreet, meticulous management with uncompromising attention to architectural character and resident privacy — a standard we are proud to uphold.',
+    propertyTypes: ['HOAs', 'condominiums'],
+    zipCodes: ['60043'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Lake Forest',
+    slug: 'lake-forest',
+    description: 'Lake Forest is the North Shore\'s grande dame — historic estates, a landmark Market Square, and a tradition of exacting property standards dating back more than a century. Condominium and homeowner associations in Lake Forest expect institutional-quality financial reporting with country-club-level service. We manage Lake Forest properties with the polish and rigor this storied community demands.',
+    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
+    zipCodes: ['60045'],
+    region: 'north-shore'
+  },
+  {
+    name: 'Deerfield',
+    slug: 'deerfield',
+    description: 'Deerfield is a family-oriented North Shore suburb with strong schools, a walkable downtown, and a substantial base of townhome and condominium associations along the Milwaukee District North line. Boards here value straightforward communication, competitive vendor pricing, and budgets that hold. We give Deerfield communities dependable, professional management without the overhead of the national chains.',
+    propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
+    zipCodes: ['60015'],
+    region: 'north-shore'
   }
 ];
 
