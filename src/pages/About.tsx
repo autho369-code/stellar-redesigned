@@ -1,28 +1,25 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import {
-  ArrowRight, Shield, Eye, Zap, Award, Building2, Users,
-  TrendingUp, Clock, CheckCircle, ChevronRight, MapPin
-} from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 
 const values = [
   {
-    icon: Shield,
+    n: '01',
     title: 'Integrity',
     desc: 'We act as fiduciaries for every community we serve, making decisions that protect owners and preserve property values.',
   },
   {
-    icon: Eye,
+    n: '02',
     title: 'Transparency',
     desc: 'Clear financial reporting, open communication, and real-time portal access so your board is never left guessing.',
   },
   {
-    icon: Zap,
+    n: '03',
     title: 'Responsiveness',
     desc: '24/7 emergency availability with real people answering the phone. Your concerns are addressed, not queued.',
   },
   {
-    icon: Award,
+    n: '04',
     title: 'Excellence',
     desc: 'Industry-leading credentials, continuous education, and a relentless focus on raising the standard of property management.',
   },
@@ -52,10 +49,15 @@ const credentials = [
 ];
 
 const stats = [
-  { value: '42', label: 'Associations', sub: 'Under management' },
-  { value: '2,450+', label: 'Units', sub: 'Across Chicagoland' },
-  { value: '96%', label: 'Retention Rate', sub: 'Client satisfaction' },
-  { value: '29+', label: 'Years', sub: 'Local expertise' },
+  { value: '42', label: 'Associations under management' },
+  { value: '2,450+', label: 'Units across Chicagoland' },
+  { value: '96%', label: 'Client retention rate' },
+  { value: '2007', label: 'Established · Local expertise' },
+];
+
+const areas = [
+  'Chicago', 'Evanston', 'Skokie', 'Glenview', 'Wilmette', 'Winnetka',
+  'Highland Park', 'Northbrook', 'Glencoe', 'Kenilworth', 'Lake Forest', 'Deerfield',
 ];
 
 export default function About() {
@@ -71,195 +73,140 @@ export default function About() {
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
-      <section className="relative py-28 lg:py-36 bg-navy-950 overflow-hidden">
+      <section className="relative bg-paper overflow-hidden">
         <div
-          className="absolute inset-0 opacity-[0.04]"
+          className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
+              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
           }}
         />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-500/5 rounded-full -translate-y-1/2 translate-x-1/3" />
-
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 text-white/80 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
-            Serving Chicago Since 2007
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-16 lg:pb-20">
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-7">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                The Firm · Serving Chicago Since 2007
+              </p>
+              <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
+                About Stellar
+                <br />
+                Property <em className="font-medium text-gold-600">Group.</em>
+              </h1>
+            </div>
+            <div className="lg:col-span-4 lg:col-start-9">
+              <p className="text-lg text-slate-600 font-light leading-relaxed">
+                A locally owned, professionally credentialed property management
+                firm dedicated exclusively to Chicago condominiums, HOAs, and
+                townhome communities.
+              </p>
+            </div>
           </div>
-          <h1 className="font-display text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.08] mb-6">
-            About Stellar Property Group
-          </h1>
-          <p className="text-lg lg:text-xl text-white/60 leading-relaxed max-w-2xl mx-auto">
-            A locally owned, professionally credentialed property management firm dedicated exclusively to Chicago condominiums, HOAs, and townhome communities.
-          </p>
+        </div>
+
+        {/* Stat strip */}
+        <div className="relative border-t border-slate-200">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <dl className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-slate-200">
+              {stats.map(({ value, label }) => (
+                <div key={label} className="py-8 px-4 lg:px-10 text-center lg:text-left">
+                  <dd className="font-display text-3xl lg:text-4xl font-light text-ink mb-1">{value}</dd>
+                  <dt className="text-[10px] uppercase tracking-luxe text-slate-500">{label}</dt>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </section>
 
       {/* ── Company Story ──────────────────────────────────────── */}
-      <section className="py-28 bg-white">
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-navy-600 mb-3">Our Story</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy-900 leading-tight mb-6">
-                From a Small Firm to 42 Associations
+          <div className="grid lg:grid-cols-12 gap-14 lg:gap-16 items-center">
+            <div className="lg:col-span-7">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Our Story
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
+                From a small firm to
+                <br />
+                42 <em className="font-medium text-gold-600">associations.</em>
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed mb-5">
+              <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
                 Stellar Property Group was founded in 2007 with a clear mission: deliver property management that Chicago condo boards, HOAs, and townhome associations actually deserve. At the time, most firms treated community management as a side business. We made it our only business.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-5">
+              <p className="text-slate-600 font-light leading-relaxed mb-5">
                 Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 42 associations and 2,450 units across Chicago and the North Shore, with a 96% client retention rate that speaks louder than any advertisement.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-8">
+              <p className="text-slate-600 font-light leading-relaxed mb-10">
                 Our growth has always been intentional. We only take on communities we can serve exceptionally, assigning a dedicated manager who knows every building, every board member, and every vendor by name. That personal approach is what sets us apart from national firms that treat your community as a line item.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap items-center gap-5">
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-2 bg-navy-800 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-navy-900 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm"
+                  className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
-                  Our Services <ArrowRight className="w-4 h-4" />
+                  Our Services
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 border border-navy-200 text-navy-700 font-semibold px-7 py-3.5 rounded-lg hover:bg-navy-50 transition-all duration-200 text-sm"
+                  className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 hover:text-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   Get in Touch
                 </Link>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-navy-100 to-navy-50 rounded-3xl -z-10" />
-              <img
-                src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Premium Chicago residential building managed by Stellar Property Group"
-                className="w-full rounded-2xl shadow-glass object-cover aspect-[4/3]"
-                loading="lazy"
-              />
+            <div className="lg:col-span-5">
+              <figure className="relative max-w-md mx-auto lg:ml-auto">
+                <div className="absolute -inset-4 border border-gold-300/60 pointer-events-none" aria-hidden />
+                <img
+                  src="https://images.pexels.com/photos/25853877/pexels-photo-25853877.jpeg?auto=compress&cs=tinysrgb&w=900"
+                  alt="Classic Chicago brick three-flat with bay windows, the kind of building Stellar manages"
+                  className="w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                />
+                <figcaption className="mt-6 text-[10px] uppercase tracking-luxe text-slate-400 text-center">
+                  Chicago North Side · Brick Three-Flat
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Mission & Values ───────────────────────────────────── */}
-      <section className="py-28 bg-slate-50">
+      <section className="py-24 lg:py-32 bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-navy-600 mb-3">Our Values</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy-900 leading-tight mb-4">
-              What Drives Us Every Day
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              These aren't posters on a wall. They're the principles that guide every decision we make for the communities we serve.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-12 gap-14">
+            <div className="lg:col-span-5">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Our Values
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
+                What drives us
+                <br />
+                every <em className="font-medium text-gold-600">day.</em>
+              </h2>
+              <p className="text-lg text-slate-600 font-light leading-relaxed">
+                These aren&rsquo;t posters on a wall. They&rsquo;re the principles that
+                guide every decision we make for the communities we serve.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map(({ icon: Icon, title, desc }) => (
-              <div
-                key={title}
-                className="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-slate-100 group"
-              >
-                <div className="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5 group-hover:bg-navy-800 transition-colors duration-300">
-                  <Icon className="w-5 h-5 text-navy-700 group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-base font-semibold text-navy-900 mb-2">{title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Stats Bar ──────────────────────────────────────────── */}
-      <section className="py-16 bg-navy-950">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map(({ value, label, sub }) => (
-              <div
-                key={label}
-                className="text-center bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors duration-300"
-              >
-                <div className="text-4xl lg:text-5xl font-bold text-white mb-1">{value}</div>
-                <div className="text-sm font-semibold text-white/80">{label}</div>
-                <div className="text-xs text-white/45 mt-0.5">{sub}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Credentials ────────────────────────────────────────── */}
-      <section className="py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="max-w-2xl mb-16">
-            <p className="text-xs font-semibold uppercase tracking-widest text-navy-600 mb-3">Credentials</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy-900 leading-tight mb-4">
-              Industry-Leading Certifications
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Our team holds the most respected credentials in property management — proof of our commitment to professional excellence and continuing education.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {credentials.map(({ abbr, name, desc }) => (
-              <div
-                key={abbr}
-                className="flex items-start gap-5 bg-slate-50 rounded-2xl p-7 border border-slate-100 hover:shadow-card transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-xl bg-navy-800 flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-bold text-gold-400 tracking-wide">{abbr}</span>
-                </div>
-                <div>
-                  <h3 className="text-base font-semibold text-navy-900 mb-1">{name}</h3>
-                  <p className="text-sm text-slate-500 leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Service Areas ──────────────────────────────────────── */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-card border border-slate-100">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-navy-700" />
-                  </div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-navy-600">Where We Serve</p>
-                </div>
-                <h2 className="font-display text-3xl lg:text-4xl font-bold text-navy-900 leading-tight mb-4">
-                  Chicago &amp; the North Shore
-                </h2>
-                <p className="text-slate-600 leading-relaxed mb-6">
-                  From Lincoln Park to Lake Forest, we manage communities across Chicago's most desirable neighborhoods and North Shore suburbs. Our local expertise means we know every alderman, every building department, and every reliable contractor in your area.
-                </p>
-                <Link
-                  to="/service-areas"
-                  className="inline-flex items-center gap-2 text-navy-700 font-semibold hover:text-navy-900 transition-colors text-sm"
-                >
-                  View All Service Areas <ChevronRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-              <div className="grid grid-cols-3 gap-3">
-                {[
-                  'Chicago', 'Evanston', 'Skokie', 'Glenview', 'Wilmette', 'Winnetka',
-                  'Highland Park', 'Northbrook', 'Glencoe', 'Kenilworth', 'Lake Forest', 'Deerfield',
-                ].map((area) => (
-                  <div
-                    key={area}
-                    className="flex items-center gap-2 bg-slate-50 rounded-lg px-3 py-2.5 text-sm text-navy-700 font-medium"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-gold-500 flex-shrink-0" />
-                    {area}
+            <div className="lg:col-span-7">
+              <div className="border-t border-slate-200">
+                {values.map(({ n, title, desc }) => (
+                  <div key={n} className="py-8 border-b border-slate-200 grid sm:grid-cols-12 gap-3 sm:gap-6 items-baseline">
+                    <span className="sm:col-span-2 font-display font-light text-2xl text-gold-500 select-none">
+                      {n}
+                    </span>
+                    <h3 className="sm:col-span-3 font-display text-xl lg:text-2xl text-ink">{title}</h3>
+                    <p className="sm:col-span-7 text-sm text-slate-600 font-light leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -268,38 +215,118 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── CTA ────────────────────────────────────────────────── */}
-      <section className="py-28 bg-white">
+      {/* ── Credentials ────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="bg-navy-950 rounded-3xl overflow-hidden">
-            <div className="relative px-8 py-16 lg:px-16 lg:py-20 text-center">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full -translate-y-1/2 translate-x-1/3" />
-              <div className="absolute bottom-0 left-0 w-72 h-72 bg-gold-500/5 rounded-full translate-y-1/2 -translate-x-1/3" />
+          <div className="max-w-2xl mb-16">
+            <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+              <span className="accent-rule" />
+              Credentials
+            </p>
+            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
+              Industry-leading <em className="font-medium text-gold-600">certifications.</em>
+            </h2>
+            <p className="text-lg text-slate-600 font-light leading-relaxed">
+              Our team holds the most respected credentials in property
+              management — proof of our commitment to professional excellence
+              and continuing education.
+            </p>
+          </div>
 
-              <div className="relative max-w-2xl mx-auto">
-                <p className="text-xs font-semibold uppercase tracking-widest text-gold-400 mb-3">Let's Talk</p>
-                <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-                  Ready to Experience the Stellar Difference?
-                </h2>
-                <p className="text-white/60 text-lg leading-relaxed mb-10">
-                  Whether you're considering a management change or exploring options for the first time, we'd love to learn about your community and show you what professional, hands-on management looks like.
-                </p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold px-7 py-3.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-sm"
-                  >
-                    Request a Proposal <ArrowRight className="w-4 h-4" />
-                  </Link>
-                  <Link
-                    to="/services"
-                    className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white/15 transition-all duration-200 text-sm"
-                  >
-                    Explore Our Services
-                  </Link>
-                </div>
+          <div className="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
+            {credentials.map(({ abbr, name, desc }) => (
+              <div key={abbr} className="bg-white p-9 lg:p-10">
+                <span className="font-display font-light text-4xl lg:text-5xl text-gold-500 block mb-6 select-none">
+                  {abbr}
+                </span>
+                <h3 className="font-display text-xl text-ink mb-3">{name}</h3>
+                <p className="text-sm text-slate-600 font-light leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Service Areas ──────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-ivory-100 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-14">
+            <div className="lg:col-span-5">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Where We Serve
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
+                Chicago &amp; the
+                <br />
+                North <em className="font-medium text-gold-600">Shore.</em>
+              </h2>
+              <p className="text-slate-600 font-light text-lg leading-relaxed mb-8">
+                From Lincoln Park to Lake Forest, we manage communities across
+                Chicago&rsquo;s most desirable neighborhoods and North Shore suburbs.
+                Our local expertise means we know every alderman, every building
+                department, and every reliable contractor in your area.
+              </p>
+              <Link
+                to="/service-areas"
+                className="inline-flex items-center gap-2 text-[10px] uppercase tracking-luxe text-gold-600 hover:text-gold-500 transition-colors"
+              >
+                View All Service Areas <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="lg:col-span-6 lg:col-start-7 self-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10">
+                {areas.map((area) => (
+                  <p key={area} className="py-3.5 border-b border-slate-200 text-sm text-ink font-light">
+                    {area}
+                  </p>
+                ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ────────────────────────────────────────────────── */}
+      <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            backgroundImage:
+              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
+          }}
+          aria-hidden
+        />
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+          <p className="eyebrow text-gold-300 mb-8 flex items-center justify-center gap-4">
+            <span className="accent-rule" /> Let&rsquo;s Talk <span className="accent-rule" />
+          </p>
+          <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
+            Ready to experience the
+            <br />
+            Stellar <em className="font-medium text-gold-300">difference?</em>
+          </h2>
+          <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+            Whether you&rsquo;re considering a management change or exploring options
+            for the first time, we&rsquo;d love to learn about your community and show
+            you what professional, hands-on management looks like.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <Link
+              to="/contact"
+              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+            >
+              Request a Proposal
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <a
+              href="tel:7737280652"
+              className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+            >
+              <Phone className="w-4 h-4" strokeWidth={1.25} /> 773.728.0652
+            </a>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building2, MapPin, Phone, Mail, Award } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 const serviceLinks = [
   { name: 'Condominium Management', href: '/services/condominium-management' },
@@ -12,85 +12,76 @@ const serviceLinks = [
 ];
 
 const companyLinks = [
-  { name: 'About Us', href: '/about' },
-  { name: 'Service Areas', href: '/service-areas' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'About', href: '/about' },
+  { name: 'Neighborhoods', href: '/service-areas' },
+  { name: 'Journal', href: '/blog' },
   { name: 'Resources', href: '/resources' },
+  { name: 'Contact', href: '/contact' },
 ];
 
-const legalLinks = [
-  { name: 'Privacy Policy', href: '#' },
-  { name: 'Terms of Service', href: '#' },
-  { name: 'Sitemap', href: '#' },
-];
-
-const credentials = [
-  { label: 'CAI Certified', icon: Award },
-  { label: 'IREM Member', icon: Award },
-  { label: 'IDFPR Licensed', icon: Award },
-  { label: 'CCIM Designated', icon: Award },
-];
+const credentials = ['CAI Certified', 'IREM Member', 'IDFPR Licensed', 'CCIM Designated'];
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 text-white">
-      {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-5">
-              <div className="p-2 bg-navy-700 rounded-xl">
-                <Building2 className="w-6 h-6 text-gold-400" />
-              </div>
-              <div>
-                <span className="text-lg font-bold tracking-tight text-white">
-                  Stellar Property Group
+    <footer className="bg-ink text-paper">
+      {/* Main */}
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-20 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+          {/* Wordmark + contact */}
+          <div className="lg:col-span-5">
+            <Link to="/" className="inline-flex items-center gap-4 mb-6">
+              <img
+                src="/logo-icon.svg"
+                alt="Stellar Property Group logo"
+                className="w-14 h-14"
+              />
+              <span className="leading-none">
+                <span className="block font-display text-3xl tracking-tight">
+                  Stellar
                 </span>
-                <span className="block text-xs font-medium tracking-widest uppercase text-navy-300">
-                  Chicago
+                <span className="block text-[9px] font-semibold uppercase tracking-luxe text-paper/40 mt-2">
+                  Property Group · Chicago · Est. 2007
                 </span>
-              </div>
+              </span>
             </Link>
-            <p className="text-navy-300 text-sm leading-relaxed mb-6">
-              Chicago's premier property management company delivering exceptional
-              condominium, HOA, and townhome management services with transparency,
-              professionalism, and community-focused care.
+            <p className="text-paper/50 text-sm leading-relaxed mb-8 font-light max-w-sm">
+              Condominium, HOA, and townhome association management for
+              Chicago&rsquo;s finest addresses — practiced with discretion,
+              transparency, and an uncompromising standard of care.
             </p>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 text-sm text-navy-300">
-                <MapPin className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" />
+              <div className="flex items-start gap-3 text-sm text-paper/60 font-light">
+                <MapPin className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" strokeWidth={1.5} />
                 <span>5107 N Western Ave, Suite 1S, Chicago, IL 60625</span>
               </div>
               <a
                 href="tel:+17737280652"
-                className="flex items-center gap-3 text-sm text-navy-300 hover:text-gold-400 transition-colors"
+                className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
-                <Phone className="w-4 h-4 text-gold-400 shrink-0" />
+                <Phone className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />
                 773.728.0652
               </a>
               <a
                 href="mailto:mirsad@stellarpropertygroup.com"
-                className="flex items-center gap-3 text-sm text-navy-300 hover:text-gold-400 transition-colors"
+                className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
-                <Mail className="w-4 h-4 text-gold-400 shrink-0" />
+                <Mail className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />
                 mirsad@stellarpropertygroup.com
               </a>
             </div>
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold-400 mb-5">
-              Services
+          <div className="lg:col-span-4 lg:col-start-7">
+            <h4 className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
+              The Practice
             </h4>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-navy-300 hover:text-white transition-colors duration-200"
+                    className="text-sm text-paper/55 font-light hover:text-paper transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -100,16 +91,16 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold-400 mb-5">
-              Company
+          <div className="lg:col-span-2">
+            <h4 className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
+              The Firm
             </h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-navy-300 hover:text-white transition-colors duration-200"
+                    className="text-sm text-paper/55 font-light hover:text-paper transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -117,53 +108,37 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold-400 mb-5">
-              Legal
-            </h4>
-            <ul className="space-y-3">
-              {legalLinks.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-navy-300 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
 
-      {/* Credentials Bar */}
-      <div className="border-t border-navy-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            {credentials.map((cred) => (
-              <div
-                key={cred.label}
-                className="flex items-center gap-2 text-navy-400"
-              >
-                <cred.icon className="w-4 h-4 text-gold-500" />
-                <span className="text-xs font-medium tracking-wide uppercase">
-                  {cred.label}
-                </span>
-              </div>
-            ))}
-          </div>
+      {/* Credentials */}
+      <div className="border-t border-paper/10">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-6 flex flex-wrap items-center justify-center gap-x-14 gap-y-2">
+          {credentials.map((c) => (
+            <span key={c} className="text-[10px] font-medium tracking-luxe uppercase text-paper/35">
+              {c}
+            </span>
+          ))}
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="border-t border-navy-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <p className="text-center text-xs text-navy-500">
-            &copy; 2024 Stellar Property Group. All rights reserved.
+      {/* Copyright + legal */}
+      <div className="border-t border-paper/10">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-paper/30 font-light">
+            &copy; {new Date().getFullYear()} Stellar Property Group. All rights reserved.
           </p>
+          <div className="flex items-center gap-6">
+            <Link to="/privacy-policy" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-service" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+              Terms of Service
+            </Link>
+            <a href="/sitemap.xml" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+              Sitemap
+            </a>
+          </div>
         </div>
       </div>
     </footer>

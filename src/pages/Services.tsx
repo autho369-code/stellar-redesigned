@@ -1,85 +1,102 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import {
-  Home as HomeIcon, Users, Building2, TrendingUp, Shield, Award,
-  AlertTriangle, ArrowRight, CheckCircle, Phone, Star, Clock, Zap
-} from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 
 interface ServiceItem {
-  icon: LucideIcon;
+  n: string;
   title: string;
   description: string;
   href: string;
+  scope: string[];
 }
 
 const services: ServiceItem[] = [
   {
-    icon: HomeIcon,
+    n: '01',
     title: 'Condominium Management',
-    description: 'Full-service management for Chicago condo associations, from daily operations to reserve planning. We handle the details so your board can focus on community vision.',
+    description:
+      'Full-service management for Chicago condo associations, from daily operations to reserve planning. We handle the details so your board can focus on community vision.',
     href: '/services/condominium-management',
+    scope: ['Daily operations', 'Reserve planning', 'Amenity oversight'],
   },
   {
-    icon: Users,
+    n: '02',
     title: 'HOA Management',
-    description: 'Expert homeowners association management centered on governance, compliance, and community engagement. Build a stronger neighborhood with a partner who understands Illinois HOA law.',
+    description:
+      'Expert homeowners association management centered on governance, compliance, and community engagement — with a partner who understands Illinois HOA law.',
     href: '/services/hoa-management',
+    scope: ['Governance', 'Compliance', 'Community engagement'],
   },
   {
-    icon: Building2,
+    n: '03',
     title: 'Townhome Management',
-    description: 'Tailored management solutions designed for townhome communities of every size. Personalized attention and proactive maintenance keep your property values rising.',
+    description:
+      'Tailored management designed for townhome communities of every size. Personalized attention and proactive maintenance keep your property values rising.',
     href: '/services/townhome-management',
+    scope: ['Shared-roof planning', 'Exterior programs', 'Owner relations'],
   },
   {
-    icon: TrendingUp,
+    n: '04',
     title: 'Financial Management',
-    description: 'Transparent budgeting, accounting, and financial reporting that boards and owners can trust. Our proven strategies consistently reduce operating costs across communities.',
+    description:
+      'Transparent budgeting, accounting, and financial reporting that boards and owners can trust. Our proven strategies consistently reduce operating costs.',
     href: '/services/financial-management',
+    scope: ['Budgets & reserves', 'Monthly reporting', 'Assessment collection'],
   },
   {
-    icon: Shield,
+    n: '05',
     title: 'Maintenance Coordination',
-    description: 'Proactive scheduling and vetted vendor management that protects property value year-round. From routine upkeep to emergency repairs, we coordinate it all seamlessly.',
+    description:
+      'Proactive scheduling and vetted vendor management that protects property value year-round — from routine upkeep to 24/7 emergency response.',
     href: '/services/maintenance-coordination',
+    scope: ['Vetted vendors', 'Preventive schedules', '24/7 emergencies'],
   },
   {
-    icon: Award,
+    n: '06',
     title: 'Board Support',
-    description: 'Meeting facilitation, governance guidance, and strategic planning to empower your board. We provide the tools and expertise so every decision is well-informed.',
+    description:
+      'Meeting facilitation, governance guidance, and strategic planning that empower your board to make every decision well-informed.',
     href: '/services/board-support',
+    scope: ['Meeting facilitation', 'Director onboarding', 'Strategic planning'],
   },
   {
-    icon: AlertTriangle,
+    n: '07',
     title: 'Violation Management',
-    description: 'Consistent, fair enforcement of community rules and covenants with full documentation. Our systematic approach resolves issues efficiently while preserving neighbor relationships.',
+    description:
+      'Consistent, fair enforcement of community rules with full documentation — resolving issues efficiently while preserving neighbor relationships.',
     href: '/services/violation-management',
+    scope: ['Due process', 'Documentation', 'Policy review'],
   },
 ];
 
-const differentiators = [
-  {
-    icon: Star,
-    title: '29+ Years of Chicago Expertise',
-    description: 'Deep knowledge of Illinois condo law, Chicago building codes, and North Shore market dynamics — so nothing catches your community off guard.',
-  },
-  {
-    icon: Clock,
-    title: '24/7 Emergency Response',
-    description: 'Real people answer your calls around the clock. When urgent issues arise, our team mobilizes immediately to protect your property and residents.',
-  },
-  {
-    icon: CheckCircle,
-    title: '96% Client Retention Rate',
-    description: 'Communities stay with Stellar because we deliver measurable results — lower costs, higher property values, and happier residents year after year.',
-  },
-  {
-    icon: Zap,
-    title: 'Technology-Forward Approach',
-    description: 'Online portals, real-time reporting, and digital communication tools give boards and residents instant access to everything they need.',
-  },
+const proofs = [
+  { value: '42', label: 'Associations under management' },
+  { value: '2,450+', label: 'Residences across Chicagoland' },
+  { value: '96%', label: 'Client retention rate' },
+  { value: '24/7', label: 'Live emergency response' },
 ];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Property Management Services — Stellar Property Group',
+  itemListElement: services.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Service',
+      name: s.title,
+      description: s.description,
+      url: `https://stellarpropertygroup.com${s.href}`,
+      provider: {
+        '@type': 'ProfessionalService',
+        name: 'Stellar Property Group',
+        telephone: '+1-773-728-0652',
+        areaServed: 'Chicago, IL',
+      },
+    },
+  })),
+};
 
 export default function Services() {
   return (
@@ -88,140 +105,187 @@ export default function Services() {
         <title>Property Management Services | Stellar Property Group</title>
         <meta
           name="description"
-          content="Full-service property management for Chicago condominium associations, HOAs, and townhome communities. From financial oversight to maintenance coordination, Stellar Property Group delivers comprehensive solutions tailored to your community."
+          content="Seven disciplines of professional community management for Chicago condominiums, HOAs, and townhomes: operations, financials, maintenance, board support, and more."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/services" />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
-      <section className="relative bg-navy-950 py-24 md:py-32 overflow-hidden">
-        {/* Decorative gradient accent */}
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900/50 via-transparent to-navy-950 pointer-events-none" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-gold-400 font-semibold text-sm tracking-widest uppercase mb-4">
-            What We Do
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-            Our Property Management Services
-          </h1>
-          <p className="text-lg md:text-xl text-navy-200 max-w-2xl mx-auto leading-relaxed">
-            Comprehensive solutions for Chicago condominiums, HOAs, and townhome
-            communities — built on transparency, expertise, and a relentless
-            commitment to your property's success.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Service Cards Grid ─────────────────────────────────── */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white to-navy-50/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-navy-900 mb-4">
-              Everything Your Community Needs
-            </h2>
-            <p className="text-navy-500 max-w-2xl mx-auto text-lg">
-              From day-to-day operations to long-term strategic planning, our
-              services cover every aspect of professional community management.
-            </p>
+      <section className="relative bg-paper overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.35] pointer-events-none"
+          style={{
+            backgroundImage:
+              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
+          }}
+        />
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-16 lg:pb-20">
+          <div className="grid lg:grid-cols-12 gap-10 items-end">
+            <div className="lg:col-span-7">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                The Practice · Seven Disciplines
+              </p>
+              <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
+                Everything a community
+                <br />
+                <em className="font-medium text-gold-600">needs.</em> Nothing it doesn&rsquo;t.
+              </h1>
+            </div>
+            <div className="lg:col-span-4 lg:col-start-9">
+              <p className="text-lg text-slate-600 font-light leading-relaxed">
+                From day-to-day operations to long-term strategy — every
+                discipline practiced with the same standard: precise,
+                transparent, and in plain sight of your board.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => {
-              const Icon = service.icon;
-              return (
-                <Link
-                  key={service.title}
-                  to={service.href}
-                  className="group block bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-navy-100/50"
-                >
-                  <div className="w-14 h-14 bg-navy-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-navy-700 transition-colors duration-300">
-                    <Icon className="w-7 h-7 text-navy-600 group-hover:text-gold-400 transition-colors duration-300" />
-                  </div>
-                  <h3 className="text-lg font-bold text-navy-800 mb-3 group-hover:text-navy-900 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-navy-500 leading-relaxed mb-5">
-                    {service.description}
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-navy-600 group-hover:text-gold-600 transition-colors duration-300">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              );
-            })}
+        {/* Proof strip */}
+        <div className="relative border-t border-slate-200">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <dl className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-slate-200">
+              {proofs.map(({ value, label }) => (
+                <div key={label} className="py-8 px-4 lg:px-10 text-center lg:text-left">
+                  <dd className="font-display text-3xl lg:text-4xl font-light text-ink mb-1">{value}</dd>
+                  <dt className="text-[10px] uppercase tracking-luxe text-slate-500">{label}</dt>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
 
-      {/* ── Why Choose Stellar ─────────────────────────────────── */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block text-gold-500 font-semibold text-sm tracking-widest uppercase mb-4">
-              The Stellar Difference
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-navy-900 mb-4">
-              Why Choose Stellar
-            </h2>
-            <p className="text-navy-500 max-w-2xl mx-auto text-lg">
-              We don't just manage properties — we build thriving communities
-              backed by decades of Chicago-area experience.
-            </p>
-          </div>
+      {/* ── The Index ──────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="border-t border-slate-200">
+            {services.map(({ n, title, description, href, scope }) => (
+              <Link
+                key={n}
+                to={href}
+                className="group grid lg:grid-cols-12 gap-4 lg:gap-8 items-baseline py-10 lg:py-12 border-b border-slate-200 transition-colors duration-300 hover:bg-ivory-50 lg:px-6 lg:-mx-6"
+              >
+                <span className="lg:col-span-1 font-display font-light text-2xl text-gold-500 select-none">
+                  {n}
+                </span>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {differentiators.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={item.title}
-                  className="flex gap-5 p-6 rounded-xl bg-navy-50/50 border border-navy-100/50"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 bg-gold-500/10 rounded-lg flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-gold-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-navy-800 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-navy-500 leading-relaxed">
-                      {item.description}
-                    </p>
+                <h2 className="lg:col-span-4 font-display text-2xl lg:text-3xl text-ink group-hover:text-navy-700 transition-colors duration-300">
+                  {title}
+                </h2>
+
+                <div className="lg:col-span-6">
+                  <p className="text-slate-600 font-light leading-relaxed mb-4">{description}</p>
+                  <div className="flex flex-wrap gap-x-6 gap-y-1.5">
+                    {scope.map((s) => (
+                      <span key={s} className="text-[10px] uppercase tracking-luxe text-slate-400">
+                        {s}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              );
-            })}
+
+                <span className="lg:col-span-1 justify-self-start lg:justify-self-end self-center">
+                  <span className="inline-flex w-11 h-11 items-center justify-center rounded-full border border-slate-300 text-slate-400 transition-all duration-300 group-hover:border-gold-500 group-hover:bg-gold-500 group-hover:text-white">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── How we work / difference ───────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-ivory-100 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-14">
+            <div className="lg:col-span-5">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                The Stellar Difference
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
+                One firm. One number.
+                <br />
+                One <em className="font-medium text-gold-600">standard.</em>
+              </h2>
+              <p className="text-slate-600 font-light text-lg leading-relaxed">
+                Every community gets a dedicated manager, transparent flat-fee
+                pricing, and a Chicago office that answers around the clock.
+                That&rsquo;s why boards that join Stellar stay with Stellar.
+              </p>
+            </div>
+
+            <div className="lg:col-span-7">
+              {[
+                {
+                  title: 'Chicago expertise since 2007',
+                  body: 'Deep knowledge of Illinois condo law, Chicago building codes, and North Shore market dynamics — so nothing catches your community off guard.',
+                },
+                {
+                  title: '24/7 live emergency response',
+                  body: 'Real people answer around the clock. When urgent issues arise, our team mobilizes immediately to protect your property and residents.',
+                },
+                {
+                  title: '96% client retention',
+                  body: 'Communities stay because we deliver measurable results — lower costs, stronger reserves, and calmer board meetings, year after year.',
+                },
+                {
+                  title: 'Technology, quietly excellent',
+                  body: 'AppFolio portals, real-time reporting, and digital approvals give boards and residents instant access to everything they need.',
+                },
+              ].map(({ title, body }) => (
+                <div key={title} className="py-6 border-b border-slate-200 last:border-0 grid sm:grid-cols-12 gap-3">
+                  <h3 className="sm:col-span-5 font-display text-xl text-ink">{title}</h3>
+                  <p className="sm:col-span-7 text-sm text-slate-600 font-light leading-relaxed">{body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* ── CTA ────────────────────────────────────────────────── */}
-      <section className="bg-navy-950 py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-navy-200 mb-10 max-w-2xl mx-auto">
-            Discover why 42 Chicago-area associations trust Stellar Property
-            Group. Reach out today for a free, no-obligation consultation.
+      <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            backgroundImage:
+              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
+          }}
+          aria-hidden
+        />
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+          <p className="eyebrow text-gold-300 mb-8 flex items-center justify-center gap-4">
+            <span className="accent-rule" /> A Private Consultation <span className="accent-rule" />
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
+            Let&rsquo;s raise your community&rsquo;s
+            <br />
+            <em className="font-medium text-gold-300">standard.</em>
+          </h2>
+          <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+            Discover why 42 Chicago-area associations trust Stellar Property
+            Group. A free, no-obligation consultation with our managing partners.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="inline-flex items-center bg-gold-500 text-navy-900 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 transition-colors"
+              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              Get a Free Consultation
-              <ArrowRight className="w-5 h-5 ml-2" />
+              Request a Proposal
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
               href="tel:7737280652"
-              className="inline-flex items-center text-white border border-white/30 px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-5 h-5 mr-2" />
-              773.728.0652
+              <Phone className="w-4 h-4" /> 773.728.0652
             </a>
           </div>
         </div>

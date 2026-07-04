@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Stellar Property Management">
+  <title>Stellar Property Management</title>
+  <defs>
+    <linearGradient id="gL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcbfc4"/><stop offset="1" stop-color="#8d9198"/></linearGradient>
+    <linearGradient id="gC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ac5f0"/><stop offset="1" stop-color="#3f9ed3"/></linearGradient>
+    <linearGradient id="gR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#98adbc"/><stop offset="1" stop-color="#697f93"/></linearGradient>
+  </defs>
+  <ellipse cx="60" cy="92" rx="36" ry="5" fill="#c4cdd6" opacity="0.5"/>
+  <path d="M 12.9 54.49 A 49 18 16 0 1 107.1 81.51" fill="none" stroke="#163f66" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 12.9 54.49 A 49 18 16 0 1 107.1 81.51" fill="none" stroke="#3f78a6" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 47.07 89.94 L 58.93 88.06 L 50.74 42.78 L 40.87 44.35 Z" fill="url(#gL)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.28" stroke-linejoin="round"/>
+  <path d="M 63.07 88.06 L 74.93 89.94 L 82.7 34.47 L 72.82 32.91 Z" fill="url(#gR)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.28" stroke-linejoin="round"/>
+  <path d="M 53.5 89.23 L 66.5 88.77 L 62.98 16.85 L 51.99 17.24 Z" fill="url(#gC)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.28" stroke-linejoin="round"/>
+  <path d="M 107.1 81.51 A 49 18 16 0 1 12.9 54.49" fill="none" stroke="#1c4e7e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 107.1 81.51 A 49 18 16 0 1 12.9 54.49" fill="none" stroke="#4f88b6" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+</svg>

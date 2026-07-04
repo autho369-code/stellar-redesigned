@@ -19,6 +19,23 @@ const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Resources = lazy(() => import('./pages/Resources'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+
+/**
+ * React Router v7 does not support partial dynamic segments like
+ * "/property-management-:slug", so those URLs never matched and all 72
+ * neighborhood pages rendered blank. This catch-all keeps the existing
+ * (indexed) URL pattern working and routes everything else to a real 404.
+ */
+function CatchAllRoute() {
+  const { pathname } = useLocation();
+  if (pathname.startsWith('/property-management-')) {
+    return <NeighborhoodPage />;
+  }
+  return <NotFound />;
+}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -56,11 +73,13 @@ export default function App() {
             <Route path="/services/board-support" element={<BoardSupport />} />
             <Route path="/services/violation-management" element={<ViolationManagement />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
-            <Route path="/property-management-:slug" element={<NeighborhoodPage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="*" element={<CatchAllRoute />} />
           </Route>
         </Routes>
       </Suspense>

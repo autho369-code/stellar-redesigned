@@ -141,11 +141,11 @@ export function BoardNominationForm() {
     <div className="bg-white rounded-xl shadow-lg p-8">
       <div className="mb-8">
         <div className="flex items-center justify-center mb-4">
-          <Users className="w-12 h-12 text-blue-600" />
+          <Users className="w-12 h-12 text-gold-600" />
         </div>
         <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">Board Member Nomination Application</h2>
         <p className="text-center text-gray-600 mb-4">Apply to serve on your condominium or HOA board</p>
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <div className="bg-ivory-100 border border-slate-200 rounded-lg p-4">
           <p className="text-sm text-gray-700">
             <strong>Note:</strong> Board positions are typically determined by percentage of votes received during elections. This application helps the nominating committee evaluate candidates for board service.
           </p>
@@ -162,7 +162,7 @@ export function BoardNominationForm() {
           <div className="flex justify-center">
             <button
               onClick={handlePrint}
-              className="flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors print:hidden"
+              className="flex items-center space-x-2 px-6 py-3 bg-gold-600 text-white rounded-lg font-semibold hover:bg-gold-700 transition-colors print:hidden"
             >
               <Printer className="w-5 h-5" />
               <span>Print Application Copy</span>
@@ -309,7 +309,7 @@ export function BoardNominationForm() {
                 required
                 value={formData.nominee_name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -327,7 +327,7 @@ export function BoardNominationForm() {
                   required
                   value={formData.nominee_email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -344,7 +344,7 @@ export function BoardNominationForm() {
                   required
                   value={formData.nominee_phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                   placeholder="(773) 555-0123"
                 />
               </div>
@@ -362,7 +362,7 @@ export function BoardNominationForm() {
                 required
                 value={formData.nominee_unit_address}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="Unit 301, 123 Main St, Chicago, IL 60601"
               />
             </div>
@@ -379,7 +379,7 @@ export function BoardNominationForm() {
                   required
                   value={formData.years_at_property}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                   placeholder="5"
                   min="0"
                   step="0.5"
@@ -396,7 +396,7 @@ export function BoardNominationForm() {
                   required
                   value={formData.ownership_type}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 >
                   <option value="owner">Owner</option>
                   <option value="renter">Renter (if allowed by bylaws)</option>
@@ -421,7 +421,7 @@ export function BoardNominationForm() {
                 name="current_employment"
                 value={formData.current_employment}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="e.g., Software Engineer at Tech Company"
               />
             </div>
@@ -436,7 +436,7 @@ export function BoardNominationForm() {
                 value={formData.previous_board_experience}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all resize-none"
                 placeholder="Describe any previous experience serving on boards, committees, or leadership positions..."
               />
             </div>
@@ -453,7 +453,7 @@ export function BoardNominationForm() {
                 value={formData.relevant_skills}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all resize-none"
                 placeholder="e.g., Financial management, legal background, construction/engineering, communication skills, property management..."
               />
             </div>
@@ -476,7 +476,7 @@ export function BoardNominationForm() {
                 value={formData.motivation}
                 onChange={handleChange}
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all resize-none"
                 placeholder="Describe your motivation for serving on the board and what you hope to contribute to the community..."
               />
             </div>
@@ -494,7 +494,7 @@ export function BoardNominationForm() {
                     checked={formData.time_commitment === 'yes'}
                     onChange={handleChange}
                     required
-                    className="w-4 h-4 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    className="w-4 h-4 text-gold-600 focus:ring-2 focus:ring-gold-500"
                   />
                   <span className="text-gray-700">Yes</span>
                 </label>
@@ -506,7 +506,7 @@ export function BoardNominationForm() {
                     checked={formData.time_commitment === 'no'}
                     onChange={handleChange}
                     required
-                    className="w-4 h-4 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    className="w-4 h-4 text-gold-600 focus:ring-2 focus:ring-gold-500"
                   />
                   <span className="text-gray-700">No</span>
                 </label>
@@ -518,7 +518,7 @@ export function BoardNominationForm() {
                     checked={formData.time_commitment === 'mostly'}
                     onChange={handleChange}
                     required
-                    className="w-4 h-4 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    className="w-4 h-4 text-gold-600 focus:ring-2 focus:ring-gold-500"
                   />
                   <span className="text-gray-700">Mostly, with occasional conflicts</span>
                 </label>
@@ -535,7 +535,7 @@ export function BoardNominationForm() {
                 value={formData.references}
                 onChange={handleChange}
                 rows={3}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all resize-none"
                 placeholder="Names and contact information of references (other unit owners, professional contacts, etc.)"
               />
             </div>
@@ -558,7 +558,7 @@ export function BoardNominationForm() {
               required
               value={formData.signature}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all font-cursive"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all font-cursive"
               placeholder="Type your full name"
             />
           </div>
@@ -576,7 +576,7 @@ export function BoardNominationForm() {
                 checked={formData.acknowledged_terms}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I understand that board members have fiduciary duties to the association and must act in the best interests of all owners. I agree to comply with the association's governing documents and all applicable laws. *
@@ -590,7 +590,7 @@ export function BoardNominationForm() {
                 checked={formData.acknowledged_commitment}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I understand that serving on the board requires a significant time commitment including attending regular meetings, reviewing documents, and responding to association matters. *
@@ -604,7 +604,7 @@ export function BoardNominationForm() {
                 checked={formData.acknowledged_attendance}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I certify that the information provided in this application is true and accurate to the best of my knowledge. *
@@ -616,7 +616,7 @@ export function BoardNominationForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          className="w-full bg-gold-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gold-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
         >
           {isSubmitting ? (
             <>
@@ -640,7 +640,7 @@ export function BoardNominationForm() {
       <div className="mt-12 space-y-6 border-t border-gray-200 pt-8">
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Award className="w-8 h-8 text-blue-600" />
+            <Award className="w-8 h-8 text-gold-600" />
             <h3 className="text-2xl font-bold text-gray-900">Board Service Information</h3>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -652,33 +652,33 @@ export function BoardNominationForm() {
           <h4 className="text-xl font-bold text-gray-900 mb-3">Board Member Responsibilities</h4>
           <ul className="grid md:grid-cols-2 gap-2 text-gray-700">
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Attend regular board meetings (typically monthly)</span>
             </li>
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Review financial reports and budgets</span>
             </li>
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Make decisions on maintenance and improvements</span>
             </li>
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Address owner concerns and communications</span>
             </li>
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Oversee compliance with governing documents</span>
             </li>
             <li className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+              <CheckCircle className="w-5 h-5 text-gold-600 flex-shrink-0" />
               <span>Work with property management company</span>
             </li>
           </ul>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+        <div className="bg-ivory-100 border border-slate-200 rounded-lg p-6">
           <h4 className="text-xl font-bold text-gray-900 mb-3">Election Process</h4>
           <p className="text-gray-700 leading-relaxed">
             Board positions are typically determined by the percentage of votes received during the annual election. All eligible unit owners may vote, with voting power often based on percentage of ownership. The nominating committee reviews applications and may interview candidates before presenting them to the membership for election.

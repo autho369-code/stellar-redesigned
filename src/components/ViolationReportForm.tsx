@@ -164,7 +164,7 @@ export function ViolationReportForm() {
                 required
                 value={formData.reporter_name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -181,7 +181,7 @@ export function ViolationReportForm() {
                 required
                 value={formData.reporter_unit_address}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="Unit 301, 123 Main St, Chicago, IL 60601"
               />
             </div>
@@ -198,7 +198,7 @@ export function ViolationReportForm() {
                 required
                 value={formData.reporter_contact}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="Phone number or email address"
               />
             </div>
@@ -215,7 +215,7 @@ export function ViolationReportForm() {
                 required
                 value={formData.report_date}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
               />
             </div>
           </div>
@@ -236,7 +236,7 @@ export function ViolationReportForm() {
                 name="violator_name"
                 value={formData.violator_name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="Optional"
               />
             </div>
@@ -251,7 +251,7 @@ export function ViolationReportForm() {
                 name="violator_unit"
                 value={formData.violator_unit}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
                 placeholder="Unit 205"
               />
             </div>
@@ -278,7 +278,7 @@ export function ViolationReportForm() {
                   value={violation.value}
                   checked={formData.violation_types.includes(violation.value)}
                   onChange={handleChange}
-                  className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500"
+                  className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500"
                 />
                 <span className="text-gray-700">{violation.label}</span>
               </label>
@@ -302,7 +302,7 @@ export function ViolationReportForm() {
               value={formData.violation_details}
               onChange={handleChange}
               rows={6}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all resize-none"
               placeholder="Please provide detailed information about the violation including specific dates, times, and any witnesses..."
             />
           </div>
@@ -320,7 +320,7 @@ export function ViolationReportForm() {
                   checked={formData.reported_before === 'yes'}
                   onChange={handleChange}
                   required
-                  className="w-4 h-4 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                  className="w-4 h-4 text-gold-600 focus:ring-2 focus:ring-gold-500"
                 />
                 <span className="text-gray-700">Yes</span>
               </label>
@@ -332,7 +332,7 @@ export function ViolationReportForm() {
                   checked={formData.reported_before === 'no'}
                   onChange={handleChange}
                   required
-                  className="w-4 h-4 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                  className="w-4 h-4 text-gold-600 focus:ring-2 focus:ring-gold-500"
                 />
                 <span className="text-gray-700">No</span>
               </label>
@@ -349,7 +349,7 @@ export function ViolationReportForm() {
               name="requested_action"
               value={formData.requested_action}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all"
             >
               <option value="warning">Warning</option>
               <option value="fine">Fine</option>
@@ -375,7 +375,7 @@ export function ViolationReportForm() {
               required
               value={formData.signature}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all font-cursive"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent transition-all font-cursive"
               placeholder="Type your full name"
             />
           </div>
@@ -393,7 +393,7 @@ export function ViolationReportForm() {
                 checked={formData.acknowledged_sharing}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I understand that this report may be shared with the association board, management company, or other relevant parties as part of the investigation process. *
@@ -407,7 +407,7 @@ export function ViolationReportForm() {
                 checked={formData.certified_accurate}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I certify that the information provided in this report is true and accurate to the best of my knowledge. *
@@ -421,7 +421,7 @@ export function ViolationReportForm() {
                 checked={formData.acknowledged_contact}
                 onChange={handleChange}
                 required
-                className="w-5 h-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 mt-1 flex-shrink-0"
+                className="w-5 h-5 text-gold-600 rounded focus:ring-2 focus:ring-gold-500 mt-1 flex-shrink-0"
               />
               <span className="text-gray-700 text-sm">
                 I understand that I may be contacted for additional information regarding this report. *
@@ -457,7 +457,7 @@ export function ViolationReportForm() {
       <div className="mt-12 space-y-8 border-t border-gray-200 pt-8">
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Shield className="w-8 h-8 text-blue-600" />
+            <Shield className="w-8 h-8 text-gold-600" />
             <h3 className="text-2xl font-bold text-gray-900">Violation Reporting & Resolution Process</h3>
           </div>
           <p className="text-gray-700 leading-relaxed">
@@ -469,35 +469,35 @@ export function ViolationReportForm() {
           <h4 className="text-xl font-bold text-gray-900 mb-3">Common Violations We Address</h4>
           <ul className="grid md:grid-cols-2 gap-2 text-gray-700">
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Noise disturbances and quiet hours violations</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Unauthorized modifications to common areas</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Parking and vehicle violations</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Pet policy violations</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Improper waste disposal</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Smoking in prohibited areas</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Unauthorized subletting or Airbnb rentals</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              <span className="w-2 h-2 bg-gold-600 rounded-full"></span>
               <span>Balcony and patio regulation violations</span>
             </li>
           </ul>
@@ -505,7 +505,7 @@ export function ViolationReportForm() {
 
         <div>
           <div className="flex items-center space-x-3 mb-3">
-            <Clock className="w-6 h-6 text-blue-600" />
+            <Clock className="w-6 h-6 text-gold-600" />
             <h4 className="text-xl font-bold text-gray-900">Our Investigation Process</h4>
           </div>
           <p className="text-gray-700 leading-relaxed">
@@ -515,7 +515,7 @@ export function ViolationReportForm() {
 
         <div>
           <div className="flex items-center space-x-3 mb-3">
-            <Scale className="w-6 h-6 text-blue-600" />
+            <Scale className="w-6 h-6 text-gold-600" />
             <h4 className="text-xl font-bold text-gray-900">Fair Enforcement & Due Process</h4>
           </div>
           <p className="text-gray-700 leading-relaxed mb-3">
@@ -523,7 +523,7 @@ export function ViolationReportForm() {
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+        <div className="bg-ivory-100 border border-slate-200 rounded-lg p-6">
           <h4 className="text-xl font-bold text-gray-900 mb-3">Illinois Ombudsman Act Information</h4>
           <p className="text-gray-700 leading-relaxed mb-3">
             The Condominium and Common Interest Community Ombudsperson Act (765 ILCS 615/) provides a means by which unit owners can report potential violations of the Condominium Property Act or the Common Interest Community Association Act.

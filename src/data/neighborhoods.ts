@@ -24,7 +24,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Rogers Park',
     slug: 'rogers-park',
-    description: 'Rogers Park is Chicago\'s most diverse neighborhood, featuring affordable lakefront living and a rich mix of courtyard apartments and vintage buildings. Property management in Rogers Park requires cultural sensitivity and experience with a wide range of building ages and styles. We help boards navigate the unique challenges of maintaining properties in this eclectic far north side community.',
+    description: 'Rogers Park is Chicago\'s most diverse neighborhood, featuring a rich mix of vintage courtyard condominium buildings and distinctive lakefront architecture. Property management in Rogers Park requires cultural sensitivity and experience with a wide range of building ages and styles. We help boards navigate the unique challenges of maintaining properties in this eclectic far north side community.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60626', '60645']
   },
@@ -66,7 +66,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Albany Park',
     slug: 'albany-park',
-    description: 'Albany Park is one of Chicago\'s most ethnically diverse neighborhoods, situated along the North Branch of the Chicago River with excellent transit access. The area features a mix of affordable condominiums and multi-unit conversions that serve a broad resident base. We bring culturally responsive property management to Albany Park associations looking for reliable, cost-effective service.',
+    description: 'Albany Park is one of Chicago\'s most ethnically diverse neighborhoods, situated along the North Branch of the Chicago River with excellent transit access. The area features a mix of well-kept condominiums and multi-unit conversions that serve a broad resident base. We bring culturally responsive property management to Albany Park associations looking for reliable, professional service.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60625', '60618']
   },
@@ -108,7 +108,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Humboldt Park',
     slug: 'humboldt-park',
-    description: 'Humboldt Park is a culturally rich neighborhood centered around its beautiful namesake park with a historic boathouse and lagoon. The area features affordable housing options and a growing number of condominium conversions as the neighborhood continues to develop. We offer accessible, transparent property management tailored to the needs of Humboldt Park\'s diverse community.',
+    description: 'Humboldt Park is a culturally rich neighborhood centered around its beautiful namesake park with a historic boathouse and lagoon. The area features a growing number of condominium conversions as the neighborhood continues to develop. We offer attentive, transparent property management tailored to the needs of Humboldt Park\'s diverse community.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60647', '60624', '60651']
   },
@@ -234,7 +234,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'South Shore',
     slug: 'south-shore',
-    description: 'South Shore is a lakefront neighborhood with beautiful residential architecture, anchored by the historic South Shore Cultural Center and Jackson Park. The area offers excellent value and a growing number of managed condominium associations. We bring reliable, cost-conscious property management to South Shore boards focused on building strong communities and protecting their investments.',
+    description: 'South Shore is a lakefront neighborhood with beautiful residential architecture, anchored by the historic South Shore Cultural Center and Jackson Park. The area features distinctive residential architecture and a growing number of managed condominium associations. We bring reliable, attentive property management to South Shore boards focused on building strong communities and protecting their investments.',
     propertyTypes: ['condominiums', 'HOAs'],
     zipCodes: ['60649']
   },
@@ -276,7 +276,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Portage Park',
     slug: 'portage-park',
-    description: 'Portage Park is a large northwest side neighborhood centered around its beautiful namesake park and the iconic Portage Theater. The area features an increasing number of condominium conversions and townhome developments as new residents discover its affordability. We provide straightforward, value-driven property management to Portage Park associations looking for professional service at competitive rates.',
+    description: 'Portage Park is a large northwest side neighborhood centered around its beautiful namesake park and the iconic Portage Theater. The area features an increasing number of condominium conversions and townhome developments as new residents discover the neighborhood. We provide straightforward, professional property management to Portage Park associations that expect responsive, dependable service.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60634', '60641']
   },
@@ -290,21 +290,21 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Avondale',
     slug: 'avondale',
-    description: 'Avondale is a rapidly growing northwest side neighborhood attracting new residents with its affordable housing, craft breweries, and creative energy. The area features a growing number of condominium conversions and new townhome developments. We help Avondale associations navigate the neighborhood\'s evolution with forward-looking management strategies.',
+    description: 'Avondale is a rapidly growing northwest side neighborhood attracting new residents with its craft breweries, dining scene, and creative energy. The area features a growing number of condominium conversions and new townhome developments. We help Avondale associations navigate the neighborhood\'s evolution with forward-looking management strategies.',
     propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
     zipCodes: ['60618', '60647']
   },
   {
     name: 'Hermosa',
     slug: 'hermosa',
-    description: 'Hermosa is an affordable, predominantly residential neighborhood on Chicago\'s northwest side with a strong Latino cultural identity. The area features a growing number of condominium and homeowner associations seeking professional management. We provide bilingual, community-oriented property management services that meet the specific needs of Hermosa\'s residential associations.',
+    description: 'Hermosa is a predominantly residential neighborhood on Chicago\'s northwest side with a strong Latino cultural identity. The area features a growing number of condominium and homeowner associations seeking professional management. We provide bilingual, community-oriented property management services that meet the specific needs of Hermosa\'s residential associations.',
     propertyTypes: ['condominiums', 'HOAs'],
     zipCodes: ['60639']
   },
   {
     name: 'Belmont Cragin',
     slug: 'belmont-cragin',
-    description: 'Belmont Cragin is one of Chicago\'s most populated neighborhoods, featuring a vibrant commercial district and a strong residential community. The area has growing demand for professional property management as condominium and townhome associations mature. We serve Belmont Cragin with affordable, reliable management that helps associations build strong financial foundations.',
+    description: 'Belmont Cragin is one of Chicago\'s most populated neighborhoods, featuring a vibrant commercial district and a strong residential community. The area has growing demand for professional property management as condominium and townhome associations mature. We serve Belmont Cragin with responsive, reliable management that helps associations build strong financial foundations.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60639', '60641']
   },
@@ -318,7 +318,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Dunning',
     slug: 'dunning',
-    description: 'Dunning is a residential neighborhood on the northwest side offering affordable housing options and convenient access to O\'Hare airport. The area features established homeowner associations and growing condominium communities. We bring professional management to Dunning properties, helping boards maintain property values and create welcoming residential communities.',
+    description: 'Dunning is a residential neighborhood on the northwest side offering a strong residential character and convenient access to O\'Hare airport. The area features established homeowner associations and growing condominium communities. We bring professional management to Dunning properties, helping boards maintain property values and create welcoming residential communities.',
     propertyTypes: ['HOAs', 'condominiums', 'townhomes'],
     zipCodes: ['60634']
   },
@@ -409,7 +409,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Mayfair',
     slug: 'mayfair',
-    description: 'Mayfair is a stable residential neighborhood on the northwest side with affordable housing and convenient access to major transportation corridors. The area features a mix of condominium buildings and townhome communities seeking quality management at competitive rates. We deliver reliable, cost-effective property management that helps Mayfair associations maximize their budgets.',
+    description: 'Mayfair is a stable residential neighborhood on the northwest side with convenient access to major transportation corridors. The area features a mix of condominium buildings and townhome communities seeking quality management and responsive service. We deliver reliable, professional property management that helps Mayfair associations steward their budgets with confidence.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60630', '60646']
   },

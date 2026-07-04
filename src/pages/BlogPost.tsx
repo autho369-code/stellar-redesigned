@@ -1,8 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Calendar, Clock, Tag, User, ChevronRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
-import { CTASection } from '../components/ui/CTASection';
 import { getBlogPostBySlug, blogPosts } from '../data/blog-posts';
 
 function formatDate(dateString: string): string {
@@ -61,120 +60,158 @@ export default function BlogPost() {
         </script>
       </Helmet>
 
-      {/* Breadcrumb */}
-      <nav
-        aria-label="Breadcrumb"
-        className="bg-gray-50 border-b border-gray-200"
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <ol className="flex items-center gap-1 text-sm text-gray-500 flex-wrap">
-            <li>
-              <Link to="/" className="hover:text-navy-600 transition-colors">
-                Home
-              </Link>
-            </li>
-            <li>
-              <ChevronRight className="w-3.5 h-3.5" />
-            </li>
-            <li>
-              <Link
-                to="/blog"
-                className="hover:text-navy-600 transition-colors"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <ChevronRight className="w-3.5 h-3.5" />
-            </li>
-            <li className="text-gray-900 font-medium truncate max-w-xs sm:max-w-md">
-              {post.title}
-            </li>
-          </ol>
-        </div>
-      </nav>
+      {/* ── Header ─────────────────────────────────────────────── */}
+      <header className="relative bg-paper overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.35] pointer-events-none"
+          style={{
+            backgroundImage:
+              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
+          }}
+        />
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-14 lg:pb-16">
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="mb-10">
+            <ol className="flex items-center gap-1.5 text-[10px] uppercase tracking-luxe text-slate-400 flex-wrap">
+              <li>
+                <Link to="/" className="hover:text-gold-600 transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <ChevronRight className="w-3 h-3" strokeWidth={1.25} />
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-gold-600 transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <ChevronRight className="w-3 h-3" strokeWidth={1.25} />
+              </li>
+              <li className="text-slate-500 truncate max-w-xs sm:max-w-md">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
 
-      {/* Post Header */}
-      <header className="bg-white py-12 sm:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-1.5 bg-navy-50 text-navy-700 px-3 py-1 rounded-full text-sm font-medium">
-              <Tag className="w-3.5 h-3.5" />
-              {post.category}
-            </span>
-            <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
-              <Clock className="w-3.5 h-3.5" />
-              {post.readTime}
-            </span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-display leading-tight">
+          <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+            <span className="accent-rule" />
+            {post.category}
+          </p>
+          <h1 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.06] text-balance mb-8">
             {post.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-            <span className="inline-flex items-center gap-1.5">
-              <User className="w-4 h-4" />
-              {post.author}
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" />
-              {formatDate(post.date)}
-            </span>
-          </div>
+          <p className="text-[10px] uppercase tracking-luxe text-slate-500">
+            {post.author} · {formatDate(post.date)} · {post.readTime}
+          </p>
         </div>
       </header>
 
-      {/* Post Content */}
-      <article className="bg-white pb-16 sm:pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── Post Content ───────────────────────────────────────── */}
+      <article className="bg-white border-t border-slate-200 py-16 lg:py-24">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
           <div
             className="
-              [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:font-bold [&>h2]:text-gray-900 [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:font-display
-              [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:text-gray-800 [&>h3]:mt-8 [&>h3]:mb-3
-              [&>p]:text-gray-700 [&>p]:leading-relaxed [&>p]:mb-5 [&>p]:text-lg
-              [&>ul]:my-5 [&>ul]:space-y-3 [&>ul]:list-disc [&>ul]:pl-6
-              [&>ul>li]:text-gray-700 [&>ul>li]:text-lg [&>ul>li]:leading-relaxed
-              [&_a]:text-navy-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-navy-300 hover:[&_a]:text-navy-700 hover:[&_a]:decoration-navy-500 [&_a]:transition-colors
-              [&_strong]:text-gray-900 [&_strong]:font-semibold
+              [&>h2]:font-display [&>h2]:font-light [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:text-ink [&>h2]:mt-14 [&>h2]:mb-5
+              [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-10 [&>h3]:mb-4
+              [&>p]:text-slate-600 [&>p]:font-light [&>p]:leading-relaxed [&>p]:mb-6 [&>p]:text-lg
+              [&>ul]:my-6 [&>ul]:space-y-3 [&>ul]:list-disc [&>ul]:pl-6
+              [&>ul>li]:text-slate-600 [&>ul>li]:font-light [&>ul>li]:text-lg [&>ul>li]:leading-relaxed
+              [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
+              [&_strong]:text-ink [&_strong]:font-semibold
             "
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </div>
       </article>
 
-      {/* Related Posts */}
+      {/* ── Related Posts ──────────────────────────────────────── */}
       {relatedPosts.length > 0 && (
-        <section className="bg-gray-50 py-16 sm:py-20 border-t border-gray-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 font-display">
-              Related Articles
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="bg-ivory-100 border-t border-slate-200 py-24 lg:py-32">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="max-w-2xl mb-14">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Keep Reading
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
+                Related <em className="font-medium text-gold-600">articles.</em>
+              </h2>
+            </div>
+
+            <div className="border-t border-slate-200">
               {relatedPosts.map((related) => (
-                <article
+                <Link
                   key={related.slug}
-                  className="bg-white rounded-xl shadow-card hover:shadow-card-hover transition-shadow duration-300 p-6"
+                  to={`/blog/${related.slug}`}
+                  className="group grid lg:grid-cols-12 gap-4 lg:gap-8 items-baseline py-8 lg:py-10 border-b border-slate-200 transition-colors duration-300 hover:bg-ivory-50 lg:px-6 lg:-mx-6"
                 >
-                  <span className="text-sm text-navy-600 font-medium">
+                  <p className="lg:col-span-3 text-[10px] uppercase tracking-luxe text-gold-600">
                     {related.category}
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-900 mt-2 mb-3">
-                    <Link
-                      to={`/blog/${related.slug}`}
-                      className="hover:text-navy-600 transition-colors"
-                    >
+                  </p>
+                  <div className="lg:col-span-8">
+                    <h3 className="font-display text-xl lg:text-2xl text-ink group-hover:text-navy-700 transition-colors duration-300 mb-3">
                       {related.title}
-                    </Link>
-                  </h3>
-                  <p className="text-gray-600 text-sm">{related.excerpt}</p>
-                </article>
+                    </h3>
+                    <p className="text-sm text-slate-600 font-light leading-relaxed max-w-3xl">{related.excerpt}</p>
+                  </div>
+                  <span className="lg:col-span-1 justify-self-start lg:justify-self-end self-center">
+                    <ArrowUpRight
+                      className="w-5 h-5 text-slate-400 transition-all duration-300 group-hover:text-gold-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      strokeWidth={1.25}
+                    />
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* CTA */}
-      <CTASection />
+      {/* ── CTA ────────────────────────────────────────────────── */}
+      <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            backgroundImage:
+              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+            backgroundSize: '96px 96px',
+          }}
+          aria-hidden
+        />
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+          <p className="eyebrow text-gold-300 mb-8 flex items-center justify-center gap-4">
+            <span className="accent-rule" /> A Free Consultation <span className="accent-rule" />
+          </p>
+          <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
+            Ready to elevate your
+            <br />
+            community <em className="font-medium text-gold-300">management?</em>
+          </h2>
+          <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+            Join 42 Chicago-area associations that trust Stellar Property
+            Group. Contact us today for a free consultation and discover why we
+            maintain a 96% client retention rate.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <Link
+              to="/contact"
+              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+            >
+              Get a Free Consultation
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <a
+              href="tel:7737280652"
+              className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+            >
+              <Phone className="w-4 h-4" strokeWidth={1.25} /> 773.728.0652
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

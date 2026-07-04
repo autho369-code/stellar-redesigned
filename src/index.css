@@ -9,14 +9,49 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f6f8fa;
+    color: #0d2743;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #3f9ed3;
+    color: #ffffff;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Small-caps editorial label */
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-luxe;
+  }
+
+  /* Short horizontal rule used beside eyebrows */
+  .accent-rule {
+    @apply inline-block w-10 h-px bg-gold-500 align-middle;
+  }
+
+  .gold-rule {
+    @apply inline-block w-10 h-px bg-gold-500 align-middle;
+  }
+
+  .text-accent-gradient {
+    background: linear-gradient(100deg, #64b1dc 0%, #3f9ed3 55%, #8ec7e7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(100deg, #64b1dc 0%, #3f9ed3 55%, #8ec7e7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .animate-fade-up {
