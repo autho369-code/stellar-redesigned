@@ -115,11 +115,11 @@ const schema = {
   '@graph': [
     {
       '@type': ['ProfessionalService', 'LocalBusiness'],
-      '@id': 'https://stellarpropertygroup.com/#business',
+      '@id': 'https://www.stellarpropertygroup.com/#business',
       name: 'Stellar Property Management',
       description:
         'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 42 associations and 2,450+ units under management with a 96% client retention rate.',
-      url: 'https://stellarpropertygroup.com',
+      url: 'https://www.stellarpropertygroup.com',
       telephone: '+1-773-728-0652',
       email: 'mirsad@stellarpropertygroup.com',
       priceRange: '$$$',
@@ -154,14 +154,14 @@ const schema = {
             '@type': 'Service',
             name: s.title,
             description: s.desc,
-            url: `https://stellarpropertygroup.com${s.href}`,
+            url: `https://www.stellarpropertygroup.com${s.href}`,
           },
         })),
       },
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://stellarpropertygroup.com/#faq',
+      '@id': 'https://www.stellarpropertygroup.com/#faq',
       mainEntity: faqs.map(({ q, a }) => ({
         '@type': 'Question',
         name: q,
@@ -170,10 +170,10 @@ const schema = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://stellarpropertygroup.com/#website',
-      url: 'https://stellarpropertygroup.com',
+      '@id': 'https://www.stellarpropertygroup.com/#website',
+      url: 'https://www.stellarpropertygroup.com',
       name: 'Stellar Property Management',
-      publisher: { '@id': 'https://stellarpropertygroup.com/#business' },
+      publisher: { '@id': 'https://www.stellarpropertygroup.com/#business' },
     },
   ],
 };
@@ -201,11 +201,11 @@ export default function Home() {
           name="description"
           content="The art of a well-run building. Condominium, HOA, and townhome association management for Chicago's finest addresses. 42 associations, 2,450+ residences, 96% retention. Since 2007."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com" />
         <meta property="og:title" content="Stellar Property Management | Condominium & HOA Management, Chicago" />
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://stellarpropertygroup.com" />
+        <meta property="og:url" content="https://www.stellarpropertygroup.com" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

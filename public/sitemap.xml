@@ -1,667 +1,667 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stellarpropertygroup.com/</loc>
+    <loc>https://www.stellarpropertygroup.com/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/about</loc>
+    <loc>https://www.stellarpropertygroup.com/about</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stellarpropertygroup.com/services/condominium-management</loc>
+    <loc>https://www.stellarpropertygroup.com/services</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/hoa-management</loc>
+    <loc>https://www.stellarpropertygroup.com/services/condominium-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/townhome-management</loc>
+    <loc>https://www.stellarpropertygroup.com/services/hoa-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/financial-management</loc>
+    <loc>https://www.stellarpropertygroup.com/services/townhome-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/maintenance-coordination</loc>
+    <loc>https://www.stellarpropertygroup.com/services/financial-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/board-support</loc>
+    <loc>https://www.stellarpropertygroup.com/services/maintenance-coordination</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/services/violation-management</loc>
+    <loc>https://www.stellarpropertygroup.com/services/board-support</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/service-areas</loc>
+    <loc>https://www.stellarpropertygroup.com/services/violation-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-chicago</loc>
+    <loc>https://www.stellarpropertygroup.com/service-areas</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.stellarpropertygroup.com/property-management-chicago</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog</loc>
+    <loc>https://www.stellarpropertygroup.com/blog</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/contact</loc>
+    <loc>https://www.stellarpropertygroup.com/contact</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/resources</loc>
+    <loc>https://www.stellarpropertygroup.com/resources</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/privacy-policy</loc>
+    <loc>https://www.stellarpropertygroup.com/privacy-policy</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/terms-of-service</loc>
+    <loc>https://www.stellarpropertygroup.com/terms-of-service</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-lincoln-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-lincoln-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-lakeview</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-lakeview</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-rogers-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-rogers-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-edgewater</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-edgewater</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-uptown</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-uptown</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-andersonville</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-andersonville</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-ravenswood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-ravenswood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-lincoln-square</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-lincoln-square</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-albany-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-albany-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-north-center</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-north-center</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-roscoe-village</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-roscoe-village</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-bucktown</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-bucktown</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-wicker-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-wicker-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-logan-square</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-logan-square</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-humboldt-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-humboldt-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-ukrainian-village</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-ukrainian-village</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-west-town</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-west-town</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-river-north</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-river-north</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-streeterville</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-streeterville</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-gold-coast</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-gold-coast</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-old-town</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-old-town</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-near-north-side</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-near-north-side</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-loop</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-loop</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-south-loop</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-south-loop</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-printers-row</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-printers-row</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-west-loop</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-west-loop</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-fulton-market</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-fulton-market</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-pilsen</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-pilsen</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-bridgeport</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-bridgeport</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-hyde-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-hyde-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-kenwood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-kenwood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-bronzeville</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-bronzeville</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-south-shore</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-south-shore</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-beverly</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-beverly</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-mount-greenwood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-mount-greenwood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-edison-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-edison-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-norwood-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-norwood-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-jefferson-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-jefferson-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-portage-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-portage-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-irving-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-irving-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-avondale</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-avondale</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-hermosa</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-hermosa</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-belmont-cragin</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-belmont-cragin</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-montclare</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-montclare</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-dunning</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-dunning</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-forest-glen</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-forest-glen</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-north-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-north-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-west-ridge</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-west-ridge</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-peterson-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-peterson-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-budlong-woods</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-budlong-woods</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-arcadia-terrace</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-arcadia-terrace</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-bowmanville</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-bowmanville</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-ravenswood-manor</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-ravenswood-manor</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-sauganash</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-sauganash</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-wildwood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-wildwood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-edgebrook</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-edgebrook</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-old-irving-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-old-irving-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-mayfair</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-mayfair</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-north-mayfair</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-north-mayfair</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-galewood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-galewood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-austin</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-austin</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-oak-park-adjacent</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-oak-park-adjacent</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-lakeview-east</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-lakeview-east</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-boystown</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-boystown</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-wrigleyville</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-wrigleyville</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-sheffield</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-sheffield</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-depaul</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-depaul</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-ranch-triangle</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-ranch-triangle</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-wrightwood</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-wrightwood</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-east-village</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-east-village</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-noble-square</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-noble-square</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-goose-island</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-goose-island</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-evanston</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-evanston</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-skokie</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-skokie</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-glenview</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-glenview</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-wilmette</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-wilmette</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-winnetka</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-winnetka</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-highland-park</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-highland-park</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-northbrook</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-northbrook</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-glencoe</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-glencoe</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-kenilworth</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-kenilworth</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-lake-forest</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-lake-forest</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/property-management-deerfield</loc>
+    <loc>https://www.stellarpropertygroup.com/property-management-deerfield</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/ai-in-condo-management</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/ai-in-condo-management</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/are-hoa-condo-rules-enforceable-illinois</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/are-hoa-condo-rules-enforceable-illinois</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/common-condo-rule-violations-chicago</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/common-condo-rule-violations-chicago</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/condominium-property-management-chicago-what-board-members-should-expect</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/condominium-property-management-chicago-what-board-members-should-expect</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/condo-reserve-funds-explained</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/condo-reserve-funds-explained</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/condo-special-assessments-illinois</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/condo-special-assessments-illinois</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/hoa-insurance-costs-illinois</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/hoa-insurance-costs-illinois</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/illinois-condo-law-updates-2026</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/illinois-condo-law-updates-2026</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/self-managed-condo-association-problems</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/self-managed-condo-association-problems</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stellarpropertygroup.com/blog/why-condo-boards-fail</loc>
+    <loc>https://www.stellarpropertygroup.com/blog/why-condo-boards-fail</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -118,7 +118,7 @@ export default function Resources() {
           name="description"
           content="Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/resources" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/resources" />
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

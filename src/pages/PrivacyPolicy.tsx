@@ -153,7 +153,7 @@ export default function PrivacyPolicy() {
           name="description"
           content="How Stellar Property Management collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies, no data selling."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/privacy-policy" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/privacy-policy" />
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

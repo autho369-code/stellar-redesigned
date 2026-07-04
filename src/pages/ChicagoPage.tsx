@@ -67,26 +67,26 @@ const schema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://stellarpropertygroup.com/property-management-chicago#service',
+      '@id': 'https://www.stellarpropertygroup.com/property-management-chicago#service',
       name: 'Property Management in Chicago',
       description:
         'Condominium, HOA, and townhome association management across 70+ Chicago neighborhoods. Dedicated managers, flat-fee pricing, 24/7 emergency response. Since 2007.',
-      url: 'https://stellarpropertygroup.com/property-management-chicago',
+      url: 'https://www.stellarpropertygroup.com/property-management-chicago',
       serviceType: 'Community Association Management',
       areaServed: { '@type': 'City', name: 'Chicago', containedInPlace: { '@type': 'State', name: 'Illinois' } },
-      provider: { '@id': 'https://stellarpropertygroup.com/#business' },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
     },
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stellarpropertygroup.com' },
-        { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://stellarpropertygroup.com/service-areas' },
-        { '@type': 'ListItem', position: 3, name: 'Chicago', item: 'https://stellarpropertygroup.com/property-management-chicago' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+        { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://www.stellarpropertygroup.com/service-areas' },
+        { '@type': 'ListItem', position: 3, name: 'Chicago', item: 'https://www.stellarpropertygroup.com/property-management-chicago' },
       ],
     },
     {
       '@type': 'FAQPage',
-      '@id': 'https://stellarpropertygroup.com/property-management-chicago#faq',
+      '@id': 'https://www.stellarpropertygroup.com/property-management-chicago#faq',
       mainEntity: faqs.map(({ q, a }) => ({
         '@type': 'Question',
         name: q,
@@ -105,7 +105,7 @@ export default function ChicagoPage() {
           name="description"
           content="Chicago condominium, HOA & townhome association management across 70+ neighborhoods — Gold Coast to Hyde Park. Dedicated managers, flat fees, 24/7 response. 42 associations, 96% retention, since 2007."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/property-management-chicago" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/property-management-chicago" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

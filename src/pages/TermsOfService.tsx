@@ -145,7 +145,7 @@ export default function TermsOfService() {
           name="description"
           content="Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/terms-of-service" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/terms-of-service" />
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

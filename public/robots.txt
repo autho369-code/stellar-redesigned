@@ -14,4 +14,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://stellarpropertygroup.com/sitemap.xml
+Sitemap: https://www.stellarpropertygroup.com/sitemap.xml

@@ -35,7 +35,7 @@ export default function BoardSupport() {
       <SEOHead
         title="Board Support & Governance Services | Stellar Property Management"
         description="Professional board support and governance services for Chicago community associations. Meeting coordination, strategic planning, new board member orientation, and document management. CAI-certified since 2007."
-        canonical="https://stellarpropertygroup.com/services/board-support"
+        canonical="https://www.stellarpropertygroup.com/services/board-support"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

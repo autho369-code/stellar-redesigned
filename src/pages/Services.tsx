@@ -87,7 +87,7 @@ const schema = {
       '@type': 'Service',
       name: s.title,
       description: s.description,
-      url: `https://stellarpropertygroup.com${s.href}`,
+      url: `https://www.stellarpropertygroup.com${s.href}`,
       provider: {
         '@type': 'ProfessionalService',
         name: 'Stellar Property Management',
@@ -107,7 +107,7 @@ export default function Services() {
           name="description"
           content="Seven disciplines of professional community management for Chicago condominiums, HOAs, and townhomes: operations, financials, maintenance, board support, and more."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/services" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/services" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

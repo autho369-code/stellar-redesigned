@@ -27,9 +27,9 @@ export default function ServiceAreas() {
     name: 'Chicago Property Management Service Areas',
     description:
       'Professional property management serving Chicago neighborhoods and North Shore communities. Condominium, HOA, and townhome management.',
-    url: 'https://stellarpropertygroup.com/service-areas',
+    url: 'https://www.stellarpropertygroup.com/service-areas',
     serviceType: 'Community Association Management',
-    provider: { '@id': 'https://stellarpropertygroup.com/#business' },
+    provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
     areaServed: neighborhoods.map((n) => ({
       '@type': 'Place',
       name: n.region === 'north-shore' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
@@ -44,7 +44,7 @@ export default function ServiceAreas() {
           name="description"
           content="Stellar Property Management provides professional condominium, HOA, and townhome management across Chicago neighborhoods and North Shore communities including Evanston, Wilmette, Winnetka, and Highland Park. Find your community and get a free quote."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/service-areas" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 

@@ -35,7 +35,7 @@ export default function HOAManagement() {
       <SEOHead
         title="HOA Management Services in Chicago | Stellar Property Management"
         description="Professional HOA management for Chicago-area homeowners associations. CC&amp;R enforcement, community engagement, landscaping coordination, architectural review, and full-service association management since 2007."
-        canonical="https://stellarpropertygroup.com/services/hoa-management"
+        canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

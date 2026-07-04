@@ -35,7 +35,7 @@ export default function TownhomeManagement() {
       <SEOHead
         title="Townhome Association Management in Chicago | Stellar Property Management"
         description="Specialized townhome association management in Chicago and suburbs. Exterior maintenance coordination, shared space management, and personalized service for smaller communities. Serving Chicagoland since 2007."
-        canonical="https://stellarpropertygroup.com/services/townhome-management"
+        canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

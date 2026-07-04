@@ -38,11 +38,11 @@ export default function BlogPost() {
     publisher: {
       '@type': 'Organization',
       name: 'Stellar Property Management',
-      url: 'https://stellarpropertygroup.com',
+      url: 'https://www.stellarpropertygroup.com',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://stellarpropertygroup.com/blog/${post.slug}`,
+      '@id': `https://www.stellarpropertygroup.com/blog/${post.slug}`,
     },
   };
 
@@ -51,7 +51,7 @@ export default function BlogPost() {
       <SEOHead
         title={post.title}
         description={post.metaDescription}
-        canonical={`https://stellarpropertygroup.com/blog/${post.slug}`}
+        canonical={`https://www.stellarpropertygroup.com/blog/${post.slug}`}
         ogType="article"
       />
       <Helmet>

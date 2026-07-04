@@ -40,7 +40,7 @@ export default function Contact() {
           name="description"
           content="Contact Stellar Property Management for a free property management quote. Located at 5107 N Western Ave, Suite 1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/contact" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

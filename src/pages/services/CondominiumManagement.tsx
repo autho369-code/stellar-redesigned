@@ -35,7 +35,7 @@ export default function CondominiumManagement() {
       <SEOHead
         title="Condominium Management Services in Chicago | Stellar Property Management"
         description="Full-service condominium management in Chicago and the North Shore. Illinois Condo Property Act compliance, board governance, financial oversight, and 24/7 emergency support. Serving 42 associations since 2007."
-        canonical="https://stellarpropertygroup.com/services/condominium-management"
+        canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

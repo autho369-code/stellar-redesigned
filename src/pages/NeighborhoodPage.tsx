@@ -128,27 +128,27 @@ export default function NeighborhoodPage() {
         '@type': 'Service',
         name: `Property Management in ${neighborhood.name}, ${locale}`,
         description: `Professional condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale}.`,
-        url: `https://stellarpropertygroup.com/property-management-${neighborhood.slug}`,
+        url: `https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`,
         serviceType: 'Community Association Management',
         areaServed: {
           '@type': 'Place',
           name: placeName
         },
         provider: {
-          '@id': 'https://stellarpropertygroup.com/#business'
+          '@id': 'https://www.stellarpropertygroup.com/#business'
         }
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stellarpropertygroup.com' },
-          { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://stellarpropertygroup.com/service-areas' },
-          { '@type': 'ListItem', position: 3, name: neighborhood.name, item: `https://stellarpropertygroup.com/property-management-${neighborhood.slug}` }
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+          { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://www.stellarpropertygroup.com/service-areas' },
+          { '@type': 'ListItem', position: 3, name: neighborhood.name, item: `https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}` }
         ]
       },
       {
         '@type': 'FAQPage',
-        '@id': `https://stellarpropertygroup.com/property-management-${neighborhood.slug}#faq`,
+        '@id': `https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}#faq`,
         mainEntity: faqs.map(({ q, a }) => ({
           '@type': 'Question',
           name: q,
@@ -168,7 +168,7 @@ export default function NeighborhoodPage() {
         />
         <link
           rel="canonical"
-          href={`https://stellarpropertygroup.com/property-management-${neighborhood.slug}`}
+          href={`https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`}
         />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>

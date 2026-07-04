@@ -69,7 +69,7 @@ export default function About() {
           name="description"
           content="Learn about Stellar Property Management — Chicago's trusted property management company since 2007. 42 associations, 2,450+ units, and a 96% client retention rate. CAI, IREM, IDFPR, and CCIM certified."
         />
-        <link rel="canonical" href="https://stellarpropertygroup.com/about" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/about" />
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

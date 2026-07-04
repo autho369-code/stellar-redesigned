@@ -35,7 +35,7 @@ export default function ViolationManagement() {
       <SEOHead
         title="Violation Management & Enforcement | Stellar Property Management"
         description="Professional violation management and enforcement for Chicago community associations. Fair due process, progressive enforcement, violation tracking, and Illinois compliance. Protecting community standards since 2007."
-        canonical="https://stellarpropertygroup.com/services/violation-management"
+        canonical="https://www.stellarpropertygroup.com/services/violation-management"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

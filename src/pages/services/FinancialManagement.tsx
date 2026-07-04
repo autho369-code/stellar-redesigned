@@ -35,7 +35,7 @@ export default function FinancialManagement() {
       <SEOHead
         title="Association Financial Management | Stellar Property Management"
         description="Expert financial management for Chicago-area community associations. Budgeting, reserve studies, assessment collection, financial reporting, and audit preparation. Trusted by 42 associations since 2007."
-        canonical="https://stellarpropertygroup.com/services/financial-management"
+        canonical="https://www.stellarpropertygroup.com/services/financial-management"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}

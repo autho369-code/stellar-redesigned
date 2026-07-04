@@ -35,7 +35,7 @@ export default function MaintenanceCoordination() {
       <SEOHead
         title="Property Maintenance Coordination | Stellar Property Management"
         description="Professional property maintenance coordination for Chicago community associations. Preventive maintenance programs, 24/7 emergency response, vendor management, and capital project oversight since 2007."
-        canonical="https://stellarpropertygroup.com/services/maintenance-coordination"
+        canonical="https://www.stellarpropertygroup.com/services/maintenance-coordination"
       />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
