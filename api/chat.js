@@ -37,10 +37,24 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { messages } = req.body || {};
+    const { messages, ownerContext } = req.body || {};
     if (!Array.isArray(messages) || messages.length === 0 || messages.length > 30) {
       res.status(400).json({ error: 'Bad request' });
       return;
+    }
+
+    // Owner personalization: the widget derives this under the visitor's own
+    // RLS-scoped session (they can only ever read their own records), so it
+    // is safe to use for greeting/context. Sanitized and length-capped.
+    let ownerNote = '';
+    if (ownerContext && typeof ownerContext === 'object') {
+      const clean = (v) => (typeof v === 'string' ? v.replace(/[\r\n]+/g, ' ').slice(0, 120) : '');
+      const name = clean(ownerContext.name);
+      const unit = clean(ownerContext.unit);
+      const assoc = clean(ownerContext.association);
+      if (name) {
+        ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${name}${unit ? `, unit ${unit}` : ''}${assoc ? `, ${assoc}` : ''}. Greet them by first name and tailor answers to their community. Still never reveal information about other owners or units.`;
+      }
     }
 
     // Only pass role/content through; cap message sizes.
@@ -59,7 +73,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
         max_tokens: 400,
-        system: SYSTEM_PROMPT,
+        system: SYSTEM_PROMPT + ownerNote,
         messages: safeMessages,
       }),
     });

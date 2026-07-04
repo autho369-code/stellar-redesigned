@@ -1,6 +1,14 @@
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, ArrowUpRight } from 'lucide-react';
 import { submitLeadToOps } from '../lib/leads';
+import {
+  fetchOwnerProfile,
+  signInWithGoogle,
+  sendMagicLink,
+  signOut,
+  type OwnerProfile,
+} from '../lib/ownerAuth';
+import { getSupabase } from '../lib/supabaseClient';
 
 /**
  * Arthur — the Stellar site concierge.
@@ -111,11 +119,51 @@ export default function ArthurConcierge() {
   const [leadMode, setLeadMode] = useState(false);
   const [lead, setLead] = useState({ name: '', email: '', building: '' });
   const [leadSent, setLeadSent] = useState(false);
+  const [owner, setOwner] = useState<OwnerProfile | null>(null);
+  const [authView, setAuthView] = useState<'chat' | 'signin'>('chat');
+  const [signinEmail, setSigninEmail] = useState('');
+  const [linkSent, setLinkSent] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
-  }, [messages, leadMode, open]);
+  }, [messages, leadMode, open, authView]);
+
+  // Detect an existing (or just-completed magic-link/Google) session and
+  // load the owner's profile — reads are RLS-scoped to their own records.
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      const profile = await fetchOwnerProfile();
+      if (!cancelled) setOwner(profile);
+    };
+    load();
+    const { data: sub } = getSupabase().auth.onAuthStateChange((event) => {
+      if (event === 'SIGNED_IN') load();
+      if (event === 'SIGNED_OUT') setOwner(null);
+    });
+    return () => {
+      cancelled = true;
+      sub.subscription.unsubscribe();
+    };
+  }, []);
+
+  // Personalized greeting once an owner is recognized on a fresh conversation.
+  useEffect(() => {
+    if (owner && messages.length === 1) {
+      const first = owner.name.split(' ')[0];
+      const where = [owner.unitNumber && `unit ${owner.unitNumber}`, owner.associationName]
+        .filter(Boolean)
+        .join(' at ');
+      setMessages([
+        {
+          role: 'assistant',
+          content: `Welcome back, ${first}${where ? ` — ${where}` : ''}. I can help with payments, maintenance, documents, or anything about your community. How may I help today?`,
+        },
+      ]);
+      setAuthView('chat');
+    }
+  }, [owner]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const ask = async (text: string) => {
     const trimmed = text.trim();
@@ -137,7 +185,12 @@ export default function ArthurConcierge() {
       const r = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: next.slice(1) }), // drop greeting
+        body: JSON.stringify({
+          messages: next.slice(1), // drop greeting
+          ownerContext: owner
+            ? { name: owner.name, unit: owner.unitNumber, association: owner.associationName }
+            : null,
+        }),
       });
       if (!r.ok) throw new Error(String(r.status));
       const data = await r.json();
@@ -211,10 +264,103 @@ export default function ArthurConcierge() {
           {/* Header */}
           <div className="bg-ink text-paper px-6 py-5">
             <p className="text-[9px] uppercase tracking-luxe text-gold-300 mb-1">Stellar Property Management</p>
-            <p className="font-display text-xl">Arthur, at your service.</p>
+            <div className="flex items-center justify-between gap-4">
+              <p className="font-display text-xl">Arthur, at your service.</p>
+              {owner ? (
+                <button
+                  onClick={() => { signOut(); setMessages([GREETING]); }}
+                  className="text-[9px] uppercase tracking-luxe text-paper/50 hover:text-gold-300 transition-colors whitespace-nowrap"
+                >
+                  Sign out
+                </button>
+              ) : (
+                <button
+                  onClick={() => setAuthView(authView === 'signin' ? 'chat' : 'signin')}
+                  className="text-[9px] uppercase tracking-luxe text-gold-300 hover:text-gold-200 transition-colors whitespace-nowrap"
+                >
+                  Owner sign-in
+                </button>
+              )}
+            </div>
+            {owner && (
+              <p className="text-[10px] text-paper/50 mt-1 font-light">
+                Signed in as {owner.name}
+                {owner.associationName ? ` · ${owner.associationName}` : ''}
+              </p>
+            )}
           </div>
 
+          {/* Owner sign-in view */}
+          {authView === 'signin' && !owner && (
+            <div className="flex-1 overflow-y-auto px-6 py-6 space-y-5">
+              <p className="text-sm text-slate-600 font-light leading-relaxed">
+                Sign in once and Arthur will recognize you on this device — your
+                unit, your association, your questions answered personally.
+              </p>
+
+              <button
+                onClick={() => signInWithGoogle()}
+                className="w-full flex items-center justify-center gap-3 bg-ink text-paper py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:bg-navy-700 transition-colors"
+              >
+                <svg viewBox="0 0 24 24" className="w-4 h-4" aria-hidden>
+                  <path fill="#EA4335" d="M12 5.04c1.62 0 3.06.56 4.2 1.64l3.12-3.12C17.4 1.79 14.9.75 12 .75 7.55.75 3.73 3.3 1.86 7.02l3.66 2.84C6.43 7.1 8.99 5.04 12 5.04z"/>
+                  <path fill="#4285F4" d="M23.25 12.27c0-.93-.08-1.6-.26-2.31H12v4.51h6.44c-.13 1.08-.83 2.7-2.39 3.79l3.57 2.77c2.14-1.97 3.63-4.88 3.63-8.76z"/>
+                  <path fill="#FBBC05" d="M5.53 14.14a7.1 7.1 0 0 1-.38-2.14c0-.75.14-1.47.36-2.14L1.86 7.02A11.2 11.2 0 0 0 .75 12c0 1.8.43 3.5 1.11 4.98l3.67-2.84z"/>
+                  <path fill="#34A853" d="M12 23.25c3.04 0 5.6-1 7.46-2.72l-3.57-2.77c-.95.66-2.23 1.13-3.89 1.13-3.01 0-5.57-2.06-6.48-4.75l-3.66 2.84c1.86 3.72 5.69 6.27 10.14 6.27z"/>
+                </svg>
+                Continue with Google
+              </button>
+
+              <div className="flex items-center gap-4">
+                <span className="flex-1 h-px bg-slate-200" />
+                <span className="text-[9px] uppercase tracking-luxe text-slate-400">or</span>
+                <span className="flex-1 h-px bg-slate-200" />
+              </div>
+
+              {linkSent ? (
+                <div className="border border-gold-300 bg-gold-50 p-4 text-sm text-slate-700 font-light leading-relaxed">
+                  Check your inbox — we sent a one-click sign-in link to{' '}
+                  <strong className="font-semibold">{signinEmail}</strong>. Open it on this
+                  device and you&rsquo;ll be signed in automatically.
+                </div>
+              ) : (
+                <>
+                  <input
+                    type="email"
+                    value={signinEmail}
+                    onChange={(e) => setSigninEmail(e.target.value)}
+                    placeholder="Email on file with your association"
+                    className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
+                  />
+                  <button
+                    onClick={async () => {
+                      if (!signinEmail.includes('@')) return;
+                      const ok = await sendMagicLink(signinEmail.trim());
+                      if (ok) setLinkSent(true);
+                    }}
+                    disabled={!signinEmail.includes('@')}
+                    className="w-full border border-slate-300 text-ink py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:border-gold-500 hover:text-gold-600 transition-colors disabled:opacity-40"
+                  >
+                    Email Me a Sign-In Link
+                  </button>
+                </>
+              )}
+
+              <p className="text-[10px] text-slate-400 font-light leading-relaxed">
+                One sign-in per device — no passwords, no codes to retype. Use the
+                email your association has on file.
+              </p>
+              <button
+                onClick={() => setAuthView('chat')}
+                className="text-[10px] uppercase tracking-luxe text-slate-500 hover:text-gold-600 transition-colors"
+              >
+                ← Back to chat
+              </button>
+            </div>
+          )}
+
           {/* Messages */}
+          {(authView === 'chat' || !!owner) && (
           <div ref={scrollRef} className="flex-1 overflow-y-auto px-5 py-5 space-y-4">
             {messages.map((m, i) => (
               <div key={i} className={m.role === 'user' ? 'flex justify-end' : 'flex justify-start'}>
@@ -268,9 +414,10 @@ export default function ArthurConcierge() {
               </div>
             )}
           </div>
+          )}
 
           {/* Quick chips */}
-          {messages.length <= 2 && !leadMode && (
+          {(authView === 'chat' || !!owner) && messages.length <= 2 && !leadMode && (
             <div className="px-5 pb-3 flex flex-wrap gap-2">
               {CHIPS.map((c) => (
                 <button
@@ -285,6 +432,7 @@ export default function ArthurConcierge() {
           )}
 
           {/* Input */}
+          {(authView === 'chat' || !!owner) && (
           <div className="border-t border-slate-200 p-4 flex gap-3">
             <input
               value={input}
@@ -302,13 +450,16 @@ export default function ArthurConcierge() {
               <Send className="w-4 h-4" strokeWidth={1.5} />
             </button>
           </div>
+          )}
 
+          {(authView === 'chat' || !!owner) && (
           <div className="px-5 pb-3 flex items-center justify-between">
             <span className="text-[9px] text-slate-400 font-light">Building emergency? Call 773.728.0652</span>
             <a href="tel:7737280652" className="text-[9px] uppercase tracking-luxe text-gold-600 inline-flex items-center gap-1">
               Call now <ArrowUpRight className="w-3 h-3" />
             </a>
           </div>
+          )}
         </div>
       )}
     </>
