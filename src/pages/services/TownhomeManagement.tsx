@@ -33,7 +33,7 @@ export default function TownhomeManagement() {
   return (
     <>
       <SEOHead
-        title="Townhome Association Management in Chicago | Stellar Property Group"
+        title="Townhome Association Management in Chicago | Stellar Property Management"
         description="Specialized townhome association management in Chicago and suburbs. Exterior maintenance coordination, shared space management, and personalized service for smaller communities. Serving Chicagoland since 2007."
         canonical="https://stellarpropertygroup.com/services/townhome-management"
       />
@@ -93,7 +93,7 @@ export default function TownhomeManagement() {
                 Townhome communities occupy a unique space in the world of community associations. Smaller than high-rise condominiums but more interconnected than single-family HOAs, townhome associations face distinct challenges: shared walls and rooflines, exterior maintenance responsibilities that span multiple units, and intimate community dynamics where every owner voice matters.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                At Stellar Property Group, we have managed townhome communities across Chicago and the North Shore since 2007. We know that townhome associations need a management partner who provides the same caliber of professional service as a large management firm but with the personal touch and accessibility of a boutique operation. That is exactly what we deliver.
+                At Stellar Property Management, we have managed townhome communities across Chicago and the North Shore since 2007. We know that townhome associations need a management partner who provides the same caliber of professional service as a large management firm but with the personal touch and accessibility of a boutique operation. That is exactly what we deliver.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Your dedicated property manager will know every unit number, understand every maintenance schedule, and be personally invested in your community success. We handle the complex coordination of exterior maintenance projects that affect multiple units simultaneously, manage shared infrastructure like parking areas and common landscaping, and ensure your community finances are on solid footing for the long term.

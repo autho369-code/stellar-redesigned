@@ -39,10 +39,10 @@ export default function ServiceAreas() {
   return (
     <>
       <Helmet>
-        <title>Chicago Property Management Service Areas | Stellar Property Group</title>
+        <title>Chicago Property Management Service Areas | Stellar Property Management</title>
         <meta
           name="description"
-          content="Stellar Property Group provides professional condominium, HOA, and townhome management across 24 Chicago neighborhoods. Find your neighborhood and get a free quote."
+          content="Stellar Property Management provides professional condominium, HOA, and townhome management across 24 Chicago neighborhoods. Find your neighborhood and get a free quote."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
@@ -81,7 +81,7 @@ export default function ServiceAreas() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Stellar Property Group proudly serves {neighborhoods.length} neighborhoods across
+                Stellar Property Management proudly serves {neighborhoods.length} neighborhoods across
                 Chicago. From lakefront high-rises to neighborhood townhome communities, we deliver
                 professional management wherever you call home.
               </p>

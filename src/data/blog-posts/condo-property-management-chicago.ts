@@ -5,12 +5,12 @@ export const condoPropertyManagementChicago = {
   metaDescription:
     'Learn what Chicago condo board members should expect from a professional property management company, including financial oversight, maintenance coordination, legal compliance, and transparent communication.',
   date: '2024-11-15',
-  author: 'Stellar Property Group',
+  author: 'Stellar Property Management',
   category: 'Board Education',
   readTime: '8 min read',
   excerpt:
     'Serving on a condo board in Chicago is a significant responsibility. Learn what to expect from a professional property management company and how to evaluate the right partner for your association.',
-  featuredImage: '/images/blog/condo-management-chicago.jpg',
+  featuredImage: '/blog/condominium-property-management-chicago.svg',
   content: `
 <p>Serving on the board of a condominium association in Chicago is a significant responsibility. Board members are entrusted with protecting homeowners' investments, maintaining common areas, ensuring legal compliance, and fostering a well-run community. For many volunteer board members, the scope of these duties quickly becomes overwhelming — especially in a city as complex and regulated as Chicago. That is precisely why most associations turn to a professional <a href="/services/condominium-management">condominium property management company</a> to handle the day-to-day operations and long-term strategic planning their buildings require.</p>
 
@@ -122,8 +122,8 @@ export const condoPropertyManagementChicago = {
 
 <p>Hiring a property management company is one of the most consequential decisions a condo board will make. The right partner will protect your building's value, reduce the burden on volunteer board members, ensure legal compliance, and contribute to a thriving community. The wrong one will create headaches, erode trust, and ultimately cost the association money.</p>
 
-<p>At Stellar Property Group, we specialize in condominium property management throughout Chicago and the surrounding suburbs. Our team combines deep local expertise with transparent financial management, proactive maintenance programs, and technology-driven communication to deliver the level of service your board and your residents deserve. If your association is considering a change or evaluating your current management relationship, we would welcome the opportunity to discuss how we can help.</p>
+<p>At Stellar Property Management, we specialize in condominium property management throughout Chicago and the surrounding suburbs. Our team combines deep local expertise with transparent financial management, proactive maintenance programs, and technology-driven communication to deliver the level of service your board and your residents deserve. If your association is considering a change or evaluating your current management relationship, we would welcome the opportunity to discuss how we can help.</p>
 
-<p><strong><a href="/contact">Contact us today</a> to schedule a free consultation and learn why Chicago boards trust Stellar Property Group to manage their communities.</strong></p>
+<p><strong><a href="/contact">Contact us today</a> to schedule a free consultation and learn why Chicago boards trust Stellar Property Management to manage their communities.</strong></p>
 `,
 };

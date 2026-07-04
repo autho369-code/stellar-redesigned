@@ -124,7 +124,7 @@ export default function NeighborhoodPage() {
   return (
     <>
       <Helmet>
-        <title>Property Management in {neighborhood.name} | Stellar Property Group</title>
+        <title>Property Management in {neighborhood.name} | Stellar Property Management</title>
         <meta
           name="description"
           content={`Professional condominium, HOA, and townhome management in ${neighborhood.name}, Chicago. Trusted by local boards since 2007. Get a free quote today.`}

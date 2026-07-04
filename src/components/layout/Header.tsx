@@ -81,7 +81,7 @@ export default function Header() {
           <Link to="/" className="group flex items-center gap-3">
             <img
               src="/logo-icon.svg"
-              alt="Stellar Property Group logo"
+              alt="Stellar Property Management logo"
               className="w-12 h-12 transition-transform duration-300 group-hover:scale-105"
             />
             <span className="leading-none">
@@ -89,7 +89,7 @@ export default function Header() {
                 Stellar
               </span>
               <span className="block text-[9px] font-semibold uppercase tracking-luxe text-slate-500 mt-1">
-                Property Group · Chicago
+                Chicago Property Management
               </span>
             </span>
           </Link>

@@ -7,7 +7,7 @@ const sections = [
     title: 'Use of This Website',
     body: (
       <p>
-        This website is provided by Stellar Property Group, Inc. (&ldquo;Stellar&rdquo;) for
+        This website is provided by Stellar Property Management, Inc. (&ldquo;Stellar&rdquo;) for
         general information about our community association management services and as a
         convenience for the boards, owners, and residents of the communities we manage. By using
         this website you agree to these Terms of Service. If you do not agree, please do not use
@@ -60,8 +60,8 @@ const sections = [
     title: 'Intellectual Property',
     body: (
       <p>
-        The Stellar Property Group name, logo, and the content, design, and layout of this website
-        are the property of Stellar Property Group, Inc. or its licensors. You may not reproduce,
+        The Stellar Property Management name, logo, and the content, design, and layout of this website
+        are the property of Stellar Property Management, Inc. or its licensors. You may not reproduce,
         distribute, or create derivative works from this website&rsquo;s content for commercial
         purposes without our prior written consent.
       </p>
@@ -87,7 +87,7 @@ const sections = [
         warranties of any kind, express or implied. While we work to keep information current and
         accurate, we do not warrant that the site will be uninterrupted, error-free, or that
         content is complete or up to date. To the fullest extent permitted by law, Stellar
-        Property Group shall not be liable for any indirect, incidental, consequential, or
+        Property Management shall not be liable for any indirect, incidental, consequential, or
         punitive damages arising from your use of this website. Nothing in these terms limits any
         obligation Stellar owes under a written management agreement with an association.
       </p>
@@ -98,7 +98,7 @@ const sections = [
     title: 'Fair Housing Commitment',
     body: (
       <p>
-        Stellar Property Group is committed to compliance with the federal Fair Housing Act, the
+        Stellar Property Management is committed to compliance with the federal Fair Housing Act, the
         Illinois Human Rights Act, and the Chicago Fair Housing Ordinance. We conduct our business
         without regard to race, color, religion, national origin, sex, disability, familial
         status, or any other protected class, and we support the boards we serve in doing the
@@ -140,7 +140,7 @@ export default function TermsOfService() {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | Stellar Property Group</title>
+        <title>Terms of Service | Stellar Property Management</title>
         <meta
           name="description"
           content="Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement."
@@ -191,7 +191,7 @@ export default function TermsOfService() {
           <div className="mt-14 pt-2">
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about these terms</p>
             <p className="text-slate-600 font-light leading-relaxed">
-              Stellar Property Group · 5107 N Western Ave, Suite 1S, Chicago, IL 60625 ·{' '}
+              Stellar Property Management · 5107 N Western Ave, Suite 1S, Chicago, IL 60625 ·{' '}
               <a href="tel:+17737280652" className="text-gold-600 hover:text-gold-500">773.728.0652</a> ·{' '}
               <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
                 mirsad@stellarpropertygroup.com

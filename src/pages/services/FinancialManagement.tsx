@@ -33,7 +33,7 @@ export default function FinancialManagement() {
   return (
     <>
       <SEOHead
-        title="Association Financial Management | Stellar Property Group"
+        title="Association Financial Management | Stellar Property Management"
         description="Expert financial management for Chicago-area community associations. Budgeting, reserve studies, assessment collection, financial reporting, and audit preparation. Trusted by 42 associations since 2007."
         canonical="https://stellarpropertygroup.com/services/financial-management"
       />
@@ -90,7 +90,7 @@ export default function FinancialManagement() {
                 Financial <em className="font-medium text-gold-600">Clarity</em> Your Board Can Count On
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Community association finances are not like any other business. You are managing shared resources on behalf of homeowners who expect every dollar to be spent wisely, reported transparently, and planned strategically. At Stellar Property Group, our financial management services are designed specifically for the unique demands of condo, HOA, and townhome associations in the Chicago area.
+                Community association finances are not like any other business. You are managing shared resources on behalf of homeowners who expect every dollar to be spent wisely, reported transparently, and planned strategically. At Stellar Property Management, our financial management services are designed specifically for the unique demands of condo, HOA, and townhome associations in the Chicago area.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
                 Our accounting team processes thousands of transactions monthly across 42 managed associations. We use industry-leading property management software to maintain real-time financial records, generate accurate reports, and provide your board with the financial visibility needed to govern effectively. Every invoice is verified, every payment is documented, and every financial report is delivered on schedule.
@@ -156,7 +156,7 @@ export default function FinancialManagement() {
             Reserve Planning That Prevents Special <em className="font-medium text-gold-600">Assessments</em>
           </h2>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-            Nothing damages community trust like an unexpected special assessment. Proper reserve planning is the single most important financial practice an association can adopt, and it is an area where many communities fall short. Stellar Property Group takes reserve planning seriously because we have seen firsthand the consequences when associations are caught unprepared for major capital expenses.
+            Nothing damages community trust like an unexpected special assessment. Proper reserve planning is the single most important financial practice an association can adopt, and it is an area where many communities fall short. Stellar Property Management takes reserve planning seriously because we have seen firsthand the consequences when associations are caught unprepared for major capital expenses.
           </p>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
             We coordinate professional reserve studies that inventory every major component of your property, estimate useful life and replacement costs, and establish a funding plan that builds your reserves steadily over time. Our goal is to help your association achieve at least 70% reserve funding, which the Community Associations Institute considers the threshold for a well-funded reserve.

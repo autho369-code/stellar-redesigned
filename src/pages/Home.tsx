@@ -83,8 +83,8 @@ const testimonials = [
 
 const faqs = [
   {
-    q: 'What types of properties does Stellar Property Group manage?',
-    a: 'Stellar Property Group manages condominium associations, homeowner associations (HOAs), and townhome communities exclusively — including high-rises, boutique vintage conversions, and lakefront buildings across Chicago and the North Shore. We do not manage apartment rentals; our entire practice is devoted to community association management.',
+    q: 'What types of properties does Stellar Property Management manage?',
+    a: 'Stellar Property Management manages condominium associations, homeowner associations (HOAs), and townhome communities exclusively — including high-rises, boutique vintage conversions, and lakefront buildings across Chicago and the North Shore. We do not manage apartment rentals; our entire practice is devoted to community association management.',
   },
   {
     q: 'How is Stellar different from large national management firms?',
@@ -99,7 +99,7 @@ const faqs = [
     a: 'Switching is a managed 30–60 day transition. Once your board signs, we handle everything: records retrieval from the outgoing firm, banking migration, vendor transfers, owner communication, and portal setup. Most boards describe the change as far easier than they expected.',
   },
   {
-    q: 'Which Chicago neighborhoods does Stellar Property Group serve?',
+    q: 'Which Chicago neighborhoods does Stellar Property Management serve?',
     a: 'We serve associations throughout Chicago — including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, and South Loop — plus North Shore communities such as Evanston, Wilmette, Winnetka, Glenview, Northbrook, and Highland Park.',
   },
   {
@@ -116,7 +116,7 @@ const schema = {
     {
       '@type': ['ProfessionalService', 'LocalBusiness'],
       '@id': 'https://stellarpropertygroup.com/#business',
-      name: 'Stellar Property Group',
+      name: 'Stellar Property Management',
       description:
         'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 42 associations and 2,450+ units under management with a 96% client retention rate.',
       url: 'https://stellarpropertygroup.com',
@@ -172,7 +172,7 @@ const schema = {
       '@type': 'WebSite',
       '@id': 'https://stellarpropertygroup.com/#website',
       url: 'https://stellarpropertygroup.com',
-      name: 'Stellar Property Group',
+      name: 'Stellar Property Management',
       publisher: { '@id': 'https://stellarpropertygroup.com/#business' },
     },
   ],
@@ -196,13 +196,13 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Stellar Property Group | Condominium &amp; HOA Management, Chicago</title>
+        <title>Stellar Property Management | Condominium &amp; HOA Management, Chicago</title>
         <meta
           name="description"
           content="The art of a well-run building. Condominium, HOA, and townhome association management for Chicago's finest addresses. 42 associations, 2,450+ residences, 96% retention. Since 2007."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com" />
-        <meta property="og:title" content="Stellar Property Group | Condominium & HOA Management, Chicago" />
+        <meta property="og:title" content="Stellar Property Management | Condominium & HOA Management, Chicago" />
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stellarpropertygroup.com" />

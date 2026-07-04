@@ -264,7 +264,7 @@ export function ContactForm() {
         </button>
 
         <p className="text-sm text-gray-600 text-center">
-          By submitting this form, you agree to be contacted by Stellar Property Group regarding your inquiry.
+          By submitting this form, you agree to be contacted by Stellar Property Management regarding your inquiry.
         </p>
       </form>
     </div>

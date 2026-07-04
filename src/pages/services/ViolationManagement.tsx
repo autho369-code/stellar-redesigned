@@ -33,7 +33,7 @@ export default function ViolationManagement() {
   return (
     <>
       <SEOHead
-        title="Violation Management & Enforcement | Stellar Property Group"
+        title="Violation Management & Enforcement | Stellar Property Management"
         description="Professional violation management and enforcement for Chicago community associations. Fair due process, progressive enforcement, violation tracking, and Illinois compliance. Protecting community standards since 2007."
         canonical="https://stellarpropertygroup.com/services/violation-management"
       />
@@ -90,7 +90,7 @@ export default function ViolationManagement() {
                 Fair Enforcement That Protects <em className="font-medium text-gold-600">Everyone</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Community rules exist for good reason: they protect property values, maintain quality of life, and ensure every resident can enjoy their home in peace. But enforcement without proper process creates conflict, legal exposure, and community division. Stellar Property Group brings a balanced approach to violation management that upholds your community standards while treating every homeowner with fairness and respect.
+                Community rules exist for good reason: they protect property values, maintain quality of life, and ensure every resident can enjoy their home in peace. But enforcement without proper process creates conflict, legal exposure, and community division. Stellar Property Management brings a balanced approach to violation management that upholds your community standards while treating every homeowner with fairness and respect.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
                 Our violation management system is built on three principles: consistency, transparency, and due process. Every violation is documented objectively, every homeowner receives proper notice and the opportunity to be heard, and every enforcement action follows a progressive discipline framework that the board has approved in advance. This systematic approach protects your association from legal challenges while building community trust in the enforcement process.
@@ -162,7 +162,7 @@ export default function ViolationManagement() {
             Our violation management procedures are designed specifically to comply with Illinois law and protect your association from legal challenges. Every notice includes the specific rule violated, the factual basis for the allegation, the potential consequences, and the homeowner right to request a hearing. Our hearing process follows a structured format that ensures fairness while creating a clear record of the proceedings and the board decision.
           </p>
           <p className="text-lg text-slate-600 font-light leading-relaxed">
-            We also work with your association attorney to review and update enforcement policies as laws change, ensuring your procedures remain current and defensible. Our detailed documentation practices create a complete paper trail that protects your association if enforcement actions are ever challenged in court. This attention to legal compliance is one of the key reasons our client communities maintain a 96% retention rate with Stellar Property Group.
+            We also work with your association attorney to review and update enforcement policies as laws change, ensuring your procedures remain current and defensible. Our detailed documentation practices create a complete paper trail that protects your association if enforcement actions are ever challenged in court. This attention to legal compliance is one of the key reasons our client communities maintain a 96% retention rate with Stellar Property Management.
           </p>
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function BlogPost() {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Stellar Property Group',
+      name: 'Stellar Property Management',
       url: 'https://stellarpropertygroup.com',
     },
     mainEntityOfPage: {

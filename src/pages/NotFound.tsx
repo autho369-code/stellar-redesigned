@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | Stellar Property Group</title>
+        <title>Page Not Found | Stellar Property Management</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 

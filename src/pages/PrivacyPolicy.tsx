@@ -70,7 +70,7 @@ const sections = [
           <li className="pl-5 border-l border-gold-400">
             <strong className="font-semibold text-ink">Legal requirements.</strong> We may disclose information when required by
             law, subpoena, or court order, or to protect the rights, property, or safety of Stellar
-            Property Group, the associations we manage, or others.
+            Property Management, the associations we manage, or others.
           </li>
         </ul>
       </>
@@ -126,7 +126,7 @@ const sections = [
       <p>
         This website links to third-party services — most notably the AppFolio owner and resident
         portal. Those services operate under their own terms and privacy policies, which we
-        encourage you to review. Stellar Property Group is not responsible for the privacy
+        encourage you to review. Stellar Property Management is not responsible for the privacy
         practices of third-party websites.
       </p>
     ),
@@ -148,10 +148,10 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Stellar Property Group</title>
+        <title>Privacy Policy | Stellar Property Management</title>
         <meta
           name="description"
-          content="How Stellar Property Group collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies, no data selling."
+          content="How Stellar Property Management collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies, no data selling."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/privacy-policy" />
       </Helmet>
@@ -175,7 +175,7 @@ export default function PrivacyPolicy() {
             Privacy <em className="font-medium text-gold-600">Policy.</em>
           </h1>
           <p className="text-lg text-slate-600 font-light leading-relaxed max-w-2xl">
-            Stellar Property Group, Inc. (&ldquo;Stellar,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;)
+            Stellar Property Management, Inc. (&ldquo;Stellar,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;)
             respects your privacy. This policy explains what we collect through
             stellarpropertygroup.com, how we use it, and the choices you have.
           </p>
@@ -200,7 +200,7 @@ export default function PrivacyPolicy() {
           <div className="mt-14 pt-2">
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about this policy</p>
             <p className="text-slate-600 font-light leading-relaxed">
-              Stellar Property Group · 5107 N Western Ave, Suite 1S, Chicago, IL 60625 ·{' '}
+              Stellar Property Management · 5107 N Western Ave, Suite 1S, Chicago, IL 60625 ·{' '}
               <a href="tel:+17737280652" className="text-gold-600 hover:text-gold-500">773.728.0652</a> ·{' '}
               <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
                 mirsad@stellarpropertygroup.com

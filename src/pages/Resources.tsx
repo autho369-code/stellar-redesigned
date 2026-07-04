@@ -113,10 +113,10 @@ export default function Resources() {
   return (
     <>
       <Helmet>
-        <title>Owner & Resident Resources | Stellar Property Group</title>
+        <title>Owner & Resident Resources | Stellar Property Management</title>
         <meta
           name="description"
-          content="Access owner and resident resources from Stellar Property Group. Make payments, report violations, submit board nominations, and find answers to common questions."
+          content="Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/resources" />
       </Helmet>

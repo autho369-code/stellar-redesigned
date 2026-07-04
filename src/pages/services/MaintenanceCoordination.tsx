@@ -33,7 +33,7 @@ export default function MaintenanceCoordination() {
   return (
     <>
       <SEOHead
-        title="Property Maintenance Coordination | Stellar Property Group"
+        title="Property Maintenance Coordination | Stellar Property Management"
         description="Professional property maintenance coordination for Chicago community associations. Preventive maintenance programs, 24/7 emergency response, vendor management, and capital project oversight since 2007."
         canonical="https://stellarpropertygroup.com/services/maintenance-coordination"
       />
@@ -90,7 +90,7 @@ export default function MaintenanceCoordination() {
                 Proactive Maintenance That Protects Property <em className="font-medium text-gold-600">Values</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Deferred maintenance is the silent killer of community association property values. A small roof leak becomes water damage becomes structural repair becomes a six-figure special assessment. At Stellar Property Group, we break that cycle with preventive maintenance programs that catch problems early, systematic property inspections that identify issues before they escalate, and trusted vendor relationships that deliver quality work at competitive prices.
+                Deferred maintenance is the silent killer of community association property values. A small roof leak becomes water damage becomes structural repair becomes a six-figure special assessment. At Stellar Property Management, we break that cycle with preventive maintenance programs that catch problems early, systematic property inspections that identify issues before they escalate, and trusted vendor relationships that deliver quality work at competitive prices.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
                 Our maintenance coordination team manages every aspect of your property upkeep, from routine landscaping and janitorial services to complex capital improvement projects. We maintain a vetted network of licensed, insured contractors who understand the unique requirements of community association work and deliver consistent quality across every project.
@@ -156,7 +156,7 @@ export default function MaintenanceCoordination() {
             Capital Project Management Done <em className="font-medium text-gold-600">Right</em>
           </h2>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-            Major capital projects represent the largest expenditures your association will face, and how they are managed directly impacts both your finances and your property values. Whether it is a full roof replacement, elevator modernization, facade restoration, or parking structure repair, Stellar Property Group brings the project management expertise to ensure every capital project is completed on time, within budget, and to the highest quality standards.
+            Major capital projects represent the largest expenditures your association will face, and how they are managed directly impacts both your finances and your property values. Whether it is a full roof replacement, elevator modernization, facade restoration, or parking structure repair, Stellar Property Management brings the project management expertise to ensure every capital project is completed on time, within budget, and to the highest quality standards.
           </p>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
             Our capital project process begins with thorough scope development and engineering assessments. We then solicit competitive bids from qualified contractors, present detailed comparisons to your board, and manage the entire construction process with regular progress reports, quality inspections, and budget tracking. We also coordinate resident communications to minimize disruption during construction.

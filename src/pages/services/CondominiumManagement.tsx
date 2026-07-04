@@ -33,7 +33,7 @@ export default function CondominiumManagement() {
   return (
     <>
       <SEOHead
-        title="Condominium Management Services in Chicago | Stellar Property Group"
+        title="Condominium Management Services in Chicago | Stellar Property Management"
         description="Full-service condominium management in Chicago and the North Shore. Illinois Condo Property Act compliance, board governance, financial oversight, and 24/7 emergency support. Serving 42 associations since 2007."
         canonical="https://stellarpropertygroup.com/services/condominium-management"
       />
@@ -90,7 +90,7 @@ export default function CondominiumManagement() {
                 Full-Service Condo Management Built on Chicago <em className="font-medium text-gold-600">Expertise</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Managing a condominium association in Illinois requires deep knowledge of state-specific regulations, strong financial stewardship, and the ability to balance the needs of diverse unit owners. Since 2007, Stellar Property Group has provided Chicago-area condominiums with the professional management they need to protect property values, maintain common elements, and foster thriving residential communities.
+                Managing a condominium association in Illinois requires deep knowledge of state-specific regulations, strong financial stewardship, and the ability to balance the needs of diverse unit owners. Since 2007, Stellar Property Management has provided Chicago-area condominiums with the professional management they need to protect property values, maintain common elements, and foster thriving residential communities.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
                 Our team holds certifications from the Community Associations Institute (CAI) and the Institute of Real Estate Management (IREM), ensuring your association benefits from industry best practices and cutting-edge management strategies. We currently serve 42 associations across Chicago and the North Shore, maintaining a 96% client retention rate that reflects our commitment to excellence.

@@ -32,7 +32,7 @@ export default function Footer() {
             <Link to="/" className="inline-flex items-center gap-4 mb-6">
               <img
                 src="/logo-icon.svg"
-                alt="Stellar Property Group logo"
+                alt="Stellar Property Management logo"
                 className="w-14 h-14"
               />
               <span className="leading-none">
@@ -40,7 +40,7 @@ export default function Footer() {
                   Stellar
                 </span>
                 <span className="block text-[9px] font-semibold uppercase tracking-luxe text-paper/40 mt-2">
-                  Property Group · Chicago · Est. 2007
+                  Chicago Property Management · Est. 2007
                 </span>
               </span>
             </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
       <div className="border-t border-paper/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-paper/30 font-light">
-            &copy; {new Date().getFullYear()} Stellar Property Group. All rights reserved.
+            &copy; {new Date().getFullYear()} Stellar Property Management. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">

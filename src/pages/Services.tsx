@@ -79,7 +79,7 @@ const proofs = [
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Property Management Services — Stellar Property Group',
+  name: 'Property Management Services — Stellar Property Management',
   itemListElement: services.map((s, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -90,7 +90,7 @@ const schema = {
       url: `https://stellarpropertygroup.com${s.href}`,
       provider: {
         '@type': 'ProfessionalService',
-        name: 'Stellar Property Group',
+        name: 'Stellar Property Management',
         telephone: '+1-773-728-0652',
         areaServed: 'Chicago, IL',
       },
@@ -102,7 +102,7 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Property Management Services | Stellar Property Group</title>
+        <title>Property Management Services | Stellar Property Management</title>
         <meta
           name="description"
           content="Seven disciplines of professional community management for Chicago condominiums, HOAs, and townhomes: operations, financials, maintenance, board support, and more."

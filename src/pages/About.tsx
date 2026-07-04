@@ -64,10 +64,10 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Stellar Property Group | Chicago Property Management Since 2007</title>
+        <title>About Stellar Property Management | Chicago Property Management Since 2007</title>
         <meta
           name="description"
-          content="Learn about Stellar Property Group — Chicago's trusted property management company since 2007. 42 associations, 2,450+ units, and a 96% client retention rate. CAI, IREM, IDFPR, and CCIM certified."
+          content="Learn about Stellar Property Management — Chicago's trusted property management company since 2007. 42 associations, 2,450+ units, and a 96% client retention rate. CAI, IREM, IDFPR, and CCIM certified."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/about" />
       </Helmet>
@@ -135,7 +135,7 @@ export default function About() {
                 42 <em className="font-medium text-gold-600">associations.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
-                Stellar Property Group was founded in 2007 with a clear mission: deliver property management that Chicago condo boards, HOAs, and townhome associations actually deserve. At the time, most firms treated community management as a side business. We made it our only business.
+                Stellar Property Management was founded in 2007 with a clear mission: deliver property management that Chicago condo boards, HOAs, and townhome associations actually deserve. At the time, most firms treated community management as a side business. We made it our only business.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
                 Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 42 associations and 2,450 units across Chicago and the North Shore, with a 96% client retention rate that speaks louder than any advertisement.

@@ -173,7 +173,7 @@ export function BoardNominationForm() {
           <div className="hidden print:block bg-white p-8">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Board Member Nomination Application</h1>
-              <p className="text-gray-600">Stellar Property Group</p>
+              <p className="text-gray-600">Stellar Property Management</p>
               <p className="text-sm text-gray-500">Submitted on {new Date().toLocaleDateString()}</p>
             </div>
 

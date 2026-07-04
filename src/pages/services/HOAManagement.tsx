@@ -33,7 +33,7 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="HOA Management Services in Chicago | Stellar Property Group"
+        title="HOA Management Services in Chicago | Stellar Property Management"
         description="Professional HOA management for Chicago-area homeowners associations. CC&amp;R enforcement, community engagement, landscaping coordination, architectural review, and full-service association management since 2007."
         canonical="https://stellarpropertygroup.com/services/hoa-management"
       />
@@ -90,7 +90,7 @@ export default function HOAManagement() {
                 Neighborly Management That Builds Real <em className="font-medium text-gold-600">Community</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Homeowners associations thrive when residents feel connected, informed, and proud of where they live. At Stellar Property Group, our HOA management goes beyond the administrative basics. We partner with your board to create vibrant, well-maintained neighborhoods where property values grow and neighbors become friends.
+                Homeowners associations thrive when residents feel connected, informed, and proud of where they live. At Stellar Property Management, our HOA management goes beyond the administrative basics. We partner with your board to create vibrant, well-maintained neighborhoods where property values grow and neighbors become friends.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
                 Since 2007, we have managed single-family home communities, planned unit developments, and mixed-use neighborhoods throughout Chicago and the surrounding suburbs. Our approach combines proactive common area maintenance, transparent financial management, and thoughtful community programming that transforms a collection of homes into a true community.

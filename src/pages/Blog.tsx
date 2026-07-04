@@ -16,7 +16,7 @@ export default function Blog() {
   return (
     <>
       <SEOHead
-        title="Property Management Blog | Stellar Property Group"
+        title="Property Management Blog | Stellar Property Management"
         description="Expert insights, tips, and resources for Chicago condo board members and property owners. Stay informed on property management best practices, Illinois regulations, and community governance."
         canonical="https://stellarpropertygroup.com/blog"
       />
@@ -48,7 +48,7 @@ export default function Blog() {
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Expert guidance on property management, board governance,
                 financial planning, and building maintenance from the Stellar
-                Property Group team.
+                Property Management team.
               </p>
             </div>
           </div>

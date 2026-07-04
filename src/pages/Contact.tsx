@@ -35,10 +35,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Stellar Property Group | Get a Free Property Management Quote</title>
+        <title>Contact Stellar Property Management | Get a Free Property Management Quote</title>
         <meta
           name="description"
-          content="Contact Stellar Property Group for a free property management quote. Located at 5107 N Western Ave, Suite 1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
+          content="Contact Stellar Property Management for a free property management quote. Located at 5107 N Western Ave, Suite 1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
         />
         <link rel="canonical" href="https://stellarpropertygroup.com/contact" />
       </Helmet>
@@ -191,7 +191,7 @@ export default function Contact() {
           </div>
           <div className="border border-slate-200">
             <iframe
-              title="Stellar Property Group Office Location"
+              title="Stellar Property Management Office Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.5!2d-87.6935!3d41.9745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd1e8c10fb5e5%3A0x0!2s5107+N+Western+Ave%2C+Chicago%2C+IL+60625!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               width="100%"
               height="400"
@@ -219,7 +219,7 @@ export default function Contact() {
               },
               {
                 n: '02',
-                title: 'About Stellar Property Group',
+                title: 'About Stellar Property Management',
                 desc: "Discover our story, values, and the credentials that make us Chicago's trusted property management partner since 2007.",
                 href: '/about',
                 label: 'Learn More',

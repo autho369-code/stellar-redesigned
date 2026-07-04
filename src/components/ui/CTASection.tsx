@@ -11,7 +11,7 @@ interface CTASectionProps {
 
 export function CTASection({
   title = 'Ready to Elevate Your Community Management?',
-  description = 'Join 42 Chicago-area associations that trust Stellar Property Group. Contact us today for a free consultation and discover why we maintain a 96% client retention rate.',
+  description = 'Join 42 Chicago-area associations that trust Stellar Property Management. Contact us today for a free consultation and discover why we maintain a 96% client retention rate.',
   primaryLink = '/contact',
   primaryText = 'Get a Free Consultation',
   secondaryText = '773.728.0652',
