@@ -107,6 +107,26 @@ export default function ServiceAreas() {
         </div>
       </section>
 
+      {/* ── Flagship: the City of Chicago ──────────────────────── */}
+      <section className="bg-ink text-paper">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <Link
+            to="/property-management-chicago"
+            className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-10"
+          >
+            <div>
+              <p className="text-[10px] uppercase tracking-luxe text-gold-300 mb-3">The City</p>
+              <span className="font-display font-light text-3xl lg:text-4xl">
+                Property Management in <em className="font-medium text-gold-300">Chicago.</em>
+              </span>
+            </div>
+            <span className="inline-flex items-center gap-3 text-[10px] uppercase tracking-luxe text-paper/60 group-hover:text-gold-300 transition-colors duration-300">
+              The citywide page <ArrowRight className="w-4 h-4" strokeWidth={1.25} />
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* ── Alphabet quick nav ─────────────────────────────────── */}
       <section className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

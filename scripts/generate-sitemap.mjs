@@ -19,6 +19,7 @@ const staticRoutes = [
   '/services/board-support',
   '/services/violation-management',
   '/service-areas',
+  '/property-management-chicago',
   '/blog',
   '/contact',
   '/resources',

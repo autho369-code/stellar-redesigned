@@ -1,6 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Phone, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { getNeighborhoodBySlug, getRelatedNeighborhoods } from '../data/neighborhoods';
 
 const services = [
@@ -98,6 +98,27 @@ export default function NeighborhoodPage() {
   const placeName = isSuburb ? `${neighborhood.name}, IL` : `${neighborhood.name}, Chicago, IL`;
   const atlasLabel = isSuburb ? 'The Atlas · North Shore' : 'The Atlas · Chicago';
 
+  // Localized Q&A — rendered on the page AND emitted as FAQPage schema so
+  // AI engines can quote community-specific answers directly.
+  const faqs = [
+    {
+      q: `Does Stellar Property Management serve ${neighborhood.name}?`,
+      a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 42 associations and 2,450+ residences under management with a 96% client retention rate.`,
+    },
+    {
+      q: `What types of community associations does Stellar manage in ${neighborhood.name}?`,
+      a: `In ${neighborhood.name} we manage ${neighborhood.propertyTypes.join(', ')}. Every community receives a dedicated property manager, transparent monthly financial reporting, 24/7 live emergency response, and board support aligned with the Illinois Condominium Property Act.`,
+    },
+    {
+      q: `How much does association management cost in ${neighborhood.name}?`,
+      a: `We quote a customized flat monthly fee based on your ${neighborhood.name} building's size, amenities, and service scope — never a percentage of your budget. Most boards find our proposals competitive with national firms while receiving far more attentive service. Request a proposal for exact pricing.`,
+    },
+    {
+      q: `How do we switch our ${neighborhood.name} association to Stellar?`,
+      a: `Switching is a managed 30–60 day transition: once your board signs, we retrieve records from the outgoing firm, migrate banking and vendor relationships, notify owners, and open your board and resident portals. Call 773.728.0652 or request a proposal online to start.`,
+    },
+  ];
+
   // Service schema referencing the single canonical business entity —
   // duplicate LocalBusiness entities would compete with the homepage entity.
   const schemaMarkup = {
@@ -124,6 +145,15 @@ export default function NeighborhoodPage() {
           { '@type': 'ListItem', position: 2, name: 'Service Areas', item: 'https://stellarpropertygroup.com/service-areas' },
           { '@type': 'ListItem', position: 3, name: neighborhood.name, item: `https://stellarpropertygroup.com/property-management-${neighborhood.slug}` }
         ]
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `https://stellarpropertygroup.com/property-management-${neighborhood.slug}#faq`,
+        mainEntity: faqs.map(({ q, a }) => ({
+          '@type': 'Question',
+          name: q,
+          acceptedAnswer: { '@type': 'Answer', text: a }
+        }))
       }
     ]
   };
@@ -295,6 +325,33 @@ export default function NeighborhoodPage() {
               <span key={zip} className="font-display font-light text-lg text-ink">
                 {zip}
               </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Localized FAQ ──────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-ivory-100 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="mb-14">
+            <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+              <span className="accent-rule" />
+              {neighborhood.name} · Questions, Answered
+            </p>
+            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
+              {neighborhood.name} boards ask us <em className="font-medium text-gold-600">first.</em>
+            </h2>
+          </div>
+
+          <div className="border-t border-slate-200">
+            {faqs.map(({ q, a }) => (
+              <details key={q} className="group border-b border-slate-200">
+                <summary className="flex items-center justify-between gap-6 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <h3 className="font-display text-lg lg:text-xl text-ink group-open:text-gold-600 transition-colors">{q}</h3>
+                  <Plus className="w-5 h-5 text-gold-500 flex-shrink-0 transition-transform duration-300 group-open:rotate-45" strokeWidth={1.25} />
+                </summary>
+                <p className="pb-7 text-slate-600 leading-relaxed font-light max-w-3xl">{a}</p>
+              </details>
             ))}
           </div>
         </div>
