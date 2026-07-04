@@ -44,7 +44,12 @@ export async function signInWithGoogle(): Promise<void> {
   const supabase = getSupabase();
   await supabase.auth.signInWithOAuth({
     provider: 'google',
-    options: { redirectTo: window.location.origin + window.location.pathname },
+    options: {
+      redirectTo: window.location.origin + window.location.pathname,
+      // Always show Google's account picker (with "Use another account")
+      // instead of silently reusing the currently signed-in Google session.
+      queryParams: { prompt: 'select_account' },
+    },
   });
 }
 
