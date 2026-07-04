@@ -209,31 +209,36 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      {/* ── Hero — light, editorial ──────────────────────────── */}
-      <section className="relative bg-paper overflow-hidden">
-        {/* faint architectural grid */}
+      {/* ── Hero — dark, cinematic ───────────────────────────── */}
+      <section className="relative bg-ink overflow-hidden">
+        {/* faint drafting grid on ink */}
         <div
-          className="absolute inset-0 opacity-[0.35] pointer-events-none"
+          className="absolute inset-0 opacity-[0.06] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#e2ddd0 1px, transparent 1px), linear-gradient(90deg, #e2ddd0 1px, transparent 1px)',
+              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
+        {/* sky-blue glow drawn from the logo tower */}
+        <div className="absolute top-0 right-0 w-[50rem] h-[50rem] bg-gold-500/[0.08] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none" aria-hidden />
 
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-40 lg:pt-48 pb-20">
           <div className="grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
             {/* Copy */}
             <div className="lg:col-span-7 animate-fade-up">
-              <Eyebrow>Condominium &amp; HOA Management · Chicago</Eyebrow>
+              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Condominium &amp; HOA Management · Chicago
+              </p>
 
-              <h1 className="font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-ink mb-10 text-balance">
+              <h1 className="font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-paper mb-10 text-balance">
                 The art of a
                 <br />
-                <em className="font-medium text-gold-500">well-run</em> building.
+                <em className="font-medium text-gold-300">well-run</em> building.
               </h1>
 
-              <p className="text-lg lg:text-xl text-slate-600 font-light leading-relaxed mb-12 max-w-xl">
+              <p className="text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-12 max-w-xl">
                 Stellar is a Chicago association management practice for boards
                 that expect more — clearer numbers, calmer meetings, and a
                 building that quietly works.
@@ -242,14 +247,14 @@ export default function Home() {
               <div className="flex flex-wrap items-center gap-5">
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+                  className="group inline-flex items-center gap-3 bg-paper text-ink hover:bg-gold-300 font-semibold px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   Request a Proposal
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 hover:text-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+                  className="inline-flex items-center gap-3 border border-paper/30 text-paper hover:border-gold-300 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   Explore the Practice
                 </Link>
@@ -259,14 +264,14 @@ export default function Home() {
             {/* Arch-topped architectural photo */}
             <div className="lg:col-span-5 animate-fade-up delay-200">
               <div className="relative max-w-sm mx-auto lg:ml-auto">
-                <div className="absolute -inset-4 border border-gold-300/60 rounded-t-full" aria-hidden />
+                <div className="absolute -inset-4 border border-gold-300/40 rounded-t-full" aria-hidden />
                 <img
                   src="https://images.pexels.com/photos/25853881/pexels-photo-25853881.jpeg?auto=compress&cs=tinysrgb&w=1200"
                   alt="Historic red brick and limestone facade of a vintage Chicago residential building"
                   className="w-full aspect-[3/4.2] object-cover rounded-t-full"
                   loading="eager"
                 />
-                <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-slate-400 text-center">
+                <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/40 text-center">
                   Chicago · Vintage Brick &amp; Bay Windows
                 </figcaption>
               </div>
@@ -275,13 +280,13 @@ export default function Home() {
         </div>
 
         {/* Stat strip */}
-        <div className="relative border-t border-slate-200">
+        <div className="relative border-t border-paper/10">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-            <dl className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-slate-200">
+            <dl className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-paper/10">
               {stats.map(({ value, label }) => (
                 <div key={label} className="py-9 px-4 lg:px-10 text-center lg:text-left">
-                  <dd className="font-display text-3xl lg:text-4xl font-light text-ink mb-1">{value}</dd>
-                  <dt className="text-[10px] uppercase tracking-luxe text-slate-500">{label}</dt>
+                  <dd className="font-display text-3xl lg:text-4xl font-light text-gold-300 mb-1">{value}</dd>
+                  <dt className="text-[10px] uppercase tracking-luxe text-paper/40">{label}</dt>
                 </div>
               ))}
             </dl>
