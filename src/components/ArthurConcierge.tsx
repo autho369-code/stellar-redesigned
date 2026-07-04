@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, ArrowUpRight } from 'lucide-react';
+import { submitLeadToOps } from '../lib/leads';
 
 /**
  * Arthur — the Stellar site concierge.
@@ -152,20 +153,27 @@ export default function ArthurConcierge() {
   const submitLead = async () => {
     if (!lead.name || !lead.email) return;
     setBusy(true);
+    const transcript = messages.map((m) => `${m.role}: ${m.content}`).join('\n').slice(0, 4000);
     try {
-      await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
-          subject: `Website Concierge Lead — ${lead.name}`,
-          from_name: 'Arthur (Site Concierge)',
-          name: lead.name,
-          email: lead.email,
-          building: lead.building,
-          transcript: messages.map((m) => `${m.role}: ${m.content}`).join('\n').slice(0, 4000),
+      // Delivered two ways: email (Web3Forms) + the stellar-ops database
+      // (website_leads), so the ops app sees every website lead.
+      const [emailResult] = await Promise.allSettled([
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+            subject: `Website Concierge Lead — ${lead.name}`,
+            from_name: 'Arthur (Site Concierge)',
+            name: lead.name,
+            email: lead.email,
+            building: lead.building,
+            transcript,
+          }),
         }),
-      });
+        submitLeadToOps({ name: lead.name, email: lead.email, building: lead.building, transcript }),
+      ]);
+      void emailResult;
       setLeadSent(true);
       setLeadMode(false);
       setMessages((m) => [
