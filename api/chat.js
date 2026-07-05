@@ -3,7 +3,10 @@
 // The site widget falls back to its built-in knowledge base when this
 // endpoint is unavailable, so the bot works either way.
 
-const SYSTEM_PROMPT = `You are Arthur, the online concierge for Stellar Property Management — a Chicago community association management firm (condominiums, HOAs, townhomes only; NO apartment rentals).
+// Identity (name + personality) is loaded LIVE from the shared ops database
+// (agent_public_profile view) so the website concierge is the same Arthur
+// configured at /ops/agent. The facts and safety rules below stay in code.
+const CORE_PROMPT = `Stellar Property Management is a Chicago community association management firm (condominiums, HOAs, townhomes only; NO apartment rentals).
 
 FACTS (the only facts you may state):
 - Serving Chicago & the North Shore since 2007. 42 associations, 2,450+ residences, 96% client retention.
@@ -34,11 +37,28 @@ async function restGet(path, userToken) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     headers: {
       apikey: SUPABASE_PUBLISHABLE_KEY,
-      authorization: `Bearer ${userToken}`,
+      authorization: `Bearer ${userToken || SUPABASE_PUBLISHABLE_KEY}`,
     },
   });
   if (!r.ok) return null;
   return r.json();
+}
+
+/** Live identity from the ops database — same Arthur as /ops/agent. */
+async function buildIdentity() {
+  let name = 'Arthur';
+  let persona = '';
+  try {
+    const rows = await restGet('agent_public_profile?select=agent_name,persona&limit=1', null);
+    if (Array.isArray(rows) && rows[0]) {
+      name = String(rows[0].agent_name || 'Arthur').slice(0, 60);
+      persona = String(rows[0].persona || '').slice(0, 1500);
+    }
+  } catch { /* fall back to defaults */ }
+  return (
+    `You are ${name}, the online concierge for Stellar Property Management.` +
+    (persona ? `\nPERSONALITY (set by the office — embody it): ${persona}` : '')
+  );
 }
 
 /** Owner profile + association-knowledge retrieval for signed-in visitors. */
@@ -133,6 +153,9 @@ export default async function handler(req, res) {
       content: String(m.content || '').slice(0, 2000),
     }));
 
+    const identity = await buildIdentity();
+    const system = identity + '\n\n' + CORE_PROMPT + ownerNote;
+
     let text = '';
 
     if (deepseekKey) {
@@ -146,7 +169,7 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           model: 'deepseek-chat',
           max_tokens: 400,
-          messages: [{ role: 'system', content: SYSTEM_PROMPT + ownerNote }, ...safeMessages],
+          messages: [{ role: 'system', content: system }, ...safeMessages],
         }),
       });
       if (!r.ok) {
@@ -168,7 +191,7 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           model: 'claude-haiku-4-5-20251001',
           max_tokens: 400,
-          system: SYSTEM_PROMPT + ownerNote,
+          system,
           messages: safeMessages,
         }),
       });
