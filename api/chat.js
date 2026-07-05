@@ -30,8 +30,11 @@ export default async function handler(req, res) {
     return;
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
+  // Provider auto-detect (same pattern as the stellar-ops agent):
+  // DeepSeek (OpenAI-compatible, low cost) if configured, else Anthropic.
+  const deepseekKey = process.env.DEEPSEEK_API_KEY;
+  const anthropicKey = process.env.ANTHROPIC_API_KEY;
+  if (!deepseekKey && !anthropicKey) {
     res.status(503).json({ error: 'AI not configured' });
     return;
   }
@@ -63,34 +66,58 @@ export default async function handler(req, res) {
       content: String(m.content || '').slice(0, 2000),
     }));
 
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
-        max_tokens: 400,
-        system: SYSTEM_PROMPT + ownerNote,
-        messages: safeMessages,
-      }),
-    });
+    let text = '';
 
-    if (!r.ok) {
-      const detail = await r.text();
-      console.error('Anthropic API error', r.status, detail.slice(0, 300));
-      res.status(502).json({ error: 'Upstream error' });
-      return;
+    if (deepseekKey) {
+      // DeepSeek — OpenAI-compatible chat completions.
+      const r = await fetch('https://api.deepseek.com/chat/completions', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          authorization: `Bearer ${deepseekKey}`,
+        },
+        body: JSON.stringify({
+          model: 'deepseek-chat',
+          max_tokens: 400,
+          messages: [{ role: 'system', content: SYSTEM_PROMPT + ownerNote }, ...safeMessages],
+        }),
+      });
+      if (!r.ok) {
+        const detail = await r.text();
+        console.error('DeepSeek API error', r.status, detail.slice(0, 300));
+        res.status(502).json({ error: 'Upstream error' });
+        return;
+      }
+      const data = await r.json();
+      text = (data.choices?.[0]?.message?.content || '').trim();
+    } else {
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          'x-api-key': anthropicKey,
+          'anthropic-version': '2023-06-01',
+        },
+        body: JSON.stringify({
+          model: 'claude-haiku-4-5-20251001',
+          max_tokens: 400,
+          system: SYSTEM_PROMPT + ownerNote,
+          messages: safeMessages,
+        }),
+      });
+      if (!r.ok) {
+        const detail = await r.text();
+        console.error('Anthropic API error', r.status, detail.slice(0, 300));
+        res.status(502).json({ error: 'Upstream error' });
+        return;
+      }
+      const data = await r.json();
+      text = (data.content || [])
+        .filter((b) => b.type === 'text')
+        .map((b) => b.text)
+        .join('\n')
+        .trim();
     }
-
-    const data = await r.json();
-    const text = (data.content || [])
-      .filter((b) => b.type === 'text')
-      .map((b) => b.text)
-      .join('\n')
-      .trim();
 
     res.status(200).json({ reply: text || 'I’m sorry — could you rephrase that?' });
   } catch (err) {
