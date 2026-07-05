@@ -24,6 +24,63 @@ RULES:
 - Be warm, concise (2-4 short sentences), and concrete. When relevant, end by offering the proposal form (/contact) or the portal link.
 - If the visitor seems to be a board member interested in management services, encourage them to leave name/email/building via the "Request a Proposal" option.`;
 
+// Shared stellar-ops database (browser-safe publishable key; all reads below
+// run under the VISITOR'S OWN session token, so row-level security limits
+// them to the signed-in owner's records and their association's knowledge).
+const SUPABASE_URL = 'https://qfjhmzvuaifxnvmwblux.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_zLJMg0YOC9jHmg05IfE7-g_VIWA-v1G';
+
+async function restGet(path, userToken) {
+  const r = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
+    headers: {
+      apikey: SUPABASE_PUBLISHABLE_KEY,
+      authorization: `Bearer ${userToken}`,
+    },
+  });
+  if (!r.ok) return null;
+  return r.json();
+}
+
+/** Owner profile + association-knowledge retrieval for signed-in visitors. */
+async function buildOwnerContext(userToken, lastUserMessage) {
+  let ownerNote = '';
+  let knowledgeNote = '';
+
+  const owners = await restGet(
+    'owners?select=name,unit:units!owners_unit_id_fkey(number,association:associations(name))&limit=1',
+    userToken
+  );
+  const o = Array.isArray(owners) ? owners[0] : null;
+  if (o?.name) {
+    const unit = o.unit?.number ? `, unit ${o.unit.number}` : '';
+    const assoc = o.unit?.association?.name ? `, ${o.unit.association.name}` : '';
+    ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${o.name}${unit}${assoc}. Greet them by first name and tailor answers to their community. Never reveal information about other owners or units.`;
+  }
+
+  // Full-text search the curated owner knowledge base with the visitor's
+  // question; RLS returns only global entries + their association's entries.
+  const words = String(lastUserMessage || '')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length > 2)
+    .slice(0, 10)
+    .join(' ');
+  if (words) {
+    const rows = await restGet(
+      `owner_knowledge?select=title,body&fts=wfts.${encodeURIComponent(words)}&limit=3`,
+      userToken
+    );
+    if (Array.isArray(rows) && rows.length) {
+      const entries = rows
+        .map((k) => `• ${k.title}: ${String(k.body).slice(0, 1200)}`)
+        .join('\n');
+      knowledgeNote = `\n\nASSOCIATION KNOWLEDGE BASE (authoritative for this owner's community — prefer this over general guidance; if it doesn't cover the question, say so and point to the AppFolio document library or the board):\n${entries}`;
+    }
+  }
+
+  return ownerNote + knowledgeNote;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
@@ -46,11 +103,21 @@ export default async function handler(req, res) {
       return;
     }
 
-    // Owner personalization: the widget derives this under the visitor's own
-    // RLS-scoped session (they can only ever read their own records), so it
-    // is safe to use for greeting/context. Sanitized and length-capped.
+    // Owner personalization. Preferred path: the visitor's own session token
+    // (Authorization header) — the server reads their profile + association
+    // knowledge under THEIR RLS scope. Fallback: client-passed context.
     let ownerNote = '';
-    if (ownerContext && typeof ownerContext === 'object') {
+    const authHeader = req.headers.authorization || '';
+    if (authHeader.startsWith('Bearer ') && authHeader.length > 20) {
+      const lastUser = [...messages].reverse().find((m) => m && m.role === 'user');
+      try {
+        ownerNote = await buildOwnerContext(authHeader.slice(7), lastUser?.content);
+      } catch (e) {
+        console.error('owner context fetch failed', e);
+        ownerNote = '';
+      }
+    }
+    if (!ownerNote && ownerContext && typeof ownerContext === 'object') {
       const clean = (v) => (typeof v === 'string' ? v.replace(/[\r\n]+/g, ' ').slice(0, 120) : '');
       const name = clean(ownerContext.name);
       const unit = clean(ownerContext.unit);

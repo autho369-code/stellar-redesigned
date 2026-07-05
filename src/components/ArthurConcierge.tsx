@@ -182,9 +182,22 @@ export default function ArthurConcierge() {
 
     let reply: string;
     try {
+      // Signed-in owners: pass the session token so the server can pull
+      // their profile and association knowledge under their own RLS scope.
+      let token: string | null = null;
+      if (owner) {
+        try {
+          token = (await getSupabase().auth.getSession()).data.session?.access_token ?? null;
+        } catch {
+          token = null;
+        }
+      }
       const r = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
         body: JSON.stringify({
           messages: next.slice(1), // drop greeting
           ownerContext: owner
