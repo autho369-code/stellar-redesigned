@@ -9,6 +9,7 @@ import { condoBoardEnterUnit } from './can-condo-boards-enter-your-unit-illinois
 import { commonCondoViolationsChicago } from './common-condo-rule-violations-chicago';
 import { hoaCondoRulesEnforceable } from './are-hoa-condo-rules-enforceable-illinois';
 import { whyCondoBoardsFail } from './why-condo-boards-fail';
+import { technologyBehindOurManagement } from './the-technology-behind-our-management';
 
 export interface BlogPost {
   slug: string;
@@ -24,6 +25,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  technologyBehindOurManagement,
   illinoisCondoLawUpdates2026,
   aiInCondoManagement,
   hoaInsuranceCosts,

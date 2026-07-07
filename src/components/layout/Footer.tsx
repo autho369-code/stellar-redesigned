@@ -127,6 +127,16 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-paper/30 font-light">
             &copy; {new Date().getFullYear()} Stellar Property Management. All rights reserved.
+            {' · '}
+            <a
+              href="https://portier369.com"
+              target="_blank"
+              rel="noopener"
+              className="text-paper/40 hover:text-gold-300 transition-colors"
+              title="HOA & condo management software"
+            >
+              Powered by Portier369
+            </a>
           </p>
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
