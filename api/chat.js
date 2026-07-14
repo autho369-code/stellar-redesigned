@@ -66,15 +66,30 @@ async function buildIdentity() {
   );
 }
 
+/** Email claim from a Supabase JWT (display/filtering only — RLS enforces access). */
+function jwtEmail(token) {
+  try {
+    const payload = JSON.parse(Buffer.from(token.split('.')[1], 'base64url').toString('utf8'));
+    return String(payload.email || '').toLowerCase();
+  } catch {
+    return '';
+  }
+}
+
 /** Owner profile + association-knowledge retrieval for signed-in visitors. */
 async function buildOwnerContext(userToken, lastUserMessage) {
   let ownerNote = '';
   let knowledgeNote = '';
 
-  const owners = await restGet(
-    'owners?select=name,unit:units!owners_unit_id_fkey(number,association:associations(name))&limit=1',
-    userToken
-  );
+  // Match the owner row to the login email explicitly — staff sessions can
+  // read every owner row and must not be presented as a random owner.
+  const email = jwtEmail(userToken);
+  const owners = email
+    ? await restGet(
+        `owners?select=name,unit:units!owners_unit_id_fkey(number,association:associations(name))&email=ilike.${encodeURIComponent(email)}&limit=1`,
+        userToken
+      )
+    : null;
   const o = Array.isArray(owners) ? owners[0] : null;
   if (o?.name) {
     const unit = o.unit?.number ? `, unit ${o.unit.number}` : '';
@@ -92,14 +107,14 @@ async function buildOwnerContext(userToken, lastUserMessage) {
     .join(' ');
   if (words) {
     const rows = await restGet(
-      `owner_knowledge?select=title,body&fts=wfts.${encodeURIComponent(words)}&limit=3`,
+      `owner_knowledge?select=title,body,association:associations(name)&fts=wfts.${encodeURIComponent(words)}&limit=3`,
       userToken
     );
     if (Array.isArray(rows) && rows.length) {
       const entries = rows
-        .map((k) => `• ${k.title}: ${String(k.body).slice(0, 1200)}`)
+        .map((k) => `• [${k.association?.name || 'ALL COMMUNITIES'}] ${k.title}: ${String(k.body).slice(0, 1200)}`)
         .join('\n');
-      knowledgeNote = `\n\nASSOCIATION KNOWLEDGE BASE (authoritative for this owner's community — prefer this over general guidance; if it doesn't cover the question, say so and point to the AppFolio document library or the board):\n${entries}`;
+      knowledgeNote = `\n\nASSOCIATION KNOWLEDGE BASE (each entry applies ONLY to the association named in brackets — NEVER answer using another association's rules; if no entry matches the owner's own community, say the office will confirm and point to the AppFolio document library or the board):\n${entries}`;
     }
   }
 

@@ -22,9 +22,13 @@ export async function fetchOwnerProfile(): Promise<OwnerProfile | null> {
   const session = sessionData.session;
   if (!session?.user?.email) return null;
 
+  // Match the owner row to the signed-in email explicitly. Staff accounts
+  // (ops app, company-wide RLS) can read every owner row — without this
+  // filter the widget would present the first visible owner as "you".
   const { data, error } = await supabase
     .from('owners')
     .select('name, email, unit:units!owners_unit_id_fkey(number, association:associations(name))')
+    .ilike('email', session.user.email)
     .limit(1)
     .maybeSingle();
 
