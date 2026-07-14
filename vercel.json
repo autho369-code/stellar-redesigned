@@ -1,5 +1,18 @@
 {
+  "redirects": [
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/contact-us/:path*", "destination": "/contact", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/our-services", "destination": "/services", "permanent": true },
+    { "source": "/property-management-services", "destination": "/services", "permanent": true },
+    { "source": "/payments", "destination": "/resources", "permanent": true },
+    { "source": "/make-a-payment", "destination": "/resources", "permanent": true },
+    { "source": "/request-a-proposal", "destination": "/contact", "permanent": true },
+    { "source": "/properties", "destination": "/service-areas", "permanent": true },
+    { "source": "/properties/:path*", "destination": "/service-areas", "permanent": true }
+  ],
   "rewrites": [
+    { "source": "/site/:path*", "destination": "/api/gone" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
