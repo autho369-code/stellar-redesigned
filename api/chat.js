@@ -3,6 +3,10 @@
 // The site widget falls back to its built-in knowledge base when this
 // endpoint is unavailable, so the bot works either way.
 
+// Allows res.write() to reach the client incrementally when the widget
+// requests a streamed reply ({ stream: true } in the body).
+export const config = { supportsResponseStreaming: true };
+
 // Identity (name + personality) is loaded LIVE from the shared ops database
 // (agent_public_profile view) so the website concierge is the same Arthur
 // configured at /ops/agent. The facts and safety rules below stay in code.
@@ -101,6 +105,38 @@ async function buildOwnerContext(userToken, lastUserMessage) {
   return ownerNote + knowledgeNote;
 }
 
+/**
+ * Relay an upstream SSE body to the client as a plain-text token stream.
+ * `extract` maps one parsed SSE JSON payload to its text delta (or '').
+ * Returns the accumulated text so callers can detect an empty reply.
+ */
+async function relaySse(upstreamBody, res, extract) {
+  const decoder = new TextDecoder();
+  let buffer = '';
+  let total = '';
+  const reader = upstreamBody.getReader();
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split('\n');
+    buffer = lines.pop() || '';
+    for (const line of lines) {
+      if (!line.startsWith('data:')) continue;
+      const payload = line.slice(5).trim();
+      if (!payload || payload === '[DONE]') continue;
+      try {
+        const delta = extract(JSON.parse(payload));
+        if (delta) {
+          total += delta;
+          res.write(delta);
+        }
+      } catch { /* skip malformed frames */ }
+    }
+  }
+  return total;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
@@ -117,7 +153,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { messages, ownerContext } = req.body || {};
+    const { messages, ownerContext, stream } = req.body || {};
+    const wantStream = stream === true;
     if (!Array.isArray(messages) || messages.length === 0 || messages.length > 30) {
       res.status(400).json({ error: 'Bad request' });
       return;
@@ -169,6 +206,7 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           model: 'deepseek-chat',
           max_tokens: 400,
+          stream: wantStream,
           messages: [{ role: 'system', content: system }, ...safeMessages],
         }),
       });
@@ -176,6 +214,16 @@ export default async function handler(req, res) {
         const detail = await r.text();
         console.error('DeepSeek API error', r.status, detail.slice(0, 300));
         res.status(502).json({ error: 'Upstream error' });
+        return;
+      }
+      if (wantStream && r.body) {
+        res.writeHead(200, {
+          'content-type': 'text/plain; charset=utf-8',
+          'cache-control': 'no-cache',
+        });
+        const total = await relaySse(r.body, res, (d) => d.choices?.[0]?.delta?.content || '');
+        if (!total.trim()) res.write('I’m sorry — could you rephrase that?');
+        res.end();
         return;
       }
       const data = await r.json();
@@ -191,6 +239,7 @@ export default async function handler(req, res) {
         body: JSON.stringify({
           model: 'claude-haiku-4-5-20251001',
           max_tokens: 400,
+          stream: wantStream,
           system,
           messages: safeMessages,
         }),
@@ -199,6 +248,18 @@ export default async function handler(req, res) {
         const detail = await r.text();
         console.error('Anthropic API error', r.status, detail.slice(0, 300));
         res.status(502).json({ error: 'Upstream error' });
+        return;
+      }
+      if (wantStream && r.body) {
+        res.writeHead(200, {
+          'content-type': 'text/plain; charset=utf-8',
+          'cache-control': 'no-cache',
+        });
+        const total = await relaySse(r.body, res, (d) =>
+          d.type === 'content_block_delta' && d.delta?.type === 'text_delta' ? d.delta.text : ''
+        );
+        if (!total.trim()) res.write('I’m sorry — could you rephrase that?');
+        res.end();
         return;
       }
       const data = await r.json();
@@ -212,6 +273,10 @@ export default async function handler(req, res) {
     res.status(200).json({ reply: text || 'I’m sorry — could you rephrase that?' });
   } catch (err) {
     console.error('chat handler error', err);
-    res.status(500).json({ error: 'Server error' });
+    if (res.headersSent) {
+      res.end();
+    } else {
+      res.status(500).json({ error: 'Server error' });
+    }
   }
 }

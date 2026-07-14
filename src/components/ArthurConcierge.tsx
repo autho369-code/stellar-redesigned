@@ -111,9 +111,53 @@ const GREETING: Msg = {
 
 const CHIPS = ['How do I pay?', 'Portal help', 'Report a violation', 'Request a proposal'];
 
+// Conversation survives page navigation within the visit (sessionStorage).
+const STORAGE_KEY = 'arthur-chat-v1';
+
+function loadStoredMessages(): Msg[] {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw) as Msg[];
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    }
+  } catch { /* SSR or storage unavailable */ }
+  return [GREETING];
+}
+
+// Arthur cites URLs as plain text (often without a protocol) — render them
+// as links. Stellar's own pages stay in-tab; everything else opens new.
+const LINK_RE = /(https?:\/\/[^\s)]+|(?:stellarpropertygroup\.com|stellarpropertygrp\.appfolio\.com)\/[^\s)]*)/g;
+
+function linkify(text: string) {
+  // LINK_RE has one capture group, so split() alternates text/match/text/…
+  const parts = text.split(LINK_RE);
+  return parts.map((part, i) => {
+    if (i % 2 === 0) return part;
+    const raw = part.replace(/[.,;:]+$/, '');
+    const trailing = part.slice(raw.length);
+    const internal = raw.replace(/^https?:\/\/(www\.)?/, '').startsWith('stellarpropertygroup.com');
+    const href = internal
+      ? raw.slice(raw.indexOf('stellarpropertygroup.com') + 'stellarpropertygroup.com'.length) || '/'
+      : raw.startsWith('http') ? raw : `https://${raw}`;
+    return (
+      <span key={i}>
+        <a
+          href={href}
+          {...(internal ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
+          className="text-gold-600 underline decoration-gold-300 underline-offset-2 hover:text-gold-500 break-all"
+        >
+          {raw}
+        </a>
+        {trailing}
+      </span>
+    );
+  });
+}
+
 export default function ArthurConcierge() {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<Msg[]>([GREETING]);
+  const [messages, setMessages] = useState<Msg[]>(loadStoredMessages);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
   const [leadMode, setLeadMode] = useState(false);
@@ -128,6 +172,12 @@ export default function ArthurConcierge() {
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, leadMode, open, authView]);
+
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(messages.slice(-30)));
+    } catch { /* storage unavailable */ }
+  }, [messages]);
 
   // Detect an existing (or just-completed magic-link/Google) session and
   // load the owner's profile — reads are RLS-scoped to their own records.
@@ -180,7 +230,6 @@ export default function ArthurConcierge() {
     setInput('');
     setBusy(true);
 
-    let reply: string;
     try {
       // Signed-in owners: pass the session token so the server can pull
       // their profile and association knowledge under their own RLS scope.
@@ -200,19 +249,44 @@ export default function ArthurConcierge() {
         },
         body: JSON.stringify({
           messages: next.slice(1), // drop greeting
+          stream: true,
           ownerContext: owner
             ? { name: owner.name, unit: owner.unitNumber, association: owner.associationName }
             : null,
         }),
       });
       if (!r.ok) throw new Error(String(r.status));
-      const data = await r.json();
-      reply = data.reply || kbAnswer(trimmed);
-    } catch {
-      reply = kbAnswer(trimmed);
-    }
 
-    setMessages((m) => [...m, { role: 'assistant', content: reply }]);
+      const contentType = r.headers.get('content-type') || '';
+      if (r.body && contentType.includes('text/plain')) {
+        // Streamed reply: append the bubble on the first token, then grow it.
+        const reader = r.body.getReader();
+        const decoder = new TextDecoder();
+        let acc = '';
+        for (;;) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          acc += decoder.decode(value, { stream: true });
+          const content = acc;
+          setMessages((m) =>
+            m[m.length - 1]?.role === 'assistant' && m.length > next.length
+              ? [...m.slice(0, -1), { role: 'assistant', content }]
+              : [...m, { role: 'assistant', content }]
+          );
+        }
+        if (!acc.trim()) throw new Error('empty stream');
+      } else {
+        // Older deployment (or non-stream response): plain JSON reply.
+        const data = await r.json();
+        const reply: string = data.reply || kbAnswer(trimmed);
+        setMessages((m) => [...m, { role: 'assistant', content: reply }]);
+      }
+    } catch {
+      setMessages((m) => {
+        const base = m[m.length - 1]?.role === 'assistant' && m.length > next.length ? m.slice(0, -1) : m;
+        return [...base, { role: 'assistant', content: kbAnswer(trimmed) }];
+      });
+    }
     setBusy(false);
   };
 
@@ -384,13 +458,31 @@ export default function ArthurConcierge() {
                       : 'max-w-[85%] bg-white border border-slate-200 px-4 py-3 text-sm text-slate-700 font-light leading-relaxed whitespace-pre-line'
                   }
                 >
-                  {m.content}
+                  {m.role === 'assistant' ? linkify(m.content) : m.content}
                 </div>
               </div>
             ))}
-            {busy && (
+            {busy && messages[messages.length - 1]?.role !== 'assistant' && (
               <div className="flex justify-start">
                 <div className="bg-white border border-slate-200 px-4 py-3 text-sm text-slate-400 font-light">Arthur is typing…</div>
+              </div>
+            )}
+
+            {/* Arthur suggested a proposal — make acting on it one tap. */}
+            {!busy && !leadMode && !leadSent &&
+              messages[messages.length - 1]?.role === 'assistant' &&
+              messages.length > 1 &&
+              /proposal|\/contact/i.test(messages[messages.length - 1].content) && (
+              <div className="flex justify-start">
+                <button
+                  onClick={() => {
+                    setLeadMode(true);
+                    setMessages((m) => [...m, { role: 'user', content: 'Request a proposal' }]);
+                  }}
+                  className="text-[11px] font-semibold uppercase tracking-luxe border border-gold-500 text-gold-600 px-4 py-2.5 hover:bg-gold-600 hover:text-paper transition-colors"
+                >
+                  Request a Proposal →
+                </button>
               </div>
             )}
 
