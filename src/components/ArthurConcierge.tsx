@@ -130,8 +130,13 @@ function loadStoredMessages(): Msg[] {
 const LINK_RE = /(https?:\/\/[^\s)]+|(?:stellarpropertygroup\.com|stellarpropertygrp\.appfolio\.com)\/[^\s)]*)/g;
 
 function linkify(text: string) {
+  // Models sometimes emit markdown links — flatten them to plain URLs
+  // (or "label: url") before linkifying so brackets never show literally.
+  const flattened = text.replace(/\[([^\]]*)\]\(([^\s)]+)\)/g, (_, label: string, url: string) =>
+    !label || url.includes(label) || label.includes(url.replace(/^https?:\/\//, '')) ? url : `${label}: ${url}`
+  );
   // LINK_RE has one capture group, so split() alternates text/match/text/…
-  const parts = text.split(LINK_RE);
+  const parts = flattened.split(LINK_RE);
   return parts.map((part, i) => {
     if (i % 2 === 0) return part;
     const raw = part.replace(/[.,;:]+$/, '');

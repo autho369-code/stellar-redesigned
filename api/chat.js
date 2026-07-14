@@ -29,6 +29,7 @@ RULES:
 - Never invent facts, prices, staff names, or client names.
 - Building emergencies (flood, fire, elevator entrapment): tell them to call 773.728.0652 immediately — and 911 first if life-threatening.
 - Be warm, concise (2-4 short sentences), and concrete. When relevant, end by offering the proposal form (/contact) or the portal link.
+- Plain text only — no markdown. Write links as bare URLs (e.g. stellarpropertygroup.com/contact), never [text](url).
 - If the visitor seems to be a board member interested in management services, encourage them to leave name/email/building via the "Request a Proposal" option.`;
 
 // Shared stellar-ops database (browser-safe publishable key; all reads below
