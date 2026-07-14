@@ -23,6 +23,7 @@ const Resources = lazy(() => import('./pages/Resources'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = lazy(() => import('./pages/TermsOfService'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const KnowledgeAdmin = lazy(() => import('./pages/KnowledgeAdmin'));
 
 /**
  * React Router v7 does not support partial dynamic segments like
@@ -62,6 +63,8 @@ export default function App() {
       <ScrollToTop />
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
+          {/* Staff-only, outside the public Layout (no header/footer/chat widget) */}
+          <Route path="/knowledge" element={<KnowledgeAdmin />} />
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
