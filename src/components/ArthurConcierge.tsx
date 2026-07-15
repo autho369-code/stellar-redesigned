@@ -207,6 +207,16 @@ export default function ArthurConcierge() {
   useEffect(() => {
     if (owner && messages.length === 1) {
       const first = owner.name.split(' ')[0];
+      if (owner.isStaff) {
+        setMessages([
+          {
+            role: 'assistant',
+            content: `Welcome back, ${first}. Staff session — I can search the knowledge base across every association for you. What do you need?`,
+          },
+        ]);
+        setAuthView('chat');
+        return;
+      }
       const where = [owner.unitNumber && `unit ${owner.unitNumber}`, owner.associationName]
         .filter(Boolean)
         .join(' at ');
@@ -256,7 +266,7 @@ export default function ArthurConcierge() {
           messages: next.slice(1), // drop greeting
           stream: true,
           ownerContext: owner
-            ? { name: owner.name, unit: owner.unitNumber, association: owner.associationName }
+            ? { name: owner.name, unit: owner.unitNumber, association: owner.associationName, isStaff: owner.isStaff === true }
             : null,
         }),
       });
@@ -377,7 +387,7 @@ export default function ArthurConcierge() {
             {owner && (
               <p className="text-[10px] text-paper/50 mt-1 font-light">
                 Signed in as {owner.name}
-                {owner.associationName ? ` · ${owner.associationName}` : ''}
+                {owner.isStaff ? ' · Stellar staff' : owner.associationName ? ` · ${owner.associationName}` : ''}
               </p>
             )}
           </div>

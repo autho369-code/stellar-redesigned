@@ -80,6 +80,7 @@ function jwtEmail(token) {
 async function buildOwnerContext(userToken, lastUserMessage) {
   let ownerNote = '';
   let knowledgeNote = '';
+  let isStaff = false;
 
   // Match the owner row to the login email explicitly — staff sessions can
   // read every owner row and must not be presented as a random owner.
@@ -95,6 +96,18 @@ async function buildOwnerContext(userToken, lastUserMessage) {
     const unit = o.unit?.number ? `, unit ${o.unit.number}` : '';
     const assoc = o.unit?.association?.name ? `, ${o.unit.association.name}` : '';
     ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${o.name}${unit}${assoc}. Greet them by first name and tailor answers to their community. Never reveal information about other owners or units.`;
+  } else if (email) {
+    // No owner row — Stellar staff (team_members) sign in with company-wide
+    // RLS; recognize them from their own team_members record.
+    const staff = await restGet(
+      `team_members?select=name&email=ilike.${encodeURIComponent(email)}&active=eq.true&limit=1`,
+      userToken
+    );
+    const s = Array.isArray(staff) ? staff[0] : null;
+    if (s?.name) {
+      isStaff = true;
+      ownerNote = `\n\nSIGNED-IN STAFF (verified session): ${s.name}, Stellar Property Management staff. Greet them by first name. They may ask about any association — answer from the knowledge entries and always say which association each fact belongs to.`;
+    }
   }
 
   // Full-text search the curated owner knowledge base with the visitor's
@@ -114,7 +127,9 @@ async function buildOwnerContext(userToken, lastUserMessage) {
       const entries = rows
         .map((k) => `• [${k.association?.name || 'ALL COMMUNITIES'}] ${k.title}: ${String(k.body).slice(0, 1200)}`)
         .join('\n');
-      knowledgeNote = `\n\nASSOCIATION KNOWLEDGE BASE (each entry applies ONLY to the association named in brackets — NEVER answer using another association's rules; if no entry matches the owner's own community, say the office will confirm and point to the AppFolio document library or the board):\n${entries}`;
+      knowledgeNote = isStaff
+        ? `\n\nASSOCIATION KNOWLEDGE BASE (staff session — entries from any association may be used, but each applies ONLY to the association named in brackets; always name the association when citing a rule):\n${entries}`
+        : `\n\nASSOCIATION KNOWLEDGE BASE (each entry applies ONLY to the association named in brackets — NEVER answer using another association's rules; if no entry matches the owner's own community, say the office will confirm and point to the AppFolio document library or the board):\n${entries}`;
     }
   }
 
@@ -195,7 +210,9 @@ export default async function handler(req, res) {
       const name = clean(ownerContext.name);
       const unit = clean(ownerContext.unit);
       const assoc = clean(ownerContext.association);
-      if (name) {
+      if (name && ownerContext.isStaff === true) {
+        ownerNote = `\n\nSIGNED-IN STAFF (unverified client claim): ${name}, Stellar Property Management staff. Greet them by first name. Still never reveal information about individual owners or units.`;
+      } else if (name) {
         ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${name}${unit ? `, unit ${unit}` : ''}${assoc ? `, ${assoc}` : ''}. Greet them by first name and tailor answers to their community. Still never reveal information about other owners or units.`;
       }
     }

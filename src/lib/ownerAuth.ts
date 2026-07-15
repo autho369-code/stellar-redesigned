@@ -14,6 +14,8 @@ export interface OwnerProfile {
   email: string;
   unitNumber: string | null;
   associationName: string | null;
+  /** True for Stellar staff (team_members) sessions — no unit/association. */
+  isStaff?: boolean;
 }
 
 export async function fetchOwnerProfile(): Promise<OwnerProfile | null> {
@@ -32,7 +34,25 @@ export async function fetchOwnerProfile(): Promise<OwnerProfile | null> {
     .limit(1)
     .maybeSingle();
 
-  if (error || !data) return null;
+  // Staff sessions (company-wide RLS, e.g. meho@/mirsad@) have no owner row.
+  // Recognize them from their own team_members record instead.
+  if (error || !data) {
+    const { data: staff } = await supabase
+      .from('team_members')
+      .select('name, email')
+      .ilike('email', session.user.email)
+      .eq('active', true)
+      .limit(1)
+      .maybeSingle();
+    if (!staff) return null;
+    return {
+      name: (staff as { name: string }).name,
+      email: (staff as { email: string }).email,
+      unitNumber: null,
+      associationName: null,
+      isStaff: true,
+    };
+  }
 
   const unit = (data as { unit?: { number?: string | null; association?: { name?: string | null } | null } | null }).unit;
 
