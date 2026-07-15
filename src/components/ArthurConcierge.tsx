@@ -3,8 +3,7 @@ import { MessageCircle, X, Send, ArrowUpRight } from 'lucide-react';
 import { submitLeadToOps } from '../lib/leads';
 import {
   fetchOwnerProfile,
-  signInWithGoogle,
-  sendMagicLink,
+  signInWithPassword,
   signOut,
   type OwnerProfile,
 } from '../lib/ownerAuth';
@@ -171,7 +170,9 @@ export default function ArthurConcierge() {
   const [owner, setOwner] = useState<OwnerProfile | null>(null);
   const [authView, setAuthView] = useState<'chat' | 'signin'>('chat');
   const [signinEmail, setSigninEmail] = useState('');
-  const [linkSent, setLinkSent] = useState(false);
+  const [signinPassword, setSigninPassword] = useState('');
+  const [signinError, setSigninError] = useState('');
+  const [signinBusy, setSigninBusy] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -229,6 +230,31 @@ export default function ArthurConcierge() {
       setAuthView('chat');
     }
   }, [owner]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Direct email + password sign-in, restricted to authorized staff: a
+  // correct password on a non-authorized account is signed out immediately.
+  const submitSignIn = async () => {
+    const email = signinEmail.trim();
+    if (!email.includes('@') || !signinPassword || signinBusy) return;
+    setSigninBusy(true);
+    setSigninError('');
+    const err = await signInWithPassword(email, signinPassword);
+    if (err) {
+      setSigninError('Invalid email or password.');
+      setSigninBusy(false);
+      return;
+    }
+    const profile = await fetchOwnerProfile();
+    if (!profile) {
+      await signOut();
+      setSigninError('This account is not authorized.');
+      setSigninBusy(false);
+      return;
+    }
+    setOwner(profile);
+    setSigninPassword('');
+    setSigninBusy(false);
+  };
 
   const ask = async (text: string) => {
     const trimmed = text.trim();
@@ -380,7 +406,7 @@ export default function ArthurConcierge() {
                   onClick={() => setAuthView(authView === 'signin' ? 'chat' : 'signin')}
                   className="text-[9px] uppercase tracking-luxe text-gold-300 hover:text-gold-200 transition-colors whitespace-nowrap"
                 >
-                  Owner sign-in
+                  Staff sign-in
                 </button>
               )}
             </div>
@@ -392,65 +418,44 @@ export default function ArthurConcierge() {
             )}
           </div>
 
-          {/* Owner sign-in view */}
+          {/* Staff sign-in view — email + password, authorized staff only */}
           {authView === 'signin' && !owner && (
             <div className="flex-1 overflow-y-auto px-6 py-6 space-y-5">
               <p className="text-sm text-slate-600 font-light leading-relaxed">
-                Sign in once and Arthur will recognize you on this device — your
-                unit, your association, your questions answered personally.
+                Staff sign-in. Use your Stellar email and password — Arthur will
+                recognize you on this device.
               </p>
 
+              <input
+                type="email"
+                value={signinEmail}
+                onChange={(e) => setSigninEmail(e.target.value)}
+                placeholder="Stellar email"
+                autoComplete="username"
+                className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
+              />
+              <input
+                type="password"
+                value={signinPassword}
+                onChange={(e) => setSigninPassword(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') submitSignIn(); }}
+                placeholder="Password"
+                autoComplete="current-password"
+                className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
+              />
+              {signinError && (
+                <p className="text-xs text-red-600 font-light">{signinError}</p>
+              )}
               <button
-                onClick={() => signInWithGoogle()}
-                className="w-full flex items-center justify-center gap-3 bg-ink text-paper py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:bg-navy-700 transition-colors"
+                onClick={submitSignIn}
+                disabled={!signinEmail.includes('@') || !signinPassword || signinBusy}
+                className="w-full bg-ink text-paper py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:bg-navy-700 transition-colors disabled:opacity-40"
               >
-                <svg viewBox="0 0 24 24" className="w-4 h-4" aria-hidden>
-                  <path fill="#EA4335" d="M12 5.04c1.62 0 3.06.56 4.2 1.64l3.12-3.12C17.4 1.79 14.9.75 12 .75 7.55.75 3.73 3.3 1.86 7.02l3.66 2.84C6.43 7.1 8.99 5.04 12 5.04z"/>
-                  <path fill="#4285F4" d="M23.25 12.27c0-.93-.08-1.6-.26-2.31H12v4.51h6.44c-.13 1.08-.83 2.7-2.39 3.79l3.57 2.77c2.14-1.97 3.63-4.88 3.63-8.76z"/>
-                  <path fill="#FBBC05" d="M5.53 14.14a7.1 7.1 0 0 1-.38-2.14c0-.75.14-1.47.36-2.14L1.86 7.02A11.2 11.2 0 0 0 .75 12c0 1.8.43 3.5 1.11 4.98l3.67-2.84z"/>
-                  <path fill="#34A853" d="M12 23.25c3.04 0 5.6-1 7.46-2.72l-3.57-2.77c-.95.66-2.23 1.13-3.89 1.13-3.01 0-5.57-2.06-6.48-4.75l-3.66 2.84c1.86 3.72 5.69 6.27 10.14 6.27z"/>
-                </svg>
-                Continue with Google
+                {signinBusy ? 'Signing in…' : 'Sign In'}
               </button>
 
-              <div className="flex items-center gap-4">
-                <span className="flex-1 h-px bg-slate-200" />
-                <span className="text-[9px] uppercase tracking-luxe text-slate-400">or</span>
-                <span className="flex-1 h-px bg-slate-200" />
-              </div>
-
-              {linkSent ? (
-                <div className="border border-gold-300 bg-gold-50 p-4 text-sm text-slate-700 font-light leading-relaxed">
-                  Check your inbox — we sent a one-click sign-in link to{' '}
-                  <strong className="font-semibold">{signinEmail}</strong>. Open it on this
-                  device and you&rsquo;ll be signed in automatically.
-                </div>
-              ) : (
-                <>
-                  <input
-                    type="email"
-                    value={signinEmail}
-                    onChange={(e) => setSigninEmail(e.target.value)}
-                    placeholder="Email on file with your association"
-                    className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
-                  />
-                  <button
-                    onClick={async () => {
-                      if (!signinEmail.includes('@')) return;
-                      const ok = await sendMagicLink(signinEmail.trim());
-                      if (ok) setLinkSent(true);
-                    }}
-                    disabled={!signinEmail.includes('@')}
-                    className="w-full border border-slate-300 text-ink py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:border-gold-500 hover:text-gold-600 transition-colors disabled:opacity-40"
-                  >
-                    Email Me a Sign-In Link
-                  </button>
-                </>
-              )}
-
               <p className="text-[10px] text-slate-400 font-light leading-relaxed">
-                One sign-in per device — no passwords, no codes to retype. Use the
-                email your association has on file.
+                Authorized Stellar staff only. One sign-in per device.
               </p>
               <button
                 onClick={() => setAuthView('chat')}

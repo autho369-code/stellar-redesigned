@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpen, Trash2, Upload, RefreshCw, LogOut } from 'lucide-react';
 import { getSupabase } from '../lib/supabaseClient';
+import { AUTHORIZED_STAFF, signInWithPassword } from '../lib/ownerAuth';
 
 /**
  * Staff-only manager for Arthur's knowledge base (/knowledge — not linked
@@ -34,7 +35,8 @@ export default function KnowledgeAdmin() {
   const [session, setSession] = useState<{ email: string; token: string; isStaff: boolean } | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [signinEmail, setSigninEmail] = useState('');
-  const [linkSent, setLinkSent] = useState(false);
+  const [signinPassword, setSigninPassword] = useState('');
+  const [signinBusy, setSigninBusy] = useState(false);
 
   const [entries, setEntries] = useState<Entry[]>([]);
   const [associations, setAssociations] = useState<Association[]>([]);
@@ -52,10 +54,14 @@ export default function KnowledgeAdmin() {
       const { data } = await supabase.auth.getSession();
       const s = data.session;
       if (s?.user) {
+        const email = (s.user.email || '').toLowerCase();
         setSession({
-          email: s.user.email || '',
+          email,
           token: s.access_token,
-          isStaff: Boolean((s.user.app_metadata as Record<string, unknown>)?.company_id),
+          // Staff account AND on the authorized list (Mirsad, Mustafa, Meho).
+          isStaff:
+            Boolean((s.user.app_metadata as Record<string, unknown>)?.company_id) &&
+            AUTHORIZED_STAFF.includes(email),
         });
       } else {
         setSession(null);
@@ -121,15 +127,15 @@ export default function KnowledgeAdmin() {
     return associations.filter((a) => !covered.has(a.id));
   }, [entries, associations]);
 
-  const sendLink = async () => {
+  const signIn = async () => {
     const email = signinEmail.trim();
-    if (!email.includes('@')) return;
-    const { error } = await getSupabase().auth.signInWithOtp({
-      email,
-      options: { emailRedirectTo: window.location.origin + '/knowledge', shouldCreateUser: false },
-    });
-    if (!error) setLinkSent(true);
-    else setStatus('Could not send the sign-in link — is this a staff email?');
+    if (!email.includes('@') || !signinPassword || signinBusy) return;
+    setSigninBusy(true);
+    setStatus(null);
+    const err = await signInWithPassword(email, signinPassword);
+    if (err) setStatus('Invalid email or password.');
+    else setSigninPassword('');
+    setSigninBusy(false);
   };
 
   const upload = async () => {
@@ -215,29 +221,34 @@ export default function KnowledgeAdmin() {
                 Sign out
               </button>
             </>
-          ) : linkSent ? (
-            <p className="text-sm text-slate-600 font-light">
-              Check your inbox — a one-click sign-in link was sent to <strong>{signinEmail}</strong>.
-            </p>
           ) : (
             <>
               <p className="text-sm text-slate-600 font-light">
-                Sign in with your staff email to view and upload the documents Arthur answers from.
+                Sign in with your staff email and password to view and upload the documents Arthur answers from.
               </p>
               <input
                 type="email"
                 value={signinEmail}
                 onChange={(e) => setSigninEmail(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && sendLink()}
                 placeholder="you@stellarpropertygroup.com"
+                autoComplete="username"
+                className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
+              />
+              <input
+                type="password"
+                value={signinPassword}
+                onChange={(e) => setSigninPassword(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && signIn()}
+                placeholder="Password"
+                autoComplete="current-password"
                 className="w-full border border-slate-200 px-4 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
               />
               <button
-                onClick={sendLink}
-                disabled={!signinEmail.includes('@')}
+                onClick={signIn}
+                disabled={!signinEmail.includes('@') || !signinPassword || signinBusy}
                 className="w-full bg-ink text-paper py-3.5 text-[11px] font-semibold uppercase tracking-luxe hover:bg-navy-700 transition-colors disabled:opacity-40"
               >
-                Email Me a Sign-In Link
+                {signinBusy ? 'Signing in…' : 'Sign In'}
               </button>
               {status && <p className="text-xs text-red-600">{status}</p>}
             </>

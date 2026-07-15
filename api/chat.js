@@ -38,6 +38,14 @@ RULES:
 const SUPABASE_URL = 'https://qfjhmzvuaifxnvmwblux.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_zLJMg0YOC9jHmg05IfE7-g_VIWA-v1G';
 
+// Staff authorized for Arthur's staff session (full, all-association access).
+// Must match AUTHORIZED_STAFF in src/lib/ownerAuth.ts.
+const AUTHORIZED_STAFF = [
+  'mirsad@stellarpropertygroup.com',
+  'mustafa@stellarpropertygroup.com',
+  'meho@stellarpropertygroup.com',
+];
+
 async function restGet(path, userToken) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     headers: {
@@ -96,7 +104,7 @@ async function buildOwnerContext(userToken, lastUserMessage) {
     const unit = o.unit?.number ? `, unit ${o.unit.number}` : '';
     const assoc = o.unit?.association?.name ? `, ${o.unit.association.name}` : '';
     ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${o.name}${unit}${assoc}. Greet them by first name and tailor answers to their community. Never reveal information about other owners or units.`;
-  } else if (email) {
+  } else if (email && AUTHORIZED_STAFF.includes(email)) {
     // No owner row — Stellar staff (team_members) sign in with company-wide
     // RLS; recognize them from their own team_members record.
     const staff = await restGet(
@@ -210,9 +218,9 @@ export default async function handler(req, res) {
       const name = clean(ownerContext.name);
       const unit = clean(ownerContext.unit);
       const assoc = clean(ownerContext.association);
-      if (name && ownerContext.isStaff === true) {
-        ownerNote = `\n\nSIGNED-IN STAFF (unverified client claim): ${name}, Stellar Property Management staff. Greet them by first name. Still never reveal information about individual owners or units.`;
-      } else if (name) {
+      // Staff sessions are only honored via the verified token path above —
+      // a client-claimed isStaff flag is ignored.
+      if (name && ownerContext.isStaff !== true) {
         ownerNote = `\n\nSIGNED-IN OWNER (verified session): ${name}${unit ? `, unit ${unit}` : ''}${assoc ? `, ${assoc}` : ''}. Greet them by first name and tailor answers to their community. Still never reveal information about other owners or units.`;
       }
     }

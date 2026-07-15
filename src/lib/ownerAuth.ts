@@ -9,6 +9,17 @@ import { getSupabase } from './supabaseClient';
  * verified: a matching owner sees 1/1/1 rows; a stranger sees 0/0/0.
  */
 
+/**
+ * Staff authorized to sign in to Arthur. All three get full admin access —
+ * knowledge across every association. Other staff accounts (and any other
+ * credentials) are rejected even if the password is correct.
+ */
+export const AUTHORIZED_STAFF = [
+  'mirsad@stellarpropertygroup.com',
+  'mustafa@stellarpropertygroup.com',
+  'meho@stellarpropertygroup.com',
+];
+
 export interface OwnerProfile {
   name: string;
   email: string;
@@ -35,8 +46,10 @@ export async function fetchOwnerProfile(): Promise<OwnerProfile | null> {
     .maybeSingle();
 
   // Staff sessions (company-wide RLS, e.g. meho@/mirsad@) have no owner row.
-  // Recognize them from their own team_members record instead.
+  // Recognize them from their own team_members record instead — but only
+  // the authorized three.
   if (error || !data) {
+    if (!AUTHORIZED_STAFF.includes(session.user.email.toLowerCase())) return null;
     const { data: staff } = await supabase
       .from('team_members')
       .select('name, email')
@@ -64,26 +77,11 @@ export async function fetchOwnerProfile(): Promise<OwnerProfile | null> {
   };
 }
 
-export async function signInWithGoogle(): Promise<void> {
+/** Direct email + password sign-in. Returns an error message, or null on success. */
+export async function signInWithPassword(email: string, password: string): Promise<string | null> {
   const supabase = getSupabase();
-  await supabase.auth.signInWithOAuth({
-    provider: 'google',
-    options: {
-      redirectTo: window.location.origin + window.location.pathname,
-      // Always show Google's account picker (with "Use another account")
-      // instead of silently reusing the currently signed-in Google session.
-      queryParams: { prompt: 'select_account' },
-    },
-  });
-}
-
-export async function sendMagicLink(email: string): Promise<boolean> {
-  const supabase = getSupabase();
-  const { error } = await supabase.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: window.location.origin + window.location.pathname },
-  });
-  return !error;
+  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  return error ? error.message : null;
 }
 
 export async function signOut(): Promise<void> {

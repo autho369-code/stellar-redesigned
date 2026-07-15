@@ -10,6 +10,14 @@
 const SUPABASE_URL = 'https://qfjhmzvuaifxnvmwblux.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_zLJMg0YOC9jHmg05IfE7-g_VIWA-v1G';
 
+// Staff authorized to manage the knowledge base (full, all-association
+// access). Must match AUTHORIZED_STAFF in src/lib/ownerAuth.ts.
+const AUTHORIZED_STAFF = [
+  'mirsad@stellarpropertygroup.com',
+  'mustafa@stellarpropertygroup.com',
+  'meho@stellarpropertygroup.com',
+];
+
 const CHUNK = 3500;
 const MAX_CHUNKS = 40;
 
@@ -33,7 +41,9 @@ async function requireStaff(req) {
   const user = await r.json();
   const companyId = user?.app_metadata?.company_id;
   if (!companyId) return null;
-  return { email: user.email, companyId };
+  const email = String(user.email || '').toLowerCase();
+  if (!AUTHORIZED_STAFF.includes(email)) return null;
+  return { email, companyId };
 }
 
 async function extractText(filename, buffer) {
