@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "api/knowledge.js": { "maxDuration": 300 }
+  },
   "redirects": [
     { "source": "/contact-us", "destination": "/contact", "permanent": true },
     { "source": "/contact-us/:path*", "destination": "/contact", "permanent": true },

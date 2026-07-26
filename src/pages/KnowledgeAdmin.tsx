@@ -141,37 +141,60 @@ export default function KnowledgeAdmin() {
   const upload = async () => {
     const file = fileRef.current?.files?.[0];
     if (!file || !session) return;
-    if (file.size > 3_000_000) {
-      setStatus('File too large — 3 MB max. Save a smaller PDF or split the document.');
+    if (file.size > 50_000_000) {
+      setStatus('File too large — 50 MB max. Split the document into parts.');
       return;
     }
     setUploading(true);
-    setStatus(null);
+    setStatus(`Uploading "${file.name}"…`);
+    const authHeaders = {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${session.token}`,
+    };
     try {
-      const buf = await file.arrayBuffer();
-      let binary = '';
-      const bytes = new Uint8Array(buf);
-      for (let i = 0; i < bytes.length; i += 0x8000) {
-        binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+      // 1. Get a signed URL, 2. PUT the file straight into storage (no size
+      // limit from the API function), 3. tell the server to process it.
+      const signR = await fetch('/api/knowledge', {
+        method: 'POST',
+        headers: authHeaders,
+        body: JSON.stringify({ action: 'sign-upload', filename: file.name }),
+      });
+      const sign = await signR.json().catch(() => ({}));
+      if (!signR.ok || !sign.path || !sign.token) {
+        throw new Error(sign.error || 'Could not start the upload — try again.');
       }
+
+      const put = await getSupabase()
+        .storage.from('knowledge-uploads')
+        .uploadToSignedUrl(sign.path, sign.token, file);
+      if (put.error) throw new Error(`File transfer failed: ${put.error.message}`);
+
+      setStatus(
+        `Processing "${file.name}"… Scanned documents are read with AI and can take a few minutes — keep this tab open.`
+      );
       const r = await fetch('/api/knowledge', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${session.token}`,
-        },
+        headers: authHeaders,
         body: JSON.stringify({
-          action: 'upload',
+          action: 'process',
           association_id: uploadAssoc || null,
           filename: file.name,
           title: uploadTitle.trim() || undefined,
-          data: btoa(binary),
+          path: sign.path,
         }),
       });
-      const data = await r.json();
+      const data = await r.json().catch(() => ({
+        error: 'The document took too long to process — split it into smaller PDFs and try again.',
+      }));
       if (!r.ok) throw new Error(data.error || 'Upload failed');
       setStatus(
-        `Uploaded "${file.name}" — ${data.chunks} searchable sections. Arthur (website and phone) can use it immediately.${data.truncated ? ' Note: very long document, only the first ~140 pages were indexed.' : ''}`
+        `Uploaded "${file.name}" — ${data.chunks} searchable sections${data.ocr ? ' (scanned document, read with AI)' : ''}. Arthur (website and phone) can use it immediately.${
+          data.truncatedPages
+            ? ' Note: very long scan — only the first 50 pages were read; split the rest into a second file.'
+            : data.truncated
+              ? ' Note: very long document, only the beginning was indexed.'
+              : ''
+        }`
       );
       setUploadTitle('');
       if (fileRef.current) fileRef.current.value = '';
@@ -315,7 +338,7 @@ export default function KnowledgeAdmin() {
             >
               {uploading ? 'Uploading…' : 'Upload to Arthur'}
             </button>
-            <span className="text-xs text-slate-400 font-light">PDF, Word, or text · 3 MB max · scanned PDFs need OCR first</span>
+            <span className="text-xs text-slate-400 font-light">PDF, Word, or text · up to 50 MB · scanned PDFs are read automatically with AI</span>
           </div>
         </div>
 
