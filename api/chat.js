@@ -46,6 +46,48 @@ const AUTHORIZED_STAFF = [
   'meho@stellarpropertygroup.com',
 ];
 
+// USD per million tokens — used only for the estimated_cost_usd ledger column.
+const CHAT_PRICES = {
+  'claude-haiku-4-5-20251001': { in: 1.0, out: 5.0, cacheRead: 0.1, cacheWrite: 1.25 },
+  'deepseek-chat': { in: 0.27, out: 1.1, cacheRead: 0.07, cacheWrite: 0.27 },
+};
+
+/** Best-effort usage row into ai_usage_ledger (service role; never blocks the reply). */
+async function logChatUsage(model, u) {
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!key || !u || (!u.input && !u.output)) return;
+  const p = CHAT_PRICES[model] || { in: 0, out: 0, cacheRead: 0, cacheWrite: 0 };
+  const cost =
+    ((u.input || 0) * p.in +
+      (u.output || 0) * p.out +
+      (u.cacheRead || 0) * p.cacheRead +
+      (u.cacheCreate || 0) * p.cacheWrite) /
+    1e6;
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/ai_usage_ledger`, {
+      method: 'POST',
+      headers: {
+        apikey: key,
+        authorization: `Bearer ${key}`,
+        'content-type': 'application/json',
+        prefer: 'return=minimal',
+      },
+      body: JSON.stringify({
+        kind: 'chat',
+        model,
+        input_tokens: u.input || 0,
+        output_tokens: u.output || 0,
+        cache_read_input_tokens: u.cacheRead || 0,
+        cache_creation_input_tokens: u.cacheCreate || 0,
+        estimated_cost_usd: Number(cost.toFixed(6)),
+        status: 'succeeded',
+      }),
+    });
+  } catch (e) {
+    console.error('chat usage log failed', e?.message);
+  }
+}
+
 async function restGet(path, userToken) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     headers: {
@@ -248,6 +290,7 @@ export default async function handler(req, res) {
           model: 'deepseek-chat',
           max_tokens: 400,
           stream: wantStream,
+          ...(wantStream ? { stream_options: { include_usage: true } } : {}),
           messages: [{ role: 'system', content: system }, ...safeMessages],
         }),
       });
@@ -262,13 +305,27 @@ export default async function handler(req, res) {
           'content-type': 'text/plain; charset=utf-8',
           'cache-control': 'no-cache',
         });
-        const total = await relaySse(r.body, res, (d) => d.choices?.[0]?.delta?.content || '');
+        const usage = {};
+        const total = await relaySse(r.body, res, (d) => {
+          if (d.usage) {
+            usage.input = d.usage.prompt_tokens || 0;
+            usage.output = d.usage.completion_tokens || 0;
+            usage.cacheRead = d.usage.prompt_cache_hit_tokens || 0;
+          }
+          return d.choices?.[0]?.delta?.content || '';
+        });
         if (!total.trim()) res.write('I’m sorry — could you rephrase that?');
+        await logChatUsage('deepseek-chat', usage);
         res.end();
         return;
       }
       const data = await r.json();
       text = (data.choices?.[0]?.message?.content || '').trim();
+      await logChatUsage('deepseek-chat', {
+        input: data.usage?.prompt_tokens,
+        output: data.usage?.completion_tokens,
+        cacheRead: data.usage?.prompt_cache_hit_tokens,
+      });
     } else {
       const r = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
@@ -296,10 +353,22 @@ export default async function handler(req, res) {
           'content-type': 'text/plain; charset=utf-8',
           'cache-control': 'no-cache',
         });
-        const total = await relaySse(r.body, res, (d) =>
-          d.type === 'content_block_delta' && d.delta?.type === 'text_delta' ? d.delta.text : ''
-        );
+        const usage = {};
+        const total = await relaySse(r.body, res, (d) => {
+          if (d.type === 'message_start' && d.message?.usage) {
+            usage.input = d.message.usage.input_tokens || 0;
+            usage.cacheRead = d.message.usage.cache_read_input_tokens || 0;
+            usage.cacheCreate = d.message.usage.cache_creation_input_tokens || 0;
+          }
+          if (d.type === 'message_delta' && d.usage) {
+            usage.output = d.usage.output_tokens || 0;
+          }
+          return d.type === 'content_block_delta' && d.delta?.type === 'text_delta'
+            ? d.delta.text
+            : '';
+        });
         if (!total.trim()) res.write('I’m sorry — could you rephrase that?');
+        await logChatUsage('claude-haiku-4-5-20251001', usage);
         res.end();
         return;
       }
@@ -309,6 +378,12 @@ export default async function handler(req, res) {
         .map((b) => b.text)
         .join('\n')
         .trim();
+      await logChatUsage('claude-haiku-4-5-20251001', {
+        input: data.usage?.input_tokens,
+        output: data.usage?.output_tokens,
+        cacheRead: data.usage?.cache_read_input_tokens,
+        cacheCreate: data.usage?.cache_creation_input_tokens,
+      });
     }
 
     res.status(200).json({ reply: text || 'I’m sorry — could you rephrase that?' });

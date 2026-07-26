@@ -40,6 +40,7 @@ export default function KnowledgeAdmin() {
 
   const [entries, setEntries] = useState<Entry[]>([]);
   const [associations, setAssociations] = useState<Association[]>([]);
+  const [aiSpend, setAiSpend] = useState<{ ingest: number; chat: number } | null>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
 
@@ -84,6 +85,7 @@ export default function KnowledgeAdmin() {
       const data = await r.json();
       setEntries(data.entries || []);
       setAssociations(data.associations || []);
+      setAiSpend(data.aiSpend || null);
     } catch {
       setStatus('Could not load the knowledge base. Refresh the page or try again.');
     }
@@ -172,23 +174,55 @@ export default function KnowledgeAdmin() {
       setStatus(
         `Processing "${file.name}"… Scanned documents are read with AI and can take a few minutes — keep this tab open.`
       );
-      const r = await fetch('/api/knowledge', {
-        method: 'POST',
-        headers: authHeaders,
-        body: JSON.stringify({
-          action: 'process',
-          association_id: uploadAssoc || null,
-          filename: file.name,
-          title: uploadTitle.trim() || undefined,
-          path: sign.path,
-        }),
-      });
-      const data = await r.json().catch(() => ({
-        error: 'The document took too long to process — split it into smaller PDFs and try again.',
-      }));
-      if (!r.ok) throw new Error(data.error || 'Upload failed');
+      const processCall = async (confirm: boolean) => {
+        const r = await fetch('/api/knowledge', {
+          method: 'POST',
+          headers: authHeaders,
+          body: JSON.stringify({
+            action: 'process',
+            association_id: uploadAssoc || null,
+            filename: file.name,
+            title: uploadTitle.trim() || undefined,
+            path: sign.path,
+            confirm,
+          }),
+        });
+        const data = await r.json().catch(() => ({
+          error: 'The document took too long to process — split it into smaller PDFs and try again.',
+        }));
+        if (!r.ok) throw new Error(data.error || 'Upload failed');
+        return data;
+      };
+
+      let data = await processCall(false);
+      if (data.confirmRequired) {
+        const ok = window.confirm(
+          `This is a large scanned document (${data.pages ?? '?'} pages, ${Number(
+            data.inputTokens ?? 0
+          ).toLocaleString()} input tokens). Estimated AI reading cost: up to $${Number(
+            data.estimatedCost
+          ).toFixed(2)}. Proceed?`
+        );
+        if (!ok) {
+          setStatus('Upload cancelled — nothing was processed and no AI cost was incurred.');
+          setUploading(false);
+          return;
+        }
+        setStatus(`Reading "${file.name}" with AI — this can take a few minutes. Keep this tab open.`);
+        data = await processCall(true);
+      }
+
+      const costNote = data.reused
+        ? 'Identical file was processed before — restored from cache at no AI cost.'
+        : data.ocr && data.usage
+          ? `AI transcription: ${data.pages ?? '?'} pages · ${Number(
+              data.usage.input_tokens
+            ).toLocaleString()} in / ${Number(data.usage.output_tokens).toLocaleString()} out tokens · $${Number(
+              data.costUsd
+            ).toFixed(4)}.`
+          : 'Text extracted directly — no AI cost.';
       setStatus(
-        `Uploaded "${file.name}" — ${data.chunks} searchable sections${data.ocr ? ' (scanned document, read with AI)' : ''}. Arthur (website and phone) can use it immediately.${
+        `Uploaded "${file.name}" — ${data.chunks} searchable sections. ${costNote} Arthur (website and phone) can use it immediately.${
           data.truncatedPages
             ? ' Note: very long scan — only the first 50 pages were read; split the rest into a second file.'
             : data.truncated
@@ -359,6 +393,12 @@ export default function KnowledgeAdmin() {
           <div className="px-5 py-4 border-b border-slate-200 flex items-center justify-between">
             <p className="text-[10px] uppercase tracking-luxe text-slate-500">
               {docs.length} documents · {entries.length} searchable sections
+              {aiSpend && (
+                <span className="normal-case tracking-normal">
+                  {' '}· AI spend this month: ${aiSpend.ingest.toFixed(2)} documents · $
+                  {aiSpend.chat.toFixed(2)} Arthur chat
+                </span>
+              )}
             </p>
             <button onClick={refresh} disabled={loading} aria-label="Refresh" className="text-slate-400 hover:text-gold-600">
               <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
