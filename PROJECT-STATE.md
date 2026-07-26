@@ -88,9 +88,39 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Jul 26** — large-file uploads via storage + scanned-PDF reading;
   auditable AI cost controls (`ai_usage_ledger`)
 
+## Arthur on the phone (stellar-receptionist)
+
+Separate repo at `C:\Users\autho\stellar-receptionist` — self-hosted AI phone
+receptionist (Pipecat + Telnyx + Deepgram + DeepSeek), deployed and healthy on
+Fly.io as `stellar-receptionist` (Chicago/ord, always-on, ~$0.025/min all-in).
+Full runbook in that repo's README.
+
+- Existing live Telnyx number: **+1 773-241-7993** (RECEPTIONIST_NUMBER).
+- Telnyx connection name: **"Stellar AI Receptionist"**.
+- Routing: real org chart — Meho (VP, +1 773-892-1261) is primary for
+  boards/escalations/new business and default emergency on-call; single-person
+  transfers only; 911-first for life-threatening emergencies.
+- Messages land in Supabase `phone_messages` + SMS alerts to the office.
+- Fly secrets set: Deepgram, DeepSeek, Telnyx, Supabase service role.
+  **Missing: WEB3FORMS_ACCESS_KEY** (phone messages don't email the office yet).
+
+### Main-line port (in progress, submitted 2026-07-26)
+
+Porting **773.728.0652** out of Ooma into Telnyx so Arthur answers the main
+business line. Telnyx port order `12c5d6cc-1e18-4b0f-bc48-489dbf70e9bd`
+(request `sr_b9fc70`), status **In Process**, porting from ONVOY LLC (Ooma's
+underlying carrier). Partial port — remaining Ooma numbers (staff direct lines
+892-12xx, 872-295-5060, primary 773-251-1529) stay active; new Ooma BTN is
+Mirsad's line +1 773-892-1265. FastPort eligible; auto-activation, number
+pre-configured to route to "Stellar AI Receptionist" on activation. LOA
+(signed by Mirsad Cermovic) + Ooma invoice BILL-186 attached. Watch the
+order's Timeline/Communications tabs for the FOC date or any rejection.
+
 ## Open items
 
-- **Phone number for Arthur** — user wants Arthur reachable by phone
-  (voice/SMS agent). Not started; no provider chosen yet.
+- Monitor the Telnyx port order until FOC/completion; after activation, call
+  773.728.0652 to verify Arthur answers, and consider updating
+  RECEPTIONIST_NUMBER in the Fly config.
+- Set WEB3FORMS_ACCESS_KEY on Fly so phone messages email the office.
 - `public/sitemap.xml` has an uncommitted regeneration diff (harmless,
   produced by `prebuild`).
