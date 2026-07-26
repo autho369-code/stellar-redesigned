@@ -248,7 +248,18 @@ async function transcribeScan(pdfBuffer, staff) {
  * Returns { keepFile: true } when the temp upload must be preserved
  * (cost-confirmation round-trip).
  */
-async function ingest(staff, { association_id, filename, title, buffer, confirm }, res) {
+/** "Rules/2026 Amendments" — trimmed segments, no empties, capped depth/length. */
+function normalizeFolder(raw) {
+  const path = String(raw || '')
+    .split('/')
+    .map((s) => s.trim().replace(/\s+/g, ' ').slice(0, 60))
+    .filter(Boolean)
+    .slice(0, 4)
+    .join('/');
+  return path || null;
+}
+
+async function ingest(staff, { association_id, folder, filename, title, buffer, confirm }, res) {
   const contentSha = createHash('sha256').update(buffer).digest('hex');
 
   // Fingerprint check — same bytes are never AI-processed twice.
@@ -334,6 +345,7 @@ async function ingest(staff, { association_id, filename, title, buffer, confirm 
   const rows = chunks.map((c, i) => ({
     company_id: staff.companyId,
     association_id: association_id || null,
+    folder: normalizeFolder(folder),
     title: chunks.length > 1 ? `${docTitle} (part ${i + 1} of ${chunks.length})` : docTitle,
     body: c,
     source,
@@ -456,7 +468,7 @@ export default async function handler(req, res) {
     if (req.method === 'GET') {
       const [entriesR, assocsR, aiSpend] = await Promise.all([
         fetch(
-          `${SUPABASE_URL}/rest/v1/owner_knowledge?select=id,title,source,created_at,association_id&order=created_at.desc&limit=2000`,
+          `${SUPABASE_URL}/rest/v1/owner_knowledge?select=id,title,source,created_at,association_id,folder&order=created_at.desc&limit=2000`,
           { headers: serviceHeaders() }
         ),
         fetch(`${SUPABASE_URL}/rest/v1/associations?select=id,name&order=name`, {
@@ -496,6 +508,32 @@ export default async function handler(req, res) {
       return;
     }
 
+    if (action === 'move') {
+      // Move a whole document (all chunks sharing one source) to a folder.
+      const source = String(req.body.source || '');
+      if (!source) {
+        res.status(400).json({ error: 'source required' });
+        return;
+      }
+      const folder = normalizeFolder(req.body.folder);
+      const r = await fetch(
+        `${SUPABASE_URL}/rest/v1/owner_knowledge?source=eq.${encodeURIComponent(source)}`,
+        {
+          method: 'PATCH',
+          headers: { ...serviceHeaders(), 'content-type': 'application/json', prefer: 'return=representation' },
+          body: JSON.stringify({ folder }),
+        }
+      );
+      if (!r.ok) {
+        res.status(502).json({ error: 'Move failed — try again.' });
+        return;
+      }
+      const moved = await r.json();
+      console.log(`knowledge move by ${staff.email}: ${source} -> ${folder || '(root)'} (${moved.length} chunks)`);
+      res.status(200).json({ moved: moved.length, folder });
+      return;
+    }
+
     if (action === 'sign-upload') {
       // Step 1 of the upload flow: mint a signed URL so the browser can PUT
       // the file directly into the private bucket (bypasses the 4.5 MB
@@ -527,7 +565,7 @@ export default async function handler(req, res) {
       // Step 2: pull the uploaded object from storage, extract/OCR, chunk,
       // insert, then clean the temp object up (unless we're waiting on a
       // cost confirmation, in which case the file stays for the retry).
-      const { association_id, filename, title, path, confirm } = req.body || {};
+      const { association_id, folder, filename, title, path, confirm } = req.body || {};
       if (!filename || !path || String(path).includes('..')) {
         res.status(400).json({ error: 'filename and path required' });
         return;
@@ -549,7 +587,7 @@ export default async function handler(req, res) {
       try {
         const out = await ingest(
           staff,
-          { association_id, filename, title, buffer, confirm: confirm === true },
+          { association_id, folder, filename, title, buffer, confirm: confirm === true },
           res
         );
         keepFile = Boolean(out?.keepFile);

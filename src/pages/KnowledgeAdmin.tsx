@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { BookOpen, Trash2, Upload, RefreshCw, LogOut } from 'lucide-react';
+import { BookOpen, Trash2, Upload, RefreshCw, LogOut, Folder, FolderInput, ChevronRight, ArrowLeft } from 'lucide-react';
 import { getSupabase } from '../lib/supabaseClient';
 import { AUTHORIZED_STAFF, signInWithPassword } from '../lib/ownerAuth';
 
@@ -16,6 +16,7 @@ interface Entry {
   source: string | null;
   created_at: string;
   association_id: string | null;
+  folder: string | null;
 }
 
 interface Association {
@@ -26,10 +27,16 @@ interface Association {
 interface DocGroup {
   source: string;
   title: string;
+  /** association id, or 'ALL' for company-wide documents */
+  assocKey: string;
   associationName: string;
+  folder: string;
   chunks: number;
   date: string;
 }
+
+/** 'ALL' = the "ALL communities" folder (documents with no association). */
+const ALL_KEY = 'ALL';
 
 export default function KnowledgeAdmin() {
   const [session, setSession] = useState<{ email: string; token: string; isStaff: boolean } | null>(null);
@@ -45,9 +52,14 @@ export default function KnowledgeAdmin() {
   const [status, setStatus] = useState<string | null>(null);
 
   const [uploadAssoc, setUploadAssoc] = useState<string>('');
+  const [uploadFolder, setUploadFolder] = useState('');
   const [uploadTitle, setUploadTitle] = useState('');
   const [uploading, setUploading] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  // Folder browser location: assoc null = the top level (one folder per
+  // association); path '' = that association's root.
+  const [browse, setBrowse] = useState<{ assoc: string | null; path: string }>({ assoc: null, path: '' });
 
   useEffect(() => {
     const supabase = getSupabase();
@@ -113,16 +125,69 @@ export default function KnowledgeAdmin() {
         groups.set(key, {
           source: key,
           title: e.title.replace(/\s*\(part \d+ of \d+\)\s*$/, ''),
+          assocKey: e.association_id || ALL_KEY,
           associationName: assocName(e.association_id),
+          folder: (e.folder || '').replace(/^\/+|\/+$/g, ''),
           chunks: 1,
           date: e.created_at.slice(0, 10),
         });
       }
     }
     return [...groups.values()].sort((a, b) =>
-      a.associationName.localeCompare(b.associationName) || a.title.localeCompare(b.title)
+      a.associationName.localeCompare(b.associationName) || a.folder.localeCompare(b.folder) || a.title.localeCompare(b.title)
     );
   }, [entries, assocName]);
+
+  // What the browser shows at the current location.
+  const browseView = useMemo(() => {
+    if (browse.assoc === null) return null;
+    const inAssoc = docs.filter((d) => d.assocKey === browse.assoc);
+    const prefix = browse.path ? `${browse.path}/` : '';
+    const here: DocGroup[] = [];
+    const subfolders = new Map<string, number>();
+    for (const d of inAssoc) {
+      if (d.folder === browse.path) {
+        here.push(d);
+      } else if (d.folder.startsWith(prefix) && d.folder.length > prefix.length) {
+        const next = d.folder.slice(prefix.length).split('/')[0];
+        subfolders.set(next, (subfolders.get(next) || 0) + 1);
+      }
+    }
+    return {
+      docs: here,
+      subfolders: [...subfolders.entries()].sort((a, b) => a[0].localeCompare(b[0])),
+      total: inAssoc.length,
+    };
+  }, [docs, browse]);
+
+  const docCountByAssoc = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const d of docs) counts.set(d.assocKey, (counts.get(d.assocKey) || 0) + 1);
+    return counts;
+  }, [docs]);
+
+  // Existing folders of the selected upload association (datalist suggestions).
+  const uploadFolderOptions = useMemo(() => {
+    const key = uploadAssoc || ALL_KEY;
+    const set = new Set<string>();
+    for (const d of docs) {
+      if (d.assocKey === key && d.folder) {
+        const parts = d.folder.split('/');
+        for (let i = 1; i <= parts.length; i++) set.add(parts.slice(0, i).join('/'));
+      }
+    }
+    return [...set].sort();
+  }, [docs, uploadAssoc]);
+
+  // Navigating the browser also aims the upload form at that location, so
+  // "go to the folder, then upload" drops the file where you're standing.
+  const navigate = (assoc: string | null, path: string) => {
+    setBrowse({ assoc, path });
+    if (assoc !== null) {
+      setUploadAssoc(assoc === ALL_KEY ? '' : assoc);
+      setUploadFolder(path);
+    }
+  };
 
   const coverage = useMemo(() => {
     const covered = new Set(entries.map((e) => e.association_id).filter(Boolean));
@@ -181,6 +246,7 @@ export default function KnowledgeAdmin() {
           body: JSON.stringify({
             action: 'process',
             association_id: uploadAssoc || null,
+            folder: uploadFolder.trim() || null,
             filename: file.name,
             title: uploadTitle.trim() || undefined,
             path: sign.path,
@@ -237,6 +303,27 @@ export default function KnowledgeAdmin() {
       setStatus(`Upload failed: ${e instanceof Error ? e.message : 'unknown error'}`);
     }
     setUploading(false);
+  };
+
+  const move = async (doc: DocGroup) => {
+    if (!session) return;
+    const target = window.prompt(
+      `Move "${doc.title}" to folder (e.g. Rules or Rules/2026 — leave blank for the ${doc.associationName} root):`,
+      doc.folder
+    );
+    if (target === null || target.trim() === doc.folder) return;
+    const r = await fetch('/api/knowledge', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${session.token}` },
+      body: JSON.stringify({ action: 'move', source: doc.source, folder: target.trim() || null }),
+    });
+    if (r.ok) {
+      const data = await r.json().catch(() => ({}));
+      setStatus(`Moved "${doc.title}" to ${data.folder ? `"${data.folder}"` : 'the root folder'}.`);
+      refresh();
+    } else {
+      setStatus('Move failed — try again.');
+    }
   };
 
   const remove = async (doc: DocGroup) => {
@@ -357,6 +444,18 @@ export default function KnowledgeAdmin() {
               ))}
             </select>
             <input
+              value={uploadFolder}
+              onChange={(e) => setUploadFolder(e.target.value)}
+              list="folder-suggestions"
+              placeholder="Folder (optional — e.g. Rules or Rules/2026; new folders are created automatically)"
+              className="border border-slate-200 px-3 py-3 text-sm font-light focus:outline-none focus:border-gold-500"
+            />
+            <datalist id="folder-suggestions">
+              {uploadFolderOptions.map((f) => (
+                <option key={f} value={f} />
+              ))}
+            </datalist>
+            <input
               value={uploadTitle}
               onChange={(e) => setUploadTitle(e.target.value)}
               placeholder="Document title (optional — defaults to file name)"
@@ -404,28 +503,105 @@ export default function KnowledgeAdmin() {
               <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
             </button>
           </div>
-          <div className="divide-y divide-slate-100">
-            {docs.map((d) => (
-              <div key={d.source} className="px-5 py-3.5 flex items-center gap-4">
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm text-ink font-light truncate">{d.title}</p>
-                  <p className="text-xs text-slate-400 font-light">
-                    {d.associationName} · {d.chunks} section{d.chunks !== 1 ? 's' : ''} · {d.date}
-                  </p>
-                </div>
+          {/* Breadcrumbs */}
+          {browse.assoc !== null && (
+            <div className="px-5 py-3 border-b border-slate-100 flex items-center gap-1.5 text-xs font-light flex-wrap">
+              <button
+                onClick={() => navigate(null, '')}
+                className="flex items-center gap-1.5 text-slate-500 hover:text-gold-600"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" /> All folders
+              </button>
+              <ChevronRight className="w-3 h-3 text-slate-300" />
+              <button
+                onClick={() => navigate(browse.assoc, '')}
+                className={browse.path ? 'text-slate-500 hover:text-gold-600' : 'text-ink'}
+              >
+                {browse.assoc === ALL_KEY ? 'ALL communities' : assocName(browse.assoc)}
+              </button>
+              {browse.path.split('/').filter(Boolean).map((seg, i, segs) => (
+                <span key={segs.slice(0, i + 1).join('/')} className="flex items-center gap-1.5">
+                  <ChevronRight className="w-3 h-3 text-slate-300" />
+                  <button
+                    onClick={() => navigate(browse.assoc, segs.slice(0, i + 1).join('/'))}
+                    className={i === segs.length - 1 ? 'text-ink' : 'text-slate-500 hover:text-gold-600'}
+                  >
+                    {seg}
+                  </button>
+                </span>
+              ))}
+            </div>
+          )}
+
+          {browse.assoc === null ? (
+            // Top level: one folder per association (+ ALL communities).
+            <div className="divide-y divide-slate-100">
+              {[{ id: ALL_KEY, name: 'ALL communities (general info)' }, ...associations].map((a) => {
+                const count = docCountByAssoc.get(a.id) || 0;
+                return (
+                  <button
+                    key={a.id}
+                    onClick={() => navigate(a.id, '')}
+                    className="w-full px-5 py-3.5 flex items-center gap-4 text-left hover:bg-slate-50 transition-colors"
+                  >
+                    <Folder className={`w-5 h-5 shrink-0 ${count ? 'text-gold-500' : 'text-slate-300'}`} strokeWidth={1.5} />
+                    <span className="flex-1 min-w-0 text-sm text-ink font-light truncate">{a.name}</span>
+                    <span className="text-xs text-slate-400 font-light">
+                      {count} document{count !== 1 ? 's' : ''}
+                    </span>
+                    <ChevronRight className="w-4 h-4 text-slate-300" />
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="divide-y divide-slate-100">
+              {/* Subfolders at this level */}
+              {browseView?.subfolders.map(([name, count]) => (
                 <button
-                  onClick={() => remove(d)}
-                  aria-label={`Delete ${d.title}`}
-                  className="text-slate-300 hover:text-red-600 transition-colors"
+                  key={name}
+                  onClick={() => navigate(browse.assoc, browse.path ? `${browse.path}/${name}` : name)}
+                  className="w-full px-5 py-3.5 flex items-center gap-4 text-left hover:bg-slate-50 transition-colors"
                 >
-                  <Trash2 className="w-4 h-4" />
+                  <Folder className="w-5 h-5 shrink-0 text-gold-500" strokeWidth={1.5} />
+                  <span className="flex-1 min-w-0 text-sm text-ink font-light truncate">{name}</span>
+                  <span className="text-xs text-slate-400 font-light">{count} document{count !== 1 ? 's' : ''}</span>
+                  <ChevronRight className="w-4 h-4 text-slate-300" />
                 </button>
-              </div>
-            ))}
-            {docs.length === 0 && !loading && (
-              <p className="px-5 py-8 text-sm text-slate-400 font-light">No documents yet — upload the first one above.</p>
-            )}
-          </div>
+              ))}
+              {/* Documents in this folder */}
+              {browseView?.docs.map((d) => (
+                <div key={d.source} className="px-5 py-3.5 flex items-center gap-4">
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-ink font-light truncate">{d.title}</p>
+                    <p className="text-xs text-slate-400 font-light">
+                      {d.chunks} section{d.chunks !== 1 ? 's' : ''} · {d.date}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => move(d)}
+                    aria-label={`Move ${d.title} to another folder`}
+                    title="Move to folder"
+                    className="text-slate-300 hover:text-gold-600 transition-colors"
+                  >
+                    <FolderInput className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={() => remove(d)}
+                    aria-label={`Delete ${d.title}`}
+                    className="text-slate-300 hover:text-red-600 transition-colors"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </div>
+              ))}
+              {browseView && browseView.subfolders.length === 0 && browseView.docs.length === 0 && !loading && (
+                <p className="px-5 py-8 text-sm text-slate-400 font-light">
+                  This folder is empty — upload a document above (it will land here), or go back.
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
