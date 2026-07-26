@@ -101,8 +101,9 @@ Full runbook in that repo's README.
   boards/escalations/new business and default emergency on-call; single-person
   transfers only; 911-first for life-threatening emergencies.
 - Messages land in Supabase `phone_messages` + SMS alerts to the office.
-- Fly secrets set: Deepgram, DeepSeek, Telnyx, Supabase service role.
-  **Missing: WEB3FORMS_ACCESS_KEY** (phone messages don't email the office yet).
+- Fly secrets set: Deepgram, DeepSeek, Telnyx, Supabase service role,
+  WEB3FORMS_ACCESS_KEY + OFFICE_NOTIFY_EMAIL (added 2026-07-26 — phone
+  messages now email mirsad@stellarpropertygroup.com as well).
 
 ### Main-line port (in progress, submitted 2026-07-26)
 
@@ -121,6 +122,5 @@ order's Timeline/Communications tabs for the FOC date or any rejection.
 - Monitor the Telnyx port order until FOC/completion; after activation, call
   773.728.0652 to verify Arthur answers, and consider updating
   RECEPTIONIST_NUMBER in the Fly config.
-- Set WEB3FORMS_ACCESS_KEY on Fly so phone messages email the office.
 - `public/sitemap.xml` has an uncommitted regeneration diff (harmless,
   produced by `prebuild`).
