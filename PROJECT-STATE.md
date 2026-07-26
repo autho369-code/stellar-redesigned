@@ -122,5 +122,11 @@ order's Timeline/Communications tabs for the FOC date or any rejection.
 - Monitor the Telnyx port order until FOC/completion; after activation, call
   773.728.0652 to verify Arthur answers, and consider updating
   RECEPTIONIST_NUMBER in the Fly config.
+- Per-person phone-message email (2026-07-26): Arthur routes addressed
+  messages to individual inboxes via per-person Web3Forms keys (Fly secrets
+  `WEB3FORMS_KEY_<NAME>`). **Set: effie, meho, mirsad. Pending: amina,
+  mustafa** (blocked on Microsoft 365 mailbox access) — until set, their
+  messages fall back to the office inbox. Key creation: web3forms.com with
+  that person's email; key arrives in their inbox.
 - `public/sitemap.xml` has an uncommitted regeneration diff (harmless,
   produced by `prebuild`).
