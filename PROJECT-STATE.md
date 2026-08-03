@@ -130,3 +130,13 @@ order's Timeline/Communications tabs for the FOC date or any rejection.
   that person's email; key arrives in their inbox.
 - `public/sitemap.xml` has an uncommitted regeneration diff (harmless,
   produced by `prebuild`).
+
+## Main line routing — OWNER DIRECTIVE 2026-08-02 (do not change without Mirsad's explicit instruction)
+- NO AI on 773-728-0652. Arthur is BENCHED from the main line after transfer
+  bugs (talked over staff, then dropped transferred calls - both fixed in code
+  but trust must be re-earned; Arthur lives only on test line 773-241-7993).
+- Routing (server.py NO_AI_ROUTING kill switch, Fly secrets NO_AI_ROUTING=true):
+  Mon-Fri 9-5 Central -> OFFICE_LINE +17732511529 (Ooma office phones);
+  all other times -> AFTER_HOURS_LINE +17738921261 (Meho direct).
+- VERIFIED live 2026-08-02 ~7:11 PM: two test calls forwarded to Meho, no AI,
+  Meho confirmed clean human calls.
