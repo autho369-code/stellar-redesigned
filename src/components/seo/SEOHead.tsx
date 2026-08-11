@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 const DEFAULT_OG_IMAGE =
-  'https://images.pexels.com/photos/25853881/pexels-photo-25853881.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop';
+  'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg';
 
 interface SEOHeadProps {
   title: string;

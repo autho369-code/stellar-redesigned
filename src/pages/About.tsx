@@ -163,11 +163,14 @@ export default function About() {
             <div className="lg:col-span-5">
               <figure className="relative max-w-md mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 border border-gold-300/60 pointer-events-none" aria-hidden />
+                {/* Source: Pexels photo 25853877, used under the Pexels license. */}
                 <img
-                  src="https://images.pexels.com/photos/25853877/pexels-photo-25853877.jpeg?auto=compress&cs=tinysrgb&w=900"
+                  src="/images/chicago-three-flat.webp"
                   alt="Classic Chicago brick three-flat with bay windows, the kind of building Stellar manages"
                   className="w-full object-cover aspect-[4/3]"
                   loading="lazy"
+                  width="800"
+                  height="600"
                 />
                 <figcaption className="mt-6 text-[10px] uppercase tracking-luxe text-slate-400 text-center">
                   Chicago North Side · Brick Three-Flat

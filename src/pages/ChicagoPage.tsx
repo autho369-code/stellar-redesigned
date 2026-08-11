@@ -286,6 +286,12 @@ export default function ChicagoPage() {
               </details>
             ))}
           </div>
+          <Link
+            to="/blog/switch-condo-management-companies-chicago"
+            className="mt-8 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+          >
+            See the complete Chicago management-company switching checklist <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 

@@ -33,30 +33,29 @@ const neighborhoodSlugs = [...neighborhoodsSrc.matchAll(/slug:\s*'([^']+)'/g)].m
 
 // Blog slugs from src/data/blog-posts/*.ts
 const blogDir = join(root, 'src/data/blog-posts');
-const blogSlugs = [];
+const blogPosts = [];
 for (const file of readdirSync(blogDir)) {
   if (!file.endsWith('.ts') || file === 'index.ts') continue;
   const src = readFileSync(join(blogDir, file), 'utf8');
-  const m = src.match(/slug:\s*'([^']+)'/);
-  if (m) blogSlugs.push(m[1]);
+  const slug = src.match(/slug:\s*'([^']+)'/)?.[1];
+  const date = src.match(/date:\s*'([^']+)'/)?.[1];
+  const dateModified = src.match(/dateModified:\s*'([^']+)'/)?.[1];
+  if (slug) blogPosts.push({ slug, lastmod: dateModified ?? date });
 }
 
 const urls = [
-  ...staticRoutes,
-  ...neighborhoodSlugs.map((s) => `/property-management-${s}`),
-  ...blogSlugs.map((s) => `/blog/${s}`),
+  ...staticRoutes.map((path) => ({ path })),
+  ...neighborhoodSlugs.map((s) => ({ path: `/property-management-${s}` })),
+  ...blogPosts.map(({ slug, lastmod }) => ({ path: `/blog/${slug}`, lastmod })),
 ];
 
-const today = new Date().toISOString().slice(0, 10);
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
   .map(
-    (u) => `  <url>
-    <loc>${BASE}${u}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${u === '/' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${u === '/' ? '1.0' : u.startsWith('/services') || u === '/service-areas' ? '0.8' : '0.6'}</priority>
+    ({ path, lastmod }) => `  <url>
+    <loc>${BASE}${path}</loc>${lastmod ? `
+    <lastmod>${lastmod}</lastmod>` : ''}
   </url>`
   )
   .join('\n')}
