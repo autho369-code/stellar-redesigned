@@ -206,6 +206,11 @@ export default function Home() {
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.stellarpropertygroup.com" />
+        <meta property="og:image" content="https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
@@ -265,11 +270,16 @@ export default function Home() {
             <div className="lg:col-span-5 animate-fade-up delay-200">
               <div className="relative max-w-sm mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 border border-gold-300/40 rounded-t-full" aria-hidden />
+                {/* Source: Pexels photo 25853881, used under the Pexels license. */}
                 <img
-                  src="https://images.pexels.com/photos/25853881/pexels-photo-25853881.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/images/chicago-condo-building.webp"
+                  srcSet="/images/chicago-condo-building-400.webp 400w, /images/chicago-condo-building-600.webp 600w, /images/chicago-condo-building.webp 800w"
+                  sizes="(min-width: 1024px) 384px, min(384px, calc(100vw - 40px))"
                   alt="Historic red brick and limestone facade of a vintage Chicago residential building"
                   className="w-full aspect-[3/4.2] object-cover rounded-t-full"
                   loading="eager"
+                  width="800"
+                  height="1120"
                 />
                 <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/40 text-center">
                   Chicago · Vintage Brick &amp; Bay Windows
@@ -455,6 +465,12 @@ export default function Home() {
               Boards stay with bad management out of fear of the transition. We
               removed the fear.
             </p>
+            <Link
+              to="/blog/switch-condo-management-companies-chicago"
+              className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+            >
+              Read the Chicago board&rsquo;s switching guide <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">

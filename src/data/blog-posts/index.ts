@@ -10,12 +10,14 @@ import { commonCondoViolationsChicago } from './common-condo-rule-violations-chi
 import { hoaCondoRulesEnforceable } from './are-hoa-condo-rules-enforceable-illinois';
 import { whyCondoBoardsFail } from './why-condo-boards-fail';
 import { technologyBehindOurManagement } from './the-technology-behind-our-management';
+import { switchCondoManagementCompaniesChicago } from './switch-condo-management-companies-chicago';
 
 export interface BlogPost {
   slug: string;
   title: string;
   metaDescription: string;
   date: string;
+  dateModified?: string;
   author: string;
   category: string;
   readTime: string;
@@ -25,6 +27,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  switchCondoManagementCompaniesChicago,
   technologyBehindOurManagement,
   illinoisCondoLawUpdates2026,
   aiInCondoManagement,

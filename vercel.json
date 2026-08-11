@@ -16,6 +16,8 @@
   ],
   "rewrites": [
     { "source": "/site/:path*", "destination": "/api/gone" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/knowledge", "destination": "/index.html" },
+    { "source": "/knowledge/:path*", "destination": "/index.html" },
+    { "source": "/(.*)", "destination": "/api/not-found" }
   ]
 }

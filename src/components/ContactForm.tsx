@@ -26,6 +26,7 @@ export function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submittedEmail, setSubmittedEmail] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,6 +50,7 @@ export function ContactForm() {
       });
 
       if (response.ok) {
+        setSubmittedEmail(formData.email);
         setSubmitStatus('success');
         setFormData({
           name: '',
@@ -89,7 +91,7 @@ export function ContactForm() {
       {submitStatus === 'success' && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
           <p className="font-semibold">Thank you for contacting us!</p>
-          <p className="text-sm">We'll respond to your inquiry shortly at {formData.email}</p>
+          <p className="text-sm">We'll respond to your inquiry shortly at {submittedEmail}</p>
         </div>
       )}
 

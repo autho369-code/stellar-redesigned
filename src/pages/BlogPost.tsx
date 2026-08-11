@@ -31,14 +31,25 @@ export default function BlogPost() {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.date,
+    dateModified: post.dateModified ?? post.date,
+    image: post.featuredImage
+      ? `https://www.stellarpropertygroup.com${post.featuredImage}`
+      : 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
     author: {
       '@type': 'Organization',
+      '@id': 'https://www.stellarpropertygroup.com/#business',
       name: post.author,
+      url: 'https://www.stellarpropertygroup.com/about',
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://www.stellarpropertygroup.com/#business',
       name: 'Stellar Property Management',
       url: 'https://www.stellarpropertygroup.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.stellarpropertygroup.com/logo-icon.svg',
+      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
