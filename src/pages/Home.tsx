@@ -247,15 +247,15 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Stellar Property Management | Condominium &amp; HOA Management, Chicago</title>
+        <title>Chicago Condo &amp; HOA Management | Stellar Property Management</title>
         <meta
           name="description"
-          content="The art of a well-run building. Condominium, HOA, and townhome association management for Chicago's finest addresses. 42 associations, 2,450+ residences, 96% retention. Since 2007."
+          content="Chicago condo, HOA, and townhome association management with dedicated managers, transparent reporting, flat-fee pricing, and 24/7 response. Since 2007."
         />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="theme-color" content="#0d2740" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com" />
-        <meta property="og:title" content="Stellar Property Management | Condominium & HOA Management, Chicago" />
+        <meta property="og:title" content="Chicago Condo & HOA Management | Stellar Property Management" />
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Stellar Property Management" />

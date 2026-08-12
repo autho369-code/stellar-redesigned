@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function ViolationManagement() {
   const features = [
@@ -34,10 +35,11 @@ export default function ViolationManagement() {
   return (
     <>
       <SEOHead
-        title="Violation Management & Enforcement | Stellar Property Management"
-        description="Professional violation management and enforcement for Chicago community associations. Fair due process, progressive enforcement, violation tracking, and Illinois compliance. Protecting community standards since 2007."
+        title="Condo & HOA Violation Management Chicago | Stellar"
+        description="Consistent condo and HOA violation management in Chicago: documented notices, due process, hearings, fine administration, and compliance tracking."
         canonical="https://www.stellarpropertygroup.com/services/violation-management"
       />
+      <ServiceSchema name="Chicago Condo and HOA Violation Management" description="Documented violation notices, due process, hearings, fine administration, and compliance tracking for community associations." canonical="https://www.stellarpropertygroup.com/services/violation-management" serviceType="Community Association Violation Management" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

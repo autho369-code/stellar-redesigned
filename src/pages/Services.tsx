@@ -67,6 +67,22 @@ const services: ServiceItem[] = [
     href: '/services/violation-management',
     scope: ['Due process', 'Documentation', 'Policy review'],
   },
+  {
+    n: '08',
+    title: 'High-Rise Condominium Management',
+    description:
+      'Integrated operations for complex Chicago high-rises, including building systems, on-site teams, capital planning, financial controls, and 24/7 response.',
+    href: '/services/high-rise-condominium-management',
+    scope: ['Building systems', 'On-site teams', 'Capital programs'],
+  },
+  {
+    n: '09',
+    title: 'Small Condo Association Management',
+    description:
+      'Full-service management for boutique condominium associations and vintage buildings that need professional structure without big-firm distance.',
+    href: '/services/small-condo-association-management',
+    scope: ['Board continuity', 'Vendor control', 'Financial clarity'],
+  },
 ];
 
 const proofs = [
@@ -105,7 +121,7 @@ export default function Services() {
         <title>Property Management Services | Stellar Property Management</title>
         <meta
           name="description"
-          content="Seven disciplines of professional community management for Chicago condominiums, HOAs, and townhomes: operations, financials, maintenance, board support, and more."
+          content="Nine professional community-management disciplines for Chicago condominiums, HOAs, townhomes, high-rises, and small associations."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/services" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -126,7 +142,7 @@ export default function Services() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                The Practice · Seven Disciplines
+                The Practice · Nine Disciplines
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Everything a community

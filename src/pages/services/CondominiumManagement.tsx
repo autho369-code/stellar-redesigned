@@ -3,10 +3,11 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function CondominiumManagement() {
   const features = [
-    { title: 'Illinois Condo Act Compliance', description: 'Full compliance with the Illinois Condominium Property Act (765 ILCS 605), ensuring your association meets every statutory requirement.' },
+    { title: 'Illinois Condo Act Procedures', description: 'Operational support informed by the Illinois Condominium Property Act (765 ILCS 605), with association counsel consulted for legal advice.' },
     { title: 'Board Governance Support', description: 'Meeting coordination, agenda preparation, quorum tracking, and parliamentary procedure guidance for effective board operations.' },
     { title: 'Financial Oversight', description: 'Comprehensive budgeting, reserve fund management, assessment collection, and transparent monthly financial reporting.' },
     { title: 'Vendor Management', description: 'Vetted contractor relationships, competitive bidding, contract negotiation, and quality oversight for all building services.' },
@@ -26,6 +27,8 @@ export default function CondominiumManagement() {
   ];
 
   const related = [
+    { title: 'High-Rise Condominium Management', href: '/services/high-rise-condominium-management', description: 'Building systems, staffing, capital planning, and 24/7 response for complex Chicago high-rises.' },
+    { title: 'Small Condo Association Management', href: '/services/small-condo-association-management', description: 'Professional structure and board continuity for boutique and self-managed associations.' },
     { title: 'Financial Management', href: '/services/financial-management', description: 'Budgeting, reserves, and transparent financial reporting for your association.' },
     { title: 'Maintenance Coordination', href: '/services/maintenance-coordination', description: 'Preventive maintenance programs and 24/7 emergency response for your building.' },
     { title: 'Board Support & Governance', href: '/services/board-support', description: 'Meeting coordination, governance guidance, and strategic planning for your board.' },
@@ -38,6 +41,7 @@ export default function CondominiumManagement() {
         description="Chicago condominium management with a dedicated local manager, transparent financial reporting, board support, and 24/7 emergency response."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
+      <ServiceSchema name="Chicago Condominium Association Management" description="Full-service condominium association management with financial reporting, maintenance coordination, governance support, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/condominium-management" serviceType="Condominium Association Management" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

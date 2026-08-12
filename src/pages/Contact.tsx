@@ -32,6 +32,28 @@ const contactDetails = [
 ];
 
 export default function Contact() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ContactPage',
+        '@id': 'https://www.stellarpropertygroup.com/contact#webpage',
+        url: 'https://www.stellarpropertygroup.com/contact',
+        name: 'Contact Stellar Property Management',
+        description: 'Request a board consultation for condominium, HOA, or townhome association management in Chicago and the North Shore.',
+        isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
+        about: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+          { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.stellarpropertygroup.com/contact' },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
       <Helmet>
@@ -40,7 +62,13 @@ export default function Contact() {
           name="description"
           content="Contact Stellar Property Management for a Chicago condominium, HOA, or townhome association management consultation and customized quote. Call 773.728.0652."
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
+        <meta property="og:title" content="Contact Stellar Property Management | Chicago Association Quote" />
+        <meta property="og:description" content="Request a board consultation for Chicago condominium, HOA, or townhome association management." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.stellarpropertygroup.com/contact" />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}

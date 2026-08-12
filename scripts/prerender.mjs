@@ -36,6 +36,8 @@ const staticRoutes = [
   '/services/maintenance-coordination',
   '/services/board-support',
   '/services/violation-management',
+  '/services/high-rise-condominium-management',
+  '/services/small-condo-association-management',
   '/service-areas',
   '/property-management-chicago',
   '/property-management-north-shore',

@@ -27,6 +27,8 @@ import FinancialManagement from './pages/services/FinancialManagement';
 import MaintenanceCoordination from './pages/services/MaintenanceCoordination';
 import BoardSupport from './pages/services/BoardSupport';
 import ViolationManagement from './pages/services/ViolationManagement';
+import HighRiseManagement from './pages/services/HighRiseManagement';
+import SmallCondoManagement from './pages/services/SmallCondoManagement';
 import ServiceAreas from './pages/ServiceAreas';
 import ChicagoPage from './pages/ChicagoPage';
 import NorthShorePage from './pages/NorthShorePage';
@@ -67,6 +69,8 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/services/maintenance-coordination" element={<MaintenanceCoordination />} />
             <Route path="/services/board-support" element={<BoardSupport />} />
             <Route path="/services/violation-management" element={<ViolationManagement />} />
+            <Route path="/services/high-rise-condominium-management" element={<HighRiseManagement />} />
+            <Route path="/services/small-condo-association-management" element={<SmallCondoManagement />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/property-management-chicago" element={<ChicagoPage />} />
             <Route path="/property-management-north-shore" element={<NorthShorePage />} />

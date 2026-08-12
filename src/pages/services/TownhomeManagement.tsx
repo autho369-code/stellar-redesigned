@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function TownhomeManagement() {
   const features = [
@@ -38,6 +39,7 @@ export default function TownhomeManagement() {
         description="Chicago townhome association management with a dedicated local manager, transparent financial reporting, exterior maintenance, and board support."
         canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
+      <ServiceSchema name="Chicago Townhome Association Management" description="Townhome association management with shared-exterior planning, financial reporting, vendor coordination, governance support, and owner communication." canonical="https://www.stellarpropertygroup.com/services/townhome-management" serviceType="Townhome Association Management" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

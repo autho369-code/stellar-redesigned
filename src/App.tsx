@@ -13,6 +13,8 @@ const FinancialManagement = lazy(() => import('./pages/services/FinancialManagem
 const MaintenanceCoordination = lazy(() => import('./pages/services/MaintenanceCoordination'));
 const BoardSupport = lazy(() => import('./pages/services/BoardSupport'));
 const ViolationManagement = lazy(() => import('./pages/services/ViolationManagement'));
+const HighRiseManagement = lazy(() => import('./pages/services/HighRiseManagement'));
+const SmallCondoManagement = lazy(() => import('./pages/services/SmallCondoManagement'));
 const ServiceAreas = lazy(() => import('./pages/ServiceAreas'));
 const ChicagoPage = lazy(() => import('./pages/ChicagoPage'));
 const NorthShorePage = lazy(() => import('./pages/NorthShorePage'));
@@ -79,6 +81,8 @@ export default function App() {
             <Route path="/services/maintenance-coordination" element={<MaintenanceCoordination />} />
             <Route path="/services/board-support" element={<BoardSupport />} />
             <Route path="/services/violation-management" element={<ViolationManagement />} />
+            <Route path="/services/high-rise-condominium-management" element={<HighRiseManagement />} />
+            <Route path="/services/small-condo-association-management" element={<SmallCondoManagement />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/property-management-chicago" element={<ChicagoPage />} />
             <Route path="/property-management-north-shore" element={<NorthShorePage />} />
