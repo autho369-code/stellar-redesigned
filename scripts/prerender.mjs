@@ -10,9 +10,10 @@ import { execSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { getChicagoPublicationDate } from './publication-date.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const publicationCutoff = new Date().toISOString().slice(0, 10);
+const publicationCutoff = getChicagoPublicationDate();
 
 // 1. Build the SSR bundle
 console.log('[prerender] building SSR bundle…');
@@ -55,9 +56,21 @@ const blogSlugs = [];
 for (const file of readdirSync(blogDir)) {
   if (!file.endsWith('.ts') || file === 'index.ts') continue;
   const src = readFileSync(join(blogDir, file), 'utf8');
-  const slug = src.match(/slug:\s*'([^']+)'/)?.[1];
-  const date = src.match(/date:\s*'([^']+)'/)?.[1];
-  if (slug && date && date <= publicationCutoff) blogSlugs.push(slug);
+  const slugMatches = [...src.matchAll(/\bslug:\s*'([^']+)'/g)];
+
+  for (let index = 0; index < slugMatches.length; index++) {
+    const match = slugMatches[index];
+    const nextMatch = slugMatches[index + 1];
+    const postSource = src.slice(match.index, nextMatch?.index ?? src.length);
+    const slug = match[1];
+    const date = postSource.match(/\bdate:\s*'([^']+)'/)?.[1];
+
+    if (!date) {
+      throw new Error(`Blog post '${slug}' in ${file} has no publication date.`);
+    }
+
+    if (date <= publicationCutoff) blogSlugs.push(slug);
+  }
 }
 
 const routes = [
