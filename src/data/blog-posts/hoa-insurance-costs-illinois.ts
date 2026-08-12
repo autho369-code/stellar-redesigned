@@ -4,7 +4,7 @@ export const hoaInsuranceCosts = {
   metaDescription:
     'Association insurance premiums and deductibles are rising fast in Illinois. Learn what is driving the increases, how they hit your budget and HO-6 policy, and what boards can do about it.',
   date: '2025-05-13',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Insurance',
   readTime: '7 min read',
   excerpt:

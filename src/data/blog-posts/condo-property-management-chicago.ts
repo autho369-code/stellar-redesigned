@@ -5,7 +5,7 @@ export const condoPropertyManagementChicago = {
   metaDescription:
     'Learn what Chicago condo board members should expect from a professional property management company, including financial oversight, maintenance coordination, legal compliance, and transparent communication.',
   date: '2024-11-15',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Board Education',
   readTime: '8 min read',
   excerpt:

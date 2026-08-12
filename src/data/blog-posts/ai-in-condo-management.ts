@@ -4,7 +4,7 @@ export const aiInCondoManagement = {
   metaDescription:
     'Artificial intelligence is entering condo and HOA management — from violation processing to owner communication. Learn the real benefits, the risks, and how boards should use AI responsibly.',
   date: '2025-10-07',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Technology',
   readTime: '6 min read',
   excerpt:

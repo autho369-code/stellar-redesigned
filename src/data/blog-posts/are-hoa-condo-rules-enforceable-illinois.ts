@@ -4,7 +4,7 @@ export const hoaCondoRulesEnforceable = {
   metaDescription:
     'Illinois condo and HOA rules are enforceable — but only when properly adopted, reasonable, and consistently applied. Learn what makes a rule hold up and where boards go wrong.',
   date: '2023-07-25',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Legal & Compliance',
   readTime: '7 min read',
   excerpt:

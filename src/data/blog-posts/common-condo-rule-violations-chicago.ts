@@ -4,7 +4,7 @@ export const commonCondoViolationsChicago = {
   metaDescription:
     'From smoking and short-term rentals to balcony storage and hallway clutter, here are the most common condo rule violations in Chicago buildings — and how boards should handle them fairly.',
   date: '2023-11-09',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Community Standards',
   readTime: '6 min read',
   excerpt:

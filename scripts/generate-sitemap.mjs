@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://www.stellarpropertygroup.com';
+const publicationCutoff = new Date().toISOString().slice(0, 10);
 
 const staticRoutes = [
   '/',
@@ -42,7 +43,9 @@ for (const file of readdirSync(blogDir)) {
   const slug = src.match(/slug:\s*'([^']+)'/)?.[1];
   const date = src.match(/date:\s*'([^']+)'/)?.[1];
   const dateModified = src.match(/dateModified:\s*'([^']+)'/)?.[1];
-  if (slug) blogPosts.push({ slug, lastmod: dateModified ?? date });
+  if (slug && date && date <= publicationCutoff) {
+    blogPosts.push({ slug, lastmod: dateModified ?? date });
+  }
 }
 
 const urls = [

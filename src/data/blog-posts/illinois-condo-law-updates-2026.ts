@@ -4,7 +4,7 @@ export const illinoisCondoLawUpdates2026 = {
   metaDescription:
     'A practical 2026 guide to Illinois condominium law for board members — covering the Condominium Property Act, owner record requests, meeting notices, elections, reserves, and insurance.',
   date: '2026-02-18',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Legal & Compliance',
   readTime: '8 min read',
   excerpt:

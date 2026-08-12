@@ -16,8 +16,8 @@ export default function Blog() {
   return (
     <>
       <SEOHead
-        title="Property Management Blog | Stellar Property Management"
-        description="Expert insights, tips, and resources for Chicago condo board members and property owners. Stay informed on property management best practices, Illinois regulations, and community governance."
+        title="Condo & HOA Board Resource Center | Stellar Property Management"
+        description="Illinois condominium, HOA, and townhome association guidance for Chicagoland board members: governance, reserves, maintenance, compliance, and community management."
         canonical="https://www.stellarpropertygroup.com/blog"
       />
 
@@ -41,14 +41,14 @@ export default function Blog() {
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Insights for Board Members
                 <br />
-                &amp; Property <em className="font-medium text-gold-600">Owners.</em>
+                &amp; Community <em className="font-medium text-gold-600">Leaders.</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Expert guidance on property management, board governance,
-                financial planning, and building maintenance from the Stellar
-                Property Management team.
+                Practical guidance for condominium, HOA, and townhome
+                association boards on governance, financial planning,
+                compliance, and building maintenance.
               </p>
             </div>
           </div>
@@ -112,9 +112,9 @@ export default function Blog() {
             property <em className="font-medium text-gold-300">management?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            Our team is here to help Chicago board members and property owners
-            navigate the complexities of community management. Reach out for a
-            free consultation.
+            Our team helps Chicagoland condominium, HOA, and townhome boards
+            navigate the complexities of community association management.
+            Reach out for a free consultation.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link

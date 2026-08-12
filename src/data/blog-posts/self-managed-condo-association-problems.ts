@@ -4,7 +4,7 @@ export const selfManagedCondoProblems = {
   metaDescription:
     'Self-managed condo associations save on management fees but carry hidden risks — collections gaps, compliance exposure, weak accounting, and volunteer burnout. Learn when to hire a manager.',
   date: '2024-06-11',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Property Management',
   readTime: '7 min read',
   excerpt:

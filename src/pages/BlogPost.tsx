@@ -36,10 +36,15 @@ export default function BlogPost() {
       ? `https://www.stellarpropertygroup.com${post.featuredImage}`
       : 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
     author: {
-      '@type': 'Organization',
-      '@id': 'https://www.stellarpropertygroup.com/#business',
-      name: post.author,
-      url: 'https://www.stellarpropertygroup.com/about',
+      '@type': 'Person',
+      name: 'Mirsad Cerimovic',
+      honorificSuffix: 'CAM, CMCA, AMS',
+      jobTitle: 'Community Association Manager',
+      worksFor: {
+        '@type': 'Organization',
+        '@id': 'https://www.stellarpropertygroup.com/#business',
+        name: 'Stellar Property Management',
+      },
     },
     publisher: {
       '@type': 'Organization',
@@ -55,6 +60,9 @@ export default function BlogPost() {
       '@type': 'WebPage',
       '@id': `https://www.stellarpropertygroup.com/blog/${post.slug}`,
     },
+    ...(post.sources?.length
+      ? { citation: post.sources.map((source) => source.url) }
+      : {}),
   };
 
   return (
@@ -135,6 +143,27 @@ export default function BlogPost() {
             "
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+          {post.sources && post.sources.length > 0 && (
+            <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-sources">
+              <h2 id="article-sources" className="font-display text-2xl text-ink mb-5">
+                Primary sources and further reading
+              </h2>
+              <ul className="space-y-3">
+                {post.sources.map((source) => (
+                  <li key={source.url}>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gold-600 underline underline-offset-2 hover:text-gold-500"
+                    >
+                      {source.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          )}
         </div>
       </article>
 
