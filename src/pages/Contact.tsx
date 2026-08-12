@@ -35,10 +35,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Board Consultation | Chicago Association Management | Stellar</title>
+        <title>Contact Stellar Property Management | Chicago Association Quote</title>
         <meta
           name="description"
-          content="Request a focused board consultation for Chicago condominium, HOA, or townhome association management. Tell Stellar about your property, priorities, and transition timing."
+          content="Contact Stellar Property Management for a Chicago condominium, HOA, or townhome association management consultation and customized quote. Call 773.728.0652."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
       </Helmet>
