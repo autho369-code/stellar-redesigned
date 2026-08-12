@@ -4,7 +4,7 @@ export const whyCondoBoardsFail = {
   metaDescription:
     'The most common reason condo and HOA boards fail is a breakdown of trust and transparency. Learn the warning signs of board dysfunction and the practical fixes that restore a healthy board.',
   date: '2023-03-14',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Board Governance',
   readTime: '6 min read',
   excerpt:

@@ -4,7 +4,7 @@ export const switchCondoManagementCompaniesChicago = {
   metaDescription:
     'A practical Chicago condo board guide to evaluating management firms, comparing proposals, planning the transition, and avoiding service disruption.',
   date: '2026-08-11',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Board Leadership',
   readTime: '10 min read',
   excerpt:

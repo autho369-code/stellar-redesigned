@@ -4,7 +4,7 @@ export const technologyBehindOurManagement = {
   metaDescription:
     'A look inside the platform Stellar Property Management uses to run Chicago condo and HOA associations — owner portals, board financials, violation workflows, and why we chose Portier369.',
   date: '2026-07-06',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Technology',
   readTime: '4 min read',
   excerpt:

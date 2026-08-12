@@ -12,6 +12,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const publicationCutoff = new Date().toISOString().slice(0, 10);
 
 // 1. Build the SSR bundle
 console.log('[prerender] building SSR bundle…');
@@ -53,8 +54,10 @@ const blogDir = join(root, 'src/data/blog-posts');
 const blogSlugs = [];
 for (const file of readdirSync(blogDir)) {
   if (!file.endsWith('.ts') || file === 'index.ts') continue;
-  const m = readFileSync(join(blogDir, file), 'utf8').match(/slug:\s*'([^']+)'/);
-  if (m) blogSlugs.push(m[1]);
+  const src = readFileSync(join(blogDir, file), 'utf8');
+  const slug = src.match(/slug:\s*'([^']+)'/)?.[1];
+  const date = src.match(/date:\s*'([^']+)'/)?.[1];
+  if (slug && date && date <= publicationCutoff) blogSlugs.push(slug);
 }
 
 const routes = [

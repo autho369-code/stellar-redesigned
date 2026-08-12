@@ -1,0 +1,28 @@
+# Stellar Property Management
+
+> Licensed community association management for condominium, HOA, and townhome associations in Chicago and the North Shore of Illinois.
+
+Stellar Property Management serves community association boards. The company does not market residential rental management services.
+
+## Primary pages
+
+- [Home](https://www.stellarpropertygroup.com/)
+- [Condominium association management](https://www.stellarpropertygroup.com/services/condominium-management)
+- [HOA management](https://www.stellarpropertygroup.com/services/hoa-management)
+- [Townhome association management](https://www.stellarpropertygroup.com/services/townhome-management)
+- [Financial management](https://www.stellarpropertygroup.com/services/financial-management)
+- [Board support](https://www.stellarpropertygroup.com/services/board-support)
+- [Service areas](https://www.stellarpropertygroup.com/service-areas)
+- [Chicago association management](https://www.stellarpropertygroup.com/property-management-chicago)
+- [North Shore association management](https://www.stellarpropertygroup.com/property-management-north-shore)
+- [Condo and HOA board resource center](https://www.stellarpropertygroup.com/blog)
+- [Request a consultation](https://www.stellarpropertygroup.com/contact)
+
+## Publishing and attribution
+
+Articles cover Illinois condominium, HOA, and townhome association governance, finances, maintenance, compliance, and board operations. Article byline: Mirsad Cerimovic, CAM, CMCA, AMS. Publisher: Stellar Property Management.
+
+## Canonical location
+
+- Website: https://www.stellarpropertygroup.com/
+- Sitemap: https://www.stellarpropertygroup.com/sitemap.xml

@@ -28,23 +28,13 @@ const values = [
 const credentials = [
   {
     abbr: 'CAI',
-    name: 'Community Associations Institute',
-    desc: 'Our team holds CAM and PCAM designations from the premier organization for community association professionals.',
-  },
-  {
-    abbr: 'IREM',
-    name: 'Institute of Real Estate Management',
-    desc: 'Certified Property Manager (CPM) credentials ensuring the highest standards of ethical and professional practice.',
+    name: 'CAI & CAI Illinois Chapter',
+    desc: 'Member of the Community Associations Institute and its Illinois Chapter, with access to industry education, legislative updates, and community-association resources.',
   },
   {
     abbr: 'IDFPR',
-    name: 'IL Dept. of Financial & Professional Regulation',
-    desc: 'Fully licensed by the State of Illinois with all required community association manager licensing.',
-  },
-  {
-    abbr: 'CCIM',
-    name: 'Certified Commercial Investment Member',
-    desc: 'Advanced training in commercial real estate investment analysis, bringing financial sophistication to every engagement.',
+    name: 'Illinois Licensed CAM Firm',
+    desc: 'Stellar Property Group Inc. holds active Illinois Community Association Management Firm license #291000211.',
   },
 ];
 
@@ -67,7 +57,7 @@ export default function About() {
         <title>About Stellar Property Management | Chicago Property Management Since 2007</title>
         <meta
           name="description"
-          content="Learn about Stellar Property Management — Chicago's trusted property management company since 2007. 42 associations, 2,450+ units, and a 96% client retention rate. CAI, IREM, IDFPR, and CCIM certified."
+          content="Learn about Stellar Property Management — serving Chicago since 2007 with 42 associations, 2,450+ units, 96% client retention, CAI membership, and Illinois CAM firm licensing."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/about" />
       </Helmet>
@@ -227,12 +217,12 @@ export default function About() {
               Credentials
             </p>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
-              Industry-leading <em className="font-medium text-gold-600">certifications.</em>
+              Professional <em className="font-medium text-gold-600">memberships &amp; credentials.</em>
             </h2>
             <p className="text-lg text-slate-600 font-light leading-relaxed">
-              Our team holds the most respected credentials in property
-              management — proof of our commitment to professional excellence
-              and continuing education.
+              Our memberships, licenses, and professional designations reflect
+              our commitment to responsible community management, continuing
+              education, and professional standards.
             </p>
           </div>
 

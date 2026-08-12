@@ -123,6 +123,29 @@ const schema = {
       telephone: '+1-773-728-0652',
       email: 'mirsad@stellarpropertygroup.com',
       priceRange: 'From $20 per unit per month',
+      hasCredential: {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'Illinois Community Association Management Firm License',
+        credentialCategory: 'Professional license',
+        identifier: '291000211',
+        recognizedBy: {
+          '@type': 'GovernmentOrganization',
+          name: 'Illinois Department of Financial and Professional Regulation',
+          url: 'https://idfpr.illinois.gov/profs/cam.html',
+        },
+      },
+      memberOf: [
+        {
+          '@type': 'Organization',
+          name: 'Community Associations Institute',
+          url: 'https://www.caionline.org/',
+        },
+        {
+          '@type': 'Organization',
+          name: 'Community Associations Institute Illinois Chapter',
+          url: 'https://www.cai-illinois.org/',
+        },
+      ],
       hasMap: 'https://www.google.com/maps?cid=6022006747972898171',
       sameAs: [
         'https://www.linkedin.com/company/stellar-property-group-inc',
@@ -333,7 +356,7 @@ export default function Home() {
       {/* ── Credentials strip ────────────────────────────────── */}
       <section className="bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-wrap items-center justify-center gap-x-14 gap-y-2">
-          {['CAI Certified', 'IREM Member', 'IDFPR Licensed', 'CCIM Designated'].map((c) => (
+          {['CAI Member', 'CAI Illinois Chapter', 'Illinois Licensed CAM Firm', 'Serving Chicago Since 2007'].map((c) => (
             <span key={c} className="text-[10px] uppercase tracking-luxe text-slate-500">{c}</span>
           ))}
         </div>

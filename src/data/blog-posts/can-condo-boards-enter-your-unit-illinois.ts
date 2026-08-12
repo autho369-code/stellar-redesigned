@@ -4,7 +4,7 @@ export const condoBoardEnterUnit = {
   metaDescription:
     'Can an Illinois condo association enter your unit? Learn when associations have a right of access, when advance notice is required, how emergencies differ, and what owner privacy rights remain.',
   date: '2024-02-20',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Owner Rights',
   readTime: '6 min read',
   excerpt:

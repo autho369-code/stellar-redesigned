@@ -16,7 +16,7 @@ export default function CondominiumManagement() {
   const highlights = [
     'Dedicated property manager for every community',
     'Illinois Condominium Property Act expertise',
-    'CAI and IREM certified management team',
+    'CAI and CAI Illinois Chapter member',
     '24/7 emergency response line',
     'Online owner portal with financial transparency',
     'Competitive vendor pricing through bulk contracts',
@@ -96,7 +96,7 @@ export default function CondominiumManagement() {
                 Managing a condominium association in Illinois requires deep knowledge of state-specific regulations, strong financial stewardship, and the ability to balance the needs of diverse unit owners. Since 2007, Stellar Property Management has provided Chicago-area condominiums with the professional management they need to protect property values, maintain common elements, and foster thriving residential communities.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-6">
-                Our team holds certifications from the Community Associations Institute (CAI) and the Institute of Real Estate Management (IREM), ensuring your association benefits from industry best practices and cutting-edge management strategies. We currently serve 42 associations across Chicago and the North Shore, maintaining a 96% client retention rate that reflects our commitment to excellence.
+                Stellar is a member of the Community Associations Institute (CAI) and the CAI Illinois Chapter, connecting our firm with community-association education, legislative updates, and professional resources. We currently serve 42 associations across Chicago and the North Shore, maintaining a 96% client retention rate that reflects our commitment to excellence.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Whether your building has 10 units or 500, our approach is the same: proactive management that prevents problems before they arise, transparent communication that keeps owners informed, and financial planning that positions your association for long-term stability. We assign a dedicated property manager to each community so you always have a knowledgeable point of contact who understands your building inside and out.

@@ -23,7 +23,7 @@ const companyLinks = [
   { name: 'Contact', href: '/contact' },
 ];
 
-const credentials = ['CAI Certified', 'IREM Member', 'IDFPR Licensed', 'CCIM Designated'];
+const credentials = ['CAI Member', 'CAI Illinois Chapter', 'Illinois Licensed CAM Firm', 'Serving Chicago Since 2007'];
 
 export default function Footer() {
   return (

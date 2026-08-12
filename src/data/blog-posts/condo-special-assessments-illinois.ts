@@ -4,7 +4,7 @@ export const condoSpecialAssessmentsIllinois = {
   metaDescription:
     'Why special assessments are surging for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how associations can avoid the special-assessment spiral.',
   date: '2024-09-24',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Financial Planning',
   readTime: '7 min read',
   excerpt:

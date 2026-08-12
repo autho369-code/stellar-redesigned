@@ -4,7 +4,7 @@ export const condoReserveFundsExplained = {
   metaDescription:
     'A clear guide to condo reserve funds and reserve studies — what they are, why so many Illinois associations are underfunded, and how underfunding hurts property values and financing.',
   date: '2025-01-28',
-  author: 'Stellar Property Management',
+  author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Reserve Planning',
   readTime: '8 min read',
   excerpt:
