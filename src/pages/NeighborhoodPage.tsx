@@ -37,7 +37,7 @@ const whyChoose = [
   },
   {
     title: 'Proven Track Record',
-    description: 'Trusted by hundreds of associations across Chicago for reliable, professional management.',
+    description: 'A focused portfolio of 42 associations and 2,450+ residences across Chicago and the North Shore.',
   },
   {
     title: 'Transparent Communication',
@@ -97,6 +97,9 @@ export default function NeighborhoodPage() {
   const locale = isSuburb ? 'Illinois' : 'Chicago';
   const placeName = isSuburb ? `${neighborhood.name}, IL` : `${neighborhood.name}, Chicago, IL`;
   const atlasLabel = isSuburb ? 'The Atlas · North Shore' : 'The Atlas · Chicago';
+  const parentHub = isSuburb ? '/property-management-north-shore' : '/property-management-chicago';
+  const parentLabel = isSuburb ? 'North Shore Property Management' : 'Chicago Property Management';
+  const leadSource = `area-${neighborhood.slug}`;
 
   // Localized Q&A — rendered on the page AND emitted as FAQPage schema so
   // AI engines can quote community-specific answers directly.
@@ -111,7 +114,7 @@ export default function NeighborhoodPage() {
     },
     {
       q: `How much does association management cost in ${neighborhood.name}?`,
-      a: `We quote a customized flat monthly fee based on your ${neighborhood.name} building's size, amenities, and service scope — never a percentage of your budget. Most boards find our proposals competitive with national firms while receiving far more attentive service. Request a proposal for exact pricing.`,
+      a: `Stellar management starts at $20 per unit per month. We quote a customized flat monthly fee based on your ${neighborhood.name} association's size, amenities, staffing, financial complexity, and service scope — never a percentage of your budget. We do not add a separate capital-project planning or management-oversight fee. Third-party professional and contractor costs remain association expenses.`,
     },
     {
       q: `How do we switch our ${neighborhood.name} association to Stellar?`,
@@ -205,7 +208,7 @@ export default function NeighborhoodPage() {
               </h1>
               <div className="flex flex-wrap items-center gap-5">
                 <Link
-                  to="/contact"
+                  to={`/contact?inquiry=quote&source=${leadSource}`}
                   className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   Get a Free Quote
@@ -300,7 +303,7 @@ export default function NeighborhoodPage() {
                 Why Choose Stellar for {neighborhood.name} Property <em className="font-medium text-gold-600">Management.</em>
               </h2>
               <p className="text-slate-600 font-light text-lg leading-relaxed">
-                We combine citywide resources with neighborhood-level knowledge to deliver exceptional results for your association.
+                We combine a focused Chicagoland portfolio with building-specific operating plans, transparent financial reporting, and direct board accountability.
               </p>
             </div>
 
@@ -397,13 +400,25 @@ export default function NeighborhoodPage() {
           <div className="pt-8 border-t border-slate-200 flex flex-wrap items-center gap-x-10 gap-y-3">
             <span className="text-[10px] uppercase tracking-luxe text-slate-400">Quick Links</span>
             <Link
+              to={parentHub}
+              className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
+            >
+              {parentLabel} <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />
+            </Link>
+            <Link
+              to="/pricing"
+              className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
+            >
+              Pricing from $20/unit <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />
+            </Link>
+            <Link
               to="/services"
               className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
             >
               Our Services <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />
             </Link>
             <Link
-              to="/contact"
+              to={`/contact?inquiry=quote&source=${leadSource}-bottom`}
               className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
             >
               Contact Us <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />

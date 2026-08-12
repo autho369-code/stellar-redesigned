@@ -7,9 +7,8 @@ const sortedNeighborhoods = [...neighborhoods].sort((a, b) =>
   a.name.localeCompare(b.name)
 );
 
-const alphabet = Array.from(
-  new Set(sortedNeighborhoods.map((n) => n.name[0].toUpperCase()))
-).sort();
+const chicagoNeighborhoods = sortedNeighborhoods.filter((n) => n.region !== 'north-shore');
+const northShoreCommunities = sortedNeighborhoods.filter((n) => n.region === 'north-shore');
 
 const stats = [
   { value: String(neighborhoods.length), label: 'Neighborhoods Served' },
@@ -108,7 +107,7 @@ export default function ServiceAreas() {
       </section>
 
       {/* ── Flagship: the City of Chicago ──────────────────────── */}
-      <section className="bg-ink text-paper">
+      <section className="bg-ink text-paper border-b border-paper/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <Link
             to="/property-management-chicago"
@@ -127,65 +126,41 @@ export default function ServiceAreas() {
         </div>
       </section>
 
-      {/* ── Alphabet quick nav ─────────────────────────────────── */}
-      <section className="bg-white border-b border-slate-200 sticky top-0 z-10">
+      {/* ── Regional hub: Chicago's North Shore ───────────────── */}
+      <section className="bg-ink text-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 py-4">
-            <span className="text-[10px] uppercase tracking-luxe text-slate-400 select-none">
-              Index
-            </span>
-            {alphabet.map((letter) => (
-              <a
-                key={letter}
-                href={`#letter-${letter}`}
-                className="font-display text-sm text-slate-500 hover:text-gold-600 transition-colors duration-300"
-              >
-                {letter}
-              </a>
-            ))}
-          </div>
+          <Link to="/property-management-north-shore" className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-10">
+            <div>
+              <p className="text-[10px] uppercase tracking-luxe text-gold-300 mb-3">The Region</p>
+              <span className="font-display font-light text-3xl lg:text-4xl">Property Management on the <em className="font-medium text-gold-300">North Shore.</em></span>
+            </div>
+            <span className="inline-flex items-center gap-3 text-[10px] uppercase tracking-luxe text-paper/60 group-hover:text-gold-300 transition-colors duration-300">The North Shore hub <ArrowRight className="w-4 h-4" strokeWidth={1.25} /></span>
+          </Link>
         </div>
       </section>
 
-      {/* ── The neighborhood index ─────────────────────────────── */}
+      {/* ── Regional service-area index ───────────────────────── */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="border-t border-slate-200">
-            {alphabet.map((letter) => {
-              const letterNeighborhoods = sortedNeighborhoods.filter(
-                (n) => n.name[0].toUpperCase() === letter
-              );
-              return (
-                <div
-                  key={letter}
-                  id={`letter-${letter}`}
-                  className="grid lg:grid-cols-12 gap-4 lg:gap-8 py-10 lg:py-12 border-b border-slate-200 scroll-mt-24"
-                >
-                  <div className="lg:col-span-1">
-                    <span className="font-display font-light text-4xl lg:text-5xl text-gold-500 select-none leading-none">
-                      {letter}
-                    </span>
-                  </div>
-                  <div className="lg:col-span-11 columns-2 md:columns-3 lg:columns-4 gap-x-10">
-                    {letterNeighborhoods.map((neighborhood) => (
-                      <Link
-                        key={neighborhood.slug}
-                        to={`/property-management-${neighborhood.slug}`}
-                        className="group block break-inside-avoid py-2.5"
-                      >
-                        <span className="font-light text-ink group-hover:text-gold-600 border-b border-transparent group-hover:border-gold-400 transition-colors duration-300">
-                          {neighborhood.name}
-                        </span>
-                        <span className="ml-2.5 text-[9px] uppercase tracking-luxe text-slate-400 whitespace-nowrap">
-                          {neighborhood.zipCodes.join(' · ')}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {[
+            { title: 'Chicago Neighborhoods', areas: chicagoNeighborhoods, hub: '/property-management-chicago' },
+            { title: 'North Shore Communities', areas: northShoreCommunities, hub: '/property-management-north-shore' },
+          ].map(({ title, areas, hub }) => (
+            <div key={title} className="border-t border-slate-200 py-12 first:pt-0 first:border-t-0">
+              <div className="flex flex-wrap items-baseline justify-between gap-5 mb-8">
+                <h2 className="font-display font-light text-3xl lg:text-4xl text-ink">{title}</h2>
+                <Link to={hub} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Explore the regional hub <ArrowRight className="w-4 h-4" /></Link>
+              </div>
+              <div className="columns-2 md:columns-3 lg:columns-4 gap-x-10 border-t border-slate-200 pt-7">
+                {areas.map((neighborhood) => (
+                  <Link key={neighborhood.slug} to={`/property-management-${neighborhood.slug}`} className="group block break-inside-avoid py-2.5">
+                    <span className="font-light text-ink group-hover:text-gold-600 border-b border-transparent group-hover:border-gold-400 transition-colors duration-300">{neighborhood.name}</span>
+                    <span className="ml-2.5 text-[9px] uppercase tracking-luxe text-slate-400 whitespace-nowrap">{neighborhood.zipCodes.join(' · ')}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

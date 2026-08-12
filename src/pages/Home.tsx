@@ -122,17 +122,43 @@ const schema = {
       url: 'https://www.stellarpropertygroup.com',
       telephone: '+1-773-728-0652',
       email: 'mirsad@stellarpropertygroup.com',
-      priceRange: '$$$',
+      priceRange: 'From $20 per unit per month',
+      hasMap: 'https://www.google.com/maps?cid=6022006747972898171',
+      sameAs: [
+        'https://www.linkedin.com/company/stellar-property-group-inc',
+      ],
       foundingDate: '2007',
       slogan: 'The art of a well-run building.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5107 N Western Ave, Suite 1S',
+        streetAddress: '5107 N Western Ave #1S',
         addressLocality: 'Chicago',
         addressRegion: 'IL',
         postalCode: '60625',
         addressCountry: 'US',
       },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 41.974506,
+        longitude: -87.6887278,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '17:00',
+        },
+      ],
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          telephone: '+1-773-728-0652',
+          contactType: 'customer service',
+          areaServed: 'US-IL',
+          availableLanguage: 'English',
+        },
+      ],
       areaServed: [
         { '@type': 'City', name: 'Chicago' },
         { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
@@ -583,7 +609,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-paper/35 text-xs tracking-wide">
-            <span className="inline-flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-gold-400" /> 5107 N Western Ave, Suite 1S, Chicago</span>
+            <span className="inline-flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-gold-400" /> 5107 N Western Ave #1S, Chicago</span>
             <span className="inline-flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-gold-400" /> mirsad@stellarpropertygroup.com</span>
           </div>
         </div>

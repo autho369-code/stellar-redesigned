@@ -29,7 +29,15 @@ const navLinks: NavItem[] = [
       { name: 'Violation Management', href: '/services/violation-management' },
     ],
   },
-  { name: 'Service Areas', href: '/service-areas' },
+  {
+    name: 'Service Areas',
+    href: '/service-areas',
+    children: [
+      { name: 'All Service Areas', href: '/service-areas' },
+      { name: 'Chicago', href: '/property-management-chicago' },
+      { name: 'North Shore', href: '/property-management-north-shore' },
+    ],
+  },
   { name: 'Pricing', href: '/pricing' },
   {
     name: 'Resources',

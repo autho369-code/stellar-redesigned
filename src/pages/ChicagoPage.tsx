@@ -38,15 +38,15 @@ const disciplines = [
 const faqs = [
   {
     q: 'Who provides condominium and HOA management in Chicago?',
-    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 42 associations and more than 2,450 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave, Suite 1S, Chicago, IL 60625.',
+    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 42 associations and more than 2,450 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625.',
   },
   {
     q: 'Which Chicago neighborhoods does Stellar Property Management serve?',
-    a: 'We serve associations in more than 70 Chicago neighborhoods — including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, South Loop, Edgewater, Andersonville, and Hyde Park — plus North Shore suburbs such as Evanston, Wilmette, Winnetka, and Highland Park. Every community we serve has its own dedicated service page.',
+    a: 'We serve associations across Chicago, including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, South Loop, Edgewater, Andersonville, and Hyde Park. We also serve North Shore communities through our regional North Shore property-management hub.',
   },
   {
     q: 'How much does condo association management cost in Chicago?',
-    a: 'Stellar quotes a customized flat monthly fee based on building size, amenities, staffing, and scope — never a percentage of your association’s budget. Most Chicago boards find our proposals competitive with national firms while receiving a dedicated manager instead of a call center.',
+    a: 'Stellar management starts at $20 per unit per month. We quote a customized flat monthly fee based on building size, amenities, staffing, financial complexity, and scope — never a percentage of your association’s budget. We do not add a separate capital-project planning or management-oversight fee.',
   },
   {
     q: 'What makes Stellar different from national property management chains in Chicago?',
@@ -253,10 +253,10 @@ export default function ChicagoPage() {
 
           <div className="mt-12 pt-8 border-t border-slate-200">
             <Link
-              to="/service-areas"
+              to="/property-management-north-shore"
               className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
             >
-              View the full atlas, including the North Shore <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />
+              Explore North Shore property management <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.25} />
             </Link>
           </div>
         </div>
@@ -291,6 +291,12 @@ export default function ChicagoPage() {
             className="mt-8 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
           >
             See the complete Chicago management-company switching checklist <ArrowRight className="w-4 h-4" />
+          </Link>
+          <Link
+            to="/pricing"
+            className="mt-4 sm:ml-8 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+          >
+            See pricing from $20 per unit monthly <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>
