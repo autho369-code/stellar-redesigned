@@ -13,6 +13,7 @@ const serviceLinks = [
 
 const companyLinks = [
   { name: 'About', href: '/about' },
+  { name: 'Pricing', href: '/pricing' },
   { name: 'Neighborhoods', href: '/service-areas' },
   { name: 'Journal', href: '/blog' },
   { name: 'Resources', href: '/resources' },

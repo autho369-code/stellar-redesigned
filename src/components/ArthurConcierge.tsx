@@ -87,7 +87,7 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['service', 'what do you do', 'manage', 'offer', 'condo', 'hoa', 'townhome', 'rental', 'apartment'],
     answer:
-      'We manage condominium associations, HOAs, and townhome communities exclusively — no apartment rentals. Services span daily operations, flat-fee financial management, maintenance with 24/7 response, board support, and violation management. Since 2007: 42 associations, 2,450+ residences, 96% retention. Details: stellarpropertygroup.com/services',
+      'We manage condominium associations, HOAs, and townhome communities exclusively — no apartment rentals. Pricing starts at $20 per unit per month with a customized flat monthly proposal. We do not add a separate capital-project planning or management-oversight fee. Services include daily operations, financial management, maintenance with 24/7 response, board support, and violation management. Details: stellarpropertygroup.com/pricing',
   },
 ];
 

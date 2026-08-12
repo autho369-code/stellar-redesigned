@@ -33,8 +33,8 @@ export default function TownhomeManagement() {
   return (
     <>
       <SEOHead
-        title="Townhome Association Management in Chicago | Stellar Property Management"
-        description="Specialized townhome association management in Chicago and suburbs. Exterior maintenance coordination, shared space management, and personalized service for smaller communities. Serving Chicagoland since 2007."
+        title="Chicago Townhome Management | Personalized Local Service"
+        description="Chicago townhome association management with a dedicated local manager, transparent financial reporting, exterior maintenance, and board support."
         canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
 
@@ -72,6 +72,9 @@ export default function TownhomeManagement() {
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              See pricing from $20 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

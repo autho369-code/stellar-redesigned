@@ -33,8 +33,8 @@ export default function CondominiumManagement() {
   return (
     <>
       <SEOHead
-        title="Condominium Management Services in Chicago | Stellar Property Management"
-        description="Full-service condominium management in Chicago and the North Shore. Illinois Condo Property Act compliance, board governance, financial oversight, and 24/7 emergency support. Serving 42 associations since 2007."
+        title="Chicago Condo Management | Dedicated Local Team | Stellar"
+        description="Chicago condominium management with a dedicated local manager, transparent financial reporting, board support, and 24/7 emergency response."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
 
@@ -72,6 +72,9 @@ export default function CondominiumManagement() {
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              See pricing from $20 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

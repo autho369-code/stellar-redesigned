@@ -15,6 +15,7 @@ const BoardSupport = lazy(() => import('./pages/services/BoardSupport'));
 const ViolationManagement = lazy(() => import('./pages/services/ViolationManagement'));
 const ServiceAreas = lazy(() => import('./pages/ServiceAreas'));
 const ChicagoPage = lazy(() => import('./pages/ChicagoPage'));
+const Pricing = lazy(() => import('./pages/Pricing'));
 const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
@@ -78,6 +79,7 @@ export default function App() {
             <Route path="/services/violation-management" element={<ViolationManagement />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/property-management-chicago" element={<ChicagoPage />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />

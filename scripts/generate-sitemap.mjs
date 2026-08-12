@@ -20,6 +20,7 @@ const staticRoutes = [
   '/services/violation-management',
   '/service-areas',
   '/property-management-chicago',
+  '/pricing',
   '/blog',
   '/contact',
   '/resources',

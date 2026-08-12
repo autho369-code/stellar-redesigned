@@ -33,8 +33,8 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="HOA Management Services in Chicago | Stellar Property Management"
-        description="Professional HOA management for Chicago-area homeowners associations. CC&amp;R enforcement, community engagement, landscaping coordination, architectural review, and full-service association management since 2007."
+        title="Chicago HOA Management | Dedicated Local Team | Stellar"
+        description="Chicago HOA management with a dedicated local manager, transparent reporting, responsive board support, and 24/7 emergency coordination."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
 
@@ -72,6 +72,9 @@ export default function HOAManagement() {
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              See pricing from $20 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
