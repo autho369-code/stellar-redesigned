@@ -2,7 +2,9 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
-import { getBlogPostBySlug, blogPosts } from '../data/blog-posts';
+import { getBlogPostBySlug, allBlogPosts, blogPosts } from '../data/blog-posts';
+import { neighborhoods } from '../data/neighborhoods';
+import { contentClusters, getPostCluster, getPostNeighborhoods, getPostRegion, getRelatedClusterPosts } from '../data/content-silos';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
@@ -21,9 +23,11 @@ export default function BlogPost() {
     return <Navigate to="/blog" replace />;
   }
 
-  const relatedPosts = blogPosts
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3);
+  const clusterKey = getPostCluster(post);
+  const cluster = contentClusters[clusterKey];
+  const postRegion = getPostRegion(post);
+  const relatedPosts = getRelatedClusterPosts(post, blogPosts);
+  const locationLinks = getPostNeighborhoods(post, neighborhoods, allBlogPosts);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -166,6 +170,34 @@ export default function BlogPost() {
           )}
         </div>
       </article>
+
+      <section className="bg-paper border-t border-slate-200 py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-5">
+            <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4"><span className="accent-rule" />Topic Path</p>
+            <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-tight mb-5">{cluster.label}</h2>
+            <p className="text-slate-600 font-light leading-relaxed mb-7">{cluster.description}</p>
+            <Link to={cluster.servicePath} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">
+              Explore {cluster.serviceLabel} <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="lg:col-span-7 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0 lg:pl-12">
+            <p className="text-[10px] uppercase tracking-luxe text-slate-400 mb-5">Management in the communities we serve</p>
+            <div className="flex flex-wrap gap-3 mb-7">
+              {locationLinks.map((neighborhood) => (
+                <Link key={neighborhood.slug} to={`/property-management-${neighborhood.slug}`} className="border border-slate-200 bg-white px-4 py-2 text-sm text-ink hover:border-gold-400 hover:text-gold-600 transition-colors">
+                  {neighborhood.name}
+                </Link>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+              {postRegion !== 'north-shore' && <Link to="/property-management-chicago" className="text-sm text-ink hover:text-gold-600">Chicago management</Link>}
+              {postRegion !== 'chicago' && <Link to="/property-management-north-shore" className="text-sm text-ink hover:text-gold-600">North Shore management</Link>}
+              <Link to="/service-areas" className="text-sm text-ink hover:text-gold-600">All service areas</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── Related Posts ──────────────────────────────────────── */}
       {relatedPosts.length > 0 && (

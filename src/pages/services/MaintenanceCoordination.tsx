@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ClusterGuides } from '../../components/seo/ClusterGuides';
 
 export default function MaintenanceCoordination() {
   const features = [
@@ -200,6 +201,7 @@ export default function MaintenanceCoordination() {
         </div>
       </section>
 
+      <ClusterGuides cluster="buildings" />
       <CTASection />
     </>
   );

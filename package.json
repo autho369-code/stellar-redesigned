@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "seo:verify-schedule": "node scripts/verify-publication-schedule.mjs",
+    "seo:verify-silos": "node scripts/verify-content-silos.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs"
   },
   "dependencies": {
