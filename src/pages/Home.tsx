@@ -120,6 +120,8 @@ const schema = {
       description:
         'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 42 associations and 2,450+ units under management with a 96% client retention rate.',
       url: 'https://www.stellarpropertygroup.com',
+      logo: 'https://www.stellarpropertygroup.com/logo-icon.svg',
+      image: 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
       telephone: '+1-773-728-0652',
       email: 'mirsad@stellarpropertygroup.com',
       priceRange: 'From $20 per unit per month',
@@ -250,10 +252,14 @@ export default function Home() {
           name="description"
           content="The art of a well-run building. Condominium, HOA, and townhome association management for Chicago's finest addresses. 42 associations, 2,450+ residences, 96% retention. Since 2007."
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="theme-color" content="#0d2740" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com" />
         <meta property="og:title" content="Stellar Property Management | Condominium & HOA Management, Chicago" />
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Stellar Property Management" />
+        <meta property="og:locale" content="en_US" />
         <meta property="og:url" content="https://www.stellarpropertygroup.com" />
         <meta property="og:image" content="https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg" />
         <meta property="og:image:width" content="1200" />
