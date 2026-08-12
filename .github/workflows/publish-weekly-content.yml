@@ -46,6 +46,7 @@ jobs:
         run: |
           npm ci
           npm run seo:verify-schedule
+          npm run seo:verify-silos
           npm run typecheck
           npm run build
 

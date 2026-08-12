@@ -2,6 +2,8 @@ import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { getNeighborhoodBySlug, getRelatedNeighborhoods } from '../data/neighborhoods';
+import { blogPosts } from '../data/blog-posts';
+import { contentClusters, getNeighborhoodCluster, getNeighborhoodGuides } from '../data/content-silos';
 
 const services = [
   {
@@ -90,6 +92,9 @@ export default function NeighborhoodPage() {
   }
 
   const relatedNeighborhoods = getRelatedNeighborhoods(neighborhood.slug, 3);
+  const neighborhoodCluster = getNeighborhoodCluster(neighborhood);
+  const neighborhoodGuides = getNeighborhoodGuides(neighborhood, blogPosts, 3);
+  const neighborhoodClusterConfig = contentClusters[neighborhoodCluster];
 
   // Chicago neighborhoods are "<Name>, Chicago"; North Shore suburbs are
   // their own municipalities — "<Name>, Illinois".
@@ -361,6 +366,30 @@ export default function NeighborhoodPage() {
       </section>
 
       {/* ── Related neighborhoods & internal links ─────────────── */}
+      {neighborhoodGuides.length > 0 && (
+        <section className="py-20 lg:py-24 bg-ivory-100 border-y border-slate-200">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
+              <div className="lg:col-span-4">
+                <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4"><span className="accent-rule" />Board Resource Path</p>
+                <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-tight mb-5">Guidance for {neighborhood.name} boards.</h2>
+                <p className="text-slate-600 font-light leading-relaxed mb-6">A balanced selection of management, finance, governance, and building guidance for associations in this community.</p>
+                <Link to={neighborhoodClusterConfig.servicePath} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Explore {neighborhoodClusterConfig.serviceLabel} <ArrowRight className="w-4 h-4" /></Link>
+              </div>
+              <div className="lg:col-span-8 border-t border-slate-200">
+                {neighborhoodGuides.map((guide) => (
+                  <Link key={guide.slug} to={`/blog/${guide.slug}`} className="group grid sm:grid-cols-12 gap-3 py-6 border-b border-slate-200">
+                    <span className="sm:col-span-3 text-[10px] uppercase tracking-luxe text-gold-600">{guide.category}</span>
+                    <span className="sm:col-span-8 font-display text-xl text-ink group-hover:text-gold-600">{guide.title}</span>
+                    <ArrowUpRight className="sm:col-span-1 w-4 h-4 text-slate-400 group-hover:text-gold-600" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-24 lg:py-32 bg-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="mb-14">

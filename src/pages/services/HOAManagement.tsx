@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ClusterGuides } from '../../components/seo/ClusterGuides';
 
 export default function HOAManagement() {
   const features = [
@@ -203,6 +204,7 @@ export default function HOAManagement() {
         </div>
       </section>
 
+      <ClusterGuides cluster="governance" />
       <CTASection />
     </>
   );

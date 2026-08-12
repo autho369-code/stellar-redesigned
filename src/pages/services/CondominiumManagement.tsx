@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ClusterGuides } from '../../components/seo/ClusterGuides';
 
 export default function CondominiumManagement() {
   const features = [
@@ -209,6 +210,7 @@ export default function CondominiumManagement() {
         </div>
       </section>
 
+      <ClusterGuides cluster="management" />
       <CTASection />
     </>
   );
