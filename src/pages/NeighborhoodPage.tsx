@@ -105,6 +105,8 @@ export default function NeighborhoodPage() {
   const parentHub = isSuburb ? '/property-management-north-shore' : '/property-management-chicago';
   const parentLabel = isSuburb ? 'North Shore Property Management' : 'Chicago Property Management';
   const leadSource = `area-${neighborhood.slug}`;
+  const seoTitle = `${neighborhood.name} Condo & HOA Management | Stellar`;
+  const seoDescription = `Condo, HOA, and townhome association management in ${neighborhood.name}, ${locale}. Dedicated local manager, transparent reporting, and 24/7 response since 2007.`;
 
   // Localized Q&A — rendered on the page AND emitted as FAQPage schema so
   // AI engines can quote community-specific answers directly.
@@ -115,7 +117,7 @@ export default function NeighborhoodPage() {
     },
     {
       q: `What types of community associations does Stellar manage in ${neighborhood.name}?`,
-      a: `In ${neighborhood.name} we manage ${neighborhood.propertyTypes.join(', ')}. Every community receives a dedicated property manager, transparent monthly financial reporting, 24/7 live emergency response, and board support aligned with the Illinois Condominium Property Act.`,
+      a: `Stellar's association-management model is designed for ${neighborhood.propertyTypes.join(', ')} in ${neighborhood.name}. Every client community receives a dedicated property manager, transparent monthly financial reporting, 24/7 live emergency response, and board support informed by applicable Illinois association requirements.`,
     },
     {
       q: `How much does association management cost in ${neighborhood.name}?`,
@@ -134,8 +136,8 @@ export default function NeighborhoodPage() {
     '@graph': [
       {
         '@type': 'Service',
-        name: `Property Management in ${neighborhood.name}, ${locale}`,
-        description: `Professional condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale}.`,
+        name: `Condo and HOA Management in ${neighborhood.name}, ${locale}`,
+        description: seoDescription,
         url: `https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`,
         serviceType: 'Community Association Management',
         areaServed: {
@@ -169,11 +171,12 @@ export default function NeighborhoodPage() {
   return (
     <>
       <Helmet>
-        <title>Property Management in {neighborhood.name} | Stellar Property Management</title>
+        <title>{seoTitle}</title>
         <meta
           name="description"
-          content={`Professional condominium, HOA, and townhome management in ${neighborhood.name}, ${locale}. Trusted by local boards since 2007. Get a free quote today.`}
+          content={seoDescription}
         />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link
           rel="canonical"
           href={`https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`}
@@ -207,7 +210,7 @@ export default function NeighborhoodPage() {
                 {atlasLabel}
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] mb-10 text-balance">
-                Property Management in
+                Condo &amp; HOA Management in
                 <br />
                 <em className="font-medium text-gold-600">{neighborhood.name}{isSuburb ? '' : ','}</em> {isSuburb ? '' : 'Chicago'}
               </h1>

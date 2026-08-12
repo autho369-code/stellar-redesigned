@@ -3,11 +3,12 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function MaintenanceCoordination() {
   const features = [
     { title: 'Preventive Maintenance Programs', description: 'Scheduled inspections, seasonal maintenance calendars, and component lifecycle tracking that extends the life of your property assets.' },
-    { title: 'Vendor Management', description: 'A curated network of trusted contractors with competitive pricing, quality guarantees, and the reliability your community deserves.' },
+    { title: 'Vendor Management', description: 'A curated network of vetted contractors, competitive bids, documented scopes, and performance follow-through for association work.' },
     { title: '24/7 Emergency Response', description: 'Round-the-clock emergency line staffed by experienced professionals who coordinate immediate response to protect your property and residents.' },
     { title: 'Capital Project Oversight', description: 'End-to-end management of major projects including scope development, competitive bidding, construction oversight, and warranty tracking.' },
     { title: 'Property Inspections', description: 'Regular walk-through inspections that identify maintenance needs, safety concerns, and code compliance issues before they become costly problems.' },
@@ -34,10 +35,11 @@ export default function MaintenanceCoordination() {
   return (
     <>
       <SEOHead
-        title="Property Maintenance Coordination | Stellar Property Management"
-        description="Professional property maintenance coordination for Chicago community associations. Preventive maintenance programs, 24/7 emergency response, vendor management, and capital project oversight since 2007."
+        title="Condo Maintenance Coordination Chicago | Stellar"
+        description="Condo and HOA maintenance coordination in Chicago: preventive schedules, vetted vendors, competitive bids, capital planning, and 24/7 emergency response."
         canonical="https://www.stellarpropertygroup.com/services/maintenance-coordination"
       />
+      <ServiceSchema name="Chicago Condo and HOA Maintenance Coordination" description="Preventive maintenance, vendor coordination, competitive bidding, capital planning, and 24/7 emergency response for community associations." canonical="https://www.stellarpropertygroup.com/services/maintenance-coordination" serviceType="Community Association Maintenance Coordination" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

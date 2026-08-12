@@ -23,7 +23,7 @@ export default function ServiceAreas() {
   const schemaMarkup = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Chicago Property Management Service Areas',
+    name: 'Chicago Condo and HOA Management Service Areas',
     description:
       'Professional property management serving Chicago neighborhoods and North Shore communities. Condominium, HOA, and townhome management.',
     url: 'https://www.stellarpropertygroup.com/service-areas',
@@ -38,10 +38,10 @@ export default function ServiceAreas() {
   return (
     <>
       <Helmet>
-        <title>Chicago Property Management Service Areas | Stellar Property Management</title>
+        <title>Chicago Condo &amp; HOA Management Areas | Stellar</title>
         <meta
           name="description"
-          content="Stellar Property Management provides professional condominium, HOA, and townhome management across Chicago neighborhoods and North Shore communities including Evanston, Wilmette, Winnetka, and Highland Park. Find your community and get a free quote."
+          content="Condo, HOA, and townhome association management across Chicago and the North Shore, including Evanston, Wilmette, Winnetka, and Highland Park."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
@@ -73,7 +73,7 @@ export default function ServiceAreas() {
                 The Atlas · Chicago &amp; The North Shore
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
-                Chicago Property Management
+                Chicago Condo &amp; HOA Management
                 <br />
                 <em className="font-medium text-gold-600">Service Areas.</em>
               </h1>

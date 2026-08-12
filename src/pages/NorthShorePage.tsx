@@ -99,7 +99,7 @@ export default function NorthShorePage() {
   return (
     <>
       <Helmet>
-        <title>North Shore Property Management | Condo, HOA &amp; Townhome | Stellar</title>
+        <title>North Shore Condo &amp; HOA Management | Stellar</title>
         <meta name="description" content="North Shore condominium, HOA and townhome management from $20 per unit monthly. Serving Evanston, Wilmette, Glenview, Northbrook and nearby communities." />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/property-management-north-shore" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

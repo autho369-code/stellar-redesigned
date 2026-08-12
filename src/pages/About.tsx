@@ -54,10 +54,10 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Stellar Property Management | Chicago Property Management Since 2007</title>
+        <title>About Stellar Property Management | Chicago Since 2007</title>
         <meta
           name="description"
-          content="Learn about Stellar Property Management — serving Chicago since 2007 with 42 associations, 2,450+ units, 96% client retention, CAI membership, and Illinois CAM firm licensing."
+          content="Meet Stellar Property Management: serving Chicago associations since 2007 with 42 communities, CAI membership, and Illinois CAM firm licensing."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/about" />
       </Helmet>
@@ -257,8 +257,8 @@ export default function About() {
               <p className="text-slate-600 font-light text-lg leading-relaxed mb-8">
                 From Lincoln Park to Lake Forest, we manage communities across
                 Chicago&rsquo;s most desirable neighborhoods and North Shore suburbs.
-                Our local expertise means we know every alderman, every building
-                department, and every reliable contractor in your area.
+                Our local expertise means we understand Chicago-area building
+                systems, municipal requirements, and established vendor markets.
               </p>
               <Link
                 to="/service-areas"

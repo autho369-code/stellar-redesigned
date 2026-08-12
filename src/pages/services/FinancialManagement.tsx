@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function FinancialManagement() {
   const features = [
@@ -34,10 +35,11 @@ export default function FinancialManagement() {
   return (
     <>
       <SEOHead
-        title="Association Financial Management | Stellar Property Management"
-        description="Expert financial management for Chicago-area community associations. Budgeting, reserve studies, assessment collection, financial reporting, and audit preparation. Trusted by 42 associations since 2007."
+        title="HOA & Condo Financial Management Chicago | Stellar"
+        description="Association financial management in Chicago: budgets, reserves, assessment collection, monthly reporting, invoice support, and transparent board controls."
         canonical="https://www.stellarpropertygroup.com/services/financial-management"
       />
+      <ServiceSchema name="Chicago Association Financial Management" description="Financial management for condominium, HOA, and townhome associations, including budgets, reserves, assessment collection, reporting, and board controls." canonical="https://www.stellarpropertygroup.com/services/financial-management" serviceType="Community Association Financial Management" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

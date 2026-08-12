@@ -16,7 +16,7 @@ export default function Blog() {
   return (
     <>
       <SEOHead
-        title="Condo & HOA Board Resource Center | Stellar Property Management"
+        title="Illinois Condo & HOA Board Guides | Stellar"
         description="Illinois condominium, HOA, and townhome association guidance for Chicagoland board members: governance, reserves, maintenance, compliance, and community management."
         canonical="https://www.stellarpropertygroup.com/blog"
       />

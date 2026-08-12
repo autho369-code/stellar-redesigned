@@ -41,9 +41,11 @@ export default function BlogPost() {
       : 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
     author: {
       '@type': 'Person',
+      '@id': 'https://www.stellarpropertygroup.com/about',
       name: 'Mirsad Cerimovic',
       honorificSuffix: 'CAM, CMCA, AMS',
       jobTitle: 'Community Association Manager',
+      url: 'https://www.stellarpropertygroup.com/about',
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.stellarpropertygroup.com/#business',
@@ -72,7 +74,7 @@ export default function BlogPost() {
   return (
     <>
       <SEOHead
-        title={post.title}
+        title={post.title.length > 62 ? `${post.title.slice(0, 59).trimEnd()}…` : post.title}
         description={post.metaDescription}
         canonical={`https://www.stellarpropertygroup.com/blog/${post.slug}`}
         ogType="article"
@@ -127,7 +129,7 @@ export default function BlogPost() {
             {post.title}
           </h1>
           <p className="text-[10px] uppercase tracking-luxe text-slate-500">
-            {post.author} · {formatDate(post.date)} · {post.readTime}
+            <Link to="/about" rel="author" className="hover:text-gold-600 transition-colors">{post.author}</Link> · {formatDate(post.date)} · {post.readTime}
           </p>
         </div>
       </header>

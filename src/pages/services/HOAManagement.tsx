@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function HOAManagement() {
   const features = [
@@ -22,7 +23,7 @@ export default function HOAManagement() {
     'Streamlined architectural review process',
     'Online homeowner portal with real-time updates',
     'Annual community satisfaction surveys',
-    'CAI-certified management professionals',
+    'CAI and CAI Illinois Chapter membership',
   ];
 
   const related = [
@@ -38,6 +39,7 @@ export default function HOAManagement() {
         description="Chicago HOA management with a dedicated local manager, transparent reporting, responsive board support, and 24/7 emergency coordination."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
+      <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

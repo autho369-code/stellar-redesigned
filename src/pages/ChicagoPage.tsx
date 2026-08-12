@@ -100,10 +100,10 @@ export default function ChicagoPage() {
   return (
     <>
       <Helmet>
-        <title>Property Management in Chicago, IL | Condo &amp; HOA Management | Stellar</title>
+        <title>Chicago Condo &amp; HOA Management | Stellar</title>
         <meta
           name="description"
-          content="Chicago condominium, HOA & townhome association management across 70+ neighborhoods — Gold Coast to Hyde Park. Dedicated managers, flat fees, 24/7 response. 42 associations, 96% retention, since 2007."
+          content="Chicago condo, HOA, and townhome association management across 70+ neighborhoods. Dedicated managers, flat fees, board reporting, and 24/7 response."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/property-management-chicago" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

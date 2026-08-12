@@ -11,7 +11,7 @@ export default function Reviews() {
       <Helmet>
         <title>Share Feedback | Stellar Property Management</title>
         <meta name="description" content="Share an honest Google review of your Stellar Property Management experience or send feedback directly to our Chicago team." />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="noindex, follow, max-image-preview:large" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/reviews" />
       </Helmet>
 

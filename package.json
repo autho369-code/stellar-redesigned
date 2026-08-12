@@ -7,13 +7,14 @@
     "dev": "vite",
     "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "vite build",
-    "postbuild": "node scripts/prerender.mjs",
+    "postbuild": "node scripts/prerender.mjs && node scripts/verify-built-seo.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "seo:verify-schedule": "node scripts/verify-publication-schedule.mjs",
     "seo:verify-silos": "node scripts/verify-content-silos.mjs",
-    "seo:indexnow": "node scripts/indexnow-submit.mjs"
+    "seo:indexnow": "node scripts/indexnow-submit.mjs",
+    "seo:indexnow:scheduled": "node scripts/indexnow-scheduled-release.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.110.0",

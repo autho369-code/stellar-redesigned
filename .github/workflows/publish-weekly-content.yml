@@ -59,3 +59,8 @@ jobs:
           git add .content-publish-trigger
           git commit -m "chore: publish scheduled association guides"
           git push origin HEAD:main
+
+      - name: Notify Bing and IndexNow participants after production updates
+        if: steps.calendar.outputs.active == 'true'
+        continue-on-error: true
+        run: npm run seo:indexnow:scheduled
