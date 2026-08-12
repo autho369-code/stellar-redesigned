@@ -15,6 +15,7 @@ import { scheduledGovernancePosts } from './scheduled-governance';
 import { scheduledFinancePosts } from './scheduled-finance';
 import { scheduledBuildingPosts } from './scheduled-buildings';
 import { scheduledManagementPosts } from './scheduled-management';
+import { getChicagoPublicationDate } from '../../utils/publication-date';
 
 export interface BlogPost {
   slug: string;
@@ -58,7 +59,7 @@ export const allBlogPosts: BlogPost[] = [
 
 // Future-dated articles can be prepared in advance without leaking into the
 // journal, routes, related links, or structured data before their publish day.
-const publicationCutoff = new Date().toISOString().slice(0, 10);
+const publicationCutoff = getChicagoPublicationDate();
 
 export const blogPosts: BlogPost[] = allBlogPosts
   .filter((post) => post.date <= publicationCutoff)

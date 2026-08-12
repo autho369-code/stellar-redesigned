@@ -1,44 +1,60 @@
-name: Publish weekly association guide
+name: Publish scheduled association guides
 
 on:
   schedule:
-    # Tuesday morning in Chicago (09:00 CDT / 08:00 CST).
-    - cron: '0 14 * * 2'
+    # Tuesday, Thursday, and Saturday mornings in Chicago
+    # (09:00 CDT / 08:00 CST). Article dates are the release gate.
+    - cron: '0 14 * * 2,4,6'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: weekly-content-publish
+  group: scheduled-content-publish
   cancel-in-progress: false
 
 jobs:
   trigger-production-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Check the accelerated publication window
+        id: calendar
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$(date -u +%F)" < "2026-11-15" ]]; then
+            echo "active=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "active=false" >> "$GITHUB_OUTPUT"
+            echo "The accelerated publication calendar is complete."
+          fi
+
       - name: Check out the production branch
+        if: steps.calendar.outputs.active == 'true'
         uses: actions/checkout@v4
         with:
           ref: main
 
       - name: Install Node.js
+        if: steps.calendar.outputs.active == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
       - name: Verify the scheduled release
+        if: steps.calendar.outputs.active == 'true'
         run: |
           npm ci
+          npm run seo:verify-schedule
           npm run typecheck
           npm run build
 
-      - name: Advance the weekly publication marker
+      - name: Advance the publication marker
+        if: steps.calendar.outputs.active == 'true'
         run: |
           date -u +%Y-%m-%dT%H:%M:%SZ > .content-publish-trigger
           git config user.name "stellar-content-publisher[bot]"
           git config user.email "stellar-content-publisher[bot]@users.noreply.github.com"
           git add .content-publish-trigger
-          git commit -m "chore: publish scheduled association guide"
+          git commit -m "chore: publish scheduled association guides"
           git push origin HEAD:main
