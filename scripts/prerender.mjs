@@ -1,6 +1,6 @@
 // Prerenders every route to static HTML after `vite build` (runs as postbuild).
 //
-// Output: dist/<route>/index.html with the page's real markup, Helmet meta,
+// Output: dist/<route>.html with the page's real markup, Helmet meta,
 // and JSON-LD baked in — so Bing and AI crawlers (which don't run JS) see
 // full pages instead of an empty <div id="root">.
 //
@@ -108,9 +108,13 @@ for (const route of routes) {
     html = html.replace('</head>', `    ${head}\n  </head>`);
     html = html.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
 
-    const outDir = route === '/' ? join(root, 'dist') : join(root, 'dist', route.slice(1));
-    mkdirSync(outDir, { recursive: true });
-    writeFileSync(join(outDir, 'index.html'), html);
+    if (route === '/') {
+      writeFileSync(join(root, 'dist/index.html'), html);
+    } else {
+      const outputFile = join(root, 'dist', `${route.slice(1)}.html`);
+      mkdirSync(dirname(outputFile), { recursive: true });
+      writeFileSync(outputFile, html);
+    }
     ok++;
   } catch (err) {
     failed.push({ route, err: String(err).slice(0, 200) });
