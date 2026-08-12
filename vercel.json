@@ -3,16 +3,27 @@
     "api/knowledge.js": { "maxDuration": 300 }
   },
   "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/home/", "destination": "/", "permanent": true },
     { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/contact-us/", "destination": "/contact", "permanent": true },
     { "source": "/contact-us/:path*", "destination": "/contact", "permanent": true },
     { "source": "/about-us", "destination": "/about", "permanent": true },
     { "source": "/our-services", "destination": "/services", "permanent": true },
     { "source": "/property-management-services", "destination": "/services", "permanent": true },
     { "source": "/payments", "destination": "/resources", "permanent": true },
     { "source": "/make-a-payment", "destination": "/resources", "permanent": true },
+    { "source": "/pay-assessments", "destination": "/resources", "permanent": true },
+    { "source": "/pay-assessments/", "destination": "/resources", "permanent": true },
     { "source": "/request-a-proposal", "destination": "/contact", "permanent": true },
     { "source": "/properties", "destination": "/service-areas", "permanent": true },
-    { "source": "/properties/:path*", "destination": "/service-areas", "permanent": true }
+    { "source": "/properties/:path*", "destination": "/service-areas", "permanent": true },
+    { "source": "/Andersonville", "destination": "/property-management-andersonville", "permanent": true },
+    { "source": "/Andersonville/", "destination": "/property-management-andersonville", "permanent": true },
+    { "source": "/deerfield", "destination": "/property-management-deerfield", "permanent": true },
+    { "source": "/deerfield/", "destination": "/property-management-deerfield", "permanent": true },
+    { "source": "/glenview", "destination": "/property-management-glenview", "permanent": true },
+    { "source": "/glenview/", "destination": "/property-management-glenview", "permanent": true }
   ],
   "rewrites": [
     { "source": "/site/:path*", "destination": "/api/gone" },
