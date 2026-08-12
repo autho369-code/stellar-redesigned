@@ -29,6 +29,7 @@ import BoardSupport from './pages/services/BoardSupport';
 import ViolationManagement from './pages/services/ViolationManagement';
 import ServiceAreas from './pages/ServiceAreas';
 import ChicagoPage from './pages/ChicagoPage';
+import Pricing from './pages/Pricing';
 import NeighborhoodPage from './pages/NeighborhoodPage';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
@@ -66,6 +67,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/services/violation-management" element={<ViolationManagement />} />
             <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/property-management-chicago" element={<ChicagoPage />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />

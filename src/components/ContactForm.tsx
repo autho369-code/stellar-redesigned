@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Mail, Phone, User, Building, MessageSquare, Send } from 'lucide-react';
 
 interface FormData {
@@ -13,12 +14,18 @@ interface FormData {
 }
 
 export function ContactForm() {
+  const [searchParams] = useSearchParams();
+  const requestedInquiry = searchParams.get('inquiry');
+  const initialInquiry = requestedInquiry === 'quote' || requestedInquiry === 'property_management'
+    ? requestedInquiry
+    : 'general';
+  const leadSource = searchParams.get('source') || 'website';
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
     company: '',
-    inquiry_type: 'general',
+    inquiry_type: initialInquiry,
     property_address: '',
     number_of_units: '',
     message: ''
@@ -43,7 +50,8 @@ export function ContactForm() {
         body: JSON.stringify({
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
           ...formData,
-          subject: `Contact Form: ${formData.inquiry_type} - ${formData.name}`,
+          subject: `Contact Form: ${formData.inquiry_type} - ${formData.name} [${leadSource}]`,
+          lead_source: leadSource,
           from_name: formData.name,
           replyto: formData.email,
         }),
@@ -57,7 +65,7 @@ export function ContactForm() {
           email: '',
           phone: '',
           company: '',
-          inquiry_type: 'general',
+          inquiry_type: initialInquiry,
           property_address: '',
           number_of_units: '',
           message: ''

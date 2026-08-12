@@ -68,16 +68,16 @@ const onboarding = [
 
 const testimonials = [
   {
-    quote: 'Stellar transformed our association. Financial reports are clear, vendors are reliable, and our board meetings actually run on time now.',
-    name: 'Board President', community: 'Condominium Association', area: 'Lincoln Park',
+    quote: 'Financial reports provided are detailed and copies of each monthly invoice received.',
+    name: 'Halid E.', community: 'Google Review', area: '254-Unit Condominium',
   },
   {
-    quote: 'After years with a national firm that barely knew our name, switching to Stellar was the best decision we made. They genuinely care about our community.',
-    name: 'Board Treasurer', community: 'Townhome HOA', area: 'Lakeview',
+    quote: 'Absolutely great company to manage any size of the building. We are very happy with them since 2014.',
+    name: 'Hasan H.', community: 'Google Review', area: 'Long-Term Client',
   },
   {
-    quote: 'The 24/7 emergency response alone is worth it. When our boiler failed at 2 AM in January, Stellar had a crew on-site within the hour.',
-    name: 'Unit Owner', community: 'Condominium Association', area: 'Edgewater',
+    quote: 'They managed multiple renovation and repair projects while being good stewards of our reserves.',
+    name: 'Barbara M.', community: 'Google Review', area: 'Condominium Association',
   },
 ];
 
@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     q: 'How much does condominium association management cost in Chicago?',
-    a: 'We quote a customized flat monthly fee based on your building’s size, amenities, staffing, and service scope — never a percentage of your budget. Most boards find our proposals competitive with national firms while receiving significantly more attentive service. Request a proposal for exact pricing for your association.',
+    a: 'Stellar management pricing starts at $20 per unit per month. We quote a customized flat monthly fee based on your building’s size, amenities, staffing, financial complexity, and service scope — never a percentage of your budget. We do not add a separate capital-project planning or management-oversight fee. Review our pricing approach or request a proposal for your association.',
   },
   {
     q: 'How do we switch from our current management company to Stellar?',

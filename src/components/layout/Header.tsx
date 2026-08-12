@@ -30,6 +30,7 @@ const navLinks: NavItem[] = [
     ],
   },
   { name: 'Service Areas', href: '/service-areas' },
+  { name: 'Pricing', href: '/pricing' },
   {
     name: 'Resources',
     href: '/resources',
