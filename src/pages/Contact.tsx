@@ -35,10 +35,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Stellar Property Management | Get a Free Property Management Quote</title>
+        <title>Board Consultation | Chicago Association Management | Stellar</title>
         <meta
           name="description"
-          content="Contact Stellar Property Management for a free property management quote. Located at 5107 N Western Ave #1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
+          content="Request a focused board consultation for Chicago condominium, HOA, or townhome association management. Tell Stellar about your property, priorities, and transition timing."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
       </Helmet>
@@ -58,16 +58,16 @@ export default function Contact() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                Get in Touch
+                For Association Boards
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
-                Contact <em className="font-medium text-gold-600">us.</em>
+                Start a board <em className="font-medium text-gold-600">consultation.</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Ready to discuss your property management needs? We&rsquo;d love to
-                hear from you. Reach out for a free, no-obligation quote.
+                In a focused 20-minute conversation, we will review your
+                association&rsquo;s current management concerns, timing, and priorities.
               </p>
             </div>
           </div>

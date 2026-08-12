@@ -13,7 +13,9 @@ const sections = [
         <ul className="space-y-2 mb-4 list-none">
           <li className="pl-5 border-l border-gold-400">
             <strong className="font-semibold text-ink">Contact &amp; proposal requests</strong> — your name, email address, phone
-            number, community or association name, inquiry type, and message.
+            number, community or association name, property address, property type, unit count,
+            board role, contract timing, management concerns, contact preferences, how you found
+            Stellar, inquiry type, message, referring page, and campaign-source parameters.
           </li>
           <li className="pl-5 border-l border-gold-400">
             <strong className="font-semibold text-ink">Violation reports</strong> — your name, contact details, unit or property
