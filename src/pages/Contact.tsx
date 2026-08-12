@@ -6,7 +6,7 @@ import { ContactForm } from '../components/ContactForm';
 const contactDetails = [
   {
     title: 'Office Address',
-    lines: ['5107 N Western Ave, Suite 1S', 'Chicago, Illinois 60625'],
+    lines: ['5107 N Western Ave #1S', 'Chicago, Illinois 60625'],
     href: 'https://maps.google.com/?q=5107+N+Western+Ave+Suite+1S+Chicago+IL+60625',
     linkLabel: 'Get Directions',
   },
@@ -38,7 +38,7 @@ export default function Contact() {
         <title>Contact Stellar Property Management | Get a Free Property Management Quote</title>
         <meta
           name="description"
-          content="Contact Stellar Property Management for a free property management quote. Located at 5107 N Western Ave, Suite 1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
+          content="Contact Stellar Property Management for a free property management quote. Located at 5107 N Western Ave #1S, Chicago, IL 60625. Call 773.728.0652 or email mirsad@stellarpropertygroup.com."
         />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
       </Helmet>

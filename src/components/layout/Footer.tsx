@@ -14,7 +14,10 @@ const serviceLinks = [
 const companyLinks = [
   { name: 'About', href: '/about' },
   { name: 'Pricing', href: '/pricing' },
-  { name: 'Neighborhoods', href: '/service-areas' },
+  { name: 'Service Areas', href: '/service-areas' },
+  { name: 'Chicago', href: '/property-management-chicago' },
+  { name: 'North Shore', href: '/property-management-north-shore' },
+  { name: 'Share Feedback', href: '/reviews' },
   { name: 'Journal', href: '/blog' },
   { name: 'Resources', href: '/resources' },
   { name: 'Contact', href: '/contact' },
@@ -53,7 +56,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-sm text-paper/60 font-light">
                 <MapPin className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" strokeWidth={1.5} />
-                <span>5107 N Western Ave, Suite 1S, Chicago, IL 60625</span>
+                <span>5107 N Western Ave #1S, Chicago, IL 60625</span>
               </div>
               <a
                 href="tel:+17737280652"

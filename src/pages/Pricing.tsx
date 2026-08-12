@@ -144,7 +144,7 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="max-w-2xl mb-14"><p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> Public Reviews</p><h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">What association clients <em className="font-medium text-gold-600">report.</em></h2></div>
           <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">{reviews.map((review) => <figure key={review.name} className="bg-paper p-9 lg:p-10 flex flex-col"><blockquote className="font-display italic text-xl text-ink leading-relaxed flex-1">&ldquo;{review.quote}&rdquo;</blockquote><figcaption className="mt-8 pt-6 border-t border-slate-200"><p className="text-sm font-semibold text-ink">{review.name}</p><p className="text-[10px] uppercase tracking-luxe text-gold-600 mt-1.5">{review.context}</p></figcaption></figure>)}</div>
-          <a href="https://www.google.com/maps/search/?api=1&query=Stellar+Property+Management+5107+N+Western+Ave+Chicago+IL+60625" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-8 text-sm text-gold-600 hover:text-gold-500 transition-colors">Read public Google reviews <ArrowRight className="w-4 h-4" /></a>
+          <a href="https://www.google.com/maps?cid=6022006747972898171" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-8 text-sm text-gold-600 hover:text-gold-500 transition-colors">Read all public Google reviews <ArrowRight className="w-4 h-4" /></a>
         </div>
       </section>
 

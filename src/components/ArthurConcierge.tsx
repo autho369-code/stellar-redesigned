@@ -82,7 +82,7 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['contact', 'phone', 'email', 'office', 'address', 'call', 'speak', 'human', 'person'],
     answer:
-      'Reach us at 773.728.0652 (24/7 for emergencies) or mirsad@stellarpropertygroup.com. Office: 5107 N Western Ave, Suite 1S, Chicago, IL 60625. Or use the contact form at stellarpropertygroup.com/contact.',
+      'Reach us at 773.728.0652 (24/7 for emergencies) or mirsad@stellarpropertygroup.com. Office: 5107 N Western Ave #1S, Chicago, IL 60625. Or use the contact form at stellarpropertygroup.com/contact.',
   },
   {
     keywords: ['service', 'what do you do', 'manage', 'offer', 'condo', 'hoa', 'townhome', 'rental', 'apartment'],

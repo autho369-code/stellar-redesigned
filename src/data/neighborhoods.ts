@@ -608,16 +608,25 @@ export function getNeighborhoodBySlug(slug: string): Neighborhood | undefined {
 }
 
 export function getRelatedNeighborhoods(currentSlug: string, count: number = 3): Neighborhood[] {
-  const currentIndex = neighborhoods.findIndex((n) => n.slug === currentSlug);
-  if (currentIndex === -1) return neighborhoods.slice(0, count);
+  const current = getNeighborhoodBySlug(currentSlug);
+  if (!current) return neighborhoods.slice(0, count);
+
+  // Keep the local link graph geographically coherent. Chicago neighborhood
+  // pages link to Chicago peers; North Shore pages link to North Shore peers.
+  const regionalNeighborhoods = neighborhoods.filter((n) =>
+    current.region === 'north-shore'
+      ? n.region === 'north-shore'
+      : n.region !== 'north-shore'
+  );
+  const currentIndex = regionalNeighborhoods.findIndex((n) => n.slug === currentSlug);
 
   const related: Neighborhood[] = [];
-  const total = neighborhoods.length;
+  const total = regionalNeighborhoods.length;
 
   for (let i = 1; related.length < count; i++) {
     const nextIndex = (currentIndex + i) % total;
     if (nextIndex !== currentIndex) {
-      related.push(neighborhoods[nextIndex]);
+      related.push(regionalNeighborhoods[nextIndex]);
     }
   }
 

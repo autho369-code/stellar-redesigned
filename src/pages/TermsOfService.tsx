@@ -191,7 +191,7 @@ export default function TermsOfService() {
           <div className="mt-14 pt-2">
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about these terms</p>
             <p className="text-slate-600 font-light leading-relaxed">
-              Stellar Property Management · 5107 N Western Ave, Suite 1S, Chicago, IL 60625 ·{' '}
+              Stellar Property Management · 5107 N Western Ave #1S, Chicago, IL 60625 ·{' '}
               <a href="tel:+17737280652" className="text-gold-600 hover:text-gold-500">773.728.0652</a> ·{' '}
               <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
                 mirsad@stellarpropertygroup.com
