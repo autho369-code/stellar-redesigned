@@ -22,7 +22,7 @@ for (const url of urls) {
   const route = parsed.pathname;
   const file = route === '/'
     ? join(root, 'dist/index.html')
-    : join(root, 'dist', route.slice(1), 'index.html');
+    : join(root, 'dist', `${route.slice(1)}.html`);
 
   if (!existsSync(file)) {
     errors.push(`${route}: missing prerendered HTML`);
