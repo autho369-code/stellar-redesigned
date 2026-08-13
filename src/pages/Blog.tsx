@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../components/seo/SEOHead';
 import { blogPosts } from '../data/blog-posts';
+import { contentClusters, getClusterPosts, type ContentCluster } from '../data/content-silos';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
@@ -13,6 +15,23 @@ function formatDate(dateString: string): string {
 }
 
 export default function Blog() {
+  const topics = (Object.entries(contentClusters) as Array<[ContentCluster, (typeof contentClusters)[ContentCluster]]>)
+    .filter(([key]) => getClusterPosts(key, blogPosts, 1).length > 0);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://www.stellarpropertygroup.com/blog#page',
+    url: 'https://www.stellarpropertygroup.com/blog',
+    name: 'Illinois Condo and HOA Board Guides',
+    description: 'Illinois condominium, HOA, and townhome association guidance for Chicagoland board members.',
+    publisher: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+    hasPart: topics.map(([, topic]) => ({
+      '@type': 'CollectionPage',
+      name: topic.label,
+      url: `https://www.stellarpropertygroup.com${topic.path}`,
+    })),
+  };
+
   return (
     <>
       <SEOHead
@@ -20,6 +39,7 @@ export default function Blog() {
         description="Illinois condominium, HOA, and townhome association guidance for Chicagoland board members: governance, reserves, maintenance, compliance, and community management."
         canonical="https://www.stellarpropertygroup.com/blog"
       />
+      <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -56,6 +76,35 @@ export default function Blog() {
       </section>
 
       {/* ── The Index ──────────────────────────────────────────── */}
+      <section className="py-20 lg:py-24 bg-ivory-100 border-t border-slate-200" aria-labelledby="guide-topics">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-8 items-end mb-12">
+            <div className="lg:col-span-7">
+              <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4"><span className="accent-rule" />Choose a Topic</p>
+              <h2 id="guide-topics" className="font-display font-light text-4xl lg:text-5xl text-ink">Practical guidance organized around <em className="font-medium text-gold-600">board decisions.</em></h2>
+            </div>
+            <p className="lg:col-span-4 lg:col-start-9 text-slate-600 font-light leading-relaxed">Start with the issue your association is facing. Each topic connects board education with the relevant management service.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
+            {topics.map(([key, topic]) => {
+              const topicPosts = getClusterPosts(key, blogPosts, blogPosts.length);
+              return (
+                <Link key={key} to={topic.path} className="group bg-white p-8 lg:p-10 hover:bg-paper transition-colors">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-luxe text-gold-600 mb-4">{topicPosts.length} Published Guides</p>
+                      <h3 className="font-display text-2xl lg:text-3xl text-ink group-hover:text-gold-600 transition-colors">{topic.label}</h3>
+                      <p className="text-sm text-slate-600 font-light leading-relaxed mt-4">{topic.description}</p>
+                    </div>
+                    <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-gold-600 shrink-0" />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 lg:py-32 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="border-t border-slate-200">
