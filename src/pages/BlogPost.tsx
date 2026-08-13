@@ -115,6 +115,14 @@ export default function BlogPost() {
               <li>
                 <ChevronRight className="w-3 h-3" strokeWidth={1.25} />
               </li>
+              <li>
+                <Link to={cluster.path} className="hover:text-gold-600 transition-colors">
+                  {cluster.label}
+                </Link>
+              </li>
+              <li>
+                <ChevronRight className="w-3 h-3" strokeWidth={1.25} />
+              </li>
               <li className="text-slate-500 truncate max-w-xs sm:max-w-md">
                 {post.title}
               </li>
@@ -179,9 +187,14 @@ export default function BlogPost() {
             <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4"><span className="accent-rule" />Topic Path</p>
             <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-tight mb-5">{cluster.label}</h2>
             <p className="text-slate-600 font-light leading-relaxed mb-7">{cluster.description}</p>
-            <Link to={cluster.servicePath} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">
-              Explore {cluster.serviceLabel} <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-wrap gap-x-7 gap-y-3">
+              <Link to={cluster.path} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">
+                All {cluster.label} guides <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link to={cluster.servicePath} className="inline-flex items-center gap-2 text-sm text-ink hover:text-gold-600">
+                Explore {cluster.serviceLabel} <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
           <div className="lg:col-span-7 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0 lg:pl-12">
             <p className="text-[10px] uppercase tracking-luxe text-slate-400 mb-5">Management in the communities we serve</p>

@@ -4,6 +4,8 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { townhomeManagementFaqs } from '../../data/service-faqs';
 
 export default function TownhomeManagement() {
   const features = [
@@ -70,7 +72,7 @@ export default function TownhomeManagement() {
           </div>
           <div className="mt-12 flex flex-wrap items-center gap-5">
             <Link
-              to="/contact"
+              to="/contact?inquiry=quote&source=townhome-service"
               className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Request a Proposal
@@ -206,6 +208,7 @@ export default function TownhomeManagement() {
         </div>
       </section>
 
+      <ServiceFAQ items={townhomeManagementFaqs} title="What townhome association boards should ask." />
       <ClusterGuides cluster="buildings" />
       <CTASection />
     </>

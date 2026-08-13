@@ -27,11 +27,18 @@ const staticRoutes = [
   '/property-management-north-shore',
   '/pricing',
   '/blog',
+  '/blog/topic/board-governance-illinois-law',
+  '/blog/topic/association-finance-reserves',
+  '/blog/topic/choosing-association-management',
   '/contact',
   '/resources',
   '/privacy-policy',
   '/terms-of-service',
 ];
+
+if (publicationCutoff >= '2026-08-22') {
+  staticRoutes.push('/blog/topic/building-operations-capital-planning');
+}
 
 // Neighborhood slugs from src/data/neighborhoods.ts
 const neighborhoodsSrc = readFileSync(join(root, 'src/data/neighborhoods.ts'), 'utf8');

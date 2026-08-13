@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
-import { ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { hoaManagementFaqs } from '../../data/service-faqs';
 
 const evaluationCriteria = [
   {
@@ -57,44 +58,6 @@ const transitionSteps = [
   },
 ];
 
-const faqs = [
-  {
-    q: 'How much does HOA management cost in Chicago?',
-    a: 'Stellar HOA management starts at $20 per unit per month, quoted as a flat monthly fee based on your community’s size, common areas, amenities, financial complexity, and service scope. We never price as a percentage of your budget, and we do not add a separate capital-project planning or oversight fee. Third-party costs such as contractors, engineers, and attorneys remain association expenses.',
-  },
-  {
-    q: 'What does an HOA management company actually do?',
-    a: 'Day to day: assessment collection and accounting, monthly financial reporting with invoices attached, vendor bidding and supervision for landscaping, snow removal, and common-area maintenance, fair CC&R enforcement with documented due process, board meeting preparation and minutes, owner communications and portal support, and a 24/7 emergency line. The board keeps every decision; the manager executes them and reports back.',
-  },
-  {
-    q: 'Can our HOA switch management companies before the contract ends?',
-    a: 'Usually, yes — most Chicago-area management contracts allow termination with 30 to 90 days written notice, and some allow immediate termination for cause. Have your board review the termination clause, then time the notice so our managed 30–60 day transition lands at the handover date. We coordinate records, banking, vendors, and owner communication so the community never feels the seam.',
-  },
-  {
-    q: 'Do you manage townhome communities and single-family HOAs?',
-    a: 'Yes. Alongside condominium associations, Stellar manages townhome communities and single-family homeowners associations across Chicago and the North Shore, including planned developments with private streets, shared landscaping, and amenity spaces. See our townhome management practice for the specifics of fee-simple and shared-element communities.',
-  },
-  {
-    q: 'Is our community too small or too large for Stellar?',
-    a: 'Our portfolio runs from boutique associations to communities of more than 250 residences. We deliberately curate the portfolio — 42 associations and 2,450+ residences — so every community keeps a dedicated manager with genuine capacity. If we cannot serve your community to that standard, we will say so in the first conversation.',
-  },
-  {
-    q: 'How is Stellar different from national HOA management firms?',
-    a: 'One dedicated manager instead of a rotating account team, a flat fee instead of percentage-based pricing, a Chicago office that answers its own 24/7 line instead of a national call center, and monthly board-ready financials instead of quarterly boilerplate. That model is why 96% of our client associations stay with us year over year.',
-  },
-];
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  '@id': 'https://www.stellarpropertygroup.com/services/hoa-management#faq',
-  mainEntity: faqs.map(({ q, a }) => ({
-    '@type': 'Question',
-    name: q,
-    acceptedAnswer: { '@type': 'Answer', text: a },
-  })),
-};
-
 export default function HOAManagement() {
   const features = [
     { title: 'Community Engagement', description: 'Town halls, surveys, social events, and communication programs that bring neighbors together and build a strong sense of community.' },
@@ -130,9 +93,6 @@ export default function HOAManagement() {
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
       <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -163,7 +123,7 @@ export default function HOAManagement() {
           </div>
           <div className="mt-12 flex flex-wrap items-center gap-5">
             <Link
-              to="/contact"
+              to="/contact?inquiry=quote&source=hoa-service"
               className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Request a Proposal
@@ -334,33 +294,7 @@ export default function HOAManagement() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── FAQ ────────────────────────────────────────────────── */}
-      <section className="py-24 lg:py-32 bg-ivory-100 border-t border-slate-200">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="mb-14">
-            <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
-              <span className="accent-rule" />
-              HOA Boards Ask
-            </p>
-            <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-[1.1]">
-              HOA management, <em className="font-medium text-gold-600">answered.</em>
-            </h2>
-          </div>
-          <div className="border-t border-slate-200">
-            {faqs.map(({ q, a }) => (
-              <details key={q} className="group border-b border-slate-200">
-                <summary className="flex items-center justify-between gap-6 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                  <h3 className="font-display text-lg lg:text-xl text-ink group-open:text-gold-600 transition-colors">{q}</h3>
-                  <Plus className="w-5 h-5 text-gold-500 flex-shrink-0 transition-transform duration-300 group-open:rotate-45" strokeWidth={1.25} />
-                </summary>
-                <p className="pb-7 text-slate-600 leading-relaxed font-light max-w-3xl">{a}</p>
-              </details>
-            ))}
-          </div>
-          <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-3">
+          <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-3">
             <Link to="/services/townhome-management" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
               Townhome community management <ArrowRight className="w-4 h-4" />
             </Link>
@@ -407,6 +341,7 @@ export default function HOAManagement() {
         </div>
       </section>
 
+      <ServiceFAQ items={hoaManagementFaqs} title="What HOA boards should ask a prospective manager." />
       <ClusterGuides cluster="governance" />
       <CTASection />
     </>

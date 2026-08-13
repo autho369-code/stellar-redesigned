@@ -9,6 +9,7 @@ export type ContentCluster =
 
 interface ClusterConfig {
   label: string;
+  path: string;
   serviceLabel: string;
   servicePath: string;
   description: string;
@@ -17,29 +18,39 @@ interface ClusterConfig {
 export const contentClusters: Record<ContentCluster, ClusterConfig> = {
   governance: {
     label: 'Board Governance & Illinois Law',
+    path: '/blog/topic/board-governance-illinois-law',
     serviceLabel: 'Board Support',
     servicePath: '/services/board-support',
     description: 'Illinois law, meetings, records, rules, elections, fiduciary duties, and board decision-making.',
   },
   finance: {
     label: 'Association Finance & Reserves',
+    path: '/blog/topic/association-finance-reserves',
     serviceLabel: 'Financial Management',
     servicePath: '/services/financial-management',
     description: 'Budgets, reserves, assessments, disclosures, collections, insurance, loans, and financial reporting.',
   },
   buildings: {
     label: 'Building Operations & Capital Planning',
+    path: '/blog/topic/building-operations-capital-planning',
     serviceLabel: 'Maintenance Coordination',
     servicePath: '/services/maintenance-coordination',
     description: 'Maintenance, vendors, capital projects, building compliance, emergencies, and physical operations.',
   },
   management: {
     label: 'Choosing & Improving Management',
+    path: '/blog/topic/choosing-association-management',
     serviceLabel: 'Condominium Management',
     servicePath: '/services/condominium-management',
     description: 'Selecting, evaluating, and transitioning association management with stronger systems and accountability.',
   },
 };
+
+export function getClusterFromTopicSlug(slug?: string): ContentCluster | undefined {
+  if (!slug) return undefined;
+  return (Object.entries(contentClusters) as Array<[ContentCluster, ClusterConfig]>)
+    .find(([, config]) => config.path.endsWith(`/${slug}`))?.[0];
+}
 
 export function getPostCluster(post: Pick<BlogPost, 'slug' | 'title' | 'category'>): ContentCluster {
   const searchable = `${post.slug} ${post.title} ${post.category}`;

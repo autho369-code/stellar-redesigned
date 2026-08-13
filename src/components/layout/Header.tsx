@@ -98,7 +98,7 @@ export default function Header() {
                 Stellar
               </span>
               <span className="block text-[9px] font-semibold uppercase tracking-luxe text-slate-500 mt-1">
-                Chicago Property Management
+                Condo · HOA · Townhome Management
               </span>
             </span>
           </Link>
@@ -177,7 +177,8 @@ export default function Header() {
               )
             )}
 
-            {/* Phone + primary CTA — new business first, payments live under Resources */}
+            {/* Phone + primary prospect CTA — new business first; resident
+                payments remain under Resources. */}
             <a
               href="tel:+17737280652"
               className="hidden xl:inline-flex items-center gap-2 text-[11px] font-semibold tracking-luxe text-ink/70 hover:text-gold-600 transition-colors duration-200"
@@ -194,8 +195,8 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile: click-to-call is always visible, no menu required */}
-          <div className="lg:hidden flex items-center gap-1">
+          {/* Mobile: click-to-call + proposal chip, visible without opening the menu */}
+          <div className="flex items-center gap-1 lg:hidden">
             <a
               href="tel:+17737280652"
               aria-label="Call Stellar Property Management at 773-728-0652"
@@ -203,10 +204,19 @@ export default function Header() {
             >
               <Phone className="w-5 h-5" />
             </a>
+            <Link
+              to="/contact?inquiry=quote&source=mobile-header-visible"
+              className="hidden items-center gap-1.5 bg-ink px-3 py-2 text-[9px] font-semibold uppercase tracking-luxe text-paper transition-colors hover:bg-gold-600 min-[390px]:inline-flex"
+            >
+              Proposal
+              <ArrowUpRight className="h-3 w-3" />
+            </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
+              className="p-2 text-ink transition-colors duration-200 hover:text-gold-600"
               aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -216,6 +226,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
+        id="mobile-navigation"
         className={`lg:hidden transition-all duration-300 overflow-y-auto ${
           mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
@@ -283,11 +294,11 @@ export default function Header() {
 
           <div className="pt-3 space-y-2.5">
             <Link
-              to="/contact?inquiry=quote&source=header-mobile"
+              to="/contact?inquiry=quote&source=mobile-header"
               className="flex items-center justify-center gap-2 w-full px-5 py-3.5 bg-ink text-paper text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:bg-gold-600"
             >
               Request a Proposal
-              <ArrowRight className="w-3.5 h-3.5" />
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
             <a
               href="https://stellarpropertygrp.appfolio.com/connect/"

@@ -23,11 +23,21 @@ export function ServiceSchema({ name, description, canonical, serviceType }: Ser
           { '@type': 'City', name: 'Chicago' },
           { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
         ],
+        offers: {
+          '@type': 'Offer',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: 20,
+            priceCurrency: 'USD',
+            unitText: 'per unit per month',
+            description: 'Starting price; customized flat monthly proposal.',
+          },
+        },
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com/' },
           { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.stellarpropertygroup.com/services' },
           { '@type': 'ListItem', position: 3, name, item: canonical },
         ],

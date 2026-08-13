@@ -4,6 +4,8 @@ import { ArrowRight, Check } from 'lucide-react';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { highRiseManagementFaqs } from '../../data/service-faqs';
 
 const operatingPriorities = [
   ['Building systems', 'Preventive schedules and vendor coordination for elevators, boilers, pumps, fire and life-safety systems, roofs, façades, garages, and domestic-water infrastructure.'],
@@ -117,6 +119,7 @@ export default function HighRiseManagement() {
           <Link to="/blog/switch-condo-management-companies-chicago" className="inline-flex items-center gap-2 text-gold-600 hover:text-gold-500">Read the Chicago switching guide <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </section>
+      <ServiceFAQ items={highRiseManagementFaqs} title="What high-rise boards should confirm before changing managers." />
       <ClusterGuides cluster="buildings" />
       <CTASection />
     </>

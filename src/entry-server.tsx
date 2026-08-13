@@ -36,6 +36,7 @@ import Pricing from './pages/Pricing';
 import Reviews from './pages/Reviews';
 import NeighborhoodPage from './pages/NeighborhoodPage';
 import Blog from './pages/Blog';
+import BlogTopic from './pages/BlogTopic';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Resources from './pages/Resources';
@@ -79,6 +80,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/topic/:topic" element={<BlogTopic />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
