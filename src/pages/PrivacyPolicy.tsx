@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const sections = [
   {
@@ -27,8 +27,10 @@ const sections = [
           </li>
         </ul>
         <p>
-          This website does not use advertising or analytics cookies, does not run third-party
-          tracking scripts, and does not require you to create an account.
+          This website does not use advertising cookies. We use Vercel Web Analytics and Speed
+          Insights to measure aggregate page performance and high-intent actions such as proposal,
+          phone, and email clicks. This privacy-focused measurement does not collect the personal
+          details entered in our forms and does not require you to create an account.
         </p>
       </>
     ),
@@ -56,6 +58,12 @@ const sections = [
           <li className="pl-5 border-l border-gold-400">
             <strong className="font-semibold text-ink">Form processing.</strong> Website form submissions are transmitted to us
             through Web3Forms, a form-delivery service that processes submissions on our behalf.
+          </li>
+          <li className="pl-5 border-l border-gold-400">
+            <strong className="font-semibold text-ink">Website measurement.</strong> Vercel processes aggregate website-usage
+            and performance data on our behalf so we can understand which pages help visitors and
+            diagnose slow experiences. We do not send names, email addresses, phone numbers, or
+            form-message contents to this analytics service.
           </li>
           <li className="pl-5 border-l border-gold-400">
             <strong className="font-semibold text-ink">Your association.</strong> Violation reports and board nominations are
@@ -149,14 +157,11 @@ const sections = [
 export default function PrivacyPolicy() {
   return (
     <>
-      <Helmet>
-        <title>Privacy Policy | Stellar Property Management</title>
-        <meta
-          name="description"
-          content="How Stellar Property Management collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies, no data selling."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/privacy-policy" />
-      </Helmet>
+      <SEOHead
+        title="Privacy Policy | Stellar Property Management"
+        description="How Stellar Property Management collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies or data selling."
+        canonical="https://www.stellarpropertygroup.com/privacy-policy"
+      />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -171,7 +176,7 @@ export default function PrivacyPolicy() {
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-16 lg:pb-20">
           <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
             <span className="accent-rule" />
-            Legal · Effective July 3, 2026
+            Legal · Effective August 12, 2026
           </p>
           <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance mb-8">
             Privacy <em className="font-medium text-gold-600">Policy.</em>

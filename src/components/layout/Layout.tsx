@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import ArthurConcierge from '../ArthurConcierge';
+import DeferredArthurConcierge from '../DeferredArthurConcierge';
 
 export default function Layout() {
   return (
@@ -11,7 +11,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <ArthurConcierge />
+      <DeferredArthurConcierge />
     </div>
   );
 }

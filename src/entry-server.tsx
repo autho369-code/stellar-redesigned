@@ -42,6 +42,7 @@ import Resources from './pages/Resources';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
+import KnowledgeAdmin from './pages/KnowledgeAdmin';
 
 function CatchAllRoute() {
   const { pathname } = useLocation();
@@ -58,6 +59,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={url}>
         <Routes>
+          <Route path="/knowledge" element={<KnowledgeAdmin />} />
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

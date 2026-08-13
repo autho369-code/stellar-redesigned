@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Phone } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const sortedNeighborhoods = [...neighborhoods].sort((a, b) =>
   a.name.localeCompare(b.name)
@@ -37,13 +38,12 @@ export default function ServiceAreas() {
 
   return (
     <>
+      <SEOHead
+        title="Chicago Condo & HOA Management Areas | Stellar"
+        description="Condo, HOA, and townhome association management across Chicago and the North Shore, including Evanston, Wilmette, Winnetka, and Highland Park."
+        canonical="https://www.stellarpropertygroup.com/service-areas"
+      />
       <Helmet>
-        <title>Chicago Condo &amp; HOA Management Areas | Stellar</title>
-        <meta
-          name="description"
-          content="Condo, HOA, and townhome association management across Chicago and the North Shore, including Evanston, Wilmette, Winnetka, and Highland Park."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/service-areas" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 

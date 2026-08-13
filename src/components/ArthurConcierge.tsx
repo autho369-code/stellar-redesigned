@@ -379,7 +379,7 @@ export default function ArthurConcierge() {
       {/* Launcher */}
       <button
         onClick={() => setOpen(!open)}
-        aria-label={open ? 'Close concierge chat' : 'Chat with Arthur, our concierge'}
+        aria-label={open ? 'Close Arthur concierge chat' : 'Ask Arthur, Stellar concierge'}
         className="fixed bottom-6 right-6 z-[60] flex items-center gap-3 bg-ink text-paper pl-4 pr-5 py-3.5 shadow-glass hover:bg-navy-700 transition-colors duration-300"
       >
         {open ? <X className="w-5 h-5" strokeWidth={1.5} /> : <MessageCircle className="w-5 h-5 text-gold-300" strokeWidth={1.5} />}

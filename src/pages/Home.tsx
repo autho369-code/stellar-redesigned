@@ -336,7 +336,7 @@ export default function Home() {
                   width="800"
                   height="1120"
                 />
-                <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/40 text-center">
+                <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/70 text-center">
                   Chicago · Vintage Brick &amp; Bay Windows
                 </figcaption>
               </div>
@@ -351,7 +351,7 @@ export default function Home() {
               {stats.map(({ value, label }) => (
                 <div key={label} className="py-9 px-4 lg:px-10 text-center lg:text-left">
                   <dd className="font-display text-3xl lg:text-4xl font-light text-gold-300 mb-1">{value}</dd>
-                  <dt className="text-[10px] uppercase tracking-luxe text-paper/40">{label}</dt>
+                  <dt className="text-[10px] uppercase tracking-luxe text-paper/70">{label}</dt>
                 </div>
               ))}
             </dl>
@@ -363,7 +363,7 @@ export default function Home() {
       <section className="bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-wrap items-center justify-center gap-x-14 gap-y-2">
           {['CAI Member', 'CAI Illinois Chapter', 'Illinois Licensed CAM Firm', 'Serving Chicago Since 2007'].map((c) => (
-            <span key={c} className="text-[10px] uppercase tracking-luxe text-slate-500">{c}</span>
+            <span key={c} className="text-[10px] uppercase tracking-luxe text-slate-600">{c}</span>
           ))}
         </div>
       </section>
@@ -396,7 +396,7 @@ export default function Home() {
                 to={href}
                 className="group relative border-r border-b border-slate-200 p-9 lg:p-11 transition-colors duration-300 hover:bg-ivory-100"
               >
-                <span className="font-display font-light text-5xl lg:text-6xl text-slate-200 group-hover:text-gold-400 transition-colors duration-300 block mb-8 select-none">
+                <span className="font-display font-light text-5xl lg:text-6xl text-slate-500 group-hover:text-gold-600 transition-colors duration-300 block mb-8 select-none" aria-hidden="true">
                   {n}
                 </span>
                 <h3 className="font-display text-xl lg:text-2xl text-ink mb-4">{title}</h3>
@@ -437,13 +437,13 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-7">
-              <div className="grid grid-cols-2 text-[10px] uppercase tracking-luxe text-paper/35 pb-4 border-b border-paper/10 gap-6">
+              <div className="grid grid-cols-2 text-[10px] uppercase tracking-luxe text-paper/70 pb-4 border-b border-paper/10 gap-6">
                 <span>The volume model</span>
                 <span className="text-gold-300">The Stellar standard</span>
               </div>
               {contrasts.map(({ them, us }) => (
                 <div key={us} className="grid grid-cols-2 gap-6 py-6 border-b border-paper/10 items-start">
-                  <p className="text-paper/40 text-sm font-light leading-relaxed">{them}</p>
+                  <p className="text-paper/70 text-sm font-light leading-relaxed">{them}</p>
                   <p className="text-paper/90 text-sm leading-relaxed">{us}</p>
                 </div>
               ))}
@@ -624,7 +624,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-5 mb-16">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-ink font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-600 hover:bg-gold-700 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

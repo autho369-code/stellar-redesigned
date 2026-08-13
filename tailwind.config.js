@@ -13,8 +13,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Fraunces', 'Georgia', 'serif'],
+        sans: ['Inter Variable', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Fraunces Variable', 'Fraunces', 'Georgia', 'serif'],
       },
       colors: {
         // Brand navy — headlines, dark sections (from the logo ring)
@@ -38,8 +38,8 @@ export default {
           200: '#b9dcf1',
           300: '#8ec7e7',
           400: '#64b1dc',
-          500: '#3f9ed3',
-          600: '#2f81b4',
+          500: '#378fbe',
+          600: '#286a94',
           700: '#286a94',
           800: '#245877',
           900: '#214a63',

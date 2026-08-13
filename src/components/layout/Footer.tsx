@@ -45,12 +45,12 @@ export default function Footer() {
                 <span className="block font-display text-3xl tracking-tight">
                   Stellar
                 </span>
-                <span className="block text-[9px] font-semibold uppercase tracking-luxe text-paper/40 mt-2">
+                <span className="block text-[9px] font-semibold uppercase tracking-luxe text-paper/65 mt-2">
                   Chicago Property Management · Est. 2007
                 </span>
               </span>
             </Link>
-            <p className="text-paper/50 text-sm leading-relaxed mb-8 font-light max-w-sm">
+            <p className="text-paper/70 text-sm leading-relaxed mb-8 font-light max-w-sm">
               Condominium, HOA, and townhome association management for
               Chicago&rsquo;s finest addresses — practiced with discretion,
               transparency, and an uncompromising standard of care.
@@ -79,15 +79,15 @@ export default function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-4 lg:col-start-7">
-            <h4 className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
+            <p className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
               The Practice
-            </h4>
+            </p>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-paper/55 font-light hover:text-paper transition-colors duration-200"
+                    className="text-sm text-paper/70 font-light hover:text-paper transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -98,15 +98,15 @@ export default function Footer() {
 
           {/* Company */}
           <div className="lg:col-span-2">
-            <h4 className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
+            <p className="text-[10px] font-semibold uppercase tracking-luxe text-gold-300 mb-6">
               The Firm
-            </h4>
+            </p>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-paper/55 font-light hover:text-paper transition-colors duration-200"
+                    className="text-sm text-paper/70 font-light hover:text-paper transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -121,7 +121,7 @@ export default function Footer() {
       <div className="border-t border-paper/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-6 flex flex-wrap items-center justify-center gap-x-14 gap-y-2">
           {credentials.map((c) => (
-            <span key={c} className="text-[10px] font-medium tracking-luxe uppercase text-paper/35">
+            <span key={c} className="text-[10px] font-medium tracking-luxe uppercase text-paper/65">
               {c}
             </span>
           ))}
@@ -131,30 +131,30 @@ export default function Footer() {
       {/* Copyright + legal */}
       <div className="border-t border-paper/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-paper/30 font-light">
+          <p className="text-xs text-paper/65 font-light">
             &copy; {new Date().getFullYear()} Stellar Property Management. All rights reserved.
             {' · '}
             <a
               href="https://portier369.com"
               target="_blank"
               rel="noopener"
-              className="text-paper/40 hover:text-gold-300 transition-colors"
+              className="text-paper/65 hover:text-gold-300 transition-colors"
               title="HOA & condo management software"
             >
               Powered by Portier369
             </a>
           </p>
           <div className="flex items-center gap-6">
-            <Link to="/privacy-policy" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+            <Link to="/privacy-policy" className="text-xs text-paper/65 font-light hover:text-gold-300 transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+            <Link to="/terms-of-service" className="text-xs text-paper/65 font-light hover:text-gold-300 transition-colors">
               Terms of Service
             </Link>
-            <a href="/sitemap.xml" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+            <a href="/sitemap.xml" className="text-xs text-paper/65 font-light hover:text-gold-300 transition-colors">
               Sitemap
             </a>
-            <Link to="/knowledge" className="text-xs text-paper/40 font-light hover:text-gold-300 transition-colors">
+            <Link to="/knowledge" className="text-xs text-paper/65 font-light hover:text-gold-300 transition-colors">
               Staff Sign-In
             </Link>
           </div>

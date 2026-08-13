@@ -77,6 +77,7 @@ for (const file of readdirSync(blogDir)) {
 
 const routes = [
   ...staticRoutes,
+  '/knowledge',
   ...neighborhoodSlugs.map((s) => `/property-management-${s}`),
   ...blogSlugs.map((s) => `/blog/${s}`),
 ];

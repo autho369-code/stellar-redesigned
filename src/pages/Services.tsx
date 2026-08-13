@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
+import { SEOHead } from '../components/seo/SEOHead';
 
 interface ServiceItem {
   n: string;
@@ -117,13 +118,12 @@ const schema = {
 export default function Services() {
   return (
     <>
+      <SEOHead
+        title="Property Management Services | Stellar Property Management"
+        description="Nine professional community-management disciplines for Chicago condominiums, HOAs, townhomes, high-rises, and small associations."
+        canonical="https://www.stellarpropertygroup.com/services"
+      />
       <Helmet>
-        <title>Property Management Services | Stellar Property Management</title>
-        <meta
-          name="description"
-          content="Nine professional community-management disciplines for Chicago condominiums, HOAs, townhomes, high-rises, and small associations."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/services" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

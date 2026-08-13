@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams, useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import {
   CreditCard, AlertTriangle, Users, MessageSquare, ArrowRight,
   ArrowUpRight, ExternalLink, Phone, Plus
 } from 'lucide-react';
 import { ViolationReportForm } from '../components/ViolationReportForm';
 import { BoardNominationForm } from '../components/BoardNominationForm';
+import { SEOHead } from '../components/seo/SEOHead';
 
 type ActiveTab = 'violation' | 'nomination' | null;
 
@@ -112,14 +112,11 @@ export default function Resources() {
 
   return (
     <>
-      <Helmet>
-        <title>Owner & Resident Resources | Stellar Property Management</title>
-        <meta
-          name="description"
-          content="Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/resources" />
-      </Helmet>
+      <SEOHead
+        title="Owner & Resident Resources | Stellar Property Management"
+        description="Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions."
+        canonical="https://www.stellarpropertygroup.com/resources"
+      />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
