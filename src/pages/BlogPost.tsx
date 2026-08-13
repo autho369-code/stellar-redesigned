@@ -41,7 +41,7 @@ export default function BlogPost() {
       : 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
     author: {
       '@type': 'Person',
-      '@id': 'https://www.stellarpropertygroup.com/about',
+      '@id': 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic',
       name: 'Mirsad Cerimovic',
       honorificSuffix: 'CAM, CMCA, AMS',
       jobTitle: 'Community Association Manager',

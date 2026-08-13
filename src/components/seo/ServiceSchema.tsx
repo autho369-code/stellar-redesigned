@@ -10,16 +10,28 @@ interface ServiceSchemaProps {
 export function ServiceSchema({ name, description, canonical, serviceType }: ServiceSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    '@id': `${canonical}#service`,
-    name,
-    description,
-    url: canonical,
-    serviceType,
-    provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
-    areaServed: [
-      { '@type': 'City', name: 'Chicago' },
-      { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+    '@graph': [
+      {
+        '@type': 'Service',
+        '@id': `${canonical}#service`,
+        name,
+        description,
+        url: canonical,
+        serviceType,
+        provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        areaServed: [
+          { '@type': 'City', name: 'Chicago' },
+          { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.stellarpropertygroup.com/services' },
+          { '@type': 'ListItem', position: 3, name, item: canonical },
+        ],
+      },
     ],
   };
 

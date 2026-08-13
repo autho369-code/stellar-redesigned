@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Menu, X, ArrowUpRight } from 'lucide-react';
+import { ChevronDown, Menu, X, ArrowUpRight, ArrowRight, Phone } from 'lucide-react';
 
 interface NavChild {
   name: string;
@@ -177,26 +177,40 @@ export default function Header() {
               )
             )}
 
-            {/* Payment CTA */}
+            {/* Phone + primary CTA — new business first, payments live under Resources */}
             <a
-              href="https://stellarpropertygrp.appfolio.com/connect/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+17737280652"
+              className="hidden xl:inline-flex items-center gap-2 text-[11px] font-semibold tracking-luxe text-ink/70 hover:text-gold-600 transition-colors duration-200"
+            >
+              <Phone className="w-3.5 h-3.5 text-gold-500" />
+              773.728.0652
+            </a>
+            <Link
+              to="/contact?inquiry=quote&source=header"
               className="inline-flex items-center gap-2 px-6 py-3 bg-ink text-paper hover:bg-gold-600 text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300"
             >
-              Make a Payment
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+              Request a Proposal
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </nav>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-ink hover:text-gold-600 transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile: click-to-call is always visible, no menu required */}
+          <div className="lg:hidden flex items-center gap-1">
+            <a
+              href="tel:+17737280652"
+              aria-label="Call Stellar Property Management at 773-728-0652"
+              className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
+            >
+              <Phone className="w-5 h-5" />
+            </a>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -267,12 +281,19 @@ export default function Header() {
             )
           )}
 
-          <div className="pt-3">
+          <div className="pt-3 space-y-2.5">
+            <Link
+              to="/contact?inquiry=quote&source=header-mobile"
+              className="flex items-center justify-center gap-2 w-full px-5 py-3.5 bg-ink text-paper text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:bg-gold-600"
+            >
+              Request a Proposal
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
             <a
               href="https://stellarpropertygrp.appfolio.com/connect/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full px-5 py-3.5 bg-ink text-paper text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:bg-gold-600"
+              className="flex items-center justify-center gap-2 w-full px-5 py-3.5 border border-slate-300 text-ink text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:border-gold-500 hover:text-gold-600"
             >
               Make a Payment
               <ArrowUpRight className="w-3.5 h-3.5" />

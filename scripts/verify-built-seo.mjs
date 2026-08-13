@@ -37,7 +37,9 @@ for (const url of urls) {
     || valueOf(html, /<link[^>]+href="([^"]*)"[^>]+rel="canonical"/i);
   const robots = valueOf(html, /<meta[^>]+name="robots"[^>]+content="([^"]*)"/i);
   const h1Count = (html.match(/<h1\b/gi) ?? []).length;
-  const expectedCanonical = route === '/' ? base : `${base}${route}`;
+  // The root canonical carries the trailing slash — matching the sitemap's
+  // <loc>, since the origin root always resolves to '/'.
+  const expectedCanonical = route === '/' ? `${base}/` : `${base}${route}`;
 
   if (!title) errors.push(`${route}: missing title`);
   if (!description) errors.push(`${route}: missing meta description`);

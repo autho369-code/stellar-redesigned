@@ -106,8 +106,15 @@ export default function NeighborhoodPage() {
   const parentHub = isSuburb ? '/property-management-north-shore' : '/property-management-chicago';
   const parentLabel = isSuburb ? 'North Shore Property Management' : 'Chicago Property Management';
   const leadSource = `area-${neighborhood.slug}`;
-  const seoTitle = `${neighborhood.name} Condo & HOA Management | Stellar`;
-  const seoDescription = `Condo, HOA, and townhome association management in ${neighborhood.name}, ${locale}. Dedicated local manager, transparent reporting, and 24/7 response since 2007.`;
+  // Geo qualifier in the title: searches are "condo management <name> Chicago",
+  // not the bare neighborhood name. Longest name yields 62 chars — under the
+  // 65-char cap enforced by scripts/verify-built-seo.mjs.
+  const seoTitle = isSuburb
+    ? `Condo & HOA Management in ${neighborhood.name}, IL | Stellar`
+    : `Condo & HOA Management in ${neighborhood.name}, Chicago | Stellar`;
+  const seoDescription = isSuburb
+    ? `Flat-fee condo, HOA & townhome association management in ${neighborhood.name}, Illinois (ZIP ${neighborhood.zipCodes.join(', ')}). Dedicated North Shore manager and 24/7 response since 2007.`
+    : `Condo, HOA & townhome association management in ${neighborhood.name}, Chicago (ZIP ${neighborhood.zipCodes.join(', ')}). Dedicated local manager, flat-fee pricing, 24/7 response.`;
 
   // Localized Q&A — rendered on the page AND emitted as FAQPage schema so
   // AI engines can quote community-specific answers directly.

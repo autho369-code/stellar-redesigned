@@ -1,9 +1,75 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
+
+const deliverables = [
+  {
+    title: 'The monthly report package',
+    desc: 'Balance sheet, income statement against budget, delinquency and collection status, reserve balances, paid-invoice copies, and a manager’s narrative — delivered on schedule every month, formatted for a board meeting, not an accountant’s drawer.',
+  },
+  {
+    title: 'The annual budget, drafted for decision',
+    desc: 'A line-item draft with prior-year actuals, vendor contract renewals flagged, reserve contribution scenarios, and the assessment impact of each option — so the board votes on choices, not on a spreadsheet.',
+  },
+  {
+    title: 'Meeting packets and minutes',
+    desc: 'Agendas and supporting materials before every board meeting, notices that satisfy Illinois Condominium Property Act requirements, and minutes your association attorney would be content to see subpoenaed.',
+  },
+  {
+    title: 'Section 22.1 disclosures and closing documents',
+    desc: 'Prompt, accurate resale disclosure packets and paid-assessment letters, so unit sales in your building close on time and owners are not chasing paperwork.',
+  },
+  {
+    title: 'Violation and work-order logs',
+    desc: 'Every complaint, violation notice, and maintenance request tracked from intake to resolution, visible to the board in real time through the portal.',
+  },
+  {
+    title: 'A capital plan that looks past this fiscal year',
+    desc: 'Reserve-study coordination, multi-year capital calendars for façade, roof, and mechanical work, and competitive bids assembled before deadlines force premium pricing.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'How much does condominium management cost in Chicago?',
+    a: 'Stellar condominium management starts at $20 per unit per month, quoted as a customized flat monthly fee based on your building’s size, systems, staffing, amenities, financial complexity, and service scope. We do not price as a percentage of your budget and we do not charge a separate capital-project planning or oversight fee. Third-party costs — contractors, engineers, attorneys, permits — remain association expenses.',
+  },
+  {
+    q: 'What does a condo management company do for the board?',
+    a: 'The manager executes what the board decides: collecting assessments, paying invoices, producing monthly financial reports, supervising building staff and vendors, coordinating maintenance and emergencies, preparing meetings and notices under the Illinois Condominium Property Act, handling owner communications, and issuing resale disclosures. Authority stays with the board; the manager supplies the professional machinery and a documented paper trail.',
+  },
+  {
+    q: 'Does hiring a management company mean the board gives up control?',
+    a: 'No — it usually means the opposite. Every contract, expenditure, and policy remains a board decision. What changes is the quality of the information behind those decisions: current financials, documented bids, tracked violations, and an agenda that arrives before the meeting. Boards that switch to professional management typically report spending less time on administration and more on actual governance.',
+  },
+  {
+    q: 'How long does it take to switch condo management companies?',
+    a: 'Plan on a managed 30–60 day transition after your board gives notice under its current contract. Stellar handles records retrieval from the outgoing firm, banking migration under board control, vendor notification, owner communication, and portal setup. The first full monthly report package arrives on schedule in the first complete month under management.',
+  },
+  {
+    q: 'Do you manage small, self-managed condo buildings?',
+    a: 'Yes. Boutique buildings from roughly 6 to 30 units are a deliberate part of our portfolio, including many moving from self-management for the first time. Our small condo association practice adds professional financials, vendor leverage, and continuity between volunteer boards without the overhead built for a 300-unit tower.',
+  },
+  {
+    q: 'Do you manage high-rise condominiums with on-site staff?',
+    a: 'Yes. Our high-rise practice covers door staff and engineer supervision, building-system maintenance programs, elevator and life-safety compliance, and the capital planning cadence that towers on the lakefront require. High-rise communities receive the same dedicated-manager model with staffing oversight added to the scope.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://www.stellarpropertygroup.com/services/condominium-management#faq',
+  mainEntity: faqs.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
 
 export default function CondominiumManagement() {
   const features = [
@@ -42,6 +108,9 @@ export default function CondominiumManagement() {
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
       <ServiceSchema name="Chicago Condominium Association Management" description="Full-service condominium association management with financial reporting, maintenance coordination, governance support, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/condominium-management" serviceType="Condominium Association Management" />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -178,6 +247,86 @@ export default function CondominiumManagement() {
           <p className="text-lg text-slate-600 font-light leading-relaxed">
             We also work closely with experienced condominium attorneys to address complex legal questions, review proposed bylaw amendments, and navigate disputes. Our proactive approach to compliance has helped our client communities avoid costly litigation and regulatory penalties year after year.
           </p>
+        </div>
+      </section>
+
+      {/* ── Deliverables — what the board receives ─────────────── */}
+      <section className="py-24 lg:py-32 bg-ink text-paper relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="max-w-2xl mb-16">
+            <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+              <span className="accent-rule" />
+              Deliverables
+            </p>
+            <h2 className="font-display font-light text-3xl lg:text-4xl leading-[1.1] mb-6">
+              What your board receives, <em className="font-medium text-gold-300">every month.</em>
+            </h2>
+            <p className="text-lg text-paper/55 font-light leading-relaxed">
+              &ldquo;Full service&rdquo; means little until you see the paper it
+              produces. This is the standing output of a Stellar-managed
+              condominium — ask any firm you interview to show you the same.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10 border border-paper/10">
+            {deliverables.map(({ title, desc }, i) => (
+              <div key={title} className="bg-ink p-9 lg:p-10">
+                <span className="font-display font-light text-3xl text-gold-300 block mb-6 select-none">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <h3 className="font-display text-xl mb-4">{title}</h3>
+                <p className="text-sm text-paper/60 font-light leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-3">
+            <Link to="/services/financial-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              The financial management practice <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/blog/condo-reserve-funds-explained" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              Why reserves fall behind — and how to fix it <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-white border-t border-slate-200">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="mb-14">
+            <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+              <span className="accent-rule" />
+              Condo Boards Ask
+            </p>
+            <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-[1.1]">
+              Condominium management, <em className="font-medium text-gold-600">answered.</em>
+            </h2>
+          </div>
+          <div className="border-t border-slate-200">
+            {faqs.map(({ q, a }) => (
+              <details key={q} className="group border-b border-slate-200">
+                <summary className="flex items-center justify-between gap-6 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <h3 className="font-display text-lg lg:text-xl text-ink group-open:text-gold-600 transition-colors">{q}</h3>
+                  <Plus className="w-5 h-5 text-gold-500 flex-shrink-0 transition-transform duration-300 group-open:rotate-45" strokeWidth={1.25} />
+                </summary>
+                <p className="pb-7 text-slate-600 leading-relaxed font-light max-w-3xl">{a}</p>
+              </details>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-3">
+            <Link to="/services/small-condo-association-management" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              Small condo associations <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/services/high-rise-condominium-management" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              High-rise management <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              Pricing from $20 per unit <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/property-management-chicago" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
+              Chicago service areas <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
