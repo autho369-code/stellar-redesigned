@@ -4,6 +4,8 @@ import { ArrowRight, Check } from 'lucide-react';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { smallCondoManagementFaqs } from '../../data/service-faqs';
 
 const problems = [
   ['Volunteer overload', 'Replace scattered owner spreadsheets, inboxes, and verbal handoffs with an operating calendar, documented responsibilities, and one accountable manager.'],
@@ -117,6 +119,7 @@ export default function SmallCondoManagement() {
           <Link to="/blog/self-managed-condo-association-problems" className="inline-flex items-center gap-2 text-gold-600 hover:text-gold-500">Read the self-management risk guide <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </section>
+      <ServiceFAQ items={smallCondoManagementFaqs} title="What small condo boards ask before hiring management." />
       <ClusterGuides cluster="management" />
       <CTASection />
     </>

@@ -98,7 +98,7 @@ export default function Header() {
                 Stellar
               </span>
               <span className="block text-[9px] font-semibold uppercase tracking-luxe text-slate-500 mt-1">
-                Chicago Property Management
+                Condo · HOA · Townhome Management
               </span>
             </span>
           </Link>
@@ -187,19 +187,30 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-ink hover:text-gold-600 transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center gap-1 lg:hidden">
+            <Link
+              to="/contact?inquiry=quote&source=mobile-header-visible"
+              className="hidden items-center gap-1.5 bg-ink px-3 py-2 text-[9px] font-semibold uppercase tracking-luxe text-paper transition-colors hover:bg-gold-600 min-[390px]:inline-flex"
+            >
+              Proposal
+              <ArrowUpRight className="h-3 w-3" />
+            </Link>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="p-2 text-ink transition-colors duration-200 hover:text-gold-600"
+              aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile menu */}
       <div
+        id="mobile-navigation"
         className={`lg:hidden transition-all duration-300 overflow-y-auto ${
           mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
