@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const sections = [
   {
@@ -139,14 +139,11 @@ const sections = [
 export default function TermsOfService() {
   return (
     <>
-      <Helmet>
-        <title>Terms of Service | Stellar Property Management</title>
-        <meta
-          name="description"
-          content="Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/terms-of-service" />
-      </Helmet>
+      <SEOHead
+        title="Terms of Service | Stellar Property Management"
+        description="Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement."
+        canonical="https://www.stellarpropertygroup.com/terms-of-service"
+      />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

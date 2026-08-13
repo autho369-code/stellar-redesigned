@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Building, Mail, MessageSquare, Phone, Send, User } from 'lucide-react';
 import { submitLeadToOps } from '../lib/leads';
+import { track } from '@vercel/analytics';
 
 type InquiryType = 'quote' | 'general';
 
@@ -115,6 +116,11 @@ export function ContactForm() {
 
       if (!emailResponse.ok) throw new Error('Form submission failed');
 
+      track('Proposal Form Submitted', {
+        inquiryType: formData.inquiry_type,
+        leadSource,
+        propertyType: formData.property_type || 'not-provided',
+      });
       setSubmittedEmail(formData.email);
       setSubmitStatus('success');
       setFormData(emptyForm(formData.inquiry_type));
@@ -203,7 +209,7 @@ export function ContactForm() {
           <>
             <div className="border-t border-slate-200 pt-7">
               <h3 className="font-display text-xl text-ink">About your association</h3>
-              <p className="mt-2 text-sm font-light text-slate-500">These details let us research the property before we call.</p>
+              <p className="mt-2 text-sm font-light text-slate-600">These details let us research the property before we call.</p>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="md:col-span-2">
@@ -293,8 +299,8 @@ export function ContactForm() {
           )}
         </button>
 
-        <p className="text-center text-xs leading-relaxed text-slate-500">
-          By submitting, you agree that Stellar may contact you about this request. See our <Link to="/privacy-policy" className="text-gold-600 hover:text-gold-500">privacy policy</Link>.
+        <p className="text-center text-xs leading-relaxed text-slate-600">
+          By submitting, you agree that Stellar may contact you about this request. See our <Link to="/privacy-policy" className="text-gold-600 underline underline-offset-2 hover:text-gold-500">privacy policy</Link>.
         </p>
       </form>
 

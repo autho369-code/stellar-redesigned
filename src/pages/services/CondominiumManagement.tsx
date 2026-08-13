@@ -37,8 +37,8 @@ export default function CondominiumManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Condo Management | Dedicated Local Team | Stellar"
-        description="Chicago condominium management with a dedicated local manager, transparent financial reporting, board support, and 24/7 emergency response."
+        title="Chicago Condominium Management Company | Stellar"
+        description="Licensed Chicago condominium association management for boards: financial reporting, maintenance, governance, 24/7 response, and structured transitions."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
       <ServiceSchema name="Chicago Condominium Association Management" description="Full-service condominium association management with financial reporting, maintenance coordination, governance support, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/condominium-management" serviceType="Condominium Association Management" />

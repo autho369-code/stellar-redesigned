@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const values = [
   {
@@ -53,14 +53,11 @@ const areas = [
 export default function About() {
   return (
     <>
-      <Helmet>
-        <title>About Stellar Property Management | Chicago Since 2007</title>
-        <meta
-          name="description"
-          content="Meet Stellar Property Management: serving Chicago associations since 2007 with 42 communities, CAI membership, and Illinois CAM firm licensing."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/about" />
-      </Helmet>
+      <SEOHead
+        title="About Stellar Property Management | Chicago Since 2007"
+        description="Meet Stellar Property Management: serving Chicago associations since 2007 with 42 communities, CAI membership, and Illinois CAM firm licensing."
+        canonical="https://www.stellarpropertygroup.com/about"
+      />
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">

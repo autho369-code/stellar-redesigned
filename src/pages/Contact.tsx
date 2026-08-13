@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '../components/ContactForm';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const contactDetails = [
   {
@@ -56,18 +57,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEOHead
+        title="Contact Stellar Property Management | Association Quote"
+        description="Contact Stellar Property Management for a Chicago condominium, HOA, or townhome association management consultation and customized quote. Call 773.728.0652."
+        canonical="https://www.stellarpropertygroup.com/contact"
+      />
       <Helmet>
-        <title>Contact Stellar Property Management | Chicago Association Quote</title>
-        <meta
-          name="description"
-          content="Contact Stellar Property Management for a Chicago condominium, HOA, or townhome association management consultation and customized quote. Call 773.728.0652."
-        />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/contact" />
-        <meta property="og:title" content="Contact Stellar Property Management | Chicago Association Quote" />
-        <meta property="og:description" content="Request a board consultation for Chicago condominium, HOA, or townhome association management." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.stellarpropertygroup.com/contact" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
@@ -116,7 +111,7 @@ export default function Contact() {
               <div className="border-t border-slate-200">
                 {contactDetails.map(({ title, lines, href, linkLabel, sub }) => (
                   <div key={title} className="py-7 border-b border-slate-200">
-                    <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">{title}</p>
+                    <p className="text-[10px] uppercase tracking-luxe text-slate-600 mb-3">{title}</p>
                     {lines.map((line) =>
                       href ? (
                         <a
@@ -132,7 +127,7 @@ export default function Contact() {
                         <p key={line} className="font-display text-lg text-ink leading-snug">{line}</p>
                       )
                     )}
-                    {sub && <p className="text-xs text-slate-500 font-light mt-2">{sub}</p>}
+                    {sub && <p className="text-xs text-slate-600 font-light mt-2">{sub}</p>}
                     {href && linkLabel && (
                       <a
                         href={href}
@@ -196,7 +191,7 @@ export default function Contact() {
                   <Phone className="w-4 h-4" strokeWidth={1.25} />
                   Call 773.728.0652
                 </a>
-                <p className="text-[10px] uppercase tracking-luxe text-slate-500">
+                <p className="text-[10px] uppercase tracking-luxe text-slate-600">
                   Available 24 hours a day, 7 days a week
                 </p>
               </div>

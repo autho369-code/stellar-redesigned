@@ -35,8 +35,8 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago HOA Management | Dedicated Local Team | Stellar"
-        description="Chicago HOA management with a dedicated local manager, transparent reporting, responsive board support, and 24/7 emergency coordination."
+        title="Chicago HOA Management Company | Stellar"
+        description="Chicago HOA management for boards seeking transparent financial reporting, consistent governance, common-area maintenance, and responsive local support."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
       <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />

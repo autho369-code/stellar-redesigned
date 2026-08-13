@@ -35,8 +35,8 @@ export default function TownhomeManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Townhome Management | Personalized Local Service"
-        description="Chicago townhome association management with a dedicated local manager, transparent financial reporting, exterior maintenance, and board support."
+        title="Chicago Townhome Association Management | Stellar"
+        description="Chicago townhome association management with transparent financial reporting, shared-exterior maintenance, capital planning, and dedicated board support."
         canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
       <ServiceSchema name="Chicago Townhome Association Management" description="Townhome association management with shared-exterior planning, financial reporting, vendor coordination, governance support, and owner communication." canonical="https://www.stellarpropertygroup.com/services/townhome-management" serviceType="Townhome Association Management" />

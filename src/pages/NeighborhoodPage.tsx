@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { SEOHead } from '../components/seo/SEOHead';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { getNeighborhoodBySlug, getRelatedNeighborhoods } from '../data/neighborhoods';
 import { blogPosts } from '../data/blog-posts';
@@ -170,17 +171,12 @@ export default function NeighborhoodPage() {
 
   return (
     <>
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        canonical={`https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`}
+      />
       <Helmet>
-        <title>{seoTitle}</title>
-        <meta
-          name="description"
-          content={seoDescription}
-        />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link
-          rel="canonical"
-          href={`https://www.stellarpropertygroup.com/property-management-${neighborhood.slug}`}
-        />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 

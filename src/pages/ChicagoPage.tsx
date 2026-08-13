@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const chicagoNeighborhoods = neighborhoods.filter((n) => n.region !== 'north-shore');
 
@@ -99,13 +100,12 @@ const schema = {
 export default function ChicagoPage() {
   return (
     <>
+      <SEOHead
+        title="Chicago Condo & HOA Management Company | Stellar"
+        description="Chicago condo, HOA, and townhome association management across 70+ neighborhoods. Dedicated managers, flat fees, board reporting, and 24/7 response."
+        canonical="https://www.stellarpropertygroup.com/property-management-chicago"
+      />
       <Helmet>
-        <title>Chicago Condo &amp; HOA Management | Stellar</title>
-        <meta
-          name="description"
-          content="Chicago condo, HOA, and townhome association management across 70+ neighborhoods. Dedicated managers, flat fees, board reporting, and 24/7 response."
-        />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/property-management-chicago" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

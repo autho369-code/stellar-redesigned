@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpen, Trash2, Upload, RefreshCw, LogOut, Folder, FolderInput, ChevronRight, ArrowLeft } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { getSupabase } from '../lib/supabaseClient';
 import { AUTHORIZED_STAFF, signInWithPassword } from '../lib/ownerAuth';
 
@@ -37,6 +38,17 @@ interface DocGroup {
 
 /** 'ALL' = the "ALL communities" folder (documents with no association). */
 const ALL_KEY = 'ALL';
+
+function KnowledgeMetadata() {
+  return (
+    <Helmet>
+      <title>Staff Knowledge Manager | Stellar Property Management</title>
+      <meta name="description" content="Authorized staff access to Stellar Property Management's internal knowledge manager." />
+      <meta name="robots" content="noindex, nofollow, noarchive" />
+      <meta name="googlebot" content="noindex, nofollow, noarchive" />
+    </Helmet>
+  );
+}
 
 export default function KnowledgeAdmin() {
   const [session, setSession] = useState<{ email: string; token: string; isStaff: boolean } | null>(null);
@@ -344,12 +356,14 @@ export default function KnowledgeAdmin() {
     }
   };
 
-  if (!authChecked) return null;
+  if (!authChecked) return <KnowledgeMetadata />;
 
   // ---- Sign-in / not-staff views ----
   if (!session || !session.isStaff) {
     return (
-      <div className="min-h-screen bg-paper flex items-center justify-center px-6">
+      <>
+        <KnowledgeMetadata />
+        <div className="min-h-screen bg-paper flex items-center justify-center px-6">
         <div className="max-w-md w-full border border-slate-200 bg-white p-8 space-y-5">
           <p className="text-[10px] uppercase tracking-luxe text-gold-600">Stellar Property Management</p>
           <h1 className="font-display text-2xl text-ink">Arthur — Knowledge Manager</h1>
@@ -398,13 +412,16 @@ export default function KnowledgeAdmin() {
             </>
           )}
         </div>
-      </div>
+        </div>
+      </>
     );
   }
 
   // ---- Main manager ----
   return (
-    <div className="min-h-screen bg-paper px-6 py-10">
+    <>
+      <KnowledgeMetadata />
+      <div className="min-h-screen bg-paper px-6 py-10">
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
@@ -604,6 +621,7 @@ export default function KnowledgeAdmin() {
           )}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Phone, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
+import { SEOHead } from '../components/seo/SEOHead';
 
 const northShoreCommunities = neighborhoods.filter((area) => area.region === 'north-shore');
 
@@ -98,10 +99,12 @@ const schema = {
 export default function NorthShorePage() {
   return (
     <>
+      <SEOHead
+        title="North Shore Condo & HOA Management | Stellar"
+        description="North Shore condominium, HOA and townhome management from $20 per unit monthly. Serving Evanston, Wilmette, Glenview, Northbrook and nearby communities."
+        canonical="https://www.stellarpropertygroup.com/property-management-north-shore"
+      />
       <Helmet>
-        <title>North Shore Condo &amp; HOA Management | Stellar</title>
-        <meta name="description" content="North Shore condominium, HOA and townhome management from $20 per unit monthly. Serving Evanston, Wilmette, Glenview, Northbrook and nearby communities." />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com/property-management-north-shore" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
