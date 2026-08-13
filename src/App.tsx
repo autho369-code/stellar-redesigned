@@ -2,33 +2,38 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, lazy, Suspense } from 'react';
 import Layout from './components/layout/Layout';
 
-// Lazy-loaded pages
-const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const Services = lazy(() => import('./pages/Services'));
-const CondominiumManagement = lazy(() => import('./pages/services/CondominiumManagement'));
-const HOAManagement = lazy(() => import('./pages/services/HOAManagement'));
-const TownhomeManagement = lazy(() => import('./pages/services/TownhomeManagement'));
-const FinancialManagement = lazy(() => import('./pages/services/FinancialManagement'));
-const MaintenanceCoordination = lazy(() => import('./pages/services/MaintenanceCoordination'));
-const BoardSupport = lazy(() => import('./pages/services/BoardSupport'));
-const ViolationManagement = lazy(() => import('./pages/services/ViolationManagement'));
-const HighRiseManagement = lazy(() => import('./pages/services/HighRiseManagement'));
-const SmallCondoManagement = lazy(() => import('./pages/services/SmallCondoManagement'));
-const ServiceAreas = lazy(() => import('./pages/ServiceAreas'));
-const ChicagoPage = lazy(() => import('./pages/ChicagoPage'));
-const NorthShorePage = lazy(() => import('./pages/NorthShorePage'));
-const Pricing = lazy(() => import('./pages/Pricing'));
-const Reviews = lazy(() => import('./pages/Reviews'));
-const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
-const Blog = lazy(() => import('./pages/Blog'));
-const BlogTopic = lazy(() => import('./pages/BlogTopic'));
-const BlogPost = lazy(() => import('./pages/BlogPost'));
-const Contact = lazy(() => import('./pages/Contact'));
-const Resources = lazy(() => import('./pages/Resources'));
-const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
-const TermsOfService = lazy(() => import('./pages/TermsOfService'));
-const NotFound = lazy(() => import('./pages/NotFound'));
+// Public pages are imported eagerly so the prerendered HTML hydrates in place
+// instead of suspending into a spinner (see main.tsx). Keep this route table in
+// sync with entry-server.tsx.
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import CondominiumManagement from './pages/services/CondominiumManagement';
+import HOAManagement from './pages/services/HOAManagement';
+import TownhomeManagement from './pages/services/TownhomeManagement';
+import FinancialManagement from './pages/services/FinancialManagement';
+import MaintenanceCoordination from './pages/services/MaintenanceCoordination';
+import BoardSupport from './pages/services/BoardSupport';
+import ViolationManagement from './pages/services/ViolationManagement';
+import HighRiseManagement from './pages/services/HighRiseManagement';
+import SmallCondoManagement from './pages/services/SmallCondoManagement';
+import ServiceAreas from './pages/ServiceAreas';
+import ChicagoPage from './pages/ChicagoPage';
+import NorthShorePage from './pages/NorthShorePage';
+import Pricing from './pages/Pricing';
+import Reviews from './pages/Reviews';
+import NeighborhoodPage from './pages/NeighborhoodPage';
+import Blog from './pages/Blog';
+import BlogTopic from './pages/BlogTopic';
+import BlogPost from './pages/BlogPost';
+import Contact from './pages/Contact';
+import Resources from './pages/Resources';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import NotFound from './pages/NotFound';
+
+// Staff-only page keeps its own chunk: it pulls Supabase auth/storage that the
+// public bundle should never pay for.
 const KnowledgeAdmin = lazy(() => import('./pages/KnowledgeAdmin'));
 
 /**
@@ -67,39 +72,44 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          {/* Staff-only, outside the public Layout (no header/footer/chat widget) */}
-          <Route path="/knowledge" element={<KnowledgeAdmin />} />
-          <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/condominium-management" element={<CondominiumManagement />} />
-            <Route path="/services/hoa-management" element={<HOAManagement />} />
-            <Route path="/services/townhome-management" element={<TownhomeManagement />} />
-            <Route path="/services/financial-management" element={<FinancialManagement />} />
-            <Route path="/services/maintenance-coordination" element={<MaintenanceCoordination />} />
-            <Route path="/services/board-support" element={<BoardSupport />} />
-            <Route path="/services/violation-management" element={<ViolationManagement />} />
-            <Route path="/services/high-rise-condominium-management" element={<HighRiseManagement />} />
-            <Route path="/services/small-condo-association-management" element={<SmallCondoManagement />} />
-            <Route path="/service-areas" element={<ServiceAreas />} />
-            <Route path="/property-management-chicago" element={<ChicagoPage />} />
-            <Route path="/property-management-north-shore" element={<NorthShorePage />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/topic/:topic" element={<BlogTopic />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="*" element={<CatchAllRoute />} />
-          </Route>
-        </Routes>
-      </Suspense>
+      <Routes>
+        {/* Staff-only, outside the public Layout (no header/footer/chat widget) */}
+        <Route
+          path="/knowledge"
+          element={
+            <Suspense fallback={<LoadingFallback />}>
+              <KnowledgeAdmin />
+            </Suspense>
+          }
+        />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/condominium-management" element={<CondominiumManagement />} />
+          <Route path="/services/hoa-management" element={<HOAManagement />} />
+          <Route path="/services/townhome-management" element={<TownhomeManagement />} />
+          <Route path="/services/financial-management" element={<FinancialManagement />} />
+          <Route path="/services/maintenance-coordination" element={<MaintenanceCoordination />} />
+          <Route path="/services/board-support" element={<BoardSupport />} />
+          <Route path="/services/violation-management" element={<ViolationManagement />} />
+          <Route path="/services/high-rise-condominium-management" element={<HighRiseManagement />} />
+          <Route path="/services/small-condo-association-management" element={<SmallCondoManagement />} />
+          <Route path="/service-areas" element={<ServiceAreas />} />
+          <Route path="/property-management-chicago" element={<ChicagoPage />} />
+          <Route path="/property-management-north-shore" element={<NorthShorePage />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/topic/:topic" element={<BlogTopic />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="*" element={<CatchAllRoute />} />
+        </Route>
+      </Routes>
     </>
   );
 }

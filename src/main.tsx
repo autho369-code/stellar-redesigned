@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Analytics } from '@vercel/analytics/react';
@@ -11,7 +11,9 @@ import App from './App';
 import ConversionTracking from './components/ConversionTracking';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!;
+
+const app = (
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
@@ -23,3 +25,12 @@ createRoot(document.getElementById('root')!).render(
     </HelmetProvider>
   </StrictMode>
 );
+
+// Production pages arrive prerendered (scripts/prerender.mjs) — hydrate that
+// markup in place instead of discarding it and re-rendering from a blank root.
+// Dev serves an empty #root, where hydration would be a guaranteed mismatch.
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app);
+} else {
+  createRoot(container).render(app);
+}

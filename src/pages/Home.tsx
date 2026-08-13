@@ -151,6 +151,8 @@ const schema = {
       hasMap: 'https://www.google.com/maps?cid=6022006747972898171',
       sameAs: [
         'https://www.linkedin.com/company/stellar-property-group-inc',
+        'https://www.google.com/maps?cid=6022006747972898171',
+        'https://www.yelp.com/biz/stellar-property-management-chicago',
       ],
       foundingDate: '2007',
       slogan: 'The art of a well-run building.',
@@ -247,20 +249,22 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Chicago Condo &amp; HOA Management | Stellar Property Management</title>
+        {/* Entity-led title: /property-management-chicago owns the
+            "chicago condo & hoa management company" head term. */}
+        <title>Stellar Property Management | Chicago Condo &amp; HOA Experts</title>
         <meta
           name="description"
-          content="Chicago condo, HOA, and townhome association management with dedicated managers, transparent reporting, flat-fee pricing, and 24/7 response. Since 2007."
+          content="Stellar Property Management: Chicago condo, HOA, and townhome association management with dedicated managers, flat-fee pricing, and 24/7 response. Since 2007."
         />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="theme-color" content="#0d2740" />
-        <link rel="canonical" href="https://www.stellarpropertygroup.com" />
-        <meta property="og:title" content="Chicago Condo & HOA Management | Stellar Property Management" />
+        <link rel="canonical" href="https://www.stellarpropertygroup.com/" />
+        <meta property="og:title" content="Stellar Property Management | Chicago Condo & HOA Experts" />
         <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Stellar Property Management" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content="https://www.stellarpropertygroup.com" />
+        <meta property="og:url" content="https://www.stellarpropertygroup.com/" />
         <meta property="og:image" content="https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -335,6 +339,7 @@ export default function Home() {
                   loading="eager"
                   width="800"
                   height="1120"
+                  {...({ fetchpriority: 'high' } as Record<string, string>)}
                 />
                 <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/70 text-center">
                   Chicago · Vintage Brick &amp; Bay Windows

@@ -7,6 +7,33 @@ import { ServiceSchema } from '../../components/seo/ServiceSchema';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { condominiumManagementFaqs } from '../../data/service-faqs';
 
+const deliverables = [
+  {
+    title: 'The monthly report package',
+    desc: 'Balance sheet, income statement against budget, delinquency and collection status, reserve balances, paid-invoice copies, and a manager’s narrative — delivered on schedule every month, formatted for a board meeting, not an accountant’s drawer.',
+  },
+  {
+    title: 'The annual budget, drafted for decision',
+    desc: 'A line-item draft with prior-year actuals, vendor contract renewals flagged, reserve contribution scenarios, and the assessment impact of each option — so the board votes on choices, not on a spreadsheet.',
+  },
+  {
+    title: 'Meeting packets and minutes',
+    desc: 'Agendas and supporting materials before every board meeting, notices that satisfy Illinois Condominium Property Act requirements, and minutes your association attorney would be content to see subpoenaed.',
+  },
+  {
+    title: 'Section 22.1 disclosures and closing documents',
+    desc: 'Prompt, accurate resale disclosure packets and paid-assessment letters, so unit sales in your building close on time and owners are not chasing paperwork.',
+  },
+  {
+    title: 'Violation and work-order logs',
+    desc: 'Every complaint, violation notice, and maintenance request tracked from intake to resolution, visible to the board in real time through the portal.',
+  },
+  {
+    title: 'A capital plan that looks past this fiscal year',
+    desc: 'Reserve-study coordination, multi-year capital calendars for façade, roof, and mechanical work, and competitive bids assembled before deadlines force premium pricing.',
+  },
+];
+
 export default function CondominiumManagement() {
   const features = [
     { title: 'Illinois Condo Act Procedures', description: 'Operational support informed by the Illinois Condominium Property Act (765 ILCS 605), with association counsel consulted for legal advice.' },
@@ -182,6 +209,56 @@ export default function CondominiumManagement() {
           </p>
         </div>
       </section>
+
+      {/* ── Deliverables — what the board receives ─────────────── */}
+      <section className="py-24 lg:py-32 bg-ink text-paper relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="max-w-2xl mb-16">
+            <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+              <span className="accent-rule" />
+              Deliverables
+            </p>
+            <h2 className="font-display font-light text-3xl lg:text-4xl leading-[1.1] mb-6">
+              What your board receives, <em className="font-medium text-gold-300">every month.</em>
+            </h2>
+            <p className="text-lg text-paper/55 font-light leading-relaxed">
+              &ldquo;Full service&rdquo; means little until you see the paper it
+              produces. This is the standing output of a Stellar-managed
+              condominium — ask any firm you interview to show you the same.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10 border border-paper/10">
+            {deliverables.map(({ title, desc }, i) => (
+              <div key={title} className="bg-ink p-9 lg:p-10">
+                <span className="font-display font-light text-3xl text-gold-300 block mb-6 select-none">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <h3 className="font-display text-xl mb-4">{title}</h3>
+                <p className="text-sm text-paper/60 font-light leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-3">
+            <Link to="/services/financial-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              The financial management practice <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/blog/condo-reserve-funds-explained" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              Why reserves fall behind — and how to fix it <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/services/small-condo-association-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              Small condo associations <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/services/high-rise-condominium-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              High-rise management <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+              Pricing from $20 per unit <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
 
       {/* ── Related services — index rows ──────────────────────── */}
       <section className="py-24 lg:py-32 bg-ivory-100 border-t border-slate-200">

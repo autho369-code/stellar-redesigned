@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 
@@ -50,6 +51,67 @@ const areas = [
   'Highland Park', 'Northbrook', 'Glencoe', 'Kenilworth', 'Lake Forest', 'Deerfield',
 ];
 
+// Substantiates the author entity that every blog post's Article schema
+// points at (author.@id = /about#mirsad-cerimovic in BlogPost.tsx).
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': 'https://www.stellarpropertygroup.com/about#webpage',
+      url: 'https://www.stellarpropertygroup.com/about',
+      name: 'About Stellar Property Management',
+      about: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com' },
+        { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.stellarpropertygroup.com/about' },
+      ],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic',
+      name: 'Mirsad Cerimovic',
+      honorificSuffix: 'CAM, CMCA, AMS',
+      jobTitle: 'Founder & Principal',
+      url: 'https://www.stellarpropertygroup.com/about',
+      email: 'mirsad@stellarpropertygroup.com',
+      worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      memberOf: [
+        { '@type': 'Organization', name: 'Community Associations Institute', url: 'https://www.caionline.org/' },
+        { '@type': 'Organization', name: 'Community Associations Institute Illinois Chapter', url: 'https://www.cai-illinois.org/' },
+      ],
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Illinois Licensed Community Association Manager (CAM)',
+          credentialCategory: 'Professional license',
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Certified Manager of Community Associations (CMCA)',
+          credentialCategory: 'Professional certification',
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Association Management Specialist (AMS)',
+          credentialCategory: 'Professional designation',
+        },
+      ],
+      knowsAbout: [
+        'Condominium association management',
+        'Illinois Condominium Property Act',
+        'HOA governance and finance',
+        'Reserve fund planning',
+        'Capital project oversight',
+      ],
+    },
+  ],
+};
+
 export default function About() {
   return (
     <>
@@ -58,6 +120,9 @@ export default function About() {
         description="Meet Stellar Property Management: serving Chicago associations since 2007 with 42 communities, CAI membership, and Illinois CAM firm licensing."
         canonical="https://www.stellarpropertygroup.com/about"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(aboutSchema)}</script>
+      </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -163,6 +228,76 @@ export default function About() {
                   Chicago North Side · Brick Three-Flat
                 </figcaption>
               </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Leadership ─────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-ink text-paper relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-14 lg:gap-16 items-start">
+            <div className="lg:col-span-4">
+              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Leadership
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
+                The people behind
+                <br />
+                the <em className="font-medium text-gold-300">standard.</em>
+              </h2>
+              <p className="text-paper/55 font-light leading-relaxed">
+                When we say boards speak directly with our principals — not a
+                sales team — these are the people we mean.
+              </p>
+            </div>
+
+            <div className="lg:col-span-7 lg:col-start-6">
+              <div className="border border-paper/15 p-9 lg:p-12">
+                <div className="flex flex-wrap items-start gap-8 mb-8">
+                  <div
+                    className="w-24 h-24 shrink-0 border border-gold-400/50 flex items-center justify-center font-display font-light text-3xl text-gold-300 select-none"
+                    aria-hidden
+                  >
+                    MC
+                  </div>
+                  <div>
+                    <h3 className="font-display text-2xl lg:text-3xl mb-2">Mirsad Cerimovic</h3>
+                    <p className="text-[10px] uppercase tracking-luxe text-gold-300 mb-1.5">
+                      Founder &amp; Principal
+                    </p>
+                    <p className="text-[10px] uppercase tracking-luxe text-paper/60">
+                      CAM · CMCA · AMS
+                    </p>
+                  </div>
+                </div>
+                <p className="text-sm text-paper/70 font-light leading-relaxed mb-5">
+                  Mirsad founded Stellar in 2007 on a simple conviction: community
+                  association management deserved to be someone&rsquo;s only
+                  business, not a side line. Nearly two decades later he still
+                  reviews the financial reporting standard for every association
+                  in the portfolio and leads each new board through its
+                  transition personally.
+                </p>
+                <p className="text-sm text-paper/70 font-light leading-relaxed mb-8">
+                  A licensed Illinois Community Association Manager, he holds the
+                  CMCA and AMS designations and writes the firm&rsquo;s board
+                  guides on Illinois condominium law, reserves, and governance —
+                  the same guidance published in{' '}
+                  <Link to="/blog" className="text-gold-300 hover:text-gold-200 underline underline-offset-2 transition-colors">
+                    the Stellar journal
+                  </Link>
+                  .
+                </p>
+                <div className="pt-6 border-t border-paper/15 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-paper/50">
+                  <span>Illinois CAM Firm License #291000211</span>
+                  <a href="mailto:mirsad@stellarpropertygroup.com" className="hover:text-gold-300 transition-colors">
+                    mirsad@stellarpropertygroup.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

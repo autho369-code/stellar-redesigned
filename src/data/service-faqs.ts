@@ -10,39 +10,63 @@ export const condominiumManagementFaqs: ServiceFAQItem[] = [
     answer: 'A customized scope can include board and meeting support, budgeting and monthly financial reporting, assessment administration, vendor bidding and coordination, preventive maintenance, owner communication, records, rule administration, and 24/7 emergency response.',
   },
   {
-    question: 'How much does Chicago condominium management cost?',
-    answer: 'Stellar offers customized flat-fee management starting at $20 per unit per month. The proposal reflects the building’s size, staffing, amenities, systems, financial complexity, and requested scope—not a percentage of the association budget.',
+    question: 'How much does condominium management cost in Chicago?',
+    answer: 'Stellar condominium management starts at $20 per unit per month, quoted as a customized flat monthly fee based on your building’s size, systems, staffing, amenities, financial complexity, and service scope. We do not price as a percentage of your budget and we do not charge a separate capital-project planning or oversight fee. Third-party costs — contractors, engineers, attorneys, permits — remain association expenses.',
   },
   {
-    question: 'How does a condominium board switch management companies?',
-    answer: 'Stellar organizes a managed 30–60 day transition covering records, bank access, contracts, insurance, owner balances, active projects, vendors, keys, portal setup, and board and owner communication. Open items remain tracked after the effective date.',
+    question: 'Does hiring a management company mean the board gives up control?',
+    answer: 'No — it usually means the opposite. Every contract, expenditure, and policy remains a board decision. What changes is the quality of the information behind those decisions: current financials, documented bids, tracked violations, and an agenda that arrives before the meeting. Boards that switch to professional management typically report spending less time on administration and more on actual governance.',
+  },
+  {
+    question: 'How long does it take to switch condo management companies?',
+    answer: 'Plan on a managed 30–60 day transition after your board gives notice under its current contract. Stellar handles records retrieval from the outgoing firm, banking migration under board control, vendor notification, owner communication, and portal setup. The first full monthly report package arrives on schedule in the first complete month under management.',
   },
   {
     question: 'Does Stellar charge a separate fee to plan or oversee capital projects?',
     answer: 'No separate capital-project planning or management-oversight fee is added by Stellar. Engineer, architect, attorney, reserve-study, permit, contractor, and other third-party costs remain association expenses.',
   },
+  {
+    question: 'Do you manage small, self-managed condo buildings?',
+    answer: 'Yes. Boutique buildings from roughly 6 to 30 units are a deliberate part of our portfolio, including many moving from self-management for the first time. Our small condo association practice adds professional financials, vendor leverage, and continuity between volunteer boards without the overhead built for a 300-unit tower.',
+  },
+  {
+    question: 'Do you manage high-rise condominiums with on-site staff?',
+    answer: 'Yes. Our high-rise practice covers door staff and engineer supervision, building-system maintenance programs, elevator and life-safety compliance, and the capital planning cadence that towers on the lakefront require. High-rise communities receive the same dedicated-manager model with staffing oversight added to the scope.',
+  },
 ];
 
 export const hoaManagementFaqs: ServiceFAQItem[] = [
   {
-    question: 'What does an HOA management company handle for the board?',
-    answer: 'Stellar supports the board with budgets and financial reporting, assessments, meeting administration, owner communication, vendor coordination, common-area maintenance, architectural requests, recordkeeping, and consistent rule and covenant procedures.',
+    question: 'What does an HOA management company actually do?',
+    answer: 'Day to day: assessment collection and accounting, monthly financial reporting with invoices attached, vendor bidding and supervision for landscaping, snow removal, and common-area maintenance, fair CC&R enforcement with documented due process, board meeting preparation and minutes, owner communications and portal support, and a 24/7 emergency line. The board keeps every decision; the manager executes them and reports back.',
   },
   {
     question: 'How is HOA management different from rental property management?',
     answer: 'An HOA manager works for the association and carries out board-approved community operations. A rental manager works for landlords and tenants. Stellar serves community associations only and does not manage rental apartments.',
   },
   {
+    question: 'How much does HOA management cost in Chicago?',
+    answer: 'Stellar HOA management starts at $20 per unit per month, quoted as a flat monthly fee based on your community’s size, common areas, amenities, financial complexity, and service scope. We never price as a percentage of your budget, and we do not add a separate capital-project planning or oversight fee. Third-party costs such as contractors, engineers, and attorneys remain association expenses.',
+  },
+  {
     question: 'Can Stellar help an HOA enforce rules consistently?',
     answer: 'Yes. Stellar builds documented workflows around the association’s declaration, bylaws, rules, notices, response periods, hearings, and board decisions so similar matters follow a consistent process. Association counsel is consulted when legal advice is required.',
   },
   {
-    question: 'What does HOA management cost?',
-    answer: 'Customized flat-fee management starts at $20 per unit per month. The final proposal depends on the community’s homes, common assets, service level, financial needs, meeting schedule, and maintenance responsibilities.',
+    question: 'Can our HOA switch management companies before the contract ends?',
+    answer: 'Usually, yes — most Chicago-area management contracts allow termination with 30 to 90 days written notice, and some allow immediate termination for cause. Have your board review the termination clause, then time the notice so our managed 30–60 day transition lands at the handover date. We coordinate records, banking, vendors, and owner communication so the community never feels the seam.',
   },
   {
-    question: 'Which Chicago-area HOAs does Stellar serve?',
-    answer: 'Stellar serves community associations across Chicago neighborhoods and North Shore communities. The service-area directory identifies the local markets covered and connects each community to relevant board resources.',
+    question: 'Do you manage townhome communities and single-family HOAs?',
+    answer: 'Yes. Alongside condominium associations, Stellar manages townhome communities and single-family homeowners associations across Chicago and the North Shore, including planned developments with private streets, shared landscaping, and amenity spaces. See our townhome management practice for the specifics of fee-simple and shared-element communities.',
+  },
+  {
+    question: 'Is our community too small or too large for Stellar?',
+    answer: 'Our portfolio runs from boutique associations to communities of more than 250 residences. We deliberately curate the portfolio — 42 associations and 2,450+ residences — so every community keeps a dedicated manager with genuine capacity. If we cannot serve your community to that standard, we will say so in the first conversation.',
+  },
+  {
+    question: 'How is Stellar different from national HOA management firms?',
+    answer: 'One dedicated manager instead of a rotating account team, a flat fee instead of percentage-based pricing, a Chicago office that answers its own 24/7 line instead of a national call center, and monthly board-ready financials instead of quarterly boilerplate. That model is why 96% of our client associations stay with us year over year.',
   },
 ];
 

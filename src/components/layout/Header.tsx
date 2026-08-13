@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Menu, X, ArrowUpRight } from 'lucide-react';
+import { ChevronDown, Menu, X, ArrowUpRight, ArrowRight, Phone } from 'lucide-react';
 
 interface NavChild {
   name: string;
@@ -177,17 +177,33 @@ export default function Header() {
               )
             )}
 
-            {/* Primary prospect CTA. Resident payments remain under Resources. */}
+            {/* Phone + primary prospect CTA — new business first; resident
+                payments remain under Resources. */}
+            <a
+              href="tel:+17737280652"
+              className="hidden xl:inline-flex items-center gap-2 text-[11px] font-semibold tracking-luxe text-ink/70 hover:text-gold-600 transition-colors duration-200"
+            >
+              <Phone className="w-3.5 h-3.5 text-gold-500" />
+              773.728.0652
+            </a>
             <Link
               to="/contact?inquiry=quote&source=header"
               className="inline-flex items-center gap-2 px-6 py-3 bg-ink text-paper hover:bg-gold-600 text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300"
             >
-              Request Proposal
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              Request a Proposal
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </nav>
 
+          {/* Mobile: click-to-call + proposal chip, visible without opening the menu */}
           <div className="flex items-center gap-1 lg:hidden">
+            <a
+              href="tel:+17737280652"
+              aria-label="Call Stellar Property Management at 773-728-0652"
+              className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
+            >
+              <Phone className="w-5 h-5" />
+            </a>
             <Link
               to="/contact?inquiry=quote&source=mobile-header-visible"
               className="hidden items-center gap-1.5 bg-ink px-3 py-2 text-[9px] font-semibold uppercase tracking-luxe text-paper transition-colors hover:bg-gold-600 min-[390px]:inline-flex"
@@ -276,7 +292,7 @@ export default function Header() {
             )
           )}
 
-          <div className="pt-3">
+          <div className="pt-3 space-y-2.5">
             <Link
               to="/contact?inquiry=quote&source=mobile-header"
               className="flex items-center justify-center gap-2 w-full px-5 py-3.5 bg-ink text-paper text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:bg-gold-600"
@@ -284,6 +300,15 @@ export default function Header() {
               Request a Proposal
               <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
+            <a
+              href="https://stellarpropertygrp.appfolio.com/connect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full px-5 py-3.5 border border-slate-300 text-ink text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:border-gold-500 hover:text-gold-600"
+            >
+              Make a Payment
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
       </div>
