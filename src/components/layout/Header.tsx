@@ -177,16 +177,14 @@ export default function Header() {
               )
             )}
 
-            {/* Payment CTA */}
-            <a
-              href="https://stellarpropertygrp.appfolio.com/connect/"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Primary prospect CTA. Resident payments remain under Resources. */}
+            <Link
+              to="/contact?inquiry=quote&source=header"
               className="inline-flex items-center gap-2 px-6 py-3 bg-ink text-paper hover:bg-gold-600 text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300"
             >
-              Make a Payment
+              Request Proposal
               <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -268,15 +266,13 @@ export default function Header() {
           )}
 
           <div className="pt-3">
-            <a
-              href="https://stellarpropertygrp.appfolio.com/connect/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact?inquiry=quote&source=mobile-header"
               className="flex items-center justify-center gap-2 w-full px-5 py-3.5 bg-ink text-paper text-[11px] font-semibold tracking-luxe uppercase transition-colors duration-300 hover:bg-gold-600"
             >
-              Make a Payment
+              Request a Proposal
               <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -22,6 +22,7 @@ const Pricing = lazy(() => import('./pages/Pricing'));
 const Reviews = lazy(() => import('./pages/Reviews'));
 const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
 const Blog = lazy(() => import('./pages/Blog'));
+const BlogTopic = lazy(() => import('./pages/BlogTopic'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Resources = lazy(() => import('./pages/Resources'));
@@ -89,6 +90,7 @@ export default function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/topic/:topic" element={<BlogTopic />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
