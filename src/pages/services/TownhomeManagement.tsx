@@ -38,8 +38,8 @@ export default function TownhomeManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Townhome Association Management | Stellar"
-        description="Chicago townhome association management with transparent financial reporting, shared-exterior maintenance, capital planning, and dedicated board support."
+        title="Chicago Townhome Management From $20/Unit | Stellar"
+        description="Chicago townhome association management from $20 per unit, with shared-exterior planning, transparent financials, and no separate capital-project oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
       <ServiceSchema name="Chicago Townhome Association Management" description="Townhome association management with shared-exterior planning, financial reporting, vendor coordination, governance support, and owner communication." canonical="https://www.stellarpropertygroup.com/services/townhome-management" serviceType="Townhome Association Management" />
@@ -107,6 +107,12 @@ export default function TownhomeManagement() {
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Your dedicated property manager will know every unit number, understand every maintenance schedule, and be personally invested in your community success. We handle the complex coordination of exterior maintenance projects that affect multiple units simultaneously, manage shared infrastructure like parking areas and common landscaping, and ensure your community finances are on solid footing for the long term.
               </p>
+              <Link
+                to="/blog/score-condo-hoa-management-proposals"
+                className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+              >
+                Compare association management proposals with the board scorecard <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <h3 className="font-display text-2xl text-ink mb-6">Tailored for Townhome Living</h3>

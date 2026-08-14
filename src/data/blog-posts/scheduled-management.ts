@@ -795,15 +795,15 @@ export const scheduledManagementPosts: BlogPost[] = [
   },
   {
     slug: 'score-condo-hoa-management-proposals',
-    title: 'How to Score Community Association Management Proposals',
+    title: 'How to Compare Chicago Condo & HOA Management Companies',
     metaDescription:
-      'A scoring framework for Illinois condo and HOA boards evaluating management proposals, with weighted criteria, reference questions, and a structured decision process.',
-    date: '2026-11-07',
+      'Compare Chicago condo and HOA management companies with a board-ready scorecard covering manager capacity, service scope, financial controls, references, and total cost.',
+    date: '2026-08-14',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
     readTime: '7 min read',
     excerpt:
-      'Boards that score proposals against agreed criteria make better decisions than boards that discuss them. Here is a weighted framework you can adopt before the first proposal arrives.',
+      'A board-ready scorecard for comparing Chicago association management companies on manager capacity, service, controls, references, and total annual cost.',
     sources: [
       {
         title: 'IDFPR Community Association Manager Licensing',
@@ -819,7 +819,7 @@ export const scheduledManagementPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Score management proposals by agreeing on weighted criteria before any proposal arrives, having each director score independently, and then comparing scores as a board. Weight the categories that actually drive service quality: the assigned manager and their capacity, scope of services, financial controls and reporting, responsiveness standards, references from comparable associations, licensure, and total annual cost. Cost is one criterion among several, not the tiebreaker by default.</p>
+      <p>Compare Chicago condo and HOA management companies by agreeing on weighted criteria before any proposal arrives, having each director score independently, and then comparing scores as a board. Weight the categories that actually drive service quality: the assigned manager and their capacity, scope of services, financial controls and reporting, responsiveness standards, references from comparable associations, licensure, and total annual cost. Cost is one criterion among several, not the tiebreaker by default.</p>
 
       <p>The reason to fix criteria in advance is behavioral. Boards that discuss proposals without a framework tend to anchor on the lowest fee or on whoever presented most smoothly, then reverse-engineer justifications. Independent scoring against agreed weights surfaces genuine disagreement early and produces a decision the board can explain to owners.</p>
 
@@ -900,6 +900,96 @@ export const scheduledManagementPosts: BlogPost[] = [
       <h2>Put Us in Your Process</h2>
 
       <p>If your board is running a management search, we are glad to respond to your RFP on the same terms as everyone else and to be scored against your criteria. Stellar Property Management serves association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+    `,
+  },
+  {
+    slug: 'how-many-associations-should-community-manager-handle',
+    title: 'How Many Associations Should One Community Manager Handle?',
+    metaDescription:
+      'A board guide to evaluating a community association manager\'s workload, portfolio capacity, support team, response standards, and coverage before hiring a management company.',
+    date: '2026-11-07',
+    author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
+    category: 'Choosing Management',
+    readTime: '7 min read',
+    excerpt:
+      'Association count alone does not reveal manager capacity. Boards should examine units, building complexity, meetings, active projects, support staff, and backup coverage together.',
+    sources: [
+      {
+        title: 'IDFPR Community Association Manager Licensing',
+        url: 'https://idfpr.illinois.gov/profs/cam.html',
+      },
+      {
+        title: 'Community Associations Institute',
+        url: 'https://www.caionline.org/',
+      },
+    ],
+    content: `
+      <p>There is no single responsible number of associations that every community association manager should handle. A portfolio of several complex high-rises can demand more time than a much larger count of small, stable communities. Boards should evaluate capacity by looking at association count, combined unit count, building systems, meeting load, active capital projects, delinquency and violation volume, travel, after-hours responsibility, administrative support, and backup coverage together.</p>
+
+      <p>The useful question is not simply, “How many buildings do you manage?” It is, “What work is already committed across your portfolio, what support do you receive, and how will our association receive reliable attention when several communities need help at once?”</p>
+
+      <h2>Association Count Is Only the Starting Point</h2>
+
+      <p>Two portfolios with the same number of communities may be entirely different jobs. A high-rise with elevators, life-safety systems, union or on-site staff, frequent moves, a large operating budget, and active facade work creates a different workload from a small townhome association with stable vendors and limited common property.</p>
+
+      <p>Ask for both the number of associations and the combined number of homes or units. Then ask how many communities have on-site staff, how many board meetings occur in a typical month, and how many significant capital projects are active. Those answers reveal the shape of the workload far better than one portfolio number.</p>
+
+      <h2>Seven Capacity Factors Boards Should Examine</h2>
+
+      <ol>
+        <li><strong>Property complexity.</strong> Elevators, boilers, fire and life-safety systems, garages, pools, staffed entries, private roads, stormwater facilities, and extensive common exteriors all add recurring work.</li>
+        <li><strong>Meeting load.</strong> Evening board meetings, committee meetings, annual meetings, budget workshops, and project meetings consume preparation and follow-up time as well as the meeting itself.</li>
+        <li><strong>Active projects.</strong> A roof, facade, riser, elevator, siding, or roadway project can temporarily make one association feel like several.</li>
+        <li><strong>Financial condition.</strong> Delinquencies, special assessments, weak records, late reconciliations, or an underdeveloped budget require concentrated management and accounting attention.</li>
+        <li><strong>Communication volume.</strong> Large resident populations, recurring violations, architectural requests, move coordination, and unresolved maintenance issues create daily traffic that must be tracked to closure.</li>
+        <li><strong>Support structure.</strong> Dedicated accounting, administrative, compliance, maintenance, and resale support can preserve a manager's time for judgment, board guidance, inspections, and vendor accountability.</li>
+        <li><strong>Coverage.</strong> Vacation, illness, emergencies, and staff turnover should not leave the board searching for basic records or an authorized decision-maker.</li>
+      </ol>
+
+      <h2>Interview the Assigned Manager</h2>
+
+      <p>Boards frequently meet a senior executive or salesperson and never speak with the person expected to manage the community. Require the proposed assigned manager to attend the interview. Ask that person to describe the current portfolio in practical terms and explain what changes if your association signs.</p>
+
+      <h3>Questions worth asking</h3>
+
+      <ul>
+        <li>How many associations and total units are currently in your portfolio?</li>
+        <li>How many are high-rise, condominium, HOA, or townhome communities?</li>
+        <li>How many evening meetings do you attend during a typical month?</li>
+        <li>Which major projects are active across your portfolio?</li>
+        <li>What work is handled by accounting, administrative, compliance, and maintenance support teams?</li>
+        <li>Who answers when you are unavailable, and can that person access our records and open items?</li>
+        <li>How are owner requests, board directives, vendor commitments, and deadlines tracked?</li>
+        <li>What response standards will appear in the management agreement or operating plan?</li>
+      </ul>
+
+      <h2>Look for Systems, Not Reassurance</h2>
+
+      <p>A credible answer includes a work-order system, an open-item register, a recurring compliance calendar, scheduled financial delivery, documented emergency escalation, and named backup coverage. “You can always reach me” is not a capacity plan. Reliable management comes from a system that makes commitments visible and transferable.</p>
+
+      <p>Ask finalists to show a sample monthly board package, a redacted open-item report, and the transition checklist used during the first ninety days. These materials demonstrate whether the firm has designed work to move consistently or relies on individual memory and inboxes.</p>
+
+      <h2>Warning Signs of an Overloaded Portfolio</h2>
+
+      <ul>
+        <li>The firm will not identify the assigned manager before contract signing.</li>
+        <li>The manager cannot state the current portfolio or meeting load clearly.</li>
+        <li>Financial packages and meeting materials routinely arrive late.</li>
+        <li>Board directives disappear unless directors repeatedly follow up.</li>
+        <li>Vendor commitments are not documented in a shared system.</li>
+        <li>There is no named backup with access to association records.</li>
+        <li>The firm describes every communication problem as an owner-expectation problem.</li>
+      </ul>
+
+      <h2>Put Capacity Into the Selection Score</h2>
+
+      <p>Manager capacity should be a scored selection criterion, not an informal interview impression. Our <a href="/blog/score-condo-hoa-management-proposals">management-company comparison scorecard</a> recommends weighting the assigned manager and capacity alongside scope, financial controls, responsiveness, references, licensing, and total annual cost.</p>
+
+      <p>Match the proposed team to the community you actually operate. A complex <a href="/services/high-rise-condominium-management">high-rise</a>, a boutique <a href="/services/small-condo-association-management">small condominium</a>, and a shared-exterior <a href="/services/townhome-management">townhome association</a> should not be staffed or measured identically.</p>
+
+      <h2>Ask Stellar About the Team Assigned to Your Association</h2>
+
+      <p>Stellar Property Management serves condominium, HOA, and townhome boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. We will explain the proposed manager, support structure, transition plan, communication workflow, and service scope before your board decides. <a href="/contact">Request a consultation</a> to compare the operating model with your association's needs.</p>
     `,
   },
 ];

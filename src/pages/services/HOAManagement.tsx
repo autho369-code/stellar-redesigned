@@ -89,8 +89,8 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago HOA Management Company | Stellar"
-        description="Chicago HOA management for boards seeking transparent financial reporting, consistent governance, common-area maintenance, and responsive local support."
+        title="Chicago HOA Management From $20/Unit | Stellar"
+        description="Chicago HOA management from $20 per unit with transparent financials, common-area operations, board support, and no separate project-oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
       <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />
@@ -244,12 +244,20 @@ export default function HOAManagement() {
                 regret it within a year. These are the six questions we would ask
                 any firm, including us, before signing.
               </p>
-              <Link
-                to="/blog/switch-condo-management-companies-chicago"
-                className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
-              >
-                Read the full switching guide <ArrowRight className="w-4 h-4" />
-              </Link>
+              <div className="flex flex-wrap gap-x-6 gap-y-3">
+                <Link
+                  to="/blog/score-condo-hoa-management-proposals"
+                  className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Use the management-company scorecard <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  to="/blog/switch-condo-management-companies-chicago"
+                  className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Plan a management transition <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
             <div className="lg:col-span-8 border-t border-slate-200 self-start">
               {evaluationCriteria.map(({ criterion, detail }, i) => (

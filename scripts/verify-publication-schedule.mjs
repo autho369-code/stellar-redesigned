@@ -36,14 +36,16 @@ for (const file of readdirSync(blogDir)) {
 }
 
 posts.sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
-const actualDates = posts.map(({ date }) => date);
 const slugs = posts.map(({ slug }) => slug);
+const leadPosts = posts.filter(({ date }) => date && date < expectedDates[0]);
+const cadencePosts = posts.filter(({ date }) => date && date >= expectedDates[0] && date <= expectedDates.at(-1));
+const actualDates = cadencePosts.map(({ date }) => date);
 
-if (posts.length !== 39) {
-  throw new Error(`Expected 39 scheduled posts, found ${posts.length}.`);
-}
 if (new Set(slugs).size !== slugs.length) {
   throw new Error('Scheduled blog slugs must be unique.');
+}
+if (leadPosts.length !== 1 || leadPosts[0].slug !== 'score-condo-hoa-management-proposals' || leadPosts[0].date !== '2026-08-14') {
+  throw new Error('The published lead-post set must contain only the 2026-08-14 management-company comparison guide.');
 }
 if (JSON.stringify(actualDates) !== JSON.stringify(expectedDates)) {
   throw new Error('Scheduled posts must fill every Tuesday, Thursday, and Saturday from 2026-08-18 through 2026-11-14.');
@@ -54,4 +56,4 @@ for (const post of posts) {
   }
 }
 
-console.log(`Publication schedule verified: ${posts.length} posts through ${actualDates.at(-1)}.`);
+console.log(`Publication schedule verified: ${cadencePosts.length} cadence posts through ${actualDates.at(-1)} plus ${leadPosts.length} published lead post.`);

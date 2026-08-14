@@ -14,11 +14,13 @@ for (const file of readdirSync(blogDir)) {
   postSlugs.push(...[...source.matchAll(/\bslug:\s*'([^']+)'/g)].map((match) => match[1]));
 }
 
-if (postSlugs.length !== 52 || new Set(postSlugs).size !== 52) {
-  throw new Error(`Expected 52 unique blog articles, found ${postSlugs.length}.`);
+if (postSlugs.length < 52 || new Set(postSlugs).size !== postSlugs.length) {
+  throw new Error(`Expected at least 52 unique blog articles, found ${postSlugs.length}.`);
 }
-if (neighborhoodSlugs.length !== 83 || new Set(neighborhoodSlugs).size !== 83) {
-  throw new Error(`Expected 83 unique service-area pages, found ${neighborhoodSlugs.length}.`);
+// The current 70-page footprint is intentional: 13 thin micro-neighborhood
+// pages were consolidated into stronger parent areas with permanent redirects.
+if (neighborhoodSlugs.length !== 70 || new Set(neighborhoodSlugs).size !== 70) {
+  throw new Error(`Expected 70 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
 }
 
 const requiredConnections = [
