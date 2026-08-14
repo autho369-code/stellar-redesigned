@@ -68,6 +68,13 @@
   .delay-400 { animation-delay: 400ms; }
 }
 
+/* Smooth in-page anchor scrolling, disabled for users who prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

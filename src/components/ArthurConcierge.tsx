@@ -80,6 +80,11 @@ const KB: { keywords: string[]; answer: string }[] = [
       'Governing documents, budgets, and meeting materials live in the document section of your AppFolio portal (stellarpropertygrp.appfolio.com/connect/). Board meeting schedules vary by community — check the portal or contact your property manager.',
   },
   {
+    keywords: ['owner guide', 'living', 'neighbor', 'noise', 'insurance', 'ho-6', 'ho6', 'repair', 'who fixes', 'moving', 'move in', 'rent out', 'renting', 'lease', 'special assessment'],
+    answer:
+      'The Owner’s Companion at stellarpropertygroup.com/condo-living is our free eight-chapter guide to condo and HOA life — what assessments pay for, who fixes what, HO-6 insurance, your rights under Illinois law, moving, renting your unit, and resolving problems with neighbors. The journal at stellarpropertygroup.com/blog has deeper guides on each topic.',
+  },
+  {
     keywords: ['contact', 'phone', 'email', 'office', 'address', 'call', 'speak', 'human', 'person'],
     answer:
       'Reach us at 773.728.0652 (24/7 for emergencies) or mirsad@stellarpropertygroup.com. Office: 5107 N Western Ave #1S, Chicago, IL 60625. Or use the contact form at stellarpropertygroup.com/contact.',

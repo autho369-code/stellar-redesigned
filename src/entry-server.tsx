@@ -40,6 +40,7 @@ import BlogTopic from './pages/BlogTopic';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Resources from './pages/Resources';
+import CondoLiving from './pages/CondoLiving';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
@@ -84,6 +85,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/condo-living" element={<CondoLiving />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="*" element={<CatchAllRoute />} />

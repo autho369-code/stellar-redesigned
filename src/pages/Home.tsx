@@ -106,6 +106,10 @@ const faqs = [
     q: 'Does Stellar provide 24/7 emergency response?',
     a: 'Yes. A live member of our Chicago team answers our emergency line around the clock — never an outsourced call center. Vetted crews are dispatched immediately for floods, boiler failures, elevator entrapment, and other urgent events, with a full incident report delivered to your board.',
   },
+  {
+    q: 'Does Stellar offer resources for condo owners and residents, not just boards?',
+    a: 'Yes. Beyond the resident portal, we publish The Owner’s Companion at stellarpropertygroup.com/condo-living — a free eight-chapter guide to living well in a condo or HOA, covering what assessments pay for, who fixes what, HO-6 insurance, owner rights under Illinois law, and what to do when something goes wrong.',
+  },
 ];
 
 /* ── Schema (AI / AEO layer) ──────────────────────────────────── */
@@ -508,6 +512,53 @@ export default function Home() {
               >
                 Resident Sign-In <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── The Owner's Companion ────────────────────────────── */}
+      <section className="py-28 lg:py-36 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-5">
+              <Eyebrow>For the People Who Live Here</Eyebrow>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8 text-balance">
+                Nobody hands you a manual for condo life.
+                <br />
+                So we <em className="font-medium text-gold-500">wrote one.</em>
+              </h2>
+              <p className="text-lg text-slate-600 font-light leading-relaxed mb-10">
+                The Owner&rsquo;s Companion is our free, eight-chapter guide to
+                living well in a condominium or HOA — written for owners and
+                residents, not just boards. What your assessment actually pays
+                for. Who fixes what. The insurance mistake that costs the most.
+                And the quiet arts of being a good neighbor.
+              </p>
+              <Link
+                to="/condo-living"
+                className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+              >
+                Read the Owner&rsquo;s Companion
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+            </div>
+            <div className="lg:col-span-6 lg:col-start-7">
+              <div className="border-t border-slate-200">
+                {[
+                  { n: '03', title: 'Who fixes what', desc: 'The owner-vs-association responsibility map — settled before the contractor is hired.', href: '/condo-living#who-fixes-what' },
+                  { n: '02', title: 'Your assessment, decoded', desc: 'Where the monthly number goes, and the three questions to ask of any budget.', href: '/condo-living#assessments' },
+                  { n: '05', title: 'Insurance, both halves', desc: 'The master policy, your HO-6, and the loss-assessment gap between them.', href: '/condo-living#insurance' },
+                  { n: '06', title: 'The neighborly arts', desc: 'Six unwritten courtesies that make a shared building feel like a home.', href: '/condo-living#neighborly' },
+                ].map(({ n, title, desc, href }) => (
+                  <Link key={n} to={href} className="group grid sm:grid-cols-12 gap-2 sm:gap-6 py-6 border-b border-slate-200">
+                    <span className="sm:col-span-2 font-display font-light text-2xl text-gold-500 select-none">{n}</span>
+                    <span className="sm:col-span-4 font-display text-xl text-ink group-hover:text-gold-600 transition-colors">{title}</span>
+                    <span className="sm:col-span-5 text-sm text-slate-600 font-light leading-relaxed">{desc}</span>
+                    <ArrowUpRight className="hidden sm:block sm:col-span-1 w-4 h-4 justify-self-end self-center text-slate-400 group-hover:text-gold-600 transition-colors" strokeWidth={1.25} />
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
