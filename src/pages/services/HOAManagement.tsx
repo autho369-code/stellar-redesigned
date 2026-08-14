@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { hoaManagementFaqs } from '../../data/service-faqs';
@@ -343,6 +344,7 @@ export default function HOAManagement() {
 
       <ServiceFAQ items={hoaManagementFaqs} title="What HOA boards should ask a prospective manager." />
       <ClusterGuides cluster="governance" />
+      <ServiceAreasStrip service="hoa-management" />
       <CTASection />
     </>
   );

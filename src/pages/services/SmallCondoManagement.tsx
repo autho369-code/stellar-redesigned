@@ -4,6 +4,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { smallCondoManagementFaqs } from '../../data/service-faqs';
 
@@ -121,6 +122,7 @@ export default function SmallCondoManagement() {
       </section>
       <ServiceFAQ items={smallCondoManagementFaqs} title="What small condo boards ask before hiring management." />
       <ClusterGuides cluster="management" />
+      <ServiceAreasStrip service="small-condo-association-management" />
       <CTASection />
     </>
   );

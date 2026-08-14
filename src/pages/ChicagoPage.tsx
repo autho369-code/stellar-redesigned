@@ -71,7 +71,7 @@ const schema = {
       '@id': 'https://www.stellarpropertygroup.com/property-management-chicago#service',
       name: 'Property Management in Chicago',
       description:
-        'Condominium, HOA, and townhome association management across 70+ Chicago neighborhoods. Dedicated managers, flat-fee pricing, 24/7 emergency response. Since 2007.',
+        'Condominium, HOA, and townhome association management across 55+ Chicago neighborhoods. Dedicated managers, flat-fee pricing, 24/7 emergency response. Since 2007.',
       url: 'https://www.stellarpropertygroup.com/property-management-chicago',
       serviceType: 'Community Association Management',
       areaServed: { '@type': 'City', name: 'Chicago', containedInPlace: { '@type': 'State', name: 'Illinois' } },
@@ -102,7 +102,7 @@ export default function ChicagoPage() {
     <>
       <SEOHead
         title="Chicago Condo & HOA Management Company | Stellar"
-        description="Chicago condo, HOA, and townhome association management across 70+ neighborhoods. Dedicated managers, flat fees, board reporting, and 24/7 response."
+        description="Chicago condo, HOA, and townhome association management across 55+ neighborhoods. Dedicated managers, flat fees, board reporting, and 24/7 response."
         canonical="https://www.stellarpropertygroup.com/property-management-chicago"
       />
       <Helmet>
@@ -143,7 +143,7 @@ export default function ChicagoPage() {
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Condominium, HOA, and townhome association management across
-                more than 70 Chicago neighborhoods — practiced from a Chicago
+                more than 55 Chicago neighborhoods — practiced from a Chicago
                 office, by people who know these buildings block by block.
               </p>
             </div>

@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { townhomeManagementFaqs } from '../../data/service-faqs';
@@ -210,6 +211,7 @@ export default function TownhomeManagement() {
 
       <ServiceFAQ items={townhomeManagementFaqs} title="What townhome association boards should ask." />
       <ClusterGuides cluster="buildings" />
+      <ServiceAreasStrip service="townhome-management" />
       <CTASection />
     </>
   );

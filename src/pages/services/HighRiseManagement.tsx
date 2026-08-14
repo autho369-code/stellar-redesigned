@@ -4,6 +4,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { highRiseManagementFaqs } from '../../data/service-faqs';
 
@@ -121,6 +122,7 @@ export default function HighRiseManagement() {
       </section>
       <ServiceFAQ items={highRiseManagementFaqs} title="What high-rise boards should confirm before changing managers." />
       <ClusterGuides cluster="buildings" />
+      <ServiceAreasStrip service="high-rise-condominium-management" />
       <CTASection />
     </>
   );

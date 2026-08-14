@@ -37,7 +37,20 @@
     { "source": "/deerfield", "destination": "/property-management-deerfield", "permanent": true },
     { "source": "/deerfield/", "destination": "/property-management-deerfield", "permanent": true },
     { "source": "/glenview", "destination": "/property-management-glenview", "permanent": true },
-    { "source": "/glenview/", "destination": "/property-management-glenview", "permanent": true }
+    { "source": "/glenview/", "destination": "/property-management-glenview", "permanent": true },
+    { "source": "/property-management-sheffield", "destination": "/property-management-lincoln-park", "permanent": true },
+    { "source": "/property-management-depaul", "destination": "/property-management-lincoln-park", "permanent": true },
+    { "source": "/property-management-ranch-triangle", "destination": "/property-management-lincoln-park", "permanent": true },
+    { "source": "/property-management-wrightwood", "destination": "/property-management-lincoln-park", "permanent": true },
+    { "source": "/property-management-boystown", "destination": "/property-management-lakeview", "permanent": true },
+    { "source": "/property-management-wrigleyville", "destination": "/property-management-lakeview", "permanent": true },
+    { "source": "/property-management-lakeview-east", "destination": "/property-management-lakeview", "permanent": true },
+    { "source": "/property-management-arcadia-terrace", "destination": "/property-management-lincoln-square", "permanent": true },
+    { "source": "/property-management-bowmanville", "destination": "/property-management-lincoln-square", "permanent": true },
+    { "source": "/property-management-budlong-woods", "destination": "/property-management-lincoln-square", "permanent": true },
+    { "source": "/property-management-peterson-park", "destination": "/property-management-north-park", "permanent": true },
+    { "source": "/property-management-north-mayfair", "destination": "/property-management-mayfair", "permanent": true },
+    { "source": "/property-management-oak-park-adjacent", "destination": "/property-management-austin", "permanent": true }
   ],
   "rewrites": [
     { "source": "/site/:path*", "destination": "/api/gone" },

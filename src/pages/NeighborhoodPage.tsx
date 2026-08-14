@@ -3,35 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../components/seo/SEOHead';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { getNeighborhoodBySlug, getRelatedNeighborhoods } from '../data/neighborhoods';
+import { getNeighborhoodServices } from '../data/neighborhood-services';
 import { blogPosts } from '../data/blog-posts';
 import { contentClusters, getNeighborhoodCluster, getNeighborhoodGuides } from '../data/content-silos';
-
-const services = [
-  {
-    n: '01',
-    title: 'Financial Management',
-    description: 'Transparent budgeting, assessments, reserves, and detailed financial reporting for your association.',
-    link: '/services/financial-management'
-  },
-  {
-    n: '02',
-    title: 'Maintenance & Operations',
-    description: 'Proactive maintenance programs, vendor management, and 24/7 emergency response.',
-    link: '/services/maintenance-coordination'
-  },
-  {
-    n: '03',
-    title: 'Board & Community Support',
-    description: 'Meeting coordination, compliance enforcement, and communication tools for effective governance.',
-    link: '/services/board-support'
-  },
-  {
-    n: '04',
-    title: 'Vendor Management',
-    description: 'Vetted contractor networks, competitive bidding, and quality oversight for all building projects.',
-    link: '/services/maintenance-coordination'
-  }
-];
 
 const whyChoose = [
   {
@@ -93,6 +67,9 @@ export default function NeighborhoodPage() {
   }
 
   const relatedNeighborhoods = getRelatedNeighborhoods(neighborhood.slug, 3);
+  // Reverse-silo up-links: money pages matched to this community's housing
+  // stock, with localized anchor copy per card.
+  const localServices = getNeighborhoodServices(neighborhood);
   const neighborhoodCluster = getNeighborhoodCluster(neighborhood);
   const neighborhoodGuides = getNeighborhoodGuides(neighborhood, blogPosts, 3);
   const neighborhoodClusterConfig = contentClusters[neighborhoodCluster];
@@ -117,8 +94,10 @@ export default function NeighborhoodPage() {
     : `Condo, HOA & townhome association management in ${neighborhood.name}, Chicago (ZIP ${neighborhood.zipCodes.join(', ')}). Dedicated local manager, flat-fee pricing, 24/7 response.`;
 
   // Localized Q&A — rendered on the page AND emitted as FAQPage schema so
-  // AI engines can quote community-specific answers directly.
+  // AI engines can quote community-specific answers directly. Neighborhood-
+  // specific questions (localFaq) lead; the standard set follows.
   const faqs = [
+    ...(neighborhood.localFaq ?? []),
     {
       q: `Does Stellar Property Management serve ${neighborhood.name}?`,
       a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 42 associations and 2,450+ residences under management with a 96% client retention rate.`,
@@ -270,17 +249,17 @@ export default function NeighborhoodPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
-            {services.map(({ n, title, description, link }) => (
+            {localServices.map(({ title, description, link }, index) => (
               <Link
                 key={title}
                 to={link}
                 className="group bg-white p-9 lg:p-10 transition-colors duration-300 hover:bg-ivory-50"
               >
                 <span className="font-display font-light text-4xl text-gold-500 block mb-7 select-none">
-                  {n}
+                  {String(index + 1).padStart(2, '0')}
                 </span>
                 <h3 className="font-display text-xl text-ink mb-3 group-hover:text-navy-700 transition-colors duration-300">
-                  {title}
+                  {title} in {neighborhood.name}
                 </h3>
                 <p className="text-sm text-slate-600 font-light leading-relaxed mb-7">{description}</p>
                 <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-luxe text-gold-600">
@@ -329,6 +308,37 @@ export default function NeighborhoodPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Local proof ────────────────────────────────────────── */}
+      {neighborhood.localProof && neighborhood.localProof.length > 0 && (
+        <section className="py-24 lg:py-32 bg-white">
+          <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+            <div className="grid lg:grid-cols-12 gap-14">
+              <div className="lg:col-span-5">
+                <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                  <span className="accent-rule" />
+                  The Local File
+                </p>
+                <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8 text-balance">
+                  What managing {neighborhood.name} actually <em className="font-medium text-gold-600">takes.</em>
+                </h2>
+                <p className="text-slate-600 font-light text-lg leading-relaxed">
+                  Every community has its own building stock, rules, and rhythms. This is the on-the-ground knowledge we bring to {neighborhood.name} associations.
+                </p>
+              </div>
+
+              <div className="lg:col-span-7">
+                {neighborhood.localProof.map(({ title, detail }) => (
+                  <div key={title} className="py-6 border-b border-slate-200 last:border-0 grid sm:grid-cols-12 gap-3">
+                    <h3 className="sm:col-span-5 font-display text-xl text-ink">{title}</h3>
+                    <p className="sm:col-span-7 text-sm text-slate-600 font-light leading-relaxed">{detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── ZIP codes ──────────────────────────────────────────── */}
       <section className="py-10 bg-white border-b border-slate-200">
