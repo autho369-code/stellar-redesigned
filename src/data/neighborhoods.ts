@@ -776,7 +776,31 @@ export const neighborhoods: Neighborhood[] = [
     description: 'Glenview blends established tree-lined neighborhoods with newer master-planned communities like The Glen, creating steady demand for professional townhome and condominium association management. Associations here expect polished common areas, proactive reserve planning, and vendors who show up on time. We bring North Shore-calibre service to Glenview communities of every size, from boutique condo buildings to large multi-phase HOAs.',
     propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
     zipCodes: ['60025', '60026'],
-    region: 'north-shore'
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'The Glen and master-planned communities',
+        detail: 'The redevelopment of the former Glenview Naval Air Station created The Glen — townhome and condominium communities with layered master-and-sub-association structures around Gallery Park and The Glen Town Center. We manage within exactly these frameworks, keeping every sub-association\'s budget and interests distinct.',
+      },
+      {
+        title: 'Townhome capital cycles',
+        detail: 'Glenview\'s townhome associations — from 1970s-era communities to newer construction — are aging into the expensive decade: roofing, siding, and private-road replacement. Our reserve planning and capital project oversight carry no separate management fee, which matters when the project is seven figures.',
+      },
+      {
+        title: 'Village standards, commuter rhythms',
+        detail: 'With two Metra stations, top-rated schools, and some of the North Shore\'s highest property values, Glenview owners expect immaculate common areas, reliable snow and landscape contracts, and portal-first communication that respects a commuter\'s schedule.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage townhome and HOA communities in Glenview?',
+        a: 'Yes. Townhome and homeowner association management is the core of our Glenview practice (ZIPs 60025 and 60026) — from boutique condominium buildings near downtown Glenview to large multi-phase communities in and around The Glen, including master-and-sub-association structures. Every community receives a dedicated manager, transparent monthly reporting, and 24/7 live emergency response.',
+      },
+      {
+        q: 'Can Stellar handle major capital projects for a Glenview association?',
+        a: 'Yes. Glenview townhome communities are entering major roofing, siding, and private-road replacement cycles, and we manage those projects end to end: reserve study coordination, phased capital calendars, competitive bidding, and construction oversight — with no separate capital-project planning or management-oversight fee added on top of our flat monthly rate.',
+      },
+    ]
   },
   {
     name: 'Wilmette',
