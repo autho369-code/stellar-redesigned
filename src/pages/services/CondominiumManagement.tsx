@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { condominiumManagementFaqs } from '../../data/service-faqs';
@@ -218,6 +219,7 @@ export default function CondominiumManagement() {
 
       <ServiceFAQ items={condominiumManagementFaqs} title="What Chicago condominium boards need to know." />
       <ClusterGuides cluster="management" />
+      <ServiceAreasStrip service="condominium-management" />
       <CTASection />
     </>
   );

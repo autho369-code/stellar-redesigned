@@ -3,6 +3,7 @@ import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
+import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function BoardSupport() {
@@ -204,6 +205,7 @@ export default function BoardSupport() {
       </section>
 
       <ClusterGuides cluster="governance" />
+      <ServiceAreasStrip service="board-support" />
       <CTASection />
     </>
   );
