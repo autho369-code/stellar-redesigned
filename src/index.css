@@ -75,6 +75,71 @@
   }
 }
 
+/* Brand text selection */
+::selection {
+  background: rgba(63, 158, 211, 0.28);
+}
+
+/* ── Hero load choreography ─────────────────────────────────────
+   Staggered entrance for the hero's copy stack. `both` fill keeps
+   delayed elements hidden until their turn. Pure CSS: content is in
+   the DOM for crawlers, and the sequence runs without JavaScript. */
+.reveal-up {
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.reveal-delay-1 { animation-delay: 120ms; }
+.reveal-delay-2 { animation-delay: 240ms; }
+.reveal-delay-3 { animation-delay: 380ms; }
+.reveal-delay-4 { animation-delay: 520ms; }
+
+/* Ambient settle on the hero photograph — one slow camera move, once. */
+.hero-photo {
+  animation: heroSettle 14s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes heroSettle {
+  from { transform: scale(1.07); }
+  to   { transform: scale(1); }
+}
+
+/* ── The Atlas marquee ──────────────────────────────────────────
+   A slow surveyor's tape of every community served. Duplicated track
+   translates -50% for a seamless loop; pauses on hover. */
+.marquee {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 96%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 96%, transparent);
+}
+.marquee-inner {
+  display: inline-flex;
+  animation: marqueeScroll 160s linear infinite;
+}
+.marquee-track {
+  display: inline-flex;
+  align-items: baseline;
+  padding-right: 1.25rem;
+}
+.marquee:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .hero-photo {
+    animation: none;
+  }
+  .marquee-inner {
+    animation: none;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

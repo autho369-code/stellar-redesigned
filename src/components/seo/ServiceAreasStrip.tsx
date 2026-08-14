@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { Reveal } from '../ui/Reveal';
 import { getServiceNeighborhoods, serviceCatalog } from '../../data/neighborhood-services';
 
 interface ServiceAreasStripProps {
@@ -21,7 +22,7 @@ export function ServiceAreasStrip({ service }: ServiceAreasStripProps) {
     <section className="py-24 lg:py-32 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
-          <div className="lg:col-span-4">
+          <Reveal className="lg:col-span-4">
             <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4">
               <span className="accent-rule" />
               The Atlas
@@ -43,9 +44,9 @@ export function ServiceAreasStrip({ service }: ServiceAreasStripProps) {
                 All Service Areas <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="lg:col-span-8">
+          <Reveal delay={140} className="lg:col-span-8">
             <div className="grid sm:grid-cols-2 sm:gap-x-10 border-t border-slate-200">
               {areas.map((area) => (
                 <Link
@@ -68,7 +69,7 @@ export function ServiceAreasStrip({ service }: ServiceAreasStripProps) {
                 </Link>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
