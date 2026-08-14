@@ -18,6 +18,48 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-08-13 (SEO/conversion overhaul + GBP takeover)
+
+**Site (PR #16, merged + verified live on production):**
+- `hydrateRoot` + eager public routes: prerendered HTML hydrates in place — no
+  more DOM wipe/spinner; biggest CWV win. KnowledgeAdmin stays a lazy chunk.
+- Header: "Request a Proposal" primary CTA sitewide (lead-source tracked),
+  desktop phone link, mobile click-to-call icon + proposal chip.
+- Titles de-cannibalized: Home is entity-led ("Stellar Property Management |
+  Chicago Condo & HOA Experts"); /property-management-chicago owns the head
+  term; all area pages geo-qualified ("… in Lakeview, Chicago | Stellar").
+- About: founder bio (Mirsad Cerimovic, CAM/CMCA/AMS) + Person schema at
+  /about#mirsad-cerimovic; blog Article author @id resolves there. Real photo
+  still wanted.
+- Money pages (HOA + condo mgmt) expanded ~3x: evaluation criteria, transition
+  timeline, board deliverables. FAQ content merged into the shared
+  `ServiceFAQ` component (`src/data/service-faqs.ts`) during reconciliation
+  with PR #15 (which added ServiceFAQ, /blog/topic/ pages, ServiceSchema
+  offers). Root canonical now trailing-slash; verify-built-seo updated to match.
+- Known trade-off: main JS ~250KB gzip (eager routes pull all blog data incl.
+  40 unpublished scheduled posts). Two background task sessions were launched
+  to fix this (bundle slimming) and to consolidate micro-neighborhood doorway
+  pages with 301s — both must rebase onto the new main when they land.
+
+**Google Business Profile (CID 6022006747972898171):**
+- autho369@gmail.com accepted OWNER access 2026-08-13 (agency account
+  citadeladvertising@gmail.com remains primary). mirsad@ has no Google account.
+- Website field fixed to the www canonical; business description + 9 services
+  pasted in by Mirsad (verify they saved). Rating 3.3/63 (33×5★, 24×1★ —
+  mostly non-client renters/owners angry at board decisions).
+- Review-reply strategy established; replies drafted for Izzy Salhani
+  (wrong-business rental complaint), Gladys Cruz (pre-litigation — neutral
+  reply, association attorney glance first), Oliver Priest (10-yr neighbor
+  feud w/ unit below — reply signed personally by Mirsad). Board-signable
+  neighbor-dispute letter (enforcement process + free CCR mediation offer):
+  `C:\Users\autho\stellar-letters\neighbor-dispute-letter.docx`.
+- Review math: +10 five-star → 3.5, +28 → 3.8, +46 → 4.0. Weekly ask rhythm
+  after good board meetings; never incentivize/gate.
+- Claude-in-Chrome extension installed + signed in (autho369@gmail.com) but an
+  Anthropic-side browser-tools outage blocked connection all session — try
+  `list_connected_browsers` first thing next session, then verify GBP fields
+  hands-on.
+
 ## Tech stack
 
 - Vite + React 18 + TypeScript + Tailwind, React Router 7
