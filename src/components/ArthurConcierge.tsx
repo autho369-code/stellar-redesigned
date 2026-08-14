@@ -67,7 +67,7 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['area', 'neighborhood', 'serve', 'location', 'where', 'evanston', 'wilmette', 'winnetka', 'gold coast', 'lincoln park', 'north shore', 'suburb'],
     answer:
-      'We serve 70+ Chicago neighborhoods — from the Gold Coast and Streeterville to Lincoln Park, Lakeview, and Hyde Park — plus North Shore communities including Evanston, Skokie, Glenview, Wilmette, Winnetka, Highland Park, Northbrook, Glencoe, Kenilworth, Lake Forest, and Deerfield. Browse them all at stellarpropertygroup.com/service-areas',
+      'We serve 55+ Chicago neighborhoods — from the Gold Coast and Streeterville to Lincoln Park, Lakeview, and Hyde Park — plus North Shore communities including Evanston, Skokie, Glenview, Wilmette, Winnetka, Highland Park, Northbrook, Glencoe, Kenilworth, Lake Forest, and Deerfield. Browse them all at stellarpropertygroup.com/service-areas',
   },
   {
     keywords: ['board', 'nomination', 'nominate', 'election', 'director', 'serve on'],
