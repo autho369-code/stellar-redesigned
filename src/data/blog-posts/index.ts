@@ -11,6 +11,10 @@ import { hoaCondoRulesEnforceable } from './are-hoa-condo-rules-enforceable-illi
 import { whyCondoBoardsFail } from './why-condo-boards-fail';
 import { technologyBehindOurManagement } from './the-technology-behind-our-management';
 import { switchCondoManagementCompaniesChicago } from './switch-condo-management-companies-chicago';
+import { condoRepairsOwnerVsAssociation } from './condo-repairs-owner-vs-association-illinois';
+import { movingIntoChicagoCondoGuide } from './moving-into-chicago-condo-guide';
+import { rentingOutYourCondoChicago } from './renting-out-your-condo-chicago-rules';
+import { firstTimeCondoBuyerGuideChicago } from './first-time-condo-buyer-guide-chicago';
 import { scheduledGovernancePosts } from './scheduled-governance';
 import { scheduledFinancePosts } from './scheduled-finance';
 import { scheduledBuildingPosts } from './scheduled-buildings';
@@ -42,6 +46,10 @@ export const allBlogPosts: BlogPost[] = [
   ...scheduledFinancePosts,
   ...scheduledBuildingPosts,
   ...scheduledManagementPosts,
+  condoRepairsOwnerVsAssociation,
+  movingIntoChicagoCondoGuide,
+  rentingOutYourCondoChicago,
+  firstTimeCondoBuyerGuideChicago,
   switchCondoManagementCompaniesChicago,
   technologyBehindOurManagement,
   illinoisCondoLawUpdates2026,

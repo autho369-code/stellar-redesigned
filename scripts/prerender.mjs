@@ -47,15 +47,17 @@ const staticRoutes = [
   '/blog/topic/board-governance-illinois-law',
   '/blog/topic/association-finance-reserves',
   '/blog/topic/choosing-association-management',
+  '/blog/topic/building-operations-capital-planning',
   '/contact',
   '/resources',
+  '/condo-living',
   '/privacy-policy',
   '/terms-of-service',
 ];
 
-if (publicationCutoff >= '2026-08-22') {
-  staticRoutes.push('/blog/topic/building-operations-capital-planning');
-}
+// The building-operations topic hub went live 2026-08-13 with the first
+// published owner-education posts in that cluster (previously gated to
+// 2026-08-22 while the cluster had no published content).
 
 const neighborhoodsSrc = readFileSync(join(root, 'src/data/neighborhoods.ts'), 'utf8');
 const neighborhoodSlugs = [...neighborhoodsSrc.matchAll(/slug:\s*'([^']+)'/g)].map((m) => m[1]);

@@ -44,6 +44,7 @@ const navLinks: NavItem[] = [
     href: '/resources',
     children: [
       { name: 'Resource Center', href: '/resources' },
+      { name: 'Condo Living Guide', href: '/condo-living' },
       { name: 'Make a Payment', href: 'https://stellarpropertygrp.appfolio.com/connect/', external: true },
       { name: 'Bill Pay', href: '/resources?section=pay' },
       { name: 'Report a Violation', href: '/resources?form=violation' },

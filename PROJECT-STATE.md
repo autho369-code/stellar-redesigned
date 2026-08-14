@@ -18,6 +18,41 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-08-13, later session (area consolidation + owner-education flagship)
+
+**PR #17 (merged):** consolidated 13 thin area pages (83 → 70) into parents
+with 301s in vercel.json; fixed Edison Park ZIP (60631); added
+localProof/localFaq fields + deep-localized 13 areas; built the reverse silo
+(area pages show property-type-matched service cards with localized anchors;
+all 9 service pages have a "Where we practice" strip via
+`src/components/seo/ServiceAreasStrip.tsx` + `src/data/neighborhood-services.ts`).
+This closes the "consolidate micro-neighborhood doorway pages" task above.
+
+**Owner-education flagship (this branch, `claude/wow-owner-experience`):**
+- **The Owner's Companion** at `/condo-living` (`src/pages/CondoLiving.tsx`):
+  eight-chapter owner/resident guide (documents hierarchy, assessments,
+  who-fixes-what matrix, ILCPA owner rights, master-policy-vs-HO-6, house
+  etiquette, life moments, problem resolution) + 8-question owner FAQ with
+  FAQPage schema. Competitive research (8 Chicago firms analyzed) confirmed
+  owner/resident education is unclaimed in this market — no competitor has it.
+- 4 new owner-education journal posts (dated 2026-08-13, live):
+  condo-repairs-owner-vs-association-illinois, moving-into-chicago-condo-guide,
+  renting-out-your-condo-chicago-rules, first-time-condo-buyer-guide-chicago.
+  Written AEO-style: H2 questions with 40–70-word direct answers first
+  (Princeton GEO study: +30–40% generative-answer visibility), ILCPA citations.
+- Building-operations topic hub un-gated (first published buildings-cluster
+  posts now exist); sitemap 113 URLs, 115 routes prerendered.
+- Home: new "Owner's Companion" section + owners FAQ entry; header/footer/llms.txt
+  link the guide; Arthur KB answers owner-life questions with the guide.
+- Bundle: manualChunks split (client only) — main JS 1.11MB → 666KB (156KB gzip),
+  article content (389KB) + area data (57KB) cache as separate parallel chunks.
+  This partially addresses the "bundle slimming" task above (scheduled-post
+  content still ships in article-content; a true fix needs lazy article bodies).
+- Competitor + AEO research reports archived in this session; key takeaways:
+  Hales = content-depth rival (~500 posts), Westward360 = only other published
+  pricing; recommended next: review count/rating on homepage, RFP-upload form,
+  hard-number annual proof point, YouTube/Reddit presence for AI citations.
+
 ## Status update — 2026-08-13 (SEO/conversion overhaul + GBP takeover)
 
 **Site (PR #16, merged + verified live on production):**

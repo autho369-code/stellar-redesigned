@@ -21,6 +21,7 @@ const companyLinks = [
   { name: 'North Shore', href: '/property-management-north-shore' },
   { name: 'Share Feedback', href: '/reviews' },
   { name: 'Journal', href: '/blog' },
+  { name: 'Condo Living Guide', href: '/condo-living' },
   { name: 'Resources', href: '/resources' },
   { name: 'Contact', href: '/contact' },
 ];
