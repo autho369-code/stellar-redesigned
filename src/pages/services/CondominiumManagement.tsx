@@ -67,8 +67,8 @@ export default function CondominiumManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Condominium Management Company | Stellar"
-        description="Licensed Chicago condominium association management for boards: financial reporting, maintenance, governance, 24/7 response, and structured transitions."
+        title="Chicago Condominium Management From $20/Unit | Stellar"
+        description="Chicago condominium association management from $20 per unit, with financial reporting, 24/7 response, and no separate capital-project oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
       <ServiceSchema name="Chicago Condominium Association Management" description="Full-service condominium association management with financial reporting, maintenance coordination, governance support, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/condominium-management" serviceType="Condominium Association Management" />
@@ -136,12 +136,20 @@ export default function CondominiumManagement() {
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 Whether your building has 10 units or 500, our approach is the same: proactive management that prevents problems before they arise, transparent communication that keeps owners informed, and financial planning that positions your association for long-term stability. We assign a dedicated property manager to each community so you always have a knowledgeable point of contact who understands your building inside and out.
               </p>
-              <Link
-                to="/blog/switch-condo-management-companies-chicago"
-                className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
-              >
-                Planning a management change? Read the Chicago board guide <ArrowRight className="w-4 h-4" />
-              </Link>
+              <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
+                <Link
+                  to="/blog/score-condo-hoa-management-proposals"
+                  className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Compare management companies <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  to="/blog/switch-condo-management-companies-chicago"
+                  className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+                >
+                  Plan a management transition <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <h3 className="font-display text-2xl text-ink mb-6">Why Chicago Condos Choose Stellar</h3>

@@ -525,7 +525,35 @@ export const neighborhoods: Neighborhood[] = [
     slug: 'hyde-park',
     description: 'Hyde Park is an intellectual hub anchored by the University of Chicago, featuring architecturally significant buildings and a diverse, engaged community. Property management here often involves working with sophisticated boards who expect data-driven decision-making and transparent financials. We thrive in Hyde Park\'s demanding environment, delivering professional management backed by clear reporting.',
     propertyTypes: ['condominiums', 'high-rises', 'HOAs', 'townhomes'],
-    zipCodes: ['60615', '60637']
+    zipCodes: ['60615', '60637'],
+    localProof: [
+      {
+        title: 'Lakefront high-rise operations',
+        detail: 'East Hyde Park towers along Lake Park Avenue and South Shore Drive combine elevators, staffed entries, life-safety systems, and lakefront weather exposure. We organize those moving parts through preventive schedules, inspection calendars, and board-ready reporting.',
+      },
+      {
+        title: 'Capital planning for older buildings',
+        detail: 'Hyde Park\'s vintage masonry condominiums and co-ops need disciplined plans for facades, roofs, windows, risers, boilers, and elevators. We connect reserve assumptions to an actual multi-year project calendar instead of waiting for failures.',
+      },
+      {
+        title: 'Financial clarity for active boards',
+        detail: 'Hyde Park boards tend to ask detailed questions and expect decisions to be documented. Monthly variance reporting, bid comparisons, open-item registers, and clear meeting packets give directors the information to act confidently.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage Hyde Park high-rise condominium buildings?',
+        a: 'Yes. Our high-rise program covers building systems, staff and vendor coordination, life-safety and inspection calendars, resident operations, emergency response, monthly financial reporting, and long-range capital planning.',
+      },
+      {
+        q: 'Can Stellar help a Hyde Park association plan facade, riser, roof, or elevator work?',
+        a: 'Yes. We coordinate reserve-study inputs, develop a phased capital calendar, prepare comparable bid packages, track board approvals, and oversee authorized work. Stellar does not add a separate capital-project planning or management-oversight fee.',
+      },
+      {
+        q: 'What does Hyde Park association management cost?',
+        a: 'Customized flat-fee management starts at $20 per unit per month. The proposal reflects the building\'s size, systems, staffing, amenities, financial complexity, meeting needs, and final service scope.',
+      },
+    ],
   },
   {
     name: 'Kenwood',
@@ -808,7 +836,35 @@ export const neighborhoods: Neighborhood[] = [
     description: 'Wilmette is a premier North Shore village known for its lakefront beauty, top-rated schools, and meticulously maintained housing stock, including elegant vintage condominium buildings near the Metra and CTA. Boards in Wilmette hold high standards for appearance, communication, and financial stewardship. We manage Wilmette properties with the discretion and precision this distinguished community expects.',
     propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
     zipCodes: ['60091'],
-    region: 'north-shore'
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'Village-center condominium operations',
+        detail: 'Wilmette\'s condominium buildings around the Metra corridor require dependable daily operations, polished common areas, accurate owner communication, and vendors who can work without disrupting a compact residential setting.',
+      },
+      {
+        title: 'Lakefront and vintage-building planning',
+        detail: 'Older masonry, roofing, windows, drainage, and mechanical systems need reserve plans that account for North Shore weather and realistic contractor lead times. We translate those needs into a sequenced capital calendar for the board.',
+      },
+      {
+        title: 'Townhome exterior coordination',
+        detail: 'For Wilmette townhome communities, shared roofs, siding, drives, landscaping, and snow contracts must be planned as one system. Consistent scopes and competitive bids keep the work fair across every home.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage both Wilmette condominiums and townhome associations?',
+        a: 'Yes. We tailor the operating plan to the property type: building systems and common interiors for condominiums, and shared exteriors, drives, landscaping, snow, and reserve cycles for townhome communities.',
+      },
+      {
+        q: 'How does Stellar support Wilmette boards planning major repairs?',
+        a: 'We organize condition information, reserve assumptions, project timing, competitive scopes, bids, approvals, owner communication, and progress reporting. We do not add a separate capital-project planning or management-oversight fee.',
+      },
+      {
+        q: 'What does association management cost in Wilmette?',
+        a: 'Flat-fee management starts at $20 per unit per month and is customized for unit count, property type, amenities, financial complexity, meeting needs, staffing, and the final service scope.',
+      },
+    ],
   },
   {
     name: 'Winnetka',
@@ -832,7 +888,35 @@ export const neighborhoods: Neighborhood[] = [
     description: 'Northbrook is a thriving suburb with an exceptional concentration of townhome and condominium associations built from the 1970s through today — many now facing major capital projects like roofing, siding, and private road replacement. Our strength in reserve planning and capital project oversight makes us a natural partner for Northbrook boards navigating aging infrastructure with confidence.',
     propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
     zipCodes: ['60062'],
-    region: 'north-shore'
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'Townhome capital cycles',
+        detail: 'Many Northbrook townhome communities are reaching overlapping replacement cycles for roofing, siding, windows, private roads, and common lighting. We turn the reserve study into a phased, board-approved operating plan.',
+      },
+      {
+        title: 'Shared-site operations',
+        detail: 'Private drives, detention and drainage areas, mature landscaping, snow removal, and shared exterior components require coordinated scopes and dependable seasonal vendors. We track each obligation before it becomes an emergency.',
+      },
+      {
+        title: 'Clear project and financial controls',
+        detail: 'Large exterior projects need comparable bids, documented approvals, invoice controls, owner communication, and progress reporting. Those controls are built into our monthly board process rather than added only after construction begins.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar specialize in Northbrook townhome and HOA management?',
+        a: 'Yes. Our townhome and HOA programs cover shared-exterior maintenance, private-site operations, landscaping and snow, financial reporting, owner communication, governance support, and long-range reserve planning.',
+      },
+      {
+        q: 'Can Stellar oversee roofing, siding, or private-road projects in Northbrook?',
+        a: 'Yes. We coordinate planning, bid scopes, contractor comparisons, board approvals, schedules, invoices, owner notices, and progress reporting. Stellar does not charge a separate capital-project planning or management-oversight fee.',
+      },
+      {
+        q: 'What does Northbrook association management cost?',
+        a: 'Customized flat-fee management starts at $20 per unit per month. Unit count, shared components, amenities, financial complexity, meeting needs, and final service scope determine the proposal.',
+      },
+    ],
   },
   {
     name: 'Glencoe',
