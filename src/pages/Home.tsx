@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, MapPin, Mail, Plus } from 'lucide-react';
+import { Reveal } from '../components/ui/Reveal';
+import { CountUp } from '../components/ui/CountUp';
+import { AtlasMarquee } from '../components/home/AtlasMarquee';
 
 /* ── Content ──────────────────────────────────────────────────── */
 
 const stats = [
-  { value: '42', label: 'Associations' },
-  { value: '2,450+', label: 'Residences' },
-  { value: '96%', label: 'Client Retention' },
-  { value: '2007', label: 'Established' },
+  { value: 42, suffix: '', label: 'Associations' },
+  { value: 2450, suffix: '+', label: 'Residences' },
+  { value: 96, suffix: '%', label: 'Client Retention' },
 ];
 
 const services = [
@@ -294,25 +296,25 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-40 lg:pt-48 pb-20">
           <div className="grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
             {/* Copy */}
-            <div className="lg:col-span-7 animate-fade-up">
-              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+            <div className="lg:col-span-7">
+              <p className="reveal-up eyebrow text-gold-300 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 Condominium &amp; HOA Management · Chicago
               </p>
 
-              <h1 className="font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-paper mb-10 text-balance">
+              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-paper mb-10 text-balance">
                 The art of a
                 <br />
                 <em className="font-medium text-gold-300">well-run</em> building.
               </h1>
 
-              <p className="text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-12 max-w-xl">
+              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-12 max-w-xl">
                 Stellar is a Chicago association management practice for boards
                 that expect more — clearer numbers, calmer meetings, and a
                 building that quietly works.
               </p>
 
-              <div className="flex flex-wrap items-center gap-5">
+              <div className="reveal-up reveal-delay-3 flex flex-wrap items-center gap-5">
                 <Link
                   to="/contact"
                   className="group inline-flex items-center gap-3 bg-paper text-ink hover:bg-gold-300 font-semibold px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
@@ -330,21 +332,23 @@ export default function Home() {
             </div>
 
             {/* Arch-topped architectural photo */}
-            <div className="lg:col-span-5 animate-fade-up delay-200">
+            <div className="lg:col-span-5 reveal-up reveal-delay-2">
               <div className="relative max-w-sm mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 border border-gold-300/40 rounded-t-full" aria-hidden />
                 {/* Source: Pexels photo 25853881, used under the Pexels license. */}
-                <img
-                  src="/images/chicago-condo-building.webp"
-                  srcSet="/images/chicago-condo-building-400.webp 400w, /images/chicago-condo-building-600.webp 600w, /images/chicago-condo-building.webp 800w"
-                  sizes="(min-width: 1024px) 384px, min(384px, calc(100vw - 40px))"
-                  alt="Historic red brick and limestone facade of a vintage Chicago residential building"
-                  className="w-full aspect-[3/4.2] object-cover rounded-t-full"
-                  loading="eager"
-                  width="800"
-                  height="1120"
-                  {...({ fetchpriority: 'high' } as Record<string, string>)}
-                />
+                <div className="overflow-hidden rounded-t-full">
+                  <img
+                    src="/images/chicago-condo-building.webp"
+                    srcSet="/images/chicago-condo-building-400.webp 400w, /images/chicago-condo-building-600.webp 600w, /images/chicago-condo-building.webp 800w"
+                    sizes="(min-width: 1024px) 384px, min(384px, calc(100vw - 40px))"
+                    alt="Historic red brick and limestone facade of a vintage Chicago residential building"
+                    className="hero-photo w-full aspect-[3/4.2] object-cover rounded-t-full"
+                    loading="eager"
+                    width="800"
+                    height="1120"
+                    {...({ fetchpriority: 'high' } as Record<string, string>)}
+                  />
+                </div>
                 <figcaption className="mt-5 text-[10px] uppercase tracking-luxe text-paper/70 text-center">
                   Chicago · Vintage Brick &amp; Bay Windows
                 </figcaption>
@@ -353,16 +357,25 @@ export default function Home() {
           </div>
         </div>
 
+        {/* The Atlas, in motion */}
+        <AtlasMarquee />
+
         {/* Stat strip */}
         <div className="relative border-t border-paper/10">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <dl className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-paper/10">
-              {stats.map(({ value, label }) => (
+              {stats.map(({ value, suffix, label }) => (
                 <div key={label} className="py-9 px-4 lg:px-10 text-center lg:text-left">
-                  <dd className="font-display text-3xl lg:text-4xl font-light text-gold-300 mb-1">{value}</dd>
+                  <dd className="font-display text-3xl lg:text-4xl font-light text-gold-300 mb-1">
+                    <CountUp value={value} suffix={suffix} />
+                  </dd>
                   <dt className="text-[10px] uppercase tracking-luxe text-paper/70">{label}</dt>
                 </div>
               ))}
+              <div className="py-9 px-4 lg:px-10 text-center lg:text-left">
+                <dd className="font-display text-3xl lg:text-4xl font-light text-gold-300 mb-1">2007</dd>
+                <dt className="text-[10px] uppercase tracking-luxe text-paper/70">Established</dt>
+              </div>
             </dl>
           </div>
         </div>
@@ -381,21 +394,21 @@ export default function Home() {
       <section className="py-28 lg:py-36 bg-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-10 mb-20">
-            <div className="lg:col-span-6">
+            <Reveal className="lg:col-span-6">
               <Eyebrow>The Practice</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
                 Six disciplines.
                 <br />
                 One <em className="font-medium text-gold-500">standard</em> of care.
               </h2>
-            </div>
-            <div className="lg:col-span-5 lg:col-start-8 self-end">
+            </Reveal>
+            <Reveal delay={140} className="lg:col-span-5 lg:col-start-8 self-end">
               <p className="text-slate-600 font-light leading-relaxed">
                 Everything an association needs, practiced the way an
                 architecture studio drafts: precisely, deliberately, and in
                 plain sight of the board.
               </p>
-            </div>
+            </Reveal>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-slate-200">
@@ -424,7 +437,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[44rem] h-[44rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-5">
+            <Reveal className="lg:col-span-5">
               <Eyebrow light>The Difference</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
                 Not another national
@@ -443,9 +456,9 @@ export default function Home() {
               >
                 Our Story <ArrowRight className="w-4 h-4" />
               </Link>
-            </div>
+            </Reveal>
 
-            <div className="lg:col-span-7">
+            <Reveal delay={140} className="lg:col-span-7">
               <div className="grid grid-cols-2 text-[10px] uppercase tracking-luxe text-paper/70 pb-4 border-b border-paper/10 gap-6">
                 <span>The volume model</span>
                 <span className="text-gold-300">The Stellar standard</span>
@@ -456,7 +469,7 @@ export default function Home() {
                   <p className="text-paper/90 text-sm leading-relaxed">{us}</p>
                 </div>
               ))}
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -464,7 +477,7 @@ export default function Home() {
       {/* ── Portals ──────────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="max-w-2xl mb-16">
+          <Reveal className="max-w-2xl mb-16">
             <Eyebrow>Technology, Quietly Excellent</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
               One platform.
@@ -475,7 +488,7 @@ export default function Home() {
               Powered by AppFolio — role-based access that gives boards command
               and residents convenience.
             </p>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
             <div className="bg-ink p-10 lg:p-14 text-paper">
@@ -521,7 +534,7 @@ export default function Home() {
       <section className="py-28 lg:py-36 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-5">
+            <Reveal className="lg:col-span-5">
               <Eyebrow>For the People Who Live Here</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8 text-balance">
                 Nobody hands you a manual for condo life.
@@ -542,8 +555,8 @@ export default function Home() {
                 Read the Owner&rsquo;s Companion
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-            </div>
-            <div className="lg:col-span-6 lg:col-start-7">
+            </Reveal>
+            <Reveal delay={140} className="lg:col-span-6 lg:col-start-7">
               <div className="border-t border-slate-200">
                 {[
                   { n: '03', title: 'Who fixes what', desc: 'The owner-vs-association responsibility map — settled before the contractor is hired.', href: '/condo-living#who-fixes-what' },
@@ -559,7 +572,7 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -567,7 +580,7 @@ export default function Home() {
       {/* ── The first ninety days ────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="max-w-2xl mb-20">
+          <Reveal className="max-w-2xl mb-20">
             <Eyebrow>White-Glove Onboarding</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
               The first <em className="font-medium text-gold-500">ninety days.</em>
@@ -582,7 +595,7 @@ export default function Home() {
             >
               Read the Chicago board&rsquo;s switching guide <ArrowRight className="w-4 h-4" />
             </Link>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">
             <div className="hidden md:block absolute top-8 left-[17%] right-[17%] h-px bg-gold-300" aria-hidden />
@@ -602,14 +615,14 @@ export default function Home() {
       {/* ── Testimonials ─────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="text-center max-w-2xl mx-auto mb-20">
+          <Reveal className="text-center max-w-2xl mx-auto mb-20">
             <Eyebrow center>In Their Words</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
               Boards that raised
               <br />
               their <em className="font-medium text-gold-500">standard.</em>
             </h2>
-          </div>
+          </Reveal>
 
           <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
             {testimonials.map(({ quote, name, community, area }) => (
@@ -631,12 +644,12 @@ export default function Home() {
       {/* ── FAQ ──────────────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-ivory-100 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="max-w-2xl mb-16">
+          <Reveal className="max-w-2xl mb-16">
             <Eyebrow>Questions, Answered</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
               What boards ask us <em className="font-medium text-gold-500">first.</em>
             </h2>
-          </div>
+          </Reveal>
 
           <div className="border-t border-slate-200">
             {faqs.map(({ q, a }) => (
@@ -665,6 +678,7 @@ export default function Home() {
         />
 
         <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+          <Reveal>
           <Eyebrow light center>A Private Consultation</Eyebrow>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-[4.25rem] leading-[1.05] mb-10 text-balance">
             Raise the standard
@@ -697,6 +711,7 @@ export default function Home() {
             <span className="inline-flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-gold-400" /> 5107 N Western Ave #1S, Chicago</span>
             <span className="inline-flex items-center gap-2"><Mail className="w-3.5 h-3.5 text-gold-400" /> mirsad@stellarpropertygroup.com</span>
           </div>
+          </Reveal>
         </div>
       </section>
     </>

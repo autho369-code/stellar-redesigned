@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { Reveal } from '../components/ui/Reveal';
 import { blogPosts } from '../data/blog-posts';
 
 /**
@@ -161,11 +162,13 @@ function Eyebrow({ children, light = false }: { children: React.ReactNode; light
 function ChapterHeading({ id, n, title, kicker }: { id: string; n: string; title: React.ReactNode; kicker: string }) {
   return (
     <div id={id} className="scroll-mt-28 mb-10">
-      <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4">
-        <span className="accent-rule" />
-        Chapter {n} · {kicker}
-      </p>
-      <h2 className="font-display font-light text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.08] text-balance">{title}</h2>
+      <Reveal>
+        <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4">
+          <span className="accent-rule" />
+          Chapter {n} · {kicker}
+        </p>
+        <h2 className="font-display font-light text-3xl sm:text-4xl lg:text-5xl text-ink leading-[1.08] text-balance">{title}</h2>
+      </Reveal>
     </div>
   );
 }
@@ -207,23 +210,23 @@ export default function CondoLiving() {
 
           <div className="grid lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
-              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
+              <p className="reveal-up eyebrow text-gold-300 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 The Owner&rsquo;s Companion
               </p>
-              <h1 className="font-display font-light text-[2.75rem] leading-[1.04] sm:text-6xl lg:text-7xl text-paper mb-8 text-balance">
+              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[2.75rem] leading-[1.04] sm:text-6xl lg:text-7xl text-paper mb-8 text-balance">
                 Living well in a condo
                 <br />
                 is a <em className="font-medium text-gold-300">learnable art.</em>
               </h1>
-              <p className="text-lg lg:text-xl text-paper/60 font-light leading-relaxed max-w-2xl">
+              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed max-w-2xl">
                 Nobody hands you a manual when you buy into a condominium or HOA.
                 So we wrote one — eight chapters on how shared buildings really
                 work, what your money does, where your rights begin, and how to
                 be the neighbor everyone hopes lives next door.
               </p>
             </div>
-            <div className="lg:col-span-3 lg:col-start-10">
+            <div className="lg:col-span-3 lg:col-start-10 reveal-up reveal-delay-3">
               <p className="text-[10px] uppercase tracking-luxe text-paper/50 mb-4">In this guide</p>
               <ol className="space-y-2.5">
                 {chapters.map(({ id, n, title }) => (

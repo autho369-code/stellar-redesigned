@@ -187,16 +187,16 @@ export default function NeighborhoodPage() {
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-start">
             <div className="lg:col-span-7">
-              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+              <p className="reveal-up eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 {atlasLabel}
               </p>
-              <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] mb-10 text-balance">
+              <h1 className="reveal-up reveal-delay-1 font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] mb-10 text-balance">
                 Condo &amp; HOA Management in
                 <br />
                 <em className="font-medium text-gold-600">{neighborhood.name}{isSuburb ? '' : ','}</em> {isSuburb ? '' : 'Chicago'}
               </h1>
-              <div className="flex flex-wrap items-center gap-5">
+              <div className="reveal-up reveal-delay-2 flex flex-wrap items-center gap-5">
                 <Link
                   to={`/contact?inquiry=quote&source=${leadSource}`}
                   className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
