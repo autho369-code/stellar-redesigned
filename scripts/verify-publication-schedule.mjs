@@ -9,12 +9,10 @@ const expectedDates = [];
 
 for (
   let date = new Date('2026-08-18T12:00:00Z');
-  date <= new Date('2026-11-14T12:00:00Z');
+  date <= new Date('2026-09-25T12:00:00Z');
   date.setUTCDate(date.getUTCDate() + 1)
 ) {
-  if ([2, 4, 6].includes(date.getUTCDay())) {
-    expectedDates.push(date.toISOString().slice(0, 10));
-  }
+  expectedDates.push(date.toISOString().slice(0, 10));
 }
 
 const posts = [];
@@ -47,8 +45,11 @@ if (new Set(slugs).size !== slugs.length) {
 if (leadPosts.length !== 1 || leadPosts[0].slug !== 'score-condo-hoa-management-proposals' || leadPosts[0].date !== '2026-08-14') {
   throw new Error('The published lead-post set must contain only the 2026-08-14 management-company comparison guide.');
 }
+if (posts.length !== expectedDates.length + leadPosts.length) {
+  throw new Error('Scheduled post files must contain only the published lead post and the 39-post daily campaign.');
+}
 if (JSON.stringify(actualDates) !== JSON.stringify(expectedDates)) {
-  throw new Error('Scheduled posts must fill every Tuesday, Thursday, and Saturday from 2026-08-18 through 2026-11-14.');
+  throw new Error('Scheduled posts must fill every calendar day from 2026-08-18 through 2026-09-25.');
 }
 for (const post of posts) {
   if (post.author !== expectedAuthor) {
@@ -56,4 +57,4 @@ for (const post of posts) {
   }
 }
 
-console.log(`Publication schedule verified: ${cadencePosts.length} cadence posts through ${actualDates.at(-1)} plus ${leadPosts.length} published lead post.`);
+console.log(`Daily publication schedule verified: ${cadencePosts.length} cadence posts through ${actualDates.at(-1)} plus ${leadPosts.length} published lead post.`);

@@ -6,7 +6,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'Illinois Section 22.1 Disclosures: A Board Guide',
     metaDescription:
       'What Illinois condo boards need to know about Section 22.1 resale disclosures: who requests them, what belongs in the packet, and how to respond reliably.',
-    date: '2026-08-20',
+    date: '2026-08-19',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
     readTime: '7 min read',
@@ -87,7 +87,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'How to Read a Condo Reserve Study Before the Next Budget',
     metaDescription:
       'A board-level guide to reading a condominium reserve study: components, useful life, funding plans, and the questions to ask before you adopt next year budget.',
-    date: '2026-08-29',
+    date: '2026-08-23',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -170,7 +170,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'The Illinois 22.1 Disclosure Packet Checklist',
     metaDescription:
       'A practical assembly checklist for Illinois condominium 22.1 resale disclosure packets: documents, financials, ledgers, insurance, and quality control steps.',
-    date: '2026-09-08',
+    date: '2026-08-27',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
     readTime: '7 min read',
@@ -269,7 +269,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'Reasonable Reserves Under Illinois Condo Law',
     metaDescription:
       'Illinois condominium boards must budget reserves that are reasonable in the circumstances. Here is how boards build and document a defensible reserve decision.',
-    date: '2026-09-17',
+    date: '2026-08-31',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -350,7 +350,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'Late Fees and Interest: Building a Defensible Association Policy',
     metaDescription:
       'How Illinois condo and HOA boards build a late fee and interest policy that is authorized by their documents, applied consistently, and survives owner challenge.',
-    date: '2026-09-26',
+    date: '2026-09-04',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -436,7 +436,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'Association Liens and Delinquencies: What Boards Need Organized',
     metaDescription:
       'Illinois condo and HOA boards can protect assessment income by keeping delinquency records, ledgers, and lien documentation organized before counsel gets involved.',
-    date: '2026-10-06',
+    date: '2026-09-08',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -520,7 +520,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'How Board Members Should Read Association Financial Statements',
     metaDescription:
       'A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement, and delinquency report in your monthly financial packet.',
-    date: '2026-10-15',
+    date: '2026-09-12',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -602,7 +602,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'Preparing an Association for a Capital Project Loan',
     metaDescription:
       'What Illinois condo and HOA boards should organize before approaching a lender for a capital project loan: authority, financials, scope, and repayment planning.',
-    date: '2026-10-24',
+    date: '2026-09-16',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -686,7 +686,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'A Practical Annual Budget Workbook for Association Boards',
     metaDescription:
       'A month-by-month budget workbook for condo, HOA, and townhome boards: timeline, line-item method, reserve integration, and owner communication that works.',
-    date: '2026-11-03',
+    date: '2026-09-20',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -775,7 +775,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'The 22.1 Response Workflow: Faster Closings Without Risky Shortcuts',
     metaDescription:
       'Build a repeatable Illinois 22.1 response workflow: intake, verification, review, and release steps that speed closings without compromising accuracy.',
-    date: '2026-11-12',
+    date: '2026-09-24',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
     readTime: '7 min read',

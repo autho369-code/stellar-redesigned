@@ -90,7 +90,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'How Illinois Condo Boards Should Handle Records Requests',
     metaDescription:
       'A practical process for Illinois condo and HOA boards responding to owner records requests: intake, review with counsel, redaction, delivery, and documentation.',
-    date: '2026-08-27',
+    date: '2026-08-22',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -161,7 +161,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Closed Sessions for Illinois Condo Boards: A Practical Guide',
     metaDescription:
       'When and how Illinois condo and HOA boards use closed session, what belongs there, and how to document decisions properly in open session minutes.',
-    date: '2026-09-05',
+    date: '2026-08-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -230,7 +230,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Electronic Voting for Illinois Associations: Board Checklist',
     metaDescription:
       'What Illinois condo and HOA boards should verify before moving to electronic voting: authority, consent, ballot integrity, records, and vendor controls.',
-    date: '2026-09-15',
+    date: '2026-08-30',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -297,7 +297,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Adopting and Enforcing Association Rules in Illinois',
     metaDescription:
       'How Illinois condo and HOA boards adopt rules that hold up: authority in the declaration, owner notice and comment, fair hearings, and consistent enforcement.',
-    date: '2026-09-24',
+    date: '2026-09-03',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -367,7 +367,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'New Condo Board Member Guide: The First 30 Days',
     metaDescription:
       'A 30-day onboarding plan for new Illinois condo and HOA board members: documents to read, financials to review, and questions to ask before your first vote.',
-    date: '2026-10-03',
+    date: '2026-09-07',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -443,7 +443,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Developer Turnover: What an Illinois Association Board Should Collect',
     metaDescription:
       'A collection checklist for Illinois associations at developer turnover: documents, financial records, warranties, as-builts, keys, and professional reviews.',
-    date: '2026-10-13',
+    date: '2026-09-11',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -525,7 +525,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Fiduciary Duty Self-Audit for Illinois Association Boards',
     metaDescription:
       'A self-audit Illinois condo and HOA boards can run annually to test care, loyalty, and process: conflicts, documentation, financial oversight, and insurance.',
-    date: '2026-10-22',
+    date: '2026-09-15',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -603,7 +603,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Illinois Association Annual Meetings: Notice, Quorum, and Minutes',
     metaDescription:
       'How Illinois condo and HOA boards plan an annual meeting that holds up: notice logistics, quorum and proxy handling, election mechanics, and minute drafting.',
-    date: '2026-10-31',
+    date: '2026-09-19',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
@@ -678,7 +678,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
     title: 'Association Emergency Planning: A Board-Ready Playbook',
     metaDescription:
       'An emergency planning playbook for Illinois condo, HOA, and townhome boards: authority, contacts, communication, vendor readiness, and post-event documentation.',
-    date: '2026-11-10',
+    date: '2026-09-23',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
     readTime: '7 min read',

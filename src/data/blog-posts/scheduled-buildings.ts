@@ -6,7 +6,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Fannie Mae and Freddie Mac Condo Eligibility: A Board Readiness Guide',
     metaDescription:
       'How Illinois condo boards prepare for Fannie Mae and Freddie Mac project reviews: reserves, questionnaires, insurance, litigation, and deferred maintenance answers.',
-    date: '2026-08-22',
+    date: '2026-08-20',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -78,7 +78,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Condo Master Policy vs. HO-6: What the Board Should Explain',
     metaDescription:
       'Illinois condo boards: how the association master policy and an owner HO-6 policy fit together, what the declaration controls, and how to communicate coverage gaps.',
-    date: '2026-09-01',
+    date: '2026-08-24',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
     readTime: '7 min read',
@@ -136,7 +136,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Who Pays for a Condo Water Leak? Start With These Documents',
     metaDescription:
       'Illinois condo water leak responsibility: how the declaration, the Condominium Property Act, and insurance interact, plus a board response checklist.',
-    date: '2026-09-10',
+    date: '2026-08-28',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
     readTime: '7 min read',
@@ -203,7 +203,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Chicago Facade Compliance: How Condo Boards Can Stay Project-Ready',
     metaDescription:
       'Chicago condo boards and facade compliance: how to confirm current City requirements, hire the right professionals, budget for repairs, and document board decisions.',
-    date: '2026-09-19',
+    date: '2026-09-01',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',
     readTime: '7 min read',
@@ -267,7 +267,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Capital Planning for Vintage Chicago Condominium Buildings',
     metaDescription:
       'Capital planning for vintage Chicago condo buildings: reserve studies, component inventories, funding strategy, and a board checklist for aging systems.',
-    date: '2026-09-29',
+    date: '2026-09-05',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
     readTime: '7 min read',
@@ -335,7 +335,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Directors and Officers Insurance: Questions Every Volunteer Board Should Ask',
     metaDescription:
       'D and O insurance for Illinois condo and HOA boards: what it typically covers, common exclusions, and the questions volunteer directors should ask at renewal.',
-    date: '2026-10-08',
+    date: '2026-09-09',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
     readTime: '7 min read',
@@ -395,7 +395,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'EV Charging Requests: A Process for Illinois Association Boards',
     metaDescription:
       'Illinois condo and HOA boards: how to build a consistent, documented process for EV charging requests covering electrical capacity, metering, insurance, and approvals.',
-    date: '2026-10-17',
+    date: '2026-09-13',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',
     readTime: '7 min read',
@@ -454,7 +454,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Snow and Ice Vendor Oversight for Illinois Associations',
     metaDescription:
       'Illinois condo and HOA snow removal: contract terms, trigger depths, documentation, insurance requirements, and a board oversight checklist for winter vendors.',
-    date: '2026-10-27',
+    date: '2026-09-17',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
     readTime: '7 min read',
@@ -527,7 +527,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Chicago High-Rise Life-Safety Planning for Condominium Boards',
     metaDescription:
       'Chicago high-rise condo boards: how to verify life-safety obligations, maintain systems and records, run resident education, and document board decisions.',
-    date: '2026-11-05',
+    date: '2026-09-21',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',
     readTime: '7 min read',
@@ -591,7 +591,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Vendor RFPs for Condo and HOA Boards: Scope, Insurance, and Controls',
     metaDescription:
       'A vendor RFP framework for Illinois condo and HOA boards: writing scope, requiring insurance, comparing bids fairly, and building financial controls into contracts.',
-    date: '2026-11-14',
+    date: '2026-09-25',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
     readTime: '7 min read',
