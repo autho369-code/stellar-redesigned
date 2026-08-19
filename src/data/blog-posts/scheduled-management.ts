@@ -6,7 +6,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'How Illinois Association Boards Should Adopt an Annual Budget',
     metaDescription:
       'A practical guide for Illinois condo and HOA boards on building, noticing, and adopting an annual budget, plus the owner notice steps to confirm with counsel.',
-    date: '2026-08-25',
+    date: '2026-08-21',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -104,7 +104,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'Chicago Condominium Association Compliance Calendar',
     metaDescription:
       'A year-round compliance calendar framework for Chicago condominium association boards, covering city ordinance obligations, inspections, records, and annual governance tasks.',
-    date: '2026-09-03',
+    date: '2026-08-25',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',
     readTime: '7 min read',
@@ -211,7 +211,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'Delinquency Escalation: A Consistent Process for Association Boards',
     metaDescription:
       'How Illinois condo and HOA boards can build a written, consistently applied delinquency escalation policy that protects cash flow and reduces the risk of selective enforcement claims.',
-    date: '2026-09-12',
+    date: '2026-08-29',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -295,7 +295,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'What to Review in a Community Association Management Agreement',
     metaDescription:
       'A clause-by-clause guide for Illinois condo and HOA boards reviewing a community association management agreement, including fees, scope, termination, records, and insurance.',
-    date: '2026-09-22',
+    date: '2026-09-02',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
     readTime: '7 min read',
@@ -397,7 +397,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'The Illinois Condominium Ombudsperson Act: Current Board Duties',
     metaDescription:
       'What Illinois condominium and common interest community boards should understand about the Condominium and Common Interest Community Ombudsperson Act and how to verify current duties.',
-    date: '2026-10-01',
+    date: '2026-09-06',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
     readTime: '7 min read',
@@ -498,7 +498,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'How to Verify an Illinois Community Association Manager License',
     metaDescription:
       'A step-by-step guide for Illinois condo and HOA boards on verifying community association manager and management firm licensure through IDFPR before signing an agreement.',
-    date: '2026-10-10',
+    date: '2026-09-10',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
     readTime: '6 min read',
@@ -594,7 +594,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'Board Communication Systems That Reduce Conflict and Lost Decisions',
     metaDescription:
       'How Illinois condo and HOA boards can structure meetings, minutes, owner communication, and records so decisions are documented, findable, and defensible.',
-    date: '2026-10-20',
+    date: '2026-09-14',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
     readTime: '7 min read',
@@ -691,7 +691,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'Preparing for Insurance Renewal: An Association Board Checklist',
     metaDescription:
       'A preparation checklist for Illinois condo and HOA boards heading into insurance renewal, covering documentation, coverage review, deductibles, and owner communication.',
-    date: '2026-10-29',
+    date: '2026-09-18',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
     readTime: '7 min read',
@@ -907,7 +907,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     title: 'How Many Associations Should One Community Manager Handle?',
     metaDescription:
       'A board guide to evaluating a community association manager\'s workload, portfolio capacity, support team, response standards, and coverage before hiring a management company.',
-    date: '2026-11-07',
+    date: '2026-09-22',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
     readTime: '7 min read',
