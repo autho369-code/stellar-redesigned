@@ -89,6 +89,31 @@ response and repair responsibility are the exact categories generating the 1★
 reviews, and the site had no page answering "what happens when the heat goes
 out," which is also the substance of the 2024 BBB complaint.
 
+**LinkedIn distribution (PR #26, merged + live).** Posting to a company page
+via the API needs Community Management API access — two-tier app review,
+registered org, verified page, weeks-to-months approval. Not worth blocking on.
+Built `/rss.xml` instead (`scripts/generate-rss.mjs`, runs in prebuild beside
+the sitemap, same publication gate, capped at 20 items): Buffer/Hootsuite/
+Zapier/Make already hold LinkedIn's approval and can post each new guide on its
+release day. Company page is `linkedin.com/company/6977209`. Backfill copy for
+six hand-picked guides in `docs/linkedin-launch-posts.md` — post one every 3–4
+days; bulk-posting the back catalogue reads as a bot and gets buried.
+**Not connected yet** — the scheduler hookup is an account action for Mirsad.
+
+**Performance finding (measured 2026-08-21, NOT yet fixed).** The homepage
+downloads **293KB gzip of JS**: `index` 169KB + `article-content` **107KB** +
+`area-data` 17KB. The article-content chunk is every blog body including the
+~39 future-dated posts that are not published and cannot render. Every page on
+the site pays for it, because the public routes are eager (deliberately — that
+is what makes `hydrateRoot` hydrate the prerendered HTML in place instead of
+wiping it).
+A real fix is a genuine refactor, not a config tweak: article *content* must
+split from article *metadata* so content loads per-slug, while SSR still gets
+content synchronously for `renderToString`, and hydration still finds matching
+markup. Naive `React.lazy` on routes re-introduces the DOM-wipe/spinner problem
+PR #16 fixed. Treat as a dedicated task with the prerender + hydration path
+verified in a browser before merge.
+
 **Localo microsite — new finding, act on this.**
 `stellar-property-management.localo.site` is an auto-generated listing on the
 Localo local-SEO platform that ranks on brand queries. It publishes **false
