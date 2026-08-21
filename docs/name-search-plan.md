@@ -121,6 +121,36 @@ rewards persuasion.
 > Mirsad Cerimovic
 > mirsad@stellarpropertygroup.com · 773.728.0652
 
+### If someone quotes you a fee — 2026-08-21
+
+A $2,000 removal fee was quoted. **Do not pay it.** Two possibilities, and the
+sender's email domain tells you which:
+
+**Almost certainly a third-party reputation vendor.** Patch's own published
+process is free and asks only for a link, the name as printed, and
+documentation. Vendors monitor arrest coverage, solicit the named parties, and
+charge $2,000–$3,000 per source for work that is either (a) the identical free
+email you can send yourself, or (b) impossible, because they have no control
+over the article at all. Paying also marks you as someone who pays, and the
+solicitations multiply. Ignore it and file the free request yourself.
+
+**If the demand genuinely came from an `@patch.com` address**, that is a
+different and more useful situation. Google maintains an **exploitative removal
+practices** policy covering sites that publish damaging personal information,
+rank it prominently, and then require payment to remove it. Content from such
+sites can be **deindexed by Google even when the publisher refuses to take it
+down**. Two requirements: you are the subject of the content, and the site
+requires payment for removal. Keep the email — it is the evidence — and file
+the request with Google.
+
+That outcome would be *better* than a Patch takedown, because deindexing kills
+the search result regardless of what the page does.
+
+**Either way, do not pay, and do not argue with the sender.** Save the message,
+note the date and the sending address, and proceed. If the sender is
+impersonating Patch or selling a free process, it is also reportable to the
+Illinois Attorney General's consumer fraud division and the FTC.
+
 ### Rules
 
 - **Attach the document.** A request without documentation is declined on
