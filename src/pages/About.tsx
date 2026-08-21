@@ -315,7 +315,8 @@ export default function About() {
                   leads each new board through its transition personally. From
                   July 2007 to November 2024 he also taught the City of Chicago
                   Stationary Engineer&rsquo;s License prep course at the SEIU
-                  Local 1 Training Fund.
+                  Local 1 Training Fund, taking roughly 700 engineers through
+                  the city examination.
                 </p>
                 <p className="text-sm text-paper/70 font-light leading-relaxed mb-8">
                   A licensed Illinois Community Association Manager, he holds the

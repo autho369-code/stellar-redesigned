@@ -33,7 +33,7 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'Did Mirsad Cerimovic teach the Chicago Stationary Engineer’s License course?',
     answer:
-      'Yes. From July 2007 to November 2024 he was the instructor for the City of Chicago Stationary Engineer’s License eight-week exam-preparation course at the SEIU Local 1 Training Fund, helping establish the program and teaching it for seventeen years — training the engineers who operate the boilers, chillers, and life-safety systems in Chicago buildings. He holds that license himself, along with NIULPE power-engineer certification. That background is why building operations, rather than paperwork, sits at the centre of how he approaches reserve studies and capital planning.',
+      'Yes. From July 2007 to November 2024 he was the instructor for the City of Chicago Stationary Engineer’s License eight-week exam-preparation course at the SEIU Local 1 Training Fund, helping establish the program and teaching it for seventeen years. Roughly 700 engineers went through his class and sat the city examination — the people who operate the boilers, chillers, and life-safety systems in Chicago buildings. He holds that license himself, along with NIULPE power-engineer certification. That background is why building operations, rather than paperwork, sits at the centre of how he approaches reserve studies and capital planning.',
   },
   {
     question: 'What does Mirsad Cerimovic write about?',
