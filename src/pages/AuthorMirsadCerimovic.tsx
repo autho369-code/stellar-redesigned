@@ -87,7 +87,7 @@ export default function AuthorMirsadCerimovic() {
         honorificSuffix: 'CAM, CMCA, AMS',
         jobTitle: 'Founder & Principal',
         description:
-          'Founder and principal of Stellar Property Management, a Chicago community association management firm serving condominium, HOA, and townhome boards since 2007.',
+          'Founder and principal of Stellar Property Management. In Chicago community association management since 1997, and for seventeen years the instructor for the City of Chicago Stationary Engineer’s License exam-prep course at SEIU Local 1.',
         url: PROFILE_URL,
         mainEntityOfPage: { '@id': `${PROFILE_URL}#webpage` },
         image: {
@@ -111,6 +111,11 @@ export default function AuthorMirsadCerimovic() {
             postalCode: '60625',
             addressCountry: 'US',
           },
+        },
+        affiliation: {
+          '@type': 'Organization',
+          name: 'SEIU Local 1',
+          description: 'Instructor, City of Chicago Stationary Engineer’s License exam-prep course, 2007–2024.',
         },
         memberOf: [
           { '@type': 'Organization', name: 'Community Associations Institute', url: 'https://www.caionline.org/' },
@@ -145,6 +150,8 @@ export default function AuthorMirsadCerimovic() {
           'Reserve fund planning',
           'Capital project oversight',
           'Section 22.1 resale disclosures',
+          'Chicago building systems and boiler operations',
+          'City of Chicago Stationary Engineer licensing',
         ],
       },
     ],
@@ -193,7 +200,7 @@ export default function AuthorMirsadCerimovic() {
               />
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                Founder &amp; Principal · CAM · CMCA · AMS
+                Founder &amp; Principal · CAM · CMCA · AMS · In the industry since 1997
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Mirsad <em className="font-medium text-gold-600">Cerimovic.</em>
@@ -201,9 +208,10 @@ export default function AuthorMirsadCerimovic() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Founder and principal of Stellar Property Management, a Chicago
-                firm devoted exclusively to condominium, HOA, and townhome
-                associations since 2007.
+                In Chicago community association management since 1997.
+                Founder and principal of Stellar Property Management, a firm
+                devoted exclusively to condominium, HOA, and townhome
+                associations.
               </p>
             </div>
           </div>
@@ -220,13 +228,16 @@ export default function AuthorMirsadCerimovic() {
                 Biography
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
-                Nearly two decades of
+                In Chicago associations
                 <br />
-                Chicago <em className="font-medium text-gold-600">associations.</em>
+                since <em className="font-medium text-gold-600">1997.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
-                Mirsad Cerimovic founded Stellar Property Management in 2007 on a
-                conviction that community association management deserved to be
+                Mirsad Cerimovic entered the Chicago community association
+                industry in April 1997 and has worked in it ever since,
+                managing portfolios that have exceeded fifty associations. In
+                2007 he founded Stellar Property Management on a conviction
+                that community association management deserved to be
                 someone&rsquo;s only business rather than a side line of a
                 brokerage. The firm has never managed rentals. It manages
                 condominium associations, homeowner associations, and townhome
@@ -246,6 +257,14 @@ export default function AuthorMirsadCerimovic() {
                 member of the Community Associations Institute and its Illinois
                 Chapter, where Illinois statutory changes affecting condominium
                 and common interest community boards are tracked each session.
+              </p>
+              <p className="text-slate-600 font-light leading-relaxed mb-5">
+                From 2007 to 2024 he taught the exam-preparation course for the
+                City of Chicago Stationary Engineer&rsquo;s License at SEIU
+                Local 1 — seventeen years training the engineers who run the
+                boilers, chillers, and life-safety systems in Chicago&rsquo;s
+                buildings. It is the reason building operations, rather than
+                paperwork, sits at the centre of how he reads a reserve study.
               </p>
               <p className="text-slate-600 font-light leading-relaxed">
                 He writes the firm&rsquo;s board guides on Illinois condominium
@@ -273,8 +292,16 @@ export default function AuthorMirsadCerimovic() {
                     <dd className="text-ink">Founder &amp; Principal, Stellar Property Management</dd>
                   </div>
                   <div>
-                    <dt className="text-slate-500 mb-1">Practicing since</dt>
+                    <dt className="text-slate-500 mb-1">In the industry since</dt>
+                    <dd className="text-ink">April 1997</dd>
+                  </div>
+                  <div>
+                    <dt className="text-slate-500 mb-1">Founded Stellar</dt>
                     <dd className="text-ink">2007</dd>
+                  </div>
+                  <div>
+                    <dt className="text-slate-500 mb-1">Taught</dt>
+                    <dd className="text-ink">City of Chicago Stationary Engineer&rsquo;s License prep, SEIU Local 1, 2007&ndash;2024</dd>
                   </div>
                   <div>
                     <dt className="text-slate-500 mb-1">Credentials</dt>

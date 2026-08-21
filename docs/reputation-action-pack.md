@@ -7,38 +7,37 @@
 
 ---
 
-## 0. New finding: the Localo microsite is publishing false facts
+## 0. Correction: the Localo microsite is accurate — but uncontrolled
 
-`stellar-property-management.localo.site` ranks on brand queries and is an
-auto-generated listing on the **Localo** platform (a local-SEO tool — footer
-reads "Powered by Localo"). Two problems, in order of severity:
+**An earlier draft of this file said the Localo listing published false claims.
+That was wrong, and the error was mine.** I compared its "28+ years of
+experience managing 50+ properties" against the *firm's* 2007 founding date and
+the *current* 42-association portfolio. Mirsad entered the community
+association industry in **April 1997**, and the portfolio has exceeded 50
+associations at points. Both figures are correct — one describes the
+practitioner's career, the other a past peak, neither describes the firm today.
 
-**It states things that are not true.** The page claims *"28+ years of
-experience managing 50+ properties across Chicago."* Stellar was founded in
-2007 — that is 19 years, not 28 — and manages 42 associations, not 50+
-properties. Inaccurate claims ranking on a brand query are a liability far
-beyond SEO: a dissatisfied owner who notices the discrepancy has a ready-made
-credibility argument, and inflated experience claims in a licensed profession
-are the kind of thing a regulator or opposing counsel will happily quote back.
+The lesson generalizes: before challenging a third-party listing, confirm which
+subject and which time period each claim refers to. Sending a correction demand
+for accurate numbers damages credibility with whoever receives it.
 
-**It captures brand traffic and returns none.** The page does not link to
-stellarpropertygroup.com at all. Someone searching the brand can land there,
-read stale info, and never reach the real site.
+**What is still worth doing.** `stellar-property-management.localo.site` is an
+auto-generated listing on the Localo local-SEO platform (footer reads "Powered
+by Localo") that ranks on brand queries and **does not link to
+stellarpropertygroup.com at all**. So it captures brand searches and returns
+none of them. Localo requires a signup, so someone created it deliberately —
+most likely the agency account `citadeladvertising@gmail.com`, still primary on
+the Google Business Profile.
 
-**Almost certainly created by the agency account** —
-`citadeladvertising@gmail.com`, which is still primary on the Google Business
-Profile. Localo requires a signup, so someone set this up deliberately.
+The ask is access, not correction:
 
-Do this:
-
-1. Ask the agency directly: *"Who set up the Localo listing at
-   stellar-property-management.localo.site, and who has the login?"*
-2. If Stellar controls it — correct the claims to "Serving Chicago and the
-   North Shore since 2007" and "42 associations, 2,450+ residences," and add
-   `https://www.stellarpropertygroup.com` as the website.
-3. If nobody at Stellar controls it, or the agency will not hand over access —
-   have it taken down. An uncontrolled page publishing false claims under the
-   brand name is worse than no page.
+1. Ask the agency: *"Who set up the Localo listing at
+   stellar-property-management.localo.site, and who holds the login?"*
+2. Once you control it, add `https://www.stellarpropertygroup.com` as the
+   website — ideally deep-linking to `/about/mirsad-cerimovic`, since the page
+   is about the practitioner's experience.
+3. Keep the 1997 and 50+ figures. They are accurate and they are an asset:
+   28 years in the industry is a stronger credential than the firm's 19.
 
 ---
 

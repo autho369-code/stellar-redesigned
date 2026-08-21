@@ -137,23 +137,26 @@ point.
 
 **One line (directories, X, Instagram):**
 
-> Founder & Principal at Stellar Property Management. CMCA, AMS. Chicago condo
-> & HOA association management since 2007.
+> Founder & Principal at Stellar Property Management. Licensed Illinois CAM,
+> CMCA, AMS. Chicago condo & HOA association management since 1997.
 
 **Short (About.me, Gravatar, Alignable, Facebook intro):**
 
-> Mirsad Cerimovic is the founder and principal of Stellar Property Management,
-> a Chicago firm managing 42 condominium, HOA, and townhome associations across
-> Chicago and the North Shore. A licensed Illinois Community Association Manager
-> holding the CMCA certification and AMS designation, he writes the firm's board
-> guides on Illinois association law, reserves, and governance.
+> Mirsad Cerimovic has worked in Chicago community association management since
+> 1997 and founded Stellar Property Management in 2007. The firm manages 42
+> condominium, HOA, and townhome associations across Chicago and the North
+> Shore. A licensed Illinois Community Association Manager holding the CMCA
+> certification and AMS designation, he taught the City of Chicago Stationary
+> Engineer's License prep course at SEIU Local 1 from 2007 to 2024.
 > https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 
 **Long (LinkedIn, Muck Rack, speaker bios):**
 
-> Mirsad Cerimovic founded Stellar Property Management in 2007 to do one thing:
-> manage community associations. Not rentals, not brokerage — condominium
-> associations, HOAs, and townhome communities.
+> Mirsad Cerimovic entered the Chicago community association industry in April
+> 1997 and founded Stellar Property Management in 2007 to do one thing: manage
+> community associations. Not rentals, not brokerage — condominium associations,
+> HOAs, and townhome communities. He has managed portfolios exceeding fifty
+> associations.
 >
 > The firm manages 42 associations and roughly 2,450 residences across Chicago
 > and the North Shore, with a 96% client retention rate. He reviews the
@@ -161,9 +164,12 @@ point.
 > leads each incoming board through its transition personally.
 >
 > He is a licensed Illinois Community Association Manager (CMCA, AMS) and a
-> member of the Community Associations Institute and its Illinois Chapter. He
-> writes the firm's board guides on Illinois condominium law, reserve funding,
-> and association governance, published at stellarpropertygroup.com.
+> member of the Community Associations Institute and its Illinois Chapter. From
+> 2007 to 2024 he taught the exam-preparation course for the City of Chicago
+> Stationary Engineer's License at SEIU Local 1 — seventeen years training the
+> engineers who run Chicago's building systems. He writes the firm's board
+> guides on Illinois condominium law, reserve funding, and association
+> governance, published at stellarpropertygroup.com.
 >
 > Board members evaluating management can reach him at
 > mirsad@stellarpropertygroup.com.

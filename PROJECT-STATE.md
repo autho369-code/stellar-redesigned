@@ -158,14 +158,15 @@ markup. Naive `React.lazy` on routes re-introduces the DOM-wipe/spinner problem
 PR #16 fixed. Treat as a dedicated task with the prerender + hydration path
 verified in a browser before merge.
 
-**Localo microsite — new finding, act on this.**
-`stellar-property-management.localo.site` is an auto-generated listing on the
-Localo local-SEO platform that ranks on brand queries. It publishes **false
-claims** — "28+ years of experience managing 50+ properties" (founded 2007 =
-19 years; 42 associations) — and does **not link to stellarpropertygroup.com
-at all**, so it captures brand traffic and returns none. Almost certainly
-created by the agency account `citadeladvertising@gmail.com`. Either take
-control and correct it, or have it taken down.
+**Localo microsite — CORRECTION 2026-08-21.** An earlier note in this file
+called its "28+ years / 50+ properties" claims false. **They are accurate.**
+Mirsad entered the community association industry **April 1997** (the 2007 date
+is the *firm's* founding), and the portfolio has exceeded 50 associations at
+points. The listing is still worth taking control of for a different reason: it
+ranks on brand queries and links nowhere back to the site. Ask the agency
+(`citadeladvertising@gmail.com`) who holds the Localo login, then add the
+website link. Keep the figures — 28 years in the industry is a stronger
+credential than the firm's 19.
 
 **LinkedIn confirmed live 2026-08-21** — verified badge, real photo, 748
 followers, headline "CMCA, AMS, Principal-Owner at Stellar Property
