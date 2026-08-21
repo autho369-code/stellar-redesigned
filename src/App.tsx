@@ -29,6 +29,7 @@ import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Resources from './pages/Resources';
 import CondoLiving from './pages/CondoLiving';
+import AuthorMirsadCerimovic from './pages/AuthorMirsadCerimovic';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
@@ -86,6 +87,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/mirsad-cerimovic" element={<AuthorMirsadCerimovic />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/condominium-management" element={<CondominiumManagement />} />
           <Route path="/services/hoa-management" element={<HOAManagement />} />

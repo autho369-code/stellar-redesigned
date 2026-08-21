@@ -12,6 +12,7 @@ const publicationCutoff = getChicagoPublicationDate();
 const staticRoutes = [
   '/',
   '/about',
+  '/about/mirsad-cerimovic',
   '/services',
   '/services/condominium-management',
   '/services/hoa-management',
