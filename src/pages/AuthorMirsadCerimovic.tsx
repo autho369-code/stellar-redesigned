@@ -29,7 +29,7 @@ const credentials = [
   {
     abbr: 'CMCA',
     name: 'Certified Manager of Community Associations',
-    desc: 'The international certification for community association managers, administered by the Community Association Managers International Certification Board.',
+    desc: 'The international certification for community association managers, administered by the Community Association Managers International Certification Board. The certification is listed and current in CAMICB’s public Find a CMCA directory, which also publishes any revocation — so the absence of a sanction is part of what the record shows.',
   },
   {
     abbr: 'AMS',
@@ -155,6 +155,12 @@ export default function AuthorMirsadCerimovic() {
             '@type': 'EducationalOccupationalCredential',
             name: 'Certified Manager of Community Associations (CMCA)',
             credentialCategory: 'Professional certification',
+            url: 'https://www.camicb.org/find-a-cmca/',
+            recognizedBy: {
+              '@type': 'Organization',
+              name: 'Community Association Managers International Certification Board',
+              url: 'https://www.camicb.org/',
+            },
           },
           {
             '@type': 'EducationalOccupationalCredential',
@@ -443,7 +449,18 @@ export default function AuthorMirsadCerimovic() {
                   IDFPR license lookup
                 </a>
                 : the record shows an active license and no disciplinary
-                history.
+                history. The CMCA certification can be confirmed separately in
+                CAMICB&rsquo;s{' '}
+                <a
+                  href="https://www.camicb.org/find-a-cmca/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors"
+                >
+                  Find a CMCA directory
+                </a>{' '}
+                by searching the surname — the same directory that publishes
+                every CMCA revocation.
               </p>
             </div>
 
