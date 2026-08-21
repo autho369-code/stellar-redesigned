@@ -48,7 +48,8 @@ the site biography.
 > power engineer — qualified to run a commercial building's mechanical plant,
 > not merely to hire someone who can. From July 2007 to November 2024 I taught the
 > exam-preparation course for that same Chicago license at SEIU Local 1,
-> seventeen years training the engineers who keep the city's buildings running.
+> taking roughly 700 engineers through the city examination — the people who keep
+> the city's buildings running.
 >
 > That combination changes the work. Most association managers read a reserve
 > study as a spreadsheet. I read it as a building — which components are
@@ -102,17 +103,41 @@ Chicago, Illinois
 > transition personally and set the financial reporting standard applied across
 > the portfolio.
 
-**SEIU Local 1** — Instructor, Stationary Engineer's License Exam Preparation ·
+**SEIU Local 1 Training Fund** — Instructor, Stationary Engineer's License Exam Preparation ·
 July 2007 – November 2024 · Chicago, Illinois
 
 > Helped establish and then taught the exam-preparation course for the City of
-> Chicago Stationary Engineer's License for seventeen years — boiler and pressure-vessel
-> operation, refrigeration, building mechanical systems, and the code knowledge
-> the city examination requires. Trained the engineers who operate the plant in
-> Chicago's commercial and residential buildings.
+> Chicago Stationary Engineer's License for seventeen years — boiler and
+> pressure-vessel operation, refrigeration, building mechanical systems, and the
+> code knowledge the city examination requires. Roughly 700 engineers went
+> through the class and sat the city examination: the people who now operate the
+> plant in Chicago's commercial and residential buildings.
 
 If roles between 1997 and 2007 belong on the profile, add them — the 1997 start
 date is now published on the site and the two should agree.
+
+---
+
+## 4b. Recommendations — ask for these
+
+Recommendations are public text attributed to a named person, on the page that
+ranks for your name. Nothing else on LinkedIn does that.
+
+**First ask:** the Training Fund's former Executive Director (retired, public
+profile). Frame it as a normal professional ask, not a reputation request:
+
+> I'm finally building out my LinkedIn properly. Would you be willing to write
+> a short recommendation about the years I ran the stationary engineer prep
+> course? Happy to remind you of specifics if useful — and no problem at all if
+> you'd rather not.
+
+Suggest they name the course and the span of years. That is what makes it
+useful to a reader and legible to a search engine.
+
+**Then ten former students.** Chief engineers and engineers across Chicago
+buildings. Reference the year they took the class; a personal note converts far
+better than a bare request. Five out of ten is a good return, and five is
+plenty.
 
 ---
 

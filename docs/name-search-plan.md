@@ -191,6 +191,28 @@ Currently owned: **two.**
 | Alignable · Chamber of Commerce | — | Local business profiles, rank well regionally |
 | Podcast / webinar appearances | — | Slowest, but the most durable |
 
+### The 700 are an asset — the emails are not
+
+Roughly 700 engineers went through the class. Seventeen years on they are
+stationary engineers and chief engineers across Chicago's commercial and
+residential buildings, and they hold their licence partly because of that
+course. That is a network, and it converts into three things the correspondence
+never could:
+
+1. **LinkedIn recommendations.** Ask ten, expect five. Five public
+   recommendations from named engineers describing the course and the years is
+   third-party corroboration at a volume almost nobody has — and it sits on the
+   page that already ranks for the name. Start with the Training Fund's former
+   Executive Director; a recommendation from him outweighs any student's.
+2. **Connections.** Several hundred relevant connections strengthens the
+   profile's authority and puts posts in front of the people who sit in
+   buildings talking to boards.
+3. **Referrals.** A chief engineer is in the room when a board complains about
+   its management company.
+
+Work the list in batches of ten. A personal note referencing the year they took
+the class converts far better than a bare connection request.
+
 ### On documentation you hold privately
 
 Employment records and correspondence confirming the SEIU Local 1 years exist
@@ -288,8 +310,9 @@ point.
 > Shore. A licensed Illinois Community Association Manager holding the CMCA
 > certification and AMS designation, he is also a licensed City of Chicago
 > stationary engineer and NIULPE-certified power engineer, and taught the
-> Chicago Stationary Engineer's License prep course at SEIU Local 1 from July 2007
-> to November 2024.
+> Chicago Stationary Engineer's License prep course at the SEIU Local 1 Training
+> Fund from July 2007 to November 2024, taking roughly 700 engineers through the
+> city examination.
 > https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 
 **Long (LinkedIn, Muck Rack, speaker bios):**
@@ -309,9 +332,8 @@ point.
 > licensed City of Chicago stationary engineer, and a NIULPE-certified power
 > engineer — qualified to run a commercial building's mechanical plant, not
 > merely to hire someone who can. From July 2007 to November 2024 he taught the
-> exam-preparation course for that same Chicago license at SEIU Local 1 —
-> seventeen years training the engineers who keep the city's buildings
-> running. He writes the firm's board
+> exam-preparation course for that same Chicago license at the SEIU Local 1
+> Training Fund, taking roughly 700 engineers through the city examination. He writes the firm's board
 > guides on Illinois condominium law, reserve funding, and association
 > governance, published at stellarpropertygroup.com.
 >
