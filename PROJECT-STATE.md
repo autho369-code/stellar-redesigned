@@ -76,6 +76,50 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
   the NotFound page), and both `scripts/generate-sitemap.mjs` and
   `scripts/prerender.mjs`. 121 routes prerendered, all SEO gates green.
 
+**PERSONAL-NAME SEARCH — the actual priority (owner directive 2026-08-21).**
+The reputation goal is not only the business brand SERP: an arrest record ranks
+on page one for **"Mirsad Cerimovic"**. Verified target:
+`patch.com/illinois/elmhurst/6-elmhurst-duis-over-weekend-cops`, Elmhurst
+Patch, **7 March 2022** — a police-blotter roundup of six arrests where the
+name appears once, in a list, on a page not about him. Charges only, no case
+outcome stated. That shape is favourable: it ranks on Patch's domain authority,
+not relevance, and an editor can strike one name without unpublishing.
+Full plan in `docs/name-search-plan.md`.
+- **Highest leverage is removal at the source**, not SEO — a polite one-time
+  request to Patch with the court disposition attached. Much stronger if
+  charges were dismissed/reduced/resolved without conviction. Also get an
+  Illinois records attorney's read on expungement or sealing.
+- Page one holds ~10 slots; **2 are owned** (LinkedIn + the profile page). The
+  rest is profile creation — see the doc's table and the paste-ready bio kit.
+- **Spelling split is actively hurting:** the Telnyx LOA went out as "Mirsad
+  Cermovic". One spelling everywhere, or Google reads two weak entities.
+- Timeline: 6–10 weeks to first movement, 4–6 months to realistic page-one
+  displacement. It sinks, it does not vanish.
+- Do NOT: hire removal vendors, create fake profiles, pay a mugshot
+  aggregator, or pressure the newsroom.
+
+**Entity work shipped for the name query (2026-08-21, all live):**
+`/about/mirsad-cerimovic` now 2084 words with a six-question entity FAQ
+("Who is Mirsad Cerimovic?") in `src/data/founder-faqs.ts` + FAQPage schema;
+Organization declares `founder`/`employee` pointing at the Person @id so the
+entity is reachable from the homepage graph; site-wide footer link ("Our
+Founder") from all 119 pages; **the real headshot is finally in** —
+`public/images/mirsad-cerimovic.jpg`, wired as a full `ImageObject` on
+`Person.image`, the profile hero, the About founder card, the author box on all
+57 articles, and that page's OG image. All "MC" monogram placeholders removed.
+This closes the "real photo still wanted" item open since May.
+
+**Bundle fix shipped (PR #27).** A Vite transform empties the `content`
+template of future-dated posts in the **client build only** (SSR/prerender
+keeps every body, so prerendered HTML is unchanged and hydration still
+matches — this avoids the lazy-route refactor that would undo PR #16).
+Metadata is deliberately preserved because `getPostNeighborhoods` indexes
+against ALL posts. article-content 396KB→185KB raw, **107KB→49.6KB gzip**;
+homepage total **293KB→236KB gzip**. Self-maintaining: each body enters the
+bundle on its release day via the daily publish workflow.
+Note: `npx vercel --prod` failed with "Upload aborted"; the git-integration
+production deploy also lagged ~10min behind the merge. Worth watching.
+
 **FAQ coverage closed (PR #25, merged + live).** A full audit of the 119 live
 URLs (`node scripts/audit-live-site.mjs`) came back clean — 0 non-200, 0 broken
 internal links, 0 thin pages, 0 missing canonicals/alt. The real gaps were
