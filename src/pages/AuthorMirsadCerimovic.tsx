@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Linkedin, Mail, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { ServiceFAQ } from '../components/seo/ServiceFAQ';
+import { founderFaqs } from '../data/founder-faqs';
 import { blogPosts } from '../data/blog-posts';
 
 const PROFILE_URL = 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic';
@@ -411,6 +413,8 @@ export default function AuthorMirsadCerimovic() {
           </div>
         </div>
       </section>
+
+      <ServiceFAQ items={founderFaqs} title="About Mirsad Cerimovic." />
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-ink text-paper">

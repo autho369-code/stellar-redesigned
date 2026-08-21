@@ -1,0 +1,38 @@
+import type { ServiceFAQItem } from '../components/seo/ServiceFAQ';
+
+// Entity FAQ for the personal-name query. Someone searching the name is asking
+// "who is this person and are they credible" — these answer exactly that, in
+// the form featured snippets and AI assistants quote. Every fact here is
+// already published elsewhere on the site.
+export const founderFaqs: ServiceFAQItem[] = [
+  {
+    question: 'Who is Mirsad Cerimovic?',
+    answer:
+      'Mirsad Cerimovic is the founder and principal of Stellar Property Management, a Chicago community association management firm he started in 2007. He is a licensed Illinois Community Association Manager and holds the CMCA certification and the AMS designation. The firm manages 42 condominium, homeowner, and townhome associations — roughly 2,450 residences — across Chicago and the North Shore.',
+  },
+  {
+    question: 'What does Mirsad Cerimovic do at Stellar Property Management?',
+    answer:
+      'He leads the firm and stays directly involved in four areas: board transitions, the financial reporting standard applied across the portfolio, Illinois statutory compliance alongside association counsel, and reserve and capital planning. Boards evaluating management speak with him rather than a sales team, and he leads each incoming association through its transition personally.',
+  },
+  {
+    question: 'Is Mirsad Cerimovic licensed in Illinois?',
+    answer:
+      'Yes. He is a licensed Community Association Manager under the Illinois Department of Financial and Professional Regulation, and Stellar Property Group Inc. holds Illinois Community Association Management Firm license #291000211. Illinois licenses both managers and the firms they work for, and any board can verify a manager’s standing through IDFPR before signing a management agreement.',
+  },
+  {
+    question: 'What do CMCA and AMS mean?',
+    answer:
+      'CMCA is the Certified Manager of Community Associations credential, the international certification for community association managers, administered by the Community Association Managers International Certification Board. AMS is the Association Management Specialist designation from the Community Associations Institute, recognizing advanced experience and continuing education in community association management. Both require ongoing education to maintain.',
+  },
+  {
+    question: 'What does Mirsad Cerimovic write about?',
+    answer:
+      'He writes the firm’s board guides on Illinois association law, reserve funding, and governance — including Section 22.1 resale disclosures, budget adoption, reserve studies, records requests, and how boards should compare management proposals. The library is published in the Stellar journal and in The Owner’s Companion, a guide written for owners and residents rather than boards.',
+  },
+  {
+    question: 'How do I contact Mirsad Cerimovic?',
+    answer:
+      'By email at mirsad@stellarpropertygroup.com or by phone at 773.728.0652. The office is at 5107 N Western Avenue, Suite 1S, Chicago, Illinois 60625. Association boards requesting a management proposal, and owners with a concern their manager has not resolved, can both reach him directly.',
+  },
+];

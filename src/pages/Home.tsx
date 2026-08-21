@@ -161,6 +161,11 @@ const schema = {
         'https://www.yelp.com/biz/stellar-property-management-chicago',
       ],
       foundingDate: '2007',
+      // Ties the firm to the founder entity from the site's highest-authority
+      // page, so the Person node is reachable from the homepage graph rather
+      // than only from /about and the article bylines.
+      founder: { '@id': 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic' },
+      employee: { '@id': 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic' },
       slogan: 'The art of a well-run building.',
       address: {
         '@type': 'PostalAddress',
