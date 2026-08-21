@@ -2,6 +2,8 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../components/seo/SEOHead';
+import { ServiceFAQ } from '../components/seo/ServiceFAQ';
+import { topicFaqs } from '../data/topic-faqs';
 import { blogPosts } from '../data/blog-posts';
 import {
   contentClusters,
@@ -156,6 +158,8 @@ export default function BlogTopic() {
           </aside>
         </div>
       </main>
+
+      <ServiceFAQ items={topicFaqs[clusterKey]} title={`What boards ask about ${cluster.label.toLowerCase()}.`} />
 
       <section className="bg-ivory-100 border-t border-slate-200 py-20 lg:py-24 text-center">
         <div className="max-w-3xl mx-auto px-5 sm:px-8">

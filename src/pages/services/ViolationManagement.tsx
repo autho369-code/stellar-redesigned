@@ -4,6 +4,8 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { violationManagementFaqs } from '../../data/service-faqs';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function ViolationManagement() {
@@ -206,6 +208,7 @@ export default function ViolationManagement() {
 
       <ClusterGuides cluster="governance" />
       <ServiceAreasStrip service="violation-management" />
+      <ServiceFAQ items={violationManagementFaqs} title="How rule enforcement actually works." />
       <CTASection />
     </>
   );

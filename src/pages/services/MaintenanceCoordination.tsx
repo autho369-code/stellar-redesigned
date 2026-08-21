@@ -4,6 +4,8 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { maintenanceCoordinationFaqs } from '../../data/service-faqs';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function MaintenanceCoordination() {
@@ -206,6 +208,7 @@ export default function MaintenanceCoordination() {
 
       <ClusterGuides cluster="buildings" />
       <ServiceAreasStrip service="maintenance-coordination" />
+      <ServiceFAQ items={maintenanceCoordinationFaqs} title="Outages, repairs, and who is responsible." />
       <CTASection />
     </>
   );
