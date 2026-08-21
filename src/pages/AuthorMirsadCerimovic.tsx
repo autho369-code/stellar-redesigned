@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Mail, Phone } from 'lucide-react';
+import { ArrowRight, Linkedin, Mail, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { blogPosts } from '../data/blog-posts';
 
@@ -11,6 +11,12 @@ const PROFILE_URL = 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 // node's mainEntityOfPage, so the entity gains a URL of its own without
 // orphaning the existing author references in BlogPost.tsx.
 const PERSON_ID = 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic';
+
+// Reciprocal identity link: the LinkedIn profile's Website field should point
+// back at this page. sameAs is only useful when the target resolves publicly —
+// verified live 2026-08-21 (the URL previously 404'd and was deliberately
+// omitted). Non-trailing-slash form; LinkedIn 301s the trailing variant.
+const LINKEDIN_URL = 'https://www.linkedin.com/in/mirsad-cerimovic-0a1a62bb';
 
 const credentials = [
   {
@@ -85,6 +91,7 @@ export default function AuthorMirsadCerimovic() {
         email: 'mirsad@stellarpropertygroup.com',
         telephone: '+1-773-728-0652',
         worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        sameAs: [LINKEDIN_URL],
         workLocation: {
           '@type': 'Place',
           address: {
@@ -277,6 +284,15 @@ export default function AuthorMirsadCerimovic() {
                   >
                     <Phone className="w-4 h-4 shrink-0" strokeWidth={1.5} />
                     773.728.0652
+                  </a>
+                  <a
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    className="flex items-center gap-3 text-slate-600 hover:text-gold-600 transition-colors"
+                  >
+                    <Linkedin className="w-4 h-4 shrink-0" strokeWidth={1.5} />
+                    LinkedIn profile
                   </a>
                 </div>
               </div>

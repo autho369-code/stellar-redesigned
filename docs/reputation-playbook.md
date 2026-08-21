@@ -107,18 +107,30 @@ motives.
 Accreditation is optional and paid — worth considering only after the rating
 recovers, since an accredited C looks worse than an unaccredited B.
 
-### 2. Rebuild LinkedIn
+### 2. LinkedIn — restored 2026-08-21, finish the reciprocal link
 
-`linkedin.com/in/mirsad-cerimovic-0a1a62bb/` currently returns "Profile Not
-Found". LinkedIn profiles rank on page one for personal-name queries almost by
-default — this is a free slot currently being wasted.
+`linkedin.com/in/mirsad-cerimovic-0a1a62bb` was returning "Profile Not Found"
+during the audit earlier the same day; it resolves again now. The URL is wired
+into `Person.sameAs` and shown as a visible `rel="me"` link on the profile
+page.
 
-- Rebuild the personal profile: headline "Founder & Principal, Stellar
-  Property Management | CMCA, AMS | Chicago Condo & HOA Management"
-- Create/claim the company page, link it to the website
-- Once live, add the LinkedIn URL to the `Person.sameAs` array in
-  `src/pages/AuthorMirsadCerimovic.tsx` (deliberately omitted for now — do not
-  add `sameAs` links to profiles that 404)
+Still to do on the LinkedIn side:
+
+- Set the profile's **Website field to
+  `https://www.stellarpropertygroup.com/about/mirsad-cerimovic`** — not the
+  homepage. The reciprocal link is what lets Google treat the two as one
+  entity; a one-way `sameAs` is a much weaker claim.
+- Confirm the profile is **publicly visible** (Settings → Visibility → Profile
+  viewing / public profile). A profile behind an auth wall still can't be
+  verified by a crawler, and the cached "Profile Not Found" result in search
+  will only clear once it is recrawled publicly.
+- Headline: "Founder & Principal at Stellar Property Management | CMCA, AMS |
+  Chicago Condo & HOA Association Management"
+- Create/claim the company page and link it to the website
+
+If the profile ever goes away again, remove `LINKEDIN_URL` from `sameAs` in
+`src/pages/AuthorMirsadCerimovic.tsx` — do not leave `sameAs` pointing at a
+404.
 
 ### 3. Vercel — make the apex redirect permanent
 
