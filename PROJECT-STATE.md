@@ -68,12 +68,32 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
   the NotFound page), and both `scripts/generate-sitemap.mjs` and
   `scripts/prerender.mjs`. 121 routes prerendered, all SEO gates green.
 
+**Localo microsite — new finding, act on this.**
+`stellar-property-management.localo.site` is an auto-generated listing on the
+Localo local-SEO platform that ranks on brand queries. It publishes **false
+claims** — "28+ years of experience managing 50+ properties" (founded 2007 =
+19 years; 42 associations) — and does **not link to stellarpropertygroup.com
+at all**, so it captures brand traffic and returns none. Almost certainly
+created by the agency account `citadeladvertising@gmail.com`. Either take
+control and correct it, or have it taken down.
+
+**LinkedIn confirmed live 2026-08-21** — verified badge, real photo, 748
+followers, headline "CMCA, AMS, Principal-Owner at Stellar Property
+Management". **The real headshot exists there**: save it to
+`public/images/mirsad-cerimovic.jpg` and it can finally close the "real photo
+still wanted" item — About founder card, profile page, and `Person.image`.
+
 **Open, human-only (needs account access, in priority order):** respond to the
-BBB complaint; set the LinkedIn Website field + public visibility; flip the
-Vercel apex redirect 307 → 308; file GSC/Bing removals for the `/site/` prefix;
-start the weekly review-ask rhythm (+10 five-star → 3.5, +28 → 3.8, +46 → 4.0);
-pitch CooperatorNews Chicagoland; determine who controls the `localo.site`
-microsite.
+BBB complaint; email the agency about the Localo listing; set the LinkedIn
+Website field to `/about/mirsad-cerimovic` + confirm public visibility; flip
+the Vercel apex redirect 307 → 308; file GSC/Bing removals for the `/site/`
+prefix (still-indexed spam confirmed 2026-08-21:
+`/site/cobra-mk3-mining-build-08336a`); start the weekly review-ask rhythm
+(+10 five-star → 3.5, +28 → 3.8, +46 → 4.0); pitch CooperatorNews Chicagoland.
+
+**Ready-to-send copy for every item above:** `docs/reputation-action-pack.md`
+(BBB response, five Google review reply patterns, board review-ask email/SMS,
+CooperatorNews pitch, Localo/Vercel/GSC steps).
 
 ## Status update — 2026-08-13, later session (area consolidation + owner-education flagship)
 
