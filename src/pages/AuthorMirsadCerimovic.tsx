@@ -68,7 +68,10 @@ const focus = [
 ];
 
 export default function AuthorMirsadCerimovic() {
-  const guides = blogPosts.slice(0, 12);
+  // Every published guide, not a sample. The archive is the page's substance
+  // for a name query — it is the evidence behind "he writes the board guides"
+  // — and each card is another internal link inside the profile.
+  const guides = blogPosts;
 
   const schema = {
     '@context': 'https://schema.org',
