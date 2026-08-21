@@ -191,6 +191,42 @@ Currently owned: **two.**
 | Alignable · Chamber of Commerce | — | Local business profiles, rank well regionally |
 | Podcast / webinar appearances | — | Slowest, but the most durable |
 
+### On documentation you hold privately
+
+Employment records and correspondence confirming the SEIU Local 1 years exist
+(pay records covering **July 2007 – November 2024**, plus 2008 correspondence
+from the program's first exam cycle). Those are useful, but understand what
+they are and are not for.
+
+**They are good for:** stating the role confidently on LinkedIn and in bios;
+answering a directory, journalist, or chapter that asks for substantiation;
+supporting a request that SEIU Local 1 list you on a public education page.
+
+**They cannot go on the site.** Private correspondence naming third parties and
+carrying their personal email addresses is not publishable — not for SEO, not
+for anything. Publishing it would expose people who never consented, and it
+would not help: Google does not rank claims, it ranks pages.
+
+**They also cannot go in `sameAs`.** That field takes public URLs about the
+person. A pay stub has no URL.
+
+**What actually converts this into a ranking asset** is a public page naming
+you. In descending order of value:
+
+1. **SEIU Local 1** — ask whether their training or education page can list
+   past instructors, or whether an archived course flyer or program page can be
+   made public. A union page naming you as instructor is a genuinely strong,
+   third-party corroborated asset.
+2. **NIULPE** — ask whether certified engineers appear in any public roster.
+3. **CAI Illinois Chapter** — the education committee sometimes lists
+   instructors and speakers.
+4. **CooperatorNews** — the teaching background is the strongest hook in the
+   pitch already drafted in `reputation-action-pack.md` §7. "The manager who
+   taught Chicago's stationary engineers" is a story angle; "a Chicago property
+   manager" is not.
+
+Send any resulting URL and it goes into `Person.sameAs`.
+
 ### The rule that makes all of them work together
 
 **One spelling, everywhere: `Mirsad Cerimovic`.**
@@ -225,8 +261,8 @@ point.
 > Shore. A licensed Illinois Community Association Manager holding the CMCA
 > certification and AMS designation, he is also a licensed City of Chicago
 > stationary engineer and NIULPE-certified power engineer, and taught the
-> Chicago Stationary Engineer's License prep course at SEIU Local 1 from 2007
-> to 2024.
+> Chicago Stationary Engineer's License prep course at SEIU Local 1 from July 2007
+> to November 2024.
 > https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 
 **Long (LinkedIn, Muck Rack, speaker bios):**
@@ -245,8 +281,8 @@ point.
 > He is a licensed Illinois Community Association Manager (CMCA, AMS), a
 > licensed City of Chicago stationary engineer, and a NIULPE-certified power
 > engineer — qualified to run a commercial building's mechanical plant, not
-> merely to hire someone who can. From 2007 to 2024 he taught the
-> exam-preparation course for that same Chicago license at SEIU Local 1,
+> merely to hire someone who can. From July 2007 to November 2024 he taught the
+> exam-preparation course for that same Chicago license at SEIU Local 1 —
 > seventeen years training the engineers who keep the city's buildings
 > running. He writes the firm's board
 > guides on Illinois condominium law, reserve funding, and association

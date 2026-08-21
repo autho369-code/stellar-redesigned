@@ -46,7 +46,7 @@ the site biography.
 > member of the Community Associations Institute and its Illinois Chapter. I am
 > also a licensed City of Chicago stationary engineer and a NIULPE-certified
 > power engineer — qualified to run a commercial building's mechanical plant,
-> not merely to hire someone who can. From 2007 to 2024 I taught the
+> not merely to hire someone who can. From July 2007 to November 2024 I taught the
 > exam-preparation course for that same Chicago license at SEIU Local 1,
 > seventeen years training the engineers who keep the city's buildings running.
 >
@@ -103,10 +103,10 @@ Chicago, Illinois
 > the portfolio.
 
 **SEIU Local 1** — Instructor, Stationary Engineer's License Exam Preparation ·
-2007 – 2024 · Chicago, Illinois
+July 2007 – November 2024 · Chicago, Illinois
 
-> Taught the exam-preparation course for the City of Chicago Stationary
-> Engineer's License for seventeen years — boiler and pressure-vessel
+> Helped establish and then taught the exam-preparation course for the City of
+> Chicago Stationary Engineer's License for seventeen years — boiler and pressure-vessel
 > operation, refrigeration, building mechanical systems, and the code knowledge
 > the city examination requires. Trained the engineers who operate the plant in
 > Chicago's commercial and residential buildings.
