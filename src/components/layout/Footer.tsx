@@ -15,6 +15,9 @@ const serviceLinks = [
 
 const companyLinks = [
   { name: 'About', href: '/about' },
+  // Site-wide link to the founder profile: 119 pages pointing at the page that
+  // has to rank for the personal-name query.
+  { name: 'Our Founder', href: '/about/mirsad-cerimovic' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Service Areas', href: '/service-areas' },
   { name: 'Chicago', href: '/property-management-chicago' },
