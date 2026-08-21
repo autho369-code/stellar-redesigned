@@ -8,7 +8,7 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'Who is Mirsad Cerimovic?',
     answer:
-      'Mirsad Cerimovic is the founder and principal of Stellar Property Management. He entered the Chicago community association industry in April 1997 and founded Stellar in 2007. He is a licensed Illinois Community Association Manager and holds the CMCA certification and the AMS designation. The firm manages 42 condominium, homeowner, and townhome associations — roughly 2,450 residences — across Chicago and the North Shore, and he has managed portfolios exceeding fifty associations.',
+      'Mirsad Cerimovic is the founder and principal of Stellar Property Management. He entered the Chicago community association industry in April 1997 and founded Stellar in 2007. He is a licensed Illinois Community Association Manager holding the CMCA certification and AMS designation, and he is also a licensed City of Chicago stationary engineer and a NIULPE-certified power engineer. The firm manages 42 condominium, homeowner, and townhome associations — roughly 2,450 residences — across Chicago and the North Shore, and he has managed portfolios exceeding fifty associations.',
   },
   {
     question: 'What does Mirsad Cerimovic do at Stellar Property Management?',
@@ -26,9 +26,14 @@ export const founderFaqs: ServiceFAQItem[] = [
       'CMCA is the Certified Manager of Community Associations credential, the international certification for community association managers, administered by the Community Association Managers International Certification Board. AMS is the Association Management Specialist designation from the Community Associations Institute, recognizing advanced experience and continuing education in community association management. Both require ongoing education to maintain.',
   },
   {
+    question: 'Is Mirsad Cerimovic a licensed engineer?',
+    answer:
+      'Yes. He holds a City of Chicago Stationary Engineer’s License and is a certified power engineer under NIULPE, the National Institute for the Uniform Licensing of Power Engineers. That means he is qualified to operate the boilers, chillers, and mechanical plant of a commercial building himself. It is an unusual combination in community association management, where most managers can hire an engineer but cannot read the plant, and it is why he approaches a reserve study as a building rather than a spreadsheet.',
+  },
+  {
     question: 'Did Mirsad Cerimovic teach the Chicago Stationary Engineer’s License course?',
     answer:
-      'Yes. From 2007 to 2024 he was the instructor for the City of Chicago Stationary Engineer’s License exam-preparation course at SEIU Local 1 — seventeen years training the engineers who operate the boilers, chillers, and life-safety systems in Chicago buildings. That background is why building operations, rather than paperwork, sits at the centre of how he approaches reserve studies and capital planning.',
+      'Yes. From 2007 to 2024 he was the instructor for the City of Chicago Stationary Engineer’s License exam-preparation course at SEIU Local 1 — seventeen years training the engineers who operate the boilers, chillers, and life-safety systems in Chicago buildings. He holds that license himself, along with NIULPE power-engineer certification. That background is why building operations, rather than paperwork, sits at the centre of how he approaches reserve studies and capital planning.',
   },
   {
     question: 'What does Mirsad Cerimovic write about?',

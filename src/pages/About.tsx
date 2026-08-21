@@ -112,6 +112,16 @@ const aboutSchema = {
           name: 'Association Management Specialist (AMS)',
           credentialCategory: 'Professional designation',
         },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'City of Chicago Stationary Engineer’s License',
+          credentialCategory: 'Professional license',
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'NIULPE Certified Power Engineer',
+          credentialCategory: 'Professional certification',
+        },
       ],
       knowsAbout: [
         'Condominium association management',
@@ -291,7 +301,7 @@ export default function About() {
                       Founder &amp; Principal
                     </p>
                     <p className="text-[10px] uppercase tracking-luxe text-paper/60">
-                      CAM · CMCA · AMS
+                      CAM · CMCA · AMS · Chicago Stationary Engineer · NIULPE
                     </p>
                   </div>
                 </div>

@@ -36,6 +36,16 @@ const credentials = [
     name: 'Association Management Specialist',
     desc: 'A Community Associations Institute designation recognizing advanced experience and education in community association management.',
   },
+  {
+    abbr: 'SE',
+    name: 'City of Chicago Stationary Engineer’s License',
+    desc: 'Licensed by the City of Chicago to operate high-pressure boilers, chillers, and the mechanical plant of a commercial building — the same license he taught the exam-preparation course for at SEIU Local 1 from 2007 to 2024.',
+  },
+  {
+    abbr: 'NIULPE',
+    name: 'National Institute for the Uniform Licensing of Power Engineers',
+    desc: 'Certified power engineer under the national uniform standard, covering boiler and pressure-vessel operation, refrigeration, and building mechanical systems.',
+  },
 ];
 
 const focus = [
@@ -87,7 +97,7 @@ export default function AuthorMirsadCerimovic() {
         honorificSuffix: 'CAM, CMCA, AMS',
         jobTitle: 'Founder & Principal',
         description:
-          'Founder and principal of Stellar Property Management. In Chicago community association management since 1997, and for seventeen years the instructor for the City of Chicago Stationary Engineer’s License exam-prep course at SEIU Local 1.',
+          'Founder and principal of Stellar Property Management. In Chicago community association management since 1997, a licensed City of Chicago stationary engineer and NIULPE-certified power engineer, and for seventeen years the instructor for the Chicago Stationary Engineer’s License exam-prep course at SEIU Local 1.',
         url: PROFILE_URL,
         mainEntityOfPage: { '@id': `${PROFILE_URL}#webpage` },
         image: {
@@ -140,6 +150,24 @@ export default function AuthorMirsadCerimovic() {
             '@type': 'EducationalOccupationalCredential',
             name: 'Association Management Specialist (AMS)',
             credentialCategory: 'Professional designation',
+          },
+          {
+            '@type': 'EducationalOccupationalCredential',
+            name: 'City of Chicago Stationary Engineer’s License',
+            credentialCategory: 'Professional license',
+            recognizedBy: {
+              '@type': 'GovernmentOrganization',
+              name: 'City of Chicago Department of Buildings',
+            },
+          },
+          {
+            '@type': 'EducationalOccupationalCredential',
+            name: 'NIULPE Certified Power Engineer',
+            credentialCategory: 'Professional certification',
+            recognizedBy: {
+              '@type': 'Organization',
+              name: 'National Institute for the Uniform Licensing of Power Engineers',
+            },
           },
         ],
         knowsAbout: [
@@ -200,7 +228,7 @@ export default function AuthorMirsadCerimovic() {
               />
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                Founder &amp; Principal · CAM · CMCA · AMS · In the industry since 1997
+                Founder &amp; Principal · CAM · CMCA · AMS · Licensed Chicago Stationary Engineer
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Mirsad <em className="font-medium text-gold-600">Cerimovic.</em>
@@ -259,12 +287,21 @@ export default function AuthorMirsadCerimovic() {
                 and common interest community boards are tracked each session.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
-                From 2007 to 2024 he taught the exam-preparation course for the
-                City of Chicago Stationary Engineer&rsquo;s License at SEIU
-                Local 1 — seventeen years training the engineers who run the
-                boilers, chillers, and life-safety systems in Chicago&rsquo;s
-                buildings. It is the reason building operations, rather than
-                paperwork, sits at the centre of how he reads a reserve study.
+                He is also a licensed City of Chicago stationary engineer and
+                a NIULPE-certified power engineer — qualified to run the
+                boilers, chillers, and mechanical plant of a commercial
+                building, not merely to hire someone who can. From 2007 to 2024
+                he taught the exam-preparation course for that same Chicago
+                license at SEIU Local 1, seventeen years training the engineers
+                who keep the city&rsquo;s buildings running.
+              </p>
+              <p className="text-slate-600 font-light leading-relaxed mb-5">
+                That combination is unusual in this industry and it changes the
+                work. Most association managers read a reserve study as a
+                spreadsheet. He reads it as a building — which components are
+                genuinely near end of life, which contractor bid is describing
+                work the plant does not need, and which deferred repair becomes
+                an emergency in the next cold snap.
               </p>
               <p className="text-slate-600 font-light leading-relaxed">
                 He writes the firm&rsquo;s board guides on Illinois condominium
@@ -305,7 +342,7 @@ export default function AuthorMirsadCerimovic() {
                   </div>
                   <div>
                     <dt className="text-slate-500 mb-1">Credentials</dt>
-                    <dd className="text-ink">Illinois CAM · CMCA · AMS</dd>
+                    <dd className="text-ink">Illinois CAM · CMCA · AMS<br />City of Chicago Stationary Engineer · NIULPE</dd>
                   </div>
                   <div>
                     <dt className="text-slate-500 mb-1">Firm license</dt>

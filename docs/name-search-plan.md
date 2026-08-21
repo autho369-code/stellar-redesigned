@@ -121,8 +121,10 @@ Currently owned: **two.**
 
 **One spelling, everywhere: `Mirsad Cerimovic`.**
 
-The Telnyx port paperwork went out as "Mirsad **Cermovic**." Every variant
-splits the entity — Google reads two weak people instead of one strong one.
+Confirmed by the owner 2026-08-21: the correct spelling is **Cerimovic**. The
+Telnyx port paperwork went out as "Mirsad **Cermovic**" and is wrong — correct
+it at the carrier. Every variant splits the entity, and Google reads two weak
+people instead of one strong one.
 Audit and correct: LinkedIn, Google Business Profile, Facebook, the CAM
 license record, invoices, email signatures, and any directory listing.
 
@@ -138,7 +140,8 @@ point.
 **One line (directories, X, Instagram):**
 
 > Founder & Principal at Stellar Property Management. Licensed Illinois CAM,
-> CMCA, AMS. Chicago condo & HOA association management since 1997.
+> CMCA, AMS. Licensed City of Chicago stationary engineer, NIULPE. Chicago
+> condo & HOA association management since 1997.
 
 **Short (About.me, Gravatar, Alignable, Facebook intro):**
 
@@ -146,8 +149,10 @@ point.
 > 1997 and founded Stellar Property Management in 2007. The firm manages 42
 > condominium, HOA, and townhome associations across Chicago and the North
 > Shore. A licensed Illinois Community Association Manager holding the CMCA
-> certification and AMS designation, he taught the City of Chicago Stationary
-> Engineer's License prep course at SEIU Local 1 from 2007 to 2024.
+> certification and AMS designation, he is also a licensed City of Chicago
+> stationary engineer and NIULPE-certified power engineer, and taught the
+> Chicago Stationary Engineer's License prep course at SEIU Local 1 from 2007
+> to 2024.
 > https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 
 **Long (LinkedIn, Muck Rack, speaker bios):**
@@ -163,11 +168,13 @@ point.
 > financial reporting standard applied to every association in the portfolio and
 > leads each incoming board through its transition personally.
 >
-> He is a licensed Illinois Community Association Manager (CMCA, AMS) and a
-> member of the Community Associations Institute and its Illinois Chapter. From
-> 2007 to 2024 he taught the exam-preparation course for the City of Chicago
-> Stationary Engineer's License at SEIU Local 1 — seventeen years training the
-> engineers who run Chicago's building systems. He writes the firm's board
+> He is a licensed Illinois Community Association Manager (CMCA, AMS), a
+> licensed City of Chicago stationary engineer, and a NIULPE-certified power
+> engineer — qualified to run a commercial building's mechanical plant, not
+> merely to hire someone who can. From 2007 to 2024 he taught the
+> exam-preparation course for that same Chicago license at SEIU Local 1,
+> seventeen years training the engineers who keep the city's buildings
+> running. He writes the firm's board
 > guides on Illinois condominium law, reserve funding, and association
 > governance, published at stellarpropertygroup.com.
 >
