@@ -314,8 +314,8 @@ export default function About() {
                   reporting standard for every association in the portfolio and
                   leads each new board through its transition personally. From
                   July 2007 to November 2024 he also taught the City of Chicago
-                  Stationary Engineer&rsquo;s License prep course at SEIU
-                  Local 1.
+                  Stationary Engineer&rsquo;s License prep course at the SEIU
+                  Local 1 Training Fund.
                 </p>
                 <p className="text-sm text-paper/70 font-light leading-relaxed mb-8">
                   A licensed Illinois Community Association Manager, he holds the

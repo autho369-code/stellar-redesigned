@@ -200,7 +200,12 @@ they are and are not for.
 
 **They are good for:** stating the role confidently on LinkedIn and in bios;
 answering a directory, journalist, or chapter that asks for substantiation;
-supporting a request that SEIU Local 1 list you on a public education page.
+supporting a request that the Training Fund list you on a public page; and
+reminding a former colleague of specifics when asking for a recommendation.
+
+**Enough has been collected.** Further correspondence adds nothing — the role
+is established, the dates are on the site, and every additional message is the
+same *kind* of evidence. What is missing is different in kind: a public URL.
 
 **They cannot go on the site.** Private correspondence naming third parties and
 carrying their personal email addresses is not publishable — not for SEO, not
@@ -210,20 +215,42 @@ would not help: Google does not rank claims, it ranks pages.
 **They also cannot go in `sameAs`.** That field takes public URLs about the
 person. A pay stub has no URL.
 
-**What actually converts this into a ranking asset** is a public page naming
-you. In descending order of value:
+**The single highest-value move available.** The Executive Director of the SEIU
+Local 1 Training Fund through those years — the person who signed off on the
+program — has a **public LinkedIn profile** and has recently retired after 32
+years with Local 1. Ask him for a **LinkedIn recommendation**.
 
-1. **SEIU Local 1** — ask whether their training or education page can list
-   past instructors, or whether an archived course flyer or program page can be
-   made public. A union page naming you as instructor is a genuinely strong,
-   third-party corroborated asset.
+That one request converts private correspondence into exactly what is needed:
+a public, third-party statement, attributed to a named senior figure at a
+recognised institution, sitting on the page that already ranks for the name.
+Retirement helps — he is no longer speaking for a current employer and is free
+to write plainly.
+
+Make it a normal professional ask after a seventeen-year working relationship,
+not a reputation-management request. Something close to: *"I'm building out my
+LinkedIn properly for the first time. Would you be willing to write a short
+recommendation about the years I ran the stationary engineer prep course? No
+rush, and no problem at all if you'd rather not."* Suggest he mention the
+course by name and the span of years; that is what makes it useful to a reader
+and to a search engine.
+
+**Other public pages naming you**, in descending order of value:
+
+1. **SEIU Local 1 Training Fund** (`seiu1training.com`) — the fund is a distinct
+   organisation from the local, it publishes class catalogues as PDFs, and it
+   still runs the eight-week stationary engineer exam-prep course. Ask whether
+   an archived catalogue listing you as instructor can stay public, or whether
+   past instructors can be named on the education page. Those catalogue PDFs
+   are indexable.
 2. **NIULPE** — ask whether certified engineers appear in any public roster.
 3. **CAI Illinois Chapter** — the education committee sometimes lists
    instructors and speakers.
-4. **CooperatorNews** — the teaching background is the strongest hook in the
-   pitch already drafted in `reputation-action-pack.md` §7. "The manager who
-   taught Chicago's stationary engineers" is a story angle; "a Chicago property
-   manager" is not.
+4. **CooperatorNews Chicagoland** — they already run this beat: their article
+   "Your Building's Engineer — More Than Just Maintenance" covers exactly this
+   subject. Rewrite the pitch in `reputation-action-pack.md` §7 around the
+   teaching background. "The manager who helped build the course that licenses
+   Chicago's stationary engineers" is a story an editor takes; "a Chicago
+   property manager" is not.
 
 Send any resulting URL and it goes into `Person.sameAs`.
 

@@ -39,7 +39,7 @@ const credentials = [
   {
     abbr: 'SE',
     name: 'City of Chicago Stationary Engineer’s License',
-    desc: 'Licensed by the City of Chicago to operate high-pressure boilers, chillers, and the mechanical plant of a commercial building — the same license he taught the exam-preparation course for at SEIU Local 1 from July 2007 to November 2024.',
+    desc: 'Licensed by the City of Chicago to operate high-pressure boilers, chillers, and the mechanical plant of a commercial building — the same license he taught the eight-week exam-preparation course for at the SEIU Local 1 Training Fund from July 2007 to November 2024.',
   },
   {
     abbr: 'NIULPE',
@@ -100,7 +100,7 @@ export default function AuthorMirsadCerimovic() {
         honorificSuffix: 'CAM, CMCA, AMS',
         jobTitle: 'Founder & Principal',
         description:
-          'Founder and principal of Stellar Property Management. In Chicago community association management since 1997, a licensed City of Chicago stationary engineer and NIULPE-certified power engineer, and from July 2007 to November 2024 the instructor for the Chicago Stationary Engineer’s License exam-prep course at SEIU Local 1.',
+          'Founder and principal of Stellar Property Management. In Chicago community association management since 1997, a licensed City of Chicago stationary engineer and NIULPE-certified power engineer, and from July 2007 to November 2024 the instructor for the Chicago Stationary Engineer’s License exam-prep course at the SEIU Local 1 Training Fund.',
         url: PROFILE_URL,
         mainEntityOfPage: { '@id': `${PROFILE_URL}#webpage` },
         image: {
@@ -127,8 +127,8 @@ export default function AuthorMirsadCerimovic() {
         },
         affiliation: {
           '@type': 'Organization',
-          name: 'SEIU Local 1',
-          description: 'Instructor, City of Chicago Stationary Engineer’s License exam-prep course, July 2007 – November 2024.',
+          name: 'SEIU Local 1 Training Fund',
+          description: 'Instructor, City of Chicago Stationary Engineer’s License exam-preparation course, July 2007 – November 2024.',
         },
         memberOf: [
           {
@@ -317,7 +317,7 @@ export default function AuthorMirsadCerimovic() {
                 boilers, chillers, and mechanical plant of a commercial
                 building, not merely to hire someone who can. From 2007 to 2024
                 he taught the exam-preparation course for that same Chicago
-                license at SEIU Local 1 — July 2007 to November 2024, from the
+                license at the SEIU Local 1 Training Fund — July 2007 to November 2024, from the
                 program&rsquo;s first cohort through seventeen years of
                 engineers who keep the city&rsquo;s buildings running.
               </p>
@@ -364,7 +364,7 @@ export default function AuthorMirsadCerimovic() {
                   </div>
                   <div>
                     <dt className="text-slate-500 mb-1">Taught</dt>
-                    <dd className="text-ink">City of Chicago Stationary Engineer&rsquo;s License prep, SEIU Local 1, July 2007 &ndash; November 2024</dd>
+                    <dd className="text-ink">City of Chicago Stationary Engineer&rsquo;s License prep, SEIU Local 1 Training Fund, July 2007 &ndash; November 2024</dd>
                   </div>
                   <div>
                     <dt className="text-slate-500 mb-1">Credentials</dt>
