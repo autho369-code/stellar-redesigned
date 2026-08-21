@@ -39,3 +39,4 @@ User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://www.stellarpropertygroup.com/sitemap.xml
+RSS: https://www.stellarpropertygroup.com/rss.xml
