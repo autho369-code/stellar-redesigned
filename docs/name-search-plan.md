@@ -47,50 +47,94 @@ post where the name appears once is not:
 Getting the name off the page beats years of suppression, because it also
 clears every scraper and aggregator that copied it.
 
-**Contact Patch.** Their Illinois regional editor, or the contact route on the
-Elmhurst Patch page. The ask is specific and small: remove one name from a
-four-year-old roundup, or append the case outcome.
+**Patch runs a dedicated channel for exactly this.** Confirmed on their own
+page 2026-08-21 (`patch.com/us/across-america/how-remove-your-information-patch`):
 
-This is materially stronger if the charges were **dismissed, reduced, resolved
-without conviction, or completed under supervision** — attach the disposition.
-Many local outlets now run "clean slate" or right-to-be-forgotten policies for
-exactly this situation.
+> **arrestreports@patch.com**
 
-> Subject: Request to update a 2022 Elmhurst blotter item
+Send exactly what they ask for, nothing else:
+
+1. A clickable link to the article
+2. Your name **as it appears in the article**
+3. Documentation proving the charges are no longer valid
+
+### The gate — read this before writing
+
+Patch accepts documentation showing one of four outcomes, and only these four:
+
+- the charges were **dropped**
+- the case was **nolle prossed** (not prosecuted)
+- the case was **dismissed**
+- a verdict of **not guilty**
+
+Patch also states plainly that documentation *"is not a guarantee the article
+will be edited or removed. Articles are removed and edited at the discretion of
+the Patch editorial department."*
+
+**If the disposition is one of those four**, this is the single highest-value
+action available and it is close to routine — send it today.
+
+**If it was a conviction or court supervision**, this channel will most likely
+decline, because supervision is not any of the four. Do not burn the request on
+a weak filing; the fallback is §2, plus a lawyer's read on whether the *arrest*
+record is eligible for sealing. Illinois treats DUI dispositions unusually,
+including supervision, so that answer has to come from an Illinois
+criminal-records attorney rather than from general guidance.
+
+For a non-arrest article the general route is `support@patch.com`.
+
+### Getting the document
+
+A certified copy of the disposition from the **circuit court clerk** for the
+county where the case was heard — Elmhurst PD made the arrest, so DuPage County
+unless it was transferred. Clerks issue these routinely; it is a records-counter
+errand, not a legal proceeding. A plain printout of an online case summary is
+weaker than a certified disposition, so ask for the certified one.
+
+### The email
+
+Keep it short. This is a queue processed against a checklist, not a letter that
+rewards persuasion.
+
+> To: arrestreports@patch.com
+> Subject: Arrest report name removal request — Elmhurst Patch, 7 March 2022
 >
 > Hello,
 >
-> I'm writing about "6 Elmhurst DUIs Over Weekend: Cops," published 7 March
-> 2022 on Elmhurst Patch. My name appears in the list of arrests.
+> I am requesting removal of my name from the article below under your arrest
+> report removal process.
 >
-> The item reports an arrest from four years ago and carries no case outcome. I
-> have attached the court disposition showing [OUTCOME].
+> **Article:**
+> https://patch.com/illinois/elmhurst/6-elmhurst-duis-over-weekend-cops
 >
-> I'd like to ask that you either remove my name from the list or add a line
-> noting the outcome. I'm not asking you to unpublish the article — the other
-> five names and the reporting itself are unaffected either way.
+> **Name as it appears in the article:** Mirsad Cerimovic
 >
-> The item is currently the first thing that appears when anyone searches my
-> name. I run a licensed community association management firm in Chicago and
-> the association boards I work with search me before hiring us.
+> **Documentation attached:** certified court disposition showing [DROPPED /
+> NOLLE PROSSED / DISMISSED / NOT GUILTY], [COUNTY] County Circuit Court, case
+> [NUMBER].
 >
-> I'm happy to provide any documentation that helps.
+> The article names six people; I am only asking about my own name and am not
+> requesting any change to the rest of the reporting.
 >
-> Thank you for considering it,
+> Thank you for your consideration.
+>
 > Mirsad Cerimovic
 > mirsad@stellarpropertygroup.com · 773.728.0652
 
-**Also worth a licensed opinion:** ask an Illinois criminal-records attorney
-whether this arrest is eligible for expungement or sealing. If it is, the
-request stops being a favor and starts being a demand with a court order behind
-it. Illinois treats DUI dispositions differently from most offenses — including
-supervision — so this needs a real lawyer's answer, not a general one.
+### Rules
 
-**Google's own routes** are narrow but free to try. "Results about you" handles
-personal contact information rather than news reporting. Google also demotes
-sites engaged in *exploitative removal practices* — if any mugshot aggregator
-has copied this item and charges for removal, report it under that policy
-rather than paying.
+- **Attach the document.** A request without documentation is declined on
+  sight — this queue runs on evidence, not explanation.
+- **Ask once.** Give them two weeks before any follow-up, and follow up once.
+- **Never contact the reporter or the newsroom directly** about this. Pressuring
+  a newsroom is how a four-year-old list post becomes a new article about
+  someone trying to suppress coverage.
+- **Do not pay a removal vendor** to send this email. It is a free, published
+  process and the vendor sends the same message you would.
+
+**If Patch removes the name**, the URL may stay indexed with a cached snippet
+for weeks. Once the live page no longer contains the name, submit the URL
+through Google's **Refresh Outdated Content** tool to force a recrawl.
 
 ---
 
