@@ -76,6 +76,19 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
   the NotFound page), and both `scripts/generate-sitemap.mjs` and
   `scripts/prerender.mjs`. 121 routes prerendered, all SEO gates green.
 
+**FAQ coverage closed (PR #25, merged + live).** A full audit of the 119 live
+URLs (`node scripts/audit-live-site.mjs`) came back clean — 0 non-200, 0 broken
+internal links, 0 thin pages, 0 missing canonicals/alt. The real gaps were
+coverage: 39 of 119 pages had no `FAQPage` schema, and the four cluster hubs
+were the thinnest pages on the site. Added 6 FAQs to each of the four service
+pages that lacked them (`src/data/service-faqs.ts`) and 4 orientation FAQs to
+each hub (new `src/data/topic-faqs.ts`, rendered in `BlogTopic.tsx`). Hubs went
+415–649w → 1087–1382w; the four service pages land near 2000w.
+**Maintenance coordination got the deepest treatment on purpose** — outage
+response and repair responsibility are the exact categories generating the 1★
+reviews, and the site had no page answering "what happens when the heat goes
+out," which is also the substance of the 2024 BBB complaint.
+
 **Localo microsite — new finding, act on this.**
 `stellar-property-management.localo.site` is an auto-generated listing on the
 Localo local-SEO platform that ranks on brand queries. It publishes **false
