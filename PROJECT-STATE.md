@@ -35,8 +35,11 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
   Yahoo Local, ShowMeLocal, a third-party `localo.site` microsite).
 - **BBB rating is C** — not accredited, "failed to respond to 1 complaint".
   Cheapest available win; responding is free and BBB ranks on brand queries.
-- LinkedIn `/in/mirsad-cerimovic-0a1a62bb/` is **dead** ("Profile Not Found") —
-  a free page-one slot for the name query, currently wasted.
+- LinkedIn `/in/mirsad-cerimovic-0a1a62bb` read "Profile Not Found" during the
+  audit but **resolved again later the same day** — now wired into
+  `Person.sameAs` + a visible `rel="me"` link. Still owed on the LinkedIn side:
+  set its Website field to the profile page (not the homepage) and confirm
+  public visibility, or the reciprocal link Google needs never forms.
 - Apex `stellarpropertygroup.com` returns **307 (temporary)** to www, not 308.
   Dashboard-only fix; weakens host consolidation. Legacy hacked `/site/*` URLs
   still surface in search under the non-www host (410 is correct on www, but a
@@ -66,7 +69,7 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
   `scripts/prerender.mjs`. 121 routes prerendered, all SEO gates green.
 
 **Open, human-only (needs account access, in priority order):** respond to the
-BBB complaint; rebuild LinkedIn (then add it to `Person.sameAs`); flip the
+BBB complaint; set the LinkedIn Website field + public visibility; flip the
 Vercel apex redirect 307 → 308; file GSC/Bing removals for the `/site/` prefix;
 start the weekly review-ask rhythm (+10 five-star → 3.5, +28 → 3.8, +46 → 4.0);
 pitch CooperatorNews Chicagoland; determine who controls the `localo.site`
