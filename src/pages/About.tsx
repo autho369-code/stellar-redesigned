@@ -101,6 +101,7 @@ const aboutSchema = {
           '@type': 'EducationalOccupationalCredential',
           name: 'Illinois Licensed Community Association Manager (CAM)',
           credentialCategory: 'Professional license',
+          identifier: '261000524',
         },
         {
           '@type': 'EducationalOccupationalCredential',

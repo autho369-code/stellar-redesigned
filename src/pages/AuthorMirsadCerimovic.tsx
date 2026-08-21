@@ -24,7 +24,7 @@ const credentials = [
   {
     abbr: 'CAM',
     name: 'Illinois Licensed Community Association Manager',
-    desc: 'Licensed by the Illinois Department of Financial and Professional Regulation. Stellar Property Group Inc. holds Illinois CAM Firm license #291000211.',
+    desc: 'Individual license #261000524, active and with no disciplinary history on file with the Illinois Department of Financial and Professional Regulation. Stellar Property Group Inc. separately holds Illinois CAM Firm license #291000211.',
   },
   {
     abbr: 'CMCA',
@@ -136,9 +136,11 @@ export default function AuthorMirsadCerimovic() {
             '@type': 'EducationalOccupationalCredential',
             name: 'Illinois Licensed Community Association Manager (CAM)',
             credentialCategory: 'Professional license',
+            identifier: '261000524',
             recognizedBy: {
-              '@type': 'Organization',
+              '@type': 'GovernmentOrganization',
               name: 'Illinois Department of Financial and Professional Regulation',
+              url: 'https://idfpr.illinois.gov/',
             },
           },
           {
@@ -345,6 +347,21 @@ export default function AuthorMirsadCerimovic() {
                     <dd className="text-ink">Illinois CAM · CMCA · AMS<br />City of Chicago Stationary Engineer · NIULPE</dd>
                   </div>
                   <div>
+                    <dt className="text-slate-500 mb-1">Illinois CAM license</dt>
+                    <dd className="text-ink">
+                      #261000524 · Active
+                      <br />
+                      <a
+                        href="https://online-dfpr.micropact.com/lookup/licenselookup.aspx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors"
+                      >
+                        Verify with IDFPR
+                      </a>
+                    </dd>
+                  </div>
+                  <div>
                     <dt className="text-slate-500 mb-1">Firm license</dt>
                     <dd className="text-ink">Illinois CAM Firm #291000211</dd>
                   </div>
@@ -401,7 +418,18 @@ export default function AuthorMirsadCerimovic() {
               <p className="mt-6 text-slate-600 font-light leading-relaxed">
                 Illinois licenses community association managers and the firms
                 they work for. Any board can confirm a manager&rsquo;s standing
-                through IDFPR before signing a management agreement — and should.
+                before signing a management agreement — and should. Search
+                license <strong>#261000524</strong> in the{' '}
+                <a
+                  href="https://online-dfpr.micropact.com/lookup/licenselookup.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors"
+                >
+                  IDFPR license lookup
+                </a>
+                : the record shows an active license and no disciplinary
+                history.
               </p>
             </div>
 

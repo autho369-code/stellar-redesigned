@@ -18,7 +18,7 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'Is Mirsad Cerimovic licensed in Illinois?',
     answer:
-      'Yes. He is a licensed Community Association Manager under the Illinois Department of Financial and Professional Regulation, and Stellar Property Group Inc. holds Illinois Community Association Management Firm license #291000211. Illinois licenses both managers and the firms they work for, and any board can verify a manager’s standing through IDFPR before signing a management agreement.',
+      'Yes. He holds Illinois Community Association Manager license #261000524, which is active and carries no disciplinary history, and Stellar Property Group Inc. separately holds Illinois CAM Firm license #291000211. Illinois licenses both managers and the firms they work for. Any board can confirm this independently by searching the license number in the IDFPR public license lookup before signing a management agreement.',
   },
   {
     question: 'What do CMCA and AMS mean?',
