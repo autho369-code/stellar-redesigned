@@ -23,7 +23,7 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'What do CMCA and AMS mean?',
     answer:
-      'CMCA is the Certified Manager of Community Associations credential, the international certification for community association managers, administered by the Community Association Managers International Certification Board. AMS is the Association Management Specialist designation from the Community Associations Institute, recognizing advanced experience and continuing education in community association management. Both require ongoing education to maintain.',
+      'CMCA is the Certified Manager of Community Associations credential, the international certification for community association managers, administered by the Community Association Managers International Certification Board. AMS is the Association Management Specialist designation from the Community Associations Institute, recognizing advanced experience and continuing education in community association management; his AMS was awarded in March 2020 and is active. Both credentials lapse without ongoing continuing education, so an active status means they are being maintained rather than simply held.',
   },
   {
     question: 'Is Mirsad Cerimovic a licensed engineer?',

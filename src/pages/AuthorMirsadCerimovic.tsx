@@ -34,7 +34,7 @@ const credentials = [
   {
     abbr: 'AMS',
     name: 'Association Management Specialist',
-    desc: 'A Community Associations Institute designation recognizing advanced experience and education in community association management.',
+    desc: 'A Community Associations Institute designation recognizing advanced experience and education in community association management. Awarded March 2020 and currently active; the designation lapses without ongoing continuing education, so an active status means it is being maintained rather than simply held.',
   },
   {
     abbr: 'SE',
@@ -128,7 +128,15 @@ export default function AuthorMirsadCerimovic() {
           description: 'Instructor, City of Chicago Stationary Engineer’s License exam-prep course, 2007–2024.',
         },
         memberOf: [
-          { '@type': 'Organization', name: 'Community Associations Institute', url: 'https://www.caionline.org/' },
+          {
+            '@type': 'ProgramMembership',
+            programName: 'Community Associations Institute — Manager membership',
+            hostingOrganization: {
+              '@type': 'Organization',
+              name: 'Community Associations Institute',
+              url: 'https://www.caionline.org/',
+            },
+          },
           { '@type': 'Organization', name: 'Community Associations Institute Illinois Chapter', url: 'https://www.cai-illinois.org/' },
         ],
         hasCredential: [
@@ -152,6 +160,12 @@ export default function AuthorMirsadCerimovic() {
             '@type': 'EducationalOccupationalCredential',
             name: 'Association Management Specialist (AMS)',
             credentialCategory: 'Professional designation',
+            dateCreated: '2020-03-06',
+            recognizedBy: {
+              '@type': 'Organization',
+              name: 'Community Associations Institute',
+              url: 'https://www.caionline.org/',
+            },
           },
           {
             '@type': 'EducationalOccupationalCredential',
