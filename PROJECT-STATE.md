@@ -34,7 +34,15 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - Brand SERP is owned by aggregators (Yelp, Birdeye 3.9/162, BBB, YellowPages,
   Yahoo Local, ShowMeLocal, a third-party `localo.site` microsite).
 - **BBB rating is C** — not accredited, "failed to respond to 1 complaint".
-  Cheapest available win; responding is free and BBB ranks on brand queries.
+  Complaint retrieved 2026-08-21: filed **2024-04-29**, "Service or Repair
+  Issues", status **Unanswered** — a *tenant* reported heat shut off without
+  notification in cold weather and no word on restoration. Ages off the
+  profile ~2027-04-29 (BBB keeps complaints 3 years). **There is no reply
+  button:** the 14-day window closed in May 2024, the public profile has no
+  reply control, and the Business Center portal only shows *open* complaints.
+  The path is a phone call to **BBB of Chicago & Northern Illinois,
+  (312) 832-0500** — claim the profile, then ask to file a late response and
+  request a rating re-evaluation, since the penalty is for non-response.
 - LinkedIn `/in/mirsad-cerimovic-0a1a62bb` read "Profile Not Found" during the
   audit but **resolved again later the same day** — now wired into
   `Person.sameAs` + a visible `rel="me"` link. Still owed on the LinkedIn side:

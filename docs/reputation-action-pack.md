@@ -42,53 +42,110 @@ Do this:
 
 ---
 
-## 1. BBB — respond to the open complaint
+## 1. BBB — the complaint, and why there is no reply button
 
-**Why first:** rating is **C**, driven by "failure to respond to 1 complaint."
-BBB ranks on page one for the brand query. Responding is free and takes ten
-minutes. Nothing else on this list has a better effort-to-return ratio.
+**The complaint, retrieved 2026-08-21:**
 
-**Getting in:** go to `bbb.org`, search "Stellar Property Management Chicago,"
-click "Claim this business" or sign in if already claimed. The file was opened
-2024-02-23. BBB mails or emails a verification code to the business address on
-file — 5107 N Western Ave.
+| | |
+|---|---|
+| Filed | **29 April 2024** |
+| Type | Service or Repair Issues |
+| Status | **Unanswered** |
+| Substance | A **tenant** reported heat was shut off without notification during cold weather, with no communication about when it would be restored |
+| Drops off the profile | ~**29 April 2027** (BBB keeps complaints for three years from filing) |
 
-**Read the complaint first.** The template below is a structure, not a script.
-A response that does not address the actual grievance reads worse than none.
+**Why there is no response box anywhere in the portal.** BBB gives a business
+14 days to answer. This one closed as unanswered in May 2024. The public
+profile has never had a reply control on it, and the Business Center portal
+only surfaces **open** complaints — a closed one shows nothing to respond to.
+The actual reply link went out by email and letter in 2024 and requires a
+one-time code (`respond.bbb.org` asks for it). That code is long expired.
 
-> Thank you for the opportunity to respond.
+**So the path is the local BBB office, not the website.**
+
+> **BBB of Chicago & Northern Illinois — (312) 832-0500**
+> Local BBB page: `bbb.org/local-bbb/bbb-of-chicago-and-northern-illinois`
+> (Directory listings disagree on the street address — 121 W Wacker Dr Ste
+> 2000 and 330 N Wabash Ave Ste 3120 both appear. Confirm on the call.)
+
+What to ask for, in this order:
+
+1. Claim the business profile first — `bbb.org/for-businesses`, Business
+   Login. Verification goes to the address on file at 5107 N Western.
+2. Call and say: *"I'd like to submit a late response to complaint ID [ID],
+   filed 29 April 2024, and request a re-evaluation of our rating."* The
+   rating penalty is for **non-response**, which is exactly the thing a late
+   response addresses. BBB is not obligated to accept it — ask plainly.
+3. If they will not reopen it, ask what *would* lift the rating. Part of the
+   current C is "length of time in business," which reflects the file only
+   being opened 23 Feb 2024 and resolves on its own.
+
+**Note the shape of this complaint before writing anything.** The complainant
+is a *tenant* — not an owner, not your client. But heat in a condo building is
+almost always a **common element**, which makes restoring it the association's
+responsibility and yours to coordinate. So "we only answer to the board" is
+the wrong note here; it would read as evasion on the one issue where the
+association genuinely owns the outcome.
+
+**Before you write:** pull the maintenance record for that building and
+period — outage date, contractor, restoration date, what notice went out. If
+the building is in Chicago, check the dates against the city's heat ordinance
+(heat required 15 Sept–1 June) *before* publishing anything, because this
+response is public and permanent.
+
+### If it was a building you manage
+
+> Thank you for the opportunity to respond, and I apologize that this reply
+> comes late — the original notice reached us in 2024 and went unanswered,
+> which was our error.
 >
-> Stellar Property Management serves as the managing agent for [ASSOCIATION
-> NAME]. In that role we carry out the decisions of the association's elected
-> board of directors and enforce the association's recorded governing
-> documents. We do not set assessments, adopt rules, or decide enforcement
-> matters on our own authority — the board does, by vote.
+> [COMPLAINANT] is a tenant at [BUILDING], a condominium association for which
+> Stellar Property Management serves as managing agent. The heating system is a
+> common element, which makes restoring it the association's responsibility and
+> ours to coordinate.
 >
-> On the specific matter raised: [FACTUAL ACCOUNT — dates, what was requested,
-> what was done, in plain sequence. No characterization of the complainant.]
+> What happened: [THE BOILER FAILED / HEAT WAS SHUT DOWN FOR EMERGENCY REPAIR]
+> on [DATE]. [CONTRACTOR] was on site [WHEN], and heat was restored on [DATE].
+> [ANY TEMPORARY MEASURES PROVIDED.]
 >
-> [IF SOMETHING WENT WRONG:] We got [X] wrong here, and I apologize for it.
-> We have since [CORRECTIVE ACTION].
+> Where we fell short was communication. Residents should have had a posted
+> notice explaining the outage and the expected restoration time, with updates
+> until it was resolved. That did not happen consistently, and I understand how
+> alarming a heat outage in cold weather is with no information about when it
+> will end.
 >
-> [IF THE PROCESS WAS FOLLOWED CORRECTLY:] The process the association follows
-> in this situation is [DESCRIBE]. I recognize that outcome was not what
-> [COMPLAINANT] wanted, and I understand the frustration.
+> Since then we have [CONCRETE CHANGE — e.g. a posted-notice protocol for any
+> utility interruption, a broadcast to every resident email and mobile number
+> on file, and updates every [X] hours until service is restored].
 >
-> Any owner with an unresolved concern is welcome to contact me directly at
-> mirsad@stellarpropertygroup.com or 773.728.0652.
+> I'm sorry for the experience and for the delayed reply. Anyone at [BUILDING]
+> can reach me directly at mirsad@stellarpropertygroup.com or 773.728.0652.
 >
 > Mirsad Cerimovic, CMCA, AMS
 > Founder & Principal, Stellar Property Management
 
-**Rules for this response:**
+### If it was not a building you manage
 
-- The agent/board distinction goes in **once**, near the top. Repeating it
-  reads as deflection.
-- Never argue motive, never mention the complainant's own conduct, never
-  reference legal options. All three convert a complaint into a story.
-- If an actual mistake happened, say so plainly. A specific admission plus a
-  fix is the single most credible thing a business can publish about itself.
-- After it posts, request a rating re-evaluation through the BBB portal.
+> Thank you for the opportunity to respond, and I apologize that this reply
+> comes late.
+>
+> I've checked our records against the address in this complaint and it is not
+> a property Stellar Property Management serves. We manage condominium, HOA,
+> and townhome associations — we do not manage apartment rentals, and we have
+> no maintenance authority at that address.
+>
+> If I have matched the wrong address, I would genuinely like to correct that.
+> I can be reached directly at mirsad@stellarpropertygroup.com or
+> 773.728.0652.
+>
+> Mirsad Cerimovic, CMCA, AMS
+> Founder & Principal, Stellar Property Management
+
+**Rules either way.** Do not dispute that the tenant was cold. Do not mention
+their tenancy as a reason the complaint doesn't count. If something went
+wrong, name it — a specific admission plus a concrete fix is the most credible
+thing a business can publish about itself, and it is being read by the next
+board president, not by the tenant.
 
 **Accreditation:** optional and paid. Do not buy it yet — an *accredited* C
 looks worse than an unaccredited B. Revisit once the rating recovers.
