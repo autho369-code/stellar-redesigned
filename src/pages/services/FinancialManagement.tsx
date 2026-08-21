@@ -4,6 +4,8 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { financialManagementFaqs } from '../../data/service-faqs';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function FinancialManagement() {
@@ -206,6 +208,7 @@ export default function FinancialManagement() {
 
       <ClusterGuides cluster="finance" />
       <ServiceAreasStrip service="financial-management" />
+      <ServiceFAQ items={financialManagementFaqs} title="What Chicago boards ask about association finances." />
       <CTASection />
     </>
   );

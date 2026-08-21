@@ -4,6 +4,8 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
+import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
+import { boardSupportFaqs } from '../../data/service-faqs';
 import { ServiceSchema } from '../../components/seo/ServiceSchema';
 
 export default function BoardSupport() {
@@ -206,6 +208,7 @@ export default function BoardSupport() {
 
       <ClusterGuides cluster="governance" />
       <ServiceAreasStrip service="board-support" />
+      <ServiceFAQ items={boardSupportFaqs} title="What Illinois boards ask about meetings and governance." />
       <CTASection />
     </>
   );
