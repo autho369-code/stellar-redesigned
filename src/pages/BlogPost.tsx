@@ -45,7 +45,7 @@ export default function BlogPost() {
       name: 'Mirsad Cerimovic',
       honorificSuffix: 'CAM, CMCA, AMS',
       jobTitle: 'Community Association Manager',
-      url: 'https://www.stellarpropertygroup.com/about',
+      url: 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic',
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.stellarpropertygroup.com/#business',
@@ -137,7 +137,7 @@ export default function BlogPost() {
             {post.title}
           </h1>
           <p className="text-[10px] uppercase tracking-luxe text-slate-500">
-            <Link to="/about" rel="author" className="hover:text-gold-600 transition-colors">{post.author}</Link> · {formatDate(post.date)} · {post.readTime}
+            <Link to="/about/mirsad-cerimovic" rel="author" className="hover:text-gold-600 transition-colors">{post.author}</Link> · {formatDate(post.date)} · {post.readTime}
           </p>
         </div>
       </header>
@@ -178,6 +178,48 @@ export default function BlogPost() {
               </ul>
             </aside>
           )}
+
+          {/* Author box: substantiates the Article author entity and gives every
+              guide an internal link into the founder profile. */}
+          <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-author">
+            <h2 id="article-author" className="sr-only">About the author</h2>
+            <div className="flex flex-wrap items-start gap-6">
+              <div
+                className="w-16 h-16 shrink-0 border border-gold-400/60 flex items-center justify-center font-display font-light text-xl text-gold-600 select-none"
+                aria-hidden
+              >
+                MC
+              </div>
+              <div className="flex-1 min-w-[16rem]">
+                <p className="font-display text-xl text-ink mb-1">
+                  <Link
+                    to="/about/mirsad-cerimovic"
+                    rel="author"
+                    className="hover:text-gold-600 transition-colors"
+                  >
+                    Mirsad Cerimovic, CAM, CMCA, AMS
+                  </Link>
+                </p>
+                <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-4">
+                  Founder &amp; Principal · Stellar Property Management
+                </p>
+                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  Mirsad founded Stellar in 2007 and manages 42 Chicago-area
+                  condominium, HOA, and townhome associations. He is a licensed
+                  Illinois Community Association Manager and writes the
+                  firm&rsquo;s board guides on Illinois association law,
+                  reserves, and governance.{' '}
+                  <Link
+                    to="/about/mirsad-cerimovic"
+                    className="text-gold-600 underline underline-offset-2 hover:text-gold-500 transition-colors"
+                  >
+                    Full profile and credentials
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </aside>
         </div>
       </article>
 

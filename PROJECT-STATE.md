@@ -18,6 +18,60 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-08-21 (search-reputation audit + founder entity)
+
+**Audit findings (see `docs/reputation-playbook.md` for the full plan):**
+- Blog ranking: **not ranking yet, and it is too early to expect it.** Most
+  posts are days old (daily cadence since PR #22). Live checks on target
+  queries ("can a condo board enter your unit Illinois", "how to switch condo
+  management companies Chicago") return law firms, FSR, CooperatorNews, and
+  rival managers — no Stellar. Technically the blog is sound: 25 blog URLs in
+  the live sitemap, real prerendered HTML, unique titles/canonicals, correct
+  `index, follow`. Realistic horizon is 3–6 months.
+- **No ranking data exists in this repo** and no GSC credential is configured,
+  so the above is inference from live checks, not measurement. Fix by
+  committing a GSC CSV export under `docs/` or adding a service-account key.
+- Brand SERP is owned by aggregators (Yelp, Birdeye 3.9/162, BBB, YellowPages,
+  Yahoo Local, ShowMeLocal, a third-party `localo.site` microsite).
+- **BBB rating is C** — not accredited, "failed to respond to 1 complaint".
+  Cheapest available win; responding is free and BBB ranks on brand queries.
+- LinkedIn `/in/mirsad-cerimovic-0a1a62bb/` is **dead** ("Profile Not Found") —
+  a free page-one slot for the name query, currently wasted.
+- Apex `stellarpropertygroup.com` returns **307 (temporary)** to www, not 308.
+  Dashboard-only fix; weakens host consolidation. Legacy hacked `/site/*` URLs
+  still surface in search under the non-www host (410 is correct on www, but a
+  410 only drops a URL when the crawler revisits — file GSC/Bing removals).
+- The worst content is a Yelp review alleging legal threats against a reviewer
+  (IP identification, suing the association, contacting the reviewer's spouse).
+  It now appears in AI-generated summaries of the business. **Do not escalate**
+  — Illinois anti-SLAPP (735 ILCS 110) plus the Streisand effect make legal
+  pressure counterproductive. Calm factual replies only.
+
+**Shipped this session:**
+- **`/about/mirsad-cerimovic`** (`src/pages/AuthorMirsadCerimovic.tsx`) — the
+  founder profile page, and the core suppression asset. Name-led title,
+  `ProfilePage` + `Person` JSON-LD, verifiable credentials (Illinois CAM,
+  CMCA, AMS, firm license #291000211), biography, focus areas, author archive.
+  Suppression needs pages targeting the **name**; condo-law posts never rank
+  for "Mirsad Cerimovic".
+- The Person node **keeps its `@id` of `/about#mirsad-cerimovic`** so all 57
+  existing Article author references stay valid, but `url` and
+  `mainEntityOfPage` now resolve to the new page — one entity, one home.
+- Author box added to every blog post (57 internal links into the profile),
+  bylines and `Article.author.url` repointed, About founder card links through,
+  `llms.txt` lists the profile for AI crawlers.
+- Route registered in **three** places — `App.tsx`, `src/entry-server.tsx`
+  (prerender route table, easy to miss — a missing entry silently prerenders
+  the NotFound page), and both `scripts/generate-sitemap.mjs` and
+  `scripts/prerender.mjs`. 121 routes prerendered, all SEO gates green.
+
+**Open, human-only (needs account access, in priority order):** respond to the
+BBB complaint; rebuild LinkedIn (then add it to `Person.sameAs`); flip the
+Vercel apex redirect 307 → 308; file GSC/Bing removals for the `/site/` prefix;
+start the weekly review-ask rhythm (+10 five-star → 3.5, +28 → 3.8, +46 → 4.0);
+pitch CooperatorNews Chicagoland; determine who controls the `localo.site`
+microsite.
+
 ## Status update — 2026-08-13, later session (area consolidation + owner-education flagship)
 
 **PR #17 (merged):** consolidated 13 thin area pages (83 → 70) into parents

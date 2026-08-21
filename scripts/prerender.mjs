@@ -28,6 +28,7 @@ const { render } = await import(pathToFileURL(join(root, 'dist-server/entry-serv
 const staticRoutes = [
   '/',
   '/about',
+  '/about/mirsad-cerimovic',
   '/services',
   '/services/condominium-management',
   '/services/hoa-management',

@@ -52,7 +52,9 @@ const areas = [
 ];
 
 // Substantiates the author entity that every blog post's Article schema
-// points at (author.@id = /about#mirsad-cerimovic in BlogPost.tsx).
+// points at (author.@id = /about#mirsad-cerimovic in BlogPost.tsx). The node
+// keeps that @id for continuity, but its url/mainEntityOfPage resolve to the
+// dedicated profile at /about/mirsad-cerimovic.
 const aboutSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -77,7 +79,10 @@ const aboutSchema = {
       name: 'Mirsad Cerimovic',
       honorificSuffix: 'CAM, CMCA, AMS',
       jobTitle: 'Founder & Principal',
-      url: 'https://www.stellarpropertygroup.com/about',
+      url: 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic',
+      mainEntityOfPage: {
+        '@id': 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic#webpage',
+      },
       email: 'mirsad@stellarpropertygroup.com',
       worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
       memberOf: [
@@ -264,7 +269,14 @@ export default function About() {
                     MC
                   </div>
                   <div>
-                    <h3 className="font-display text-2xl lg:text-3xl mb-2">Mirsad Cerimovic</h3>
+                    <h3 className="font-display text-2xl lg:text-3xl mb-2">
+                      <Link
+                        to="/about/mirsad-cerimovic"
+                        className="hover:text-gold-300 transition-colors"
+                      >
+                        Mirsad Cerimovic
+                      </Link>
+                    </h3>
                     <p className="text-[10px] uppercase tracking-luxe text-gold-300 mb-1.5">
                       Founder &amp; Principal
                     </p>
@@ -292,6 +304,12 @@ export default function About() {
                   .
                 </p>
                 <div className="pt-6 border-t border-paper/15 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-paper/50">
+                  <Link
+                    to="/about/mirsad-cerimovic"
+                    className="text-gold-300 hover:text-gold-200 transition-colors"
+                  >
+                    Full profile &amp; credentials
+                  </Link>
                   <span>Illinois CAM Firm License #291000211</span>
                   <a href="mailto:mirsad@stellarpropertygroup.com" className="hover:text-gold-300 transition-colors">
                     mirsad@stellarpropertygroup.com

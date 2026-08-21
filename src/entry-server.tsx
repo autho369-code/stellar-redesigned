@@ -19,6 +19,7 @@ import type { HelmetServerState } from 'react-helmet-async';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
+import AuthorMirsadCerimovic from './pages/AuthorMirsadCerimovic';
 import Services from './pages/Services';
 import CondominiumManagement from './pages/services/CondominiumManagement';
 import HOAManagement from './pages/services/HOAManagement';
@@ -65,6 +66,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/mirsad-cerimovic" element={<AuthorMirsadCerimovic />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/condominium-management" element={<CondominiumManagement />} />
             <Route path="/services/hoa-management" element={<HOAManagement />} />
