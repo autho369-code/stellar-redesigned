@@ -184,12 +184,15 @@ export default function BlogPost() {
           <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-author">
             <h2 id="article-author" className="sr-only">About the author</h2>
             <div className="flex flex-wrap items-start gap-6">
-              <div
-                className="w-16 h-16 shrink-0 border border-gold-400/60 flex items-center justify-center font-display font-light text-xl text-gold-600 select-none"
-                aria-hidden
-              >
-                MC
-              </div>
+              <img
+                src="/images/mirsad-cerimovic.jpg"
+                alt="Mirsad Cerimovic"
+                width={64}
+                height={64}
+                loading="lazy"
+                decoding="async"
+                className="w-16 h-16 shrink-0 border border-gold-400/60 object-cover"
+              />
               <div className="flex-1 min-w-[16rem]">
                 <p className="font-display text-xl text-ink mb-1">
                   <Link

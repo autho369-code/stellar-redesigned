@@ -90,7 +90,14 @@ export default function AuthorMirsadCerimovic() {
           'Founder and principal of Stellar Property Management, a Chicago community association management firm serving condominium, HOA, and townhome boards since 2007.',
         url: PROFILE_URL,
         mainEntityOfPage: { '@id': `${PROFILE_URL}#webpage` },
-        email: 'mirsad@stellarpropertygroup.com',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg',
+          width: 356,
+          height: 356,
+          caption: 'Mirsad Cerimovic, founder and principal of Stellar Property Management',
+        },
+
         telephone: '+1-773-728-0652',
         worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
         sameAs: [LINKEDIN_URL],
@@ -150,6 +157,7 @@ export default function AuthorMirsadCerimovic() {
         description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 42 condo, HOA and townhome associations."
         canonical={PROFILE_URL}
         ogType="profile"
+        ogImage="https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -174,6 +182,15 @@ export default function AuthorMirsadCerimovic() {
 
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-7">
+              <img
+                src="/images/mirsad-cerimovic.jpg"
+                alt="Mirsad Cerimovic, founder and principal of Stellar Property Management"
+                width={112}
+                height={112}
+                fetchPriority="high"
+                decoding="async"
+                className="w-28 h-28 mb-8 border border-slate-300 object-cover"
+              />
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 Founder &amp; Principal · CAM · CMCA · AMS

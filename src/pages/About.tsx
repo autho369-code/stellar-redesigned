@@ -83,6 +83,13 @@ const aboutSchema = {
       mainEntityOfPage: {
         '@id': 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic#webpage',
       },
+      image: {
+        '@type': 'ImageObject',
+        url: 'https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg',
+        width: 356,
+        height: 356,
+        caption: 'Mirsad Cerimovic, founder and principal of Stellar Property Management',
+      },
       email: 'mirsad@stellarpropertygroup.com',
       worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
       memberOf: [
@@ -262,12 +269,15 @@ export default function About() {
             <div className="lg:col-span-7 lg:col-start-6">
               <div className="border border-paper/15 p-9 lg:p-12">
                 <div className="flex flex-wrap items-start gap-8 mb-8">
-                  <div
-                    className="w-24 h-24 shrink-0 border border-gold-400/50 flex items-center justify-center font-display font-light text-3xl text-gold-300 select-none"
-                    aria-hidden
-                  >
-                    MC
-                  </div>
+                  <img
+                    src="/images/mirsad-cerimovic.jpg"
+                    alt="Mirsad Cerimovic, founder and principal of Stellar Property Management"
+                    width={96}
+                    height={96}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-24 h-24 shrink-0 border border-gold-400/50 object-cover"
+                  />
                   <div>
                     <h3 className="font-display text-2xl lg:text-3xl mb-2">
                       <Link
