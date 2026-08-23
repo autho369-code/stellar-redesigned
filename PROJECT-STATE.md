@@ -18,6 +18,53 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-08-22 (competitive research + site rebuild)
+
+Five parallel research agents: FirstService Residential + Associa; Castle
+Group/KW/Action; RealManage/CCMC/Management Trust/Sentry; the board buyer
+journey; and a blunt audit of this site. Full synthesis in
+`docs/competitive-research-2026-08.md` — read that before changing positioning.
+
+**The findings that drove the work:**
+- Across six national firms and ~500 pages there is **not one interactive
+  tool**. No calculators, scorecards, self-assessments or RFP templates.
+- **Nobody publishes pricing.** Stellar already does.
+- **"No better option" is the real obstacle to switching**, not ignorance.
+  Boards diagnose the problem precisely, then conclude nowhere is better. The
+  pitch has to beat resignation, not a competitor.
+- **AAMC is the only firm-level credential** — 228 firms, ~1 in 43. None of the
+  six audited holds it.
+- **Illinois is the 4th largest association market in the US** (19,850
+  associations, FCAR 2025).
+
+**Shipped 2026-08-22:**
+- `/tools/compare-management-proposals` — weighted scorecard, three firms side
+  by side, print to PDF, ungated. Uses the weights already published in the
+  scoring guide. The category has no equivalent.
+- `/ai-info` — HTML fact sheet for LLMs, the pattern Associa uses; neither
+  Associa nor FirstService has an llms.txt, Stellar has both now.
+- `/services/resale-disclosures` — plus the verified 22.1 terms (10 business
+  days, $375 CPI-adjusted cap, $100 rush).
+- Homepage reordered: board argument before resident content, "we do not manage
+  apartment rentals" moved from FAQ #1 at the bottom into the hero, and a new
+  "Who actually runs it" section — the homepage previously never named Mirsad.
+- Audience-first nav: Services · For Boards · Residents · Agents & Lenders ·
+  Service Areas · About. Three service pages were missing from the nav
+  entirely.
+- Contact form: association name, unit count and board role no longer required,
+  plus an explicit confidentiality note. The form was gating the exact buyer it
+  was built for.
+- `/about` independence section answering the consolidation fear.
+- Asset caching fixed (`max-age=0` → immutable on hashed files).
+
+**Corrected today:** three area pages carried FAQ answers in structured data
+claiming Stellar manages housing cooperatives. It does not. Removed.
+
+**Blocked on owner input** — the remaining gaps nobody in the category fills,
+listed with reasoning in the research doc: portfolio cap per manager,
+line-item fee schedule, contract terms, vendor markup/commission policy, sample
+work product, small-association floor.
+
 ## Status update — 2026-08-21 (search-reputation audit + founder entity)
 
 **Audit findings (see `docs/reputation-playbook.md` for the full plan):**
