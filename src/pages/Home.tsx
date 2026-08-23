@@ -313,10 +313,18 @@ export default function Home() {
                 <em className="font-medium text-gold-300">well-run</em> building.
               </h1>
 
-              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-12 max-w-xl">
+              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-7 max-w-xl">
                 Stellar is a Chicago association management practice for boards
                 that expect more — clearer numbers, calmer meetings, and a
                 building that quietly works.
+              </p>
+
+              <p className="reveal-up reveal-delay-2 text-base text-paper/75 font-light leading-relaxed mb-12 max-w-xl">
+                <span className="text-gold-300">We do not manage apartment rentals.</span>{' '}
+                Condominium, HOA and townhome associations are the entire
+                practice — and our principal is a licensed Chicago stationary
+                engineer, so capital planning is read as a building rather than
+                a spreadsheet.
               </p>
 
               <div className="reveal-up reveal-delay-3 flex flex-wrap items-center gap-5">
@@ -395,6 +403,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── The one dark section — differentiator ────────────── */}
+      <section className="py-28 lg:py-36 bg-ink text-paper relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[44rem] h-[44rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-16">
+            <Reveal className="lg:col-span-5">
+              <Eyebrow light>The Difference</Eyebrow>
+              <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
+                Not another national
+                <br />
+                management <em className="font-medium text-gold-300">firm.</em>
+              </h2>
+              <p className="text-paper/55 font-light text-lg leading-relaxed mb-10">
+                The chains manage by volume — thousands of doors, one playbook.
+                We built Stellar the other way: a deliberately curated portfolio
+                of Chicago associations, each with a dedicated manager, a direct
+                line, and a standard that never dilutes.
+              </p>
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-8 py-3.5 transition-colors duration-300 text-sm tracking-wide"
+              >
+                Our Story <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Reveal>
+
+            <Reveal delay={140} className="lg:col-span-7">
+              <div className="grid grid-cols-2 text-[10px] uppercase tracking-luxe text-paper/70 pb-4 border-b border-paper/10 gap-6">
+                <span>The volume model</span>
+                <span className="text-gold-300">The Stellar standard</span>
+              </div>
+              {contrasts.map(({ them, us }) => (
+                <div key={us} className="grid grid-cols-2 gap-6 py-6 border-b border-paper/10 items-start">
+                  <p className="text-paper/70 text-sm font-light leading-relaxed">{them}</p>
+                  <p className="text-paper/90 text-sm leading-relaxed">{us}</p>
+                </div>
+              ))}
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* ── Services — architectural grid ────────────────────── */}
       <section className="py-28 lg:py-36 bg-paper">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
@@ -437,47 +487,148 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── The one dark section — differentiator ────────────── */}
-      <section className="py-28 lg:py-36 bg-ink text-paper relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[44rem] h-[44rem] bg-gold-500/[0.06] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" aria-hidden />
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div className="grid lg:grid-cols-12 gap-16">
-            <Reveal className="lg:col-span-5">
-              <Eyebrow light>The Difference</Eyebrow>
-              <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
-                Not another national
-                <br />
-                management <em className="font-medium text-gold-300">firm.</em>
-              </h2>
-              <p className="text-paper/55 font-light text-lg leading-relaxed mb-10">
-                The chains manage by volume — thousands of doors, one playbook.
-                We built Stellar the other way: a deliberately curated portfolio
-                of Chicago associations, each with a dedicated manager, a direct
-                line, and a standard that never dilutes.
-              </p>
-              <Link
-                to="/about"
-                className="inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-8 py-3.5 transition-colors duration-300 text-sm tracking-wide"
-              >
-                Our Story <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Reveal>
+      {/* ── The first ninety days ────────────────────────────── */}
+      <section className="py-28 lg:py-36 bg-ivory-100 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <Reveal className="max-w-2xl mb-20">
+            <Eyebrow>White-Glove Onboarding</Eyebrow>
+            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
+              The first <em className="font-medium text-gold-500">ninety days.</em>
+            </h2>
+            <p className="text-lg text-slate-600 font-light leading-relaxed">
+              Boards stay with bad management out of fear of the transition. We
+              removed the fear.
+            </p>
+            <Link
+              to="/blog/switch-condo-management-companies-chicago"
+              className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
+            >
+              Read the Chicago board&rsquo;s switching guide <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Reveal>
 
-            <Reveal delay={140} className="lg:col-span-7">
-              <div className="grid grid-cols-2 text-[10px] uppercase tracking-luxe text-paper/70 pb-4 border-b border-paper/10 gap-6">
-                <span>The volume model</span>
-                <span className="text-gold-300">The Stellar standard</span>
-              </div>
-              {contrasts.map(({ them, us }) => (
-                <div key={us} className="grid grid-cols-2 gap-6 py-6 border-b border-paper/10 items-start">
-                  <p className="text-paper/70 text-sm font-light leading-relaxed">{them}</p>
-                  <p className="text-paper/90 text-sm leading-relaxed">{us}</p>
+          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">
+            <div className="hidden md:block absolute top-8 left-[17%] right-[17%] h-px bg-gold-300" aria-hidden />
+            {onboarding.map(({ step, title, desc }) => (
+              <div key={step} className="relative">
+                <div className="w-16 h-16 rounded-full border border-gold-500 bg-ivory-100 text-gold-600 font-display italic text-lg flex items-center justify-center mb-8 relative z-10">
+                  {step}
                 </div>
-              ))}
-            </Reveal>
+                <h3 className="font-display text-2xl text-ink mb-4">{title}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed font-light">{desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* ── Testimonials ─────────────────────────────────────── */}
+      <section className="py-28 lg:py-36 bg-paper">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <Reveal className="text-center max-w-2xl mx-auto mb-20">
+            <Eyebrow center>In Their Words</Eyebrow>
+            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
+              Boards that raised
+              <br />
+              their <em className="font-medium text-gold-500">standard.</em>
+            </h2>
+          </Reveal>
+
+          <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
+            {testimonials.map(({ quote, name, community, area }) => (
+              <figure key={area} className="bg-paper p-10 lg:p-12 flex flex-col">
+                <span className="font-display text-7xl leading-none text-gold-400 select-none -ml-1" aria-hidden>&ldquo;</span>
+                <blockquote className="font-display italic font-light text-xl text-ink leading-relaxed mt-3 mb-10 flex-1">
+                  {quote}
+                </blockquote>
+                <figcaption className="pt-6 border-t border-slate-200">
+                  <p className="text-sm font-semibold text-ink">{name}</p>
+                  <p className="text-[10px] uppercase tracking-luxe text-gold-600 mt-1.5">{community} · {area}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Who runs it ───────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-white border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <div className="lg:col-span-4">
+              <img
+                src="/images/mirsad-cerimovic.jpg"
+                alt="Mirsad Cerimovic, founder and principal of Stellar Property Management"
+                width={356}
+                height={356}
+                loading="lazy"
+                decoding="async"
+                className="w-40 h-40 lg:w-56 lg:h-56 border border-slate-300 object-cover"
+              />
+            </div>
+
+            <div className="lg:col-span-8">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Who Actually Runs It
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-7">
+                Boards deal with the
+                <br />
+                <em className="font-medium text-gold-600">principal.</em>
+              </h2>
+              <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
+                Mirsad Cerimovic has worked in Chicago community associations
+                since 1997 and founded Stellar in 2007. He is a licensed
+                Illinois Community Association Manager, and separately a
+                licensed City of Chicago stationary engineer — from 2007 to 2024
+                he taught the exam-preparation course for that licence at the
+                SEIU Local 1 Training Fund, taking roughly 700 engineers through
+                the city examination.
+              </p>
+              <p className="text-slate-600 font-light leading-relaxed mb-8">
+                Which is the practical difference. Most firms hire the engineer.
+                Here, the person reading your reserve study has held the licence.
+              </p>
+
+              <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3 mb-9 text-sm text-slate-600">
+                {[
+                  'Illinois CAM licence #261000524 — active, no disciplinary history',
+                  'Illinois CAM Firm licence #291000211',
+                  'CMCA · Certified Manager of Community Associations',
+                  'AMS · Association Management Specialist',
+                  'City of Chicago Stationary Engineer',
+                  'NIULPE Certified Power Engineer',
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 border-b border-slate-200 pb-3">
+                    <span className="text-gold-500" aria-hidden>·</span>
+                    <span className="font-light leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+                <Link
+                  to="/about/mirsad-cerimovic"
+                  className="group inline-flex items-center gap-3 text-sm text-gold-600 hover:text-gold-700 transition-colors"
+                >
+                  Full profile and published guides
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+                <a
+                  href="https://online-dfpr.micropact.com/lookup/licenselookup.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-500 underline underline-offset-2 hover:text-gold-600 transition-colors"
+                >
+                  Verify the licence with IDFPR
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* ── Portals ──────────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-paper">
@@ -578,70 +729,6 @@ export default function Home() {
                 ))}
               </div>
             </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ── The first ninety days ────────────────────────────── */}
-      <section className="py-28 lg:py-36 bg-ivory-100 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <Reveal className="max-w-2xl mb-20">
-            <Eyebrow>White-Glove Onboarding</Eyebrow>
-            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
-              The first <em className="font-medium text-gold-500">ninety days.</em>
-            </h2>
-            <p className="text-lg text-slate-600 font-light leading-relaxed">
-              Boards stay with bad management out of fear of the transition. We
-              removed the fear.
-            </p>
-            <Link
-              to="/blog/switch-condo-management-companies-chicago"
-              className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
-            >
-              Read the Chicago board&rsquo;s switching guide <ArrowRight className="w-4 h-4" />
-            </Link>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">
-            <div className="hidden md:block absolute top-8 left-[17%] right-[17%] h-px bg-gold-300" aria-hidden />
-            {onboarding.map(({ step, title, desc }) => (
-              <div key={step} className="relative">
-                <div className="w-16 h-16 rounded-full border border-gold-500 bg-ivory-100 text-gold-600 font-display italic text-lg flex items-center justify-center mb-8 relative z-10">
-                  {step}
-                </div>
-                <h3 className="font-display text-2xl text-ink mb-4">{title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed font-light">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Testimonials ─────────────────────────────────────── */}
-      <section className="py-28 lg:py-36 bg-paper">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <Reveal className="text-center max-w-2xl mx-auto mb-20">
-            <Eyebrow center>In Their Words</Eyebrow>
-            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
-              Boards that raised
-              <br />
-              their <em className="font-medium text-gold-500">standard.</em>
-            </h2>
-          </Reveal>
-
-          <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
-            {testimonials.map(({ quote, name, community, area }) => (
-              <figure key={area} className="bg-paper p-10 lg:p-12 flex flex-col">
-                <span className="font-display text-7xl leading-none text-gold-400 select-none -ml-1" aria-hidden>&ldquo;</span>
-                <blockquote className="font-display italic font-light text-xl text-ink leading-relaxed mt-3 mb-10 flex-1">
-                  {quote}
-                </blockquote>
-                <figcaption className="pt-6 border-t border-slate-200">
-                  <p className="text-sm font-semibold text-ink">{name}</p>
-                  <p className="text-[10px] uppercase tracking-luxe text-gold-600 mt-1.5">{community} · {area}</p>
-                </figcaption>
-              </figure>
-            ))}
           </div>
         </div>
       </section>
