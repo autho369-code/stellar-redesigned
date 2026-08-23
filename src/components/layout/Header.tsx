@@ -14,20 +14,56 @@ interface NavItem {
   children?: NavChild[];
 }
 
+// Audience-first ordering. A board evaluating firms, an owner who needs to pay
+// an assessment, and a listing agent chasing a 22.1 packet were all previously
+// funnelled through one "Resources" dropdown; the three service pages a board
+// uses to self-identify (high-rise, small association, resale) were not in the
+// nav at all.
 const navLinks: NavItem[] = [
-  { name: 'About', href: '/about' },
   {
     name: 'Services',
     href: '/services',
     children: [
+      { name: 'All Services', href: '/services' },
       { name: 'Condominium Management', href: '/services/condominium-management' },
       { name: 'HOA Management', href: '/services/hoa-management' },
       { name: 'Townhome Management', href: '/services/townhome-management' },
+      { name: 'High-Rise Management', href: '/services/high-rise-condominium-management' },
+      { name: 'Small Condo Associations', href: '/services/small-condo-association-management' },
       { name: 'Financial Management', href: '/services/financial-management' },
       { name: 'Maintenance Coordination', href: '/services/maintenance-coordination' },
       { name: 'Board Support', href: '/services/board-support' },
       { name: 'Violation Management', href: '/services/violation-management' },
     ],
+  },
+  {
+    name: 'For Boards',
+    href: '/blog',
+    children: [
+      { name: 'Board Guides', href: '/blog' },
+      { name: 'Governance & Illinois Law', href: '/blog/topic/board-governance-illinois-law' },
+      { name: 'Finance & Reserves', href: '/blog/topic/association-finance-reserves' },
+      { name: 'Building Operations', href: '/blog/topic/building-operations-capital-planning' },
+      { name: 'Choosing Management', href: '/blog/topic/choosing-association-management' },
+      { name: 'Proposal Scorecard', href: '/tools/compare-management-proposals' },
+      { name: 'Pricing', href: '/pricing' },
+    ],
+  },
+  {
+    name: 'Residents',
+    href: '/condo-living',
+    children: [
+      { name: 'Make a Payment', href: 'https://stellarpropertygrp.appfolio.com/connect/', external: true },
+      { name: "The Owner's Companion", href: '/condo-living' },
+      { name: 'Resource Center', href: '/resources' },
+      { name: 'Report a Violation', href: '/resources?form=violation' },
+      { name: 'Board Nomination', href: '/resources?form=nomination' },
+      { name: 'Share Feedback', href: '/reviews' },
+    ],
+  },
+  {
+    name: 'Agents & Lenders',
+    href: '/services/resale-disclosures',
   },
   {
     name: 'Service Areas',
@@ -38,21 +74,15 @@ const navLinks: NavItem[] = [
       { name: 'North Shore', href: '/property-management-north-shore' },
     ],
   },
-  { name: 'Pricing', href: '/pricing' },
   {
-    name: 'Resources',
-    href: '/resources',
+    name: 'About',
+    href: '/about',
     children: [
-      { name: 'Resource Center', href: '/resources' },
-      { name: 'Condo Living Guide', href: '/condo-living' },
-      { name: 'Make a Payment', href: 'https://stellarpropertygrp.appfolio.com/connect/', external: true },
-      { name: 'Bill Pay', href: '/resources?section=pay' },
-      { name: 'Report a Violation', href: '/resources?form=violation' },
-      { name: 'Board Nomination', href: '/resources?form=nomination' },
-      { name: 'Blog', href: '/blog' },
+      { name: 'About the Firm', href: '/about' },
+      { name: 'Mirsad Cerimovic, Principal', href: '/about/mirsad-cerimovic' },
+      { name: 'Contact', href: '/contact' },
     ],
   },
-  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
