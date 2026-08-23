@@ -20,6 +20,7 @@ interface FormData {
   primary_concern: string;
   preferred_contact: string;
   preferred_time: string;
+  reason: string;
   how_heard: string;
   message: string;
 }
@@ -38,7 +39,8 @@ const emptyForm = (inquiryType: InquiryType): FormData => ({
   primary_concern: '',
   preferred_contact: 'email',
   preferred_time: '',
-  how_heard: '',
+  reason: '',
+    how_heard: '',
   message: '',
 });
 
@@ -76,6 +78,7 @@ export function ContactForm() {
           `Primary concern: ${formData.primary_concern}`,
           `Preferred contact: ${formData.preferred_contact}`,
           `Preferred time: ${formData.preferred_time || 'Not provided'}`,
+          `What is prompting the search: ${formData.reason || 'Not provided'}`,
           `How they found Stellar: ${formData.how_heard || 'Not provided'}`,
           `Phone: ${formData.phone || 'Not provided'}`,
           `Message: ${formData.message || 'No additional message'}`,
@@ -279,8 +282,36 @@ export function ContactForm() {
                 <input id="preferred_time" name="preferred_time" value={formData.preferred_time} onChange={handleChange} className={inputClass} placeholder="Example: Tuesday after 3 PM" />
               </div>
               <div className="md:col-span-2">
+                <label htmlFor="reason" className={labelClass}>What is prompting the search?</label>
+                <select id="reason" name="reason" value={formData.reason} onChange={handleChange} className={inputClass}>
+                  <option value="">Select one — optional</option>
+                  <option>Responsiveness — messages go unanswered</option>
+                  <option>Follow-through — work does not get done</option>
+                  <option>Financial reporting is late or unclear</option>
+                  <option>Fees increased, or charges we did not expect</option>
+                  <option>Our manager keeps changing</option>
+                  <option>Our management company was acquired</option>
+                  <option>Moving on from self-management</option>
+                  <option>Developer turnover to owner control</option>
+                  <option>Contract is up for renewal — reviewing options</option>
+                  <option>A specific project or problem we need help with</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div className="md:col-span-2">
                 <label htmlFor="how_heard" className={labelClass}>How did you find Stellar?</label>
-                <input id="how_heard" name="how_heard" value={formData.how_heard} onChange={handleChange} className={inputClass} placeholder="Google, referral, CAI, another board member, or other" />
+                <select id="how_heard" name="how_heard" value={formData.how_heard} onChange={handleChange} className={inputClass}>
+                  <option value="">Select one — optional</option>
+                  <option>Google or other search</option>
+                  <option>ChatGPT, Claude, Perplexity or another AI assistant</option>
+                  <option>Referral from another board</option>
+                  <option>Referral from our attorney</option>
+                  <option>Referral from a vendor or contractor</option>
+                  <option>CAI or CAI Illinois</option>
+                  <option>We read one of your board guides</option>
+                  <option>Someone at Stellar</option>
+                  <option>Other</option>
+                </select>
               </div>
             </div>
           </>
