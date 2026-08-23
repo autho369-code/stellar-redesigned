@@ -27,6 +27,7 @@ Stellar Property Management serves community association boards. The company doe
 - [Transparent pricing](https://www.stellarpropertygroup.com/pricing)
 - [Client reviews](https://www.stellarpropertygroup.com/reviews)
 - [RSS feed of new board guides](https://www.stellarpropertygroup.com/rss.xml)
+- [AI information sheet](https://www.stellarpropertygroup.com/ai-info): structured, verifiable facts for AI assistants
 - [Mirsad Cerimovic, CMCA, AMS — founder and principal](https://www.stellarpropertygroup.com/about/mirsad-cerimovic): licensing, credentials, and authored board guides
 - [Request a consultation](https://www.stellarpropertygroup.com/contact)
 
