@@ -17,10 +17,17 @@ for (const file of readdirSync(blogDir)) {
 if (postSlugs.length < 52 || new Set(postSlugs).size !== postSlugs.length) {
   throw new Error(`Expected at least 52 unique blog articles, found ${postSlugs.length}.`);
 }
-// The current 70-page footprint is intentional: 13 thin micro-neighborhood
-// pages were consolidated into stronger parent areas with permanent redirects.
-if (neighborhoodSlugs.length !== 70 || new Set(neighborhoodSlugs).size !== 70) {
-  throw new Error(`Expected 70 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
+// The current 40-page footprint is intentional. Search Console (3 months to
+// 2026-08-22) showed the previous 70 area pages producing 1,075 impressions and
+// 5 clicks in total, while /property-management-chicago — the head-term page —
+// sat at position 37.7. The coverage was diluting internal authority rather
+// than adding reach, so 30 micro-neighborhood and low-density community-area
+// pages were consolidated into adjacent parents or the flagship Chicago page,
+// on top of the 13 consolidated earlier. Every removed slug 301s in
+// vercel.json. Raise this number only for an area with a genuinely distinct
+// query space, not for coverage.
+if (neighborhoodSlugs.length !== 40 || new Set(neighborhoodSlugs).size !== 40) {
+  throw new Error(`Expected 40 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
 }
 
 const requiredConnections = [

@@ -28,6 +28,12 @@ export interface LocalFaqItem {
 // "Oak Park Adjacent" entry were consolidated into their parent pages;
 // vercel.json 301-redirects each old /property-management-<slug> URL.
 // Only add entries for areas with a query space distinct from existing pages.
+// Consolidation 2026-08-22 (GSC-informed): 30 micro-neighborhood and
+// low-density community-area pages were merged into adjacent parents or the
+// flagship Chicago page. Across 3 months the 70 area pages produced 1,075
+// impressions and 5 clicks in total while /property-management-chicago sat at
+// position 37.7 — the coverage was diluting the head-term page rather than
+// adding reach. vercel.json 301-redirects every removed slug.
 export const neighborhoods: Neighborhood[] = [
   {
     name: 'Lincoln Park',
@@ -165,13 +171,6 @@ export const neighborhoods: Neighborhood[] = [
     zipCodes: ['60625', '60618']
   },
   {
-    name: 'North Center',
-    slug: 'north-center',
-    description: 'North Center is a family-friendly neighborhood anchored by excellent schools and the popular Northcenter Town Square shopping district. Properties here range from charming brick two-flats converted to condos to newer luxury townhome developments. Our management services help North Center boards maintain the high standards that make this one of Chicago\'s most sought-after neighborhoods for families.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60618']
-  },
-  {
     name: 'Roscoe Village',
     slug: 'roscoe-village',
     description: 'Roscoe Village is a walkable, family-oriented neighborhood with a vibrant retail corridor along Roscoe Street. The housing stock includes beautifully renovated vintage buildings alongside modern townhome developments. We provide attentive property management that matches the neighborhood\'s high expectations for quality maintenance and responsive communication.',
@@ -272,25 +271,11 @@ export const neighborhoods: Neighborhood[] = [
     ]
   },
   {
-    name: 'Humboldt Park',
-    slug: 'humboldt-park',
-    description: 'Humboldt Park is a culturally rich neighborhood centered around its beautiful namesake park with a historic boathouse and lagoon. The area features a growing number of condominium conversions as the neighborhood continues to develop. We offer attentive, transparent property management tailored to the needs of Humboldt Park\'s diverse community.',
-    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
-    zipCodes: ['60647', '60624', '60651']
-  },
-  {
     name: 'Ukrainian Village',
     slug: 'ukrainian-village',
     description: 'Ukrainian Village is prized for its tree-lined streets, ornate churches, and some of Chicago\'s finest Victorian and workers\' cottage architecture. Property management in this historic neighborhood requires sensitivity to preservation while implementing modern building systems. We help Ukrainian Village boards maintain their buildings\' historic character while ensuring efficient operations.',
     propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
     zipCodes: ['60622', '60612']
-  },
-  {
-    name: 'West Town',
-    slug: 'west-town',
-    description: 'West Town encompasses several vibrant sub-neighborhoods and features a dynamic mix of historic and contemporary residential properties. The area\'s rapid development means property management must stay ahead of evolving building codes and market expectations. Our team brings the expertise needed to manage West Town\'s diverse property portfolio effectively.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60622', '60642']
   },
   {
     name: 'River North',
@@ -417,13 +402,6 @@ export const neighborhoods: Neighborhood[] = [
     ]
   },
   {
-    name: 'Near North Side',
-    slug: 'near-north-side',
-    description: 'The Near North Side is a bustling urban center that includes some of Chicago\'s most recognizable skyline towers and cultural institutions. Property management in this area requires handling complex high-rise operations, large resident populations, and premium service expectations. We bring institutional-grade management capabilities to Near North Side condominium associations of all sizes.',
-    propertyTypes: ['condominiums', 'high-rises', 'HOAs'],
-    zipCodes: ['60610', '60611', '60654']
-  },
-  {
     name: 'Loop',
     slug: 'loop',
     description: 'The Loop is Chicago\'s central business district, where an increasing number of commercial buildings have been converted to residential condominiums and new luxury towers continue to rise. Property management in the Loop requires expertise in mixed-use buildings, 24/7 operations, and coordination with commercial tenants. We excel at managing the unique complexities of downtown living.',
@@ -462,13 +440,6 @@ export const neighborhoods: Neighborhood[] = [
     ]
   },
   {
-    name: "Printer's Row",
-    slug: 'printers-row',
-    description: 'Printer\'s Row is a historic district known for its stunning loft conversions in former printing and publishing buildings with soaring ceilings and exposed brick. Managing these unique properties requires understanding the specific maintenance needs of converted industrial spaces. We specialize in preserving the industrial character that makes Printer\'s Row lofts so desirable while ensuring modern comfort.',
-    propertyTypes: ['condominiums', 'HOAs'],
-    zipCodes: ['60605']
-  },
-  {
     name: 'West Loop',
     slug: 'west-loop',
     description: 'The West Loop is Chicago\'s hottest neighborhood, home to Restaurant Row and a booming residential market of converted warehouses and sleek new towers. Property management here must keep pace with rapid development and the high expectations of an upscale, design-conscious resident base. We deliver cutting-edge management services that match the West Loop\'s innovative spirit.',
@@ -498,27 +469,6 @@ export const neighborhoods: Neighborhood[] = [
         a: 'Yes. Loft buildings have a maintenance profile all their own — exposed brick and timber, oversized windows, freight elevators, rooftop systems — and we manage buildings of the same era and construction across the city.',
       },
     ]
-  },
-  {
-    name: 'Fulton Market',
-    slug: 'fulton-market',
-    description: 'Fulton Market has evolved from a meatpacking district into one of Chicago\'s most sought-after addresses, with luxury condominiums and trendy loft conversions. Property management in this rapidly evolving area requires adaptability and experience with new construction warranty issues and amenity-rich buildings. We help Fulton Market associations establish strong operational foundations from day one.',
-    propertyTypes: ['condominiums', 'high-rises', 'HOAs'],
-    zipCodes: ['60607', '60661']
-  },
-  {
-    name: 'Pilsen',
-    slug: 'pilsen',
-    description: 'Pilsen is a vibrant, culturally rich neighborhood celebrated for its Mexican-American heritage, colorful murals, and thriving arts community. The area features a growing number of condominium conversions and new developments alongside its iconic row houses. We provide culturally aware property management that respects Pilsen\'s community character while supporting property value growth.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60608', '60616']
-  },
-  {
-    name: 'Bridgeport',
-    slug: 'bridgeport',
-    description: 'Bridgeport is a proud, historic neighborhood with strong community ties, known as the traditional home of Chicago\'s political establishment. The area features a mix of classic Chicago bungalows, newer townhome developments, and growing condominium options. We bring dependable, no-nonsense property management to Bridgeport associations that value straightforward service and fiscal responsibility.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60608', '60609']
   },
   {
     name: 'Hyde Park',
@@ -563,53 +513,11 @@ export const neighborhoods: Neighborhood[] = [
     zipCodes: ['60615', '60653']
   },
   {
-    name: 'Bronzeville',
-    slug: 'bronzeville',
-    description: 'Bronzeville is experiencing a powerful revitalization, building on its rich African-American cultural heritage as the historic center of Chicago\'s Black Metropolis. New condominium developments and townhome communities are bringing fresh energy to the neighborhood. We support Bronzeville\'s growth with professional property management that helps new and established associations thrive.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60653', '60616']
-  },
-  {
-    name: 'South Shore',
-    slug: 'south-shore',
-    description: 'South Shore is a lakefront neighborhood with beautiful residential architecture, anchored by the historic South Shore Cultural Center and Jackson Park. The area features distinctive residential architecture and a growing number of managed condominium associations. We bring reliable, attentive property management to South Shore boards focused on building strong communities and protecting their investments.',
-    propertyTypes: ['condominiums', 'HOAs'],
-    zipCodes: ['60649']
-  },
-  {
-    name: 'Beverly',
-    slug: 'beverly',
-    description: 'Beverly is a unique Chicago neighborhood that feels like a suburban enclave, famous for its rolling hills, historic homes, and the annual Beverly Hills bike race. The area features many homeowner associations and townhome communities that require professional management. We serve Beverly with the personalized attention and community focus that this tight-knit neighborhood deserves.',
-    propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
-    zipCodes: ['60643', '60655']
-  },
-  {
-    name: 'Mount Greenwood',
-    slug: 'mount-greenwood',
-    description: 'Mount Greenwood is a quiet, family-oriented neighborhood on Chicago\'s far southwest side known for its strong community spirit and well-kept properties. The area features homeowner associations and townhome communities that prioritize safety and property maintenance. We deliver dependable management services that align with Mount Greenwood\'s values of community pride and fiscal responsibility.',
-    propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
-    zipCodes: ['60655']
-  },
-  {
     name: 'Edison Park',
     slug: 'edison-park',
     description: 'Edison Park is Chicago\'s northwesternmost neighborhood, offering a small-town feel with easy Metra access to downtown. The area features well-maintained townhome communities and homeowner associations with strong community involvement. We provide the responsive, hands-on management that Edison Park residents expect from their neighborhood\'s commitment to quality living.',
     propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
     zipCodes: ['60631']
-  },
-  {
-    name: 'Norwood Park',
-    slug: 'norwood-park',
-    description: 'Norwood Park is a quiet residential neighborhood on the northwest side with tree-lined streets and a historic district dating back to the 1800s. The area features a mix of homeowner associations and condominium communities that value traditional neighborhood character. We bring professional management to Norwood Park properties while respecting the area\'s established residential traditions.',
-    propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
-    zipCodes: ['60631', '60656']
-  },
-  {
-    name: 'Jefferson Park',
-    slug: 'jefferson-park',
-    description: 'Jefferson Park is a transit-rich northwest side neighborhood served by both CTA and Metra, making it popular with commuters. The area has seen growing condominium development near its transportation hub alongside established homeowner associations. We offer efficient, accessible property management that serves Jefferson Park\'s practical-minded community.',
-    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
-    zipCodes: ['60630', '60646']
   },
   {
     name: 'Portage Park',
@@ -633,41 +541,6 @@ export const neighborhoods: Neighborhood[] = [
     zipCodes: ['60618', '60647']
   },
   {
-    name: 'Hermosa',
-    slug: 'hermosa',
-    description: 'Hermosa is a predominantly residential neighborhood on Chicago\'s northwest side with a strong Latino cultural identity. The area features a growing number of condominium and homeowner associations seeking professional management. We provide bilingual, community-oriented property management services that meet the specific needs of Hermosa\'s residential associations.',
-    propertyTypes: ['condominiums', 'HOAs'],
-    zipCodes: ['60639']
-  },
-  {
-    name: 'Belmont Cragin',
-    slug: 'belmont-cragin',
-    description: 'Belmont Cragin is one of Chicago\'s most populated neighborhoods, featuring a vibrant commercial district and a strong residential community. The area has growing demand for professional property management as condominium and townhome associations mature. We serve Belmont Cragin with responsive, reliable management that helps associations build strong financial foundations.',
-    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
-    zipCodes: ['60639', '60641']
-  },
-  {
-    name: 'Montclare',
-    slug: 'montclare',
-    description: 'Montclare is a small, quiet residential neighborhood on the far northwest side known for its well-kept homes and community stability. The area features several townhome and condominium associations that benefit from professional management oversight. We offer personalized service scaled to Montclare\'s intimate community size, ensuring every association receives dedicated attention.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60707', '60634']
-  },
-  {
-    name: 'Dunning',
-    slug: 'dunning',
-    description: 'Dunning is a residential neighborhood on the northwest side offering a strong residential character and convenient access to O\'Hare airport. The area features established homeowner associations and growing condominium communities. We bring professional management to Dunning properties, helping boards maintain property values and create welcoming residential communities.',
-    propertyTypes: ['HOAs', 'condominiums', 'townhomes'],
-    zipCodes: ['60634']
-  },
-  {
-    name: 'Forest Glen',
-    slug: 'forest-glen',
-    description: 'Forest Glen is one of Chicago\'s most secluded and affluent neighborhoods, with winding streets and lush landscaping that feel miles from the city. The area features upscale homeowner associations and condominium communities with high standards for property maintenance. We provide premium management services that uphold Forest Glen\'s reputation for exceptional residential quality.',
-    propertyTypes: ['HOAs', 'condominiums', 'townhomes'],
-    zipCodes: ['60646', '60630']
-  },
-  {
     name: 'North Park',
     slug: 'north-park',
     description: 'North Park is a serene neighborhood bordered by the North Branch of the Chicago River, home to North Park University and beautiful nature preserves. The area features a mix of condominium associations and townhome communities in a peaceful residential setting, and our service area here includes the Peterson Park blocks along Peterson Avenue. We provide thoughtful property management that complements North Park\'s tranquil character and strong sense of community.',
@@ -675,88 +548,11 @@ export const neighborhoods: Neighborhood[] = [
     zipCodes: ['60625', '60659']
   },
   {
-    name: 'West Ridge',
-    slug: 'west-ridge',
-    description: 'West Ridge is one of Chicago\'s most culturally diverse neighborhoods, featuring a thriving Devon Avenue commercial corridor and a mix of housing types. The area has many condominium associations that benefit from professional management with multilingual capabilities. We serve West Ridge communities with culturally responsive management and strong vendor relationships.',
-    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
-    zipCodes: ['60645', '60659']
-  },
-  {
-    name: 'Ravenswood Manor',
-    slug: 'ravenswood-manor',
-    description: 'Ravenswood Manor is a picturesque neighborhood along the Chicago River with a designated historic district and a strong homeowner community. Property management here requires sensitivity to historic preservation guidelines and close coordination with an active neighborhood association. We provide knowledgeable management that respects Ravenswood Manor\'s architectural heritage and community standards.',
-    propertyTypes: ['HOAs', 'condominiums', 'townhomes'],
-    zipCodes: ['60625']
-  },
-  {
-    name: 'Sauganash',
-    slug: 'sauganash',
-    description: 'Sauganash is one of Chicago\'s most prestigious residential neighborhoods, featuring spacious homes and beautifully landscaped properties along winding streets. The area\'s homeowner associations maintain high standards for property appearance and community amenities. We deliver premium management services befitting Sauganash\'s reputation as one of the city\'s finest residential enclaves.',
-    propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
-    zipCodes: ['60646']
-  },
-  {
-    name: 'Wildwood',
-    slug: 'wildwood',
-    description: 'Wildwood is an exclusive pocket neighborhood on the far northwest side with a distinctly suburban character and strong property values. The area features established homeowner associations that take pride in maintaining their community\'s pristine appearance. We provide meticulous management services that support Wildwood\'s high standards for property maintenance and community governance.',
-    propertyTypes: ['HOAs', 'townhomes'],
-    zipCodes: ['60646', '60656']
-  },
-  {
-    name: 'Edgebrook',
-    slug: 'edgebrook',
-    description: 'Edgebrook is a secluded, affluent neighborhood on the northwest side that feels worlds apart from the urban hustle, with forest preserves and winding roads. The area\'s homeowner associations focus on preserving the neighborhood\'s natural beauty and residential exclusivity. We manage Edgebrook properties with the attention to detail and environmental sensitivity this unique community requires.',
-    propertyTypes: ['HOAs', 'townhomes', 'condominiums'],
-    zipCodes: ['60646', '60630']
-  },
-  {
-    name: 'Old Irving Park',
-    slug: 'old-irving-park',
-    description: 'Old Irving Park is a historic neighborhood with a designated landmark district featuring stately homes from the early 1900s alongside new boutique developments. Property management here balances historic preservation with modern amenity expectations. We bring experience in managing architecturally diverse properties to Old Irving Park\'s growing association community.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60618', '60641']
-  },
-  {
     name: 'Mayfair',
     slug: 'mayfair',
     description: 'Mayfair is a stable residential neighborhood on the northwest side with convenient access to major transportation corridors. The area features a mix of condominium buildings and townhome communities seeking quality management and responsive service, and our coverage includes the North Mayfair blocks as well. We deliver reliable, professional property management that helps Mayfair associations steward their budgets with confidence.',
     propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
     zipCodes: ['60630', '60646']
-  },
-  {
-    name: 'Galewood',
-    slug: 'galewood',
-    description: 'Galewood is a residential neighborhood on the west side with a mix of bungalows, townhomes, and growing condominium developments near the Metra station. The area\'s associations benefit from professional management that understands the neighborhood\'s blend of longtime residents and newcomers. We provide balanced, community-minded property management to Galewood associations.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60639', '60707']
-  },
-  {
-    name: 'Austin',
-    slug: 'austin',
-    description: 'Austin is Chicago\'s largest neighborhood by population, featuring a diverse housing stock and significant ongoing investment in community revitalization. The area has a growing number of condominium associations and townhome communities seeking professional guidance, and our service area runs to the Oak Park border along Austin Boulevard. We support Austin\'s development with accessible, community-focused property management that helps associations build value.',
-    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
-    zipCodes: ['60644', '60651']
-  },
-  {
-    name: 'East Village',
-    slug: 'east-village',
-    description: 'East Village is a trendy, walkable neighborhood within West Town, known for its eclectic dining scene and beautifully restored vintage buildings. The area features condominium conversions that blend historic charm with modern living. We manage East Village properties with sensitivity to their architectural character while implementing efficient modern management practices.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60622']
-  },
-  {
-    name: 'Noble Square',
-    slug: 'noble-square',
-    description: 'Noble Square is a historic neighborhood at the crossroads of several vibrant Chicago communities, featuring landmark churches and a growing residential population. The area\'s condominium associations benefit from professional management that understands the neighborhood\'s evolving character. We provide responsive management to Noble Square properties navigating growth while preserving community identity.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60622', '60642']
-  },
-  {
-    name: 'Goose Island',
-    slug: 'goose-island',
-    description: 'Goose Island is a unique Chicago neighborhood undergoing a dramatic transformation from its industrial past into a modern mixed-use destination with new residential developments. Property management on Goose Island requires navigating new construction challenges and establishing association operations from the ground up. We specialize in helping newly developed Goose Island communities build strong management foundations.',
-    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
-    zipCodes: ['60642', '60622']
   },
   {
     name: 'Evanston',

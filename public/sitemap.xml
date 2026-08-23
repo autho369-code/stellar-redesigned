@@ -109,9 +109,6 @@
     <loc>https://www.stellarpropertygroup.com/property-management-albany-park</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-north-center</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-roscoe-village</loc>
   </url>
   <url>
@@ -124,13 +121,7 @@
     <loc>https://www.stellarpropertygroup.com/property-management-logan-square</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-humboldt-park</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-ukrainian-village</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-west-town</loc>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/property-management-river-north</loc>
@@ -145,28 +136,13 @@
     <loc>https://www.stellarpropertygroup.com/property-management-old-town</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-near-north-side</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-loop</loc>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/property-management-south-loop</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-printers-row</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-west-loop</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-fulton-market</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-pilsen</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-bridgeport</loc>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/property-management-hyde-park</loc>
@@ -175,25 +151,7 @@
     <loc>https://www.stellarpropertygroup.com/property-management-kenwood</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-bronzeville</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-south-shore</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-beverly</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-mount-greenwood</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-edison-park</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-norwood-park</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-jefferson-park</loc>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/property-management-portage-park</loc>
@@ -205,58 +163,10 @@
     <loc>https://www.stellarpropertygroup.com/property-management-avondale</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-hermosa</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-belmont-cragin</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-montclare</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-dunning</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-forest-glen</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-north-park</loc>
   </url>
   <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-west-ridge</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-ravenswood-manor</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-sauganash</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-wildwood</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-edgebrook</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-old-irving-park</loc>
-  </url>
-  <url>
     <loc>https://www.stellarpropertygroup.com/property-management-mayfair</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-galewood</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-austin</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-east-village</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-noble-square</loc>
-  </url>
-  <url>
-    <loc>https://www.stellarpropertygroup.com/property-management-goose-island</loc>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/property-management-evanston</loc>
@@ -354,6 +264,10 @@
   <url>
     <loc>https://www.stellarpropertygroup.com/blog/which-illinois-law-governs-condo-hoa-townhome</loc>
     <lastmod>2026-08-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.stellarpropertygroup.com/blog/illinois-condo-association-records-request-guide</loc>
+    <lastmod>2026-08-22</lastmod>
   </url>
   <url>
     <loc>https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-budget-adoption-guide</loc>
