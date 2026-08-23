@@ -3,59 +3,521 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "functions": {
-    "api/knowledge.js": { "maxDuration": 300 }
+    "api/knowledge.js": {
+      "maxDuration": 300
+    }
   },
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true },
-    { "source": "/home/", "destination": "/", "permanent": true },
-    { "source": "/contact-us", "destination": "/contact", "permanent": true },
-    { "source": "/contact-us/", "destination": "/contact", "permanent": true },
-    { "source": "/contact-us/:path*", "destination": "/contact", "permanent": true },
-    { "source": "/about-us", "destination": "/about", "permanent": true },
-    { "source": "/our-services", "destination": "/services", "permanent": true },
-    { "source": "/property-management-services", "destination": "/services", "permanent": true },
-    { "source": "/payments", "destination": "/resources", "permanent": true },
-    { "source": "/make-a-payment", "destination": "/resources", "permanent": true },
-    { "source": "/pay-assessments", "destination": "/resources", "permanent": true },
-    { "source": "/pay-assessments/", "destination": "/resources", "permanent": true },
-    { "source": "/request-a-proposal", "destination": "/contact", "permanent": true },
-    { "source": "/properties", "destination": "/service-areas", "permanent": true },
-    { "source": "/properties/:path*", "destination": "/service-areas", "permanent": true },
-    { "source": "/Andersonville", "destination": "/property-management-andersonville", "permanent": true },
-    { "source": "/Andersonville/", "destination": "/property-management-andersonville", "permanent": true },
-    { "source": "/deerfield", "destination": "/property-management-deerfield", "permanent": true },
-    { "source": "/deerfield/", "destination": "/property-management-deerfield", "permanent": true },
-    { "source": "/glenview", "destination": "/property-management-glenview", "permanent": true },
-    { "source": "/glenview/", "destination": "/property-management-glenview", "permanent": true },
-    { "source": "/property-management-sheffield", "destination": "/property-management-lincoln-park", "permanent": true },
-    { "source": "/property-management-depaul", "destination": "/property-management-lincoln-park", "permanent": true },
-    { "source": "/property-management-ranch-triangle", "destination": "/property-management-lincoln-park", "permanent": true },
-    { "source": "/property-management-wrightwood", "destination": "/property-management-lincoln-park", "permanent": true },
-    { "source": "/property-management-boystown", "destination": "/property-management-lakeview", "permanent": true },
-    { "source": "/property-management-wrigleyville", "destination": "/property-management-lakeview", "permanent": true },
-    { "source": "/property-management-lakeview-east", "destination": "/property-management-lakeview", "permanent": true },
-    { "source": "/property-management-arcadia-terrace", "destination": "/property-management-lincoln-square", "permanent": true },
-    { "source": "/property-management-bowmanville", "destination": "/property-management-lincoln-square", "permanent": true },
-    { "source": "/property-management-budlong-woods", "destination": "/property-management-lincoln-square", "permanent": true },
-    { "source": "/property-management-peterson-park", "destination": "/property-management-north-park", "permanent": true },
-    { "source": "/property-management-north-mayfair", "destination": "/property-management-mayfair", "permanent": true },
-    { "source": "/property-management-oak-park-adjacent", "destination": "/property-management-austin", "permanent": true }
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/:path*",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/our-services",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-services",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/payments",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/make-a-payment",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/pay-assessments",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/pay-assessments/",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/request-a-proposal",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/properties",
+      "destination": "/service-areas",
+      "permanent": true
+    },
+    {
+      "source": "/properties/:path*",
+      "destination": "/service-areas",
+      "permanent": true
+    },
+    {
+      "source": "/Andersonville",
+      "destination": "/property-management-andersonville",
+      "permanent": true
+    },
+    {
+      "source": "/Andersonville/",
+      "destination": "/property-management-andersonville",
+      "permanent": true
+    },
+    {
+      "source": "/deerfield",
+      "destination": "/property-management-deerfield",
+      "permanent": true
+    },
+    {
+      "source": "/deerfield/",
+      "destination": "/property-management-deerfield",
+      "permanent": true
+    },
+    {
+      "source": "/glenview",
+      "destination": "/property-management-glenview",
+      "permanent": true
+    },
+    {
+      "source": "/glenview/",
+      "destination": "/property-management-glenview",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-sheffield",
+      "destination": "/property-management-lincoln-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-depaul",
+      "destination": "/property-management-lincoln-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-ranch-triangle",
+      "destination": "/property-management-lincoln-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-wrightwood",
+      "destination": "/property-management-lincoln-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-boystown",
+      "destination": "/property-management-lakeview",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-wrigleyville",
+      "destination": "/property-management-lakeview",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-lakeview-east",
+      "destination": "/property-management-lakeview",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-arcadia-terrace",
+      "destination": "/property-management-lincoln-square",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-bowmanville",
+      "destination": "/property-management-lincoln-square",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-budlong-woods",
+      "destination": "/property-management-lincoln-square",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-peterson-park",
+      "destination": "/property-management-north-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-north-mayfair",
+      "destination": "/property-management-mayfair",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-oak-park-adjacent",
+      "destination": "/property-management-austin",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-austin",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-austin/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-belmont-cragin",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-belmont-cragin/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-beverly",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-beverly/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-bridgeport",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-bridgeport/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-bronzeville",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-bronzeville/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-dunning",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-dunning/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-east-village",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-east-village/",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-edgebrook",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-edgebrook/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-forest-glen",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-forest-glen/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-fulton-market",
+      "destination": "/property-management-west-loop",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-fulton-market/",
+      "destination": "/property-management-west-loop",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-galewood",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-galewood/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-goose-island",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-goose-island/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-hermosa",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-hermosa/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-humboldt-park",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-humboldt-park/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-jefferson-park",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-jefferson-park/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-montclare",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-montclare/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-mount-greenwood",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-mount-greenwood/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-near-north-side",
+      "destination": "/property-management-river-north",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-near-north-side/",
+      "destination": "/property-management-river-north",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-noble-square",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-noble-square/",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-north-center",
+      "destination": "/property-management-roscoe-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-north-center/",
+      "destination": "/property-management-roscoe-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-norwood-park",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-norwood-park/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-old-irving-park",
+      "destination": "/property-management-irving-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-old-irving-park/",
+      "destination": "/property-management-irving-park",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-pilsen",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-pilsen/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-printers-row",
+      "destination": "/property-management-south-loop",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-printers-row/",
+      "destination": "/property-management-south-loop",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-ravenswood-manor",
+      "destination": "/property-management-ravenswood",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-ravenswood-manor/",
+      "destination": "/property-management-ravenswood",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-sauganash",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-sauganash/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-south-shore",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-south-shore/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-west-ridge",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-west-ridge/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-west-town",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-west-town/",
+      "destination": "/property-management-ukrainian-village",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-wildwood",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/property-management-wildwood/",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/site/:path*", "destination": "/api/gone" },
-    { "source": "/knowledge", "destination": "/knowledge.html" },
-    { "source": "/knowledge/:path*", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/api/not-found" }
+    {
+      "source": "/site/:path*",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/knowledge",
+      "destination": "/knowledge.html"
+    },
+    {
+      "source": "/knowledge/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api/not-found"
+    }
   ]
 }
