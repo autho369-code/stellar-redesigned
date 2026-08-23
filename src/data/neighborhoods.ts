@@ -113,7 +113,7 @@ export const neighborhoods: Neighborhood[] = [
     localProof: [
       {
         title: 'The Sheridan Road corridor',
-        detail: 'Edgewater\'s stretch of Sheridan Road holds one of the densest runs of vintage lakefront high-rises in Chicago, including landmark co-op buildings. Wind exposure, aging risers, and facade critical examinations drive capital planning here, and we manage those cycles daily.',
+        detail: 'Edgewater\'s stretch of Sheridan Road holds one of the densest runs of vintage lakefront high-rises in Chicago, alongside landmark co-op buildings, which we do not serve. For the condominium associations we manage here, wind exposure, aging risers, and facade critical examinations drive capital planning, and we run those cycles daily.',
       },
       {
         title: 'Bryn Mawr Historic District',
@@ -128,10 +128,6 @@ export const neighborhoods: Neighborhood[] = [
       {
         q: 'Can Stellar manage older lakefront high-rises in Edgewater?',
         a: 'Yes — vintage high-rise management is one of our core strengths. Edgewater\'s lakefront towers need proactive masonry and facade programs, riser and window replacement planning, and reserves that anticipate lakefront weathering. We build board-approved capital calendars for each building.',
-      },
-      {
-        q: 'Do you manage housing cooperatives as well as condominiums?',
-        a: 'Yes. Edgewater retains several co-op buildings alongside its condominiums, and we support both — including share-and-proprietary-lease administration for co-ops — with the same transparent monthly financial reporting.',
       },
     ]
   },
@@ -362,11 +358,7 @@ export const neighborhoods: Neighborhood[] = [
     localFaq: [
       {
         q: 'Does Stellar manage landmark and vintage buildings in the Gold Coast?',
-        a: 'Yes. We manage vintage condominium and co-op buildings where exterior alterations require Commission on Chicago Landmarks review, coordinating approvals, specialty masons, and phased capital plans that respect both the architecture and the budget.',
-      },
-      {
-        q: 'Can you manage housing cooperatives as well as condominiums?',
-        a: 'Yes. The Gold Coast retains several cooperatives among its vintage high-rises. Co-op boards receive the same transparent monthly reporting, with share-structure and proprietary-lease administration handled correctly.',
+        a: 'Yes. We manage vintage condominium associations where exterior alterations require Commission on Chicago Landmarks review, coordinating approvals, specialty masons, and phased capital plans that respect both the architecture and the budget.',
       },
     ]
   },
@@ -483,7 +475,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         title: 'Capital planning for older buildings',
-        detail: 'Hyde Park\'s vintage masonry condominiums and co-ops need disciplined plans for facades, roofs, windows, risers, boilers, and elevators. We connect reserve assumptions to an actual multi-year project calendar instead of waiting for failures.',
+        detail: 'Hyde Park\'s vintage masonry condominium associations need disciplined plans for facades, roofs, windows, risers, boilers, and elevators. We connect reserve assumptions to an actual multi-year project calendar instead of waiting for failures.',
       },
       {
         title: 'Financial clarity for active boards',
@@ -557,7 +549,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Evanston',
     slug: 'evanston',
-    description: 'Evanston is the North Shore\'s most vibrant lakefront city, home to Northwestern University, a thriving downtown, and an exceptional mix of vintage lakefront condominiums, mid-century co-ops, and modern transit-oriented developments. Property management in Evanston requires fluency with the city\'s own landlord-tenant and building regulations layered on top of Illinois condominium law. We serve Evanston associations with the responsive, detail-driven management its engaged, well-informed boards expect.',
+    description: 'Evanston is the North Shore\'s most vibrant lakefront city, home to Northwestern University, a thriving downtown, and an exceptional mix of vintage lakefront condominiums, mid-century courtyard buildings, and modern transit-oriented developments. Property management in Evanston requires fluency with the city\'s own landlord-tenant and building regulations layered on top of Illinois condominium law. We serve Evanston associations with the responsive, detail-driven management its engaged, well-informed boards expect.',
     propertyTypes: ['condominiums', 'high-rises', 'HOAs', 'townhomes'],
     zipCodes: ['60201', '60202'],
     region: 'north-shore',
@@ -568,7 +560,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         title: 'Lakefront vintage to downtown towers',
-        detail: 'From vintage co-ops and courtyard condos near the lakefront to transit-oriented towers by the Davis Street Metra and CTA stops, Evanston\'s stock spans a century of construction. Our capital planning spans it too.',
+        detail: 'From vintage courtyard condominiums near the lakefront to transit-oriented towers by the Davis Street Metra and CTA stops, Evanston\'s stock spans a century of construction. Our capital planning spans it too.',
       },
       {
         title: 'Engaged, well-informed boards',
@@ -579,10 +571,6 @@ export const neighborhoods: Neighborhood[] = [
       {
         q: 'Does Evanston regulate condo associations differently than Chicago?',
         a: 'Evanston enforces its own property-standards and rental-registration ordinances alongside the Illinois Condominium Property Act, so compliance looks different than it does across the border in Chicago. We manage Evanston associations with those local requirements built into day-to-day operations.',
-      },
-      {
-        q: 'Do you manage vintage co-ops and courtyard buildings in Evanston?',
-        a: 'Yes. Evanston\'s vintage housing stock — lakefront co-ops, courtyard condominiums, and mid-century buildings — is central to our North Shore practice, with capital planning and specialty vendors suited to older construction.',
       },
     ]
   },

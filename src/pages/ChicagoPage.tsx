@@ -80,9 +80,9 @@ const buildingStock = [
       'Shared roofs, private entries, and drainage that becomes contentious the first time a downspout backs up. Usually governed under CICAA rather than the Condominium Property Act, which changes notice and voting rules.',
   },
   {
-    era: 'Co-operatives',
+    era: 'Mixed-use with ground-floor retail',
     detail:
-      'Share ownership, proprietary leases, underlying mortgages, and transfer approvals. A different legal animal from a condominium, and one most Chicago management firms quietly avoid.',
+      'A commercial tenant under the residential units changes everything: shared mechanicals with split responsibility, separate insurance exposure, deliveries and refuse in a residential building, and an assessment structure the declaration rarely explains cleanly.',
   },
 ];
 
