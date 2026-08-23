@@ -346,6 +346,76 @@ export default function About() {
         </div>
       </section>
 
+      {/* ── Independent ───────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-white border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-14">
+            <div className="lg:col-span-5">
+              <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+                <span className="accent-rule" />
+                Ownership
+              </p>
+              <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-7">
+                Independent, and
+                <br />
+                <em className="font-medium text-gold-600">staying that way.</em>
+              </h2>
+              <p className="text-lg text-slate-600 font-light leading-relaxed">
+                Stellar Property Group Inc. is owned and run by the person whose
+                name is on the licence. There is no parent company, no private
+                equity holder, and no affiliated construction, insurance or
+                brokerage arm being steered work.
+              </p>
+            </div>
+
+            <div className="lg:col-span-6 lg:col-start-7">
+              <p className="text-slate-600 font-light leading-relaxed mb-5">
+                That sentence would have been unremarkable a decade ago. It is
+                not now. Community association management is consolidating
+                quickly: the two largest firms in North America together hold
+                only around a tenth of the market, and the rest is being bought
+                up by private-equity-backed platforms assembling regional
+                operators — including in Illinois.
+              </p>
+              <p className="text-slate-600 font-light leading-relaxed mb-5">
+                Boards feel it before they can name it. The manager who knew the
+                building leaves. Response times stretch. Work starts routing to
+                a vendor that turns out to be a sibling company. Nobody
+                announced anything.
+              </p>
+              <p className="text-slate-600 font-light leading-relaxed mb-8">
+                We are not against scale — a national firm is genuinely the
+                right answer for some communities. But a board should know which
+                kind of company it is hiring, and should be able to ask three
+                questions of any firm on its shortlist: who owns you, will the
+                manager you are showing me be the manager we get, and do you
+                make money on the vendors you recommend. We answer all three in
+                writing.
+              </p>
+
+              <dl className="grid sm:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
+                {[
+                  ['19,850', 'Illinois community associations — the 4th largest market in the US'],
+                  ['1,755,000', 'Illinois housing units in community associations'],
+                  ['1', 'Owner, who is also the licensed manager on the account'],
+                ].map(([v, l]) => (
+                  <div key={l} className="bg-white p-6">
+                    <dt className="font-display text-3xl font-light text-ink mb-2 tabular-nums">{v}</dt>
+                    <dd className="text-xs leading-relaxed text-slate-500">{l}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-4 text-xs text-slate-400">
+                Association and unit counts: Foundation for Community
+                Association Research, 2025 U.S. National and State Statistical
+                Review. Reprinted with permission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* ── Mission & Values ───────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
