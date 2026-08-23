@@ -200,8 +200,8 @@ export function ContactForm() {
             <input type="tel" id="phone" name="phone" autoComplete="tel" value={formData.phone} onChange={handleChange} className={inputClass} placeholder="(773) 555-0123" />
           </div>
           <div>
-            <label htmlFor="company" className={labelClass}><Building className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Association name *' : 'Organization'}</label>
-            <input id="company" name="company" required={isBoardInquiry} value={formData.company} onChange={handleChange} className={inputClass} placeholder={isBoardInquiry ? 'Your association' : 'Optional'} />
+            <label htmlFor="company" className={labelClass}><Building className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Association name' : 'Organization'}</label>
+            <input id="company" name="company" value={formData.company} onChange={handleChange} className={inputClass} placeholder={isBoardInquiry ? 'Optional — you can leave this blank' : 'Optional'} />
           </div>
         </div>
 
@@ -228,12 +228,12 @@ export function ContactForm() {
                 </select>
               </div>
               <div>
-                <label htmlFor="number_of_units" className={labelClass}>Number of units *</label>
-                <input type="number" id="number_of_units" name="number_of_units" required min="1" value={formData.number_of_units} onChange={handleChange} className={inputClass} placeholder="50" />
+                <label htmlFor="number_of_units" className={labelClass}>Number of units</label>
+                <input type="number" id="number_of_units" name="number_of_units" min="1" value={formData.number_of_units} onChange={handleChange} className={inputClass} placeholder="Approximate is fine" />
               </div>
               <div>
                 <label htmlFor="board_role" className={labelClass}>Your role *</label>
-                <select id="board_role" name="board_role" required value={formData.board_role} onChange={handleChange} className={inputClass}>
+                <select id="board_role" name="board_role" value={formData.board_role} onChange={handleChange} className={inputClass}>
                   <option value="">Select one</option>
                   <option>Board president</option>
                   <option>Board officer or director</option>
@@ -290,6 +290,20 @@ export function ContactForm() {
           <label htmlFor="message" className={labelClass}><MessageSquare className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Anything else we should know?' : 'Message *'}</label>
           <textarea id="message" name="message" required={!isBoardInquiry} value={formData.message} onChange={handleChange} rows={isBoardInquiry ? 4 : 6} className={`${inputClass} resize-none`} placeholder={isBoardInquiry ? 'Optional context about your board, building, or current management concerns' : 'How can we help?'} />
         </div>
+
+        {isBoardInquiry && (
+          <div className="border border-slate-200 bg-ivory-50 p-5">
+            <p className="mb-2 text-[10px] uppercase tracking-luxe text-slate-500">Confidential</p>
+            <p className="text-sm font-light leading-relaxed text-slate-600">
+              Most boards contact us while still under contract with their
+              current manager. That is the normal case, not an awkward one. We
+              will not contact your existing management company, your board, or
+              anyone at your association. Only the name and email fields are
+              required — leave the rest blank if you would rather not identify
+              the building yet.
+            </p>
+          </div>
+        )}
 
         <button type="submit" disabled={isSubmitting} className="flex w-full items-center justify-center gap-3 bg-gold-600 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-gold-700 disabled:cursor-not-allowed disabled:bg-slate-400">
           {isSubmitting ? (
