@@ -25,6 +25,7 @@ Stellar Property Management serves community association boards. The company doe
 - [Building operations and capital-planning guides](https://www.stellarpropertygroup.com/blog/topic/building-operations-capital-planning)
 - [How to compare Chicago condo and HOA management companies](https://www.stellarpropertygroup.com/blog/score-condo-hoa-management-proposals)
 - [Transparent pricing](https://www.stellarpropertygroup.com/pricing)
+- [Free management proposal scorecard for boards](https://www.stellarpropertygroup.com/tools/compare-management-proposals): weighted comparison tool, no sign-up
 - [Client reviews](https://www.stellarpropertygroup.com/reviews)
 - [RSS feed of new board guides](https://www.stellarpropertygroup.com/rss.xml)
 - [AI information sheet](https://www.stellarpropertygroup.com/ai-info): structured, verifiable facts for AI assistants

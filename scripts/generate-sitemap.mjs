@@ -37,6 +37,7 @@ const staticRoutes = [
   '/resources',
   '/condo-living',
   '/ai-info',
+  '/tools/compare-management-proposals',
   '/privacy-policy',
   '/terms-of-service',
 ];

@@ -44,6 +44,7 @@ import Contact from './pages/Contact';
 import Resources from './pages/Resources';
 import CondoLiving from './pages/CondoLiving';
 import AiInfo from './pages/AiInfo';
+import CompareProposals from './pages/CompareProposals';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
@@ -92,6 +93,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/resources" element={<Resources />} />
             <Route path="/condo-living" element={<CondoLiving />} />
             <Route path="/ai-info" element={<AiInfo />} />
+            <Route path="/tools/compare-management-proposals" element={<CompareProposals />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="*" element={<CatchAllRoute />} />

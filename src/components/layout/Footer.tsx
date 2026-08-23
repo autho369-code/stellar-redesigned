@@ -26,6 +26,7 @@ const companyLinks = [
   { name: 'Share Feedback', href: '/reviews' },
   { name: 'Journal', href: '/blog' },
   { name: 'Condo Living Guide', href: '/condo-living' },
+  { name: 'Proposal Scorecard', href: '/tools/compare-management-proposals' },
   { name: 'Resources', href: '/resources' },
   { name: 'Contact', href: '/contact' },
 ];

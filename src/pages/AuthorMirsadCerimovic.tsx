@@ -29,12 +29,12 @@ const credentials = [
   {
     abbr: 'CMCA',
     name: 'Certified Manager of Community Associations',
-    desc: 'The international certification for community association managers, administered by the Community Association Managers International Certification Board. The certification is listed and current in CAMICB’s public Find a CMCA directory, which also publishes any revocation — so the absence of a sanction is part of what the record shows.',
+    desc: 'The international certification for community association managers, administered by the Community Association Managers International Certification Board, an independent body whose programme is accredited by the NCCA and to ISO/IEC 17024 — the only credential in this field carrying third-party accreditation. The certification is listed and current in CAMICB’s public Find a CMCA directory, which also publishes any revocation — so the absence of a sanction is part of what the record shows.',
   },
   {
     abbr: 'AMS',
     name: 'Association Management Specialist',
-    desc: 'A Community Associations Institute designation recognizing advanced experience and education in community association management. Awarded March 2020 and currently active; the designation lapses without ongoing continuing education, so an active status means it is being maintained rather than simply held.',
+    desc: 'A Community Associations Institute designation recognizing advanced experience and education in community association management. Awarded March 2020 and currently active; the designation lapses without ongoing continuing education, so an active status means it is being maintained rather than simply held. CAI’s public directory listed roughly 5,400 active AMS holders in August 2026, against an industry of some 60,000 to 65,000 community association managers.',
   },
   {
     abbr: 'SE',

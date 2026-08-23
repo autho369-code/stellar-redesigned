@@ -177,6 +177,29 @@ export default function ResaleDisclosures() {
                 the declaration, and any recorded amendments interact for their
                 specific property.
               </p>
+              <div className="mb-8 border border-paper/20 p-6">
+                <p className="mb-4 text-[10px] uppercase tracking-luxe text-gold-300">What the Act sets for condominiums</p>
+                <dl className="space-y-3 text-sm">
+                  <div className="flex gap-4">
+                    <dt className="w-36 shrink-0 text-paper/50">Response time</dt>
+                    <dd className="text-paper/85">10 business days from a proper request</dd>
+                  </div>
+                  <div className="flex gap-4">
+                    <dt className="w-36 shrink-0 text-paper/50">Fee cap</dt>
+                    <dd className="text-paper/85">$375, adjusted annually by CPI since 2023</dd>
+                  </div>
+                  <div className="flex gap-4">
+                    <dt className="w-36 shrink-0 text-paper/50">Rush service</dt>
+                    <dd className="text-paper/85">Up to $100 additional for completion within 72 hours</dd>
+                  </div>
+                </dl>
+                <p className="mt-5 text-xs leading-relaxed text-paper/50">
+                  Set by 765 ILCS 605/22.1 as amended effective 1 January 2023.
+                  Figures apply to condominium associations; confirm the current
+                  CPI-adjusted cap and how it applies to your association with
+                  counsel.
+                </p>
+              </div>
               <Link to="/blog/illinois-section-22-1-disclosure-board-guide" className="group inline-flex items-center gap-3 text-sm text-gold-300 transition-colors hover:text-gold-200">
                 Read the full board guide to Section 22.1
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
