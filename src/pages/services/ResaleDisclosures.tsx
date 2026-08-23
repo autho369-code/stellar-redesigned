@@ -36,18 +36,18 @@ const documents = [
 
 const audiences = [
   ['Selling owners', 'Request through your attorney or listing agent, or contact us directly. Give us the unit address and target closing date and we will tell you what your building requires.'],
-  ['Listing agents', 'Send the unit address, closing date, and where the package should be delivered. We confirm receipt so nothing sits unacknowledged in an inbox.'],
+  ['Listing agents', 'Send the unit address, closing date, and where the package should be delivered.'],
   ['Attorneys', 'Tell us which statute you are working under if the association is not a condominium — it changes what we produce.'],
   ['Lenders & title', 'Questionnaire and insurance certificate requests come to us directly. Name the underwriting deadline in the request.'],
 ];
 
-const standard = [
-  'A named person owning the process, not a shared inbox',
-  'A standing file: recorded declaration with all amendments, current insurance, current financials',
-  'Reserve and balance figures reconciled to the financial statements before the packet goes out',
-  'Written acknowledgement of every request on receipt',
-  'The governing statute confirmed for the association before anything is drafted',
-  'Board and counsel looped in on anything touching litigation or a pending assessment',
+const askYourManager = [
+  'Which statute governs the association — the Condominium Property Act or CICAA',
+  'Who specifically produces the packet, and what happens when that person is away',
+  'Where the recorded declaration and every amendment are kept',
+  'Whether the reserve and balance figures are reconciled to the financial statements',
+  'What the association’s governing documents and board policy allow to be charged',
+  'How requests are acknowledged, and what turnaround the board has agreed to'
 ];
 
 const schema = {
@@ -106,10 +106,9 @@ export default function ResaleDisclosures() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg font-light leading-relaxed text-slate-600">
-                Closings fail on paperwork more often than on price. Section 22.1
-                packets, paid assessment letters, lender questionnaires and
-                insurance certificates for the associations we manage — handled
-                by a named person, not a shared inbox.
+                Section 22.1 packets, paid assessment letters, lender
+                questionnaires and insurance certificates for the associations
+                we manage. Tell us the unit and the closing date.
               </p>
             </div>
           </div>
@@ -219,18 +218,21 @@ export default function ResaleDisclosures() {
               Nobody can locate the declaration with every recorded amendment.
               The insurance certificate expired two months ago. The reserve
               figure in the packet does not match the balance sheet. The request
-              sat in a personal inbox for nine days while a closing date moved.
-              Each one is preventable.
+              sat in a personal inbox while a closing date moved. None of these
+              are legal problems, and all of them are avoidable.
             </p>
           </div>
-          <ul className="border-t border-slate-200 lg:col-span-6 lg:col-start-7">
-            {standard.map((item) => (
+          <div className="lg:col-span-6 lg:col-start-7">
+            <p className="mb-5 text-[10px] uppercase tracking-luxe text-slate-500">Questions worth asking your manager</p>
+          <ul className="border-t border-slate-200">
+            {askYourManager.map((item) => (
               <li key={item} className="flex gap-4 border-b border-slate-200 py-5 text-slate-600">
                 <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" />
                 <span className="font-light leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
+          </div>
         </div>
       </section>
 

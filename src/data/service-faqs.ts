@@ -266,7 +266,7 @@ export const resaleDisclosureFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'Why do resale packets get delayed?',
-    answer: 'Almost never for legal reasons. They are records problems: nobody can locate the declaration with all recorded amendments, the insurance certificate expired, the reserve figure in the packet does not match the balance sheet, or the request sat in a personal inbox for nine days. Every one of those is preventable with a standing file and a named owner of the process, which is how we run it.',
+    answer: 'Almost never for legal reasons. They are records problems: nobody can locate the declaration with all recorded amendments, the insurance certificate expired, the reserve figure in the packet does not match the balance sheet, or the request sat in a personal inbox for nine days. Every one of those is a records problem rather than a legal one, and preventable with a standing file and a named owner of the process.',
   },
   {
     question: 'Does Stellar charge for resale documents?',
