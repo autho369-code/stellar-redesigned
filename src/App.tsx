@@ -32,6 +32,7 @@ import Resources from './pages/Resources';
 import CondoLiving from './pages/CondoLiving';
 import AiInfo from './pages/AiInfo';
 import CompareProposals from './pages/CompareProposals';
+import BoardToolkit from './pages/BoardToolkit';
 import AuthorMirsadCerimovic from './pages/AuthorMirsadCerimovic';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -115,6 +116,7 @@ export default function App() {
           <Route path="/condo-living" element={<CondoLiving />} />
           <Route path="/ai-info" element={<AiInfo />} />
           <Route path="/tools/compare-management-proposals" element={<CompareProposals />} />
+          <Route path="/board-toolkit" element={<BoardToolkit />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<CatchAllRoute />} />

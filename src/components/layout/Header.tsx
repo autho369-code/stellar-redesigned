@@ -45,6 +45,7 @@ const navLinks: NavItem[] = [
       { name: 'Finance & Reserves', href: '/blog/topic/association-finance-reserves' },
       { name: 'Building Operations', href: '/blog/topic/building-operations-capital-planning' },
       { name: 'Choosing Management', href: '/blog/topic/choosing-association-management' },
+      { name: 'Board Toolkit — RFP & Checklists', href: '/board-toolkit' },
       { name: 'Proposal Scorecard', href: '/tools/compare-management-proposals' },
       { name: 'Pricing', href: '/pricing' },
     ],

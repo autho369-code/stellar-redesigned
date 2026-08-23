@@ -8,8 +8,17 @@
     <copyright>Stellar Property Group Inc.</copyright>
     <managingEditor>mirsad@stellarpropertygroup.com (Mirsad Cerimovic)</managingEditor>
     <webMaster>mirsad@stellarpropertygroup.com (Mirsad Cerimovic)</webMaster>
-    <lastBuildDate>Sat, 22 Aug 2026 17:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 17:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.stellarpropertygroup.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Read a Condo Reserve Study Before the Next Budget</title>
+      <link>https://www.stellarpropertygroup.com/blog/how-to-read-condo-reserve-study</link>
+      <guid isPermaLink="true">https://www.stellarpropertygroup.com/blog/how-to-read-condo-reserve-study</guid>
+      <pubDate>Sun, 23 Aug 2026 17:00:00 GMT</pubDate>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
+      <category>Financial Management</category>
+      <description>A board-level guide to reading a condominium reserve study: components, useful life, funding plans, and the questions to ask before you adopt next year budget.</description>
+    </item>
     <item>
       <title>How Illinois Condo Boards Should Handle Records Requests</title>
       <link>https://www.stellarpropertygroup.com/blog/illinois-condo-association-records-request-guide</link>
@@ -180,15 +189,6 @@
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
       <category>Property Management</category>
       <description>Self-managed condo associations save on management fees but carry hidden risks — collections gaps, compliance exposure, weak accounting, and volunteer burnout. Learn when to hire a manager.</description>
-    </item>
-    <item>
-      <title>Can a Condo Board Enter Your Unit? Illinois Owner Rights Explained</title>
-      <link>https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois</link>
-      <guid isPermaLink="true">https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois</guid>
-      <pubDate>Tue, 20 Feb 2024 17:00:00 GMT</pubDate>
-      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
-      <category>Owner Rights</category>
-      <description>Can an Illinois condo association enter your unit? Learn when associations have a right of access, when advance notice is required, how emergencies differ, and what owner privacy rights remain.</description>
     </item>
   </channel>
 </rss>
