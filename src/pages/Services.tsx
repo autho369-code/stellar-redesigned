@@ -84,6 +84,14 @@ const services: ServiceItem[] = [
     href: '/services/small-condo-association-management',
     scope: ['Board continuity', 'Vendor control', 'Financial clarity'],
   },
+  {
+    n: '10',
+    title: 'Resale Disclosures & Lender Requests',
+    description:
+      'Section 22.1 packets, paid assessment letters, lender questionnaires and insurance certificates — produced on request for sellers, agents, attorneys and lenders.',
+    href: '/services/resale-disclosures',
+    scope: ['Closing documents', 'Lender questionnaires', 'Statute confirmed'],
+  },
 ];
 
 const proofs = [

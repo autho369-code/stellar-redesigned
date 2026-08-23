@@ -246,3 +246,30 @@ export const violationManagementFaqs: ServiceFAQItem[] = [
     answer: 'A board can adopt and amend rules within the authority its declaration and bylaws grant, and Illinois requires notice and an owner meeting before a rule is adopted so owners can be heard first. Amending the declaration itself is a higher bar, generally requiring an owner vote at the percentage the document specifies. Have counsel review any rule touching leasing, occupancy, or an owner’s use of their own unit.',
   },
 ];
+
+export const resaleDisclosureFaqs: ServiceFAQItem[] = [
+  {
+    question: 'What is a Section 22.1 disclosure?',
+    answer: 'Section 22.1 of the Illinois Condominium Property Act governs what a condominium association must disclose when an owner sells a unit. On a proper request from the selling owner or their agent, the association furnishes specified information about its finances, governing documents, insurance, and known obligations affecting the unit. The board is not asked to interpret the sale \u2014 only to produce accurate, current records within the timeframe the Act and the association\u2019s governing documents establish.',
+  },
+  {
+    question: 'Does Section 22.1 apply to my HOA or townhome association?',
+    answer: 'Often not, and boards get this wrong constantly. Section 22.1 sits in the Illinois Condominium Property Act, which governs condominiums. Many Illinois homeowner and townhome associations are governed instead by the Common Interest Community Association Act, a separate statute with its own disclosure and records provisions. Two boards on the same street can owe different things at resale. Your association\u2019s counsel should confirm which statute governs you and how your declaration and recorded amendments interact with it.',
+  },
+  {
+    question: 'What documents does a closing usually require?',
+    answer: 'Most Chicago closings need some combination of the disclosure packet, a paid assessment letter confirming the unit\u2019s account status, a lender questionnaire, a certificate of insurance naming the lender, and current governing documents with all recorded amendments. Condominium project questionnaires for Fannie Mae or Freddie Mac eligibility are increasingly requested as well, and those ask about reserves, deferred maintenance, litigation, and owner-occupancy.',
+  },
+  {
+    question: 'Who can request resale documents?',
+    answer: 'The selling owner, or someone acting on the owner\u2019s behalf \u2014 typically their attorney or listing agent. Lenders and title companies generally request the questionnaire and insurance certificate directly. We ask for the unit address, the requesting party\u2019s role, the closing date, and who should receive the completed package, so nothing waits on a clarifying email.',
+  },
+  {
+    question: 'Why do resale packets get delayed?',
+    answer: 'Almost never for legal reasons. They are records problems: nobody can locate the declaration with all recorded amendments, the insurance certificate expired, the reserve figure in the packet does not match the balance sheet, or the request sat in a personal inbox for nine days. Every one of those is preventable with a standing file and a named owner of the process, which is how we run it.',
+  },
+  {
+    question: 'Does Stellar charge for resale documents?',
+    answer: 'Charges for resale and lender documentation are set by each association\u2019s governing documents and board policy rather than by us, and Illinois regulates what may be charged in connection with these requests. We will tell you what applies to a specific building before any work begins. Contact us at 773.728.0652 or mirsad@stellarpropertygroup.com with the unit address.',
+  },
+];

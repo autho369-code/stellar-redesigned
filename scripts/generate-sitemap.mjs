@@ -23,6 +23,7 @@ const staticRoutes = [
   '/services/violation-management',
   '/services/high-rise-condominium-management',
   '/services/small-condo-association-management',
+  '/services/resale-disclosures',
   '/service-areas',
   '/property-management-chicago',
   '/property-management-north-shore',

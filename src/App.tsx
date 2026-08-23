@@ -17,6 +17,7 @@ import BoardSupport from './pages/services/BoardSupport';
 import ViolationManagement from './pages/services/ViolationManagement';
 import HighRiseManagement from './pages/services/HighRiseManagement';
 import SmallCondoManagement from './pages/services/SmallCondoManagement';
+import ResaleDisclosures from './pages/services/ResaleDisclosures';
 import ServiceAreas from './pages/ServiceAreas';
 import ChicagoPage from './pages/ChicagoPage';
 import NorthShorePage from './pages/NorthShorePage';
@@ -98,6 +99,7 @@ export default function App() {
           <Route path="/services/violation-management" element={<ViolationManagement />} />
           <Route path="/services/high-rise-condominium-management" element={<HighRiseManagement />} />
           <Route path="/services/small-condo-association-management" element={<SmallCondoManagement />} />
+          <Route path="/services/resale-disclosures" element={<ResaleDisclosures />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/property-management-chicago" element={<ChicagoPage />} />
           <Route path="/property-management-north-shore" element={<NorthShorePage />} />

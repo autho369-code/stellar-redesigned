@@ -8,8 +8,17 @@
     <copyright>Stellar Property Group Inc.</copyright>
     <managingEditor>mirsad@stellarpropertygroup.com (Mirsad Cerimovic)</managingEditor>
     <webMaster>mirsad@stellarpropertygroup.com (Mirsad Cerimovic)</webMaster>
-    <lastBuildDate>Fri, 21 Aug 2026 17:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 17:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.stellarpropertygroup.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Illinois Condo Boards Should Handle Records Requests</title>
+      <link>https://www.stellarpropertygroup.com/blog/illinois-condo-association-records-request-guide</link>
+      <guid isPermaLink="true">https://www.stellarpropertygroup.com/blog/illinois-condo-association-records-request-guide</guid>
+      <pubDate>Sat, 22 Aug 2026 17:00:00 GMT</pubDate>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
+      <category>Board Governance</category>
+      <description>A practical process for Illinois condo and HOA boards responding to owner records requests: intake, review with counsel, redaction, delivery, and documentation.</description>
+    </item>
     <item>
       <title>How Illinois Association Boards Should Adopt an Annual Budget</title>
       <link>https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-budget-adoption-guide</link>
@@ -180,15 +189,6 @@
       <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
       <category>Owner Rights</category>
       <description>Can an Illinois condo association enter your unit? Learn when associations have a right of access, when advance notice is required, how emergencies differ, and what owner privacy rights remain.</description>
-    </item>
-    <item>
-      <title>The Most Common Condo Rule Violations in Chicago Buildings</title>
-      <link>https://www.stellarpropertygroup.com/blog/common-condo-rule-violations-chicago</link>
-      <guid isPermaLink="true">https://www.stellarpropertygroup.com/blog/common-condo-rule-violations-chicago</guid>
-      <pubDate>Thu, 09 Nov 2023 17:00:00 GMT</pubDate>
-      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mirsad Cerimovic, CAM, CMCA, AMS</dc:creator>
-      <category>Community Standards</category>
-      <description>From smoking and short-term rentals to balcony storage and hallway clutter, here are the most common condo rule violations in Chicago buildings — and how boards should handle them fairly.</description>
     </item>
   </channel>
 </rss>

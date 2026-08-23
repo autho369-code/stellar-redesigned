@@ -11,6 +11,7 @@ const serviceLinks = [
   { name: 'Violation Management', href: '/services/violation-management' },
   { name: 'High-Rise Management', href: '/services/high-rise-condominium-management' },
   { name: 'Small Condo Management', href: '/services/small-condo-association-management' },
+  { name: 'Resale Disclosures', href: '/services/resale-disclosures' },
 ];
 
 const companyLinks = [
