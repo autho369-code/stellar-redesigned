@@ -14,7 +14,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
     title: 'Condo Deconversion in Illinois: Is It 75% or 85%?',
     metaDescription:
       'The Illinois deconversion threshold is 75% under Section 15 — but 85% inside Chicago city limits since 2019. What boards need to know about a Section 15 sale.',
-    date: '2026-09-26',
+    date: '2026-08-31',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
     readTime: '8 min read',
