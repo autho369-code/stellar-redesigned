@@ -89,4 +89,80 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p><em>This article is general information about Illinois community association practice and is not legal advice. Deconversion involves statutory thresholds, municipal ordinances and your own recorded declaration interacting with each other, and the analysis is property-specific. Engage association counsel before taking any step.</em></p>
     `,
   },
+  {
+    slug: 'illinois-condo-assessment-collection-possession-action',
+    title: 'Collecting Unpaid Assessments in Illinois: The Possession Action',
+    metaDescription:
+      'Illinois lets a condo association take possession of a delinquent unit and lease it to recover the debt. How the Section 9-102 process works and where boards go wrong.',
+    date: '2026-08-31',
+    author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
+    category: 'Illinois Association Law',
+    readTime: '8 min read',
+    excerpt:
+      'Most boards think their only collection tool is a lien that sits until the owner sells. Illinois gives associations something considerably sharper — and considerably more misunderstood.',
+    sources: [
+      {
+        title: 'Illinois Code of Civil Procedure, Article IX (735 ILCS 5/9-102)',
+        url: 'https://law.onecle.com/illinois/735ilcs5/indexIX.html',
+      },
+      {
+        title: 'Illinois Condominium Property Act (765 ILCS 605)',
+        url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62',
+      },
+    ],
+    content: `
+      <p>Ask most Illinois condo boards what happens when an owner stops paying assessments and you will hear the same answer: we record a lien and wait for them to sell. That is a real remedy, and it is also the slowest one available. An owner with no intention of selling can sit on a lien for years while the other owners carry the shortfall.</p>
+
+      <p>Illinois gives associations a materially stronger tool, and it is the one boards understand least.</p>
+
+      <h2>The association can take possession of the unit</h2>
+
+      <p>Under Article IX of the Illinois Code of Civil Procedure — 735 ILCS 5/9-102 — an association may bring an action for possession of a unit when the owner has failed to pay their proportionate share of common expenses after the board has served a statutory demand.</p>
+
+      <p>Read that carefully, because the misunderstanding here is near-universal. <strong>The association does not take ownership of the unit.</strong> It takes <em>possession</em>. The owner keeps title, keeps the mortgage, and keeps the obligation. What the association gains is the right to control occupancy — which in practice means the association can lease the unit and apply the rent against what is owed until the debt, costs and fees are satisfied.</p>
+
+      <p>It is a collection mechanism, not a forfeiture. For a delinquent owner who is not selling and not paying, it is the difference between a claim that might be honoured someday and a unit that starts generating money for the association next month.</p>
+
+      <h2>The demand is where cases are won or lost</h2>
+
+      <p>The possession action is not available until the board has served a proper demand under Section 9-104.1, and the demand is where most associations create their own problems.</p>
+
+      <p>The amount claimed may include regular and special assessments, late charges or interest on the delinquency, and attorneys' fees incurred before the demand was served. Two things follow from that:</p>
+
+      <ul>
+        <li><strong>The figure has to be right.</strong> A demand that overstates what is owed hands the owner an argument, and the whole action can turn on it. The ledger, the late-fee policy and the fee invoices all need to reconcile before anything is served.</li>
+        <li><strong>Attorneys' fees claimed in the demand are subject to court review.</strong> A court can and will look at whether the fees an association is claiming are reasonable. Boards that treat the fee line as a way to pressure an owner tend to discover this at an inconvenient moment.</li>
+      </ul>
+
+      <p>There is also a trap in the opposite direction. Accepting a payment from a delinquent owner does not automatically waive an action already brought — Illinois law addresses payments covering periods other than the one in the demand. But "does not automatically waive" is not the same as "no effect," and how a payment is received, applied and receipted matters. Have counsel tell you how to handle money that arrives mid-process rather than deciding it at the management desk.</p>
+
+      <h2>Condominiums and other associations are not in the same position</h2>
+
+      <p>This is the distinction that catches townhome and HOA boards. The statutory provisions covering common interest communities carry conditions that do not apply identically to condominiums — including, for common interest communities, a requirement that the association be organised as a not-for-profit corporation.</p>
+
+      <p>So a condominium association governed by the Condominium Property Act and a townhome association governed by the Common Interest Community Association Act can face genuinely different answers on whether this route is available and what has to be true first. Two boards a block apart, same delinquency, different remedy. Confirm which statute governs your association before anyone assumes the process transfers.</p>
+
+      <h2>What a board should have in place before any of this matters</h2>
+
+      <p>The associations that collect well are not the ones with the most aggressive attorney. They are the ones whose records survive scrutiny. Before a delinquency ever escalates:</p>
+
+      <ol>
+        <li><strong>A written collection policy, adopted by the board</strong> — when a balance becomes delinquent, when late fees attach, when the file goes to counsel. Applied identically to every owner, every time.</li>
+        <li><strong>An owner ledger that reconciles to the financial statements.</strong> If the balance sheet and the ledger disagree, the demand figure is unsupportable.</li>
+        <li><strong>A documented late-fee and interest basis</strong> traceable to the declaration or an adopted rule, not to custom.</li>
+        <li><strong>Clean records of every notice sent</strong> — what, when, to which address, by what method.</li>
+        <li><strong>Board minutes reflecting the decision to proceed.</strong> Collection escalation is a board action, not a manager's discretion.</li>
+      </ol>
+
+      <p>Every one of those is unglamorous, and every one of them is what makes the difference when an owner's attorney starts looking for a defect.</p>
+
+      <h2>The judgement call boards actually face</h2>
+
+      <p>Having a strong remedy does not mean using it early. Possession actions cost money, take time, and land hardest on owners in genuine difficulty — job loss, illness, a death in the family. Boards that reach for the sharpest tool first tend to spend more in fees than they recover, and they poison the building while doing it.</p>
+
+      <p>The better sequence is consistent, documented escalation with a real chance to cure at each step — and then, for owners who simply will not engage, a remedy with actual teeth. What is unfair to the other owners is not enforcement. It is an association where non-payment carries no consequence and the paying owners quietly cover the difference forever.</p>
+
+      <p><em>This article is general information about Illinois community association practice and is not legal advice. Collection remedies involve statutory notice requirements, your governing documents and court procedure interacting with each other, and the analysis is association-specific. Engage association counsel before serving a demand or filing an action.</em></p>
+    `,
+  },
 ];
