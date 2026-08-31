@@ -64,6 +64,30 @@ if (missing.length > 0) {
     `Scheduled posts must cover every calendar day from ${campaignStart} through ${campaignEnd}. Missing: ${missing.join(', ')}.`,
   );
 }
+
+// One post per day going forward. Days already published may carry more than
+// one — 2026-08-31 does, from a batch that went out together — but stacking
+// several posts on a future date buries them against each other and breaks the
+// drip. New work extends the runway instead.
+const today = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'America/Chicago',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
+
+const futureCounts = new Map();
+for (const date of actualDates) {
+  if (date > today) futureCounts.set(date, (futureCounts.get(date) ?? 0) + 1);
+}
+const stacked = [...futureCounts.entries()].filter(([, count]) => count > 1);
+if (stacked.length > 0) {
+  throw new Error(
+    `Only one post may be scheduled per future date. Stacked: ${stacked
+      .map(([date, count]) => `${date} (${count})`)
+      .join(', ')}. Move the extras to the next open day.`,
+  );
+}
 for (const post of posts) {
   if (post.author !== expectedAuthor) {
     throw new Error(`Scheduled post '${post.slug}' has an incorrect author byline.`);

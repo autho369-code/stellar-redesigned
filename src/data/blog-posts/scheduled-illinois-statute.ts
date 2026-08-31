@@ -329,4 +329,81 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p><em>This article is general information for Illinois community association boards and is not legal or tax advice. Appeal rules, deadlines and filing requirements are set by the Cook County Assessor and Board of Review and change; associations outside Cook County follow a different process entirely. Engage an attorney who handles association tax appeals.</em></p>
     `,
   },
+  {
+    slug: 'chicago-condo-short-term-rental-prohibited-buildings-list',
+    title: 'Stopping Airbnb in Your Chicago Condo: The Prohibited Buildings List',
+    metaDescription:
+      'Chicago lets a condo association opt its entire building out of short-term rentals. Over 90,000 units are already on the Prohibited Buildings List. How a board gets there.',
+    date: '2026-09-26',
+    author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
+    category: 'Rules & Leasing',
+    readTime: '7 min read',
+    excerpt:
+      'Most boards fight short-term rentals one unit at a time, through violation notices and fines. Chicago offers a far blunter instrument, and comparatively few associations use it.',
+    sources: [
+      {
+        title: 'City of Chicago — Shared Housing Registrations and Associated Licenses',
+        url: 'https://www.chicago.gov/city/en/depts/bacp/supp_info/sharedhousingandaccomodationslicensing.html',
+      },
+      {
+        title: 'City of Chicago Data Portal — House Share Prohibited Buildings List',
+        url: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List/7bzs-jsyj/data',
+      },
+      {
+        title: 'City of Chicago — Regulating the House Sharing Industry (ordinance summary)',
+        url: 'https://www.chicago.gov/content/dam/city/depts/bacp/ordinances/housesharesummaryfinal.pdf',
+      },
+    ],
+    content: `
+      <p>A unit in the building is being listed nightly. Strangers have the door code. There is a lockbox in the lobby, luggage in the lift at midnight, and an owner who insists the declaration does not actually prohibit it. Most Chicago boards respond the way they respond to any violation — notice, hearing, fine, repeat — and find themselves in a grinding fight with one owner while a second unit quietly starts doing the same thing.</p>
+
+      <p>Chicago offers something much blunter, and a surprising number of associations have never used it.</p>
+
+      <h2>The Prohibited Buildings List</h2>
+
+      <p>Under Chicago's Shared Housing Ordinance, a building can be placed on the city's <strong>Prohibited Buildings List</strong>, which makes short-term rental activity in that building unlawful as a matter of city regulation — not merely a breach of your declaration.</p>
+
+      <p>This is not a marginal programme. As of July 2026 the list carried more than <strong>2,400 buildings and over 90,000 Chicago units</strong>. Buildings of five or more units can request inclusion, and for condominium properties that request comes from the association.</p>
+
+      <p>The distinction that makes this worth doing is enforcement. A rule in your declaration is enforced by your board, at your association's cost, through your own hearing process, against an owner who may simply absorb the fines as a cost of doing business. Inclusion on the Prohibited Buildings List brings the city's licensing and enforcement apparatus to bear, and it applies to the platforms as well as the host.</p>
+
+      <h2>What it does not do</h2>
+
+      <p>Two honest limits, because boards that expect too much end up disappointed:</p>
+
+      <ul>
+        <li><strong>It addresses short-term rentals, not leasing generally.</strong> If your actual concern is a building filling with year-long tenants, this is the wrong tool. That is a governing-documents question about leasing restrictions, and it is a much harder one.</li>
+        <li><strong>It is not self-policing.</strong> Listings still appear, and someone still has to notice and report them. The list changes who has authority to act and how much weight the response carries — it does not remove the need for someone to be paying attention.</li>
+      </ul>
+
+      <p>It also does not replace your declaration. The strongest position is both: a clear governing-document restriction that lets the association act directly, plus city-level prohibition that gives the restriction outside teeth.</p>
+
+      <h2>What a board should do</h2>
+
+      <ol>
+        <li><strong>Check the list first.</strong> The current Prohibited Buildings List is published on the City of Chicago Data Portal. Some associations discover their building was added years ago by a prior board and nobody carried the knowledge forward.</li>
+        <li><strong>Read your declaration and rules on leasing and transient occupancy</strong> before doing anything else. What you already prohibit shapes what you need.</li>
+        <li><strong>Take a board vote and minute it.</strong> Opting the whole building out affects every owner, including any who are currently hosting. That decision belongs in the minutes, not in a manager's inbox.</li>
+        <li><strong>Follow the city's inclusion process</strong> through the Department of Business Affairs and Consumer Protection, which administers registration and maintains the list.</li>
+        <li><strong>Tell owners plainly</strong>, before and after. An owner who has been hosting legally will be materially affected and should hear it from the board rather than from a delisting notice.</li>
+        <li><strong>Have counsel review</strong> if any owner is currently hosting, or if your documents are ambiguous about transient occupancy. This is where the disputes start.</li>
+      </ol>
+
+      <h2>Why boards keep losing this fight without it</h2>
+
+      <p>Short-term rental disputes are unusually corrosive in condominium buildings. They are not really about the rules — they are about neighbours who feel their home has become a hotel corridor, and an owner who has a genuine economic interest in continuing. Fine-and-hearing cycles let that conflict run for a year while both sides harden.</p>
+
+      <p>Removing the activity's legality at city level changes the conversation from a dispute between neighbours into a compliance fact. That is usually better for the building than winning slowly.</p>
+
+      <p>It is also worth acting before there is a problem. An association with no current short-term rental activity has the easiest possible path: no affected owner, no contested vote, no one with money on the line. Boards that wait until a unit is already listed are negotiating with someone who has revenue to defend.</p>
+
+      <h2>One more reason this matters</h2>
+
+      <p>Short-term rental activity affects more than the corridor. It shows up in insurance — carriers ask about transient occupancy, and answers can affect coverage and premium. It shows up in lender questionnaires, where high transient use can complicate financing for every buyer in the building. And it shows up in resale disclosure, because a buyer's attorney will ask what the building permits.</p>
+
+      <p>A board that resolves this cleanly is not just settling a neighbour dispute. It is protecting the insurability and financeability of every unit, which is squarely the board's job.</p>
+
+      <p><em>This article is general information for Chicago community association boards and is not legal advice. The Shared Housing Ordinance, its registration requirements and the Prohibited Buildings List process are administered by the City of Chicago and change over time; associations outside Chicago are governed differently. Confirm the current process with the city and your association counsel before acting.</em></p>
+    `,
+  },
 ];
