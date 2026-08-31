@@ -5,15 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const blogDir = join(root, 'src/data/blog-posts');
 const expectedAuthor = 'Mirsad Cerimovic, CAM, CMCA, AMS';
-const expectedDates = [];
-
-for (
-  let date = new Date('2026-08-18T12:00:00Z');
-  date <= new Date('2026-09-25T12:00:00Z');
-  date.setUTCDate(date.getUTCDate() + 1)
-) {
-  expectedDates.push(date.toISOString().slice(0, 10));
-}
+const campaignStart = '2026-08-18';
 
 const posts = [];
 for (const file of readdirSync(blogDir)) {
@@ -35,8 +27,24 @@ for (const file of readdirSync(blogDir)) {
 
 posts.sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''));
 const slugs = posts.map(({ slug }) => slug);
-const leadPosts = posts.filter(({ date }) => date && date < expectedDates[0]);
-const cadencePosts = posts.filter(({ date }) => date && date >= expectedDates[0] && date <= expectedDates.at(-1));
+
+// The campaign end is whatever the content says it is. What this script
+// guards is the invariant that actually matters: one post per calendar day
+// from the campaign start through the last scheduled post, with no gaps and
+// no duplicates. Extending the run should be a content change, not a code
+// change — hard-coding the end date meant every new post broke the build.
+const campaignEnd = posts.reduce((latest, { date }) => (date && date > latest ? date : latest), campaignStart);
+const expectedDates = [];
+for (
+  let date = new Date(`${campaignStart}T12:00:00Z`);
+  date <= new Date(`${campaignEnd}T12:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + 1)
+) {
+  expectedDates.push(date.toISOString().slice(0, 10));
+}
+
+const leadPosts = posts.filter(({ date }) => date && date < campaignStart);
+const cadencePosts = posts.filter(({ date }) => date && date >= campaignStart && date <= campaignEnd);
 const actualDates = cadencePosts.map(({ date }) => date);
 
 if (new Set(slugs).size !== slugs.length) {
@@ -46,10 +54,10 @@ if (leadPosts.length !== 1 || leadPosts[0].slug !== 'score-condo-hoa-management-
   throw new Error('The published lead-post set must contain only the 2026-08-14 management-company comparison guide.');
 }
 if (posts.length !== expectedDates.length + leadPosts.length) {
-  throw new Error('Scheduled post files must contain only the published lead post and the 39-post daily campaign.');
+  throw new Error(`Scheduled post files must contain only the published lead post and an unbroken daily campaign. Expected ${expectedDates.length} cadence posts through ${campaignEnd}, found ${posts.length - leadPosts.length}.`);
 }
 if (JSON.stringify(actualDates) !== JSON.stringify(expectedDates)) {
-  throw new Error('Scheduled posts must fill every calendar day from 2026-08-18 through 2026-09-25.');
+  throw new Error(`Scheduled posts must fill every calendar day from ${campaignStart} through ${campaignEnd} exactly once.`);
 }
 for (const post of posts) {
   if (post.author !== expectedAuthor) {

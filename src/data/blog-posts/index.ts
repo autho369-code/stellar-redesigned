@@ -19,6 +19,7 @@ import { scheduledGovernancePosts } from './scheduled-governance';
 import { scheduledFinancePosts } from './scheduled-finance';
 import { scheduledBuildingPosts } from './scheduled-buildings';
 import { scheduledManagementPosts } from './scheduled-management';
+import { scheduledIllinoisStatutePosts } from './scheduled-illinois-statute';
 import { getChicagoPublicationDate } from '../../utils/publication-date';
 
 export interface BlogPost {
@@ -46,6 +47,7 @@ export const allBlogPosts: BlogPost[] = [
   ...scheduledFinancePosts,
   ...scheduledBuildingPosts,
   ...scheduledManagementPosts,
+  ...scheduledIllinoisStatutePosts,
   condoRepairsOwnerVsAssociation,
   movingIntoChicagoCondoGuide,
   rentingOutYourCondoChicago,
