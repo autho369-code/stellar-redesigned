@@ -1,6 +1,6 @@
 # Stellar — next steps (the one to-do list)
 
-Updated: 2026-10-21. Every session reads this first and updates it at the end.
+Updated: 2026-10-22. Every session reads this first and updates it at the end.
 
 ## For Claude
 - [ ] **Write the next batch of daily guides before 2026-11-06** (queue ends
@@ -8,7 +8,7 @@ Updated: 2026-10-21. Every session reads this first and updates it at the end.
       sources. Lead with anything deadline-driven.
 - [ ] Mondays: the "Stellar Monday check" scheduled task reports site,
       publishing and queue status — act on what it finds.
-- [ ] After the Oct 22 check: confirm the collection-policy guide went live.
+- [x] Oct 22: collection-policy guide is live and first on /blog.
 
 ## For Mirsad (only he can do these)
 - [ ] **Reviews:** send the Google review link to owners and board members
@@ -25,6 +25,9 @@ Updated: 2026-10-21. Every session reads this first and updates it at the end.
 - [ ] When a caller says ChatGPT or AI sent them, note it.
 
 ## Done recently
+- 2026-10-22: daily publishing confirmed working; the release job was
+  running 3-4 hours late because GitHub delays jobs set to the top of the
+  hour, so the schedule moved to :23 (PR #34).
 - 2026-10-21: PR #29 business info for Google/AI (both names, all towns,
   24/7 line) · PR #30 AI-question answers on home + area pages · Google
   profile: 7 North Shore towns added (20 total) · PR #31 daily publishing
