@@ -18,6 +18,24 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-21, evening (daily publishing restarted)
+
+Publishing had stopped since 2026-09-26: the guide queue ran out AND the
+workflow had a hard-coded "< 2026-09-26" gate, so every daily run since
+logged "calendar complete". Fixed: the workflow now checks for a guide dated
+today (Chicago) in src/data/blog-posts/scheduled-*.ts; the schedule
+verifier only requires no gaps in the upcoming run. 16 new guides queued
+2026-10-22 → 2026-11-06 (files scheduled-deadlines-2027.ts and
+scheduled-oct-2026-*.ts), every legal fact checked against ilga.gov /
+chicago.gov / FDIC / Fannie LL-2026-03 / Freddie Bulletin 2026-C. Leads:
+Illinois written collection policy required by 2027-01-01 (SB3527,
+P.A. 104-0734) and Fannie/Freddie 15% reserve minimum for applications on or
+after 2027-01-04. Facts worth remembering: CAM Act sunset moved to
+2032-01-01 by P.A. 104-746 (SB3897, eff. 2026-07-31); P.A. 104-797 (HB5449)
+amends ICPA 18(a)(7) annual accounting from 2027-01-01. **When the queue
+nears its end (2026-11-06), write the next batch** — otherwise publishing
+pauses again (now quietly skips, no failure).
+
 ## Status update — 2026-10-21, later (AI recommendation answers)
 
 Mirsad reports callers saying ChatGPT and DuckDuckGo recommended Stellar.

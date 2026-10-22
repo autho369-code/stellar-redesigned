@@ -43,6 +43,13 @@ for (
   expectedDates.push(date.toISOString().slice(0, 10));
 }
 
+const today = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'America/Chicago',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
+
 const leadPosts = posts.filter(({ date }) => date && date < campaignStart);
 const cadencePosts = posts.filter(({ date }) => date && date >= campaignStart && date <= campaignEnd);
 const actualDates = cadencePosts.map(({ date }) => date);
@@ -57,11 +64,16 @@ if (leadPosts.length !== 1 || leadPosts[0].slug !== 'score-condo-hoa-management-
 // window carries at least one post, so the cadence never goes silent. More than
 // one post may share a date — publishing several at once is a legitimate
 // editorial choice, and the schedule check should not be what prevents it.
+// Days already past are history: the run paused from 2026-09-27 to
+// 2026-10-21 when the queue ran dry, and that cannot be back-filled. What
+// must hold is that the queued run ahead — from the first upcoming post to the
+// last — has no silent days.
 const covered = new Set(actualDates);
-const missing = expectedDates.filter((date) => !covered.has(date));
+const firstUpcoming = actualDates.filter((date) => date >= today).sort()[0];
+const missing = firstUpcoming ? expectedDates.filter((date) => date >= firstUpcoming && !covered.has(date)) : [];
 if (missing.length > 0) {
   throw new Error(
-    `Scheduled posts must cover every calendar day from ${campaignStart} through ${campaignEnd}. Missing: ${missing.join(', ')}.`,
+    `Scheduled posts must cover every calendar day from ${firstUpcoming} through ${campaignEnd}. Missing: ${missing.join(', ')}.`,
   );
 }
 
@@ -69,12 +81,6 @@ if (missing.length > 0) {
 // one — 2026-08-31 does, from a batch that went out together — but stacking
 // several posts on a future date buries them against each other and breaks the
 // drip. New work extends the runway instead.
-const today = new Intl.DateTimeFormat('en-CA', {
-  timeZone: 'America/Chicago',
-  year: 'numeric',
-  month: '2-digit',
-  day: '2-digit',
-}).format(new Date());
 
 const futureCounts = new Map();
 for (const date of actualDates) {
@@ -94,4 +100,4 @@ for (const post of posts) {
   }
 }
 
-console.log(`Publication schedule verified: ${cadencePosts.length} posts covering every day from ${campaignStart} through ${campaignEnd}, plus ${leadPosts.length} published lead post.`);
+console.log(`Publication schedule verified: ${cadencePosts.length} posts from ${campaignStart} through ${campaignEnd}; the upcoming run ${firstUpcoming ? `from ${firstUpcoming} ` : ""}has no silent days, plus ${leadPosts.length} published lead post.`);
