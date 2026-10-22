@@ -57,6 +57,29 @@ The existing journal spans March 14, 2023 through August 18, 2026. Those dates a
 | 2026-09-24 | The 22.1 Response Workflow: Faster Closings Without Risky Shortcuts | Board operations |
 | 2026-09-25 | Vendor RFPs for Condo and HOA Boards: Scope, Insurance, and Controls | Maintenance |
 
+## Restart after the September pause - 16 articles (added 2026-10-21)
+
+Publishing stopped after 2026-09-26: the queue ran dry and the workflow carried a hard-coded 2026-09-26 end date. The workflow now releases on any day a scheduled guide carries that Chicago date. Deadline guides lead.
+
+| Publish | Article | Category |
+|---|---|---|
+| 2026-10-22 | Illinois Condo and HOA Collection Policy Law: What Boards Must Adopt by January 1, 2027 | Illinois Association Law |
+| 2026-10-23 | Fannie Mae and Freddie Mac Raise the Condo Reserve Minimum to 15%: What Boards Must Do for the 2027 Budget | Financial Management |
+| 2026-10-24 | Illinois Condo Board Elections: Nominations, Proxies and Secret Ballots | Board Governance |
+| 2026-10-25 | Can Illinois Condo Owners Demand an Independent Audit? | Financial Management |
+| 2026-10-26 | Can an Illinois Association Fine an Owner? Notice and Hearing Rules | Board Governance |
+| 2026-10-27 | Fidelity Insurance for Illinois Associations and Their Manager | Insurance |
+| 2026-10-28 | Open Board Meetings in Illinois: Notice, Owner Comment and Recording | Board Governance |
+| 2026-10-29 | Association Money and Your Management Company: Illinois Rules | Financial Management |
+| 2026-10-30 | Removing a Condo Board Member in Illinois: What Owners and Boards Can Do | Illinois Association Law |
+| 2026-10-31 | Keeping Reserves Safe: FDIC Limits for Illinois Associations | Financial Management |
+| 2026-11-01 | Conflicts of Interest on Illinois Association Boards: Contracts With Directors | Board Governance |
+| 2026-11-02 | Illinois Condo Insurance Deductibles: When Can the Board Charge an Owner? | Financial Management |
+| 2026-11-03 | Chicago Condo Porch and Deck Safety: What Boards of 3-Flats and Courtyard Buildings Should Do | Building Compliance |
+| 2026-11-04 | Chicago Elevator Inspections and Certificates: What a Condo Board Is Responsible For | Building Compliance |
+| 2026-11-05 | Preventing Frozen and Burst Pipes in Chicago Condo Buildings: A Winter Checklist for Boards | Maintenance |
+| 2026-11-06 | What an Illinois Licensed Community Association Manager Can and Cannot Do | Choosing Management |
+
 ## Primary research base
 
 - Illinois Condominium Property Act: https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62

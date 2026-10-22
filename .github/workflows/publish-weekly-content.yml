@@ -19,21 +19,26 @@ jobs:
   trigger-production-build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check the accelerated publication window
-        id: calendar
-        run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$(date -u +%F)" < "2026-09-26" ]]; then
-            echo "active=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "active=false" >> "$GITHUB_OUTPUT"
-            echo "The accelerated publication calendar is complete."
-          fi
-
       - name: Check out the production branch
-        if: steps.calendar.outputs.active == 'true'
         uses: actions/checkout@v4
         with:
           ref: main
+
+      # The run is driven by the content, not a hard-coded end date (a fixed
+      # 2026-09-26 cut-off silently stopped publishing for a month). If no
+      # scheduled guide carries today's Chicago date there is nothing to
+      # release, so no empty marker commit and no rebuild.
+      - name: Check for a guide scheduled today
+        id: calendar
+        shell: bash
+        run: |
+          today="$(TZ=America/Chicago date +%F)"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || grep -q "date: '$today'" src/data/blog-posts/scheduled-*.ts; then
+            echo "active=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "active=false" >> "$GITHUB_OUTPUT"
+            echo "No guide is scheduled for $today."
+          fi
 
       - name: Check today's publication marker
         if: steps.calendar.outputs.active == 'true'

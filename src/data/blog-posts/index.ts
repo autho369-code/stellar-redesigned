@@ -20,6 +20,10 @@ import { scheduledFinancePosts } from './scheduled-finance';
 import { scheduledBuildingPosts } from './scheduled-buildings';
 import { scheduledManagementPosts } from './scheduled-management';
 import { scheduledIllinoisStatutePosts } from './scheduled-illinois-statute';
+import { scheduledDeadlines2027Posts } from './scheduled-deadlines-2027';
+import { scheduledOct2026GovernancePosts } from './scheduled-oct-2026-governance';
+import { scheduledOct2026FinancePosts } from './scheduled-oct-2026-finance';
+import { scheduledOct2026BuildingPosts } from './scheduled-oct-2026-buildings';
 import { getChicagoPublicationDate } from '../../utils/publication-date';
 
 export interface BlogPost {
@@ -48,6 +52,10 @@ export const allBlogPosts: BlogPost[] = [
   ...scheduledBuildingPosts,
   ...scheduledManagementPosts,
   ...scheduledIllinoisStatutePosts,
+  ...scheduledDeadlines2027Posts,
+  ...scheduledOct2026GovernancePosts,
+  ...scheduledOct2026FinancePosts,
+  ...scheduledOct2026BuildingPosts,
   condoRepairsOwnerVsAssociation,
   movingIntoChicagoCondoGuide,
   rentingOutYourCondoChicago,
