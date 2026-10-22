@@ -26,8 +26,11 @@ if (postSlugs.length < 52 || new Set(postSlugs).size !== postSlugs.length) {
 // on top of the 13 consolidated earlier. Every removed slug 301s in
 // vercel.json. Raise this number only for an area with a genuinely distinct
 // query space, not for coverage.
-if (neighborhoodSlugs.length !== 40 || new Set(neighborhoodSlugs).size !== 40) {
-  throw new Error(`Expected 40 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
+// 2026-10-21: 40 → 43 for Lincolnwood, Morton Grove and Norridge — separate
+// villages (own ZIPs, own searches) already listed as Google Business
+// Profile service areas, not micro-neighborhoods of an existing page.
+if (neighborhoodSlugs.length !== 43 || new Set(neighborhoodSlugs).size !== 43) {
+  throw new Error(`Expected 43 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
 }
 
 const requiredConnections = [

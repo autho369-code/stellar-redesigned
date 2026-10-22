@@ -241,6 +241,9 @@ const schema = {
         { '@type': 'City', name: 'Highland Park, Illinois' },
         { '@type': 'City', name: 'Deerfield, Illinois' },
         { '@type': 'City', name: 'Lake Forest, Illinois' },
+        { '@type': 'City', name: 'Lincolnwood, Illinois' },
+        { '@type': 'City', name: 'Morton Grove, Illinois' },
+        { '@type': 'City', name: 'Norridge, Illinois' },
       ],
       knowsAbout: [
         'Condominium association management',

@@ -582,6 +582,89 @@ export const neighborhoods: Neighborhood[] = [
     zipCodes: ['60076', '60077'],
     region: 'north-shore'
   },
+  // Near-north Cook County villages listed as service areas on the Google
+  // Business Profile. Each is its own search ("condo management Lincolnwood"),
+  // distinct from the Chicago neighborhood pages.
+  {
+    name: 'Lincolnwood',
+    slug: 'lincolnwood',
+    description: 'Lincolnwood is a compact Cook County village between Chicago\'s far North Side and Skokie, a short drive from our Lincoln Square office. Its condominium buildings and townhome communities sit close to Touhy Avenue and the Lincolnwood Town Center area, and their boards need the same things city boards do: accurate books, dependable vendors, and a manager who answers. We bring Chicago-office responsiveness to Lincolnwood associations without a downtown-firm overhead.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60712'],
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'Close to our office',
+        detail: 'Lincolnwood borders the Chicago neighborhoods we serve every day from our office at 5107 N Western Ave. For a board, that means a manager who can be on site the same day for a leak, an inspection, or a contractor walk-through.',
+      },
+      {
+        title: 'Cook County taxes and budgets',
+        detail: 'Lincolnwood associations sit in Cook County, so reassessment years and property-tax appeals affect owners directly. We help boards time budget communication around assessment notices and coordinate appeals with counsel where it makes sense.',
+      },
+      {
+        title: 'Townhome exterior planning',
+        detail: 'Shared roofs, siding, drives, landscaping, and snow contracts in townhome communities work best as one coordinated plan, with consistent scopes and competitive bids so every home is treated the same.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage condo and townhome associations in Lincolnwood?',
+        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Lincolnwood (ZIP 60712) from our nearby office at 5107 N Western Ave in Chicago, with a dedicated manager, monthly financial reporting, flat-fee pricing from $20 per unit per month, and a person who answers emergencies 24/7.',
+      },
+    ],
+  },
+  {
+    name: 'Morton Grove',
+    slug: 'morton-grove',
+    description: 'Morton Grove is a Cook County village west of Skokie with its own Metra station on the Milwaukee District North Line and a mix of condominium buildings, townhome communities, and homeowner associations. Many of its associations are long-established and now facing the expensive decade of roofs, masonry, and mechanical replacements. We help Morton Grove boards plan those projects, keep reserves honest, and keep owners informed.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60053'],
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'Aging buildings, planned capital work',
+        detail: 'Long-established condominium and townhome communities need reserve studies that match reality and a phased capital calendar. We coordinate bids and oversee the work with no separate capital-project management fee on top of our flat monthly rate.',
+      },
+      {
+        title: 'Commuter-friendly communication',
+        detail: 'With Metra service into downtown Chicago, many owners are away during the day. Portal-first notices, online payments, and clear written follow-up keep everyone informed without relying on lobby notices.',
+      },
+      {
+        title: 'Cook County taxes and budgets',
+        detail: 'Morton Grove associations sit in Cook County, where reassessment years change owners\' tax bills. We help boards explain budget changes clearly and coordinate property-tax appeals with counsel where they are worth pursuing.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage associations in Morton Grove?',
+        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Morton Grove (ZIP 60053) from our Chicago office at 5107 N Western Ave, with a dedicated manager, transparent monthly reporting, flat-fee pricing from $20 per unit per month, and 24/7 live emergency response.',
+      },
+    ],
+  },
+  {
+    name: 'Norridge',
+    slug: 'norridge',
+    description: 'Norridge is a Cook County village on Chicago\'s northwest edge, home to the Harlem Irving Plaza and a residential mix that includes condominium buildings and townhome communities. Boards here tend to be small, volunteer-run, and stretched thin, which makes reliable bookkeeping, vendor follow-through, and clear owner communication the difference between a calm year and a hard one. We give Norridge associations a dedicated manager and a flat, published price.',
+    propertyTypes: ['condominiums', 'townhomes'],
+    zipCodes: ['60706'],
+    region: 'north-shore',
+    localProof: [
+      {
+        title: 'Built for small boards',
+        detail: 'Smaller associations often run on a handful of volunteers. We take over collections, vendor scheduling, records, and meeting preparation so directors can make decisions instead of chasing paperwork.',
+      },
+      {
+        title: 'Cook County taxes and budgets',
+        detail: 'Norridge associations sit in Cook County, so reassessment cycles and property-tax appeals matter to owners. We help boards plan budgets around them and coordinate appeals with counsel when they make sense.',
+      },
+    ],
+    localFaq: [
+      {
+        q: 'Does Stellar manage condo associations in Norridge?',
+        a: 'Yes. Stellar Property Management serves condominium and townhome boards in Norridge (ZIP 60706) from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly financial reporting, flat-fee pricing from $20 per unit per month, and a person who answers emergencies 24/7.',
+      },
+    ],
+  },
   {
     name: 'Glenview',
     slug: 'glenview',

@@ -18,6 +18,16 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-21, night (three suburb pages)
+
+GBP service areas Lincolnwood, Morton Grove and Norridge had no area page.
+Added them to src/data/neighborhoods.ts (region north-shore, ZIPs 60712 /
+60053 / 60706, localProof + localFaq with only verifiable facts, no claimed
+clients), to llms.txt and to the homepage areaServed; verify-content-silos
+count 40 → 43 with the reason recorded. Every other GBP service area already
+has a page (Old Irving Park 308s to Irving Park). Note: the site has 43 area
+pages, not 70 — the 70 were consolidated on 2026-08-22.
+
 ## Status update — 2026-10-21, evening (daily publishing restarted)
 
 Publishing had stopped since 2026-09-26: the guide queue ran out AND the
