@@ -18,6 +18,19 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-21, later (AI recommendation answers)
+
+Mirsad reports callers saying ChatGPT and DuckDuckGo recommended Stellar.
+Added recommendation-shaped FAQs (rendered + FAQPage schema): homepage
+"what should a board look for when hiring" and "is Stellar Property
+Management the same company as Stellar Property Group"; every area page
+"how should a {area} board choose a management company". Chrome check of
+listings: GBP fields correct (3.3★/68), Bing Places listing verified and
+correct, Apple Maps listing present; GBP service area lacks Wilmette,
+Winnetka, Kenilworth, Glencoe, Northbrook, Highland Park, Deerfield (awaiting
+Mirsad OK). Nextdoor listing shows a wrong-company email
+(jeremy@stellar-properties-inc.com). Review link: https://g.page/r/CXsN7jc7d5JTEBM/review
+
 ## Status update — 2026-10-21 (Google Maps + AI visibility)
 
 Live audit: the site layer (schema, `/ai-info`, `llms.txt`, area pages, FAQs,
