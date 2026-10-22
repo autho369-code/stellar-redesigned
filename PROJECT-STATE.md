@@ -18,6 +18,55 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-22 (16 new guides, queue runs to 2026-11-22)
+
+The publishing queue ended 2026-11-06. Sixteen new daily guides now carry it
+to 2026-11-22, one per day with no gaps, in two new files:
+
+- `src/data/blog-posts/scheduled-nov-2026-new-laws.ts` (Nov 7–14) — the 2026
+  Illinois Public Acts and the agency deadlines.
+- `src/data/blog-posts/scheduled-nov-2026-statute.ts` (Nov 15–22) — standing
+  Illinois statute and seasonal compliance.
+
+Reading every source note in 765 ILCS 605 and 765 ILCS 160 for recent Public
+Acts turned up two 2026 laws nobody had written about:
+
+- **Public Act 104-0797** (HB5449), effective 2027-01-01, adds CPA 18.4(t)
+  and CICAA 1-30(l): the board must provide a website **no later than
+  2028-01-01** carrying board and membership meeting information and approved
+  minutes. The same Act requires the annual itemized accounting to go out by
+  electronic transmission to owners who authorized it, and adds "including
+  receipts and expenses" to CPA 18(a)(7).
+- **Public Act 104-0580** (HB0067), effective 2027-01-01, adds CPA 18.14 and
+  CICAA 1-73: an association may not treat a marked police or firefighter
+  vehicle assigned to an officer or firefighter, up to 12,000 pounds, as a
+  commercial vehicle. Contrary provisions are void and unenforceable.
+
+Note on Section 18.4: PA 104-0734 (collection policy) and PA 104-0797
+(website) each added a subsection called "(t)", so the ILCS currently prints
+three versions of Section 18.4. The posts say so rather than picking one.
+
+Also checked and deliberately **not** written up: PA 104-0598 carries a
+2027-01-01 date on CPA 18.12 (accessible parking) but is a statewide
+"persons with disabilities" terminology act — its only effect there is
+replacing "disabled person" with "person with a disability". The accessible
+parking guide covers the existing substantive duties instead.
+
+Every statutory claim was read in the primary text in the browser pane.
+**ilga.gov returns HTTP 403 to WebFetch** — use the browser pane for it. New
+primary sources read this session: CPA 9(g), 9.2, 12, 18(a)(8), 18.6, 19;
+CICAA 1-30(i), 1-45, 1-70, 1-75; the Homeowners' Energy Policy Statement Act
+(765 ILCS 165); the Snow and Ice Removal Act (745 ILCS 75); the Smoke
+Detector Act (425 ILCS 60); the Carbon Monoxide Alarm Detector Act
+(430 ILCS 135); chicago.gov on MCC 4-4-310 and 10-8-180; and Fannie Mae
+Selling Guide B4-2.1-01, B4-2.1-03 and B4-2.2-01.
+
+Verified with seo:verify-schedule (76 posts, 2026-08-18 through 2026-11-22,
+no silent days), seo:verify-silos (94 articles), typecheck, and the full
+prerender build (139 routes, 137 indexable). A separate check confirmed no
+new post links to a post dated after it, which would break a future daily
+build.
+
 ## Status update — 2026-10-22 (daily publishing runs in the morning)
 
 Mirsad asked why the day's guide was not live. It was: the January 2027

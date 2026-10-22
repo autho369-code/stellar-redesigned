@@ -3,9 +3,13 @@
 Updated: 2026-10-22. Every session reads this first and updates it at the end.
 
 ## For Claude
-- [ ] **Write the next batch of daily guides before 2026-11-06** (queue ends
-      that day). Illinois-specific topics, facts checked against primary
-      sources. Lead with anything deadline-driven.
+- [x] Oct 22: **next batch of daily guides written** — 16 guides, Nov 7–22,
+      so the queue now ends 2026-11-22. Two new 2026 laws found and covered:
+      the association website due 2028-01-01 and the police/fire vehicle
+      parking rule (PA 104-0797, PA 104-0580).
+- [ ] **Write the batch after 2026-11-22** — same rule: Illinois-specific,
+      every statutory fact read in the primary text. ilga.gov blocks
+      WebFetch, so use the browser pane.
 - [ ] Mondays: the "Stellar Monday check" scheduled task reports site,
       publishing and queue status — act on what it finds.
 - [x] Oct 22: collection-policy guide is live and first on /blog.
@@ -25,6 +29,9 @@ Updated: 2026-10-22. Every session reads this first and updates it at the end.
 - [ ] When a caller says ChatGPT or AI sent them, note it.
 
 ## Done recently
+- 2026-10-22: 16 new guides queued for Nov 7–22 in
+  `scheduled-nov-2026-new-laws.ts` and `scheduled-nov-2026-statute.ts`;
+  statutes read from ilga.gov, chicago.gov and the Fannie Mae Selling Guide.
 - 2026-10-22: daily publishing confirmed working; the release job was
   running 3-4 hours late because GitHub delays jobs set to the top of the
   hour, so the schedule moved to :23 (PR #34).
