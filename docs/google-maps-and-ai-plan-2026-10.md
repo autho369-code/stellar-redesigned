@@ -7,7 +7,7 @@ Chicago or the North Shore.
 ## What we found (2026-10-21)
 
 - **The website is already strong.** Business info for Google, an AI fact
-  page (`/ai-info`), `llms.txt`, 70 area pages, FAQs on every page, AI
+  page (`/ai-info`), `llms.txt`, 43 area pages, FAQs on every page, AI
   robots allowed. Nothing big is missing on the site.
 - **The problem is outside the website.** When we search the web for
   "Stellar Property Management Chicago", search tools find *other* Stellar
