@@ -36,7 +36,9 @@ const staticRoutes = [
   '/terms-of-service',
 ];
 
-if (publicationCutoff >= '2026-08-22') {
+// Keep in sync with prerender.mjs: the buildings topic hub goes live with its
+// first published article (chicago-condo-association-compliance-calendar).
+if (publicationCutoff >= '2026-09-03') {
   staticRoutes.push('/blog/topic/building-operations-capital-planning');
 }
 

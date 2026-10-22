@@ -1,8 +1,10 @@
+import { useEffect, useReducer } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
-import { getBlogPostBySlug, allBlogPosts, blogPosts } from '../data/blog-posts';
+import { getBlogPostBySlug, publishedBlogPosts, blogPosts } from '../data/blog-posts';
+import { getLoadedBlogPostContent, loadBlogPostContent } from '../data/blog-posts/content-store';
 import { neighborhoods } from '../data/neighborhoods';
 import { contentClusters, getPostCluster, getPostNeighborhoods, getPostRegion, getRelatedClusterPosts } from '../data/content-silos';
 
@@ -19,6 +21,23 @@ export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPostBySlug(slug) : undefined;
 
+  // The article body lives in a per-slug chunk. During prerendering and
+  // hydration the store is already primed (entry-server.tsx / main.tsx), so
+  // the first render is complete; on client-side navigation the chunk loads
+  // here and the re-render fills the body in.
+  const [, bumpContentVersion] = useReducer((version: number) => version + 1, 0);
+  const contentData = slug ? getLoadedBlogPostContent(slug) : undefined;
+  useEffect(() => {
+    if (!slug) return;
+    let cancelled = false;
+    void loadBlogPostContent(slug).then(() => {
+      if (!cancelled) bumpContentVersion();
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [slug]);
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -27,7 +46,7 @@ export default function BlogPost() {
   const cluster = contentClusters[clusterKey];
   const postRegion = getPostRegion(post);
   const relatedPosts = getRelatedClusterPosts(post, blogPosts);
-  const locationLinks = getPostNeighborhoods(post, neighborhoods, allBlogPosts);
+  const locationLinks = getPostNeighborhoods(post, neighborhoods, publishedBlogPosts);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -66,8 +85,8 @@ export default function BlogPost() {
       '@type': 'WebPage',
       '@id': `https://www.stellarpropertygroup.com/blog/${post.slug}`,
     },
-    ...(post.sources?.length
-      ? { citation: post.sources.map((source) => source.url) }
+    ...(contentData?.sources?.length
+      ? { citation: contentData.sources.map((source) => source.url) }
       : {}),
   };
 
@@ -155,15 +174,15 @@ export default function BlogPost() {
               [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
               [&_strong]:text-ink [&_strong]:font-semibold
             "
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: contentData?.content ?? '' }}
           />
-          {post.sources && post.sources.length > 0 && (
+          {contentData?.sources && contentData.sources.length > 0 && (
             <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-sources">
               <h2 id="article-sources" className="font-display text-2xl text-ink mb-5">
                 Primary sources and further reading
               </h2>
               <ul className="space-y-3">
-                {post.sources.map((source) => (
+                {contentData.sources.map((source) => (
                   <li key={source.url}>
                     <a
                       href={source.url}

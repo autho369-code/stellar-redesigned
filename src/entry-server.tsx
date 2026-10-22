@@ -44,6 +44,16 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
 import KnowledgeAdmin from './pages/KnowledgeAdmin';
+import { allBlogPosts } from './data/blog-posts/all-posts';
+import { primeBlogPostContent } from './data/blog-posts/content-store';
+
+// renderToString cannot await the per-slug content chunks the client uses, so
+// prime the store with every article body up front. This bundle is build-time
+// only (deleted after prerendering) and only published routes are rendered, so
+// future-dated content never reaches public output.
+for (const post of allBlogPosts) {
+  primeBlogPostContent(post.slug, { content: post.content, sources: post.sources });
+}
 
 function CatchAllRoute() {
   const { pathname } = useLocation();

@@ -1,4 +1,4 @@
-import type { BlogPost } from './blog-posts';
+import type { BlogPostMeta } from './blog-posts';
 import type { Neighborhood } from './neighborhoods';
 
 export type ContentCluster =
@@ -52,7 +52,7 @@ export function getClusterFromTopicSlug(slug?: string): ContentCluster | undefin
     .find(([, config]) => config.path.endsWith(`/${slug}`))?.[0];
 }
 
-export function getPostCluster(post: Pick<BlogPost, 'slug' | 'title' | 'category'>): ContentCluster {
+export function getPostCluster(post: Pick<BlogPostMeta, 'slug' | 'title' | 'category'>): ContentCluster {
   const searchable = `${post.slug} ${post.title} ${post.category}`;
   const buildingCategories = new Set(['Maintenance', 'Building Compliance', 'Building Operations']);
   const financeCategories = new Set(['Financial Management', 'Financial Planning', 'Reserve Planning', 'Insurance']);
@@ -68,14 +68,14 @@ export function getPostCluster(post: Pick<BlogPost, 'slug' | 'title' | 'category
   return 'governance';
 }
 
-export function getPostRegion(post: Pick<BlogPost, 'slug' | 'title'>): 'chicago' | 'north-shore' | 'both' {
+export function getPostRegion(post: Pick<BlogPostMeta, 'slug' | 'title'>): 'chicago' | 'north-shore' | 'both' {
   const searchable = `${post.slug} ${post.title}`;
   if (/north shore/i.test(searchable)) return 'north-shore';
   if (/chicago/i.test(searchable)) return 'chicago';
   return 'both';
 }
 
-export function getRelatedClusterPosts(post: BlogPost, posts: BlogPost[], count = 3): BlogPost[] {
+export function getRelatedClusterPosts(post: BlogPostMeta, posts: BlogPostMeta[], count = 3): BlogPostMeta[] {
   const cluster = getPostCluster(post);
   const sameCluster = posts.filter((candidate) =>
     candidate.slug !== post.slug && getPostCluster(candidate) === cluster
@@ -99,7 +99,7 @@ export function getRelatedClusterPosts(post: BlogPost, posts: BlogPost[], count 
   return related;
 }
 
-export function getClusterPosts(cluster: ContentCluster, posts: BlogPost[], count = 3): BlogPost[] {
+export function getClusterPosts(cluster: ContentCluster, posts: BlogPostMeta[], count = 3): BlogPostMeta[] {
   return posts
     .filter((post) => getPostCluster(post) === cluster)
     .sort((a, b) => b.date.localeCompare(a.date))
@@ -124,9 +124,9 @@ function rotate<T>(items: T[], offset: number): T[] {
 }
 
 export function getPostNeighborhoods(
-  post: BlogPost,
+  post: BlogPostMeta,
   neighborhoods: Neighborhood[],
-  posts: BlogPost[],
+  posts: BlogPostMeta[],
   count = 6,
 ): Neighborhood[] {
   const region = getPostRegion(post);
@@ -154,9 +154,9 @@ export function getPostNeighborhoods(
 
 export function getNeighborhoodGuides(
   neighborhood: Neighborhood,
-  posts: BlogPost[],
+  posts: BlogPostMeta[],
   count = 3,
-): BlogPost[] {
+): BlogPostMeta[] {
   const primary = getNeighborhoodCluster(neighborhood);
   const supporting: Record<ContentCluster, ContentCluster[]> = {
     buildings: ['finance', 'governance', 'management'],
@@ -165,7 +165,7 @@ export function getNeighborhoodGuides(
     management: ['finance', 'governance', 'buildings'],
   };
   const clusters = [primary, ...supporting[primary]];
-  const guides: BlogPost[] = [];
+  const guides: BlogPostMeta[] = [];
 
   for (let index = 0; guides.length < count && index < clusters.length; index++) {
     const candidates = posts.filter((post) => getPostCluster(post) === clusters[index]);

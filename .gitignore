@@ -11,6 +11,9 @@ dist
 dist-ssr
 *.local
 
+# Build-time output of scripts/generate-blog-modules.mjs (published posts only)
+src/data/blog-posts/generated/
+
 .vscode/*
 !.vscode/extensions.json
 .idea

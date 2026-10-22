@@ -53,7 +53,12 @@ const staticRoutes = [
   '/terms-of-service',
 ];
 
-if (publicationCutoff >= '2026-08-22') {
+// The buildings topic hub redirects to /blog until its first article is out.
+// 2026-09-03 is the publication date of chicago-condo-association-compliance-
+// calendar, the earliest scheduled post that maps to the buildings cluster
+// (the 2026-08-22 post is finance) — listing the hub sooner prerenders an
+// empty redirect page and fails verify-built-seo.
+if (publicationCutoff >= '2026-09-03') {
   staticRoutes.push('/blog/topic/building-operations-capital-planning');
 }
 
