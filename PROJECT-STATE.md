@@ -18,6 +18,26 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-22 (daily publishing runs in the morning)
+
+Mirsad asked why the day's guide was not live. It was: the January 2027
+collection-policy guide published at 13:26 Chicago time and is first on
+/blog. The cause of the lateness was the release schedule, not the content.
+
+"Publish daily association guide" asked for 14:00 and 16:00 UTC. GitHub
+defers scheduled workflows that ask for the top of the hour, and every run
+this month actually started between 16:54 and 20:55 UTC — three to five
+hours late — so guides reached the live site in the early afternoon.
+
+PR #34 moved both crons to :23 past the hour and an hour earlier: 13:23 and
+15:23 UTC, i.e. 08:23 and 10:23 Chicago daylight time (07:23 / 09:23 in
+standard time, after 2026-11-01). The marker check is unchanged, so the
+backup run still cannot release a second time. No content or site code
+changed. Merged to main; verified with seo:verify-schedule,
+seo:verify-silos, typecheck and the full prerender build (139 routes).
+
+Queue still ends 2026-11-06 — the next batch of guides is the open task.
+
 ## Status update — 2026-10-21, night (three suburb pages)
 
 GBP service areas Lincolnwood, Morton Grove and Norridge had no area page.
