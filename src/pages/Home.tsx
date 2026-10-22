@@ -123,6 +123,13 @@ const schema = {
       '@type': ['ProfessionalService', 'LocalBusiness'],
       '@id': 'https://www.stellarpropertygroup.com/#business',
       name: 'Stellar Property Management',
+      // The domain and the Illinois corporation still carry the old name, and
+      // directories list both; naming them here lets Google and answer engines
+      // join the listings into one business instead of two weak ones.
+      legalName: 'Stellar Property Group Inc.',
+      alternateName: ['Stellar Property Group', 'Stellar Property Group Inc.'],
+      disambiguatingDescription:
+        'Chicago community association (condo, HOA and townhome) management firm at 5107 N Western Ave. Not affiliated with Stellar Properties Inc. of Carol Stream or Stellar Management of New York.',
       description:
         'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 42 associations and 2,450+ units under management with a 96% client retention rate.',
       url: 'https://www.stellarpropertygroup.com',
@@ -196,10 +203,34 @@ const schema = {
           areaServed: 'US-IL',
           availableLanguage: 'English',
         },
+        {
+          '@type': 'ContactPoint',
+          telephone: '+1-773-728-0652',
+          contactType: 'emergency',
+          areaServed: 'US-IL',
+          availableLanguage: 'English',
+          hoursAvailable: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+            opens: '00:00',
+            closes: '23:59',
+          },
+        },
       ],
       areaServed: [
         { '@type': 'City', name: 'Chicago' },
         { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+        { '@type': 'City', name: 'Evanston, Illinois' },
+        { '@type': 'City', name: 'Skokie, Illinois' },
+        { '@type': 'City', name: 'Glenview, Illinois' },
+        { '@type': 'City', name: 'Wilmette, Illinois' },
+        { '@type': 'City', name: 'Winnetka, Illinois' },
+        { '@type': 'City', name: 'Kenilworth, Illinois' },
+        { '@type': 'City', name: 'Glencoe, Illinois' },
+        { '@type': 'City', name: 'Northbrook, Illinois' },
+        { '@type': 'City', name: 'Highland Park, Illinois' },
+        { '@type': 'City', name: 'Deerfield, Illinois' },
+        { '@type': 'City', name: 'Lake Forest, Illinois' },
       ],
       knowsAbout: [
         'Condominium association management',

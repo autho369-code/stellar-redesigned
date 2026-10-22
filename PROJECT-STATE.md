@@ -18,6 +18,21 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-21 (Google Maps + AI visibility)
+
+Live audit: the site layer (schema, `/ai-info`, `llms.txt`, area pages, FAQs,
+AI crawlers allowed) is already complete. The gap is off-site: web searches
+for "Stellar Property Management Chicago" surface Stellar Properties Inc.
+(Carol Stream) and Stellar Management (NYC), not this firm, and the address
+rarely appears beside the name elsewhere. Apex still answers 307.
+
+Branch `claude/local-ai-visibility`: homepage `#business` now carries
+`legalName` Stellar Property Group Inc., `alternateName`, a
+`disambiguatingDescription`, all 11 North Shore towns in `areaServed`, and a
+24/7 emergency `ContactPoint`; `llms.txt` got the same facts and hours.
+Mirsad's plain-English steps (reviews, GBP check, Bing Places / Apple
+Business Connect / citations, list outreach): `docs/google-maps-and-ai-plan-2026-10.md`.
+
 ## Status update — 2026-08-22 (competitive research + site rebuild)
 
 Five parallel research agents: FirstService Residential + Associa; Castle
