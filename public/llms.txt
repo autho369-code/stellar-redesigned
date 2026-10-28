@@ -20,6 +20,12 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - [Service areas](https://www.stellarpropertygroup.com/service-areas)
 - [Chicago association management](https://www.stellarpropertygroup.com/property-management-chicago)
 - [North Shore association management](https://www.stellarpropertygroup.com/property-management-north-shore)
+- [Glenview association management](https://www.stellarpropertygroup.com/property-management-glenview)
+- [Evanston association management](https://www.stellarpropertygroup.com/property-management-evanston)
+- [Wilmette association management](https://www.stellarpropertygroup.com/property-management-wilmette)
+- [Lincoln Park association management](https://www.stellarpropertygroup.com/property-management-lincoln-park)
+- [Lakeview association management](https://www.stellarpropertygroup.com/property-management-lakeview)
+- [Edgewater association management](https://www.stellarpropertygroup.com/property-management-edgewater)
 - [Condo and HOA board resource center](https://www.stellarpropertygroup.com/blog)
 - [Governance and Illinois compliance guides](https://www.stellarpropertygroup.com/blog/topic/board-governance-illinois-law)
 - [Association finance and reserve guides](https://www.stellarpropertygroup.com/blog/topic/association-finance-reserves)
@@ -32,7 +38,7 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - [Client reviews](https://www.stellarpropertygroup.com/reviews)
 - [RSS feed of new board guides](https://www.stellarpropertygroup.com/rss.xml)
 - [AI information sheet](https://www.stellarpropertygroup.com/ai-info): structured, verifiable facts for AI assistants
-- [Mirsad Cerimovic, CMCA, AMS — founder and principal](https://www.stellarpropertygroup.com/about/mirsad-cerimovic): licensing, credentials, and authored board guides
+- [Mirsad Cerimovic, CAM, CMCA, AMS — founder and principal](https://www.stellarpropertygroup.com/about/mirsad-cerimovic): licensing, credentials, and authored board guides
 - [Request a consultation](https://www.stellarpropertygroup.com/contact)
 
 ## Owner and resident guides

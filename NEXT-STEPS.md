@@ -25,7 +25,18 @@ Updated: 2026-10-28. Every session reads this first and updates it at the end.
       publishing and queue status — act on what it finds.
 - [x] Oct 22: collection-policy guide is live and first on /blog.
 
+- [ ] **Nov 28, 2026: recheck AI visibility.** Ask the same 3 questions
+      ("best condo management company Chicago", "HOA management company
+      Glenview IL", "condo association management North Shore Evanston
+      Wilmette") and compare with the Oct 28 audit:
+      https://claude.ai/artifact/ViHafoHbTV7z9RVRsypKDR (Stellar did not
+      appear in any of them on Oct 28).
+
 ## For Mirsad (only he can do these)
+- [ ] **AI visibility (Oct 28 audit):** ask CondoControl to add Stellar to
+      its Chicago top-10 list; claim the PropertyManagement.com profile
+      (shows 3.6 from 60 reviews); check CAI Illinois member directory;
+      join the Glenview Chamber directory. Copy-ready text is in the audit.
 - [ ] Decide on 3 possible post merges (plan section 4) — check Search
       Console traffic first. Claude will not merge without a yes.
 - [ ] Yelp: remove the "Buyer's agent" category. Get listed on Chicago
