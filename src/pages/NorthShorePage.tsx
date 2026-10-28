@@ -4,7 +4,10 @@ import { ArrowRight, ArrowUpRight, Phone, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
 
-const northShoreCommunities = neighborhoods.filter((area) => area.region === 'north-shore');
+// Glenview leads: it is the flagship North Shore market.
+const northShoreCommunities = neighborhoods
+  .filter((area) => area.region === 'north-shore')
+  .sort((a, b) => Number(b.slug === 'glenview') - Number(a.slug === 'glenview'));
 
 const priorities = [
   {

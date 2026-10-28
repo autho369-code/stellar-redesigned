@@ -777,6 +777,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Where We Manage ─────────────────────────────────────
+          Crawlable links from the highest-authority page to the area hubs.
+          Glenview leads: it is the flagship North Shore market. */}
+      <section className="py-20 lg:py-24 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <Eyebrow>Where We Manage</Eyebrow>
+          <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-tight mb-10 text-balance">
+            Chicago neighborhoods and the North Shore.
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { name: 'Glenview', href: '/property-management-glenview' },
+              { name: 'North Shore', href: '/property-management-north-shore' },
+              { name: 'Evanston', href: '/property-management-evanston' },
+              { name: 'Wilmette', href: '/property-management-wilmette' },
+              { name: 'Northbrook', href: '/property-management-northbrook' },
+              { name: 'Chicago', href: '/property-management-chicago' },
+              { name: 'Lincoln Park', href: '/property-management-lincoln-park' },
+              { name: 'Lakeview', href: '/property-management-lakeview' },
+              { name: 'Edgewater', href: '/property-management-edgewater' },
+            ].map(({ name, href }) => (
+              <Link key={href} to={href} className="border border-slate-200 bg-paper px-5 py-2.5 text-sm text-ink hover:border-gold-400 hover:text-gold-600 transition-colors">
+                {name}
+              </Link>
+            ))}
+            <Link to="/service-areas" className="inline-flex items-center gap-2 px-5 py-2.5 text-sm text-gold-600 hover:text-gold-500">
+              All service areas <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ──────────────────────────────────────────────── */}
       <section className="py-28 lg:py-36 bg-ivory-100 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
