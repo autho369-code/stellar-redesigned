@@ -107,6 +107,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p>Elections run smoothly when the process is boring: published deadlines, compliant forms, an observable count. Our <a href="/services/board-support">board support team</a> prepares election calendars, notices and ballot packages for Chicago and North Shore associations, and can coordinate with your counsel where the bylaws need updating. If an election is coming up and you want a second set of eyes, <a href="/contact">contact us</a>.</p>
 
       <p><em>This article is general information for Illinois association boards and is not legal advice. Your declaration and bylaws may add requirements, and statutes change. Confirm your election procedure with association counsel.</em></p>
+
+      <p>Also useful: <a href="/blog/illinois-association-annual-meeting-guide">Running the annual meeting</a>; <a href="/blog/condo-hoa-board-communication-systems">board communication systems that reduce conflict</a>.</p>
     `,
   },
   {
@@ -138,6 +140,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p>Yes. Section 18.4(l) of the Condominium Property Act gives the board power, after notice and an opportunity to be heard, to levy reasonable fines for violations of the declaration, bylaws, and rules and regulations of the association. The power is real, but the procedure comes first and the amount must be reasonable. A fine imposed without that process is exposed to challenge.</p>
 
       <p>The same subsection also lets the board impose charges for late payment of assessments. Late charges and fines are different tools: a late charge responds to non-payment, while a fine responds to a violation of the documents and carries the notice-and-hearing requirement.</p>
+
+      <p>Our <a href="/services/violation-management">rule enforcement service</a> builds this notice-and-hearing process into every enforcement case.</p>
 
       <h2>Is the rule the same for an HOA?</h2>
 
@@ -200,9 +204,11 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
 
       <p>Call counsel before fining if the owner has asserted a disability-related accommodation, if the violation involves religious items (Section 18.4(h) bars rules that prohibit reasonable accommodation for religious practices), if fines have been accruing for months without a hearing, or if the board intends to pursue collection of fines in court. How fines can be collected and secured is fact-specific, and boards should not assume fines are treated the same as unpaid assessments.</p>
 
-      <p>Fining well is mostly paperwork done in the right order. Our <a href="/services/board-support">board support team</a> runs violation notices, hearing scheduling and minutes for Chicago and North Shore associations so that the process holds up when an owner pushes back. If your building has a violation that has dragged on, <a href="/contact">contact us</a> and we can walk through the next step with you.</p>
+      <p>Fining well is mostly paperwork done in the right order. Our board support team runs violation notices, hearing scheduling and minutes for Chicago and North Shore associations so that the process holds up when an owner pushes back. If your building has a violation that has dragged on, <a href="/contact">contact us</a> and we can walk through the next step with you.</p>
 
       <p><em>This article is general information for Illinois association boards and is not legal advice. Have association counsel review your enforcement procedure and fine schedule before relying on them.</em></p>
+
+      <p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">How to adopt rules that hold up</a>; <a href="/blog/chicago-condo-short-term-rental-prohibited-buildings-list">the City’s Prohibited Buildings List for short-term rentals</a>.</p>
     `,
   },
   {
@@ -299,6 +305,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p>These rules are state law, so they apply the same way in a Chicago high-rise and a North Shore townhome community; what differs is what each building's declaration and bylaws add. Our <a href="/services/board-support">board support team</a> prepares notices, agendas and minutes for associations across Chicago and the North Shore. To talk through how your meetings run today, <a href="/contact">contact us</a>.</p>
 
       <p><em>This article is general information for Illinois association boards and is not legal advice. Confirm notice requirements and meeting procedures with association counsel.</em></p>
+
+      <p>Related reading: <a href="/blog/illinois-condo-board-closed-session-guide">When a board may meet in closed session</a>; <a href="/blog/illinois-association-annual-meeting-guide">annual meeting notice, quorum and minutes</a>.</p>
     `,
   },
   {
@@ -392,6 +400,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p>A professional manager cannot take sides in a removal effort, but we can make sure notices, meetings and vote counts are handled correctly so the outcome holds. Learn about our <a href="/services/board-support">board support services</a> for Chicago and North Shore associations, or <a href="/contact">contact us</a> to talk about governance at your building.</p>
 
       <p><em>This article is general information for Illinois association boards and owners and is not legal advice. Removal of a director should be planned with association counsel.</em></p>
+
+      <p>Keep reading: <a href="/blog/illinois-condo-board-elections-proxies-ballots">How Illinois board elections work</a>; <a href="/blog/illinois-association-annual-meeting-guide">running the annual meeting</a>.</p>
     `,
   },
   {
@@ -483,6 +493,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
         <li><strong>Calendar the petition window</strong>: 30 days for condominiums, 20 days for HOAs, and do not sign until it closes.</li>
         <li><strong>If a petition arrives,</strong> involve counsel and hold the election within 30 days.</li>
       </ol>
+
+      <p>Also useful: <a href="/blog/illinois-condo-open-board-meetings-notice-comment">Open board meetings, notice and owner comment</a>; <a href="/blog/illinois-condo-board-closed-session-guide">closed session rules</a>.</p>
 
       <h2>Why the procedure helps the director too</h2>
 

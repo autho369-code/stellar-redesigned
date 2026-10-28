@@ -138,11 +138,11 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <p>Start with the cheapest thing that will still be running in 2029. A board of three volunteers in a twelve-unit building does not need a portal; it needs one page that someone will actually update. Pick the tool the most patient person on the board can operate, write the update step into the meeting routine, and make sure at least two people know the password.</p>
 
-      <p>If that sounds like the kind of task that quietly stops happening, it is worth asking what else is quietly not happening. Our guide to <a href="/blog/self-managed-condo-association-problems">the problems self-managed associations run into</a> is honest about where the line is, and <a href="/services/small-condo-association-management">Stellar's small-association management</a> exists for boards that have crossed it.</p>
+      <p>If that sounds like the kind of task that quietly stops happening, it is worth asking what else is quietly not happening. Our guide to <a href="/blog/self-managed-condo-association-problems">the problems self-managed associations run into</a> is honest about where the line is, and Stellar's small-association management exists for boards that have crossed it.</p>
 
       <h2>How Stellar helps boards meet the deadline</h2>
 
-      <p>Stellar's managed associations already have an owner portal with meeting notices and minutes, so for most of our boards this law is a confirmation rather than a project. For boards joining us, we set the site up, load the current minutes, and build the posting step into the monthly routine so it keeps happening after the first month. If your board needs this handled before January 1, 2028, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a>. We serve associations across the city through <a href="/property-management-chicago">Chicago property management</a> and on the <a href="/property-management-north-shore">North Shore</a>.</p>
+      <p>Stellar's managed associations already have an owner portal with meeting notices and minutes, so for most of our boards this law is a confirmation rather than a project. For boards joining us, we set the site up, load the current minutes, and build the posting step into the monthly routine so it keeps happening after the first month. If your board needs this handled before January 1, 2028, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a>. We serve associations across the city through Chicago property management and on the <a href="/property-management-north-shore">North Shore</a>.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Public Act 104-0797 as enacted; your declaration, bylaws and circumstances matter, and the subsection numbering in Section 18.4 is unsettled. Have association counsel advise your board on how the website duty applies to your association.</em></p>
     `,
@@ -352,7 +352,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar reads the restriction language in each association's documents, works with counsel on the carve-out, and makes sure the parking vendor and the violation file both match what the board actually decided. If your board wants its vehicle rules checked against the new Section 18.14 before January, <a href="/contact">contact our office</a> or see how we handle <a href="/services/violation-management">violation management</a> and <a href="/services/board-support">board support</a>.</p>
+      <p>Stellar reads the restriction language in each association's documents, works with counsel on the carve-out, and makes sure the parking vendor and the violation file both match what the board actually decided. If your board wants its vehicle rules checked against the new Section 18.14 before January, <a href="/contact">contact our office</a> or see how we handle <a href="/services/violation-management">violation management</a> and board support.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Public Act 104-0580 as enacted. Whether a particular vehicle qualifies, and how your declaration should be changed, are questions for association counsel.</em></p>
     `,
@@ -457,7 +457,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar inventories each association's parking, works with counsel on the written policy, logs every request against the statutory clock so a decision is never late by accident, and keeps the documented record of the board's efforts where a self-managed board would have nothing to show. If your board needs an accessible parking policy on the books, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a> and <a href="/services/condominium-management">condominium management</a>.</p>
+      <p>Stellar inventories each association's parking, works with counsel on the written policy, logs every request against the statutory clock so a decision is never late by accident, and keeps the documented record of the board's efforts where a self-managed board would have nothing to show. If your board needs an accessible parking policy on the books, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a> and condominium management.</p>
 
       <p><em>This article is general information for Illinois condominium boards and is not legal advice. It summarizes Section 18.12 of the Condominium Property Act and Public Act 104-0598 as enacted. Accommodation requests raise fair housing questions this article does not address — have association counsel advise your board before responding to one.</em></p>
     `,
@@ -577,9 +577,11 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
         <li>Diary an annual review at budget time.</li>
       </ul>
 
+      <p>Read next: <a href="/blog/condo-hoa-delinquency-escalation-process">The delinquency escalation steps</a>.</p>
+
       <h2>How Stellar helps boards decide</h2>
 
-      <p>Stellar brings boards a written picture of their own current practice, a short list of the choices on each of the five decisions with the cost of each, and then builds the adopted policy into the monthly <a href="/services/financial-management">financial management</a> routine so the association follows what it voted for. If your board needs these decisions made and the policy adopted before January 1, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a>.</p>
+      <p>Stellar brings boards a written picture of their own current practice, a short list of the choices on each of the five decisions with the cost of each, and then builds the adopted policy into the monthly <a href="/services/financial-management">financial management</a> routine so the association follows what it voted for. If your board needs these decisions made and the policy adopted before January 1, <a href="/contact">contact our office</a> or see how we support boards through board support.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Public Act 104-0734 and Sections 9 and 9.2 of the Condominium Property Act as enacted; your declaration, bylaws and circumstances matter. Have association counsel draft or review your collection policy before you adopt it.</em></p>
     `,
@@ -687,7 +689,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <p>The same logic runs through the rest. Minutes owners can find, an annual accounting that shows receipts as well as expenses, a meeting notice that actually reaches people — these are not compliance exercises. They are how a small board keeps the trust it needs to raise an assessment.</p>
 
-      <p>If adopting them sounds like more administration than your board can carry, that is useful information in itself. See our guide to <a href="/blog/self-managed-condo-association-problems">the problems self-managed associations run into</a>, and <a href="/services/small-condo-association-management">how we manage small associations</a> for boards that would rather hand it over.</p>
+      <p>If adopting them sounds like more administration than your board can carry, that is useful information in itself. See our guide to <a href="/blog/self-managed-condo-association-problems">the problems self-managed associations run into</a>. Boards that would rather hand it over can <a href="/contact">talk with us</a>.</p>
 
       <h2>Board checklist</h2>
 
@@ -704,7 +706,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar works through the Section 1-75 questions with the association's own documents and corporate record, gets counsel a clean set of facts instead of a guess, and manages the resulting obligations month to month. If your board is not sure which Illinois law reaches it, <a href="/contact">contact our office</a> or see our <a href="/services/hoa-management">HOA management</a> and <a href="/services/townhome-management">townhome management</a> services. We serve associations in <a href="/property-management-glenview">Glenview</a>, across the <a href="/property-management-north-shore">North Shore</a> and throughout <a href="/property-management-chicago">Chicago</a>.</p>
+      <p>Stellar works through the Section 1-75 questions with the association's own documents and corporate record, gets counsel a clean set of facts instead of a guess, and manages the resulting obligations month to month. If your board is not sure which Illinois law reaches it, <a href="/contact">contact our office</a> or see our <a href="/services/hoa-management">HOA management</a> and townhome management services. We serve associations in <a href="/property-management-glenview">Glenview</a>, across the North Shore and throughout Chicago.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Section 1-75 of the Common Interest Community Association Act and the 2026 Public Acts as enacted. Whether your association is exempt is a legal question that depends on your documents, your corporate status and your budget — have association counsel answer it in writing.</em></p>
     `,
@@ -837,7 +839,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar writes the scope of work for reserve studies so the report comes back usable, checks the resulting recommendation against the budget before the budget goes to owners, and diaries the three-year update so a stale study never surfaces in the middle of a sale. If your board is ordering or reviewing a study this winter, <a href="/contact">contact our office</a> or learn more about our <a href="/services/financial-management">financial management services</a> and <a href="/pricing">pricing</a>.</p>
+      <p>Stellar writes the scope of work for reserve studies so the report comes back usable, checks the resulting recommendation against the budget before the budget goes to owners, and diaries the three-year update so a stale study never surfaces in the middle of a sale. If your board is ordering or reviewing a study this winter, <a href="/contact">contact our office</a> or learn more about our <a href="/services/financial-management">financial management services</a> and pricing.</p>
 
       <p><em>This article is general information for community association boards and is not lending or legal advice. It summarizes the Fannie Mae Selling Guide and Lender Letter LL-2026-03 as published; the agencies update their guides and lenders may apply overlays of their own. Confirm current requirements with your lender contacts and your reserve specialist.</em></p>
     `,
@@ -974,9 +976,11 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
         <li>Review how reserves and the <a href="/blog/fannie-freddie-condo-reserve-15-percent-2027">15% reserve change</a> interact with the repair plan for 2027.</li>
       </ul>
 
+      <p>Related reading: <a href="/blog/fannie-freddie-condo-eligibility-board-guide">Fannie Mae and Freddie Mac condo eligibility</a>.</p>
+
       <h2>How Stellar helps</h2>
 
-      <p>Stellar keeps a current repair and compliance picture for each association, so a questionnaire can be answered from a file rather than reconstructed, and so the board hears about an eligibility problem months before a buyer's lender does. If your board wants that review before the selling season, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and <a href="/services/financial-management">financial management</a> services.</p>
+      <p>Stellar keeps a current repair and compliance picture for each association, so a questionnaire can be answered from a file rather than reconstructed, and so the board hears about an eligibility problem months before a buyer's lender does. If your board wants that review before the selling season, <a href="/contact">contact our office</a> or see our maintenance coordination and <a href="/services/financial-management">financial management</a> services.</p>
 
       <p><em>This article is general information for community association boards and is not lending, engineering or legal advice. It summarizes the Fannie Mae Selling Guide as published; the agencies update their guides and lenders may apply overlays of their own. Whether a particular condition is a critical repair is a judgment a lender makes on the documents in front of it.</em></p>
     `,

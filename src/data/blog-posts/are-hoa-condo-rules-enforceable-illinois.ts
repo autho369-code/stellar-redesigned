@@ -45,6 +45,8 @@ export const hoaCondoRulesEnforceable = {
 <p>Some limits sit above the association's rulebook entirely. A blanket "no pets" policy, for example, cannot override the federal Fair Housing Act, which requires associations to allow assistance animals as a reasonable accommodation for residents with disabilities. Leasing and short-term-rental restrictions are generally permissible in Illinois, but they must be validly adopted, and boards should get legal advice on how a new restriction applies to current owners. The most common failure point, though, is simpler: rules adopted without a proper meeting, or enforced against one owner while others are ignored.</p>
 
 <h2>How Boards Should Enforce Rules</h2>
+<p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">Adopting and enforcing association rules</a>; <a href="/blog/illinois-association-fines-notice-hearing">the notice and hearing required before a fine</a>.</p>
+
 <p>Sound enforcement is systematic, not personal. That means a clearly written rulebook owners have actually received, a consistent and documented violation process, graduated enforcement from notice to hearing to fine, and an enforcement policy reviewed by the association attorney. Professional <a href="/services/violation-management">violation management</a> gives boards exactly that structure — fair, documented, and defensible. To put a consistent process in place, <a href="/contact">contact Stellar Property Management</a>.</p>
 `,
 };

@@ -22,6 +22,8 @@ export const aiInCondoManagement = {
 <li><strong>Document search.</strong> AI makes it far quicker to find a specific answer buried in a long declaration or set of bylaws.</li>
 </ul>
 
+<p>AI tools sit on top of a management system; they do not replace one. Our <a href="/services/condominium-management">Chicago condominium management</a> page describes that system.</p>
+
 <h2>The Real Benefits</h2>
 <p>Used well, these tools deliver speed, consistency, and relief from drudgery. Routine work gets done faster, owners get quicker responses, and volunteer board members spend less time on repetitive administration. For associations where a handful of volunteers carry a heavy load, that is meaningful.</p>
 
@@ -45,6 +47,8 @@ export const aiInCondoManagement = {
 <p>AI is powerful, but it is not infallible. It can produce confident answers that are simply wrong, which is dangerous when the subject is a legal requirement or an enforcement decision. Anything touching the law — rule enforcement, fair-housing questions, governing-document interpretation — still demands human judgment and, where appropriate, an attorney. AI tools also handle sensitive owner data, so boards must understand how a vendor stores and protects that information. The core principle is simple: AI assists, but accountable people decide.</p>
 
 <h2>How Boards Should Approach AI</h2>
+<p>Related reading: <a href="/blog/the-technology-behind-our-management">The technology behind our management</a>; <a href="/blog/verify-illinois-community-association-manager-license">verifying a manager’s Illinois license</a>.</p>
+
 <p>Treat AI as a capable assistant under firm human oversight. Use it to speed routine work, but keep legal, financial, and enforcement decisions with people and counsel. Vet any vendor on data privacy and security before adopting their tools. A professional management partner that adopts technology thoughtfully — and stays accountable for the results — gives boards the best of both worlds. To talk about modern, well-supported management for your association, <a href="/contact">contact Stellar Property Management</a>.</p>
 `,
 };

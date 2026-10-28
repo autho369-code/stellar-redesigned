@@ -42,10 +42,14 @@ export const commonCondoViolationsChicago = {
 <figcaption>Handling rule violations the right way.</figcaption>
 </figure>
 
+<p>These patterns come from day-to-day <a href="/property-management-chicago">Chicago condo association management</a>.</p>
+
 <h2>Why Small Violations Matter More Than They Seem</h2>
 <p>It is tempting to wave off minor infractions, but they compound. Visible disorder lowers the impression — and ultimately the value — of the whole building. Balcony grills and blocked hallways are genuine fire hazards. And inconsistent enforcement quietly teaches owners that the rules are optional, which makes the next violation harder to address. Small problems handled early stay small.</p>
 
 <h2>How Boards Should Handle Violations</h2>
+<p>Keep reading: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">How to adopt rules that hold up</a>; <a href="/blog/illinois-association-fines-notice-hearing">fining an owner the right way</a>.</p>
+
 <p>Effective enforcement is calm, consistent, and documented. That means a clearly written set of rules that every owner has received, a defined reporting channel, objective documentation of each violation, and a graduated process — notice, opportunity to be heard, then fines — applied identically to everyone. Stellar Property Management's <a href="/services/violation-management">violation management</a> gives boards that structure, and residents can file a formal report through the form on our <a href="/resources">owner resources</a> page. To set up a fair, defensible process, <a href="/contact">contact our team</a>.</p>
 `,
 };

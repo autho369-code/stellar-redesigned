@@ -58,7 +58,9 @@ export const condoRepairsOwnerVsAssociation = {
 <h2>The Five-Minute Habit That Prevents the Fight</h2>
 <p>Before hiring a contractor or demanding a repair from the board, spend five minutes with two documents: the <strong>maintenance matrix</strong> in your declaration (usually an article titled "Maintenance, Repair and Replacement") and the association's <strong>insurance boundary</strong>. In Stellar-managed buildings both live in the resident portal's document library, and our team answers responsibility questions before work begins — because a repair assigned correctly on day one never becomes a dispute on day thirty.</p>
 
-<p>For the full picture of how a well-run building divides its labor — assessments, rights, insurance, and etiquette included — read <a href="/condo-living">The Owner's Companion</a>, our complete guide to condo living. Boards that want responsibility questions answered this cleanly every time can learn about our <a href="/services/condominium-management">condominium management practice</a> or <a href="/contact">request a proposal</a>.</p>
+<p>Read next: <a href="/blog/first-time-condo-buyer-guide-chicago">A first-time Chicago condo buyer’s guide</a>; <a href="/blog/moving-into-chicago-condo-guide">moving into a Chicago condo</a>.</p>
+
+<p>For the full picture of how a well-run building divides its labor — assessments, rights, insurance, and etiquette included — read <a href="/condo-living">The Owner's Companion</a>, our complete guide to condo living. Boards that want responsibility questions answered this cleanly every time can learn about our condominium management practice or <a href="/contact">request a proposal</a>.</p>
 `,
   sources: [
     {

@@ -94,6 +94,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
         <li><strong>Share the result.</strong> When the report arrives, distribute it with the management letter and the board's response to any findings.</li>
       </ol>
 
+      <p>Read next: <a href="/blog/read-condo-hoa-financial-statements">How to read the monthly financials</a>; <a href="/blog/illinois-association-fidelity-insurance-requirements">fidelity coverage for the association and its manager</a>.</p>
+
       <h2>How Stellar supports association finances</h2>
 
       <p>We prepare monthly financial packages, year-end accountings and audit support files for condominium, HOA and townhome boards across Chicago and the North Shore, and we coordinate directly with the association's independent CPA. Learn more about our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to talk through an audit request your board is facing. This article is general information, not legal advice; association counsel should review any formal demand before the board responds.</p>
@@ -189,6 +191,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       </ol>
 
       <h2>How Stellar handles fidelity coverage</h2>
+
+      <p>Related reading: <a href="/blog/illinois-condo-owners-independent-audit-rights">Owners’ right to demand an independent audit</a>; <a href="/blog/condo-hoa-directors-officers-insurance-guide">directors and officers insurance for volunteer boards</a>.</p>
 
       <p>We review fidelity limits against actual balances at each renewal, provide our own coverage certificates on request, and work with the association's broker so the board sees a clear comparison. See our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> for a review of your current coverage. This article is general information; the association's insurance broker and counsel should confirm that any specific policy satisfies the statutes and your governing documents.</p>
     `,
@@ -288,6 +292,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       </ol>
 
       <h2>How Stellar holds association funds</h2>
+
+      <p>Keep reading: <a href="/blog/illinois-association-fidelity-insurance-requirements">Illinois fidelity insurance requirements</a>.</p>
 
       <p>Every association we manage has its own accounts in its own name, with board-approved signers and statements the board can see directly. Learn more about our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to review how your association's money is held today. This article is general information, not legal advice; association counsel should confirm how these statutes apply to your community.</p>
     `,
@@ -475,6 +481,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <p>For the maintenance side of the same question, see <a href="/blog/who-pays-condo-water-leak-illinois">who pays for a condo water leak</a>.</p>
 
       <h2>How Stellar handles deductible charges</h2>
+
+      <p>Also useful: <a href="/blog/condo-hoa-insurance-renewal-checklist">Preparing for insurance renewal</a>.</p>
 
       <p>We help boards draft deductible and owner insurance policies with counsel, document losses from the first call, run the notice and hearing process, and post charges accurately to owner ledgers. See our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to review your association's deductible approach. This article is general information, not legal advice; association counsel should review your declaration and any charge before it is issued.</p>
     `,

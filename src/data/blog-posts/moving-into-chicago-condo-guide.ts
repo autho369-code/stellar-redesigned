@@ -54,7 +54,11 @@ export const movingIntoChicagoCondoGuide = {
 <li><strong>Show up once.</strong> Attend one board meeting in your first quarter. You will learn more about your investment in that hour than in any document.</li>
 </ul>
 
-<p>For everything that comes after the boxes — assessments, repairs, insurance, neighbors, and your rights as an owner — <a href="/condo-living">The Owner's Companion</a> is the manual nobody hands you at closing. And if your new building's management doesn't work the way this article assumes, your board may want to see <a href="/services/condominium-management">how ours does</a>.</p>
+<p>For everything that comes after the boxes — assessments, repairs, insurance, neighbors, and your rights as an owner — <a href="/condo-living">The Owner's Companion</a> is the manual nobody hands you at closing. And if your new building's management doesn't work the way this article assumes, your board may want to <a href="/contact">talk with us</a>.</p>
+
+<p>For the association side of a Chicago building, see our <a href="/property-management-chicago">Chicago condo association management</a> page.</p>
+
+<p>Keep reading: <a href="/blog/condo-repairs-owner-vs-association-illinois">Which repairs the owner pays and which the association pays</a>; <a href="/blog/first-time-condo-buyer-guide-chicago">what buyers should read before closing</a>.</p>
 `,
   sources: [
     {

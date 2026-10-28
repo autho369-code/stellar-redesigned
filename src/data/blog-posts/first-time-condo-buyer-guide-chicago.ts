@@ -49,6 +49,10 @@ export const firstTimeCondoBuyerGuideChicago = {
 <p>Set up the resident portal and autopay in week one, match your HO-6 policy to the master policy's boundary and deductible, download the governing documents while they're fresh, and attend one board meeting in your first quarter. Then read <a href="/condo-living">The Owner's Companion</a> — our eight-chapter guide to the ownership life you just began: what your assessment funds, <a href="/blog/condo-repairs-owner-vs-association-illinois">who fixes what</a>, your rights under Illinois law, and the neighborly arts that make a shared building feel like home.</p>
 
 <p>And if the building you fell in love with turns out to have a board that deserves better management — that conversation is what we do. <a href="/contact">Request a proposal</a> for your new association.</p>
+
+<p>To see what good association management looks like, visit our <a href="/property-management-chicago">Chicago condominium association management</a> page.</p>
+
+<p>Related reading: <a href="/blog/illinois-section-22-1-disclosure-board-guide">The Illinois 22.1 disclosure guide</a>.</p>
 `,
   sources: [
     {

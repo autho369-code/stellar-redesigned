@@ -52,6 +52,8 @@ export const whyCondoBoardsFail = {
 <li><strong>Share the load.</strong> Use committees and professional support so no single volunteer burns out.</li>
 </ul>
 
+<p>Also useful: <a href="/blog/new-condo-board-member-first-30-days">A new board member’s first 30 days</a>; <a href="/blog/condo-hoa-board-communication-systems">keeping board decisions from getting lost</a>.</p>
+
 <p>Strong boards are not the ones that never disagree — they are the ones that disagree in a structured, transparent process that owners can see and respect. Professional <a href="/services/board-support">board support</a> from Stellar Property Management gives boards the meeting structure, documentation, and guidance to operate that way. To strengthen your board, <a href="/contact">get in touch</a>.</p>
 `,
 };

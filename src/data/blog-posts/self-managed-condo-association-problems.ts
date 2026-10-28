@@ -16,6 +16,8 @@ export const selfManagedCondoProblems = {
 <h2>Why Associations Self-Manage</h2>
 <p>The motivation is almost always cost. A management fee feels like a line item a tight budget can eliminate, and a capable, generous volunteer can make it look effortless. But self-management does not remove the work or the legal obligations — it simply moves all of them onto unpaid neighbors.</p>
 
+<p>For smaller buildings weighing that choice, our <a href="/services/small-condo-association-management">small condo association management</a> page explains what full-service management covers.</p>
+
 <h2>The Hidden Problems</h2>
 <ul>
 <li><strong>Collections gaps.</strong> Volunteers are understandably reluctant to lien a neighbor or pursue a delinquency aggressively. Inconsistent collections quietly starve the association's cash flow.</li>
@@ -45,6 +47,8 @@ export const selfManagedCondoProblems = {
 <h2>When an Association Should Bring In a Manager</h2>
 <p>Self-management has a natural shelf life. Clear signals that it is time to bring in a professional include chronic delinquencies, visible board burnout, a looming capital project, a compliance scare, or simple growth in the size and complexity of the building. Professional management restores collections discipline, real financial controls, regulatory compliance, vendor leverage, and — critically — continuity that does not depend on a single volunteer.</p>
 
-<p>The goal is not to take authority away from the board. It is to give the board reliable execution and expert guidance so its decisions actually get carried out. To weigh whether professional <a href="/services/condominium-management">condominium management</a> is right for your association, <a href="/contact">contact Stellar Property Management</a> for a straightforward conversation.</p>
+<p>Keep reading: <a href="/blog/how-many-associations-should-community-manager-handle">How many associations one manager should handle</a>.</p>
+
+<p>The goal is not to take authority away from the board. It is to give the board reliable execution and expert guidance so its decisions actually get carried out. To weigh whether professional condominium management is right for your association, <a href="/contact">contact Stellar Property Management</a> for a straightforward conversation.</p>
 `,
 };

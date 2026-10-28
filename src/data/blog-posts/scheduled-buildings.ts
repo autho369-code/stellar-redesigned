@@ -65,8 +65,10 @@ export const scheduledBuildingPosts: BlogPost[] = [
         <li>Re-verify current agency requirements before each cycle rather than relying on last year's memory.</li>
       </ol>
 
+      <p>Read next: <a href="/blog/fannie-freddie-condo-reserve-15-percent-2027">The new 15% reserve minimum from Fannie Mae and Freddie Mac</a>; <a href="/blog/how-to-read-condo-reserve-study">how to read a condo reserve study</a>.</p>
+
       <h2>How Professional Management Helps</h2>
-      <p>Most eligibility problems are documentation problems. Consistent <a href="/services/financial-management">financial management</a>, disciplined <a href="/services/maintenance-coordination">maintenance coordination</a> records, and organized <a href="/services/board-support">board support</a> turn a stressful questionnaire into a routine task. Stellar works with <a href="/services/condominium-management">condominium associations</a> throughout <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a> to keep the underlying records lender-ready year round.</p>
+      <p>Most eligibility problems are documentation problems. Consistent <a href="/services/financial-management">financial management</a>, disciplined maintenance coordination records, and organized board support turn a stressful questionnaire into a routine task. Stellar works with condominium associations throughout <a href="/property-management-chicago">Chicago</a> and the North Shore to keep the underlying records lender-ready year round.</p>
 
       <p><em>This article is educational information for association boards, not legal, financial, or insurance advice. Confirm current agency requirements with the applicable guides and consult your association counsel and insurance professional about your specific building.</em></p>
 
@@ -124,9 +126,11 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Make It an Annual Habit</h2>
-      <p>Insurance education works best as a yearly rhythm tied to renewal. Our <a href="/services/board-support">board support</a> and <a href="/services/financial-management">financial management</a> services help boards in <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> communities keep documentation, renewal calendars, and owner communications organized across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>.</p>
+      <p>Insurance education works best as a yearly rhythm tied to renewal. Our board support and <a href="/services/financial-management">financial management</a> services help boards in condominium, HOA, and townhome communities keep documentation, renewal calendars, and owner communications organized across <a href="/property-management-chicago">Chicago</a> and the North Shore.</p>
 
       <p><em>This article is educational information for association boards, not legal or insurance advice. Coverage depends on your policy language and governing documents; consult your association counsel and licensed insurance professional.</em></p>
+
+      <p>Related reading: <a href="/blog/condo-hoa-insurance-renewal-checklist">An insurance renewal checklist for boards</a>; <a href="/blog/illinois-association-fidelity-insurance-requirements">fidelity coverage for the association and its manager</a>.</p>
 
       <p>Need help building an owner insurance communication your counsel can approve? <a href="/contact">Request a consultation</a>.</p>
     `,
@@ -191,9 +195,11 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Prevention Beats Allocation</h2>
-      <p>Repeat leaks in the same stack are a capital planning signal. Structured <a href="/services/maintenance-coordination">maintenance coordination</a> and disciplined <a href="/services/financial-management">financial management</a> let boards convert leak history into a funded replacement plan. Stellar supports <a href="/services/condominium-management">condominium</a> and <a href="/services/townhome-management">townhome</a> boards across <a href="/property-management-chicago">Chicago</a> with vendor response protocols and documentation standards.</p>
+      <p>Repeat leaks in the same stack are a capital planning signal. Structured <a href="/services/maintenance-coordination">maintenance coordination</a> and disciplined financial management let boards convert leak history into a funded replacement plan. Stellar supports condominium and townhome boards across <a href="/property-management-chicago">Chicago</a> with vendor response protocols and documentation standards.</p>
 
       <p><em>This article is educational information for association boards, not legal advice. Responsibility depends on your declaration, bylaws, and applicable Illinois law; consult association counsel for interpretation of your governing documents.</em></p>
+
+      <p>Keep reading: <a href="/blog/condo-hoa-emergency-planning-checklist">A board-ready emergency plan</a>; <a href="/blog/can-condo-boards-enter-your-unit-illinois">when the association may enter a unit</a>.</p>
 
       <p><a href="/contact">Talk with our team</a> about building a water-event protocol for your association.</p>
     `,
@@ -234,6 +240,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <h3>Confirm Requirements With the City and Your Professional</h3>
       <p>Ask your engineer to state in writing which ordinance requirements apply to your building, what the inspection scope and reporting obligations are, and when the next filing is due. Ask the City directly if anything is unclear. Boards should never assume a requirement has been satisfied because a report exists somewhere in the files.</p>
 
+      <p>Facade programs are a core part of <a href="/services/high-rise-condominium-management">high-rise condominium management</a> in Chicago.</p>
+
       <h2>Choosing the Right Professionals</h2>
       <p>Facade work generally involves two distinct roles. A licensed <strong>structural engineer or architect</strong> performs the assessment, prepares repair documents, and administers construction. A <strong>restoration contractor</strong> performs the work. Keeping these roles separate protects the association: the professional who designs and inspects the repair should not be the party being paid to perform it. Ask for Chicago-specific facade experience, references from similar buildings, and current insurance certificates.</p>
 
@@ -254,8 +262,10 @@ export const scheduledBuildingPosts: BlogPost[] = [
         <li>Retain the closeout package: final report, permits, photos, warranties, and payment records.</li>
       </ol>
 
+      <p>Also useful: <a href="/blog/chicago-condo-life-safety-board-planning">High-rise life-safety planning</a>.</p>
+
       <h2>Where Management Adds Value</h2>
-      <p>Facade programs succeed or fail on coordination. Consistent <a href="/services/maintenance-coordination">maintenance coordination</a>, disciplined <a href="/services/financial-management">financial management</a>, and organized <a href="/services/board-support">board support</a> keep engineering, permitting, bidding, and resident communication on one timeline. Stellar works with <a href="/services/condominium-management">condominium boards</a> throughout <a href="/property-management-chicago">Chicago</a> on multi-year capital programs.</p>
+      <p>Facade programs succeed or fail on coordination. Consistent maintenance coordination, disciplined financial management, and organized board support keep engineering, permitting, bidding, and resident communication on one timeline. Stellar works with condominium boards throughout <a href="/property-management-chicago">Chicago</a> on multi-year capital programs.</p>
 
       <p><em>This article is educational information for association boards, not legal or engineering advice. Confirm current City of Chicago requirements with the department of buildings and retain a licensed design professional and association counsel for your building.</em></p>
 
@@ -323,9 +333,11 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Consistency Is the Advantage</h2>
-      <p>Capital planning fails when it restarts with every board election. Professional <a href="/services/financial-management">financial management</a>, structured <a href="/services/maintenance-coordination">maintenance coordination</a>, and continuous <a href="/services/board-support">board support</a> preserve institutional memory. Stellar supports <a href="/services/condominium-management">condominium</a> and <a href="/services/hoa-management">HOA</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a> with long-horizon capital programs.</p>
+      <p>Capital planning fails when it restarts with every board election. Professional financial management, structured <a href="/services/maintenance-coordination">maintenance coordination</a>, and continuous board support preserve institutional memory. Stellar supports condominium and HOA boards in <a href="/property-management-chicago">Chicago</a> and the North Shore with long-horizon capital programs.</p>
 
       <p><em>This article is educational information for association boards, not legal, engineering, or financial advice. Consult licensed professionals and association counsel regarding your building and governing documents.</em></p>
+
+      <p>Read next: <a href="/blog/condo-hoa-vendor-rfp-checklist">Vendor scope, insurance and controls</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">association emergency planning</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to review your association's capital plan.</p>
     `,
@@ -365,6 +377,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <h2>Common Exclusions to Discuss</h2>
       <p>Ask the agent to walk through exclusions in plain language. Frequently discussed categories include bodily injury and property damage (handled by other policies), fraudulent or intentional acts, certain employment-related matters unless endorsed, construction defect and similar claims, insured-versus-insured situations, and fines or penalties. Also ask how the policy treats non-monetary relief, since many association disputes seek an order rather than money.</p>
 
+      <p>Coverage limits and premiums should be reviewed with the budget, which is part of our <a href="/services/financial-management">association financial management</a> service.</p>
+
       <h2>Governance Practices That Reduce Claims</h2>
       <p>Insurance does not substitute for process. Boards reduce exposure by making decisions the way their documents require: proper meeting notice, quorum, decisions made at meetings rather than through informal consensus, accurate minutes, consistent rule enforcement, and disciplined handling of records requests. The Illinois Condominium Property Act and the Common Interest Community Association Act each establish governance and records frameworks, and they are not identical, so ask association counsel to confirm which applies to your community and to review your board's standard procedures against it and against your declaration and bylaws.</p>
 
@@ -382,8 +396,10 @@ export const scheduledBuildingPosts: BlogPost[] = [
         <li>Document board decisions with the reasoning, not just the vote.</li>
       </ol>
 
+      <p>Related reading: <a href="/blog/condo-hoa-insurance-renewal-checklist">Preparing for insurance renewal</a>; <a href="/blog/illinois-association-fidelity-insurance-requirements">Illinois fidelity insurance requirements</a>.</p>
+
       <h2>Support for Volunteer Directors</h2>
-      <p>Most governance claims trace back to process gaps, not bad intentions. Our <a href="/services/board-support">board support</a> services help directors run compliant meetings, maintain records, and coordinate with counsel and insurance professionals across <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> communities in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>.</p>
+      <p>Most governance claims trace back to process gaps, not bad intentions. Our board support services help directors run compliant meetings, maintain records, and coordinate with counsel and insurance professionals across condominium, HOA, and townhome communities in <a href="/property-management-chicago">Chicago</a> and the North Shore.</p>
 
       <p><em>This article is educational information for association boards, not legal or insurance advice. Coverage depends on your specific policy language; consult your association counsel and licensed insurance professional.</em></p>
 
@@ -442,9 +458,11 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Getting It Right the First Time</h2>
-      <p>EV charging is an infrastructure decision with a twenty-year horizon, not a one-off approval. Our <a href="/services/maintenance-coordination">maintenance coordination</a> and <a href="/services/board-support">board support</a> teams help <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a> coordinate engineers, contractors, and counsel into one process.</p>
+      <p>EV charging is an infrastructure decision with a twenty-year horizon, not a one-off approval. Our <a href="/services/maintenance-coordination">maintenance coordination</a> and board support teams help condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore coordinate engineers, contractors, and counsel into one process.</p>
 
       <p><em>This article is educational information for association boards, not legal advice. Requirements depend on current Illinois law and your governing documents; consult association counsel before adopting or applying an EV charging policy.</em></p>
+
+      <p>Keep reading: <a href="/blog/condo-hoa-vendor-rfp-checklist">Writing a vendor RFP</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">a board-ready emergency plan</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to build your association's EV charging process.</p>
     `,
@@ -515,7 +533,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Consistent Vendor Management</h2>
-      <p>Winter performance is a management discipline. Structured <a href="/services/maintenance-coordination">maintenance coordination</a> and reliable <a href="/services/board-support">board support</a> keep scopes, certificates, logs, and complaints in one place for <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> communities across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>.</p>
+      <p>Winter performance is a management discipline. Structured maintenance coordination and reliable board support keep scopes, certificates, logs, and complaints in one place for condominium, HOA, and <a href="/services/townhome-management">townhome</a> communities across <a href="/property-management-chicago">Chicago</a> and the North Shore.</p>
 
       <p><em>This article is educational information for association boards, not legal advice. Contract terms and liability questions depend on your facts and governing documents; consult association counsel and your insurance professional.</em></p>
 
@@ -578,8 +596,12 @@ export const scheduledBuildingPosts: BlogPost[] = [
         <li>Record life-safety decisions and expenditures in board minutes.</li>
       </ol>
 
+      <p>Building systems and 24/7 response are part of our <a href="/services/high-rise-condominium-management">Chicago high-rise condominium management</a>.</p>
+
+      <p>Also useful: <a href="/blog/chicago-condo-facade-compliance-board-guide">Chicago facade compliance</a>.</p>
+
       <h2>Program Management Support</h2>
-      <p>Life-safety programs demand calendars, vendor oversight, and records discipline. Our <a href="/services/maintenance-coordination">maintenance coordination</a>, <a href="/services/financial-management">financial management</a>, and <a href="/services/board-support">board support</a> services help <a href="/services/condominium-management">condominium boards</a> throughout <a href="/property-management-chicago">Chicago</a> keep compliance programs running across board turnover.</p>
+      <p>Life-safety programs demand calendars, vendor oversight, and records discipline. Our maintenance coordination, financial management, and board support services help condominium boards throughout <a href="/property-management-chicago">Chicago</a> keep compliance programs running across board turnover.</p>
 
       <p><em>This article is educational information for association boards, not legal or engineering advice. Confirm current City of Chicago requirements with the applicable departments and retain a qualified fire-protection professional and association counsel for your building.</em></p>
 
@@ -651,9 +673,11 @@ export const scheduledBuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Process Beats Negotiation</h2>
-      <p>A repeatable RFP process protects the association more than aggressive negotiation on any single bid. Our <a href="/services/maintenance-coordination">maintenance coordination</a>, <a href="/services/financial-management">financial management</a>, and <a href="/services/board-support">board support</a> teams help <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a> run consistent, documented procurement.</p>
+      <p>A repeatable RFP process protects the association more than aggressive negotiation on any single bid. Our <a href="/services/maintenance-coordination">maintenance coordination</a>, financial management, and board support teams help condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore run consistent, documented procurement.</p>
 
       <p><em>This article is educational information for association boards, not legal advice. Contracting requirements depend on your governing documents and applicable Illinois law; consult association counsel before awarding significant contracts.</em></p>
+
+      <p>Read next: <a href="/blog/condo-hoa-emergency-planning-checklist">Association emergency planning</a>; <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago buildings</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to build your association's vendor procurement process.</p>
     `,

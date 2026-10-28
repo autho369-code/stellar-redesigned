@@ -36,17 +36,21 @@ export const illinoisCondoLawUpdates2026 = {
 <figcaption>Three habits that keep Illinois condo boards out of legal disputes.</figcaption>
 </figure>
 
+<p>Our <a href="/services/board-support">condo board support services</a> include the minutes and record-keeping that make these requests easier to answer.</p>
+
 <h2>Meetings, Notice, and Elections</h2>
 <p>Illinois law sets specific requirements for how associations notice and conduct meetings. Board meetings and owner meetings follow different notice rules, owners generally have the right to attend board meetings, and certain decisions must be made in open session. Annual meetings and board elections carry their own notice timelines, quorum rules, and procedures for proxies or ballots. Election disputes are common and avoidable: follow the notice periods in your declaration and the Act exactly, document everything, and never improvise procedure on the night of a meeting.</p>
 
 <h2>Budgets, Assessments, and Reserves</h2>
-<p>Boards must adopt an annual budget and may levy assessments to fund it. Illinois law also expects associations to plan ahead: the Act directs boards to provide for reasonable reserves for capital repair and replacement, weighing factors such as the cost and remaining useful life of major components. Underfunding reserves is not only a financial problem — it becomes a legal one when owners are hit with surprise special assessments. Disciplined <a href="/services/financial-management">financial management</a> and a current reserve study are the best defense.</p>
+<p>Boards must adopt an annual budget and may levy assessments to fund it. Illinois law also expects associations to plan ahead: the Act directs boards to provide for reasonable reserves for capital repair and replacement, weighing factors such as the cost and remaining useful life of major components. Underfunding reserves is not only a financial problem — it becomes a legal one when owners are hit with surprise special assessments. Disciplined financial management and a current reserve study are the best defense.</p>
 
 <h2>Insurance Obligations</h2>
 <p>Associations are generally required to insure the common elements, and the declaration usually dictates the split between the association's master policy and individual owners' HO-6 policies. With premiums rising sharply across Illinois, boards should review coverage every year with a licensed insurance professional and make sure owners understand their own obligations.</p>
 
 <h2>Where Boards Should Focus in 2026</h2>
 <p>Legislation and case law evolve every year, and the details that apply to your building can change. No article is a substitute for advice from a licensed Illinois community association attorney, and boards should confirm any current-session legislative changes with counsel or the <strong>Community Associations Institute (CAI) Illinois Chapter</strong>. What does not change is the value of disciplined process: accurate records, proper notice, transparent finances, and consistent enforcement.</p>
-<p>A professional management partner keeps those systems running so the board can focus on decisions rather than paperwork. <a href="/services/condominium-management">Stellar Property Management</a> helps Chicago-area boards stay compliant and organized. To talk through your association's needs, <a href="/contact">contact our team</a>.</p>
+<p>Also useful: <a href="/blog/illinois-condo-association-records-request-guide">Answering owner records requests</a>; <a href="/blog/illinois-condo-board-elections-proxies-ballots">board elections, proxies and secret ballots</a>.</p>
+
+<p>A professional management partner keeps those systems running so the board can focus on decisions rather than paperwork. Stellar Property Management helps Chicago-area boards stay compliant and organized. To talk through your association's needs, <a href="/contact">contact our team</a>.</p>
 `,
 };

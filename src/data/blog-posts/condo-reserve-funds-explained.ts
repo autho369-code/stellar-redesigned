@@ -47,6 +47,8 @@ export const condoReserveFundsExplained = {
 <p>The Illinois Condominium Property Act directs boards to provide for reasonable reserves, weighing factors such as the cost and remaining useful life of major components. But state law is only part of the picture. Fannie Mae and Freddie Mac scrutinize reserves and deferred maintenance when reviewing condominium projects for financing eligibility. An underfunded association can make units harder to buy, sell, or refinance — which quietly erodes every owner's property value.</p>
 
 <h2>Fixing an Underfunded Reserve</h2>
+<p>Also useful: <a href="/blog/how-to-read-condo-reserve-study">How to read a condo reserve study</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
+
 <p>Recovery is straightforward, if not painless: commission a current reserve study, adjust assessments toward a realistic funding level over a planned period, fund reserves consistently, and stop deferring projects. Transparent communication matters too — owners accept gradual, well-explained increases far better than sudden special assessments. Stellar Property Management's <a href="/services/financial-management">financial management</a> team helps boards build and maintain reserve plans that hold up. To assess where your association stands, <a href="/contact">reach out for a consultation</a>.</p>
 `,
 };
