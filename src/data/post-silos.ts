@@ -173,6 +173,24 @@ export const postSilos: Record<string, PostSilo> = {
   'which-illinois-law-governs-condo-hoa-townhome': { money: HOA, area: CHICAGO, links: [] },
   'cicaa-small-association-exemptions-collection-policy': { money: HOA, area: GLENVIEW, links: ['which-illinois-law-governs-condo-hoa-townhome'] },
   'score-condo-hoa-management-proposals': { money: '/pricing', area: CHICAGO, links: ['condominium-property-management-chicago-what-board-members-should-expect', 'switch-condo-management-companies-chicago'] },
+
+  // ── Silo-support guides queued 2026-11-23 to 2026-12-08 (plan section 6)
+  'high-rise-condo-management-chicago-whats-different': { money: HIGH_RISE, area: CHICAGO, links: ['chicago-condo-life-safety-board-planning', 'chicago-condo-facade-compliance-board-guide'] },
+  'chicago-condo-heat-outage-protocol': { money: MAINT, area: CHICAGO, links: ['chicago-condo-frozen-pipes-winter-checklist', 'condo-hoa-emergency-planning-checklist'] },
+  'small-condo-association-professional-manager': { money: SMALL, area: CHICAGO, links: ['self-managed-condo-association-problems', 'how-many-associations-should-community-manager-handle'] },
+  'glenview-townhome-hoa-board-guide': { money: TOWNHOME, area: GLENVIEW, links: ['illinois-condo-hoa-snow-removal-vendor-guide', 'which-illinois-law-governs-condo-hoa-townhome'] },
+  'illinois-resale-disclosure-fees-turnaround': { money: RESALE, links: ['illinois-section-22-1-disclosure-board-guide', 'illinois-22-1-response-workflow'] },
+  'chicago-condo-management-cost': { money: '/pricing', area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'community-association-management-agreement-review'] },
+  'townhome-association-maintenance-responsibilities-illinois': { money: TOWNHOME, links: ['which-illinois-law-governs-condo-hoa-townhome', 'condo-repairs-owner-vs-association-illinois'] },
+  'condo-pet-noise-smoking-complaints-illinois': { money: RULES, links: ['illinois-association-fines-notice-hearing', 'adopting-enforcing-condo-hoa-rules-illinois'] },
+  'evanston-condo-association-board-guide': { money: CONDO, area: '/property-management-evanston', links: ['vintage-chicago-condo-capital-planning', 'illinois-condo-association-records-request-guide'] },
+  'chicago-condo-annual-building-inspection-checklist': { money: HIGH_RISE, area: CHICAGO, links: ['chicago-condo-elevator-inspection-board-guide', 'chicago-condo-life-safety-board-planning'] },
+  'lincoln-park-vintage-condo-board-guide': { money: SMALL, area: '/property-management-lincoln-park', links: ['small-condo-association-professional-manager', 'vintage-chicago-condo-capital-planning'] },
+  'condo-move-in-move-out-elevator-policy': { money: HIGH_RISE, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'moving-into-chicago-condo-guide'] },
+  'lakeview-condo-association-board-guide': { money: CONDO, area: '/property-management-lakeview', links: ['high-rise-condo-management-chicago-whats-different', 'common-condo-rule-violations-chicago'] },
+  'illinois-hoa-board-duties-cicaa': { money: HOA, links: ['which-illinois-law-governs-condo-hoa-townhome', 'cicaa-small-association-exemptions-collection-policy'] },
+  'edgewater-lakefront-condo-board-guide': { money: HIGH_RISE, area: '/property-management-edgewater', links: ['high-rise-condo-management-chicago-whats-different', 'chicago-condo-facade-compliance-board-guide'] },
+  'replace-condo-management-company-60-day-plan': { money: CONDO, area: CHICAGO, links: ['switch-condo-management-companies-chicago', 'score-condo-hoa-management-proposals'] },
 };
 
 export const moneyPagePaths = Object.keys(moneyPageLabels) as MoneyPage[];

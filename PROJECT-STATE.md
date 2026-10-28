@@ -38,8 +38,14 @@ to money pages; they do not spray links across every service. Applied from
   with question headings emit FAQPage JSON-LD built only from on-page Q&A.
 - Not done (needs Mirsad): the three possible merges in section 4 of the plan,
   and all off-site AEO items (reviews, BBB, Yelp categories, directories).
-  New posts for townhome, HOA, high-rise, pricing and neighborhood pages are
-  still to write.
+- Same day: 16 silo-support guides queued 2026-11-23 to 2026-12-08 in
+  `scheduled-nov-2026-silo.ts` and `scheduled-dec-2026-silo.ts`, giving the
+  thin money pages (high-rise, small condo, townhome, HOA, resale, pricing)
+  and the Glenview, Evanston, Lincoln Park, Lakeview and Edgewater area pages
+  their first dedicated guides. New facts read in the primary text on
+  2026-10-28: 765 ILCS 605/22.1 and 765 ILCS 160/1-35 (ilga.gov), and the
+  City's Heat Ordinance and Boiler Inspections pages (chicago.gov). Backflow
+  test rules were left out: no clear City page was found.
 
 ## Status update — 2026-10-22 (16 new guides, queue runs to 2026-11-22)
 
