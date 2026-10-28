@@ -6,10 +6,14 @@ Updated: 2026-10-28. Every session reads this first and updates it at the end.
 - [x] Oct 28: **reverse silo applied to all 94 guides** + FAQ schema. Rule:
       every new guide gets an entry in `src/data/post-silos.ts` (one money
       page, max one area page, siblings) — the build checks it.
-- [ ] Write the new silo posts from `docs/blog-silo-fix-plan-2026-10-28.md`
-      section 6 (high-rise, small condo, pricing, townhome, HOA, resale fees,
-      Glenview/Evanston/North Shore and Chicago neighborhood series). Put them
-      in the daily queue after 2026-11-22.
+- [x] Oct 28: **16 silo posts queued Nov 23 – Dec 8** (high-rise, heat
+      outage, small condo, Glenview, resale fees, cost, townhome, complaints,
+      Evanston, inspections, Lincoln Park, move rules, Lakeview, HOA/CICAA,
+      Edgewater, 60-day manager change). Queue now ends 2026-12-08.
+- [ ] **Write the batch after 2026-12-08.** Ideas still open: Wilmette,
+      Northbrook, Skokie, Rogers Park, River North/Streeterville area guides.
+- [ ] After each new silo post goes live, add a link to it from its pillar
+      guide (the build blocks links to unpublished guides, so do it after).
 - [x] Oct 22: **next batch of daily guides written** — 16 guides, Nov 7–22,
       so the queue now ends 2026-11-22. Two new 2026 laws found and covered:
       the association website due 2028-01-01 and the police/fire vehicle

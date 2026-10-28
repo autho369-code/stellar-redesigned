@@ -26,6 +26,8 @@ import { scheduledOct2026FinancePosts } from './scheduled-oct-2026-finance';
 import { scheduledOct2026BuildingPosts } from './scheduled-oct-2026-buildings';
 import { scheduledNov2026NewLawPosts } from './scheduled-nov-2026-new-laws';
 import { scheduledNov2026StatutePosts } from './scheduled-nov-2026-statute';
+import { scheduledNov2026SiloPosts } from './scheduled-nov-2026-silo';
+import { scheduledDec2026SiloPosts } from './scheduled-dec-2026-silo';
 import { getChicagoPublicationDate } from '../../utils/publication-date';
 
 export interface BlogPost {
@@ -60,6 +62,8 @@ export const allBlogPosts: BlogPost[] = [
   ...scheduledOct2026BuildingPosts,
   ...scheduledNov2026NewLawPosts,
   ...scheduledNov2026StatutePosts,
+  ...scheduledNov2026SiloPosts,
+  ...scheduledDec2026SiloPosts,
   condoRepairsOwnerVsAssociation,
   movingIntoChicagoCondoGuide,
   rentingOutYourCondoChicago,
