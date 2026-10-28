@@ -5,6 +5,40 @@ import { SEOHead } from '../components/seo/SEOHead';
 import { getBlogPostBySlug, allBlogPosts, blogPosts } from '../data/blog-posts';
 import { neighborhoods } from '../data/neighborhoods';
 import { contentClusters, getPostCluster, getPostNeighborhoods, getPostRegion, getRelatedClusterPosts } from '../data/content-silos';
+import { getPostSilo, getSiloSiblings, moneyPageLabels } from '../data/post-silos';
+
+const ENTITIES: Record<string, string> = {
+  amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
+  rdquo: '”', ldquo: '“', mdash: '—', ndash: '–', sect: '§', hellip: '…',
+};
+
+function htmlToText(html: string): string {
+  return html
+    .replace(/<(figure|svg|script|style)[\s\S]*?<\/\1>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&(#\d+|[a-z]+);/g, (entity, name: string) =>
+      name.startsWith('#') ? String.fromCharCode(Number(name.slice(1))) : ENTITIES[name] ?? entity)
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Guides written as question headings already answer each question in the
+// section below it. Exposing those exact on-page pairs as FAQPage gives answer
+// engines a clean question → answer map; nothing is added that is not visible.
+function getFaqPairs(content: string): Array<{ question: string; answer: string }> {
+  const headings = [...content.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)];
+  return headings.flatMap((heading, index) => {
+    const question = htmlToText(heading[1]);
+    if (!question.endsWith('?')) return [];
+    const start = heading.index! + heading[0].length;
+    const end = headings[index + 1]?.index ?? content.length;
+    const section = content
+      .slice(start, end)
+      .replace(/<p>(Related reading|Read next|Also useful|Keep reading):[\s\S]*?<\/p>/g, '');
+    const answer = htmlToText(section);
+    return answer ? [{ question, answer }] : [];
+  });
+}
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
@@ -26,8 +60,29 @@ export default function BlogPost() {
   const clusterKey = getPostCluster(post);
   const cluster = contentClusters[clusterKey];
   const postRegion = getPostRegion(post);
-  const relatedPosts = getRelatedClusterPosts(post, blogPosts);
+  // Reverse silo: the guide pushes authority up to its one money page, and
+  // related reading comes from the same silo before anything else.
+  const silo = getPostSilo(post.slug);
+  const siloSiblings = getSiloSiblings(post.slug, blogPosts);
+  const relatedPosts = [
+    ...siloSiblings,
+    ...getRelatedClusterPosts(post, blogPosts, 6).filter((candidate) => !siloSiblings.includes(candidate)),
+  ].slice(0, 3);
+  const servicePath = silo?.money ?? cluster.servicePath;
+  const serviceLabel = silo ? moneyPageLabels[silo.money] : cluster.serviceLabel;
   const locationLinks = getPostNeighborhoods(post, neighborhoods, allBlogPosts);
+  const faqPairs = getFaqPairs(post.content);
+  const faqSchema = faqPairs.length >= 2
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqPairs.map(({ question, answer }) => ({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer },
+        })),
+      }
+    : null;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -83,6 +138,11 @@ export default function BlogPost() {
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       {/* ── Header ─────────────────────────────────────────────── */}
@@ -236,8 +296,8 @@ export default function BlogPost() {
               <Link to={cluster.path} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">
                 All {cluster.label} guides <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link to={cluster.servicePath} className="inline-flex items-center gap-2 text-sm text-ink hover:text-gold-600">
-                Explore {cluster.serviceLabel} <ArrowRight className="w-4 h-4" />
+              <Link to={servicePath} className="inline-flex items-center gap-2 text-sm text-ink hover:text-gold-600">
+                Explore {serviceLabel} <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

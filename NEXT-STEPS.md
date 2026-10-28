@@ -1,8 +1,15 @@
 # Stellar — next steps (the one to-do list)
 
-Updated: 2026-10-22. Every session reads this first and updates it at the end.
+Updated: 2026-10-28. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Oct 28: **reverse silo applied to all 94 guides** + FAQ schema. Rule:
+      every new guide gets an entry in `src/data/post-silos.ts` (one money
+      page, max one area page, siblings) — the build checks it.
+- [ ] Write the new silo posts from `docs/blog-silo-fix-plan-2026-10-28.md`
+      section 6 (high-rise, small condo, pricing, townhome, HOA, resale fees,
+      Glenview/Evanston/North Shore and Chicago neighborhood series). Put them
+      in the daily queue after 2026-11-22.
 - [x] Oct 22: **next batch of daily guides written** — 16 guides, Nov 7–22,
       so the queue now ends 2026-11-22. Two new 2026 laws found and covered:
       the association website due 2028-01-01 and the police/fire vehicle
@@ -15,6 +22,10 @@ Updated: 2026-10-22. Every session reads this first and updates it at the end.
 - [x] Oct 22: collection-policy guide is live and first on /blog.
 
 ## For Mirsad (only he can do these)
+- [ ] Decide on 3 possible post merges (plan section 4) — check Search
+      Console traffic first. Claude will not merge without a yes.
+- [ ] Yelp: remove the "Buyer's agent" category. Get listed on Chicago
+      "best property management" roundups and directories (AI tools quote these).
 - [ ] **Reviews:** send the Google review link to owners and board members
       every week — goal 10 new 5-star reviews. Link:
       https://g.page/r/CXsN7jc7d5JTEBM/review (ask everyone, not only happy

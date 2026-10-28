@@ -37,6 +37,8 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Lenders, title companies, and buyer attorneys all work from checklists. When a request comes in labeled "22.1 disclosure" to a townhome association governed by CICAA, the association still needs to respond -- it simply needs to respond with what its governing statute and documents actually require, not with a form copied from a condominium. Sending the wrong form is how associations end up making representations they cannot support.</p>
 
+      <p>Our <a href="/services/resale-disclosures">22.1 resale disclosure services</a> prepare these packets, paid assessment letters and lender questionnaires.</p>
+
       <h2>What boards should have ready before the request arrives</h2>
 
       <p>Assume a resale request can land any week. The associations that handle 22.1 well keep a permanent, continuously updated packet source rather than assembling from scratch each time. At minimum, keep these current and in one place:</p>
@@ -57,7 +59,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <h2>Build the workflow around a single accountable owner</h2>
 
-      <p>The most common failure mode is diffusion. A request goes to a shared association email, three board members each assume another is handling it, and the clock runs. Assign one accountable party -- typically the managing agent, with a named board backup -- and route every resale request to that channel. Our <a href="/services/board-support">board support</a> and <a href="/services/financial-management">financial management</a> teams handle this intake for the associations we serve precisely because it is a deadline-driven records function that should never depend on who happened to check email.</p>
+      <p>The most common failure mode is diffusion. A request goes to a shared association email, three board members each assume another is handling it, and the clock runs. Assign one accountable party -- typically the managing agent, with a named board backup -- and route every resale request to that channel. Our board support and financial management teams handle this intake for the associations we serve precisely because it is a deadline-driven records function that should never depend on who happened to check email.</p>
 
       <h3>Board checklist: 22.1 readiness</h3>
 
@@ -79,7 +81,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for Illinois association boards and is not legal advice. Your association's governing documents control, and your association's attorney should interpret them and confirm current statutory requirements before you rely on any process described here.</p>
 
-      <p>If your board wants a resale disclosure process that runs on a calendar instead of on adrenaline, our <a href="/services/condominium-management">condominium management</a> team can build one with you. <a href="/contact">Schedule a consultation</a> and we will review your current packet against your governing documents.</p>
+      <p>Keep reading: <a href="/blog/illinois-22-1-disclosure-packet-checklist">What belongs in the 22.1 packet</a>; <a href="/blog/illinois-22-1-response-workflow">answering 22.1 requests quickly</a>.</p>
+
+      <p>If your board wants a resale disclosure process that runs on a calendar instead of on adrenaline, our condominium management team can build one with you. <a href="/contact">Schedule a consultation</a> and we will review your current packet against your governing documents.</p>
     `,
   },
   {
@@ -118,7 +122,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <h3>2. Useful life and remaining life</h3>
 
-      <p>Each component carries an estimated total useful life and an estimated remaining useful life. Remaining life is where boards should apply local knowledge. The provider estimated remaining roof life from an inspection at a point in time; your maintenance history may show recurring leaks in one section that the estimate did not capture. Bring that record to the conversation. Our <a href="/services/maintenance-coordination">maintenance coordination</a> records exist partly for this reason -- documented repair history is what lets a board challenge or confirm a remaining-life assumption instead of guessing.</p>
+      <p>Each component carries an estimated total useful life and an estimated remaining useful life. Remaining life is where boards should apply local knowledge. The provider estimated remaining roof life from an inspection at a point in time; your maintenance history may show recurring leaks in one section that the estimate did not capture. Bring that record to the conversation. Our maintenance coordination records exist partly for this reason -- documented repair history is what lets a board challenge or confirm a remaining-life assumption instead of guessing.</p>
 
       <h3>3. The funding plan</h3>
 
@@ -162,7 +166,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education and not legal, engineering, or accounting advice. Your association's governing documents control, and your attorney, reserve provider, and accountant should be consulted on your association's specific facts.</p>
 
-      <p>Our <a href="/services/financial-management">financial management</a> team builds reserve funding scenarios boards can actually vote on. If your association serves <a href="/property-management-chicago">Chicago</a> or <a href="/property-management-north-shore">North Shore</a> owners and your reserve line has not changed in years, <a href="/contact">request a consultation</a>.</p>
+      <p>Also useful: <a href="/blog/condo-reserve-funds-explained">Condo reserve funds explained</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
+
+      <p>Our <a href="/services/financial-management">financial management</a> team builds reserve funding scenarios boards can actually vote on. If your association serves <a href="/property-management-chicago">Chicago</a> or North Shore owners and your reserve line has not changed in years, <a href="/contact">request a consultation</a>.</p>
     `,
   },
   {
@@ -212,7 +218,7 @@ export const scheduledFinancePosts: BlogPost[] = [
         <li>Capital expenditures the board has formally approved.</li>
       </ul>
 
-      <p>Every financial figure in the packet must trace to a document the association can produce. If the reserve balance in the packet is a rounded number someone remembered, that is a problem waiting for a dispute. Our <a href="/services/financial-management">financial management</a> process ties disclosure figures directly to the reconciled statements so the two never diverge.</p>
+      <p>Every financial figure in the packet must trace to a document the association can produce. If the reserve balance in the packet is a rounded number someone remembered, that is a problem waiting for a dispute. Our financial management process ties disclosure figures directly to the reconciled statements so the two never diverge.</p>
 
       <h2>Section 3: The unit account</h2>
 
@@ -255,13 +261,17 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>First, speculation about future assessments. Disclose what the board has adopted. A board discussion is not an adopted assessment, and describing it as one misleads a buyer. Second, personal opinions about the seller, the unit, or a dispute. The packet is a records disclosure. Commentary belongs nowhere in it.</p>
 
+      <p>If your board would rather not assemble packets itself, our <a href="/services/resale-disclosures">resale disclosure service</a> handles Section 22.1 requests.</p>
+
       <h2>If your association is not a condominium</h2>
 
-      <p>Homeowners associations and townhome associations in Illinois are frequently governed by CICAA rather than the Condominium Property Act, and their disclosure obligations come from that statute plus their own recorded documents. If you manage a <a href="/services/townhome-management">townhome association</a> or an <a href="/services/hoa-management">HOA</a>, do not adopt a condominium 22.1 form wholesale. Have counsel confirm which statute applies and what your documents require.</p>
+      <p>Homeowners associations and townhome associations in Illinois are frequently governed by CICAA rather than the Condominium Property Act, and their disclosure obligations come from that statute plus their own recorded documents. If you manage a townhome association or an HOA, do not adopt a condominium 22.1 form wholesale. Have counsel confirm which statute applies and what your documents require.</p>
 
       <p>This article is general education for Illinois association boards and is not legal advice. Governing documents control, and your association's attorney should confirm required packet contents, permitted fees, and response timing.</p>
 
-      <p>Stellar's <a href="/services/board-support">board support</a> team maintains standing disclosure packets for the associations we manage so responses go out in days, not weeks. <a href="/contact">Talk to us</a> about auditing your current packet.</p>
+      <p>Read next: <a href="/blog/illinois-section-22-1-disclosure-board-guide">The Illinois 22.1 disclosure guide</a>; <a href="/blog/illinois-22-1-response-workflow">a 22.1 response workflow</a>.</p>
+
+      <p>Stellar's board support team maintains standing disclosure packets for the associations we manage so responses go out in days, not weeks. <a href="/contact">Talk to us</a> about auditing your current packet.</p>
     `,
   },
   {
@@ -342,7 +352,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for Illinois association boards and is not legal or accounting advice. Your governing documents control, and your association's attorney and accountant should confirm current requirements and apply them to your association's facts.</p>
 
-      <p>Stellar's <a href="/services/financial-management">financial management</a> practice builds the documentation trail behind reserve decisions so boards can defend them years later. If your <a href="/services/condominium-management">condominium association</a> is heading into budget season without a current reserve basis, <a href="/contact">schedule a consultation</a>.</p>
+      <p>Related reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/condo-reserve-funds-explained">why so many reserve funds are underfunded</a>.</p>
+
+      <p>Stellar's <a href="/services/financial-management">financial management</a> practice builds the documentation trail behind reserve decisions so boards can defend them years later. If your condominium association is heading into budget season without a current reserve basis, <a href="/contact">schedule a consultation</a>.</p>
     `,
   },
   {
@@ -428,7 +440,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for Illinois association boards and is not legal advice. Your association's governing documents control, and your attorney should confirm current statutory requirements, permitted charges, and required notices before adoption.</p>
 
-      <p>Whether you run a <a href="/services/hoa-management">homeowners association</a> or a <a href="/services/condominium-management">condominium</a>, Stellar can help implement the policy your counsel approves. <a href="/contact">Request a consultation</a> to review your current collections practice.</p>
+      <p>Keep reading: <a href="/blog/condo-hoa-delinquency-escalation-process">The delinquency escalation steps</a>; <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the collection policy boards must adopt by January 1, 2027</a>.</p>
+
+      <p>Whether you run a homeowners association or a condominium, Stellar can help implement the policy your counsel approves. <a href="/contact">Request a consultation</a> to review your current collections practice.</p>
     `,
   },
   {
@@ -479,7 +493,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Selective enforcement is the most common self-inflicted wound in association collections. It usually starts kindly -- a board waives a late fee for a sympathetic owner without a vote or a record. Two years later a different owner asks why they were charged. Now the board is explaining a distinction it never articulated.</p>
 
-      <p>Fix it structurally. Charges post by system rule. Notices generate on schedule. Waivers require a written request and a recorded vote against a stated standard. Referral to counsel happens at a delinquency threshold the board adopted in advance and applies to everyone. Our <a href="/services/board-support">board support</a> workflows exist to keep that discipline in place when board composition changes.</p>
+      <p>Fix it structurally. Charges post by system rule. Notices generate on schedule. Waivers require a written request and a recorded vote against a stated standard. Referral to counsel happens at a delinquency threshold the board adopted in advance and applies to everyone. Our board support workflows exist to keep that discipline in place when board composition changes.</p>
 
       <h2>What boards should not do themselves</h2>
 
@@ -511,6 +525,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       </ol>
 
       <p>This article is general education for Illinois association boards and is not legal advice. Governing documents control, and your association's attorney should advise on liens, collection procedures, and applicable notice requirements for your specific situation.</p>
+
+      <p>Also useful: <a href="/blog/condo-hoa-delinquency-escalation-process">A consistent delinquency escalation process</a>; <a href="/blog/illinois-condo-assessment-collection-possession-action">the Illinois possession action for unpaid assessments</a>.</p>
 
       <p>Stellar's <a href="/services/financial-management">financial management</a> team keeps ledgers, notices, and aging reports in a state where counsel can act on day one. <a href="/contact">Contact us</a> to review your association's delinquency records.</p>
     `,
@@ -594,7 +610,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for association boards and is not legal or accounting advice. Consult your association's attorney and accountant regarding your specific obligations.</p>
 
-      <p>Stellar delivers board packets built for this kind of reading -- reconciled, separated by fund, and aged. See our <a href="/services/financial-management">financial management</a> and <a href="/services/board-support">board support</a> services, or <a href="/contact">schedule a consultation</a> to review your current reporting.</p>
+      <p>Read next: <a href="/blog/illinois-condo-owners-independent-audit-rights">Owners’ right to demand an independent audit</a>; <a href="/blog/illinois-condo-hoa-budget-adoption-guide">the Illinois budget adoption steps</a>.</p>
+
+      <p>Stellar delivers board packets built for this kind of reading -- reconciled, separated by fund, and aged. See our <a href="/services/financial-management">financial management</a> and board support services, or <a href="/contact">schedule a consultation</a> to review your current reporting.</p>
     `,
   },
   {
@@ -627,7 +645,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Lenders fund defined scopes. "Roof and facade work" is an aspiration. A defined scope has an engineer's or architect's assessment, a written scope of work, competitive bids, a schedule, and a contingency. Boards that arrive with a defined scope are also boards that avoid the far more common failure: borrowing an amount that turns out to be short mid-project.</p>
 
-      <p>Build the contingency into the borrowing request. A project that runs over and requires a second financing round costs the association far more than a slightly larger initial facility. Our <a href="/services/maintenance-coordination">maintenance coordination</a> team works with boards on scoping and bid comparison so the number that goes to the lender reflects the work that will actually be performed.</p>
+      <p>Build the contingency into the borrowing request. A project that runs over and requires a second financing round costs the association far more than a slightly larger initial facility. Our maintenance coordination team works with boards on scoping and bid comparison so the number that goes to the lender reflects the work that will actually be performed.</p>
 
       <h2>Step two: get the financial record in order</h2>
 
@@ -645,6 +663,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <h3>Delinquency is the line lenders read hardest</h3>
 
       <p>Because repayment depends on assessment collection, a lender's view of your delinquency rate and your collections discipline drives their view of risk. An association that can show charges posting on schedule, notices going out on schedule, and accounts escalating at a written threshold presents a materially different profile than one with an unexplained receivable balance. Spending three months tightening collections before applying is often the highest-return preparation available.</p>
+
+      <p>Clean, current books are the core of our <a href="/services/financial-management">association financial management</a> service.</p>
 
       <h2>Step three: plan repayment before you borrow</h2>
 
@@ -678,7 +698,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for association boards and is not legal, financial, or engineering advice. Your governing documents control, and your association's attorney should confirm borrowing authority, owner approval requirements, and document terms.</p>
 
-      <p>Stellar supports <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards through capital project planning and lender preparation. <a href="/contact">Request a consultation</a> to review your association's readiness.</p>
+      <p>Related reading: <a href="/blog/condo-special-assessments-illinois">How special assessments work in Illinois</a>; <a href="/blog/how-to-read-condo-reserve-study">how to read a condo reserve study</a>.</p>
+
+      <p>Stellar supports condominium, HOA, and townhome boards through capital project planning and lender preparation. <a href="/contact">Request a consultation</a> to review your association's readiness.</p>
     `,
   },
   {
@@ -767,7 +789,9 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for association boards and is not legal or accounting advice. Your governing documents control, and your association's attorney and accountant should confirm adoption procedures, notice requirements, and applicable statutory obligations.</p>
 
-      <p>Stellar builds budgets on this timeline with boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to start your next cycle with three months of runway instead of three weeks.</p>
+      <p>Keep reading: <a href="/blog/illinois-condo-hoa-budget-adoption-guide">Adopting the annual budget in Illinois</a>; <a href="/blog/how-to-read-condo-reserve-study">reading your reserve study before the budget</a>.</p>
+
+      <p>Stellar builds budgets on this timeline with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to start your next cycle with three months of runway instead of three weeks.</p>
     `,
   },
   {
@@ -827,6 +851,8 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>The unit balance is the number most likely to be disputed and most likely to be wrong. Reconcile it against the general ledger, confirm payments received in the last cycle have posted, and itemize every fee with its basis. If the balance includes late fees or interest, confirm they were charged under the association's written, counsel-reviewed policy.</p>
 
+      <p>Our <a href="/services/resale-disclosures">Section 22.1 disclosure service</a> answers these requests with one named person responsible.</p>
+
       <h2>Stage 3: Review and release</h2>
 
       <p>One reviewer who did not assemble the packet checks it against a fixed list: unit number on every document, balance matching the stated date, current versions only, nothing marked draft or proposed, litigation statement verified, fee consistent with policy. Then date it, sign it, release it, and file a complete copy in the association's permanent records.</p>
@@ -844,7 +870,7 @@ export const scheduledFinancePosts: BlogPost[] = [
         <li>Financial statements produced on a fixed monthly schedule.</li>
       </ul>
 
-      <p>Associations that do these four things respond quickly as a byproduct. Associations that do not will never be fast, no matter how much pressure they apply at the moment of the request. Our <a href="/services/board-support">board support</a> and <a href="/services/financial-management">financial management</a> services exist to keep these four habits running independent of board turnover.</p>
+      <p>Associations that do these four things respond quickly as a byproduct. Associations that do not will never be fast, no matter how much pressure they apply at the moment of the request. Our board support and financial management services exist to keep these four habits running independent of board turnover.</p>
 
       <h2>Shortcuts to refuse</h2>
 
@@ -862,6 +888,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Section 22.1 is a provision of the Illinois Condominium Property Act and applies to condominium associations. Many Illinois homeowners and townhome associations are governed instead by CICAA, with its own disclosure and records provisions. Have counsel confirm which applies to your association and what your recorded documents add before you standardize any template or fee.</p>
 
       <p>This article is general education for Illinois association boards and is not legal advice. Your association's governing documents control, and your attorney should confirm required contents, permitted fees, and response timing.</p>
+
+      <p>Also useful: <a href="/blog/illinois-section-22-1-disclosure-board-guide">Section 22.1 disclosures</a>; <a href="/blog/illinois-22-1-disclosure-packet-checklist">the 22.1 packet checklist</a>.</p>
 
       <p>If your association's resale responses currently depend on whoever is available, Stellar can build the standing workflow instead. <a href="/contact">Schedule a consultation</a> with our team.</p>
     `,

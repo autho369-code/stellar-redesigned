@@ -28,6 +28,8 @@ export const switchCondoManagementCompaniesChicago = {
 
 <p>If the failures are persistent across several categories, the problem is probably larger than a single personality. Document examples and dates. That record will help the board define what the next firm must do differently.</p>
 
+<p>If you are weighing a change, our <a href="/services/condominium-management">Chicago condominium management</a> page explains what a full-service condominium manager should handle.</p>
+
 <h2>Review the Current Contract Before Contacting Firms</h2>
 
 <p>Start with the signed management agreement and any amendments. Identify the termination notice period, renewal date, termination-for-cause language, final accounting responsibilities, record-transfer obligations, and fees tied to transition or document delivery. Ask association counsel to interpret uncertain provisions. A board should know its available exit dates before announcing a search.</p>
@@ -105,8 +107,12 @@ export const switchCondoManagementCompaniesChicago = {
 
 <p>The objective is not a flawless first week. It is a controlled transition that produces reliable systems, clear ownership, and fewer surprises each month.</p>
 
+<p>Related reading: <a href="/blog/score-condo-hoa-management-proposals">Comparing management proposals</a>; <a href="/blog/verify-illinois-community-association-manager-license">verifying a manager’s Illinois license</a>.</p>
+
 <h2>Considering a Management Change in Chicago?</h2>
 
 <p>Stellar Property Management provides condominium, HOA, and townhome association management across Chicago and the North Shore. We use a managed 30-60 day handoff to retrieve records, coordinate banking and vendors, brief stakeholders, and bring board and resident systems live. <a href="/contact">Request a private proposal consultation</a> to compare your current operating model with a transition plan built for your association.</p>
+
+<p>For how we work across the city, see <a href="/property-management-chicago">Chicago condo association management</a>.</p>
 `,
 };

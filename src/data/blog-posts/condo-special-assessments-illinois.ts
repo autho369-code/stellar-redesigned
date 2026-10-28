@@ -50,6 +50,8 @@ export const condoSpecialAssessmentsIllinois = {
 
 <h2>How Boards Can Avoid the Special-Assessment Spiral</h2>
 <p>The associations that rarely need special assessments are the ones that plan. That means commissioning and regularly updating a professional reserve study, funding reserves at a realistic level, scheduling capital projects before they become emergencies, and communicating openly with owners about what is coming and why. Transparent, forward-looking <a href="/services/financial-management">financial management</a> turns a feared surprise into a manageable line item.</p>
+<p>Keep reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">reasonable reserves under the Condominium Property Act</a>.</p>
+
 <p>Stellar Property Management helps Chicago-area boards build budgets and reserve plans that prevent financial shocks. To review your association's footing, <a href="/contact">request a consultation</a>.</p>
 `,
 };

@@ -18,6 +18,29 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-10-28 (reverse silo on every guide + FAQ schema)
+
+Mirsad's directive: the blog is a **reverse silo**. Guides push authority up
+to money pages; they do not spray links across every service. Applied from
+`docs/blog-silo-fix-plan-2026-10-28.md` to all 94 guides (68 live + 26 queued):
+
+- `src/data/post-silos.ts` is the map: each guide → one money page (service,
+  /pricing or /condo-living), at most one area page, and its sibling/pillar
+  guides. **Every new guide needs an entry here or the build fails.**
+- Article bodies: off-silo service and area links were unlinked (text kept);
+  the money page, area page, sibling links and a /contact link were added with
+  short connecting sentences. No substance changed.
+- `npm run seo:verify-silos` now loads every guide and fails on: missing or
+  second money page, wrong/extra area page, missing sibling, missing /contact,
+  links to unknown pages, self-links, or links to a guide that is still
+  unpublished on the linking guide's release day.
+- Blog template: "Explore …" and "Related articles" follow the silo; guides
+  with question headings emit FAQPage JSON-LD built only from on-page Q&A.
+- Not done (needs Mirsad): the three possible merges in section 4 of the plan,
+  and all off-site AEO items (reviews, BBB, Yelp categories, directories).
+  New posts for townhome, HOA, high-rise, pricing and neighborhood pages are
+  still to write.
+
 ## Status update — 2026-10-22 (16 new guides, queue runs to 2026-11-22)
 
 The publishing queue ended 2026-11-06. Sixteen new daily guides now carry it

@@ -57,6 +57,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>The practical consequence is that a board should be organised well before a vote — because the quality of the deal owners are eventually asked to approve depends heavily on how the board handled the months preceding it.</p>
 
+      <p>Our <a href="/services/board-support">board support services</a> cover the meeting notice, agenda and minutes work that a vote like this requires.</p>
+
       <h2>Approval binds everyone, including the owners who voted no</h2>
 
       <p>This is the part owners find hardest, and boards should say it plainly rather than let people discover it late. Once the required percentage approves the sale, it becomes the duty of every unit owner to execute and deliver the instruments necessary to complete the transaction. An owner who voted against the sale, or who did not vote at all, is still carried by the outcome.</p>
@@ -87,6 +89,10 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>If your association is in that category, the useful preparation is not to have a position on selling. It is to have the reserve study, the capital plan and the records in a condition where the board can evaluate an offer on its merits within weeks rather than months.</p>
 
       <p><em>This article is general information about Illinois community association practice and is not legal advice. Deconversion involves statutory thresholds, municipal ordinances and your own recorded declaration interacting with each other, and the analysis is property-specific. Engage association counsel before taking any step.</em></p>
+
+      <p>Read next: <a href="/blog/amend-illinois-condo-declaration-section-27">Amending the declaration under Section 27</a>; <a href="/blog/illinois-association-annual-meeting-guide">annual meeting notice, quorum and minutes</a>.</p>
+
+      <p>If your board has received an offer, <a href="/contact">contact our office</a> to talk through the process.</p>
     `,
   },
   {
@@ -136,6 +142,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>There is also a trap in the opposite direction. Accepting a payment from a delinquent owner does not automatically waive an action already brought — Illinois law addresses payments covering periods other than the one in the demand. But "does not automatically waive" is not the same as "no effect," and how a payment is received, applied and receipted matters. Have counsel tell you how to handle money that arrives mid-process rather than deciding it at the management desk.</p>
 
+      <p>Accurate ledgers and dated notices come from the bookkeeping side of <a href="/services/financial-management">association financial management</a>.</p>
+
       <h2>Condominiums and other associations are not in the same position</h2>
 
       <p>This is the distinction that catches townhome and HOA boards. The statutory provisions covering common interest communities carry conditions that do not apply identically to condominiums — including, for common interest communities, a requirement that the association be organised as a not-for-profit corporation.</p>
@@ -163,6 +171,10 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>The better sequence is consistent, documented escalation with a real chance to cure at each step — and then, for owners who simply will not engage, a remedy with actual teeth. What is unfair to the other owners is not enforcement. It is an association where non-payment carries no consequence and the paying owners quietly cover the difference forever.</p>
 
       <p><em>This article is general information about Illinois community association practice and is not legal advice. Collection remedies involve statutory notice requirements, your governing documents and court procedure interacting with each other, and the analysis is association-specific. Engage association counsel before serving a demand or filing an action.</em></p>
+
+      <p>Related reading: <a href="/blog/condo-hoa-delinquency-escalation-process">A consistent delinquency escalation process</a>; <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the new collection policy law</a>.</p>
+
+      <p>If delinquencies are building up, <a href="/contact">talk with us</a> about a consistent collection process.</p>
     `,
   },
   {
@@ -223,6 +235,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>Treat recording as part of the vote, not as follow-up. The task is not complete until you are holding the recorded instrument with the recorder's stamp on it.</p>
 
+      <p>Tracking an amendment from the vote to the recorder is the kind of follow-through our <a href="/services/board-support">condo board support services</a> are built for.</p>
+
       <h2>Mortgagee consent</h2>
 
       <p>Some declarations require the consent of mortgage holders for particular amendments — commonly those touching the percentage of ownership, insurance provisions, or reserves. Where your documents require it, Section 27 contains a mechanism for notifying mortgagees.</p>
@@ -248,6 +262,10 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>An association that keeps a complete, recorded, current set of governing documents saves itself a recurring tax it would otherwise pay at every sale, every dispute and every insurance renewal.</p>
 
       <p><em>This article is general information about Illinois community association practice and is not legal advice. Amendment thresholds, consent requirements and recording procedure depend on your recorded declaration and which statute governs your association. Engage association counsel before drafting or noticing an amendment.</em></p>
+
+      <p>Keep reading: <a href="/blog/illinois-condo-law-updates-2026">The 2026 Illinois condo law updates</a>; <a href="/blog/illinois-condo-deconversion-75-or-85-percent">the 75% and 85% deconversion votes</a>.</p>
+
+      <p>Planning an amendment? <a href="/contact">Talk with our team</a> before the vote is scheduled.</p>
     `,
   },
   {
@@ -297,6 +315,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>Missing the second stage because the first produced a disappointing result is a common and expensive mistake. Treat them as two calendar entries, not one.</p>
 
+      <p>Appeal deadlines belong on the same calendar as the budget, which is part of our <a href="/services/financial-management">association financial management</a> work.</p>
+
       <h2>You need an attorney, and this is not optional</h2>
 
       <p>Filing a tax appeal in Illinois is considered the practice of law. A corporation or association therefore <strong>must be represented by an attorney</strong> — a board member, a manager, or a consultant cannot file on the association's behalf.</p>
@@ -327,6 +347,12 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Say that to owners before the appeal rather than after. A board that promises lower taxes and delivers a lower assessment inside a higher bill has created a credibility problem it did not need.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal or tax advice. Appeal rules, deadlines and filing requirements are set by the Cook County Assessor and Board of Review and change; associations outside Cook County follow a different process entirely. Engage an attorney who handles association tax appeals.</em></p>
+
+      <p>This guide applies to every Cook County association, including the <a href="/property-management-chicago">Chicago condo associations we manage</a>.</p>
+
+      <p>Also useful: <a href="/blog/illinois-condo-hoa-budget-adoption-guide">Adopting the annual budget in Illinois</a>.</p>
+
+      <p>Questions about your association&rsquo;s assessment calendar? <a href="/contact">Contact our office</a>.</p>
     `,
   },
   {
@@ -378,6 +404,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>It also does not replace your declaration. The strongest position is both: a clear governing-document restriction that lets the association act directly, plus city-level prohibition that gives the restriction outside teeth.</p>
 
+      <p>Our <a href="/services/violation-management">violation management service</a> enforces use restrictions like these with written notice and a hearing.</p>
+
       <h2>What a board should do</h2>
 
       <ol>
@@ -404,6 +432,12 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>A board that resolves this cleanly is not just settling a neighbour dispute. It is protecting the insurability and financeability of every unit, which is squarely the board's job.</p>
 
       <p><em>This article is general information for Chicago community association boards and is not legal advice. The Shared Housing Ordinance, its registration requirements and the Prohibited Buildings List process are administered by the City of Chicago and change over time; associations outside Chicago are governed differently. Confirm the current process with the city and your association counsel before acting.</em></p>
+
+      <p>We manage condominium associations across the city; see <a href="/property-management-chicago">condo association management in Chicago</a>.</p>
+
+      <p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">Adopting and enforcing association rules</a>; <a href="/blog/illinois-association-fines-notice-hearing">fining an owner the right way</a>.</p>
+
+      <p>Questions about short-term rentals in your building? <a href="/contact">Contact Stellar Property Management</a>.</p>
     `,
   },
 ];

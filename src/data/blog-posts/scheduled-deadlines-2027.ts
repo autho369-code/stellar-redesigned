@@ -80,7 +80,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
 
       <p>Yes. For condominiums, Section 22.1(a) now includes a new item (10): a copy of the collection policy adopted under Section 18.4(t). For CICAA communities, Section 1-35(d) adds item (8): a copy of the collection policy adopted under Section 1-45(j). Condominium boards must still furnish the 22.1 information within 10 business days of a written request.</p>
 
-      <p>Practically, that means the policy needs to be in final form and in the resale file before the first closing of 2027. If your 22.1 workflow uses a standard document set, add the policy now. Our <a href="/blog/illinois-22-1-disclosure-packet-checklist">22.1 disclosure packet checklist</a> shows where it fits, and <a href="/services/resale-disclosures">Stellar's resale disclosure service</a> keeps those packets current.</p>
+      <p>Practically, that means the policy needs to be in final form and in the resale file before the first closing of 2027. If your 22.1 workflow uses a standard document set, add the policy now. Our <a href="/blog/illinois-22-1-disclosure-packet-checklist">22.1 disclosure packet checklist</a> shows where it fits, and Stellar's resale disclosure service keeps those packets current.</p>
 
       <h2>Does this apply to HOAs and townhome associations as well as condominiums?</h2>
 
@@ -140,7 +140,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
 
       <h2>How Stellar helps boards meet the deadline</h2>
 
-      <p>Stellar works with association counsel to turn each board's existing collection practice into a written policy that covers all seven statutory items, then builds it into the monthly <a href="/services/financial-management">financial management</a> routine so the association follows what it adopted. If your board needs the policy in place before January 1, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a>. We serve associations across the city through <a href="/property-management-chicago">Chicago property management</a> and on the <a href="/property-management-north-shore">North Shore</a>.</p>
+      <p>Stellar works with association counsel to turn each board's existing collection practice into a written policy that covers all seven statutory items, then builds it into the monthly <a href="/services/financial-management">financial management</a> routine so the association follows what it adopted. If your board needs the policy in place before January 1, <a href="/contact">contact our office</a> or see how we support boards through board support. We serve associations across the city through <a href="/property-management-chicago">Chicago property management</a> and on the North Shore.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Public Act 104-0734 as enacted; your declaration, bylaws and circumstances matter. Have association counsel draft or review your collection policy before you adopt it.</em></p>
     `,
@@ -238,7 +238,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
 
       <h2>How Stellar helps boards prepare</h2>
 
-      <p>Stellar reviews proposed budgets against the 15% reserve test and the reserve-study rules, flags gaps before the budget goes to owners, and keeps lender questionnaires consistent with the adopted budget. If your board wants a second look at its 2027 budget, <a href="/contact">contact our office</a> or learn more about our <a href="/services/financial-management">financial management services</a> and <a href="/pricing">pricing</a>.</p>
+      <p>Stellar reviews proposed budgets against the 15% reserve test and the reserve-study rules, flags gaps before the budget goes to owners, and keeps lender questionnaires consistent with the adopted budget. If your board wants a second look at its 2027 budget, <a href="/contact">contact our office</a> or learn more about our <a href="/services/financial-management">financial management services</a> and pricing.</p>
 
       <p><em>This article is general information for community association boards and is not lending or legal advice. It summarizes Fannie Mae Lender Letter LL-2026-03 and Freddie Mac Bulletin 2026-C as announced on March 18, 2026; the agencies update their guides over time and lenders may apply overlays of their own. Confirm current requirements with your lender contacts, your reserve specialist and association counsel.</em></p>
     `,

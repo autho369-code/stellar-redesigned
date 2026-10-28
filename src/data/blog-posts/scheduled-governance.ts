@@ -48,7 +48,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
         <li>The declaration references covenants, conditions, and restrictions running with the land.</li>
       </ul>
 
-      <p>Townhome associations sit on both sides of this line. Many Illinois townhome communities are legally condominiums even though the buildings look like row homes, and others are lot-owner associations. The architecture tells you nothing; the recorded declaration tells you everything. Our <a href="/services/townhome-management">townhome association management</a> team routinely pulls the recorded documents before making any governance recommendation, because that single step resolves most of the ambiguity.</p>
+      <p>Townhome associations sit on both sides of this line. Many Illinois townhome communities are legally condominiums even though the buildings look like row homes, and others are lot-owner associations. The architecture tells you nothing; the recorded declaration tells you everything. Our townhome association management team routinely pulls the recorded documents before making any governance recommendation, because that single step resolves most of the ambiguity.</p>
 
       <h2>Where the Not For Profit Corporation Act Fits</h2>
       <p>If your association is incorporated in Illinois as a not-for-profit corporation, the corporate statute governs matters such as corporate existence, annual reporting to the Secretary of State, director and officer roles, and certain corporate formalities. It does not replace the Condominium Property Act or CICAA; it operates alongside them. Boards should confirm that the corporation remains in good standing and that officer records match reality, since lenders, insurers, and title companies frequently check.</p>
@@ -77,12 +77,12 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Why This Matters Operationally</h2>
-      <p>The governing framework drives meeting notice practices, records response procedures, reserve and budget presentation, insurance placement, and enforcement steps. It also drives how lenders read your documents during resale, which is why <a href="/services/financial-management">association financial management</a> and document accuracy are so closely linked. A clean governance summary gives current and future directors a shared reference point for those questions.</p>
+      <p>The governing framework drives meeting notice practices, records response procedures, reserve and budget presentation, insurance placement, and enforcement steps. It also drives how lenders read your documents during resale, which is why association financial management and document accuracy are so closely linked. A clean governance summary gives current and future directors a shared reference point for those questions.</p>
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Your association's counsel should interpret your specific declaration, bylaws, and the current statutes before you act.</p>
 
       <h2>Talk Through Your Documents With Us</h2>
-      <p>Stellar Property Management supports boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a> with <a href="/services/condominium-management">condominium management</a>, <a href="/services/hoa-management">HOA management</a>, and day-to-day <a href="/services/board-support">board support</a>. If your board is unsure which framework applies or wants a second set of eyes on its documents, <a href="/contact">schedule a consultation</a>.</p>
+      <p>Stellar Property Management supports boards across <a href="/property-management-chicago">Chicago</a> and the North Shore with condominium management, <a href="/services/hoa-management">HOA management</a>, and day-to-day board support. If your board is unsure which framework applies or wants a second set of eyes on its documents, <a href="/contact">schedule a consultation</a>.</p>
     `,
   },
   {
@@ -146,14 +146,16 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Prevention Beats Response</h2>
-      <p>Many records requests are really questions about money or a decision that felt opaque. Boards that publish approved minutes promptly, distribute monthly financials, and explain major decisions in an owner update see fewer formal requests. Strong <a href="/services/financial-management">financial reporting</a> and consistent <a href="/services/board-support">board support</a> reduce the volume of requests more effectively than any policy language.</p>
+      <p>Many records requests are really questions about money or a decision that felt opaque. Boards that publish approved minutes promptly, distribute monthly financials, and explain major decisions in an owner update see fewer formal requests. Strong financial reporting and consistent <a href="/services/board-support">board support</a> reduce the volume of requests more effectively than any policy language.</p>
 
       <p>Recordkeeping quality also shows up at resale, when buyers, lenders, and title companies request documents on short timelines. An association with organized minutes, budgets, insurance certificates, and governing documents closes those requests in days instead of weeks.</p>
 
       <p>This article is educational information for Illinois association boards and is not legal advice. The Illinois Condominium Property Act and CICAA contain distinct records provisions, and your association's counsel should interpret your governing documents and the current statute before your board responds to a request.</p>
 
+      <p>Related reading: <a href="/blog/illinois-association-annual-meeting-guide">Running the annual meeting</a>; <a href="/blog/illinois-condo-board-closed-session-guide">when a board may meet in closed session</a>.</p>
+
       <h2>Get Help Standardizing Your Process</h2>
-      <p>Stellar Property Management runs records intake and production for <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards throughout <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to review your current policy and recordkeeping.</p>
+      <p>Stellar Property Management runs records intake and production for condominium, HOA, and townhome boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your current policy and recordkeeping.</p>
     `,
   },
   {
@@ -222,7 +224,9 @@ export const scheduledGovernancePosts: BlogPost[] = [
       <p>This article is educational information for Illinois association boards and is not legal advice. Closed-meeting provisions differ between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your governing documents and the current statute before your board relies on any closed-session practice.</p>
 
       <h2>Bring Structure to Your Meetings</h2>
-      <p>Stellar Property Management prepares agendas, packets, and minutes for <a href="/services/condominium-management">condominium</a> and <a href="/services/hoa-management">HOA</a> boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to review your meeting process.</p>
+      <p>Keep reading: <a href="/blog/illinois-association-annual-meeting-guide">Annual meeting notice, quorum and minutes</a>; <a href="/blog/illinois-condo-association-records-request-guide">answering owner records requests</a>.</p>
+
+      <p>Stellar Property Management prepares agendas, packets, and minutes for condominium and HOA boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your meeting process.</p>
     `,
   },
   {
@@ -265,6 +269,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
         <li>Reconcile the register against the ownership roster before every noticed vote.</li>
       </ul>
 
+      <p>Keeping consent records current is part of the meeting management in our <a href="/services/board-support">condo board support services</a>.</p>
+
       <h2>Ballot Integrity Requirements</h2>
       <p>Whatever platform you use should give the board a clean answer to each of these: how is a voter authenticated as the record owner, how is one vote per eligible unit or lot enforced, how are proxies handled alongside electronic ballots, how is the ballot secured before the count, and what audit trail is produced afterward. Ask the vendor for a sample audit report and a sample tabulation record before signing, and have counsel review the contract's data ownership and retention terms.</p>
 
@@ -288,8 +294,10 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Requirements differ between the Illinois Condominium Property Act and CICAA, and requirements may change; confirm current requirements for electronic notice, consent, and voting with your association's counsel before implementing any platform.</p>
 
+      <p>Also useful: <a href="/blog/illinois-condo-board-elections-proxies-ballots">How Illinois board elections work</a>; <a href="/blog/illinois-association-annual-meeting-guide">running the annual meeting</a>.</p>
+
       <h2>Plan Your Next Election With Support</h2>
-      <p>Stellar Property Management coordinates notice, ballot, and meeting logistics for <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to review your election process.</p>
+      <p>Stellar Property Management coordinates notice, ballot, and meeting logistics for condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your election process.</p>
     `,
   },
   {
@@ -332,6 +340,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
       <p>A rule that says common areas must be kept "tidy" invites argument. A rule that says personal items may not be stored in common hallways, and that the association will provide written notice and an opportunity to be heard before any charge is imposed, is a rule a board can apply the same way every time.</p>
 
+      <p>Our <a href="/services/violation-management">rule violation management</a> service enforces rules with proper notice, hearing and appeal steps.</p>
+
       <h2>Give Owners Notice and a Chance to Comment</h2>
       <p>Even where not strictly required, circulating a proposed rule to owners with a comment window before adoption produces better rules and far less resistance. Owners raise the practical exceptions the board did not think of. Adopt the rule at an open board meeting, record the vote in the minutes, and distribute the final text with its effective date.</p>
 
@@ -354,12 +364,14 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Keep the Rule Set Small</h2>
-      <p>Long rule books are difficult to apply consistently and signal that the board has been legislating reactively. Boards that periodically consolidate and retire dead rules find enforcement easier and owner relations better. Coordinating enforcement with <a href="/services/maintenance-coordination">maintenance coordination</a> also helps, since a share of violations are really deferred repair issues that a work order resolves faster than a notice does.</p>
+      <p>Long rule books are difficult to apply consistently and signal that the board has been legislating reactively. Boards that periodically consolidate and retire dead rules find enforcement easier and owner relations better. Coordinating enforcement with maintenance coordination also helps, since a share of violations are really deferred repair issues that a work order resolves faster than a notice does.</p>
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Rulemaking and enforcement provisions differ between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your declaration, bylaws, and the current statute before your board adopts or enforces a rule.</p>
 
+      <p>Read next: <a href="/blog/are-hoa-condo-rules-enforceable-illinois">Whether association rules are enforceable</a>; <a href="/blog/illinois-association-fines-notice-hearing">the notice and hearing required before a fine</a>.</p>
+
       <h2>Review Your Rules With Us</h2>
-      <p>Stellar Property Management helps <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards consolidate and administer rules across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> for a rules and enforcement review.</p>
+      <p>Stellar Property Management helps condominium, HOA, and townhome boards consolidate and administer rules across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> for a rules and enforcement review.</p>
     `,
   },
   {
@@ -405,7 +417,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Week Two: Understand the Money</h2>
-      <p>Review the current year budget, the most recent monthly financial statements, the reserve balance and any reserve study, the aged delinquency report, and the insurance policies with limits and deductibles. Do not skim. Ask the manager to walk you line by line through one month's statements until you can explain where the assessment dollars go. Boards make better decisions when every director can read a balance sheet, and good <a href="/services/financial-management">association financial management</a> makes that possible.</p>
+      <p>Review the current year budget, the most recent monthly financial statements, the reserve balance and any reserve study, the aged delinquency report, and the insurance policies with limits and deductibles. Do not skim. Ask the manager to walk you line by line through one month's statements until you can explain where the assessment dollars go. Boards make better decisions when every director can read a balance sheet, and good association financial management makes that possible.</p>
 
       <h2>Week Three: Meet the People and Walk the Property</h2>
       <p>Meet the community association manager and understand the scope of the management agreement, including what the manager does and what remains a board responsibility. Illinois licenses community association managers through IDFPR, and you should know who is licensed and serving your association. Then walk the property with the manager or engineer. Look at roofs, facades, mechanical rooms, garages, and any area with an active repair history. Physical condition is where deferred decisions become visible.</p>
@@ -434,8 +446,12 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Your association's counsel should interpret your declaration, bylaws, and the applicable statute for your specific situation.</p>
 
+      <p>If your board is also reviewing its management company, the free <a href="/board-toolkit">board toolkit</a> has an RFP outline and manager interview questions.</p>
+
+      <p>Related reading: <a href="/blog/illinois-condo-board-elections-proxies-ballots">Board elections, proxies and secret ballots</a>; <a href="/blog/illinois-association-annual-meeting-guide">annual meeting notice, quorum and minutes</a>.</p>
+
       <h2>Onboarding Support for New Boards</h2>
-      <p>Stellar Property Management provides orientation packets and ongoing <a href="/services/board-support">board support</a> for <a href="/services/condominium-management">condominium</a> and <a href="/services/hoa-management">HOA</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to get your new directors up to speed.</p>
+      <p>Stellar Property Management provides orientation packets and ongoing <a href="/services/board-support">board support</a> for condominium and HOA boards in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to get your new directors up to speed.</p>
     `,
   },
   {
@@ -478,8 +494,10 @@ export const scheduledGovernancePosts: BlogPost[] = [
         <li>Any easements, licenses, or agreements with neighboring parcels.</li>
       </ul>
 
+      <p>Our <a href="/services/board-support">board support services</a> help a new owner-controlled board organize these records from its first meeting.</p>
+
       <h2>Financial Records</h2>
-      <p>Request full accounting for the developer-control period, not just summary reports: bank statements, general ledger detail, assessment billing and receipt history, budgets, tax filings, and the calculation of any reserve or working capital contribution transferred to the association. Ask counsel whether an independent audit or review of the developer-control period is warranted, and obtain control of all bank accounts, signatory authority, and online banking credentials before the meeting ends. Establishing clean <a href="/services/financial-management">financial management</a> from day one is far easier than untangling a shared account later.</p>
+      <p>Request full accounting for the developer-control period, not just summary reports: bank statements, general ledger detail, assessment billing and receipt history, budgets, tax filings, and the calculation of any reserve or working capital contribution transferred to the association. Ask counsel whether an independent audit or review of the developer-control period is warranted, and obtain control of all bank accounts, signatory authority, and online banking credentials before the meeting ends. Establishing clean financial management from day one is far easier than untangling a shared account later.</p>
 
       <h2>Construction, Warranty, and Building Records</h2>
       <ul>
@@ -516,8 +534,10 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Transition provisions differ between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your governing documents and the current statute and confirm any applicable deadlines.</p>
 
+      <p>Keep reading: <a href="/blog/new-condo-board-member-first-30-days">The first month on the board</a>; <a href="/blog/illinois-condo-association-records-request-guide">the records request deadlines</a>.</p>
+
       <h2>Support Through Transition</h2>
-      <p>Stellar Property Management guides newly turned-over <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards through document collection, vendor setup, and <a href="/services/maintenance-coordination">maintenance coordination</a> in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> before your turnover meeting.</p>
+      <p>Stellar Property Management guides newly turned-over condominium, HOA, and townhome boards through document collection, vendor setup, and maintenance coordination in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> before your turnover meeting.</p>
     `,
   },
   {
@@ -570,7 +590,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Insurance and Risk</h2>
-      <p>Confirm that property, general liability, fidelity or crime, and directors and officers coverage are in place with limits reviewed against current replacement values and current risk. Ask the broker to present coverage annually and to explain exclusions in plain language. Verify that vendors carry required insurance and that certificates on file are current, which is easier when <a href="/services/maintenance-coordination">maintenance coordination</a> and vendor compliance are managed centrally.</p>
+      <p>Confirm that property, general liability, fidelity or crime, and directors and officers coverage are in place with limits reviewed against current replacement values and current risk. Ask the broker to present coverage annually and to explain exclusions in plain language. Verify that vendors carry required insurance and that certificates on file are current, which is easier when maintenance coordination and vendor compliance are managed centrally.</p>
 
       <h2>Board Checklist: Annual Fiduciary Self-Audit</h2>
       <ul>
@@ -594,8 +614,10 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Duties and standards differ in their statutory expression between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your governing documents and the current statutes for your board.</p>
 
+      <p>Also useful: <a href="/blog/illinois-condo-owners-independent-audit-rights">When owners can require an audit</a>; <a href="/blog/read-condo-hoa-financial-statements">reading association financial statements</a>.</p>
+
       <h2>Run the Audit With Professional Support</h2>
-      <p>Stellar Property Management helps <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards build the documentation and <a href="/services/financial-management">financial controls</a> this review tests, across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Schedule a consultation</a> to review your governance practices.</p>
+      <p>Stellar Property Management helps condominium, HOA, and townhome boards build the documentation and <a href="/services/financial-management">financial controls</a> this review tests, across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your governance practices.</p>
     `,
   },
   {
@@ -670,7 +692,9 @@ export const scheduledGovernancePosts: BlogPost[] = [
       <p>This article is educational information for Illinois association boards and is not legal advice. Meeting, notice, and quorum provisions differ between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your declaration, bylaws, and the current statute before your meeting.</p>
 
       <h2>Let Us Run the Logistics</h2>
-      <p>Stellar Property Management handles notice packages, check-in, tabulation, and minutes for <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards in <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>, backed by ongoing <a href="/services/board-support">board support</a>. <a href="/contact">Schedule a consultation</a> before your next annual meeting.</p>
+      <p>Read next: <a href="/blog/illinois-condo-board-elections-proxies-ballots">How Illinois board elections work</a>; <a href="/blog/condo-hoa-board-communication-systems">board communication systems that reduce conflict</a>.</p>
+
+      <p>Stellar Property Management handles notice packages, check-in, tabulation, and minutes for condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore, backed by ongoing <a href="/services/board-support">board support</a>. <a href="/contact">Schedule a consultation</a> before your next annual meeting.</p>
     `,
   },
   {
@@ -742,12 +766,14 @@ export const scheduledGovernancePosts: BlogPost[] = [
       </ul>
 
       <h2>Documentation Determines the Claim Outcome</h2>
-      <p>Insurance claims depend heavily on documentation. Photograph conditions before mitigation, keep a running log with dates and times of every call and decision, retain all vendor authorizations and invoices, and record which costs the association paid versus which fell to individual owners under your declaration's maintenance and repair allocation. Reliable <a href="/services/maintenance-coordination">maintenance coordination</a> and clean <a href="/services/financial-management">financial records</a> give the adjuster a clearer record to evaluate.</p>
+      <p>Insurance claims depend heavily on documentation. Photograph conditions before mitigation, keep a running log with dates and times of every call and decision, retain all vendor authorizations and invoices, and record which costs the association paid versus which fell to individual owners under your declaration's maintenance and repair allocation. Reliable <a href="/services/maintenance-coordination">maintenance coordination</a> and clean financial records give the adjuster a clearer record to evaluate.</p>
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Emergency spending authority and related requirements differ between the Illinois Condominium Property Act and CICAA and may be affected by local ordinances, so your association's counsel should interpret your governing documents and the current requirements that apply to your property.</p>
 
+      <p>Related reading: <a href="/blog/condo-hoa-vendor-rfp-checklist">Writing a vendor RFP</a>; <a href="/blog/who-pays-condo-water-leak-illinois">water leak responsibility</a>.</p>
+
       <h2>Build Your Plan With Us</h2>
-      <p>Stellar Property Management builds and maintains emergency playbooks for <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> boards throughout <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>, supported by structured <a href="/services/board-support">board processes</a>. <a href="/contact">Schedule a consultation</a> to put a plan in place before you need it.</p>
+      <p>Stellar Property Management builds and maintains emergency playbooks for condominium, HOA, and townhome boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore, supported by structured board processes. <a href="/contact">Schedule a consultation</a> to put a plan in place before you need it.</p>
     `,
   },
 ];

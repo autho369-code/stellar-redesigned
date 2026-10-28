@@ -88,15 +88,17 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Three patterns cause most budget problems. First, holding the assessment flat for optics while quietly underfunding reserves, which converts a manageable increase into a future special assessment. Second, adopting late, which forces retroactive statements and erodes owner trust. Third, adopting in a closed discussion without a clean open-session vote in the minutes, which creates a record problem that surfaces later during a lender or buyer review.</p>
 
-      <p>Consistent, documented process also protects the board individually. When owners can see how the number was built, disagreement stays about policy instead of becoming about motive. Boards that want structured meeting preparation and minutes discipline often start with our <a href="/services/board-support">board support</a> services, and condominium-specific budget work is covered under <a href="/services/condominium-management">condominium management</a>.</p>
+      <p>Consistent, documented process also protects the board individually. When owners can see how the number was built, disagreement stays about policy instead of becoming about motive. Boards that want structured meeting preparation and minutes discipline often start with our board support services, and condominium-specific budget work is covered under condominium management.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
       <p>This article is general educational information for Illinois association boards. It is not legal advice and does not create an attorney-client relationship. Statutory requirements differ between the Illinois Condominium Property Act and CICAA, and your recorded declaration and bylaws may impose additional obligations. Have association counsel interpret your governing documents and confirm current requirements before you act.</p>
 
+      <p>Keep reading: <a href="/blog/condo-hoa-annual-budget-workbook">A three-month budget workbook</a>; <a href="/blog/how-to-read-condo-reserve-study">how to read a condo reserve study</a>.</p>
+
       <h2>Talk Through Your Budget Season</h2>
 
-      <p>If your board wants a budget packet that stands up to owner questions and a calendar that does not slip, we can help. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation before your next budget cycle begins.</p>
+      <p>If your board wants a budget packet that stands up to owner questions and a calendar that does not slip, we can help. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation before your next budget cycle begins.</p>
     `,
   },
   {
@@ -195,11 +197,13 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Where Compliance and Maintenance Overlap</h2>
 
-      <p>Many compliance items are really maintenance items with a filing attached. A fire pump test is both. Coordinating inspection scheduling with your vendor calendar prevents the common failure where an inspection is due, the vendor has a four-week lead time, and nobody called. Our <a href="/services/maintenance-coordination">maintenance coordination</a> work is built around that overlap, and full-building compliance calendars are part of <a href="/services/condominium-management">condominium management</a>.</p>
+      <p>Many compliance items are really maintenance items with a filing attached. A fire pump test is both. Coordinating inspection scheduling with your vendor calendar prevents the common failure where an inspection is due, the vendor has a four-week lead time, and nobody called. Our maintenance coordination work is built around that overlap, and full-building compliance calendars are part of condominium management.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
       <p>This article is general educational information for Illinois condominium boards and is not legal advice. Chicago ordinance requirements depend on your specific building and change over time, and obligations differ between the Illinois Condominium Property Act and the Common Interest Community Association Act. Confirm current requirements with the appropriate city department and have association counsel interpret your governing documents.</p>
+
+      <p>Also useful: <a href="/blog/illinois-association-annual-meeting-guide">Annual meeting notice, quorum and minutes</a>; <a href="/blog/illinois-condo-board-elections-proxies-ballots">board elections, proxies and secret ballots</a>.</p>
 
       <h2>Build Your Calendar With Us</h2>
 
@@ -279,7 +283,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Collections cases and lender reviews both turn on documentation. Every notice should be reproducible: what was sent, to which address, on what date, by what method. Ledgers should show a clean history of charges, payments, and how each payment was applied. When the ledger is disputed at a meeting and nobody can reconstruct it, the board loses the argument regardless of who is right.</p>
 
-      <p>This is ordinary bookkeeping discipline, and it is a core part of our <a href="/services/financial-management">financial management</a> work. Boards in condominium buildings can find related support under <a href="/services/condominium-management">condominium management</a>, and homeowner associations under <a href="/services/hoa-management">HOA management</a>.</p>
+      <p>This is ordinary bookkeeping discipline, and it is a core part of our <a href="/services/financial-management">financial management</a> work. Boards in condominium buildings can find related support under condominium management, and homeowner associations under HOA management.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
@@ -287,7 +291,9 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Get a Policy Your Board Can Follow</h2>
 
-      <p>If your association is carrying balances nobody has addressed in months, the fix starts with a written policy and consistent execution. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+      <p>Read next: <a href="/blog/illinois-condo-association-liens-delinquency">Association liens and delinquency records</a>; <a href="/blog/illinois-condo-assessment-collection-possession-action">collecting through a possession action</a>.</p>
+
+      <p>If your association is carrying balances nobody has addressed in months, the fix starts with a written policy and consistent execution. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
     `,
   },
   {
@@ -389,7 +395,9 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Have Us Walk the Agreement With You</h2>
 
-      <p>Whether you are reviewing our agreement or someone else's, a board should understand every clause before it votes. Stellar Property Management serves association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>, with dedicated <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> programs. <a href="/contact">Contact us</a> for a consultation.</p>
+      <p>Related reading: <a href="/blog/score-condo-hoa-management-proposals">Scoring management proposals side by side</a>; <a href="/blog/verify-illinois-community-association-manager-license">checking a CAM license with IDFPR</a>.</p>
+
+      <p>Whether you are reviewing our agreement or someone else's, a board should understand every clause before it votes. Stellar Property Management serves association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore, with dedicated <a href="/services/condominium-management">condominium</a>, HOA, and townhome programs. <a href="/contact">Contact us</a> for a consultation.</p>
     `,
   },
   {
@@ -482,7 +490,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>The common thread in owner-versus-board disputes is a missing record. An owner says they raised an issue three times; the board has no log. Once a complaint policy exists and every submission is logged with its response, that argument disappears. It also makes board turnover survivable, because an incoming director can read the history instead of inheriting a rumor.</p>
 
-      <p>Boards that want help operationalizing this, including intake, logging, and meeting-agenda discipline, can look at our <a href="/services/board-support">board support</a> services, with statute-specific work under <a href="/services/condominium-management">condominium management</a> and <a href="/services/hoa-management">HOA management</a>.</p>
+      <p>Boards that want help operationalizing this, including intake, logging, and meeting-agenda discipline, can look at our <a href="/services/board-support">board support</a> services, with statute-specific work under condominium management and HOA management.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
@@ -490,7 +498,9 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Get Clarity for Your Association</h2>
 
-      <p>If your board is unsure what applies to your community today, that uncertainty is worth resolving once and documenting. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+      <p>Keep reading: <a href="/blog/illinois-condo-association-records-request-guide">Answering owner records requests</a>; <a href="/blog/condo-hoa-board-communication-systems">keeping board decisions from getting lost</a>.</p>
+
+      <p>If your board is unsure what applies to your community today, that uncertainty is worth resolving once and documenting. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
     `,
   },
   {
@@ -578,7 +588,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Where Licensure Fits in Overall Due Diligence</h2>
 
-      <p>Licensure is a threshold check, not the whole evaluation. Once a firm clears it, the real work is scope, fee transparency, financial controls, response standards, and references from associations similar to yours in size and type. Condominiums, homeowner associations, and townhome communities each carry different operating realities, which is why we maintain distinct <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> programs.</p>
+      <p>Licensure is a threshold check, not the whole evaluation. Once a firm clears it, the real work is scope, fee transparency, financial controls, response standards, and references from associations similar to yours in size and type. Condominiums, homeowner associations, and townhome communities each carry different operating realities, which is why we maintain distinct <a href="/services/condominium-management">condominium</a>, HOA, and townhome programs.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
@@ -586,7 +596,9 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Ask Us Anything About Credentials</h2>
 
-      <p>We are happy to provide our licensure information and walk your board through verifying it, whether or not you are considering us. Stellar Property Management serves boards throughout <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> for a consultation.</p>
+      <p>Also useful: <a href="/blog/community-association-management-agreement-review">Reviewing a management agreement</a>; <a href="/blog/switch-condo-management-companies-chicago">a controlled change of manager</a>.</p>
+
+      <p>We are happy to provide our licensure information and walk your board through verifying it, whether or not you are considering us. Stellar Property Management serves boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> for a consultation.</p>
     `,
   },
   {
@@ -675,7 +687,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>When Structure Is Not Enough</h2>
 
-      <p>Sometimes the problem is capacity rather than process. Volunteer directors with full-time jobs cannot reliably produce packets, minutes, and owner updates on schedule. That is a normal reason to bring in professional support: not because the board is failing, but because the administrative load is real. Our <a href="/services/board-support">board support</a> services cover packets, minutes, and owner communication, with community-type-specific work under <a href="/services/condominium-management">condominium management</a>, <a href="/services/hoa-management">HOA management</a>, and <a href="/services/townhome-management">townhome management</a>.</p>
+      <p>Sometimes the problem is capacity rather than process. Volunteer directors with full-time jobs cannot reliably produce packets, minutes, and owner updates on schedule. That is a normal reason to bring in professional support: not because the board is failing, but because the administrative load is real. Our <a href="/services/board-support">board support</a> services cover packets, minutes, and owner communication, with community-type-specific work under condominium management, HOA management, and townhome management.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
@@ -683,7 +695,9 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Tighten Up Your Board Operations</h2>
 
-      <p>If your board is spending meetings relitigating decisions it already made, the fix is structural. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+      <p>Read next: <a href="/blog/illinois-association-annual-meeting-guide">Running the annual meeting</a>; <a href="/blog/illinois-condo-association-records-request-guide">the records request deadlines</a>.</p>
+
+      <p>If your board is spending meetings relitigating decisions it already made, the fix is structural. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
     `,
   },
   {
@@ -733,7 +747,7 @@ export const scheduledManagementPosts: BlogPost[] = [
         <li>Vendor certificates of insurance on file.</li>
       </ul>
 
-      <p>Completed capital work matters more than boards expect. An association that replaced its roof and updated plumbing risers should say so, with dates and documentation, rather than assuming the carrier knows. This is one reason to keep <a href="/services/maintenance-coordination">maintenance coordination</a> records organized year-round instead of reconstructing them at renewal.</p>
+      <p>Completed capital work matters more than boards expect. An association that replaced its roof and updated plumbing risers should say so, with dates and documentation, rather than assuming the carrier knows. This is one reason to keep maintenance coordination records organized year-round instead of reconstructing them at renewal.</p>
 
       <h2>Review Coverage Against Your Governing Documents</h2>
 
@@ -788,9 +802,11 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>This article is general educational information for Illinois association boards. It is not legal advice and is not insurance advice. Insurance obligations differ between the Illinois Condominium Property Act and CICAA and are further defined by your recorded declaration and bylaws. Consult association counsel to interpret your governing documents and a licensed insurance professional for coverage decisions.</p>
 
+      <p>Related reading: <a href="/blog/hoa-insurance-costs-illinois">Why association insurance costs keep rising</a>; <a href="/blog/condo-master-policy-vs-ho6-board-guide">what the master policy and HO-6 each cover</a>.</p>
+
       <h2>Get Renewal Support</h2>
 
-      <p>If your association has been renewing on autopilot, a structured renewal cycle is worth the effort. Stellar Property Management supports association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>, including <a href="/services/condominium-management">condominium</a> and <a href="/services/hoa-management">HOA</a> communities. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+      <p>If your association has been renewing on autopilot, a structured renewal cycle is worth the effort. Stellar Property Management supports association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore, including condominium and HOA communities. <a href="/contact">Contact us</a> to schedule a consultation.</p>
     `,
   },
   {
@@ -840,6 +856,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       </ul>
 
       <p>Score each category one to five with a short written note. The notes matter as much as the numbers when the board reconciles differences.</p>
+
+      <p>Our <a href="/pricing">management pricing</a> page lists the factors that shape a fee, such as unit count, amenities and building systems. To put proposals next to each other, you can <a href="/tools/compare-management-proposals">compare management proposals side by side</a>.</p>
 
       <h2>Make the Proposals Comparable</h2>
 
@@ -891,15 +909,17 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <h2>Match the Firm to Your Community Type</h2>
 
-      <p>A high-rise condominium with elevators, a fire pump, and a doorman has almost nothing operationally in common with a forty-unit townhome association where owners maintain their own exteriors. Ask each firm what portion of its portfolio resembles your community. We maintain distinct <a href="/services/condominium-management">condominium</a>, <a href="/services/hoa-management">HOA</a>, and <a href="/services/townhome-management">townhome</a> programs for exactly that reason, with shared <a href="/services/financial-management">financial management</a> and <a href="/services/board-support">board support</a> underneath.</p>
+      <p>A high-rise condominium with elevators, a fire pump, and a doorman has almost nothing operationally in common with a forty-unit townhome association where owners maintain their own exteriors. Ask each firm what portion of its portfolio resembles your community. We maintain distinct condominium, HOA, and townhome programs for exactly that reason, with shared financial management and board support underneath.</p>
 
       <h2>Educational Information, Not Legal Advice</h2>
 
       <p>This article is general educational information for Illinois association boards and is not legal advice. Governance and contracting obligations differ between the Illinois Condominium Property Act and CICAA, and your recorded declaration and bylaws may impose additional requirements. Have association counsel review any management agreement and interpret your governing documents before the board acts.</p>
 
+      <p>Keep reading: <a href="/blog/condominium-property-management-chicago-what-board-members-should-expect">What boards should expect from a management company</a>; <a href="/blog/switch-condo-management-companies-chicago">switching management companies</a>.</p>
+
       <h2>Put Us in Your Process</h2>
 
-      <p>If your board is running a management search, we are glad to respond to your RFP on the same terms as everyone else and to be scored against your criteria. Stellar Property Management serves association boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. <a href="/contact">Contact us</a> to schedule a consultation.</p>
+      <p>If your board is running a management search, we are glad to respond to your RFP on the same terms as everyone else and to be scored against your criteria. Stellar Property Management serves association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
     `,
   },
   {
@@ -985,11 +1005,13 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Manager capacity should be a scored selection criterion, not an informal interview impression. Our <a href="/blog/score-condo-hoa-management-proposals">management-company comparison scorecard</a> recommends weighting the assigned manager and capacity alongside scope, financial controls, responsiveness, references, licensing, and total annual cost.</p>
 
-      <p>Match the proposed team to the community you actually operate. A complex <a href="/services/high-rise-condominium-management">high-rise</a>, a boutique <a href="/services/small-condo-association-management">small condominium</a>, and a shared-exterior <a href="/services/townhome-management">townhome association</a> should not be staffed or measured identically.</p>
+      <p>Match the proposed team to the community you actually operate. A complex high-rise, a boutique <a href="/services/small-condo-association-management">small condominium</a>, and a shared-exterior townhome association should not be staffed or measured identically.</p>
 
       <h2>Ask Stellar About the Team Assigned to Your Association</h2>
 
-      <p>Stellar Property Management serves condominium, HOA, and townhome boards across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>. We will explain the proposed manager, support structure, transition plan, communication workflow, and service scope before your board decides. <a href="/contact">Request a consultation</a> to compare the operating model with your association's needs.</p>
+      <p>Also useful: <a href="/blog/self-managed-condo-association-problems">The hidden problems of self-management</a>.</p>
+
+      <p>Stellar Property Management serves condominium, HOA, and townhome boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. We will explain the proposed manager, support structure, transition plan, communication workflow, and service scope before your board decides. <a href="/contact">Request a consultation</a> to compare the operating model with your association's needs.</p>
     `,
   },
 ];

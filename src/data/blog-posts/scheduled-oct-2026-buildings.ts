@@ -93,9 +93,13 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
 
       <p>Send a short notice with the scope, the schedule, access needs and any items owners must remove from the porch. If the work is large enough to need a special assessment, follow the notice and approval steps in the Condominium Property Act and your declaration, and have counsel confirm the process.</p>
 
+      <p>Read next: <a href="/blog/condo-hoa-emergency-planning-checklist">A board-ready emergency plan</a>; <a href="/blog/vintage-chicago-condo-capital-planning">planning repairs in an older building</a>.</p>
+
       <h2>Getting help with porch compliance</h2>
 
       <p>Porch safety is mostly about routine: two walk-throughs a year, a professional opinion when something looks wrong, permits for structural work, and a reserve plan that funds replacement on time. Stellar Property Management coordinates porch inspections, engineers, permits and contractors for condo associations across Chicago through our <a href="/services/maintenance-coordination">maintenance coordination service</a>. To talk through your building’s porches, <a href="/contact">contact our team</a>.</p>
+
+      <p>For buildings in the city, see our <a href="/property-management-chicago">Chicago condo management</a> page.</p>
     `,
   },
   {
@@ -196,9 +200,13 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
 
       <p>For a small building with one hydraulic elevator, a consultant may be needed only at contract renewal or before a major repair. For a high-rise with several traction elevators, regular consulting is a reasonable line item. Either way, the board should get a written scope before hiring one.</p>
 
+      <p>Related reading: <a href="/blog/chicago-condo-facade-compliance-board-guide">Staying facade-ready</a>.</p>
+
       <h2>Getting help with elevator compliance</h2>
 
       <p>Elevator compliance is mostly about deadlines and records: knowing the building’s program and due date, contracting the inspection, closing out corrections, and planning modernization. Stellar Property Management tracks these items for Chicago buildings through our <a href="/services/high-rise-condominium-management">high-rise condominium management service</a>, alongside the other life-safety items covered in our <a href="/blog/chicago-condo-life-safety-board-planning">life-safety planning guide</a>. To review your building’s elevator status, <a href="/contact">contact our team</a>.</p>
+
+      <p>For buildings in the city, see <a href="/property-management-chicago">Chicago property management</a>.</p>
     `,
   },
   {
@@ -293,9 +301,13 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
         <li>Include aging supply piping in the reserve study so replacement is planned, not forced by a failure.</li>
       </ul>
 
+      <p>Keep reading: <a href="/blog/condo-hoa-emergency-planning-checklist">Association emergency planning</a>.</p>
+
       <h2>Getting help with winter readiness</h2>
 
       <p>Frozen pipes are one of the most preventable losses a Chicago condo association faces, but prevention depends on doing the fall checklist every year and responding fast when something fails. Stellar Property Management schedules winterization, coordinates plumbers and mitigation vendors, and manages the first hours of a water loss through our <a href="/services/maintenance-coordination">maintenance coordination service</a>. To get your building ready for winter, <a href="/contact">contact our team</a>.</p>
+
+      <p>For associations in the city, see <a href="/property-management-chicago">condo management in Chicago</a>.</p>
     `,
   },
   {
@@ -409,6 +421,8 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
       </ol>
 
       <h2>Working with a licensed Chicago management firm</h2>
+
+      <p>Also useful: <a href="/blog/community-association-management-agreement-review">What to check in a management contract</a>.</p>
 
       <p>The Act gives boards a clear framework: licensed people administer, a designated manager supervises, association money stays in association accounts, and the board keeps the decisions. Stellar Property Management provides licensed management for condominium associations across Chicago and the North Shore through our <a href="/services/condominium-management">condominium management service</a>. To talk about how we structure accounts, insurance and board approvals, <a href="/contact">contact our team</a>.</p>
     `,

@@ -20,6 +20,8 @@ export const technologyBehindOurManagement = {
 <h2>Boards see the same numbers we do</h2>
 <p>Board members get their own workspace with live financial visibility — budgets versus actuals, receivables aging, and monthly statements — scoped to their association only. There is no waiting for a manager to export a report before a board meeting; the report is already there. That transparency is deliberate: we would rather answer questions about real numbers than be the only ones holding them.</p>
 
+<p>These tools are part of our full <a href="/services/condominium-management">condominium management service</a>.</p>
+
 <h2>Violations follow due process, automatically</h2>
 <p>Illinois associations must handle rule enforcement carefully. The platform runs the entire violation lifecycle — photo documentation, notice generation, hearing scheduling, and fine assessment — so every case follows the same documented process. If a matter is ever challenged, the paper trail already exists.</p>
 
@@ -30,6 +32,8 @@ export const technologyBehindOurManagement = {
 <p>We evaluated the usual industry names. Most are rental-management platforms with an association module attached — you pay for leasing and tenant-screening tools a condo association will never use. Portier369 does one thing: community associations. The <a href="https://portier369.com/features/accounting" target="_blank" rel="noopener">association accounting</a> is true double-entry fund accounting, the portals cover every role from board member to vendor, and the pricing is flat per door with everything included.</p>
 
 <p>For boards comparing management proposals: ask every candidate what platform they run on, whether owners and board members get their own portals, and whether financials are visible in real time. The software will shape your experience as much as the manager will.</p>
+
+<p>Read next: <a href="/blog/ai-in-condo-management">Where AI fits in condo management</a>; <a href="/blog/community-association-management-agreement-review">reviewing a management agreement</a>.</p>
 
 <p><em>Questions about how this works for your association? <a href="/contact">Contact us</a> — we are happy to show a board what their portal would look like.</em></p>
 `,

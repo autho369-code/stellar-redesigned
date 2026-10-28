@@ -50,7 +50,11 @@ export const rentingOutYourCondoChicago = {
 <li><strong>Remember: violations follow the deed.</strong> Your tenant's noise complaint is, legally, your noise complaint. Screen accordingly.</li>
 </ul>
 
-<p>Rules on leasing are enforceable in Illinois when properly adopted — our guide to <a href="/blog/are-hoa-condo-rules-enforceable-illinois">which condo rules hold up</a> explains the framework, and <a href="/condo-living">The Owner's Companion</a> covers the rest of ownership life. For boards: clean leasing administration — riders, registrations, caps, and enforcement — is part of Stellar's <a href="/services/condominium-management">condominium management practice</a>. If your building's leasing file is a shoebox, <a href="/contact">we should talk</a>.</p>
+<p>For the association side of these rules, see <a href="/property-management-chicago">property management in Chicago</a>.</p>
+
+<p>Related reading: <a href="/blog/condo-repairs-owner-vs-association-illinois">Owner versus association repairs</a>; <a href="/blog/first-time-condo-buyer-guide-chicago">a first-time Chicago condo buyer’s guide</a>.</p>
+
+<p>Rules on leasing are enforceable in Illinois when properly adopted — our guide to <a href="/blog/are-hoa-condo-rules-enforceable-illinois">which condo rules hold up</a> explains the framework, and <a href="/condo-living">The Owner's Companion</a> covers the rest of ownership life. For boards: clean leasing administration — riders, registrations, caps, and enforcement — is part of Stellar's condominium management practice. If your building's leasing file is a shoebox, <a href="/contact">we should talk</a>.</p>
 `,
   sources: [
     {

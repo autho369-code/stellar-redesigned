@@ -145,7 +145,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar takes each association's policy apart against Section 12 before renewal, puts the gaps in front of the board in writing, and holds vendor certificates on file so the $10,000 rule is met before a contractor sets foot on site. If your board wants its master policy reviewed against the statute, <a href="/contact">contact our office</a> or see our <a href="/services/financial-management">financial management</a> and <a href="/services/board-support">board support</a> services.</p>
+      <p>Stellar takes each association's policy apart against Section 12 before renewal, puts the gaps in front of the board in writing, and holds vendor certificates on file so the $10,000 rule is met before a contractor sets foot on site. If your board wants its master policy reviewed against the statute, <a href="/contact">contact our office</a> or see our <a href="/services/financial-management">financial management</a> and board support services.</p>
 
       <p><em>This article is general information for Illinois condominium boards and is not legal or insurance advice. It summarizes Section 12 of the Condominium Property Act as enacted; your declaration, your policy wording and your circumstances matter. Have association counsel and a licensed agent review your coverage.</em></p>
     `,
@@ -329,7 +329,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <p>And the association's own documents carry the same duty: the statement of assessment account issued by the association to a unit owner under Section 18(i), and the disclosure statement issued to a prospective purchaser under Section 22.1, <strong>shall state the amount of the assessments and the legal fees, if any, required by subdivisions (g)(1) and (g)(4)</strong>.</p>
 
-      <p>That is a direct instruction to whoever prepares your resale disclosures. If your 22.1 statement does not carry those figures where they apply, fix the template. See our <a href="/blog/illinois-22-1-disclosure-packet-checklist">22.1 packet checklist</a> and <a href="/blog/illinois-section-22-1-disclosure-board-guide">Section 22.1 board guide</a>, and note that <a href="/services/resale-disclosures">our resale disclosure service</a> exists partly because this detail is so often missed.</p>
+      <p>That is a direct instruction to whoever prepares your resale disclosures. If your 22.1 statement does not carry those figures where they apply, fix the template. See our <a href="/blog/illinois-22-1-disclosure-packet-checklist">22.1 packet checklist</a> and <a href="/blog/illinois-section-22-1-disclosure-board-guide">Section 22.1 board guide</a>, and note that our resale disclosure service exists partly because this detail is so often missed.</p>
 
       <h2>Can the association foreclose its own lien?</h2>
 
@@ -362,7 +362,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar tracks the foreclosure docket on delinquent units, works with association counsel so the collection action is filed when it should be rather than after the sale, bills new owners from the correct month, and keeps the 22.1 statements accurate on the amounts Section 9(g)(5) requires. If your association has units in foreclosure, <a href="/contact">contact our office</a> or see our <a href="/services/financial-management">financial management</a> and <a href="/services/resale-disclosures">resale disclosure</a> services.</p>
+      <p>Stellar tracks the foreclosure docket on delinquent units, works with association counsel so the collection action is filed when it should be rather than after the sale, bills new owners from the correct month, and keeps the 22.1 statements accurate on the amounts Section 9(g)(5) requires. If your association has units in foreclosure, <a href="/contact">contact our office</a> or see our <a href="/services/financial-management">financial management</a> and resale disclosure services.</p>
 
       <p><em>This article is general information for Illinois condominium boards and is not legal advice. It summarizes Sections 9 and 9.2 of the Condominium Property Act as enacted. Foreclosure outcomes turn on court records and the specific facts of each sale — have association counsel calculate what is owed before you demand it.</em></p>
     `,
@@ -614,7 +614,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar reviews each association's documents against the flag statutes, works with counsel on a rule that holds, and handles the day-to-day so that a request about a flag gets a considered answer rather than a form letter. If your board needs a flag and flagpole rule on the books, <a href="/contact">contact our office</a> or see our <a href="/services/violation-management">violation management</a> and <a href="/services/board-support">board support</a> services.</p>
+      <p>Stellar reviews each association's documents against the flag statutes, works with counsel on a rule that holds, and handles the day-to-day so that a request about a flag gets a considered answer rather than a form letter. If your board needs a flag and flagpole rule on the books, <a href="/contact">contact our office</a> or see our <a href="/services/violation-management">violation management</a> and board support services.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Section 18.6 of the Condominium Property Act and Section 1-70 of the Common Interest Community Association Act as enacted. Displays outside those Sections raise questions this article does not address — have association counsel advise your board before restricting any display.</em></p>
     `,
@@ -728,7 +728,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar confirms which of an association's buildings fall inside the Act, works with counsel on an energy policy statement that meets the statutory minimums without giving away the board's legitimate authority, and runs the application clock so a 30-day deadline is never missed by inattention. If your board needs a policy in place, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and <a href="/services/board-support">board support</a> services.</p>
+      <p>Stellar confirms which of an association's buildings fall inside the Act, works with counsel on an energy policy statement that meets the statutory minimums without giving away the board's legitimate authority, and runs the application clock so a 30-day deadline is never missed by inattention. If your board needs a policy in place, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and board support services.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes the Homeowners’ Energy Policy Statement Act as enacted; whether your buildings are exempt under Section 45, and what your policy statement should say, are questions for association counsel.</em></p>
     `,
@@ -857,7 +857,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar puts snow contracts in writing with defined triggers, mapped areas and the city's deadlines built in, holds vendor insurance certificates on file, and keeps the per-event service log so the board has a record rather than a recollection. If your association needs its winter arrangements reviewed, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> service. We handle winters across <a href="/property-management-chicago">Chicago</a> and the <a href="/property-management-north-shore">North Shore</a>, including <a href="/property-management-glenview">Glenview</a>.</p>
+      <p>Stellar puts snow contracts in writing with defined triggers, mapped areas and the city's deadlines built in, holds vendor insurance certificates on file, and keeps the per-event service log so the board has a record rather than a recollection. If your association needs its winter arrangements reviewed, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> service. We handle winters across Chicago and the North Shore, including <a href="/property-management-glenview">Glenview</a>.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes the Snow and Ice Removal Act and the City of Chicago’s published guidance on Municipal Code sections 4-4-310 and 10-8-180. Premises liability for snow and ice is largely governed by Illinois case law, which this article does not address — have association counsel advise your board.</em></p>
     `,
@@ -968,7 +968,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar inventories common-area alarms by location and manufacture date, tests and logs them on a schedule, sends the annual owner notice on the association's behalf, and builds the hard-wired detector requirement into unit alteration approvals so a rehab does not quietly create a code problem. If your board does not know the age of its stairwell detectors, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and <a href="/services/high-rise-condominium-management">high-rise management</a> services.</p>
+      <p>Stellar inventories common-area alarms by location and manufacture date, tests and logs them on a schedule, sends the annual owner notice on the association's behalf, and builds the hard-wired detector requirement into unit alteration approvals so a rehab does not quietly create a code problem. If your board does not know the age of its stairwell detectors, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and high-rise management services.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal or code advice. It summarizes the Smoke Detector Act and the Carbon Monoxide Alarm Detector Act as enacted. Who is responsible for alarms inside a separately owned unit, and what your local code requires, are questions for association counsel and your municipality.</em></p>
     `,

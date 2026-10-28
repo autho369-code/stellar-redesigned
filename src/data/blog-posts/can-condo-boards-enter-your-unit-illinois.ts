@@ -42,6 +42,8 @@ export const condoBoardEnterUnit = {
 <p>Owners do keep meaningful privacy protections. Any entry must be reasonable in scope and genuinely tied to a legitimate purpose — an association cannot use a maintenance pretext to look through a unit. At the same time, an owner generally cannot unreasonably refuse access for a legitimate purpose; obstructing a necessary repair can leave the owner responsible for the damage that results. The healthiest associations treat this as a two-way street: the board gives proper written notice and limits entry to what is needed, and owners cooperate with legitimate, well-communicated requests.</p>
 
 <h2>Best Practices for Boards</h2>
+<p>Also useful: <a href="/blog/who-pays-condo-water-leak-illinois">Who pays for a condo water leak</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">a board-ready emergency plan</a>.</p>
+
 <p>Boards avoid most entry disputes by being disciplined: adopt a written access policy, always give notice in writing, document every entry and its purpose, accompany any contractors, and communicate clearly with the owner before and after. Because access rules are governed by your specific declaration and the Act, boards should have the association attorney confirm the procedure. For coordinated, well-documented building access and repairs, Stellar Property Management's <a href="/services/maintenance-coordination">maintenance coordination</a> team can help — <a href="/contact">contact us</a> to learn more.</p>
 `,
 };

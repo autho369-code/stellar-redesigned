@@ -12,7 +12,7 @@ export const condoPropertyManagementChicago = {
     'Serving on a condo board in Chicago is a significant responsibility. Learn what to expect from a professional property management company and how to evaluate the right partner for your association.',
   featuredImage: '/blog/condominium-property-management-chicago.svg',
   content: `
-<p>Serving on the board of a condominium association in Chicago is a significant responsibility. Board members are entrusted with protecting homeowners' investments, maintaining common areas, ensuring legal compliance, and fostering a well-run community. For many volunteer board members, the scope of these duties quickly becomes overwhelming — especially in a city as complex and regulated as Chicago. That is precisely why most associations turn to a professional <a href="/services/condominium-management">condominium property management company</a> to handle the day-to-day operations and long-term strategic planning their buildings require.</p>
+<p>Serving on the board of a condominium association in Chicago is a significant responsibility. Board members are entrusted with protecting homeowners' investments, maintaining common areas, ensuring legal compliance, and fostering a well-run community. For many volunteer board members, the scope of these duties quickly becomes overwhelming — especially in a city as complex and regulated as Chicago. That is precisely why most associations turn to a professional condominium property management company to handle the day-to-day operations and long-term strategic planning their buildings require.</p>
 
 <p>But what should board members actually expect when they hire a management company? How do you distinguish between a firm that delivers real value and one that merely collects fees? This comprehensive guide breaks down the core responsibilities of a professional property management company, what Chicago-specific factors matter, and what questions every board should ask before signing a management agreement.</p>
 
@@ -24,9 +24,11 @@ export const condoPropertyManagementChicago = {
 
 <p>Core responsibilities typically include financial management, maintenance and vendor coordination, board support and governance assistance, homeowner communications, and regulatory compliance. A great management company handles all of these with transparency, professionalism, and proactive foresight rather than simply reacting to problems as they arise.</p>
 
+<p>For how this works in the city specifically, see <a href="/property-management-chicago">condo association management in Chicago</a>.</p>
+
 <h2>Financial Management and Transparency</h2>
 
-<p>One of the most critical functions a management company performs is <a href="/services/financial-management">financial management</a>. Board members should expect their management company to deliver clear, accurate, and timely financial reporting — no exceptions. This is the backbone of a well-run association, and sloppy or opaque financial practices are one of the most common complaints boards have about underperforming management firms.</p>
+<p>One of the most critical functions a management company performs is financial management. Board members should expect their management company to deliver clear, accurate, and timely financial reporting — no exceptions. This is the backbone of a well-run association, and sloppy or opaque financial practices are one of the most common complaints boards have about underperforming management firms.</p>
 
 <h3>Budgeting and Reserve Planning</h3>
 
@@ -44,7 +46,7 @@ export const condoPropertyManagementChicago = {
 
 <h2>Maintenance and Vendor Coordination</h2>
 
-<p>Buildings require constant attention, and <a href="/services/maintenance-coordination">maintenance coordination</a> is where a management company's competence becomes immediately visible to residents. Board members should expect their management firm to take a proactive approach to building maintenance rather than simply waiting for things to break.</p>
+<p>Buildings require constant attention, and maintenance coordination is where a management company's competence becomes immediately visible to residents. Board members should expect their management firm to take a proactive approach to building maintenance rather than simply waiting for things to break.</p>
 
 <h3>Preventive Maintenance Programs</h3>
 
@@ -123,6 +125,8 @@ export const condoPropertyManagementChicago = {
 <p>Hiring a property management company is one of the most consequential decisions a condo board will make. The right partner will protect your building's value, reduce the burden on volunteer board members, ensure legal compliance, and contribute to a thriving community. The wrong one will create headaches, erode trust, and ultimately cost the association money.</p>
 
 <p>At Stellar Property Management, we specialize in condominium property management throughout Chicago and the surrounding suburbs. Our team combines deep local expertise with transparent financial management, proactive maintenance programs, and technology-driven communication to deliver the level of service your board and your residents deserve. If your association is considering a change or evaluating your current management relationship, we would welcome the opportunity to discuss how we can help.</p>
+
+<p>Related reading: <a href="/blog/score-condo-hoa-management-proposals">Comparing management proposals</a>; <a href="/blog/new-condo-board-member-first-30-days">a new board member’s first 30 days</a>.</p>
 
 <p><strong><a href="/contact">Contact us today</a> to schedule a free consultation and learn why Chicago boards trust Stellar Property Management to manage their communities.</strong></p>
 `,
