@@ -1,3 +1,4 @@
+import { getPillarContent, getPillarGuides } from '../data/pillar-links';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
@@ -64,10 +65,11 @@ export default function BlogPost() {
   // related reading comes from the same silo before anything else.
   const silo = getPostSilo(post.slug);
   const siloSiblings = getSiloSiblings(post.slug, blogPosts);
+  const bodyGuideSlugs = new Set(getPillarGuides(post, blogPosts).map((guide) => guide.slug));
   const relatedPosts = [
     ...siloSiblings,
     ...getRelatedClusterPosts(post, blogPosts, 6).filter((candidate) => !siloSiblings.includes(candidate)),
-  ].slice(0, 3);
+  ].filter((candidate) => !bodyGuideSlugs.has(candidate.slug)).slice(0, 3);
   const servicePath = silo?.money ?? cluster.servicePath;
   const serviceLabel = silo ? moneyPageLabels[silo.money] : cluster.serviceLabel;
   const locationLinks = getPostNeighborhoods(post, neighborhoods, allBlogPosts);
@@ -215,7 +217,7 @@ export default function BlogPost() {
               [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
               [&_strong]:text-ink [&_strong]:font-semibold
             "
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: getPillarContent(post, blogPosts) }}
           />
           {post.sources && post.sources.length > 0 && (
             <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-sources">

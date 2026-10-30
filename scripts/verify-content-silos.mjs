@@ -20,24 +20,13 @@ for (const file of readdirSync(blogDir)) {
 if (postSlugs.length < 52 || new Set(postSlugs).size !== postSlugs.length) {
   throw new Error(`Expected at least 52 unique blog articles, found ${postSlugs.length}.`);
 }
-// The current 40-page footprint is intentional. Search Console (3 months to
-// 2026-08-22) showed the previous 70 area pages producing 1,075 impressions and
-// 5 clicks in total, while /property-management-chicago — the head-term page —
-// sat at position 37.7. The coverage was diluting internal authority rather
-// than adding reach, so 30 micro-neighborhood and low-density community-area
-// pages were consolidated into adjacent parents or the flagship Chicago page,
-// on top of the 13 consolidated earlier. Every removed slug 301s in
-// vercel.json. Raise this number only for an area with a genuinely distinct
-// query space, not for coverage.
-// 2026-10-21: 40 → 43 for Lincolnwood, Morton Grove and Norridge — separate
-// villages (own ZIPs, own searches) already listed as Google Business
-// Profile service areas, not micro-neighborhoods of an existing page.
+// Keep the intentional consolidated footprint at 43 service-area pages.
 if (neighborhoodSlugs.length !== 43 || new Set(neighborhoodSlugs).size !== 43) {
   throw new Error(`Expected 43 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
 }
 
 const requiredConnections = [
-  ['src/pages/BlogPost.tsx', ['getSiloSiblings', 'getPostNeighborhoods', 'getPostSilo']],
+  ['src/pages/BlogPost.tsx', ['getSiloSiblings', 'getPostNeighborhoods', 'getPostSilo', 'getPillarContent']],
   ['src/pages/NeighborhoodPage.tsx', ['getNeighborhoodGuides', 'neighborhoodClusterConfig.servicePath']],
   ['src/pages/services/BoardSupport.tsx', ['ClusterGuides cluster="governance"']],
   ['src/pages/services/FinancialManagement.tsx', ['ClusterGuides cluster="finance"']],
@@ -61,11 +50,11 @@ for (const [file, markers] of requiredConnections) {
 // not link a guide that will still be unpublished on its own release day.
 const bundleDir = mkdtempSync(join(tmpdir(), 'stellar-silos-'));
 const bundlePath = join(bundleDir, 'silos.mjs');
-let allBlogPosts, postSilos, moneyPagePaths;
+let allBlogPosts, postSilos, moneyPagePaths, getPillarContent;
 try {
   await build({
     stdin: {
-      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';`,
+      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';\nexport { getPillarContent } from './src/data/pillar-links';`,
       resolveDir: root,
       loader: 'ts',
     },
@@ -75,7 +64,7 @@ try {
     outfile: bundlePath,
     logLevel: 'error',
   });
-  ({ allBlogPosts, postSilos, moneyPagePaths } = await import(pathToFileURL(bundlePath).href));
+  ({ allBlogPosts, postSilos, moneyPagePaths, getPillarContent } = await import(pathToFileURL(bundlePath).href));
 } finally {
   rmSync(bundleDir, { recursive: true, force: true });
 }
@@ -95,7 +84,8 @@ for (const post of allBlogPosts) {
     problems.push(`${post.slug}: no entry in src/data/post-silos.ts`);
     continue;
   }
-  const hrefs = [...post.content.matchAll(/<a\s[^>]*href="([^"]+)"/g)]
+  const content = getPillarContent(post, allBlogPosts, today);
+  const hrefs = [...content.matchAll(/<a\s[^>]*href="([^"]+)"/g)]
     .map((match) => match[1].replace(/^https:\/\/www\.stellarpropertygroup\.com/, ''))
     .filter((href) => href.startsWith('/'))
     .map((href) => href.replace(/[#?].*$/, ''));
