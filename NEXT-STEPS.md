@@ -3,6 +3,15 @@
 Updated: 2026-11-03. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 3: **daily publishing STOPPED** (Mirsad: Stellar site retiring for
+      CenterPoint). GitHub workflow "Publish daily association guide" is
+      disabled, and `PUBLISHING_FROZEN_AT = '2026-11-03'` in
+      `scripts/publication-date.mjs` + `src/utils/publication-date.ts` keeps
+      every later guide hidden. Guides dated Nov 4 – Dec 8 stay unpublished
+      (saved for CenterPoint — rewrite, do not copy). Ignore the old
+      "write the next batch" items below.
+- [x] Nov 3: full Stellar backup in `C:\Users\autho\Archives\Stellar-2026-11-03`
+      and Obsidian folder "Stellar Archive" (start note there).
 - [x] Nov 3: **portfolio numbers fixed sitewide: 29 associations, approx.
       1,422 residences** (was 42 / 2,450). All business facts now live in
       `src/data/business.ts` — schema, footer, /ai-info and /llms.txt read

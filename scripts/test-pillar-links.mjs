@@ -7,8 +7,8 @@ import { build } from 'esbuild';
 const dir = mkdtempSync(join(tmpdir(), 'stellar-pillar-tests-'));
 try {
   const outfile = join(dir, 'test.mjs');
-  await build({ stdin: { contents: `export * from './src/data/pillar-links'; export * from './src/data/post-silos'; export {allBlogPosts} from './src/data/blog-posts'; export {getChicagoPublicationDate} from './src/utils/publication-date';`, resolveDir: process.cwd(), loader: 'ts' }, bundle: true, platform: 'node', format: 'esm', outfile });
-  const { allBlogPosts: posts, pillarGuides, postSilos, getPillarGuides, getPillarContent, getChicagoPublicationDate } = await import(pathToFileURL(outfile).href);
+  await build({ stdin: { contents: `export * from './src/data/pillar-links'; export * from './src/data/post-silos'; export {allBlogPosts} from './src/data/blog-posts'; export {getChicagoPublicationDate, getChicagoCalendarDate} from './src/utils/publication-date';`, resolveDir: process.cwd(), loader: 'ts' }, bundle: true, platform: 'node', format: 'esm', outfile });
+  const { allBlogPosts: posts, pillarGuides, postSilos, getPillarGuides, getPillarContent, getChicagoPublicationDate, getChicagoCalendarDate } = await import(pathToFileURL(outfile).href);
   const bySlug = new Map(posts.map(p => [p.slug, p]));
   const assigned = Object.values(pillarGuides).flat();
   assert.equal(new Set(assigned).size, assigned.length, 'one editorial pillar per guide');
@@ -45,7 +45,8 @@ try {
     assert.equal(getPillarGuides({...pillar, content: `<a href='${href}'>Existing</a>`}, posts, '2026-12-09').length, 0);
   }
   assert.equal(getPillarContent({...pillar, date:'2027-01-01'}, posts, '2026-12-09'), pillar.content);
-  assert.equal(getChicagoPublicationDate(new Date('2026-11-07T05:59:59Z')), '2026-11-06');
-  assert.equal(getChicagoPublicationDate(new Date('2026-11-07T06:00:00Z')), '2026-11-07');
+  assert.equal(getChicagoCalendarDate(new Date('2026-11-07T05:59:59Z')), '2026-11-06');
+  assert.equal(getChicagoPublicationDate(new Date('2026-11-20T18:00:00Z')), '2026-11-03'); // publishing frozen
+  assert.equal(getChicagoCalendarDate(new Date('2026-11-07T06:00:00Z')), '2026-11-07');
   console.log('Pillar links passed: 32 guides, release-day boundaries, 41 daily snapshots, silo integrity, duplicate suppression, Chicago cutoff.');
 } finally { rmSync(dir, { recursive: true, force: true }); }
