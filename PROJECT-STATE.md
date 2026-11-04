@@ -9,7 +9,8 @@
 The public website for **Stellar Property Management** (formerly Stellar
 Property Group), a Chicago community association management firm — condos,
 HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
-2007. 42 associations, 2,450+ residences, 96% retention.
+2007. 29 associations, approximately 1,422 residences (owner-confirmed
+Nov 2026), 96% retention since 2007.
 
 - **Live site:** https://www.stellarpropertygroup.com (Vercel, SPA + prerender)
 - **Repo:** https://github.com/autho369-code/stellar-redesigned (branch `main`)
@@ -17,6 +18,33 @@ HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
 - **Phone:** 773.728.0652 (24/7 live emergency line)
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
+
+## Status update — 2026-11-03 (AI-visibility facts: 29 associations, one facts file)
+
+From Mirsad's AI-visibility brief (owner-confirmed figures, Nov 2026):
+
+- Portfolio corrected everywhere — pages, meta, JSON-LD, Arthur's prompt
+  (`api/chat.js`), `index.html`: **29 associations and approximately 1,422
+  residences**; retention reads "96% ... since 2007". `verify-built-seo.mjs`
+  now fails the build on "42 associations" or "2,450".
+- `src/data/business.ts` is the single facts file (names, address, phone,
+  hours, license, portfolio, profiles, canonical FAQ, footer entity text).
+  `prerender.mjs` rewrites the "## Business facts" section of /llms.txt from
+  it. For the ownership change, edit this file first.
+- Organization `@id` renamed `#business` → `#organization`; every page
+  references it. Homepage: `alternateName`, new `knowsAbout`, description
+  says "community association management only". No aggregateRating.
+- **BBB is deliberately not linked** (sameAs, llms.txt, footer) — Mirsad's
+  instruction 2026-11-03.
+- /ai-info → AboutPage + canonical FAQ (visible + FAQPage). Homepage FAQ
+  leads with the same 8 answers. /about: H1 "About Stellar Property
+  Management", short FAQ, link to the new "How boards and management work
+  together" section on /services/board-support. /contact: ContactPoint +
+  hours on the org node. /reviews: WebPage + breadcrumb, g.page review link
+  (stays noindex, so it stays out of the sitemap on purpose).
+- Footer: visible entity statement + Google, Yelp, LinkedIn links.
+- Sitemap: every URL has `<lastmod>`. H1 line breaks now carry a space, so
+  text reads "a well-run", "Management in" without JavaScript.
 
 ## Status update — 2026-10-28 (reverse silo on every guide + FAQ schema)
 

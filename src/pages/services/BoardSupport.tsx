@@ -122,6 +122,21 @@ export default function BoardSupport() {
         </div>
       </section>
 
+      {/* ── Board and manager roles ────────────────────────────── */}
+      <section id="boards-and-management" className="py-20 lg:py-24 bg-white border-t border-slate-200">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
+          <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-[1.1] mb-6">
+            How boards and management work together
+          </h2>
+          <p className="text-lg text-slate-600 font-light leading-relaxed">
+            The board of directors makes repair, budget and funding decisions for
+            the association. As managing agent, we prepare options and bids,
+            coordinate contractors, track every project, and keep owners
+            informed with regular updates until the work is done.
+          </p>
+        </div>
+      </section>
+
       {/* ── Scope of service — hairline grid ───────────────────── */}
       <section className="py-24 lg:py-32 bg-ivory-100 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

@@ -102,7 +102,7 @@ export default function ViolationManagement() {
                 Our violation management system is built on three principles: consistency, transparency, and due process. Every violation is documented objectively, every homeowner receives proper notice and the opportunity to be heard, and every enforcement action follows a progressive discipline framework that the board has approved in advance. This systematic approach protects your association from legal challenges while building community trust in the enforcement process.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Since 2007, we have helped 42 Chicago-area associations maintain their community standards through professional violation management. Our experience with Illinois community association law ensures your enforcement procedures comply with state requirements, your governing documents are properly applied, and your board is protected from liability throughout the process.
+                Since 2007, we have helped Chicago-area associations maintain their community standards through professional violation management. Our experience with Illinois community association law ensures your enforcement procedures comply with state requirements, your governing documents are properly applied, and your board is protected from liability throughout the process.
               </p>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">

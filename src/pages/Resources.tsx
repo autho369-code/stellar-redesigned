@@ -137,7 +137,7 @@ export default function Resources() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Owner &amp; Resident
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">Resources.</em>
               </h1>
             </div>
@@ -235,7 +235,7 @@ export default function Resources() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 Free Assessment Payment Option:
-                <br />
+                {' '}<br />
                 Bank <em className="font-medium text-gold-600">Bill Pay.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-10">
@@ -398,7 +398,7 @@ export default function Resources() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Can&rsquo;t find what
-            <br />
+            {' '}<br />
             you <em className="font-medium text-gold-300">need?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">

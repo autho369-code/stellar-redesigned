@@ -2,13 +2,38 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageSquareText, Star } from 'lucide-react';
 
-const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJb2zkwALSD4gRew3uNzt3klM';
-const GOOGLE_MAPS_URL = 'https://www.google.com/maps?cid=6022006747972898171';
+import { ORG_ID, profiles, SITE_URL, WEBSITE_ID } from '../data/business';
+
+const GOOGLE_REVIEW_URL = profiles.googleReview;
+const GOOGLE_MAPS_URL = profiles.google;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/reviews#webpage`,
+      url: `${SITE_URL}/reviews`,
+      name: 'Share Feedback — Stellar Property Management',
+      about: { '@id': ORG_ID },
+      isPartOf: { '@id': WEBSITE_ID },
+      relatedLink: [GOOGLE_REVIEW_URL, GOOGLE_MAPS_URL],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: 'Share Feedback', item: `${SITE_URL}/reviews` },
+      ],
+    },
+  ],
+};
 
 export default function Reviews() {
   return (
     <>
       <Helmet>
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <title>Share Feedback | Stellar Property Management</title>
         <meta name="description" content="Share an honest Google review of your Stellar Property Management experience or send feedback directly to our Chicago team." />
         <meta name="robots" content="noindex, follow, max-image-preview:large" />

@@ -22,7 +22,20 @@ execSync('npx vite build --ssr src/entry-server.tsx --outDir dist-server --logLe
   stdio: 'inherit',
 });
 
-const { render } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
+const { render, llmsBusinessFacts } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
+
+// 1b. /llms.txt: the "## Business facts" section comes from src/data/business.ts
+// (the one facts file), so a name or portfolio change is a single edit.
+for (const file of [join(root, 'public/llms.txt'), join(root, 'dist/llms.txt')]) {
+  const src = readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
+  // Function replacement: the facts contain "$20", which a replacement
+  // string would read as a capture-group reference.
+  const next = src.replace(/(## Business facts\n\n)[\s\S]*?(\n\n## )/, (_m, head, tail) => `${head}${llmsBusinessFacts()}${tail}`);
+  if (next === src && !src.includes(llmsBusinessFacts())) {
+    throw new Error(`[prerender] could not find the "## Business facts" section in ${file}`);
+  }
+  writeFileSync(file, next);
+}
 
 // 2. Collect routes (same sources as generate-sitemap.mjs)
 const staticRoutes = [

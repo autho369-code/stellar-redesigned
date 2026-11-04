@@ -18,7 +18,7 @@ export function ServiceSchema({ name, description, canonical, serviceType }: Ser
         description,
         url: canonical,
         serviceType,
-        provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
         areaServed: [
           { '@type': 'City', name: 'Chicago' },
           { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },

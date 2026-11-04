@@ -48,6 +48,11 @@ for (const url of urls) {
   if (canonical !== expectedCanonical) errors.push(`${route}: canonical is '${canonical}', expected '${expectedCanonical}'`);
   if (/noindex|nofollow/i.test(robots)) errors.push(`${route}: sitemap route has a blocking robots directive '${robots}'`);
   if (h1Count !== 1) errors.push(`${route}: expected one H1, found ${h1Count}`);
+  // Retired portfolio figures (owner-confirmed Nov 2026: 29 associations,
+  // approximately 1,422 residences). Stop them from coming back.
+  if (/\b42 (Chicago-area |condominium, |condo, )?(associations|communities)|all 42\b|2,450|\b2450\b/i.test(html)) {
+    errors.push(`${route}: contains a retired portfolio figure (42 associations / 2,450)`);
+  }
   if (/href="\/contact-us(?:[/?#"])/i.test(html)) errors.push(`${route}: links internally to legacy /contact-us`);
 
   const priorRoute = titles.get(title);
@@ -70,6 +75,11 @@ for (const url of urls) {
     if (!allowedRoutes.has(linkedRoute) && !existsSync(staticFile)) errors.push(`${route}: broken or unlisted internal link ${href}`);
   }
 }
+
+const llms = readFileSync(join(root, 'dist/llms.txt'), 'utf8');
+if (!llms.includes('- Portfolio: 29 associations, approximately 1,422 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
+if (!llms.includes('starting at $20 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
+if (/2,450|\b42 associations/.test(llms)) errors.push('llms.txt: contains a retired portfolio figure');
 
 if (urls.some((url) => /\/contact-us\/?$/.test(url))) errors.push('sitemap includes legacy /contact-us URL');
 if (!urls.includes(`${base}/contact`)) errors.push('sitemap is missing canonical /contact URL');

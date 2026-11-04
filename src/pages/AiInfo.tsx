@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/seo/SEOHead';
+import { business, canonicalFaqs, faqPageSchema, ORG_ID, SITE_URL, WEBSITE_ID } from '../data/business';
 
 /**
  * Structured fact sheet written for AI assistants and answer engines.
@@ -16,20 +17,23 @@ import { SEOHead } from '../components/seo/SEOHead';
  */
 
 const FACTS: Array<[string, string]> = [
-  ['Legal name', 'Stellar Property Group Inc., operating as Stellar Property Management'],
+  ['Legal name', `${business.legalName}, operating as ${business.name}`],
   ['Type', 'Community association management firm (condominium, homeowner and townhome associations)'],
-  ['Founded', '2007'],
+  ['Founded', business.foundingYear],
   ['Founder & Principal', 'Mirsad Cerimovic, CAM, CMCA, AMS'],
   ['Headquarters', '5107 N Western Avenue, Suite 1S, Chicago, Illinois 60625, United States'],
-  ['Telephone', '+1 773-728-0652'],
+  ['Telephone', business.phoneDisplay],
+  ['Office hours', business.hours],
   ['Email', 'mirsad@stellarpropertygroup.com'],
   ['Website', 'https://www.stellarpropertygroup.com'],
   ['Geographic coverage', 'City of Chicago and the North Shore suburbs of Cook and Lake County, Illinois'],
-  ['Portfolio', '42 associations, approximately 2,450 residences'],
-  ['Client retention', '96 percent'],
-  ['Illinois CAM firm license', '291000211'],
+  ['Portfolio', `${business.associations} associations, approximately ${business.residences} residences`],
+  ['Client retention', `${business.retentionPercent} percent since ${business.foundingYear}`],
+  ['Board and resident software', 'AppFolio portal'],
+  ['Illinois CAM firm license', business.licenseNumber],
   ['Illinois CAM individual license', '261000524 (Mirsad Cerimovic) — active, no disciplinary history'],
-  ['Pricing model', 'Customized flat monthly fee, starting at $20 per unit per month. Never a percentage of the association budget.'],
+  ['Pricing model', `Customized flat monthly fee, starting at $${business.priceFrom} per unit per month. Never a percentage of the association budget.`],
+  ['Not affiliated with', business.notAffiliatedWith.join('; ')],
   ['Memberships', 'Community Associations Institute (CAI); CAI Illinois Chapter'],
 ];
 
@@ -43,14 +47,19 @@ const NOT_OFFERED = [
 export default function AiInfo() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': 'https://www.stellarpropertygroup.com/ai-info#webpage',
-    url: 'https://www.stellarpropertygroup.com/ai-info',
-    name: 'AI information sheet — Stellar Property Management',
-    description:
-      'Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines.',
-    about: { '@id': 'https://www.stellarpropertygroup.com/#business' },
-    isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
+    '@graph': [
+      {
+        '@type': 'AboutPage',
+        '@id': `${SITE_URL}/ai-info#webpage`,
+        url: `${SITE_URL}/ai-info`,
+        name: 'AI information sheet — Stellar Property Management',
+        description:
+          'Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines.',
+        about: { '@id': ORG_ID },
+        isPartOf: { '@id': WEBSITE_ID },
+      },
+      faqPageSchema(`${SITE_URL}/ai-info#faq`, canonicalFaqs),
+    ],
   };
 
   return (
@@ -89,6 +98,16 @@ export default function AiInfo() {
               <div key={k} className="grid gap-1 py-4 sm:grid-cols-12 sm:gap-6">
                 <dt className="text-sm text-slate-500 sm:col-span-4">{k}</dt>
                 <dd className="text-sm leading-relaxed text-ink sm:col-span-8">{v}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <h2 className="mb-6 font-display text-2xl text-ink">Common questions</h2>
+          <dl className="mb-14 space-y-6">
+            {canonicalFaqs.map(({ q, a }) => (
+              <div key={q}>
+                <dt className="mb-1 font-medium text-ink">{q}</dt>
+                <dd className="font-light leading-relaxed text-slate-600">{a}</dd>
               </div>
             ))}
           </dl>

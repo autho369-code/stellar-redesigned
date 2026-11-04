@@ -4,13 +4,24 @@ import { Phone, ArrowRight, ArrowUpRight, MapPin, Mail, Plus } from 'lucide-reac
 import { Reveal } from '../components/ui/Reveal';
 import { CountUp } from '../components/ui/CountUp';
 import { AtlasMarquee } from '../components/home/AtlasMarquee';
+import {
+  business,
+  canonicalFaqs,
+  contactPoints,
+  faqPageSchema,
+  openingHoursSpecification,
+  ORG_ID,
+  profiles,
+  SITE_URL,
+  WEBSITE_ID,
+} from '../data/business';
 
 /* ── Content ──────────────────────────────────────────────────── */
 
 const stats = [
-  { value: 42, suffix: '', label: 'Associations' },
-  { value: 2450, suffix: '+', label: 'Residences' },
-  { value: 96, suffix: '%', label: 'Client Retention' },
+  { value: 29, suffix: '', label: 'Associations' },
+  { value: 1422, suffix: '', label: 'Residences (approx.)' },
+  { value: 96, suffix: '%', label: 'Client Retention Since 2007' },
 ];
 
 const services = [
@@ -83,26 +94,17 @@ const testimonials = [
   },
 ];
 
+// The canonical FAQ (same wording as /ai-info) leads; the questions below
+// cover what the canonical set does not.
 const faqs = [
-  {
-    q: 'What types of properties does Stellar Property Management manage?',
-    a: 'Stellar Property Management manages condominium associations, homeowner associations (HOAs), and townhome communities exclusively — including high-rises, boutique vintage conversions, and lakefront buildings across Chicago and the North Shore. We do not manage apartment rentals; our entire practice is devoted to community association management.',
-  },
+  ...canonicalFaqs,
   {
     q: 'How is Stellar different from large national management firms?',
-    a: 'Every community receives a dedicated property manager, transparent flat-fee pricing instead of percentage-based fees, and a local Chicago office that answers 24/7. National firms manage by volume; we manage by standard — which is why we maintain a 96% client retention rate across 42 associations.',
-  },
-  {
-    q: 'How much does condominium association management cost in Chicago?',
-    a: 'Stellar management pricing starts at $20 per unit per month. We quote a customized flat monthly fee based on your building’s size, amenities, staffing, financial complexity, and service scope — never a percentage of your budget. We do not add a separate capital-project planning or management-oversight fee. Review our pricing approach or request a proposal for your association.',
+    a: 'Every community receives a dedicated property manager, transparent flat-fee pricing instead of percentage-based fees, and a local Chicago office that answers 24/7. National firms manage by volume; we manage by standard — which is why we maintain a 96% client retention rate since 2007, today across 29 associations.',
   },
   {
     q: 'How do we switch from our current management company to Stellar?',
     a: 'Switching is a managed 30–60 day transition. Once your board signs, we handle everything: records retrieval from the outgoing firm, banking migration, vendor transfers, owner communication, and portal setup. Most boards describe the change as far easier than they expected.',
-  },
-  {
-    q: 'Which Chicago neighborhoods does Stellar Property Management serve?',
-    a: 'We serve associations throughout Chicago — including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, and South Loop — plus North Shore communities such as Evanston, Wilmette, Winnetka, Glenview, Northbrook, and Highland Park.',
   },
   {
     q: 'Does Stellar provide 24/7 emergency response?',
@@ -131,28 +133,28 @@ const schema = {
   '@graph': [
     {
       '@type': ['ProfessionalService', 'LocalBusiness'],
-      '@id': 'https://www.stellarpropertygroup.com/#business',
-      name: 'Stellar Property Management',
+      '@id': ORG_ID,
+      name: business.name,
       // The domain and the Illinois corporation still carry the old name, and
       // directories list both; naming them here lets Google and answer engines
       // join the listings into one business instead of two weak ones.
-      legalName: 'Stellar Property Group Inc.',
-      alternateName: ['Stellar Property Group', 'Stellar Property Group Inc.'],
+      legalName: business.legalName,
+      alternateName: [business.alternateName],
       disambiguatingDescription:
         'Chicago community association (condo, HOA and townhome) management firm at 5107 N Western Ave. Not affiliated with Stellar Properties Inc. of Carol Stream or Stellar Management of New York.',
       description:
-        'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 42 associations and 2,450+ units under management with a 96% client retention rate.',
+        'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 29 associations and approximately 1,422 residences under management, with a 96% client retention rate since 2007. Community association management only.',
       url: 'https://www.stellarpropertygroup.com',
       logo: 'https://www.stellarpropertygroup.com/logo-icon.svg',
       image: 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
-      telephone: '+1-773-728-0652',
-      email: 'mirsad@stellarpropertygroup.com',
-      priceRange: 'From $20 per unit per month',
+      telephone: business.phoneE164,
+      email: business.email,
+      priceRange: `From $${business.priceFrom} per unit per month`,
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
-        name: 'Illinois Community Association Management Firm License',
+        name: business.licenseName,
         credentialCategory: 'Professional license',
-        identifier: '291000211',
+        identifier: business.licenseNumber,
         recognizedBy: {
           '@type': 'GovernmentOrganization',
           name: 'Illinois Department of Financial and Professional Regulation',
@@ -171,13 +173,10 @@ const schema = {
           url: 'https://www.cai-illinois.org/',
         },
       ],
-      hasMap: 'https://www.google.com/maps?cid=6022006747972898171',
-      sameAs: [
-        'https://www.linkedin.com/company/stellar-property-group-inc',
-        'https://www.google.com/maps?cid=6022006747972898171',
-        'https://www.yelp.com/biz/stellar-property-management-chicago',
-      ],
-      foundingDate: '2007',
+      hasMap: profiles.google,
+      // BBB deliberately left out (owner decision 2026-11-03).
+      sameAs: [profiles.linkedin, profiles.google, profiles.yelp],
+      foundingDate: business.foundingYear,
       // Ties the firm to the founder entity from the site's highest-authority
       // page, so the Person node is reachable from the homepage graph rather
       // than only from /about and the article bylines.
@@ -186,47 +185,19 @@ const schema = {
       slogan: 'The art of a well-run building.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5107 N Western Ave #1S',
-        addressLocality: 'Chicago',
-        addressRegion: 'IL',
-        postalCode: '60625',
-        addressCountry: 'US',
+        streetAddress: business.address.street,
+        addressLocality: business.address.city,
+        addressRegion: business.address.region,
+        postalCode: business.address.postalCode,
+        addressCountry: business.address.country,
       },
       geo: {
         '@type': 'GeoCoordinates',
         latitude: 41.974506,
         longitude: -87.6887278,
       },
-      openingHoursSpecification: [
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-          opens: '09:00',
-          closes: '17:00',
-        },
-      ],
-      contactPoint: [
-        {
-          '@type': 'ContactPoint',
-          telephone: '+1-773-728-0652',
-          contactType: 'customer service',
-          areaServed: 'US-IL',
-          availableLanguage: 'English',
-        },
-        {
-          '@type': 'ContactPoint',
-          telephone: '+1-773-728-0652',
-          contactType: 'emergency',
-          areaServed: 'US-IL',
-          availableLanguage: 'English',
-          hoursAvailable: {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-            opens: '00:00',
-            closes: '23:59',
-          },
-        },
-      ],
+      openingHoursSpecification,
+      contactPoint: contactPoints,
       areaServed: [
         { '@type': 'City', name: 'Chicago' },
         { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
@@ -248,10 +219,11 @@ const schema = {
       knowsAbout: [
         'Condominium association management',
         'HOA management',
-        'Townhome community management',
+        'Townhome association management',
         'Illinois Condominium Property Act',
-        'Reserve fund planning',
-        'Community association financial reporting',
+        'Illinois Common Interest Community Association Act',
+        'Section 22.1 disclosures',
+        'Reserve studies',
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -267,21 +239,13 @@ const schema = {
         })),
       },
     },
-    {
-      '@type': 'FAQPage',
-      '@id': 'https://www.stellarpropertygroup.com/#faq',
-      mainEntity: faqs.map(({ q, a }) => ({
-        '@type': 'Question',
-        name: q,
-        acceptedAnswer: { '@type': 'Answer', text: a },
-      })),
-    },
+    faqPageSchema(`${SITE_URL}/#faq`, faqs),
     {
       '@type': 'WebSite',
-      '@id': 'https://www.stellarpropertygroup.com/#website',
-      url: 'https://www.stellarpropertygroup.com',
-      name: 'Stellar Property Management',
-      publisher: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      '@id': WEBSITE_ID,
+      url: SITE_URL,
+      name: business.name,
+      publisher: { '@id': ORG_ID },
     },
   ],
 };
@@ -353,7 +317,7 @@ export default function Home() {
 
               <h1 className="reveal-up reveal-delay-1 font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-paper mb-10 text-balance">
                 The art of a
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-300">well-run</em> building.
               </h1>
 
@@ -456,7 +420,7 @@ export default function Home() {
               <Eyebrow light>The Difference</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
                 Not another national
-                <br />
+                {' '}<br />
                 management <em className="font-medium text-gold-300">firm.</em>
               </h2>
               <p className="text-paper/55 font-light text-lg leading-relaxed mb-10">
@@ -497,7 +461,7 @@ export default function Home() {
               <Eyebrow>The Practice</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
                 Six disciplines.
-                <br />
+                {' '}<br />
                 One <em className="font-medium text-gold-500">standard</em> of care.
               </h2>
             </Reveal>
@@ -573,7 +537,7 @@ export default function Home() {
             <Eyebrow center>In Their Words</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
               Boards that raised
-              <br />
+              {' '}<br />
               their <em className="font-medium text-gold-500">standard.</em>
             </h2>
           </Reveal>
@@ -618,7 +582,7 @@ export default function Home() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-7">
                 Boards deal with the
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">principal.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
@@ -681,7 +645,7 @@ export default function Home() {
             <Eyebrow>Technology, Quietly Excellent</Eyebrow>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
               One platform.
-              <br />
+              {' '}<br />
               Two <em className="font-medium text-gold-500">experiences.</em>
             </h2>
             <p className="text-lg text-slate-600 font-light leading-relaxed">
@@ -738,7 +702,7 @@ export default function Home() {
               <Eyebrow>For the People Who Live Here</Eyebrow>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8 text-balance">
                 Nobody hands you a manual for condo life.
-                <br />
+                {' '}<br />
                 So we <em className="font-medium text-gold-500">wrote one.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-10">
@@ -850,7 +814,7 @@ export default function Home() {
           <Eyebrow light center>A Private Consultation</Eyebrow>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-[4.25rem] leading-[1.05] mb-10 text-balance">
             Raise the standard
-            <br />
+            {' '}<br />
             of <em className="font-medium text-gold-300">home.</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-14 max-w-2xl mx-auto">

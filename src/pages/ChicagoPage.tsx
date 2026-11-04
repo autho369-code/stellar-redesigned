@@ -7,9 +7,9 @@ import { SEOHead } from '../components/seo/SEOHead';
 const chicagoNeighborhoods = neighborhoods.filter((n) => n.region !== 'north-shore');
 
 const stats = [
-  { value: '42', label: 'Associations under management' },
-  { value: '2,450+', label: 'Residences across Chicagoland' },
-  { value: '96%', label: 'Client retention rate' },
+  { value: '29', label: 'Associations under management' },
+  { value: '1,422', label: 'Residences (approx.)' },
+  { value: '96%', label: 'Client retention since 2007' },
   { value: '2007', label: 'Serving Chicago since' },
 ];
 
@@ -117,7 +117,7 @@ const compliance = [
 const faqs = [
   {
     q: 'Who provides condominium and HOA management in Chicago?',
-    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 42 associations and more than 2,450 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625.',
+    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 29 associations and approximately 1,422 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625.',
   },
   {
     q: 'Which Chicago neighborhoods does Stellar Property Management serve?',
@@ -165,7 +165,7 @@ const schema = {
       url: 'https://www.stellarpropertygroup.com/property-management-chicago',
       serviceType: 'Community Association Management',
       areaServed: { '@type': 'City', name: 'Chicago', containedInPlace: { '@type': 'State', name: 'Illinois' } },
-      provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     },
     {
       '@type': 'BreadcrumbList',
@@ -226,7 +226,7 @@ export default function ChicagoPage() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Property Management
-                <br />
+                {' '}<br />
                 in <em className="font-medium text-gold-600">Chicago.</em>
               </h1>
             </div>
@@ -266,7 +266,7 @@ export default function ChicagoPage() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 A city of buildings.
-                <br />
+                {' '}<br />
                 One <em className="font-medium text-gold-600">standard.</em>
               </h2>
               <p className="text-slate-600 font-light text-lg leading-relaxed mb-5">
@@ -325,7 +325,7 @@ export default function ChicagoPage() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8">
                 Most firms hire the
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-300">engineer.</em>
               </h2>
               <p className="text-paper/70 font-light leading-relaxed mb-5">
@@ -379,7 +379,7 @@ export default function ChicagoPage() {
             </p>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
               Six kinds of Chicago
-              <br />
+              {' '}<br />
               <em className="font-medium text-gold-600">building.</em>
             </h2>
             <p className="text-slate-600 font-light leading-relaxed">
@@ -411,7 +411,7 @@ export default function ChicagoPage() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
                 The calendar boards
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">inherit.</em>
               </h2>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
@@ -546,7 +546,7 @@ export default function ChicagoPage() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Chicago&rsquo;s standard,
-            <br />
+            {' '}<br />
             <em className="font-medium text-gold-300">raised.</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">

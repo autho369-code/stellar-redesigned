@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { ENTITY_STATEMENT, profileLinks } from '../../data/business';
 
 const serviceLinks = [
   { name: 'Condominium Management', href: '/services/condominium-management' },
@@ -121,6 +122,31 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+        </div>
+      </div>
+
+      {/* Entity statement — the same facts AI assistants should repeat */}
+      <div className="border-t border-paper/10">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-8">
+          <p className="text-xs text-paper/65 font-light leading-relaxed max-w-4xl">
+            {ENTITY_STATEMENT}
+          </p>
+          <p className="mt-3 text-xs text-paper/65 font-light">
+            Find us on{' '}
+            {profileLinks.map((p, i) => (
+              <span key={p.label}>
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-gold-300 transition-colors"
+                >
+                  {p.label}
+                </a>
+                {i < profileLinks.length - 2 ? ', ' : i === profileLinks.length - 2 ? ' and ' : '.'}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
 

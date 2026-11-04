@@ -62,7 +62,7 @@ export const hoaManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'Is our community too small or too large for Stellar?',
-    answer: 'Our portfolio runs from boutique associations to communities of more than 250 residences. We deliberately curate the portfolio — 42 associations and 2,450+ residences — so every community keeps a dedicated manager with genuine capacity. If we cannot serve your community to that standard, we will say so in the first conversation.',
+    answer: 'Our portfolio runs from boutique associations to communities of more than 250 residences. We deliberately curate the portfolio — 29 associations and approximately 1,422 residences — so every community keeps a dedicated manager with genuine capacity. If we cannot serve your community to that standard, we will say so in the first conversation.',
   },
   {
     question: 'How is Stellar different from national HOA management firms?',

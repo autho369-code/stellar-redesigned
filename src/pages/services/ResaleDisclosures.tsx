@@ -61,7 +61,7 @@ const schema = {
       url: 'https://www.stellarpropertygroup.com/services/resale-disclosures',
       description:
         'Section 22.1 disclosure packets, paid assessment letters, lender questionnaires, certificates of insurance, and project eligibility questionnaires for Chicago condominium and community associations.',
-      provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Chicago' },
         { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
@@ -149,7 +149,7 @@ export default function ResaleDisclosures() {
               <p className="eyebrow mb-6 flex items-center gap-4 text-gold-300"><span className="accent-rule" />The Distinction Most Miss</p>
               <h2 className="mb-8 font-display text-4xl font-light leading-[1.08] lg:text-5xl">
                 &ldquo;22.1&rdquo; does not apply to
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-300">every association.</em>
               </h2>
               <p className="font-light leading-relaxed text-paper/70">

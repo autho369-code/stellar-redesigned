@@ -128,8 +128,8 @@ const schema = {
         '@type': 'Thing',
         name: 'Condominium and homeowners association living',
       },
-      author: { '@id': 'https://www.stellarpropertygroup.com/#business' },
-      publisher: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      author: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+      publisher: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     },
     {
       '@type': 'BreadcrumbList',
@@ -216,7 +216,7 @@ export default function CondoLiving() {
               </p>
               <h1 className="reveal-up reveal-delay-1 font-display font-light text-[2.75rem] leading-[1.04] sm:text-6xl lg:text-7xl text-paper mb-8 text-balance">
                 Living well in a condo
-                <br />
+                {' '}<br />
                 is a <em className="font-medium text-gold-300">learnable art.</em>
               </h1>
               <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed max-w-2xl">
@@ -244,8 +244,8 @@ export default function CondoLiving() {
 
         <div className="relative border-t border-paper/10">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-wrap items-center gap-x-10 gap-y-2">
-            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Written by the managers of 42 Chicago-area associations</span>
-            <span className="text-[10px] uppercase tracking-luxe text-paper/50">2,450+ residences · Since 2007</span>
+            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Written by the managers of 29 Chicago-area associations</span>
+            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Approx. 1,422 residences · Since 2007</span>
           </div>
         </div>
       </section>

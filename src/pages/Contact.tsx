@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '../components/ContactForm';
 import { SEOHead } from '../components/seo/SEOHead';
+import { business, contactPoints, openingHoursSpecification, ORG_ID } from '../data/business';
 
 const contactDetails = [
   {
@@ -43,7 +44,18 @@ export default function Contact() {
         name: 'Contact Stellar Property Management',
         description: 'Request a board consultation for condominium, HOA, or townhome association management in Chicago and the North Shore.',
         isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
-        about: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        about: { '@id': ORG_ID },
+        mainEntity: { '@id': ORG_ID },
+      },
+      // Reference node: adds the contact points and hours to the one
+      // Organization entity instead of declaring a second business.
+      {
+        '@type': ['ProfessionalService', 'LocalBusiness'],
+        '@id': ORG_ID,
+        name: business.name,
+        telephone: business.phoneE164,
+        contactPoint: contactPoints,
+        openingHoursSpecification,
       },
       {
         '@type': 'BreadcrumbList',

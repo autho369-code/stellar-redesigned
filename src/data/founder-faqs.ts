@@ -8,7 +8,7 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'Who is Mirsad Cerimovic?',
     answer:
-      'Mirsad Cerimovic is the founder and principal of Stellar Property Management. He entered the Chicago community association industry in April 1997 and founded Stellar in 2007. He is a licensed Illinois Community Association Manager holding the CMCA certification and AMS designation, and he is also a licensed City of Chicago stationary engineer and a NIULPE-certified power engineer. The firm manages 42 condominium, homeowner, and townhome associations — roughly 2,450 residences — across Chicago and the North Shore, and he has managed portfolios exceeding fifty associations.',
+      'Mirsad Cerimovic is the founder and principal of Stellar Property Management. He entered the Chicago community association industry in April 1997 and founded Stellar in 2007. He is a licensed Illinois Community Association Manager holding the CMCA certification and AMS designation, and he is also a licensed City of Chicago stationary engineer and a NIULPE-certified power engineer. The firm manages 29 condominium, homeowner, and townhome associations, with approximately 1,422 residences, across Chicago and the North Shore, and he has managed portfolios exceeding fifty associations.',
   },
   {
     question: 'What does Mirsad Cerimovic do at Stellar Property Management?',

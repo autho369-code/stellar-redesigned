@@ -1,5 +1,6 @@
 // Generates public/sitemap.xml from static routes + neighborhood and blog data.
 // Runs automatically before every build (see "prebuild" in package.json).
+import { execSync } from 'node:child_process';
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -77,9 +78,23 @@ for (const file of readdirSync(blogDir)) {
   }
 }
 
+// lastmod for pages built from templates: the date of the latest commit that
+// touched the page code or business data (the footer and facts appear on
+// every page). Falls back to today's Chicago date if git is unavailable.
+let siteLastmod = publicationCutoff;
+try {
+  const out = execSync('git log -1 --format=%cs -- src/pages src/components src/data/business.ts src/data/neighborhoods.ts public/llms.txt', {
+    cwd: root,
+    stdio: ['ignore', 'pipe', 'ignore'],
+  }).toString().trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(out)) siteLastmod = out;
+} catch {
+  // keep fallback
+}
+
 const urls = [
-  ...staticRoutes.map((path) => ({ path })),
-  ...neighborhoodSlugs.map((s) => ({ path: `/property-management-${s}` })),
+  ...staticRoutes.map((path) => ({ path, lastmod: siteLastmod })),
+  ...neighborhoodSlugs.map((s) => ({ path: `/property-management-${s}`, lastmod: siteLastmod })),
   ...blogPosts.map(({ slug, lastmod }) => ({ path: `/blog/${slug}`, lastmod })),
 ];
 

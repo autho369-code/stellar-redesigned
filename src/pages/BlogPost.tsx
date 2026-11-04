@@ -105,13 +105,13 @@ export default function BlogPost() {
       url: 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic',
       worksFor: {
         '@type': 'Organization',
-        '@id': 'https://www.stellarpropertygroup.com/#business',
+        '@id': 'https://www.stellarpropertygroup.com/#organization',
         name: 'Stellar Property Management',
       },
     },
     publisher: {
       '@type': 'Organization',
-      '@id': 'https://www.stellarpropertygroup.com/#business',
+      '@id': 'https://www.stellarpropertygroup.com/#organization',
       name: 'Stellar Property Management',
       url: 'https://www.stellarpropertygroup.com',
       logo: {
@@ -269,7 +269,7 @@ export default function BlogPost() {
                   Founder &amp; Principal · Stellar Property Management
                 </p>
                 <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  Mirsad founded Stellar in 2007 and manages 42 Chicago-area
+                  Mirsad founded Stellar in 2007 and manages 29 Chicago-area
                   condominium, HOA, and townhome associations. He is a licensed
                   Illinois Community Association Manager and writes the
                   firm&rsquo;s board guides on Illinois association law,
@@ -381,13 +381,13 @@ export default function BlogPost() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Ready to elevate your
-            <br />
+            {' '}<br />
             community <em className="font-medium text-gold-300">management?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            Join 42 Chicago-area associations that trust Stellar Property
-            Group. Contact us today for a free consultation and discover why we
-            maintain a 96% client retention rate.
+            Join the 29 Chicago-area associations that trust Stellar Property
+            Management. Contact us today for a free consultation and discover why we
+            maintain a 96% client retention rate since 2007.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
