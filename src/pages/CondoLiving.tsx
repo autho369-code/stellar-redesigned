@@ -129,7 +129,7 @@ const schema = {
         name: 'Condominium and homeowners association living',
       },
       author: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
-      publisher: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+      publisher: { '@type': 'Organization', '@id': 'https://www.stellarpropertygroup.com/#organization', name: 'Stellar Property Management' },
     },
     {
       '@type': 'BreadcrumbList',

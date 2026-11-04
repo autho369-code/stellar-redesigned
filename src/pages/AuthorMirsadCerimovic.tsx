@@ -112,7 +112,7 @@ export default function AuthorMirsadCerimovic() {
         },
 
         telephone: '+1-773-728-0652',
-        worksFor: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+        worksFor: { '@type': 'Organization', '@id': 'https://www.stellarpropertygroup.com/#organization', name: 'Stellar Property Management' },
         sameAs: [LINKEDIN_URL],
         workLocation: {
           '@type': 'Place',
