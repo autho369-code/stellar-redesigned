@@ -24,7 +24,7 @@ export default function Blog() {
     url: 'https://www.stellarpropertygroup.com/blog',
     name: 'Illinois Condo and HOA Board Guides',
     description: 'Illinois condominium, HOA, and townhome association guidance for Chicagoland board members.',
-    publisher: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+    publisher: { '@type': 'Organization', '@id': 'https://www.stellarpropertygroup.com/#organization', name: 'Stellar Property Management' },
     hasPart: topics.map(([, topic]) => ({
       '@type': 'CollectionPage',
       name: topic.label,

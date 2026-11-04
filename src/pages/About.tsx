@@ -98,7 +98,7 @@ const aboutSchema = {
         caption: 'Mirsad Cerimovic, founder and principal of Stellar Property Management',
       },
       email: 'mirsad@stellarpropertygroup.com',
-      worksFor: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+      worksFor: { '@type': 'Organization', '@id': 'https://www.stellarpropertygroup.com/#organization', name: 'Stellar Property Management' },
       memberOf: [
         { '@type': 'Organization', name: 'Community Associations Institute', url: 'https://www.caionline.org/' },
         { '@type': 'Organization', name: 'Community Associations Institute Illinois Chapter', url: 'https://www.cai-illinois.org/' },
