@@ -65,7 +65,7 @@ const schema = {
       description: 'Condominium, HOA, and townhome association management across Chicago\'s North Shore.',
       url: 'https://www.stellarpropertygroup.com/property-management-north-shore',
       serviceType: 'Community Association Management',
-      provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       areaServed: northShoreCommunities.map((area) => ({
         '@type': 'City',
         name: `${area.name}, Illinois`,
@@ -121,7 +121,7 @@ export default function NorthShorePage() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" />Chicago&apos;s North Shore</p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
-                North Shore Property<br /><em className="font-medium text-gold-600">Management.</em>
+                North Shore Property{' '}<br /><em className="font-medium text-gold-600">Management.</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">

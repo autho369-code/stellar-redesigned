@@ -58,7 +58,7 @@ const schema = {
       '@id': 'https://www.stellarpropertygroup.com/pricing#service',
       name: 'Chicago Condominium and HOA Management',
       description: 'Flat-fee condominium, HOA, and townhome association management in Chicago, starting at $20 per unit per month.',
-      provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       areaServed: [{ '@type': 'City', name: 'Chicago' }, { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' }],
       offers: {
         '@type': 'Offer',

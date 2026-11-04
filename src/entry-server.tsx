@@ -107,3 +107,6 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
 
   return { appHtml, helmet: helmetContext.helmet as HelmetServerState };
 }
+
+// Used by scripts/prerender.mjs to rewrite the Business facts section of /llms.txt.
+export { llmsBusinessFacts } from './data/business';

@@ -24,7 +24,7 @@ export default function Blog() {
     url: 'https://www.stellarpropertygroup.com/blog',
     name: 'Illinois Condo and HOA Board Guides',
     description: 'Illinois condominium, HOA, and townhome association guidance for Chicagoland board members.',
-    publisher: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+    publisher: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     hasPart: topics.map(([, topic]) => ({
       '@type': 'CollectionPage',
       name: topic.label,
@@ -60,7 +60,7 @@ export default function Blog() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Insights for Board Members
-                <br />
+                {' '}<br />
                 &amp; Community <em className="font-medium text-gold-600">Leaders.</em>
               </h1>
             </div>
@@ -157,7 +157,7 @@ export default function Blog() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Have questions about
-            <br />
+            {' '}<br />
             property <em className="font-medium text-gold-300">management?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">

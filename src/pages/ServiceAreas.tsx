@@ -14,7 +14,7 @@ const northShoreCommunities = sortedNeighborhoods.filter((n) => n.region === 'no
 const stats = [
   { value: String(neighborhoods.length), label: 'Neighborhoods Served' },
   { value: '2007', label: 'Established' },
-  { value: '42', label: 'Associations Managed' },
+  { value: '29', label: 'Associations Managed' },
   { value: '24/7', label: 'Emergency Service' },
 ];
 
@@ -29,7 +29,7 @@ export default function ServiceAreas() {
       'Professional property management serving Chicago neighborhoods and North Shore communities. Condominium, HOA, and townhome management.',
     url: 'https://www.stellarpropertygroup.com/service-areas',
     serviceType: 'Community Association Management',
-    provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+    provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     areaServed: neighborhoods.map((n) => ({
       '@type': 'Place',
       name: n.region === 'north-shore' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
@@ -74,7 +74,7 @@ export default function ServiceAreas() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Chicago Condo &amp; HOA Management
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">Service Areas.</em>
               </h1>
             </div>
@@ -181,7 +181,7 @@ export default function ServiceAreas() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Don&rsquo;t see your
-            <br />
+            {' '}<br />
             <em className="font-medium text-gold-300">neighborhood?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">

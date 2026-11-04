@@ -2,6 +2,12 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { canonicalFaqs, faqPageSchema, SITE_URL } from '../data/business';
+
+// Short FAQ for /about: the canonical answers about who the firm is.
+const aboutFaqs = canonicalFaqs.filter((f) =>
+  /What does Stellar|licensed|How long|How many|Who makes|same as/.test(f.q)
+);
 
 const values = [
   {
@@ -40,9 +46,9 @@ const credentials = [
 ];
 
 const stats = [
-  { value: '42', label: 'Associations under management' },
-  { value: '2,450+', label: 'Units across Chicagoland' },
-  { value: '96%', label: 'Client retention rate' },
+  { value: '29', label: 'Associations under management' },
+  { value: '1,422', label: 'Residences (approx.)' },
+  { value: '96%', label: 'Client retention since 2007' },
   { value: '2007', label: 'Established · Local expertise' },
 ];
 
@@ -63,7 +69,7 @@ const aboutSchema = {
       '@id': 'https://www.stellarpropertygroup.com/about#webpage',
       url: 'https://www.stellarpropertygroup.com/about',
       name: 'About Stellar Property Management',
-      about: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      about: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
     },
     {
@@ -73,6 +79,7 @@ const aboutSchema = {
         { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.stellarpropertygroup.com/about' },
       ],
     },
+    faqPageSchema(`${SITE_URL}/about#faq`, aboutFaqs),
     {
       '@type': 'Person',
       '@id': 'https://www.stellarpropertygroup.com/about#mirsad-cerimovic',
@@ -91,7 +98,7 @@ const aboutSchema = {
         caption: 'Mirsad Cerimovic, founder and principal of Stellar Property Management',
       },
       email: 'mirsad@stellarpropertygroup.com',
-      worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+      worksFor: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       memberOf: [
         { '@type': 'Organization', name: 'Community Associations Institute', url: 'https://www.caionline.org/' },
         { '@type': 'Organization', name: 'Community Associations Institute Illinois Chapter', url: 'https://www.cai-illinois.org/' },
@@ -140,7 +147,7 @@ export default function About() {
     <>
       <SEOHead
         title="About Stellar Property Management | Chicago Since 2007"
-        description="Meet Stellar Property Management: serving Chicago associations since 2007 with 42 communities, CAI membership, and Illinois CAM firm licensing."
+        description="Meet Stellar Property Management: serving Chicago associations since 2007 with 29 associations, CAI membership, and Illinois CAM firm licensing."
         canonical="https://www.stellarpropertygroup.com/about"
       />
       <Helmet>
@@ -166,14 +173,15 @@ export default function About() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 About Stellar
-                <br />
-                Property <em className="font-medium text-gold-600">Group.</em>
+                {' '}<br />
+                Property <em className="font-medium text-gold-600">Management</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                A locally owned, professionally credentialed property management
-                firm dedicated exclusively to Chicago condominiums, HOAs, and
+                Stellar Property Management (Stellar Property Group Inc.) is a
+                locally owned, professionally credentialed management firm
+                dedicated exclusively to Chicago condominiums, HOAs, and
                 townhome communities.
               </p>
             </div>
@@ -206,14 +214,14 @@ export default function About() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 From a small firm to
-                <br />
-                42 <em className="font-medium text-gold-600">associations.</em>
+                {' '}<br />
+                29 <em className="font-medium text-gold-600">associations.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
                 Stellar Property Management was founded in 2007 with a clear mission: deliver property management that Chicago condo boards, HOAs, and townhome associations actually deserve. At the time, most firms treated community management as a side business. We made it our only business.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
-                Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 42 associations and 2,450 units across Chicago and the North Shore, with a 96% client retention rate that speaks louder than any advertisement.
+                Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 29 associations and approximately 1,422 residences across Chicago and the North Shore. Our 96% client retention rate since 2007 speaks louder than any advertisement.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-10">
                 Our growth has always been intentional. We only take on communities we can serve exceptionally, assigning a dedicated manager who knows every building, every board member, and every vendor by name. That personal approach is what sets us apart from national firms that treat your community as a line item.
@@ -268,7 +276,7 @@ export default function About() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-8 text-balance">
                 The people behind
-                <br />
+                {' '}<br />
                 the <em className="font-medium text-gold-300">standard.</em>
               </h2>
               <p className="text-paper/55 font-light leading-relaxed">
@@ -357,7 +365,7 @@ export default function About() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-7">
                 Independent, and
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">staying that way.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
@@ -427,7 +435,7 @@ export default function About() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 What drives us
-                <br />
+                {' '}<br />
                 every <em className="font-medium text-gold-600">day.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
@@ -496,7 +504,7 @@ export default function About() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 Chicago &amp; the
-                <br />
+                {' '}<br />
                 North <em className="font-medium text-gold-600">Shore.</em>
               </h2>
               <p className="text-slate-600 font-light text-lg leading-relaxed mb-8">
@@ -526,6 +534,34 @@ export default function About() {
         </div>
       </section>
 
+      {/* ── Common questions (canonical wording, shared with / and /ai-info) ── */}
+      <section className="py-24 lg:py-28 bg-white border-t border-slate-200">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
+          <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
+            <span className="accent-rule" />
+            Common Questions
+          </p>
+          <h2 className="font-display font-light text-4xl text-ink leading-[1.08] mb-10">
+            The firm in brief.
+          </h2>
+          <dl className="divide-y divide-slate-200 border-y border-slate-200">
+            {aboutFaqs.map(({ q, a }) => (
+              <div key={q} className="py-6">
+                <dt className="font-display text-xl text-ink mb-2">{q}</dt>
+                <dd className="text-slate-600 font-light leading-relaxed">{a}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="mt-8 text-slate-600 font-light leading-relaxed">
+            Read{' '}
+            <Link to="/services/board-support#boards-and-management" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">
+              how boards and management work together
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">
         <div
@@ -543,7 +579,7 @@ export default function About() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Ready to experience the
-            <br />
+            {' '}<br />
             Stellar <em className="font-medium text-gold-300">difference?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">

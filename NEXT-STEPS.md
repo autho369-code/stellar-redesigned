@@ -1,8 +1,15 @@
 # Stellar — next steps (the one to-do list)
 
-Updated: 2026-10-28. Every session reads this first and updates it at the end.
+Updated: 2026-11-03. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 3: **portfolio numbers fixed sitewide: 29 associations, approx.
+      1,422 residences** (was 42 / 2,450). All business facts now live in
+      `src/data/business.ts` — schema, footer, /ai-info and /llms.txt read
+      from it. The build fails if "42 associations" or "2,450" come back.
+      BBB is NOT linked anywhere (Mirsad's decision Nov 3).
+- [ ] After the Nov 3 PR merges: test the homepage, /ai-info and /contact in
+      validator.schema.org and Google's Rich Results Test.
 - [x] Oct 28: **reverse silo applied to all 94 guides** + FAQ schema. Rule:
       every new guide gets an entry in `src/data/post-silos.ts` (one money
       page, max one area page, siblings) — the build checks it.

@@ -37,7 +37,7 @@ export default function SmallCondoManagement() {
         serviceType: 'Small Condominium Association Management',
         url: 'https://www.stellarpropertygroup.com/services/small-condo-association-management',
         description: 'Full-service management for small Chicago condominium associations and vintage buildings, including finances, vendors, maintenance, compliance, and board continuity.',
-        provider: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
         areaServed: { '@type': 'City', name: 'Chicago' },
         offers: { '@type': 'Offer', priceSpecification: { '@type': 'UnitPriceSpecification', price: 20, priceCurrency: 'USD', unitText: 'per unit per month', description: 'Starting price; customized flat monthly proposal.' } },
       },

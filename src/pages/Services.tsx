@@ -95,8 +95,8 @@ const services: ServiceItem[] = [
 ];
 
 const proofs = [
-  { value: '42', label: 'Associations under management' },
-  { value: '2,450+', label: 'Residences across Chicagoland' },
+  { value: '29', label: 'Associations under management' },
+  { value: '1,422', label: 'Residences (approx.)' },
   { value: '96%', label: 'Client retention rate' },
   { value: '24/7', label: 'Live emergency response' },
 ];
@@ -154,7 +154,7 @@ export default function Services() {
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
                 Everything a community
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">needs.</em> Nothing it doesn&rsquo;t.
               </h1>
             </div>
@@ -234,7 +234,7 @@ export default function Services() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 One firm. One number.
-                <br />
+                {' '}<br />
                 One <em className="font-medium text-gold-600">standard.</em>
               </h2>
               <p className="text-slate-600 font-light text-lg leading-relaxed">
@@ -290,12 +290,12 @@ export default function Services() {
           </p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8 text-balance">
             Let&rsquo;s raise your community&rsquo;s
-            <br />
+            {' '}<br />
             <em className="font-medium text-gold-300">standard.</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            Discover why 42 Chicago-area associations trust Stellar Property
-            Group. A free, no-obligation consultation with our managing partners.
+            Discover why 29 Chicago-area associations trust Stellar Property
+            Management. A free, no-obligation consultation with our managing partners.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link

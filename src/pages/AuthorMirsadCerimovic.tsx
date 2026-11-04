@@ -55,7 +55,7 @@ const focus = [
   },
   {
     title: 'Financial reporting standards',
-    desc: 'Sets and reviews the reporting standard applied to all 42 associations in the portfolio, so treasurers see the same statements in the same format every month.',
+    desc: 'Sets and reviews the reporting standard applied to all 29 associations in the portfolio, so treasurers see the same statements in the same format every month.',
   },
   {
     title: 'Illinois statutory compliance',
@@ -112,7 +112,7 @@ export default function AuthorMirsadCerimovic() {
         },
 
         telephone: '+1-773-728-0652',
-        worksFor: { '@id': 'https://www.stellarpropertygroup.com/#business' },
+        worksFor: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
         sameAs: [LINKEDIN_URL],
         workLocation: {
           '@type': 'Place',
@@ -214,7 +214,7 @@ export default function AuthorMirsadCerimovic() {
     <>
       <SEOHead
         title="Mirsad Cerimovic, CMCA | Founder, Stellar Property Management"
-        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 42 condo, HOA and townhome associations."
+        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 29 condo, HOA and townhome associations."
         canonical={PROFILE_URL}
         ogType="profile"
         ogImage="https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg"
@@ -282,7 +282,7 @@ export default function AuthorMirsadCerimovic() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 In Chicago associations
-                <br />
+                {' '}<br />
                 since <em className="font-medium text-gold-600">1997.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
@@ -298,8 +298,8 @@ export default function AuthorMirsadCerimovic() {
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
                 Starting with a handful of North Side associations, the firm grew
-                through board referrals to the 42 associations and roughly 2,450
-                residences it manages today across Chicago and the North Shore.
+                through board referrals to the 29 associations and approximately
+                1,422 residences it manages today across Chicago and the North Shore.
                 Mirsad still reviews the financial reporting standard applied to
                 every association in the portfolio and leads each incoming board
                 through its transition personally.
@@ -376,7 +376,7 @@ export default function AuthorMirsadCerimovic() {
                     <dt className="text-slate-500 mb-1">Illinois CAM license</dt>
                     <dd className="text-ink">
                       #261000524 · Active
-                      <br />
+                      {' '}<br />
                       <a
                         href="https://online-dfpr.micropact.com/lookup/licenselookup.aspx"
                         target="_blank"
@@ -438,7 +438,7 @@ export default function AuthorMirsadCerimovic() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
                 Verifiable, and
-                <br />
+                {' '}<br />
                 worth <em className="font-medium text-gold-600">verifying.</em>
               </h2>
               <p className="mt-6 text-slate-600 font-light leading-relaxed">
@@ -498,7 +498,7 @@ export default function AuthorMirsadCerimovic() {
           </p>
           <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-14 max-w-2xl">
             Where the principal
-            <br />
+            {' '}<br />
             stays <em className="font-medium text-gold-600">involved.</em>
           </h2>
 
@@ -524,7 +524,7 @@ export default function AuthorMirsadCerimovic() {
               </p>
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
                 Written for Illinois
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">boards.</em>
               </h2>
             </div>
@@ -569,7 +569,7 @@ export default function AuthorMirsadCerimovic() {
             <div className="lg:col-span-7">
               <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-6">
                 Boards speak with the
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-300">principal.</em>
               </h2>
               <p className="text-paper/60 font-light leading-relaxed max-w-xl">

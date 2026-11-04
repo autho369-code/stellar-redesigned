@@ -14,7 +14,7 @@ const whyChoose = [
   },
   {
     title: 'Proven Track Record',
-    description: 'A focused portfolio of 42 associations and 2,450+ residences across Chicago and the North Shore.',
+    description: 'A focused portfolio of 29 associations and approximately 1,422 residences across Chicago and the North Shore.',
   },
   {
     title: 'Transparent Communication',
@@ -100,7 +100,7 @@ export default function NeighborhoodPage() {
     ...(neighborhood.localFaq ?? []),
     {
       q: `Does Stellar Property Management serve ${neighborhood.name}?`,
-      a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 42 associations and 2,450+ residences under management with a 96% client retention rate.`,
+      a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 29 associations and approximately 1,422 residences under management, with a 96% client retention rate since 2007.`,
     },
     {
       q: `What types of community associations does Stellar manage in ${neighborhood.name}?`,
@@ -137,7 +137,7 @@ export default function NeighborhoodPage() {
           name: placeName
         },
         provider: {
-          '@id': 'https://www.stellarpropertygroup.com/#business'
+          '@id': 'https://www.stellarpropertygroup.com/#organization'
         }
       },
       {
@@ -198,7 +198,7 @@ export default function NeighborhoodPage() {
               </p>
               <h1 className="reveal-up reveal-delay-1 font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] mb-10 text-balance">
                 Condo &amp; HOA Management in
-                <br />
+                {' '}<br />
                 <em className="font-medium text-gold-600">{neighborhood.name}{isSuburb ? '' : ','}</em> {isSuburb ? '' : 'Chicago'}
               </h1>
               <div className="reveal-up reveal-delay-2 flex flex-wrap items-center gap-5">
