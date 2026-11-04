@@ -113,12 +113,7 @@ const schema = {
       name: s.title,
       description: s.description,
       url: `https://www.stellarpropertygroup.com${s.href}`,
-      provider: {
-        '@type': 'ProfessionalService',
-        name: 'Stellar Property Management',
-        telephone: '+1-773-728-0652',
-        areaServed: 'Chicago, IL',
-      },
+      provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     },
   })),
 };
