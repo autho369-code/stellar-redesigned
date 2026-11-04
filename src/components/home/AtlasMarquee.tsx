@@ -4,7 +4,7 @@ import { neighborhoods } from '../../data/neighborhoods';
 
 /**
  * The Atlas, in motion — a slow surveyor's tape of every community served,
- * streaming along the hero's base. The 70-area service map is the firm's
+ * streaming along the hero's base. The service-area map is the firm's
  * moat; this makes it visible in the first three seconds. Pure CSS
  * animation (pauses on hover, static under reduced motion).
  */
@@ -28,7 +28,7 @@ export function AtlasMarquee() {
     <div className="relative border-t border-paper/10">
       <Link
         to="/service-areas"
-        aria-label="The Atlas: browse all 70 communities we serve"
+        aria-label={`The Atlas: browse all ${names.length} communities we serve`}
         className="group flex items-center"
       >
         <span className="flex-shrink-0 flex items-center gap-3 pl-5 sm:pl-8 lg:pl-10 pr-8 py-4 relative z-10 bg-ink">
