@@ -8,13 +8,12 @@ Updated: 2026-11-03. Every session reads this first and updates it at the end.
       `src/data/business.ts` — schema, footer, /ai-info and /llms.txt read
       from it. The build fails if "42 associations" or "2,450" come back.
       BBB is NOT linked anywhere (Mirsad's decision Nov 3).
-- [x] Nov 3: validator.schema.org on the live site — home, /ai-info,
-      /contact, /reviews, Glenview: 0 errors. /about had 1 error (worksFor
-      type), fixed in PR #42.
-- [ ] Finish the check (Google blocked more tests with a CAPTCHA on Nov 3):
-      after PR #42 is live, re-test /about, /about/mirsad-cerimovic, /blog,
-      /condo-living, one blog post in validator.schema.org, and the homepage
-      in Google's Rich Results Test (search.google.com/test/rich-results).
+- [x] Nov 3: **schema checked on the live site — all clean.**
+      validator.schema.org: 0 errors, 0 warnings on home, /about, founder
+      page, /ai-info, /contact, /reviews, /services, /blog, /condo-living,
+      Glenview and a blog post (/about's one error fixed in PR #42).
+      Google Rich Results Test, homepage: Local business + Organization
+      valid. (FAQ rich results are not shown for business sites — normal.)
 - [x] Oct 28: **reverse silo applied to all 94 guides** + FAQ schema. Rule:
       every new guide gets an entry in `src/data/post-silos.ts` (one money
       page, max one area page, siblings) — the build checks it.
