@@ -3,6 +3,26 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PRs #49, #50, #51 and #52 merged to `main`** on Mirsad's
+      instruction ("MERGE ALL"): schema price fix, Phase 4, the Search Console
+      pages, and the sales-page homepage. Open PRs: none.
+- [x] Nov 26: **Homepage as a sales page, first pass** (Mirsad: "best designed
+      site and act as a sales page"; he allowed downloads, redesign and push).
+      Branch `sales-homepage`, stacked on `gsc-priority-pages`. Hero now states
+      the offer (from $30 per unit, all-inclusive), one proposal button, the
+      phone number, and the two-business-day promise. New section: three steps
+      from first call to handover, plus a price panel. Reviews moved up.
+- [ ] **Sales-page next passes:** lead form on the homepage; mobile call bar
+      (must not collide with the "Ask Arthur" button, fixed bottom-right);
+      same offer-first header on /pricing, /contact and the service pages.
+      Free GitHub sources looked at for patterns: HyperUI, Page UI. No new
+      dependency was added.
+- [ ] **Kasra Dash video** = "$100 vs $1,000 Local SEO" (YouTube id
+      nYyJ0Y5xq7g, published Nov 25, 2026). The transcript opens through
+      Claude in Chrome (WebFetch is blocked on YouTube). Chapters: the pages
+      you need, the free thing that does most, directories, first real spend,
+      reviews, the $1,000 add-ons, where most of it goes. Mirsad said stop
+      before it was read in full; finish it before writing the plan.
 - [ ] **Kasra Dash plan (Mirsad asked Nov 26).** His Google Maps method, from
       the written case study (YouTube pages could not be opened from the cloud
       session): compare the Google Business Profile primary category with

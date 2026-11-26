@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { PROPOSAL_TURNAROUND } from '../data/ctaPosts';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, MapPin, Mail, Plus } from 'lucide-react';
 import { Reveal } from '../components/ui/Reveal';
@@ -306,7 +307,7 @@ export default function Home() {
         {/* sky-blue glow drawn from the logo tower */}
         <div className="absolute top-0 right-0 w-[50rem] h-[50rem] bg-gold-500/[0.08] rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none" aria-hidden />
 
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-40 lg:pt-48 pb-20">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-28 sm:pt-40 lg:pt-48 pb-20">
           <div className="grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
             {/* Copy */}
             <div className="lg:col-span-7">
@@ -315,41 +316,43 @@ export default function Home() {
                 Condominium &amp; HOA Management · Chicago
               </p>
 
-              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[3rem] leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.5rem] text-paper mb-10 text-balance">
-                The art of a
-                {' '}<br />
-                <em className="font-medium text-gold-300">well-run</em> building.
+              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[2.6rem] leading-[1.05] sm:text-5xl lg:text-6xl xl:text-[4.25rem] text-paper mb-8 text-balance">
+                Condo and HOA management in Chicago, from ${business.priceFrom} per unit a month.
               </h1>
 
               <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-7 max-w-xl">
-                Stellar is a Chicago association management practice for boards
-                that expect more — clearer numbers, calmer meetings, and a
-                building that quietly works.
+                One flat fee, {business.priceTerms}. Your board gets a dedicated
+                manager, monthly board-ready financials, and one phone number
+                that answers building emergencies 24/7.
               </p>
 
-              <p className="reveal-up reveal-delay-2 text-base text-paper/75 font-light leading-relaxed mb-12 max-w-xl">
-                <span className="text-gold-300">We do not manage apartment rentals.</span>{' '}
-                Condominium, HOA and townhome associations are the entire
-                practice — and our principal is a licensed Chicago stationary
-                engineer, so capital planning is read as a building rather than
-                a spreadsheet.
+              <p className="reveal-up reveal-delay-2 text-base text-paper/75 font-light leading-relaxed mb-10 max-w-xl">
+                Condominium, HOA and townhome associations are all we do. We do
+                not manage apartment rentals.
               </p>
 
-              <div className="reveal-up reveal-delay-3 flex flex-wrap items-center gap-5">
+              <div className="reveal-up reveal-delay-3 flex flex-wrap items-center gap-x-7 gap-y-5">
                 <Link
-                  to="/contact"
-                  className="group inline-flex items-center gap-3 bg-paper text-ink hover:bg-gold-300 font-semibold px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+                  to="/contact?source=home-hero"
+                  data-proposal-cta="hero"
+                  data-proposal-page="/"
+                  className="group inline-flex items-center gap-3 bg-gold-300 text-ink hover:bg-paper font-semibold px-9 py-4 transition-colors duration-300 text-base"
                 >
-                  Request a Proposal
+                  Request a flat-fee proposal
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-                <Link
-                  to="/services"
-                  className="inline-flex items-center gap-3 border border-paper/30 text-paper hover:border-gold-300 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+                <a
+                  href={business.phoneHref}
+                  data-track-location="hero"
+                  className="inline-flex items-center gap-3 text-paper hover:text-gold-300 font-medium text-lg transition-colors duration-300"
                 >
-                  Explore the Practice
-                </Link>
+                  <Phone className="w-5 h-5 text-gold-300" aria-hidden />
+                  Call {business.phoneDisplay}
+                </a>
               </div>
+              <p className="reveal-up reveal-delay-3 mt-6 text-sm text-paper/60">
+                You get a written proposal{PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. No obligation.
+              </p>
             </div>
 
             {/* Arch-topped architectural photo */}
@@ -408,6 +411,82 @@ export default function Home() {
           {['CAI Member', 'CAI Illinois Chapter', 'Illinois Licensed CAM Firm', 'Serving Chicago Since 2007'].map((c) => (
             <span key={c} className="text-[10px] uppercase tracking-luxe text-slate-600">{c}</span>
           ))}
+        </div>
+      </section>
+
+      {/* ── Offer: what happens after a board asks ───────────── */}
+      <section className="py-20 lg:py-28 bg-paper" aria-labelledby="home-offer">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-7">
+              <h2 id="home-offer" className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-10 text-balance">
+                From first call to a managed building
+              </h2>
+              <ol className="border-t border-slate-200">
+                {[
+                  ['Tell us about your building', 'Unit count, age, amenities and what is not working today. A call or the short form is enough.'],
+                  ['Get a written flat-fee proposal', `We send it${PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. It lists the scope and one monthly fee, so your board can compare it line by line.`],
+                  ['We run the handover', 'After your board signs, the move from your current manager is a managed 30 to 60 day transition.'],
+                ].map(([title, body], index) => (
+                  <li key={title} className="grid grid-cols-[3rem_1fr] gap-x-5 border-b border-slate-200 py-7">
+                    <span className="font-display text-3xl font-light text-gold-600" aria-hidden>{index + 1}</span>
+                    <div>
+                      <h3 className="font-display text-xl text-ink mb-2">{title}</h3>
+                      <p className="text-slate-600 font-light leading-relaxed max-w-xl">{body}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <aside className="lg:col-span-5 bg-ink text-paper p-9 lg:p-11" aria-label="Pricing">
+              <p className="font-display font-light text-6xl lg:text-7xl text-gold-300 leading-none">${business.priceFrom}</p>
+              <p className="mt-3 text-lg text-paper">per unit per month, to start</p>
+              <p className="mt-6 text-paper/75 font-light leading-relaxed">
+                A flat fee, {business.priceTerms}. It is never a percentage of your budget. Contractors,
+                engineers, attorneys and permits stay association expenses.
+              </p>
+              <div className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4">
+                <Link
+                  to="/contact?source=home-offer"
+                  data-proposal-cta="offer"
+                  data-proposal-page="/"
+                  className="inline-flex items-center gap-3 bg-gold-300 text-ink hover:bg-paper font-semibold px-8 py-4 transition-colors duration-300"
+                >
+                  Request a flat-fee proposal
+                </Link>
+                <Link to="/pricing" className="text-paper underline underline-offset-4 hover:text-gold-300">How pricing works</Link>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Testimonials ─────────────────────────────────────── */}
+      <section className="py-28 lg:py-36 bg-paper">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <Reveal className="text-center max-w-2xl mx-auto mb-20">
+            <Eyebrow center>In Their Words</Eyebrow>
+            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
+              Boards that raised
+              {' '}<br />
+              their <em className="font-medium text-gold-500">standard.</em>
+            </h2>
+          </Reveal>
+
+          <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
+            {testimonials.map(({ quote, name, community, area }) => (
+              <figure key={area} className="bg-paper p-10 lg:p-12 flex flex-col">
+                <span className="font-display text-7xl leading-none text-gold-400 select-none -ml-1" aria-hidden>&ldquo;</span>
+                <blockquote className="font-display italic font-light text-xl text-ink leading-relaxed mt-3 mb-10 flex-1">
+                  {quote}
+                </blockquote>
+                <figcaption className="pt-6 border-t border-slate-200">
+                  <p className="text-sm font-semibold text-ink">{name}</p>
+                  <p className="text-[10px] uppercase tracking-luxe text-gold-600 mt-1.5">{community} · {area}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -525,35 +604,6 @@ export default function Home() {
                 <h3 className="font-display text-2xl text-ink mb-4">{title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-light">{desc}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Testimonials ─────────────────────────────────────── */}
-      <section className="py-28 lg:py-36 bg-paper">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <Reveal className="text-center max-w-2xl mx-auto mb-20">
-            <Eyebrow center>In Their Words</Eyebrow>
-            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08]">
-              Boards that raised
-              {' '}<br />
-              their <em className="font-medium text-gold-500">standard.</em>
-            </h2>
-          </Reveal>
-
-          <div className="grid lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
-            {testimonials.map(({ quote, name, community, area }) => (
-              <figure key={area} className="bg-paper p-10 lg:p-12 flex flex-col">
-                <span className="font-display text-7xl leading-none text-gold-400 select-none -ml-1" aria-hidden>&ldquo;</span>
-                <blockquote className="font-display italic font-light text-xl text-ink leading-relaxed mt-3 mb-10 flex-1">
-                  {quote}
-                </blockquote>
-                <figcaption className="pt-6 border-t border-slate-200">
-                  <p className="text-sm font-semibold text-ink">{name}</p>
-                  <p className="text-[10px] uppercase tracking-luxe text-gold-600 mt-1.5">{community} · {area}</p>
-                </figcaption>
-              </figure>
             ))}
           </div>
         </div>
