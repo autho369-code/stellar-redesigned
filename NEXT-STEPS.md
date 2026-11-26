@@ -3,6 +3,19 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #59 merged** ("MERGE 59"); live check passed.
+- [x] Nov 26: **Design pass 1, homepage** (branch `design-pass-1`), from a
+      full-page review: removed "The first ninety days" (it repeated the new
+      three steps; its switching-guide link moved under the steps), and the
+      closing section now asks for the proposal with the price sentence, a
+      tracked button (`?source=home-final`) and a tap-to-call link. The old
+      "managing partners, not a sales team" line is gone.
+- [ ] **Design pass, still to review with full-page screenshots:** /pricing,
+      a service page, an upgraded area page, /contact, a guide. Known
+      homepage leftovers: the page is still long (about 11,500 px); small pale
+      body text in places; no lead form on the homepage itself.
+- Screenshot helper used in this session: Playwright with
+  `/usr/bin/google-chrome` against `vite preview` on port 4173.
 - [x] Nov 26: **PR #58 merged** ("MERGE 58"); live check passed.
 - [x] Nov 26: **Phone call bar** (branch `mobile-call-bar`):
       `src/components/MobileCallBar.tsx`, fixed to the bottom on phones, "Call"
