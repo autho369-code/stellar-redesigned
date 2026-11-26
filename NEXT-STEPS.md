@@ -3,6 +3,19 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **"Phase 1 fixes, round 2" (Mirsad's file, from a 3:20 AM live
+      check).** Part B (proposal blocks on five guides + /resources) was
+      already live since PR #51. Part A done on branch
+      `pricing-wording-everything-included`: the public wording is now
+      exactly "starting at $30 per unit per month, everything included, with
+      no extra fees". **Never write "all-inclusive".** `business.priceTerms`
+      holds it; 31 hard-coded $30 sentences got the phrase; the mid block
+      again ends "as a customized flat fee, never a percentage of your
+      budget." Each price sentence is ONE text node (a template string), so
+      view-source shows the phrase unbroken. Keep it that way: text + `{value}`
+      in JSX is split by `<!-- -->` in the prerendered HTML.
+- Not changed on purpose: title tags, meta descriptions (155-character
+  limit), link labels such as "See pricing from $30 per unit".
 - [x] Nov 26: **Five more upgraded area pages, picked from Search Console
       demand:** Avondale, River North, Morton Grove, Evanston, Glenview
       (flagship). In PR #53 with the offer line. 14 upgraded pages in total.

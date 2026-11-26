@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'How much does North Shore association management cost?',
-    a: 'Management starts at $30 per unit per month. Each association receives a flat monthly proposal based on its size, amenities, staffing, financial complexity, and service scope. Stellar does not add a separate capital-project planning or management-oversight fee. Third-party professional and contractor costs remain association expenses.',
+    a: 'Management starts at $30 per unit per month, everything included, with no extra fees. Each association receives a flat monthly proposal based on its size, amenities, staffing, financial complexity, and service scope. Stellar does not add a separate capital-project planning or management-oversight fee. Third-party professional and contractor costs remain association expenses.',
   },
   {
     q: 'Does Stellar manage both condominiums and townhome communities?',
@@ -190,7 +190,7 @@ export default function NorthShorePage() {
           <div className="lg:col-span-5">
             <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" />Transparent by Design</p>
             <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-7">A clear fee model for <em className="font-medium text-gold-600">board planning.</em></h2>
-            <p className="text-lg text-slate-600 font-light leading-relaxed mb-8">Management starts at $30 per unit per month. Capital-project planning and management oversight are not billed as a separate Stellar fee.</p>
+            <p className="text-lg text-slate-600 font-light leading-relaxed mb-8">Management starts at $30 per unit per month, everything included, with no extra fees. Capital-project planning and management oversight are not billed as a separate Stellar fee.</p>
             <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Review pricing and inclusions <ArrowRight className="w-4 h-4" /></Link>
           </div>
           <div className="lg:col-span-6 lg:col-start-7 bg-ivory-100 border border-slate-200 p-9 lg:p-11">

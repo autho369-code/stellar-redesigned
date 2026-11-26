@@ -175,7 +175,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <h2>What does it cost?</h2>
 
-      <p>Our <a href="/services/small-condo-association-management">small condo association management</a> starts at $30 per unit per month as a flat monthly proposal, covering finances, vendors, maintenance, compliance, owner communication and board continuity. The final fee depends on the building, and the proposal states the exact scope. Many small associations find that professional collections and vendor pricing offset part of the fee, but that depends on the building, so ask for a written proposal and compare it honestly.</p>
+      <p>Our <a href="/services/small-condo-association-management">small condo association management</a> starts at $30 per unit per month, everything included, with no extra fees, as a flat monthly proposal, covering finances, vendors, maintenance, compliance, owner communication and board continuity. The final fee depends on the building, and the proposal states the exact scope. Many small associations find that professional collections and vendor pricing offset part of the fee, but that depends on the building, so ask for a written proposal and compare it honestly.</p>
 
       <h2>How should a small board decide?</h2>
 
@@ -292,7 +292,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'chicago-condo-management-cost',
     title: 'What Condo Management Costs in Chicago — and What Drives the Fee',
     metaDescription:
-      'How Chicago condo and HOA management fees are built: per-unit pricing, building systems, staffing, meetings and hidden add-ons. Stellar starts at $30 per unit per month, flat.',
+      'How Chicago condo and HOA management fees are built: per-unit pricing, building systems, staffing, meetings and hidden add-ons. Stellar starts at $30 per unit per month, everything included, with no extra fees, flat.',
     date: '2026-11-28',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -322,7 +322,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <h2>What does Stellar charge?</h2>
 
-      <p>Our management starts at <strong>$30 per unit per month</strong>, quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. Details are on our <a href="/pricing">management pricing</a> page.</p>
+      <p>Our management starts at <strong>$30 per unit per month, everything included, with no extra fees</strong>, quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. Details are on our <a href="/pricing">management pricing</a> page.</p>
 
       <h2>Is the cheapest proposal the best value?</h2>
 

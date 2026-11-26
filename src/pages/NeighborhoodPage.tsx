@@ -133,7 +133,7 @@ export default function NeighborhoodPage() {
     },
     {
       q: `How much does association management cost in ${neighborhood.name}?`,
-      a: `Stellar management starts at $30 per unit per month. We quote a customized flat monthly fee based on your ${neighborhood.name} association's size, amenities, staffing, financial complexity, and service scope — never a percentage of your budget. We do not add a separate capital-project planning or management-oversight fee. Third-party professional and contractor costs remain association expenses.`,
+      a: `Stellar management starts at $30 per unit per month, everything included, with no extra fees. We quote a customized flat monthly fee based on your ${neighborhood.name} association's size, amenities, staffing, financial complexity, and service scope — never a percentage of your budget. We do not add a separate capital-project planning or management-oversight fee. Third-party professional and contractor costs remain association expenses.`,
     },
     {
       q: `How do we switch our ${neighborhood.name} association to Stellar?`,

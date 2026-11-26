@@ -24,7 +24,7 @@ const fit = [
   'A dedicated manager and direct board communication',
   'Full-service financial, governance, maintenance, and owner support',
   'AppFolio portals for payments, documents, requests, and reporting',
-  'Flat-fee proposals starting at $30 per unit per month',
+  'Flat-fee proposals starting at $30 per unit per month, everything included, with no extra fees',
   'A managed transition from self-management or another company',
 ];
 

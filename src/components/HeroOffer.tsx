@@ -19,8 +19,7 @@ export default function HeroOffer({ className = 'mt-7' }: { className?: string }
         Call {business.phoneDisplay}
       </a>
       <span>
-        Written flat-fee proposal{PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. From ${business.priceFrom} per unit
-        per month, {business.priceTerms}.
+        {`Written flat-fee proposal${PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. Pricing starts at $${business.priceFrom} per unit per month, ${business.priceTerms}.`}
       </span>
     </p>
   );
