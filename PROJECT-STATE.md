@@ -19,6 +19,15 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (area pages batch 3: eight pages)
+
+Branch `area-pages-batch-3`. `src/data/areas/{old-town,highland-park,northbrook,
+albany-park,north-park,bucktown,streeterville,lincolnwood}.ts`. Same rules as
+before: no managed counts, every issue rests on a linked guide, Cook County
+content only where the place is in Cook County (not Highland Park). Edgewater,
+River North, Evanston, Morton Grove and Northbrook got extra page-specific
+lines so all pairs stay within the limit.
+
 ## Status update — 2026-11-26 (pricing wording: "everything included, with no extra fees")
 
 Branch `pricing-wording-everything-included`. The owner's round-2 fix file

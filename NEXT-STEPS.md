@@ -3,6 +3,15 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #56 merged** ("MERGE 56"); the live-site check ran on
+      GitHub against the real site and passed.
+- [x] Nov 26: **Eight more upgraded area pages** (branch `area-pages-batch-3`):
+      Old Town, Highland Park, Northbrook, Albany Park, North Park, Bucktown,
+      Streeterville, Lincolnwood. 22 of 43 area pages are upgraded: every page
+      with 50 or more impressions in 3 months. The other 21 are the weak pages
+      (merge only on Mirsad's word).
+- Uniqueness is tight: closest pair is 35.0% (limit 35%). Any new or edited
+  suburb page needs its own text, not shared wording.
 - [x] Nov 26: **PR #55 merged** on Mirsad's word ("MERGE ... 55") and checked
       live with a cache-busted fetch: exact price wording on the homepage,
       /pricing, both service money pages, Wilmette, guides and /resources.
