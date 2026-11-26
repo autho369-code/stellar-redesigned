@@ -1,3 +1,4 @@
+import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
@@ -80,6 +81,7 @@ export default function ViolationManagement() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
+          <HeroOffer />
         </div>
       </section>
 

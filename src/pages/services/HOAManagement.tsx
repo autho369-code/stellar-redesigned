@@ -1,3 +1,4 @@
+import HeroOffer from '../../components/HeroOffer';
 import { business } from '../../data/business';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
@@ -135,6 +136,7 @@ export default function HOAManagement() {
               See pricing from $30 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+          <HeroOffer />
         </div>
       </section>
 

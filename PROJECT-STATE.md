@@ -19,6 +19,15 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (offer line on service, pricing and contact pages)
+
+Branch `sales-service-pages`, based on `main` after PRs #49 to #52 went live.
+`HeroOffer` puts one identical line under the hero buttons: "Call
+773-728-0652" (tap-to-call, tracked as location "hero"), "Written flat-fee
+proposal within two business days", and the starting fee with the owner
+wording. On nine service pages, /pricing and /contact. All values come from
+`business.ts` and `PROPOSAL_TURNAROUND`.
+
 ## Status update — 2026-11-26 (homepage as a sales page, first pass)
 
 Branch `sales-homepage`. **Merged to `main` on 2026-11-26 ("MERGE ALL"),

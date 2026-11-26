@@ -1,3 +1,4 @@
+import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check, Phone } from 'lucide-react';
@@ -150,6 +151,7 @@ export default function Pricing() {
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-3"><strong className="font-medium text-ink">Pricing starts at $30 per unit per month.</strong> Your final price is a property-specific flat monthly fee based on the agreed management scope.</p>
               <p className="text-sm text-slate-500 leading-relaxed mb-8">No percentage-of-budget pricing and no separate capital-project oversight fee.</p>
               <Link to="/contact?inquiry=quote&source=pricing" className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-8 py-4 text-sm font-medium transition-colors">Request Your Exact Quote <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
+              <HeroOffer className="mt-6" />
             </div>
           </div>
         </div>
