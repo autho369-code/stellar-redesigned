@@ -40,7 +40,7 @@ export const evanston: AreaContent = {
     {
       title: 'Insurance renewal',
       body:
-        'Renewal goes better when the association brings organized documents, finished maintenance and an explanation of past losses. A late, bare application gives the board little room.',
+        'Renewal goes better when the association brings organized documents, finished maintenance and an explanation of past losses. A late, bare application gives the board little room. A lakefront building should describe any water or wind history plainly.',
       post: 'condo-hoa-insurance-renewal-checklist',
       linkText: 'a board checklist for insurance renewal',
     },
@@ -54,7 +54,7 @@ export const evanston: AreaContent = {
     {
       title: 'Running a clean election',
       body:
-        'Contested elections tend to fail on process: a proxy form that names only incumbents, a deadline no one announced, a count no candidate could observe. Fix the calendar and the forms first.',
+        'Contested elections tend to fail on process: a proxy form that names only incumbents, a deadline no one announced, a count no candidate could observe. Fix the calendar and the forms first. Publish the rules for proxies and ballots before nominations open.',
       post: 'illinois-condo-board-elections-proxies-ballots',
       linkText: 'Illinois condo board elections, proxies and ballots',
     },

@@ -54,11 +54,11 @@ export const mortonGrove: AreaContent = {
       linkText: 'adopting the annual budget step by step',
     },
     {
-      title: 'Condominium or common interest community',
+      title: 'Bids for roofs and masonry',
       body:
-        'Many townhome and homeowner associations fall under the Common Interest Community Association Act and not the Condominium Property Act. The declaration says which. Check it before the board borrows a meeting or election rule from a neighboring association.',
-      post: 'which-illinois-law-governs-condo-hoa-townhome',
-      linkText: 'telling the two Illinois statutes apart',
+        'A phased project still needs bids the board can compare. Use one written scope and one insurance standard for every contractor, and keep the bid sheets with the minutes.',
+      post: 'condo-hoa-vendor-rfp-checklist',
+      linkText: 'comparing contractor bids on capital work',
     },
   ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
@@ -77,9 +77,9 @@ export const mortonGrove: AreaContent = {
       post: 'fannie-freddie-condo-reserve-15-percent-2027',
     },
     {
-      q: 'Does the Condominium Property Act apply to a homeowners association?',
-      a: 'Often it does not. Many homeowner and townhome associations are governed by the Common Interest Community Association Act. Your recorded declaration shows which statute applies.',
-      post: 'which-illinois-law-governs-condo-hoa-townhome',
+      q: 'How does a Morton Grove board compare roofing or masonry bids?',
+      a: 'Give each contractor the same written scope and the same insurance requirements, so every price describes the same job. Record why the board chose the winner.',
+      post: 'condo-hoa-vendor-rfp-checklist',
     },
     {
       q: 'How far ahead should a board plan a roof or masonry project?',

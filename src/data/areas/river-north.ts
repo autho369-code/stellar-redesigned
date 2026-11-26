@@ -20,7 +20,7 @@ export const riverNorth: AreaContent = {
     {
       name: 'Converted loft buildings',
       detail:
-        'Brick-and-timber warehouses with exposed timber, original masonry and freight-elevator retrofits. Their upkeep is its own discipline.',
+        'Brick-and-timber warehouses with exposed timber, original masonry and freight-elevator retrofits. Their upkeep is its own discipline. Timber, old brick and freight elevators each need a contractor who knows them.',
     },
   ],
   issues: [
@@ -28,14 +28,14 @@ export const riverNorth: AreaContent = {
     {
       title: 'Short-term rentals',
       body:
-        'Chasing short-term rentals unit by unit, with notices and fines, is slow. The City of Chicago keeps a prohibited-buildings list that covers a whole building at once, and few associations use it.',
+        'Chasing short-term rentals unit by unit, with notices and fines, is slow. The City of Chicago keeps a prohibited-buildings list that covers a whole building at once, and few associations use it. Tell owners and agents about the building’s status, so listings stop before they start.',
       post: 'chicago-condo-short-term-rental-prohibited-buildings-list',
       linkText: 'Chicago’s prohibited-buildings list for short-term rentals',
     },
     {
       title: 'EV charging requests',
       body:
-        'Requests for EV charging are reaching Illinois associations. A board that writes its process once can answer each new request in weeks, not months.',
+        'Requests for EV charging are reaching Illinois associations. A board that writes its process once can answer each new request in weeks, not months. In a tower garage, the electrical capacity question should be answered once for the whole building.',
       post: 'illinois-condo-hoa-ev-charging-board-process',
       linkText: 'a board process for EV charging requests',
     },
@@ -49,7 +49,7 @@ export const riverNorth: AreaContent = {
     {
       title: 'Borrowing for a large project',
       body:
-        'A lender underwrites an association loan on assessment income and on how the association is governed. The board can strengthen both in the months before it applies.',
+        'A lender underwrites an association loan on assessment income and on how the association is governed. The board can strengthen both in the months before it applies. Loft buildings with timber and masonry work ahead should start that preparation early.',
       post: 'condo-hoa-capital-project-loan-preparation',
       linkText: 'getting an association ready for a project loan',
     },
