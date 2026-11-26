@@ -1,3 +1,4 @@
+import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
@@ -83,6 +84,7 @@ export default function TownhomeManagement() {
               See pricing from $30 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+          <HeroOffer />
         </div>
       </section>
 

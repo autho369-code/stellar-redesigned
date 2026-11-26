@@ -1,3 +1,4 @@
+import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check } from 'lucide-react';
@@ -78,6 +79,7 @@ export default function HighRiseManagement() {
             <Link to="/contact?inquiry=quote&source=high-rise-service" className="inline-flex items-center gap-3 bg-ink px-9 py-4 text-sm font-medium text-paper transition-colors hover:bg-navy-700">Request a High-Rise Consultation <ArrowRight className="h-4 w-4" /></Link>
             <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">See transparent pricing <ArrowRight className="h-4 w-4" /></Link>
           </div>
+          <HeroOffer />
         </div>
       </section>
 

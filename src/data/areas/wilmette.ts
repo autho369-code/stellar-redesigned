@@ -15,7 +15,7 @@ export const wilmette: AreaContent = {
     {
       name: 'Vintage condominium buildings near the village center',
       detail:
-        'Compact buildings around the Metra corridor. Older masonry, roofing, windows, drainage and mechanical systems drive the reserve plan.',
+        'Compact buildings around the Metra corridor. Older masonry, roofing, windows, drainage and mechanical systems drive the reserve plan. A compact site also means contractors need clear rules for parking, staging and working hours.',
     },
     {
       name: 'Townhome communities',
@@ -35,7 +35,7 @@ export const wilmette: AreaContent = {
     {
       title: 'Snow and ice contracts',
       body:
-        'Snow contracts are signed in early fall and tested on a January morning. The more specific the written contract, the fewer arguments during a storm.',
+        'Snow contracts are signed in early fall and tested on a January morning. The more specific the written contract, the fewer arguments during a storm. Walks to the Metra and shared drives deserve their own line in the scope.',
       post: 'illinois-condo-hoa-snow-removal-vendor-guide',
       linkText: 'snow and ice vendor oversight for Illinois associations',
     },
@@ -49,7 +49,7 @@ export const wilmette: AreaContent = {
     {
       title: 'Comparable vendor bids',
       body:
-        'Bids only compare when every vendor prices the same written scope. For shared roofs, siding or drives, one scope and one insurance standard keep three bids from describing three different projects.',
+        'Bids only compare when every vendor prices the same written scope. For shared roofs, siding or drives, one scope and one insurance standard keep three bids from describing three different projects. File the bid sheets with the minutes, so the next board can see why a contractor was chosen.',
       post: 'condo-hoa-vendor-rfp-checklist',
       linkText: 'the vendor RFP checklist for boards',
     },
@@ -80,6 +80,11 @@ export const wilmette: AreaContent = {
       q: 'When should an association sign its snow contract?',
       a: 'Before the season. Contracts are commonly signed in September, well ahead of the first storm, with the scope written out in detail.',
       post: 'illinois-condo-hoa-snow-removal-vendor-guide',
+    },
+    {
+      q: 'Can a Wilmette board see the fee before it commits to anything?',
+      a: 'Yes. We send a written proposal with one flat monthly fee and a defined scope before your board decides anything.',
+      post: 'score-condo-hoa-management-proposals',
     },
   ],
   hasHighRises: false,

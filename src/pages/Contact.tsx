@@ -1,3 +1,4 @@
+import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight } from 'lucide-react';
@@ -104,6 +105,7 @@ export default function Contact() {
                 In a focused 20-minute conversation, we will review your
                 association&rsquo;s current management concerns, timing, and priorities.
               </p>
+              <HeroOffer className="mt-6" />
             </div>
           </div>
         </div>

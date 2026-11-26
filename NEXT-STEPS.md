@@ -3,6 +3,34 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Five more upgraded area pages, picked from Search Console
+      demand:** Avondale, River North, Morton Grove, Evanston, Glenview
+      (flagship). In PR #53 with the offer line. 14 upgraded pages in total.
+      Homepage title tag now "Stellar Property Management, Chicago | Condo &
+      HOA from $30". Numbers: `docs/gsc-area-pages-2026-11-26.md`.
+- [ ] **Area pages still on the old template with real demand:** Old Town
+      (249 impressions), Highland Park, Northbrook, Albany Park, North Park,
+      Bucktown, Streeterville, Lincolnwood.
+- [ ] **22 weak area pages** (333 impressions, 2 clicks in 3 months): merge
+      into stronger neighbors only on Mirsad's word.
+- Uniqueness note: suburb pages share a lot of template text. Similarity is
+  shared / smaller page, so adding real text to the SHORTER page of a pair is
+  what lowers it.
+- [x] Nov 26: **Kasra Dash video read in full** ("$100 vs $1,000 Local SEO",
+      Nov 25, 2026). Plan written as a Claude Doc:
+      https://claude.ai/artifact/7eYcgtmmbWjxwEKdAaMRC6 . His core rule: every
+      service on the Google profile has its own page on the site, and
+      directories, social pages and other sites tell the same story.
+- [x] Nov 26: **Offer line on the sales pages.** Branch `sales-service-pages`:
+      `src/components/HeroOffer.tsx` (tap-to-call, proposal promise, starting
+      fee) under the hero buttons of nine service pages, /pricing and
+      /contact. Resale disclosures page left as is (it serves sellers).
+- [ ] **From the Kasra plan, for Claude:** Google profile pack (service list
+      + descriptions matched to the 10 service pages); directory pack with a
+      different description each; count the Chicago map top three's reviews in
+      the last 3 months; four posts (LinkedIn, X, Facebook, Medium); list of
+      area pages with no searches. Nothing is posted or submitted without
+      Mirsad's OK. No BBB.
 - [x] Nov 26: **PRs #49, #50, #51 and #52 merged to `main`** on Mirsad's
       instruction ("MERGE ALL"): schema price fix, Phase 4, the Search Console
       pages, and the sales-page homepage. Open PRs: none.
