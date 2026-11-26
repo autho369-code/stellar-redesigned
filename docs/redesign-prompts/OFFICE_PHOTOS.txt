@@ -1,0 +1,3 @@
+Office photos (not inside this zip) live at:
+/workspace/stellar/redesign/assets/
+See SOURCES.md in that folder for URLs and usage notes.

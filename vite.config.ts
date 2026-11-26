@@ -1,5 +1,6 @@
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
+import { visualizer } from 'rollup-plugin-visualizer';
 import { getChicagoPublicationDate } from './scripts/publication-date.mjs';
 
 /**
@@ -97,6 +98,8 @@ function stripUnpublishedArticleContent(cutoff: string): Plugin {
 // https://vitejs.dev/config/
 export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
+    // R0: `npm run build:stats` writes stats.html with the gzip size of every chunk.
+    ...(process.env.ANALYZE ? [visualizer({ filename: 'stats.html', gzipSize: true }) as Plugin] : []),
     react(),
     ...(isSsrBuild ? [] : [stripUnpublishedArticleContent(getChicagoPublicationDate())]),
   ],

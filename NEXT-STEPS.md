@@ -3,6 +3,21 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #60 merged** ("MERGE 60"); live check passed.
+- [x] Nov 26: **Redesign program R0 to R9** (Mirsad's zip; prompts saved in
+      `docs/redesign-prompts/`, read `00_CONTEXT_BLOCK.md` first). One phase =
+      one branch = one PR. **R0 built** on branch `r0-safety-net`: Playwright
+      tests (150-URL fixture, tracking events, screenshots, axe), Lighthouse
+      CI and a bundle report, all run on each Vercel preview by
+      `.github/workflows/preview-checks.yml`. Baseline in `docs/r0-baseline.md`.
+      Still open in R0: the contact-form submit test (must mock the request).
+- [ ] **Next: R1** (brand config and tokens: everything brand-related comes
+      from `src/brand/brand.config.ts` + CSS variables). Then R2 ... R9 in order.
+- New approved facts from the zip: founded 2007; "No long-term contracts —
+  cancel with 60 days notice."; case study 6150 N Kenmore roof replacement
+  saved the association $150,000 (no other details may be invented). Office
+  photos are NOT in this workspace (`/workspace/stellar/redesign/assets/`
+  does not exist here); ask Mirsad to attach them when R3/R8 need them.
 - [x] Nov 26: **PR #59 merged** ("MERGE 59"); live check passed.
 - [x] Nov 26: **Design pass 1, homepage** (branch `design-pass-1`), from a
       full-page review: removed "The first ninety days" (it repeated the new

@@ -24,3 +24,6 @@ dist-ssr
 .claude/
 .vercel
 .env*
+
+test-results/
+stats.html

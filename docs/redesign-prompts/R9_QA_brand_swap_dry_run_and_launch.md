@@ -1,0 +1,10 @@
+PASTE FROM HERE (after the CONTEXT BLOCK)
+
+# R9 — QA, brand-swap dry run, launch checklist
+
+1. **Full regression.** Run the R0 suite (150-URL inventory, tracking, axe, visual) and Lighthouse CI; run `npx unlighthouse --site <preview-url>` and attach the summary. Every template: perf ≥ 90 mobile, a11y ≥ 95, SEO 100, CLS ≤ 0.05.
+2. **SEO diff report.** For all existing 150 URLs, a table of old vs new title, meta description, H1, canonical, robots, JSON-LD types and internal-link count. Any unexpected difference on those URLs blocks launch. The new `/case-studies/6150-n-kenmore-roof` URL should be in the sitemap and return 200.
+3. **Brand-swap dry run (preview branch only, never merged).** On a throwaway branch, change `brand.config.ts` to a fictional brand ("Northline Association Management", placeholder logo, `data-brand="preview-alt"` palette, different phone/email) and deploy a preview. Confirm: no "Stellar" string remains in rendered HTML, head tags, JSON-LD, `llms.txt`, sitemap, OG images or emails from the form; list every file that had to change beyond the config (target: zero). Delete the branch after Jojo has seen it.
+4. **Google checks** (Jojo or an approved helper does these after launch): Rich Results Test on home, a service page, a post and an FAQ page; Search Console → URL Inspection → Request indexing for `/`, `/pricing`, `/reviews`, the two main service pages; watch Search Console Coverage and Core Web Vitals for 28 days.
+5. **Rollback plan.** Note the current production deployment ID before promoting; if anything breaks, use Vercel "Instant Rollback" to it.
+6. **Launch notes for Jojo** in plain language: what changed, what to look at, and what still needs his input (team headshots and credentials, a new storefront photo if he does not want to use the June 2019 Street View, optional extra details for the Kenmore case study, whether to show the star rating, Meho's brand assets when ready). Founding year (2007), the 60-day cancellation line, and the Kenmore $150,000 roof result are already approved — do not re-ask.

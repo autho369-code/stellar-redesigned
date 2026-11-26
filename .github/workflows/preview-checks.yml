@@ -1,0 +1,53 @@
+name: Preview checks (R0 safety net)
+
+# Runs when Vercel finishes a preview deploy of the website project. Tests the
+# preview itself: all 150 URLs, tracking events, screenshots, accessibility
+# report and Lighthouse (warnings only). Read-only.
+on:
+  deployment_status:
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview – stellar-redesigned'
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: ${{ github.event.deployment_status.environment_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-results
+          path: test-results/
+          retention-days: 14
+
+  lighthouse:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview – stellar-redesigned'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+      - uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./lighthouserc.json
+          temporaryPublicStorage: true
+          urls: |
+            ${{ github.event.deployment_status.environment_url }}/
+            ${{ github.event.deployment_status.environment_url }}/pricing
+            ${{ github.event.deployment_status.environment_url }}/services/condominium-management
+            ${{ github.event.deployment_status.environment_url }}/property-management-wilmette
+            ${{ github.event.deployment_status.environment_url }}/blog/switch-condo-management-companies-chicago
+            ${{ github.event.deployment_status.environment_url }}/contact
