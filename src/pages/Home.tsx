@@ -65,21 +65,6 @@ const contrasts = [
   { them: 'Quarterly boilerplate reports', us: 'Real-time portals and board-ready monthly financials' },
 ];
 
-const onboarding = [
-  {
-    step: '01', title: 'The Proposal',
-    desc: 'A private walk-through of your property, a review of financials and governing documents, and a bespoke management scope — never a one-size-fits-all package.',
-  },
-  {
-    step: '02', title: 'The Transition',
-    desc: 'A managed 30–60 day handover. We retrieve records, migrate banking and vendor relationships, and brief every stakeholder — your board lifts a finger only to sign.',
-  },
-  {
-    step: '03', title: 'The Standard',
-    desc: 'Your dedicated manager is live, portals are open, and the first monthly report arrives on schedule. From here, the standard only rises.',
-  },
-];
-
 const testimonials = [
   {
     quote: 'Financial reports provided are detailed and copies of each monthly invoice received.',
@@ -435,6 +420,11 @@ export default function Home() {
                   </li>
                 ))}
               </ol>
+              <p className="mt-6 text-sm">
+                <Link to="/blog/switch-condo-management-companies-chicago" className="text-gold-600 underline underline-offset-4 hover:text-gold-500">
+                  How a switch to a new manager works, step by step
+                </Link>
+              </p>
             </div>
             <aside className="lg:col-span-5 bg-ink text-paper p-9 lg:p-11" aria-label="Pricing">
               <p className="font-display font-light text-6xl lg:text-7xl text-gold-300 leading-none">${business.priceFrom}</p>
@@ -567,41 +557,6 @@ export default function Home() {
                   Discover <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── The first ninety days ────────────────────────────── */}
-      <section className="py-28 lg:py-36 bg-ivory-100 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-          <Reveal className="max-w-2xl mb-20">
-            <Eyebrow>White-Glove Onboarding</Eyebrow>
-            <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-6">
-              The first <em className="font-medium text-gold-500">ninety days.</em>
-            </h2>
-            <p className="text-lg text-slate-600 font-light leading-relaxed">
-              Boards stay with bad management out of fear of the transition. We
-              removed the fear.
-            </p>
-            <Link
-              to="/blog/switch-condo-management-companies-chicago"
-              className="mt-6 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
-            >
-              Read the Chicago board&rsquo;s switching guide <ArrowRight className="w-4 h-4" />
-            </Link>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">
-            <div className="hidden md:block absolute top-8 left-[17%] right-[17%] h-px bg-gold-300" aria-hidden />
-            {onboarding.map(({ step, title, desc }) => (
-              <div key={step} className="relative">
-                <div className="w-16 h-16 rounded-full border border-gold-500 bg-ivory-100 text-gold-600 font-display italic text-lg flex items-center justify-center mb-8 relative z-10">
-                  {step}
-                </div>
-                <h3 className="font-display text-2xl text-ink mb-4">{title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed font-light">{desc}</p>
-              </div>
             ))}
           </div>
         </div>
@@ -861,29 +816,28 @@ export default function Home() {
           <Reveal>
           <Eyebrow light center>A Private Consultation</Eyebrow>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-[4.25rem] leading-[1.05] mb-10 text-balance">
-            Raise the standard
-            {' '}<br />
-            of <em className="font-medium text-gold-300">home.</em>
+            Get your written flat-fee proposal.
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-14 max-w-2xl mx-auto">
-            Speak directly with our managing partners — not a sales team. We&rsquo;ll
-            review your association&rsquo;s needs and show you precisely what a
-            well-run building feels like.
+            {`Tell us about your building and we send a written proposal${PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. Pricing starts at $${business.priceFrom} per unit per month, ${business.priceTerms}.`}
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5 mb-16">
             <Link
-              to="/contact"
+              to="/contact?source=home-final"
+              data-proposal-cta="final"
+              data-proposal-page="/"
               className="group inline-flex items-center gap-3 bg-gold-600 hover:bg-gold-700 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              Request a Proposal
+              Request a flat-fee proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href="tel:7737280652"
+              href={business.phoneHref}
+              data-track-location="cta-end"
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-4 h-4" /> 773.728.0652
+              <Phone className="w-4 h-4" /> Call {business.phoneDisplay}
             </a>
           </div>
 
