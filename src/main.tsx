@@ -8,6 +8,7 @@ import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/fraunces/wght.css';
 import '@fontsource-variable/fraunces/wght-italic.css';
 import App from './App';
+import { guideSlugFromPath, loadBody } from './data/article-bodies';
 import ConversionTracking from './components/ConversionTracking';
 import './index.css';
 
@@ -29,8 +30,13 @@ const app = (
 // Production pages arrive prerendered (scripts/prerender.mjs) — hydrate that
 // markup in place instead of discarding it and re-rendering from a blank root.
 // Dev serves an empty #root, where hydration would be a guaranteed mismatch.
-if (container.hasChildNodes()) {
-  hydrateRoot(container, app);
-} else {
-  createRoot(container).render(app);
-}
+// A guide page needs its own article body before hydration (see
+// src/data/article-bodies.ts); every other page starts at once.
+const guideSlug = guideSlugFromPath(window.location.pathname);
+(guideSlug ? loadBody(guideSlug) : Promise.resolve()).then(() => {
+  if (container.hasChildNodes()) {
+    hydrateRoot(container, app);
+  } else {
+    createRoot(container).render(app);
+  }
+});

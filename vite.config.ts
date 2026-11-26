@@ -29,6 +29,7 @@ import { getChicagoPublicationDate } from './scripts/publication-date.mjs';
 function stripUnpublishedArticleContent(cutoff: string): Plugin {
   let stripped = 0;
   let kept = 0;
+  let split = 0;
 
   return {
     name: 'stellar:strip-unpublished-article-content',
@@ -60,15 +61,10 @@ function stripUnpublishedArticleContent(cutoff: string): Plugin {
         result += code.slice(cursor, start);
         cursor = end;
 
-        if (!date || date <= cutoff) {
-          kept++;
-          result += segment;
-          continue;
-        }
-
         const open = segment.indexOf('content: `');
         const close = segment.lastIndexOf('`');
-        if (open === -1 || close <= open + 9) {
+        const slug = segment.match(/\bslug:\s*'([^']+)'/)?.[1];
+        if (!date || !slug || open === -1 || close <= open + 9) {
           // Unexpected shape — keep the post verbatim rather than risk
           // emitting a broken module.
           kept++;
@@ -76,7 +72,21 @@ function stripUnpublishedArticleContent(cutoff: string): Plugin {
           continue;
         }
 
-        stripped++;
+        if (date <= cutoff) {
+          // R2: a published body leaves the bundle too, and ships as its own
+          // small file that only its guide page loads (src/data/article-bodies.ts).
+          const raw = segment.slice(open + 10, close);
+          if (raw.includes('${')) {
+            kept++;
+            result += segment;
+            continue;
+          }
+          const content = new Function(`return \`${raw}\`;`)() as string;
+          this.emitFile({ type: 'asset', fileName: `article-bodies/${slug}.json`, source: JSON.stringify({ content }) });
+          split++;
+        } else {
+          stripped++;
+        }
         changed = true;
         result += `${segment.slice(0, open)}content: \`\`${segment.slice(close + 1)}`;
       }
@@ -86,6 +96,7 @@ function stripUnpublishedArticleContent(cutoff: string): Plugin {
     },
 
     buildEnd() {
+      if (split > 0) console.log(`[article-bodies] ${split} published article bodies written to /article-bodies/*.json`);
       if (stripped > 0) {
         console.log(
           `[strip-unpublished] client bundle: ${kept} article bodies kept, ${stripped} future-dated bodies removed (cutoff ${cutoff})`,

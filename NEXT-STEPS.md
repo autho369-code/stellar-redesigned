@@ -3,6 +3,19 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **R2 part 2 built** (branch `r2-part-2-article-split`): article
+      bodies are out of the browser bundle. `vite.config.ts` strips every body
+      from the client build and writes `/article-bodies/<slug>.json` (75
+      files); `src/data/article-bodies.ts` loads one before hydration on a
+      guide page (`src/main.tsx`) and on in-site navigation (`BlogPost.tsx`).
+      The prerender still has full text. Proof: all 79 /blog HTML files are
+      byte-identical to before (ignoring asset file names); opening a guide
+      directly or through a link shows the same text; R0 suite 192 passed.
+      `article-content` chunk: 172 KB gzip -> 25 KB gzip. `index` chunk is
+      still about 238 KB gzip (next: lazy-load the scorecard tool, board
+      toolkit and owner portal code; then make Lighthouse warnings errors).
+- The live-site checker now also fetches three `/article-bodies/*.json`
+  files; if Vercel ever serves the SPA fallback for them, it fails.
 - [x] Nov 26: **PR #63 (R2 part 1) merged** ("MERGE"); live check passed.
 - [x] Nov 26: Mirsad sent the **redesign plan PDF** (competitor teardown, 17
       pages; saved as `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`) and a
