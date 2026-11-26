@@ -1,0 +1,67 @@
+/*
+ * Design tokens. Colors are space-separated RGB channels so Tailwind's alpha
+ * modifiers keep working (bg-ink/80). tailwind.config.js maps every color and
+ * font to these variables; change the brand look here, not in components.
+ */
+:root {
+  --color-navy-50: 240 244 249; /* #f0f4f9 */
+  --color-navy-100: 218 228 240; /* #dae4f0 */
+  --color-navy-200: 184 204 227; /* #b8cce3 */
+  --color-navy-300: 138 173 209; /* #8aadd1 */
+  --color-navy-400: 92 139 186; /* #5c8bba */
+  --color-navy-500: 61 111 165; /* #3d6fa5 */
+  --color-navy-600: 45 85 137; /* #2d5589 */
+  --color-navy-700: 28 78 126; /* #1c4e7e */
+  --color-navy-800: 22 63 102; /* #163f66 */
+  --color-navy-900: 13 39 67; /* #0d2743 */
+  --color-navy-950: 8 26 46; /* #081a2e */
+  --color-gold-50: 240 247 252; /* #f0f7fc */
+  --color-gold-100: 220 237 248; /* #dcedf8 */
+  --color-gold-200: 185 220 241; /* #b9dcf1 */
+  --color-gold-300: 142 199 231; /* #8ec7e7 */
+  --color-gold-400: 100 177 220; /* #64b1dc */
+  --color-gold-500: 55 143 190; /* #378fbe */
+  --color-gold-600: 40 106 148; /* #286a94 */
+  --color-gold-700: 40 106 148; /* #286a94 */
+  --color-gold-800: 36 88 119; /* #245877 */
+  --color-gold-900: 33 74 99; /* #214a63 */
+  --color-ivory-50: 248 250 252; /* #f8fafc */
+  --color-ivory-100: 239 244 248; /* #eff4f8 */
+  --color-ivory-200: 223 232 239; /* #dfe8ef */
+  --color-paper: 246 248 250; /* #f6f8fa */
+  --color-ink: 13 39 67; /* #0d2743 */
+  --color-surface: 255 255 255;
+  --color-line: 226 232 240;
+  --color-muted: 71 85 105; /* slate-600: 7.0:1 on paper, 7.6:1 on white */
+  --color-accent: 142 199 231;
+  --color-accent-ink: 13 39 67;
+  --color-star: 245 179 1;
+  --color-success: 21 128 61;
+  --color-danger: 185 28 28;
+  --font-display: 'Fraunces Variable', Fraunces, Georgia, serif;
+  --font-body: 'Inter Variable', Inter, system-ui, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-arch: 999px 999px 0 0;
+  --shadow-card: 0 1px 3px 0 rgb(var(--color-ink) / 0.06), 0 4px 16px 0 rgb(var(--color-ink) / 0.06);
+  --section-y: clamp(4rem, 8vw, 7rem);
+}
+
+/* Brand-swap dry run only (R9). Never set data-brand in production. */
+[data-brand='preview-alt'] {
+  --color-ink: 20 51 42;
+  --color-navy-600: 34 84 68;
+  --color-navy-700: 28 70 57;
+  --color-navy-800: 23 58 47;
+  --color-navy-900: 18 46 38;
+  --color-navy-950: 12 31 26;
+  --color-gold-300: 214 186 122;
+  --color-gold-400: 199 166 96;
+  --color-gold-500: 176 141 70;
+  --color-gold-600: 138 106 44;
+  --color-gold-700: 122 93 38;
+  --color-accent: 214 186 122;
+  --color-accent-ink: 20 51 42;
+  --color-paper: 247 246 241;
+}

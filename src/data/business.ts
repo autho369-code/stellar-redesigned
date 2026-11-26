@@ -10,7 +10,9 @@
  * confirmed by the owner in November 2026.
  */
 
-export const SITE_URL = 'https://www.stellarpropertygroup.com';
+import { brand } from '../brand/brand.config';
+
+export const SITE_URL = brand.siteUrl;
 
 /** Every page's schema points at this one Organization node. */
 export const ORG_ID = `${SITE_URL}/#organization`;
@@ -18,32 +20,33 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const orgRef = { '@id': ORG_ID } as const;
 
 export const business = {
-  name: 'Stellar Property Management',
-  alternateName: 'Stellar Property Group',
-  legalName: 'Stellar Property Group Inc.',
-  foundingYear: '2007',
+  name: brand.name,
+  alternateName: brand.alternateName,
+  legalName: brand.legalName,
+  foundingYear: String(brand.foundedYear),
   address: {
-    street: '5107 N Western Ave #1S',
-    city: 'Chicago',
-    region: 'IL',
-    postalCode: '60625',
-    country: 'US',
+    street: `${brand.address.street} ${brand.address.unit}`,
+    city: brand.address.city,
+    region: brand.address.state,
+    postalCode: brand.address.zip,
+    country: brand.address.country,
   },
-  addressLine: '5107 N Western Ave #1S, Chicago, IL 60625',
-  phoneDisplay: '773-728-0652',
+  addressLine: `${brand.address.street} ${brand.address.unit}, ${brand.address.city}, ${brand.address.state} ${brand.address.zip}`,
+  phoneDisplay: brand.phone.display,
+  phoneDotted: brand.phone.dotted,
   phoneE164: '+1-773-728-0652',
-  phoneHref: 'tel:+17737280652',
-  email: 'mirsad@stellarpropertygroup.com',
-  hours: 'Monday to Friday, 9 AM to 5 PM Central; the same number answers building emergencies 24/7',
+  phoneHref: `tel:${brand.phone.e164}`,
+  email: brand.email,
+  hours: brand.hours,
   licenseNumber: '291000211',
   licenseName: 'Illinois Community Association Management Firm License',
   memberships: ['Community Associations Institute (CAI)', 'CAI Illinois Chapter'],
-  associations: 29,
-  residences: '1,422',
-  retentionPercent: 96,
-  priceFrom: 30,
+  associations: brand.stats.associations,
+  residences: brand.stats.residences.toLocaleString('en-US'),
+  retentionPercent: brand.stats.retentionPercent,
+  priceFrom: brand.pricing.startingPerUnit,
   /** Owner-confirmed public wording, 2026-11-26. Third-party costs (contractors, engineers, attorneys, permits) stay association expenses. */
-  priceTerms: 'everything included, with no extra fees',
+  priceTerms: brand.pricing.terms,
   software: 'AppFolio board and resident portal',
   notAffiliatedWith: ['Stellar Properties Inc. (Carol Stream, IL)', 'Stellar Management (New York)'],
 } as const;

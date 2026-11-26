@@ -1,3 +1,4 @@
+import { business } from '../data/business';
 import { useState } from 'react';
 import { AlertTriangle, User, MapPin, Phone, Calendar, FileText, Send, Shield, Scale, Clock } from 'lucide-react';
 
@@ -139,7 +140,7 @@ export function ViolationReportForm() {
       {submitStatus === 'error' && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
           <p className="font-semibold">Oops! Something went wrong.</p>
-          <p className="text-sm">Please try again or contact us directly at mirsad@stellarpropertygroup.com</p>
+          <p className="text-sm">Please try again or contact us directly at {business.email}</p>
         </div>
       )}
 
@@ -449,7 +450,7 @@ export function ViolationReportForm() {
         </button>
 
         <p className="text-sm text-gray-600 text-center">
-          * Required fields. Form will be submitted to mirsad@stellarpropertygroup.com
+          * Required fields. Form will be submitted to {business.email}
         </p>
       </form>
 
@@ -519,7 +520,7 @@ export function ViolationReportForm() {
             <h4 className="text-xl font-bold text-gray-900">Fair Enforcement & Due Process</h4>
           </div>
           <p className="text-gray-700 leading-relaxed mb-3">
-            Stellar Property Management follows strict due process procedures including written notice of alleged violations, opportunity to respond or cure the violation, formal hearing before the board if requested, and progressive enforcement from warnings to fines. All enforcement actions are documented and applied consistently across all residents. Appeals processes are available for disputed violations.
+            {business.name} follows strict due process procedures including written notice of alleged violations, opportunity to respond or cure the violation, formal hearing before the board if requested, and progressive enforcement from warnings to fines. All enforcement actions are documented and applied consistently across all residents. Appeals processes are available for disputed violations.
           </p>
         </div>
 

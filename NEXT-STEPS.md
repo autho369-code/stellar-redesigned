@@ -3,6 +3,22 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #61 (R0) merged** ("MERGE 61"); live check passed.
+- [x] Nov 26: **R1 built** (branch `r1-brand-config`): `src/brand/brand.config.ts`
+      is the single brand source (`src/data/business.ts` now reads from it, so
+      existing imports keep working); `src/styles/tokens.css` holds every
+      color and font as CSS variables and `tailwind.config.js` maps to them;
+      `[data-brand="preview-alt"]` palette for the R9 dry run only; robots.txt
+      RSS line is now a comment; "Ask Arthur" sits 88 px above the bottom on
+      phones; link and button blues on /pricing and the service pages darkened
+      to pass contrast.
+      **R1 leftovers, be honest about them:** hard-coded brand strings remain
+      in `src/components/ArthurConcierge.tsx` and in `src/pages/*` (the R1
+      acceptance grep covers components only); about 58 raw hex values remain
+      in inline styles; many axe "contrast" hits are text caught mid-fade by
+      the Reveal animation, not real failures.
+- [ ] **Next: R2** (speed and Core Web Vitals; the homepage loads the
+      `article-content` chunk, 168 KB gzip, which it does not need).
 - [x] Nov 26: **PR #60 merged** ("MERGE 60"); live check passed.
 - [x] Nov 26: **Redesign program R0 to R9** (Mirsad's zip; prompts saved in
       `docs/redesign-prompts/`, read `00_CONTEXT_BLOCK.md` first). One phase =

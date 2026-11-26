@@ -1,3 +1,5 @@
+import { business } from '../../data/business';
+import { brand } from '../../brand/brand.config';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { ENTITY_STATEMENT, profileLinks } from '../../data/business';
@@ -46,7 +48,7 @@ export default function Footer() {
             <Link to="/" className="inline-flex items-center gap-4 mb-6">
               <img
                 src="/logo-icon.svg"
-                alt="Stellar Property Management logo"
+                alt={brand.logo.alt}
                 className="w-14 h-14"
               />
               <span className="leading-none">
@@ -69,20 +71,20 @@ export default function Footer() {
                 <span>5107 N Western Ave #1S, Chicago, IL 60625</span>
               </div>
               <a
-                href="tel:+17737280652"
+                href={business.phoneHref}
                 data-track-location="footer"
                 className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
                 <Phone className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />
-                773.728.0652
+                {business.phoneDotted}
               </a>
               <a
-                href="mailto:mirsad@stellarpropertygroup.com"
+                href={`mailto:${business.email}`}
                 data-track-location="footer"
                 className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
                 <Mail className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />
-                mirsad@stellarpropertygroup.com
+                {business.email}
               </a>
             </div>
           </div>
@@ -167,7 +169,7 @@ export default function Footer() {
       <div className="border-t border-paper/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-paper/65 font-light">
-            &copy; {new Date().getFullYear()} Stellar Property Management. All rights reserved.
+            &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
             {' · '}
             <a
               href="https://portier369.com"

@@ -133,7 +133,7 @@ export default function ResaleDisclosures() {
           <div className="grid gap-px border border-slate-200 bg-slate-200 md:grid-cols-2 lg:grid-cols-3">
             {documents.map(({ title, desc }, index) => (
               <article key={title} className="bg-paper p-9 lg:p-10">
-                <span className="mb-6 block font-display text-3xl font-light text-gold-500">{String(index + 1).padStart(2, '0')}</span>
+                <span className="mb-6 block font-display text-3xl font-light text-gold-600">{String(index + 1).padStart(2, '0')}</span>
                 <h3 className="mb-4 font-display text-2xl text-ink">{title}</h3>
                 <p className="text-sm font-light leading-relaxed text-slate-600">{desc}</p>
               </article>

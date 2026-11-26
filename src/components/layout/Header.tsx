@@ -1,3 +1,5 @@
+import { business } from '../../data/business';
+import { brand } from '../../brand/brand.config';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, ArrowUpRight, ArrowRight, Phone } from 'lucide-react';
@@ -122,7 +124,7 @@ export default function Header() {
           <Link to="/" className="group flex items-center gap-3">
             <img
               src="/logo-icon.svg"
-              alt="Stellar Property Management logo"
+              alt={brand.logo.alt}
               className="w-12 h-12 transition-transform duration-300 group-hover:scale-105"
             />
             <span className="leading-none">
@@ -212,12 +214,12 @@ export default function Header() {
             {/* Phone + primary prospect CTA — new business first; resident
                 payments remain under Resources. */}
             <a
-              href="tel:+17737280652"
+              href={business.phoneHref}
               data-track-location="header"
               className="hidden xl:inline-flex items-center gap-2 text-[11px] font-semibold tracking-luxe text-ink/70 hover:text-gold-600 transition-colors duration-200"
             >
               <Phone className="w-3.5 h-3.5 text-gold-500" />
-              773.728.0652
+              {business.phoneDotted}
             </a>
             <Link
               to="/contact?inquiry=quote&source=header"
@@ -231,9 +233,9 @@ export default function Header() {
           {/* Mobile: click-to-call + proposal chip, visible without opening the menu */}
           <div className="flex items-center gap-1 lg:hidden">
             <a
-              href="tel:+17737280652"
+              href={business.phoneHref}
               data-track-location="header"
-              aria-label="Call Stellar Property Management at 773-728-0652"
+              aria-label={`Call ${business.name} at ${business.phoneDisplay}`}
               className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
             >
               <Phone className="w-5 h-5" />
