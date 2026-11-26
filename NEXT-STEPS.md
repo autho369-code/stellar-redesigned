@@ -12,19 +12,16 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       (8 event names in `src/lib/track.ts`), `lead_source` on the contact
       form, `/contact/thanks` page, and "Request a flat-fee proposal" blocks
       on 11 guides (`src/data/ctaPosts.ts`). Details in PROJECT-STATE.md.
-- [ ] **Phase 1 is PR #45** (open, not merged):
-      https://github.com/autho369-code/stellar-redesigned/pull/45
+- [x] Nov 26: **Phase 1 is LIVE.** PR #45 merged to `main` on Mirsad's
+      instruction ("merge 45"). Checked on the live site: /pricing says $30,
+      the switch guide shows both proposal blocks, the sitemap has 150 URLs
+      with /reviews.
 - [x] Nov 26: Vercel had lost its GitHub access to this repo (no builds
       after Nov 4). Mirsad reconnected it; pushes build again.
-- [ ] **PR #45 preview is built:**
-      https://stellar-redesigned-git-phase-1-measure-and-capture-aios2.vercel.app
-      Claude could not open it (its Vercel connection only shows
-      `condo-app`). Still to check on the preview: a phone click sends a
-      request to `/_vercel/insights/event`.
 - [ ] Two Vercel projects build this repo: `stellar-redesigned` and
       `stellar-redesigned-abux`. Ask Mirsad which one serves the live domain
       and whether the other can go.
-- [ ] **After the Phase 1 PR is merged:** on the live site open DevTools >
+- [ ] **Still to check on the live site:** open DevTools >
       Network, click a phone link, and confirm a request to
       `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
 - [x] Nov 26: **Growth brief, Phase 2 built** (reverse-silo links). Branch
@@ -32,8 +29,8 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       14 clusters / 75 guides; SeriesNav + NearbyAreas on every guide; curated
       guides on the 43 area pages; 44 guides got a hand-written link sentence;
       `scripts/check-links.mjs` runs in the build. Details in PROJECT-STATE.md.
-- [ ] **Merge order: Phase 1 PR first, then Phase 2.** After Phase 1 is
-      merged, rebase `phase-2-reverse-silo` onto `main` before merging it.
+- [ ] **Phase 2 is PR #46**, rebased onto `main` after Phase 1 was merged.
+      Mirsad merges it (or says "merge 46").
 - [ ] **Phases 3 and 4 wait for Mirsad's "go"** — one at a time. Phase 3 =
       10 area pages (starts with a claims audit he must answer). Phase 4 =
       switch guide + cost section on /pricing. The brief's "$20" is now $30
@@ -98,7 +95,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       brief says the portal is AppFolio. Which is right for the site?
       (3) The brief's "duplicates" table (thin posts) and the 4 new post
       topics wait for your decision — nothing was merged, deleted or written.
-- [ ] **Merge PR #45** when the preview looks right.
 - [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
       button click counts need the **Pro** plan. On Hobby, only form leads are
       counted (as page views of `/contact/thanks`).
