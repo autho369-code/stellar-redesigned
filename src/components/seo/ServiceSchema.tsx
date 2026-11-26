@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { business } from '../../data/business';
 
 interface ServiceSchemaProps {
   name: string;
@@ -27,7 +28,7 @@ export function ServiceSchema({ name, description, canonical, serviceType }: Ser
           '@type': 'Offer',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: 20,
+            price: business.priceFrom,
             priceCurrency: 'USD',
             unitText: 'per unit per month',
             description: 'Starting price; customized flat monthly proposal.',
