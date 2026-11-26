@@ -3,6 +3,20 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #58 merged** ("MERGE 58"); live check passed.
+- [x] Nov 26: **Phone call bar** (branch `mobile-call-bar`):
+      `src/components/MobileCallBar.tsx`, fixed to the bottom on phones, "Call"
+      and "Get a flat-fee proposal"; hidden on /contact. The "Ask Arthur"
+      button moved up on phones so the two do not collide. Idea taken from the
+      Ippei rank-and-rent interview Mirsad sent (always-visible phone number).
+- [ ] **Mirsad's standing goal:** a "$100k-quality" site that beats the
+      competition on design, SEO and AEO. Claude is expected to find the tools
+      and do the due diligence without being asked. Next passes: narrow
+      service pages with real search demand; design polish page by page with
+      screenshots; AEO (robots.txt already allows GPTBot, ClaudeBot,
+      PerplexityBot and Google-Extended; llms.txt exists — review its content).
+- Not to copy from that interview: Google profiles for places with no office,
+  and many near-identical town pages.
 - [x] Nov 26: **PR #57 merged** ("MERGE 57"); live check passed.
 - [x] Nov 26: **"Phase 1b service page titles" file** (written from a 2:18 AM
       check, so most was already live). Finished on branch

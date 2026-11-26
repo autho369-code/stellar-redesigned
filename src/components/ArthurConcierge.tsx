@@ -385,7 +385,7 @@ export default function ArthurConcierge() {
       <button
         onClick={() => setOpen(!open)}
         aria-label={open ? 'Close Arthur concierge chat' : 'Ask Arthur, Stellar concierge'}
-        className="fixed bottom-6 right-6 z-[60] flex items-center gap-3 bg-ink text-paper pl-4 pr-5 py-3.5 shadow-glass hover:bg-navy-700 transition-colors duration-300"
+        className="fixed bottom-20 md:bottom-6 right-6 z-[60] flex items-center gap-3 bg-ink text-paper pl-4 pr-5 py-3.5 shadow-glass hover:bg-navy-700 transition-colors duration-300"
       >
         {open ? <X className="w-5 h-5" strokeWidth={1.5} /> : <MessageCircle className="w-5 h-5 text-gold-300" strokeWidth={1.5} />}
         <span className="text-[11px] font-semibold uppercase tracking-luxe">{open ? 'Close' : 'Ask Arthur'}</span>
@@ -393,7 +393,7 @@ export default function ArthurConcierge() {
 
       {/* Panel */}
       {open && (
-        <div className="fixed bottom-24 right-6 z-[60] w-[calc(100vw-3rem)] max-w-md bg-paper border border-slate-200 shadow-glass flex flex-col" style={{ height: 'min(600px, calc(100vh - 8rem))' }}>
+        <div className="fixed bottom-36 md:bottom-24 right-6 z-[60] w-[calc(100vw-3rem)] max-w-md bg-paper border border-slate-200 shadow-glass flex flex-col" style={{ height: 'min(600px, calc(100vh - 8rem))' }}>
           {/* Header */}
           <div className="bg-ink text-paper px-6 py-5">
             <p className="text-[9px] uppercase tracking-luxe text-gold-300 mb-1">Stellar Property Management</p>
