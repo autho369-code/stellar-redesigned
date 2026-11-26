@@ -16,7 +16,8 @@
     "seo:check-links": "node scripts/check-links.mjs",
     "seo:check-uniqueness": "node scripts/check-uniqueness.mjs",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
-    "seo:indexnow:scheduled": "node scripts/indexnow-scheduled-release.mjs"
+    "seo:indexnow:scheduled": "node scripts/indexnow-scheduled-release.mjs",
+    "check:live": "node scripts/check-live-site.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

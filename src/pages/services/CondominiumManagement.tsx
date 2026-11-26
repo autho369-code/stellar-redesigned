@@ -1,3 +1,4 @@
+import { business } from '../../data/business';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
@@ -97,7 +98,7 @@ export default function CondominiumManagement() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Expert management for Chicago-area condominium associations. From high-rise towers on Lake Shore Drive to boutique buildings in Lincoln Park, we deliver the financial discipline, legal compliance, and responsive service your community deserves.
+                {`Stellar manages condominium associations in Chicago and the North Shore for a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets a dedicated manager, monthly board-ready financials and 24/7 emergency response.`}
               </p>
             </div>
           </div>

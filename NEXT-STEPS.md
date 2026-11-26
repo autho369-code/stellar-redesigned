@@ -3,6 +3,18 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #55 merged** on Mirsad's word ("MERGE ... 55") and checked
+      live with a cache-busted fetch: exact price wording on the homepage,
+      /pricing, both service money pages, Wilmette, guides and /resources.
+- [x] Nov 26: **Automatic live-site check** (branch
+      `live-check-and-condo-intro`): `scripts/check-live-site.mjs` +
+      `.github/workflows/live-site-check.yml` (daily, on every push to main,
+      and by hand). It fails if the price wording, a proposal block, a robots
+      tag or the sitemap is wrong, or if "all-inclusive", "$20 per unit",
+      "$24" or BBB appears. Run locally: `npm run check:live` (set BASE_URL
+      for a preview build). Condo service page intro now opens with the offer.
+- Merging: the session can only merge when Mirsad's message contains the word
+  "merge" and the PR number. Tell him the exact words to type.
 - [x] Nov 26: **"Phase 1 fixes, round 2" (Mirsad's file, from a 3:20 AM live
       check).** Part B (proposal blocks on five guides + /resources) was
       already live since PR #51. Part A done on branch
