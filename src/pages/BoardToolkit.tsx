@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Printer } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { trackEvent } from '../lib/track';
 
 /**
  * Ungated board toolkit. CAI gates its equivalent RFP guidance behind
@@ -195,7 +196,10 @@ export default function BoardToolkit() {
           </p>
           <button
             type="button"
-            onClick={() => window.print()}
+            onClick={() => {
+              trackEvent('Board Toolkit Download', { file: 'board-toolkit-checklists' });
+              window.print();
+            }}
             className="mt-9 inline-flex items-center gap-2 bg-ink px-7 py-3.5 text-sm font-medium text-paper transition-colors hover:bg-navy-700 print:hidden"
           >
             <Printer className="h-4 w-4" /> Print or save as PDF

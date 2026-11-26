@@ -52,6 +52,9 @@ opens here reads this file first. Mirsad should never have to repeat himself.
   `autho369-code/stellar-redesigned` branch `main` → www.stellarpropertygroup.com.
 - Before any PR: `npm run typecheck`, `npm run seo:verify-schedule`,
   `npm run seo:verify-silos`, `npm run build` (prerender + SEO verifier).
+  If the build rewrites `scripts/sitemap-lastmod.json` (page dates), commit it.
+- Business facts (name, address, phone, license, portfolio, price) live in
+  `src/data/business.ts`. The flat fee starts at $30 per unit per month.
 - Area pages come from `src/data/neighborhoods.ts` (43 pages; the silo check
   holds the count — raise it only for a truly separate town).
 - Daily guides: `src/data/blog-posts/scheduled-*.ts`; the GitHub workflow

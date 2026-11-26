@@ -200,7 +200,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         q: 'What does management cost for a small Bucktown condo building?',
-        a: 'Stellar\'s pricing starts at $20 per unit per month as a flat fee — no percentage of budget, no surprise add-ons. For a typical 8-to-20-unit Bucktown building, boards get a dedicated manager, monthly financials, and 24/7 emergency response at a predictable cost.',
+        a: 'Stellar\'s pricing starts at $30 per unit per month as a flat fee — no percentage of budget, no surprise add-ons. For a typical 8-to-20-unit Bucktown building, boards get a dedicated manager, monthly financials, and 24/7 emergency response at a predictable cost.',
       },
     ]
   },
@@ -227,7 +227,7 @@ export const neighborhoods: Neighborhood[] = [
     localFaq: [
       {
         q: 'Do you manage converted three-flats and small condo buildings in Wicker Park?',
-        a: 'Yes. Much of Wicker Park\'s condo stock is vintage two-to-six-flat conversions, and our flat monthly fee starting at $20 per unit is designed so buildings that size get professional management, transparent books, and 24/7 emergency coverage without big-building overhead.',
+        a: 'Yes. Much of Wicker Park\'s condo stock is vintage two-to-six-flat conversions, and our flat monthly fee starting at $30 per unit is designed so buildings that size get professional management, transparent books, and 24/7 emergency coverage without big-building overhead.',
       },
       {
         q: 'Our building sits above retail on Milwaukee Avenue — can Stellar manage it?',
@@ -389,7 +389,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         q: 'Do you take on small or self-managed Old Town associations?',
-        a: 'Yes — converting self-managed buildings is one of the most common ways associations come to Stellar. We set up the books, vendor contracts, and governance calendar in a 30-to-60-day transition, with flat pricing from $20 per unit per month.',
+        a: 'Yes — converting self-managed buildings is one of the most common ways associations come to Stellar. We set up the books, vendor contracts, and governance calendar in a 30-to-60-day transition, with flat pricing from $30 per unit per month.',
       },
     ]
   },
@@ -493,7 +493,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         q: 'What does Hyde Park association management cost?',
-        a: 'Customized flat-fee management starts at $20 per unit per month. The proposal reflects the building\'s size, systems, staffing, amenities, financial complexity, meeting needs, and final service scope.',
+        a: 'Customized flat-fee management starts at $30 per unit per month. The proposal reflects the building\'s size, systems, staffing, amenities, financial complexity, meeting needs, and final service scope.',
       },
     ],
   },
@@ -609,7 +609,7 @@ export const neighborhoods: Neighborhood[] = [
     localFaq: [
       {
         q: 'Does Stellar manage condo and townhome associations in Lincolnwood?',
-        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Lincolnwood (ZIP 60712) from our nearby office at 5107 N Western Ave in Chicago, with a dedicated manager, monthly financial reporting, flat-fee pricing from $20 per unit per month, and a person who answers emergencies 24/7.',
+        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Lincolnwood (ZIP 60712) from our nearby office at 5107 N Western Ave in Chicago, with a dedicated manager, monthly financial reporting, flat-fee pricing from $30 per unit per month, and a person who answers emergencies 24/7.',
       },
     ],
   },
@@ -637,7 +637,7 @@ export const neighborhoods: Neighborhood[] = [
     localFaq: [
       {
         q: 'Does Stellar manage associations in Morton Grove?',
-        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Morton Grove (ZIP 60053) from our Chicago office at 5107 N Western Ave, with a dedicated manager, transparent monthly reporting, flat-fee pricing from $20 per unit per month, and 24/7 live emergency response.',
+        a: 'Yes. Stellar Property Management serves condominium, townhome, and HOA boards in Morton Grove (ZIP 60053) from our Chicago office at 5107 N Western Ave, with a dedicated manager, transparent monthly reporting, flat-fee pricing from $30 per unit per month, and 24/7 live emergency response.',
       },
     ],
   },
@@ -661,7 +661,7 @@ export const neighborhoods: Neighborhood[] = [
     localFaq: [
       {
         q: 'Does Stellar manage condo associations in Norridge?',
-        a: 'Yes. Stellar Property Management serves condominium and townhome boards in Norridge (ZIP 60706) from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly financial reporting, flat-fee pricing from $20 per unit per month, and a person who answers emergencies 24/7.',
+        a: 'Yes. Stellar Property Management serves condominium and townhome boards in Norridge (ZIP 60706) from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly financial reporting, flat-fee pricing from $30 per unit per month, and a person who answers emergencies 24/7.',
       },
     ],
   },
@@ -729,7 +729,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         q: 'What does association management cost in Wilmette?',
-        a: 'Flat-fee management starts at $20 per unit per month and is customized for unit count, property type, amenities, financial complexity, meeting needs, staffing, and the final service scope.',
+        a: 'Flat-fee management starts at $30 per unit per month and is customized for unit count, property type, amenities, financial complexity, meeting needs, staffing, and the final service scope.',
       },
     ],
   },
@@ -781,7 +781,7 @@ export const neighborhoods: Neighborhood[] = [
       },
       {
         q: 'What does Northbrook association management cost?',
-        a: 'Customized flat-fee management starts at $20 per unit per month. Unit count, shared components, amenities, financial complexity, meeting needs, and final service scope determine the proposal.',
+        a: 'Customized flat-fee management starts at $30 per unit per month. Unit count, shared components, amenities, financial complexity, meeting needs, and final service scope determine the proposal.',
       },
     ],
   },

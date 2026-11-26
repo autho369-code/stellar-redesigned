@@ -30,10 +30,10 @@ const reviews = [
 const faqs = [
   {
     question: 'How much does condo association management cost in Chicago?',
-    answer: 'Stellar management pricing starts at $20 per unit per month. The final flat monthly fee depends on the association’s size, building systems, staffing, amenities, financial complexity, meeting schedule, and agreed service scope.',
+    answer: 'Stellar management pricing starts at $30 per unit per month. The final flat monthly fee depends on the association’s size, building systems, staffing, amenities, financial complexity, meeting schedule, and agreed service scope.',
   },
   {
-    question: 'Is $20 per unit the final price for every association?',
+    question: 'Is $30 per unit the final price for every association?',
     answer: 'No. It is our starting price, not a universal quote. We review the property, financials, governing documents, current contracts, and board priorities before presenting a flat monthly proposal tailored to the association.',
   },
   {
@@ -57,7 +57,7 @@ const schema = {
       '@type': 'Service',
       '@id': 'https://www.stellarpropertygroup.com/pricing#service',
       name: 'Chicago Condominium and HOA Management',
-      description: 'Flat-fee condominium, HOA, and townhome association management in Chicago, starting at $20 per unit per month.',
+      description: 'Flat-fee condominium, HOA, and townhome association management in Chicago, starting at $30 per unit per month.',
       provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
       areaServed: [{ '@type': 'City', name: 'Chicago' }, { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' }],
       offers: {
@@ -79,8 +79,8 @@ export default function Pricing() {
   return (
     <>
       <SEOHead
-        title="Chicago Condo Management Cost | From $20/Unit"
-        description="Chicago condo and HOA management starts at $20 per unit monthly. Flat-fee proposals with no separate capital-project oversight or planning fee."
+        title="Chicago Condo Management Cost | From $30/Unit"
+        description="Chicago condo and HOA management starts at $30 per unit monthly. Flat-fee proposals with no separate capital-project oversight or planning fee."
         canonical="https://www.stellarpropertygroup.com/pricing"
       />
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
@@ -91,10 +91,10 @@ export default function Pricing() {
           <div className="grid lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> Transparent Association Management Pricing</p>
-              <h1 className="font-display font-light text-5xl sm:text-6xl lg:text-7xl text-ink leading-[1.02] text-balance">Chicago condo management starting at <em className="font-medium text-gold-600">$20 per unit.</em></h1>
+              <h1 className="font-display font-light text-5xl sm:text-6xl lg:text-7xl text-ink leading-[1.02] text-balance">Chicago condo management starting at <em className="font-medium text-gold-600">$30 per unit.</em></h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
-              <p className="text-lg text-slate-600 font-light leading-relaxed mb-3"><strong className="font-medium text-ink">Pricing starts at $20 per unit per month.</strong> Your final price is a property-specific flat monthly fee based on the agreed management scope.</p>
+              <p className="text-lg text-slate-600 font-light leading-relaxed mb-3"><strong className="font-medium text-ink">Pricing starts at $30 per unit per month.</strong> Your final price is a property-specific flat monthly fee based on the agreed management scope.</p>
               <p className="text-sm text-slate-500 leading-relaxed mb-8">No percentage-of-budget pricing and no separate capital-project oversight fee.</p>
               <Link to="/contact?inquiry=quote&source=pricing" className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-8 py-4 text-sm font-medium transition-colors">Request Your Exact Quote <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
             </div>
@@ -109,7 +109,7 @@ export default function Pricing() {
               <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> The Starting Point</p>
               <div className="border border-gold-300 bg-ivory-50 p-8 lg:p-10">
                 <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-4">Management starts at</p>
-                <p className="font-display text-6xl lg:text-7xl text-ink leading-none">$20<span className="text-2xl text-gold-600">/unit</span></p>
+                <p className="font-display text-6xl lg:text-7xl text-ink leading-none">$30<span className="text-2xl text-gold-600">/unit</span></p>
                 <p className="text-sm text-slate-600 mt-4">per month, with a customized flat monthly fee</p>
               </div>
               <p className="mt-6 text-sm text-slate-500 leading-relaxed">This starting price is informational and is not a binding quote. Every proposal defines the exact management scope and monthly fee before your board signs. Pricing information current as of August 2026.</p>

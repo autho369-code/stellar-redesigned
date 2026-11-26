@@ -38,8 +38,8 @@ export default function TownhomeManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Townhome Management From $20/Unit | Stellar"
-        description="Chicago townhome association management from $20 per unit, with shared-exterior planning, transparent financials, and no separate capital-project oversight fee."
+        title="Chicago Townhome Management From $30/Unit | Stellar"
+        description="Chicago townhome association management from $30 per unit, with shared-exterior planning, transparent financials, and no separate capital-project oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/townhome-management"
       />
       <ServiceSchema name="Chicago Townhome Association Management" description="Townhome association management with shared-exterior planning, financial reporting, vendor coordination, governance support, and owner communication." canonical="https://www.stellarpropertygroup.com/services/townhome-management" serviceType="Townhome Association Management" />
@@ -80,7 +80,7 @@ export default function TownhomeManagement() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
-              See pricing from $20 per unit <ArrowRight className="w-4 h-4" />
+              See pricing from $30 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

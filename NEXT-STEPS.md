@@ -1,8 +1,39 @@
 # Stellar — next steps (the one to-do list)
 
-Updated: 2026-11-03. Every session reads this first and updates it at the end.
+Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **the flat fee now starts at $30 per unit** (was $20) — Mirsad's
+      instruction. `business.priceFrom` is 30 and every page says $30. The
+      build fails if "$20 per unit" comes back.
+- [x] Nov 26: **Growth brief, Phase 1 built** (the 33-page PDF "Website growth
+      instructions, Phases 1-4"). Branch `phase-1-measure-and-capture`:
+      /reviews in the sitemap with honest per-page dates, lead tracking
+      (8 event names in `src/lib/track.ts`), `lead_source` on the contact
+      form, `/contact/thanks` page, and "Request a flat-fee proposal" blocks
+      on 11 guides (`src/data/ctaPosts.ts`). Details in PROJECT-STATE.md.
+- [ ] **Phase 1 is PR #45** (open, not merged):
+      https://github.com/autho369-code/stellar-redesigned/pull/45
+- [x] Nov 26: Vercel had lost its GitHub access to this repo (no builds
+      after Nov 4). Mirsad reconnected it; pushes build again.
+- [ ] **PR #45 preview is built:**
+      https://stellar-redesigned-git-phase-1-measure-and-capture-aios2.vercel.app
+      Claude could not open it (its Vercel connection only shows
+      `condo-app`). Still to check on the preview: a phone click sends a
+      request to `/_vercel/insights/event`.
+- [ ] Two Vercel projects build this repo: `stellar-redesigned` and
+      `stellar-redesigned-abux`. Ask Mirsad which one serves the live domain
+      and whether the other can go.
+- [ ] **After the Phase 1 PR is merged:** on the live site open DevTools >
+      Network, click a phone link, and confirm a request to
+      `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
+- [ ] **Phases 2, 3 and 4 of the growth brief wait for Mirsad's "go"** — one
+      phase at a time. Phase 2 = reverse-silo links (`clusters.ts`, SeriesNav,
+      NearbyAreas). Phase 3 = 10 area pages (starts with a claims audit).
+      Phase 4 = switch guide + cost section on /pricing. The brief's "$20"
+      is now $30 everywhere; the "$24 average fee" line needs his approval.
+- [ ] Before every PR: `npm run build` may update
+      `scripts/sitemap-lastmod.json` (page dates). Commit it with the change.
 - [x] Nov 3: **daily publishing STOPPED** (Mirsad: Stellar site retiring for
       CenterPoint). GitHub workflow "Publish daily association guide" is
       disabled, and `PUBLISHING_FROZEN_AT = '2026-11-03'` in
@@ -53,6 +84,14 @@ Updated: 2026-11-03. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
+- [ ] **Merge PR #45** when the preview looks right.
+- [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
+      button click counts need the **Pro** plan. On Hobby, only form leads are
+      counted (as page views of `/contact/thanks`).
+- [ ] **Proposal turnaround:** is "within two business days" true? If yes,
+      tell Claude and the end block will say it. Until then it says nothing.
+- [ ] `/reviews` is now visible to Google (the brief asked for it; it was
+      hidden on Nov 3). Say so if you want it hidden again.
 - [ ] **AI visibility (Oct 28 audit):** ask CondoControl to add Stellar to
       its Chicago top-10 list; claim the PropertyManagement.com profile
       (shows 3.6 from 60 reviews); check CAI Illinois member directory;

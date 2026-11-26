@@ -50,11 +50,11 @@ for (const [file, markers] of requiredConnections) {
 // not link a guide that will still be unpublished on its own release day.
 const bundleDir = mkdtempSync(join(tmpdir(), 'stellar-silos-'));
 const bundlePath = join(bundleDir, 'silos.mjs');
-let allBlogPosts, postSilos, moneyPagePaths, getPillarContent;
+let allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta;
 try {
   await build({
     stdin: {
-      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';\nexport { getPillarContent } from './src/data/pillar-links';`,
+      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';\nexport { getPillarContent } from './src/data/pillar-links';\nexport { ctaPosts, splitForMidCta, withoutClosingCta } from './src/data/ctaPosts';`,
       resolveDir: root,
       loader: 'ts',
     },
@@ -64,7 +64,7 @@ try {
     outfile: bundlePath,
     logLevel: 'error',
   });
-  ({ allBlogPosts, postSilos, moneyPagePaths, getPillarContent } = await import(pathToFileURL(bundlePath).href));
+  ({ allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta } = await import(pathToFileURL(bundlePath).href));
 } finally {
   rmSync(bundleDir, { recursive: true, force: true });
 }
@@ -114,6 +114,24 @@ for (const post of allBlogPosts) {
       problems.push(`${post.slug}: links unknown page ${href}`);
     }
   }
+}
+
+// ── "Request a flat-fee proposal" blocks (src/data/ctaPosts.ts) ──────────
+// Every listed guide must exist, carry a hook, have a safe spot for the
+// mid-article card, and still contain the closing sentence its end block
+// replaces (exactly once), so the two never drift apart.
+for (const [slug, cta] of Object.entries(ctaPosts)) {
+  const post = postsBySlug.get(slug);
+  if (!post) {
+    problems.push(`ctaPosts: '${slug}' is not a guide`);
+    continue;
+  }
+  if (!cta.hook?.trim()) problems.push(`ctaPosts: '${slug}' has no hook sentence`);
+  const content = getPillarContent(post, allBlogPosts, today);
+  if (cta.replacesClosing && content.split(cta.replacesClosing).length !== 2) {
+    problems.push(`ctaPosts: '${slug}' replacesClosing text must appear in the guide exactly once`);
+  }
+  if (!splitForMidCta(withoutClosingCta(slug, content))) problems.push(`ctaPosts: '${slug}' has no safe spot for the mid-article block`);
 }
 
 if (problems.length) {

@@ -118,7 +118,7 @@ const faqs = [
   // AI assistant ("who should we hire", "is this the same company").
   {
     q: 'What should a Chicago condo or HOA board look for when hiring a management company?',
-    a: 'Check five things: an active Illinois Community Association Management Firm license, a credentialed manager (CMCA, AMS or PCAM), a flat fee in writing instead of a percentage of the budget, a local office and a person who answers emergencies 24/7, and a written 30–60 day transition plan. Stellar Property Management meets all five — firm license #291000211, a CMCA- and AMS-credentialed principal, pricing from $20 per unit per month, an office at 5107 N Western Ave, Chicago — and offers a free scorecard for comparing proposals at stellarpropertygroup.com/tools/compare-management-proposals.',
+    a: 'Check five things: an active Illinois Community Association Management Firm license, a credentialed manager (CMCA, AMS or PCAM), a flat fee in writing instead of a percentage of the budget, a local office and a person who answers emergencies 24/7, and a written 30–60 day transition plan. Stellar Property Management meets all five — firm license #291000211, a CMCA- and AMS-credentialed principal, pricing from $30 per unit per month, an office at 5107 N Western Ave, Chicago — and offers a free scorecard for comparing proposals at stellarpropertygroup.com/tools/compare-management-proposals.',
   },
   {
     q: 'Is Stellar Property Management the same company as Stellar Property Group?',

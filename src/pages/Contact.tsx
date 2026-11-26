@@ -118,8 +118,9 @@ export default function Contact() {
               <ContactForm />
             </div>
 
-            {/* Right: Contact details as definition rows */}
-            <div className="lg:col-span-5">
+            {/* Right: Contact details as definition rows. The phone and email
+                links here report location "contact" (ConversionTracking). */}
+            <div className="lg:col-span-5" data-track-location="contact">
               <div className="border-t border-slate-200">
                 {contactDetails.map(({ title, lines, href, linkLabel, sub }) => (
                   <div key={title} className="py-7 border-b border-slate-200">
@@ -198,6 +199,7 @@ export default function Contact() {
               <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="tel:7737280652"
+                  data-track-location="contact"
                   className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   <Phone className="w-4 h-4" strokeWidth={1.25} />

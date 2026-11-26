@@ -180,7 +180,7 @@ export default function AiInfo() {
           <h2 className="mb-5 font-display text-2xl text-ink">Pricing</h2>
           <p className="mb-14 font-light leading-relaxed text-slate-600">
             Management is quoted as a customized flat monthly fee starting at
-            $20 per unit per month, based on building size, amenities, staffing,
+            $30 per unit per month, based on building size, amenities, staffing,
             financial complexity and scope of service. Stellar does not price as
             a percentage of the association budget, and does not add a separate
             capital-project planning or management-oversight fee; third-party
