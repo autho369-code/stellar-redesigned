@@ -3,6 +3,15 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #57 merged** ("MERGE 57"); live check passed.
+- [x] Nov 26: **"Phase 1b service page titles" file** (written from a 2:18 AM
+      check, so most was already live). Finished on branch
+      `phase-1b-service-titles`: condo H1 "Condo Management Services in
+      Chicago", the brief's first sentences on the condo and HOA pages, fresh
+      meta descriptions on all three pages (144 / 148 / 150 characters), and
+      the brief's direct-answer opening on the rental-rules guide.
+      That file says "all-inclusive"; the later round-2 file says to use
+      "everything included" and never "all-inclusive". The later one wins.
 - [x] Nov 26: **PR #56 merged** ("MERGE 56"); the live-site check ran on
       GitHub against the real site and passed.
 - [x] Nov 26: **Eight more upgraded area pages** (branch `area-pages-batch-3`):

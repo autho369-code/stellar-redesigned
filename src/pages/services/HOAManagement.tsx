@@ -92,7 +92,7 @@ export default function HOAManagement() {
     <>
       <SEOHead
         title="Chicago HOA Management Company | From $30/Unit | Stellar"
-        description="Chicago HOA management from $30 per unit with transparent financials, common-area operations, board support, and no separate project-oversight fee."
+        description="Chicago HOA and townhome management with monthly board-ready financials and common-area operations. Flat fee from $30 per unit, everything included."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
       <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />
@@ -120,7 +120,7 @@ export default function HOAManagement() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                {`Stellar manages homeowners associations in Chicago and the North Shore for a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets transparent financials, common-area operations and board support.`}
+                {`Stellar provides full-service HOA and townhome management in Chicago: a dedicated manager, monthly board-ready financials and a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}.`}
               </p>
             </div>
           </div>
