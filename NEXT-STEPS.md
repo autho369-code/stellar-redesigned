@@ -3,6 +3,22 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #63 (R2 part 1) merged** ("MERGE"); live check passed.
+- [x] Nov 26: Mirsad sent the **redesign plan PDF** (competitor teardown, 17
+      pages; saved as `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`) and a
+      second prompts zip (`..._1.zip`). **The second zip is the OLDER draft**:
+      it still treats the founding year as unconfirmed and has no approved
+      case study or contract line. The prompts already in
+      `docs/redesign-prompts/` (first zip) are the current ones: founded 2007,
+      6150 N Kenmore roof replacement saved $150,000, "No long-term contracts
+      — cancel with 60 days notice". Do not replace them with the older set.
+- Plan PDF headline: Stellar scores 70/100, fourth of 13 Chicago firms; the
+  gap is proof (reviews, real photos, case studies), a fee estimator, forms on
+  the homepage and pricing page, and JavaScript weight. Target 90.
+- [ ] **PR #54 "Remove the RSS line from robots.txt"** was opened from
+      Mirsad's GitHub account on Nov 26 by another tool. R1 already fixed that
+      line (it is a comment now), so #54 is not needed. Closing it is his call.
+- [ ] **This branch (`r2-part-2-article-split`) is where R2 part 2 starts.**
 - [x] Nov 26: **PR #62 (R1) merged** ("MERGE 62"); live check passed.
 - [x] Nov 26: **R2 part 1** (branch `r2-speed`): hero text, buttons and photo
       paint at once (no fade-in) on the homepage, old area template and Condo
