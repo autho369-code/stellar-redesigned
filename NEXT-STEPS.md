@@ -3,6 +3,9 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PRs #49, #50, #51 and #52 merged to `main`** on Mirsad's
+      instruction ("MERGE ALL"): schema price fix, Phase 4, the Search Console
+      pages, and the sales-page homepage. Open PRs: none.
 - [x] Nov 26: **Homepage as a sales page, first pass** (Mirsad: "best designed
       site and act as a sales page"; he allowed downloads, redesign and push).
       Branch `sales-homepage`, stacked on `gsc-priority-pages`. Hero now states

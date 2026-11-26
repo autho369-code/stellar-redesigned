@@ -21,8 +21,8 @@ Nov 2026), 96% retention since 2007.
 
 ## Status update — 2026-11-26 (homepage as a sales page, first pass)
 
-Branch `sales-homepage`, stacked on `gsc-priority-pages`. Not live until
-Mirsad says merge. The homepage earns 56% of all clicks (354 of 633), so it
+Branch `sales-homepage`. **Merged to `main` on 2026-11-26 ("MERGE ALL"),
+together with #49, #50 and #51.** The homepage earns 56% of all clicks (354 of 633), so it
 went first.
 
 - **Hero:** H1 "Condo and HOA management in Chicago, from $30 per unit a
