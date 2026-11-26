@@ -70,8 +70,8 @@ export default function Contact() {
   return (
     <>
       <SEOHead
-        title="Contact Stellar Property Management | Association Quote"
-        description="Contact Stellar Property Management for a Chicago condominium, HOA, or townhome association management consultation and customized quote. Call 773.728.0652."
+        title="Contact Stellar Property Management, Chicago | 773-728-0652"
+        description="Stellar Property Management, Chicago condo and HOA management since 2007. Request a flat-fee proposal from $30 per unit per month, or call 773-728-0652."
         canonical="https://www.stellarpropertygroup.com/contact"
       />
       <Helmet>

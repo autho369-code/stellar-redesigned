@@ -3,6 +3,31 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [ ] **Kasra Dash plan (Mirsad asked Nov 26).** His Google Maps method, from
+      the written case study (YouTube pages could not be opened from the cloud
+      session): compare the Google Business Profile primary category with
+      competitors; list every service on the profile and pair each with a
+      site page and a weekly post; close the citation gap with a unique
+      description per listing; report positions and calls monthly. For
+      Claude: write the service list, 12 weekly posts, the citation gap list
+      and the descriptions. Posting and profile edits are outside-account
+      actions: Mirsad's OK first. Decide the business name before new
+      listings (planned name change).
+- [x] Nov 26: **Search Console pull + updated brief (37 pages) from Mirsad.**
+      New order by real impressions. Branch `gsc-priority-pages` (stacked on
+      Phase 4): titles / first lines on the HOA, high-rise, Chicago and
+      contact pages and the rental-rules guide; proposal blocks on five more
+      guides and /resources (16 guides now); upgraded area pages for
+      Ravenswood, Hyde Park, Wilmette and Lake Forest; Chicago city page
+      header. New owner wording everywhere: "starting at $30 per unit per
+      month, all-inclusive, with no extra fees" (`business.priceTerms`).
+- [ ] **Next area batch (brief, Batch 2):** Avondale, River North, Morton
+      Grove, Lincoln Park (done), Evanston. Then Batch 3: Uptown,
+      Andersonville, Gold Coast.
+- [ ] **Do NOT add back** the 12 / 48 / 120-unit fee example on /pricing. It is
+      still item 60 in the brief, but Mirsad said no (Nov 26). His word wins.
+- [ ] **Needs Mirsad's OK (outside account):** remove the stale 2015-2019
+      sitemaps in Search Console. Do not touch the current www sitemap.
 - [x] Nov 26: **Answers from Mirsad.** Vercel plan is **Pro**, so the custom
       click events are recorded. Proposal turnaround "within two business
       days" is true and is now in the end block (`PROPOSAL_TURNAROUND`).

@@ -42,6 +42,8 @@ export const business = {
   residences: '1,422',
   retentionPercent: 96,
   priceFrom: 30,
+  /** Owner-confirmed public wording, 2026-11-26. Third-party costs (contractors, engineers, attorneys, permits) stay association expenses. */
+  priceTerms: 'all-inclusive, with no extra fees',
   software: 'AppFolio board and resident portal',
   notAffiliatedWith: ['Stellar Properties Inc. (Carol Stream, IL)', 'Stellar Management (New York)'],
 } as const;

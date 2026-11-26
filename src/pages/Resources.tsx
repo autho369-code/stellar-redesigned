@@ -7,6 +7,7 @@ import {
 import { ViolationReportForm } from '../components/ViolationReportForm';
 import { BoardNominationForm } from '../components/BoardNominationForm';
 import { SEOHead } from '../components/seo/SEOHead';
+import ProposalCta from '../components/ProposalCta';
 
 type ActiveTab = 'violation' | 'nomination' | null;
 
@@ -378,6 +379,18 @@ export default function Resources() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Proposal block: this page already gets search impressions (Search Console, 2026-11-26). */}
+      <section className="bg-ivory-100 pb-24 lg:pb-32">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <ProposalCta
+            variant="mid"
+            source="resources"
+            page="/resources"
+            hook="Looking for a manager, not just a form? Request a flat-fee proposal and we will walk your board through scope and fee."
+          />
         </div>
       </section>
 

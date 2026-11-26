@@ -19,6 +19,38 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (Search Console priorities: titles, proposal blocks, four area pages)
+
+Branch `gsc-priority-pages`, stacked on `phase-4-switch-and-cost`. Not live
+until Mirsad says merge. Source: his Search Console summary (Aug 26 to Nov 25,
+2026) and the updated 37-page brief, both uploaded Nov 26.
+
+- **Why:** 633 clicks / 27,065 impressions in 3 months; almost all known
+  clicks are branded. Pages Google shows but nobody clicks: the condo and HOA
+  service pages, /contact, the rental-rules guide, Wilmette and Hyde Park.
+- **Titles and first lines:** `/services/hoa-management` (title + a direct
+  first sentence with the fee), `/services/high-rise-condominium-management`
+  (title + H1), `/contact` (title + meta with the phone number),
+  rental-rules guide (`seoTitle` + direct-answer first sentence),
+  `/property-management-chicago` (title, H1 "Condo & HOA Management in
+  Chicago", first sentence; the unverified "more than 55 neighborhoods" line
+  is gone). The brief proposed the same title for the Chicago page and the
+  condo service page; the Chicago page got its own so no two pages share one.
+- **Price wording:** `business.priceTerms` = "all-inclusive, with no extra
+  fees" (owner-confirmed in the brief). Used in ProposalCta, the upgraded area
+  template, /pricing, HOA and Chicago pages. Third-party costs stay
+  association expenses (already in the /pricing FAQ).
+- **Proposal blocks:** five more guides in `src/data/ctaPosts.ts` (repairs,
+  rental rules, unit entry, elections, declaration amendments) and one block
+  on /resources. 16 guides in total.
+- **Area pages:** `src/data/areas/{ravenswood,hyde-park,wilmette,lake-forest}.ts`.
+  Neutral "we serve boards here" wording, no managed-count claims, every issue
+  rests on a linked guide. Lake Forest has no Cook County content (it is in
+  Lake County). Suburb H1 now ends ", Illinois". Uniqueness: closest pair
+  34.4% (limit 35%).
+- **Not done on purpose:** the 12 / 48 / 120 fee example (owner said no);
+  competitor prices; portfolio-average fee; any Search Console change.
+
 ## Status update — 2026-11-26 (growth brief Phase 4: switch guide, cost section, titles)
 
 Branch `phase-4-switch-and-cost`. No slug changed.

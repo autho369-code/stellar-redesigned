@@ -4,19 +4,25 @@
  * keeps the standard template.
  *
  * Batch 1 (2026-11-26): Rogers Park, Edgewater, Lincoln Square, Lakeview,
- * Lincoln Park. Batch 2 waits for the owner's review of Batch 1.
+ * Lincoln Park. Search Console batch (2026-11-26, ordered by impressions):
+ * Ravenswood, Hyde Park, Wilmette, Lake Forest. The Chicago city page has its
+ * own component (src/pages/ChicagoPage.tsx).
  */
 import { edgewater } from './edgewater';
+import { hydePark } from './hyde-park';
+import { lakeForest } from './lake-forest';
 import { lakeview } from './lakeview';
 import { lincolnPark } from './lincoln-park';
 import { lincolnSquare } from './lincoln-square';
+import { ravenswood } from './ravenswood';
 import { rogersPark } from './rogers-park';
+import { wilmette } from './wilmette';
 import type { AreaContent } from './types';
 
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, hydePark, wilmette, lakeForest].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {

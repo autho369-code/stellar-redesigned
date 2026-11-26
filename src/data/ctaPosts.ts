@@ -1,6 +1,6 @@
 /**
  * "Request a flat-fee proposal" blocks (ProposalCta) on the top compliance and
- * cost guides. Each listed guide gets one mid-article card and one end block.
+ * cost guides, and on the guides that already get search impressions. Each listed guide gets one mid-article card and one end block.
  *
  * - hook: the one sentence shown in the mid-article card.
  * - replacesClosing: the guide's own closing "contact us" sentence. The end
@@ -62,6 +62,27 @@ export const ctaPosts: Record<string, CtaPost> = {
   'reasonable-reserves-illinois-condo-law': {
     hook: 'Want help turning “reasonable reserves” into a defensible number? We work with boards and their reserve-study providers.',
     replacesClosing: ` If your condominium association is heading into budget season without a current reserve basis, <a href="/contact">schedule a consultation</a>.`,
+  },
+  // Added 2026-11-26 from the Search Console pull: guides that already get impressions.
+  'condo-repairs-owner-vs-association-illinois': {
+    hook: 'After you know who pays for a repair, the next question is who coordinates it. Request a flat-fee proposal and we will tell you how we handle work orders and vendor bids.',
+    replacesClosing: ` Boards that want responsibility questions answered this cleanly every time can learn about our condominium management practice or <a href="/contact">request a proposal</a>.`,
+  },
+  'renting-out-your-condo-chicago-rules': {
+    hook: 'Leasing rules are only half the job. If your board wants a manager who actually enforces them, request a flat-fee proposal.',
+    replacesClosing: ` If your building's leasing file is a shoebox, <a href="/contact">we should talk</a>.`,
+  },
+  'can-condo-boards-enter-your-unit-illinois': {
+    hook: 'Questions about unit access often come up during a management search. We can walk your board through how we handle notices and emergencies.',
+    replacesClosing: ` — <a href="/contact">contact us</a> to learn more`,
+  },
+  'illinois-condo-board-elections-proxies-ballots': {
+    hook: 'Election season is a lot for a volunteer board. We can run the calendar, notices and proxies with you.',
+    replacesClosing: ` If an election is coming up and you want a second set of eyes, <a href="/contact">contact us</a>.`,
+  },
+  'amend-illinois-condo-declaration-section-27': {
+    hook: 'Amending a declaration is a board project. If you also want a manager for the day-to-day work around it, request a flat-fee proposal.',
+    replacesClosing: `<p>Planning an amendment? <a href="/contact">Talk with our team</a> before the vote is scheduled.</p>`,
   },
 };
 
