@@ -4,7 +4,7 @@ export const rentingOutYourCondoChicago = {
   seoTitle: 'Renting Out a Chicago Condo: Rules for Owners and Boards',
   dateModified: '2026-11-26',
   metaDescription:
-    'Can you rent out your Chicago condo? Leasing caps, board approval, minimum lease terms, short-term rental restrictions, and the steps to lease your unit the right way.',
+    'Can you rent out your Chicago condo? Only if your association’s documents allow it. Rental caps, lease terms, board approval and city rules explained.',
   date: '2026-08-13',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Rules & Leasing',
@@ -12,7 +12,9 @@ export const rentingOutYourCondoChicago = {
   excerpt:
     'Between your association’s leasing rules and Chicago’s rental ordinances, leasing your condo has a right way and several expensive wrong ways. Here is the right way.',
   content: `
-<p>You can rent out a Chicago condo only if your association's governing documents allow it, and the lease must also follow the city's rental ordinances. The market shifts, a job moves, a family grows — and a condo owner becomes a prospective landlord. In Chicago, that decision runs through two rulebooks at once: your association's governing documents and the city's rental ordinances. Owners who check both first lease smoothly; owners who list first and check later fund the association's legal budget.</p>
+<p>You can rent out a Chicago condo only if your association's governing documents allow it — many buildings add rental caps, minimum lease terms, waiting periods or board approval, and nearly all restrict short-term rentals.</p>
+
+<p>The market shifts, a job moves, a family grows — and a condo owner becomes a prospective landlord. In Chicago, that decision runs through two rulebooks at once: your association's governing documents and the city's rental ordinances. Owners who check both first lease smoothly; owners who list first and check later fund the association's legal budget.</p>
 
 <h2>Can I rent out my condo in Chicago?</h2>
 <p>Only if your association's governing documents allow it. Many Chicago condominiums restrict leasing through rental caps, minimum lease terms of six or twelve months, owner-occupancy waiting periods, or board approval requirements — and some prohibit leasing outright through a properly adopted amendment. Nearly all prohibit short-term rentals, which Chicago also restricts by ordinance. Request the current leasing rules from your manager in writing before you list, and get any required approval documented.</p>

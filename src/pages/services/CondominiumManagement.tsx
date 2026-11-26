@@ -70,7 +70,7 @@ export default function CondominiumManagement() {
     <>
       <SEOHead
         title="Chicago Condo Management Company | From $30/Unit | Stellar"
-        description="Chicago condominium association management from $30 per unit, with financial reporting, 24/7 response, and no separate capital-project oversight fee."
+        description="Chicago condo management with a dedicated manager and monthly board-ready financials. Flat fee from $30 per unit per month, everything included."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />
       <ServiceSchema name="Chicago Condominium Association Management" description="Full-service condominium association management with financial reporting, maintenance coordination, governance support, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/condominium-management" serviceType="Condominium Association Management" />
@@ -93,12 +93,12 @@ export default function CondominiumManagement() {
                 The Practice · 01 · Property Management
               </p>
               <h1 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.04] text-balance">
-                Condominium Management Services in <em className="font-medium text-gold-600">Chicago</em>
+                Condo Management Services in <em className="font-medium text-gold-600">Chicago</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                {`Stellar manages condominium associations in Chicago and the North Shore for a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets a dedicated manager, monthly board-ready financials and 24/7 emergency response.`}
+                {`Stellar provides full-service condo management in Chicago: a dedicated manager, monthly board-ready financials, 24/7 emergency response and a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}.`}
               </p>
             </div>
           </div>
