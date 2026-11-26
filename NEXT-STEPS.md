@@ -19,6 +19,11 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       toolkit, and turn the Lighthouse warnings into errors (performance 0.9,
       LCP 2500). Do this in a fresh session: it touches all 75 guides and needs
       the full R0 suite plus a text diff of every prerendered guide.
+- Known layout shift (CLS about 0.15) on upgraded area pages: the intro
+  paragraph under the H1 moves after load (seen on /property-management-wilmette,
+  with or without the font preload). Likely the Fraunces heading reflowing on
+  font swap; fix in R2 part 2 with a size-adjusted fallback font, then re-measure.
+- Lighthouse on the GitHub runner is noisy; the config now takes 3 runs per page.
 - Speed numbers: GitHub runner before R2: home performance 0.71, LCP 5.2 s.
   Local machine after part 1: home 87 (LCP 0.9 s, TBT 496 ms), /pricing 96.
   Local and runner numbers are not comparable; trust the runner.
