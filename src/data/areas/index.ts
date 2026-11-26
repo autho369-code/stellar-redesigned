@@ -8,13 +8,18 @@
  * Ravenswood, Hyde Park, Wilmette, Lake Forest. The Chicago city page has its
  * own component (src/pages/ChicagoPage.tsx).
  */
+import { avondale } from './avondale';
 import { edgewater } from './edgewater';
+import { evanston } from './evanston';
+import { glenview } from './glenview';
 import { hydePark } from './hyde-park';
 import { lakeForest } from './lake-forest';
 import { lakeview } from './lakeview';
 import { lincolnPark } from './lincoln-park';
 import { lincolnSquare } from './lincoln-square';
+import { mortonGrove } from './morton-grove';
 import { ravenswood } from './ravenswood';
+import { riverNorth } from './river-north';
 import { rogersPark } from './rogers-park';
 import { wilmette } from './wilmette';
 import type { AreaContent } from './types';
@@ -22,7 +27,7 @@ import type { AreaContent } from './types';
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, hydePark, wilmette, lakeForest].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, hydePark, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {

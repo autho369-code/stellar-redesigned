@@ -271,7 +271,7 @@ export default function Home() {
       <Helmet>
         {/* Entity-led title: /property-management-chicago owns the
             "chicago condo & hoa management company" head term. */}
-        <title>Stellar Property Management | Chicago Condo &amp; HOA Experts</title>
+        <title>Stellar Property Management, Chicago | Condo &amp; HOA from $30</title>
         <meta
           name="description"
           content="Stellar Property Management: Chicago condo, HOA, and townhome association management with dedicated managers, flat-fee pricing, and 24/7 response. Since 2007."

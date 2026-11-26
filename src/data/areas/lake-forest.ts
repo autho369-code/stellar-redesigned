@@ -15,12 +15,12 @@ export const lakeForest: AreaContent = {
     {
       name: 'Condominium associations',
       detail:
-        'Associations where owners expect clear monthly reporting and common areas kept to a high standard.',
+        'Associations where owners expect clear monthly reporting and common areas kept to a high standard. A clear monthly package lets the board answer an owner’s question the same day.',
     },
     {
       name: 'Townhome and homeowner associations',
       detail:
-        'Communities that share grounds, drives and exterior work, often under a different statute than a condominium.',
+        'Communities that share grounds, drives and exterior work, often under a different statute than a condominium. Landscaping is usually the largest visible contract, so the board should read its scope line by line every renewal.',
     },
   ],
   issues: [
@@ -28,7 +28,7 @@ export const lakeForest: AreaContent = {
     {
       title: 'Winter service',
       body:
-        'Winter service is the contract owners judge first. Put response times, the areas covered and record-keeping in writing before the season, and review the log after each storm.',
+        'Winter service is the contract owners judge first. Put response times, the areas covered and record-keeping in writing before the season, and review the log after each storm. Name the private drives and shared walks in the contract one by one.',
       post: 'illinois-condo-hoa-snow-removal-vendor-guide',
       linkText: 'managing snow and ice vendors',
     },
@@ -42,14 +42,14 @@ export const lakeForest: AreaContent = {
     {
       title: 'Preparing for insurance renewal',
       body:
-        'Start early. An association that shows the carrier organized records, completed maintenance and the story behind past claims stands in a stronger position than one that files late.',
+        'Start early. An association that shows the carrier organized records, completed maintenance and the story behind past claims stands in a stronger position than one that files late. Keep a simple file through the year, so renewal is not rebuilt from memory.',
       post: 'condo-hoa-insurance-renewal-checklist',
       linkText: 'preparing an association for insurance renewal',
     },
     {
       title: 'Budget season',
       body:
-        'Budget season either prevents disputes or creates them. A repeatable calendar for drafting, owner notice and the board vote keeps the final month calm.',
+        'Budget season either prevents disputes or creates them. A repeatable calendar for drafting, owner notice and the board vote keeps the final month calm. Owners accept a change more easily when they saw the draft early.',
       post: 'illinois-condo-hoa-budget-adoption-guide',
       linkText: 'a repeatable budget adoption process',
     },
@@ -80,6 +80,11 @@ export const lakeForest: AreaContent = {
       q: 'Who can approve emergency work when the board cannot meet?',
       a: 'Your declaration, your bylaws and the governing statute decide that. Ask association counsel once, and put the answer into a written emergency plan.',
       post: 'condo-hoa-emergency-planning-checklist',
+    },
+    {
+      q: 'What should a Lake Forest board ask a management firm?',
+      a: 'Ask for a written flat-fee proposal with a defined scope, the name of the manager, and how after-hours calls are handled. Compare every firm on the same points.',
+      post: 'score-condo-hoa-management-proposals',
     },
   ],
   hasHighRises: false,

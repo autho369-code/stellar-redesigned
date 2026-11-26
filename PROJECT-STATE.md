@@ -19,6 +19,17 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (five more area pages from Search Console demand)
+
+Same branch as the offer line (`sales-service-pages`, PR #53).
+`src/data/areas/{avondale,river-north,morton-grove,evanston,glenview}.ts`.
+Chosen by last-3-month impressions; Glenview added because it is the flagship
+market and Google shows it only 8 times. Neutral wording, no managed counts,
+every issue rests on a linked guide; Evanston and the suburbs get no City of
+Chicago links. Lake Forest, Wilmette and Lakeview got a few more page-specific
+lines to keep every pair under the 35% limit (closest pair now 34.6%).
+Homepage title tag changed to lead with the brand, the city and the price.
+
 ## Status update — 2026-11-26 (offer line on service, pricing and contact pages)
 
 Branch `sales-service-pages`, based on `main` after PRs #49 to #52 went live.

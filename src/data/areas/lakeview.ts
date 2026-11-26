@@ -15,17 +15,17 @@ export const lakeview: AreaContent = {
     {
       name: 'Vintage courtyard buildings',
       detail:
-        'Walk-up buildings with rear wood porches and shared masonry. The porches and the masonry are the board’s main structural items.',
+        'Walk-up buildings with rear wood porches and shared masonry. The porches and the masonry are the board’s main structural items. A walk-up board usually has three to five volunteers, so each inspection and repair needs one named owner on the board.',
     },
     {
       name: 'Mid-rises',
       detail:
-        'Elevator buildings with more units and more shared systems for the board to budget for.',
+        'Elevator buildings with more units and more shared systems for the board to budget for. Elevator service contracts and boiler work are easier to plan when the board keeps a simple log of every service call.',
     },
     {
       name: 'Newer construction',
       detail:
-        'Newer condominium buildings with modern systems. The board’s work is keeping the reserve plan and the rules current.',
+        'Newer condominium buildings with modern systems. The board’s work is keeping the reserve plan and the rules current. Early years are the time to set leasing and pet rules, before a dispute forces the question.',
     },
   ],
   issues: [
