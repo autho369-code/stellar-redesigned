@@ -14,14 +14,16 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       on 11 guides (`src/data/ctaPosts.ts`). Details in PROJECT-STATE.md.
 - [ ] **Phase 1 is PR #45** (open, not merged):
       https://github.com/autho369-code/stellar-redesigned/pull/45
-- [ ] **Vercel no longer receives pushes from this repo** (found Nov 26).
-      Proof: GitHub made a `vercel` check suite for the Nov 4 commit on
-      `main`, but none for any PR #45 commit (only `claude`). In Vercel the
-      last deployment is still PR #44. So the Vercel GitHub App lost access
-      to `stellar-redesigned` some time after Nov 4. Until it is reconnected
-      there is no preview, and **a merge to `main` will not publish**.
-      Project: https://vercel.com/aios2/stellar-redesigned (Claude's Vercel
-      connection only shows `condo-app`, so Claude cannot fix this).
+- [x] Nov 26: Vercel had lost its GitHub access to this repo (no builds
+      after Nov 4). Mirsad reconnected it; pushes build again.
+- [ ] **PR #45 preview is built:**
+      https://stellar-redesigned-git-phase-1-measure-and-capture-aios2.vercel.app
+      Claude could not open it (its Vercel connection only shows
+      `condo-app`). Still to check on the preview: a phone click sends a
+      request to `/_vercel/insights/event`.
+- [ ] Two Vercel projects build this repo: `stellar-redesigned` and
+      `stellar-redesigned-abux`. Ask Mirsad which one serves the live domain
+      and whether the other can go.
 - [ ] **After the Phase 1 PR is merged:** on the live site open DevTools >
       Network, click a phone link, and confirm a request to
       `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
@@ -82,9 +84,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
-- [ ] **Reconnect Vercel to GitHub for this repo:** GitHub > Settings >
-      Applications > Vercel > Configure > add `stellar-redesigned`. Or in
-      Vercel: the project > Settings > Git. Then tell Claude to push again.
 - [ ] **Merge PR #45** when the preview looks right.
 - [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
       button click counts need the **Pro** plan. On Hobby, only form leads are
