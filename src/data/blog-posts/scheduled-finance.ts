@@ -173,10 +173,12 @@ export const scheduledFinancePosts: BlogPost[] = [
   },
   {
     slug: 'illinois-22-1-disclosure-packet-checklist',
-    title: 'The Illinois 22.1 Disclosure Packet Checklist',
+    title: 'The Illinois Section 22.1 Disclosure Checklist for Condo Boards',
+    seoTitle: 'Illinois Section 22.1 Disclosure Checklist for Condo Boards',
     metaDescription:
       'A practical assembly checklist for Illinois condominium 22.1 resale disclosure packets: documents, financials, ledgers, insurance, and quality control steps.',
     date: '2026-08-27',
+    dateModified: '2026-11-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
     readTime: '7 min read',
@@ -193,7 +195,7 @@ export const scheduledFinancePosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>If your association is a condominium governed by the Illinois Condominium Property Act, Section 22.1 sets out the disclosure obligation triggered when a unit is resold. This article is the operational companion to that obligation: a packet assembly checklist your board can hand to whoever actually prepares the response, so that the same complete, accurate package goes out every time regardless of who is on duty.</p>
+      <p>An Illinois Section 22.1 disclosure checklist should cover five areas before a resale packet goes out: governing documents, financial condition, the unit account, insurance and risk, and quality control. If your association is a condominium governed by the Illinois Condominium Property Act, Section 22.1 sets out the disclosure obligation triggered when a unit is resold. This article is the operational companion to that obligation: a packet assembly checklist your board can hand to whoever actually prepares the response, so that the same complete, accurate package goes out every time regardless of who is on duty.</p>
 
       <p>Use it as a workflow, not a form. The exact contents your association must provide are determined by the governing statute and your recorded documents, and your association's counsel should confirm the required contents and any permitted fee before you standardize. What follows is how to organize the work so that nothing accurate gets left out and nothing unverified gets put in.</p>
 
@@ -277,9 +279,11 @@ export const scheduledFinancePosts: BlogPost[] = [
   {
     slug: 'reasonable-reserves-illinois-condo-law',
     title: 'Reasonable Reserves Under Illinois Condo Law',
+    seoTitle: 'Illinois Condo Reserves: What "Reasonable" Means for Boards',
     metaDescription:
       'Illinois condominium boards must budget reserves that are reasonable in the circumstances. Here is how boards build and document a defensible reserve decision.',
     date: '2026-08-31',
+    dateModified: '2026-11-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
     readTime: '7 min read',
@@ -296,7 +300,7 @@ export const scheduledFinancePosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Illinois condominium boards are expected to consider reserves as part of the annual budget process, and the standard the Condominium Property Act uses is reasonableness in light of the association's circumstances -- not a fixed percentage that applies to every building in the state. Boards looking for a single number to comply with will not find one, and that is the point. The statute asks for judgment, and judgment has to be exercised, documented, and revisited.</p>
+      <p>Illinois law sets no fixed reserve percentage: the Condominium Property Act asks boards to budget reasonable reserves in light of the association’s circumstances. Illinois condominium boards are expected to consider reserves as part of the annual budget process, and the standard the Condominium Property Act uses is reasonableness in light of the association's circumstances -- not a fixed percentage that applies to every building in the state. Boards looking for a single number to comply with will not find one, and that is the point. The statute asks for judgment, and judgment has to be exercised, documented, and revisited.</p>
 
       <p>The practical translation for a board: you are not judged on hitting a magic threshold. You are judged on whether you considered the right factors, in good faith, with real information, and wrote down what you concluded. A modest reserve with a documented rationale and a written funding plan is a far better position than a larger reserve nobody can explain.</p>
 
@@ -709,6 +713,7 @@ export const scheduledFinancePosts: BlogPost[] = [
   {
     slug: 'condo-hoa-annual-budget-workbook',
     title: 'A Practical Annual Budget Workbook for Association Boards',
+    seoTitle: 'Condo & HOA Annual Budget Workbook for Illinois Boards',
     metaDescription:
       'A month-by-month budget workbook for condo, HOA, and townhome boards: timeline, line-item method, reserve integration, and owner communication that works.',
     date: '2026-09-20',

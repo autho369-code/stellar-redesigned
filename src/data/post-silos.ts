@@ -149,7 +149,7 @@ export const postSilos: Record<string, PostSilo> = {
   'illinois-association-flag-display-rules': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] },
 
   // ── Condominium Management (choosing and running management)
-  'switch-condo-management-companies-chicago': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'], also: ['/pricing'] },
+  'switch-condo-management-companies-chicago': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'], also: ['/pricing', SMALL, HIGH_RISE] },
   'community-association-management-agreement-review': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'], also: ['/pricing'] },
   'verify-illinois-community-association-manager-license': { money: CONDO, area: CHICAGO, links: ['community-association-management-agreement-review', 'switch-condo-management-companies-chicago'] },
   'ai-in-condo-management': { money: CONDO, links: ['the-technology-behind-our-management', 'verify-illinois-community-association-manager-license'] },

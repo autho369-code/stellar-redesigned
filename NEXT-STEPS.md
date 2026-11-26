@@ -55,10 +55,18 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       starts only after Mirsad has reviewed Batch 1. Gold Coast is on HOLD
       until the claims audit is answered. Watch uniqueness: the closest
       Batch 1 pair shares 33% of its text; the limit is 35%.
-- [ ] **Phase 4 waits for Mirsad's "go"** (switch guide + cost section on
-      /pricing). The brief's "$20" is now $30 everywhere. The brief's "$24
-      average fee" is BELOW the $30 starting fee — do not publish it as
-      written; ask him.
+- [x] Nov 26: **Growth brief, Phase 4 built.** Branch
+      `phase-4-switch-and-cost`. Switch guide: new title tag, direct-answer
+      first sentence, timeline table, five FAQ sections, "How Stellar handles
+      a switch". /pricing: the "How much does condo management cost in
+      Chicago?" section. Title and first-sentence edits from the brief's 4C
+      table. Details in PROJECT-STATE.md.
+- [x] Nov 26: **Schema price fix.** Five JSON-LD blocks still said 20 after
+      the $30 change. They read `business.priceFrom` now and the build checks it.
+- [ ] Hidden until Mirsad volunteers the facts: transitions completed and
+      median days, whether there is a transition fee, the "$24 average fee"
+      (it is BELOW the $30 starting fee — do not publish as written), and
+      competitor reference prices on /pricing.
 - [ ] New guide? Add it to ONE cluster in `src/data/clusters.ts` (three area
       slugs) and to `src/data/post-silos.ts`. The build fails if it is missing.
 - [ ] Before every PR: `npm run build` may update

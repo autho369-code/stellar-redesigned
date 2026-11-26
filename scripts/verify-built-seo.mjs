@@ -17,7 +17,10 @@ const priceFrom = Number(readFileSync(join(root, 'src/data/business.ts'), 'utf8'
 if (!priceFrom) errors.push('business.ts: priceFrom not found');
 
 function valueOf(html, pattern) {
-  return html.match(pattern)?.[1]?.replace(/&amp;/g, '&').trim() ?? '';
+  // Decode the entities React emits, so a title is measured as a reader sees it.
+  return html.match(pattern)?.[1]
+    ?.replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+    .trim() ?? '';
 }
 
 for (const url of urls) {

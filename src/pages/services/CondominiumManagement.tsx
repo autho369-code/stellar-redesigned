@@ -67,7 +67,7 @@ export default function CondominiumManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago Condominium Management From $30/Unit | Stellar"
+        title="Chicago Condo Management Company | From $30/Unit | Stellar"
         description="Chicago condominium association management from $30 per unit, with financial reporting, 24/7 response, and no separate capital-project oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/condominium-management"
       />

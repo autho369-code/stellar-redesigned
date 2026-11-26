@@ -209,6 +209,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
   {
     slug: 'chicago-condo-facade-compliance-board-guide',
     title: 'Chicago Facade Compliance: How Condo Boards Can Stay Project-Ready',
+    seoTitle: 'Chicago Facade Ordinance for Condo Boards: Compliance Guide',
     metaDescription:
       'Chicago condo boards and facade compliance: how to confirm current City requirements, hire the right professionals, budget for repairs, and document board decisions.',
     date: '2026-09-01',

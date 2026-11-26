@@ -33,6 +33,8 @@ import { getChicagoPublicationDate } from '../../utils/publication-date';
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Title tag, when it should differ from the H1 (62 characters or fewer). */
+  seoTitle?: string;
   metaDescription: string;
   date: string;
   dateModified?: string;

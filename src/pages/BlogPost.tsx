@@ -55,6 +55,10 @@ const PROSE_CLASS = `
   [&>ul>li]:text-slate-600 [&>ul>li]:font-light [&>ul>li]:text-lg [&>ul>li]:leading-relaxed
   [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
   [&_strong]:text-ink [&_strong]:font-semibold
+  [&>table]:my-8 [&>table]:w-full [&>table]:border-collapse [&>table]:text-left [&>table]:text-base
+  [&_th]:border-b-2 [&_th]:border-slate-300 [&_th]:py-3 [&_th]:pr-4 [&_th]:align-bottom [&_th]:font-display [&_th]:font-normal [&_th]:text-ink
+  [&_td]:border-b [&_td]:border-slate-200 [&_td]:py-4 [&_td]:pr-4 [&_td]:align-top [&_td]:font-light [&_td]:leading-relaxed [&_td]:text-slate-600
+  [&_td:first-child]:font-normal [&_td:first-child]:text-ink sm:[&_td:first-child]:whitespace-nowrap
 `;
 
 function formatDate(dateString: string): string {
@@ -169,7 +173,7 @@ export default function BlogPost() {
   return (
     <>
       <SEOHead
-        title={post.title.length > 62 ? `${post.title.slice(0, 59).trimEnd()}…` : post.title}
+        title={post.seoTitle ?? (post.title.length > 62 ? `${post.title.slice(0, 59).trimEnd()}…` : post.title)}
         description={post.metaDescription}
         canonical={`https://www.stellarpropertygroup.com/blog/${post.slug}`}
         ogType="article"
