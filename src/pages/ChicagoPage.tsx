@@ -1,3 +1,4 @@
+import { business } from '../data/business';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
@@ -191,7 +192,7 @@ export default function ChicagoPage() {
   return (
     <>
       <SEOHead
-        title="Chicago Condo & HOA Management Company | Stellar"
+        title="Condo & HOA Management in Chicago | From $30/Unit | Stellar"
         description="Chicago condo, HOA and townhome association management. Facade ordinance and heat compliance, reserve planning, flat fees, 24/7 response."
         canonical="https://www.stellarpropertygroup.com/property-management-chicago"
       />
@@ -225,16 +226,16 @@ export default function ChicagoPage() {
                 The Atlas · The City of Chicago
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
-                Property Management
+                Condo &amp; HOA Management
                 {' '}<br />
-                in <em className="font-medium text-gold-600">Chicago.</em>
+                in <em className="font-medium text-gold-600">Chicago</em>
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Condominium, HOA, and townhome association management across
-                more than 55 Chicago neighborhoods — practiced from a Chicago
-                office, by people who know these buildings block by block.
+                Stellar provides condo, HOA and townhome management in Chicago
+                for a flat fee starting at ${business.priceFrom} per unit per month,
+                {business.priceTerms}. We work from a Chicago office at 5107 N Western Ave.
               </p>
             </div>
           </div>

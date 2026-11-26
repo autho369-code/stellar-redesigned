@@ -1,3 +1,4 @@
+import { business } from '../../data/business';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
 import { CTASection } from '../../components/ui/CTASection';
@@ -89,7 +90,7 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago HOA Management From $30/Unit | Stellar"
+        title="Chicago HOA Management Company | From $30/Unit | Stellar"
         description="Chicago HOA management from $30 per unit with transparent financials, common-area operations, board support, and no separate project-oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
@@ -118,7 +119,7 @@ export default function HOAManagement() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Building stronger neighborhoods through professional homeowners association management. From established suburbs to new developments across Chicagoland, we create communities where people are proud to live.
+                Stellar manages homeowners associations in Chicago and the North Shore for a flat fee starting at ${business.priceFrom} per unit per month, {business.priceTerms}. Your board gets transparent financials, common-area operations and board support.
               </p>
             </div>
           </div>

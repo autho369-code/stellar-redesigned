@@ -56,7 +56,7 @@ export default function ProposalCta({ variant, source, page, hook }: ProposalCta
       >
         <p className="font-display text-2xl text-ink">Comparing management options?</p>
         <p className="mt-3 leading-relaxed text-slate-700">
-          {hook ? `${hook} ` : ''}Pricing starts at {price} as a customized flat fee, never a percentage of your budget.
+          {hook ? `${hook} ` : ''}Pricing starts at {price}, {business.priceTerms}.
         </p>
         {actions}
       </aside>
@@ -75,7 +75,7 @@ export default function ProposalCta({ variant, source, page, hook }: ProposalCta
       </h2>
       <p className="mt-4 text-lg font-light leading-relaxed text-slate-700">
         Tell us about your building (unit count, age, amenities and what is not working) and we will respond with a
-        written, flat-fee proposal{PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. Pricing starts at {price}.
+        written, flat-fee proposal{PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. Pricing starts at {price}, {business.priceTerms}.
       </p>
       {actions}
       <p className="mt-7 text-sm font-medium text-ink">Your Property Management Team</p>

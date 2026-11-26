@@ -56,7 +56,7 @@ export default function HighRiseManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago High-Rise Condo Management | Stellar"
+        title="Chicago High-Rise Condo Management | From $30/Unit"
         description="High-rise condominium association management in Chicago: building systems, staff and vendor coordination, capital planning, financial controls, and 24/7 response."
         canonical="https://www.stellarpropertygroup.com/services/high-rise-condominium-management"
       />
@@ -68,7 +68,7 @@ export default function HighRiseManagement() {
           <p className="eyebrow mb-6 flex items-center gap-4 text-gold-600"><span className="accent-rule" />Chicago Building-Type Expertise</p>
           <div className="grid items-end gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <h1 className="text-balance font-display text-5xl font-light leading-[1.04] text-ink lg:text-6xl xl:text-7xl">High-Rise Condominium Management in <em className="font-medium text-gold-600">Chicago.</em></h1>
+              <h1 className="text-balance font-display text-5xl font-light leading-[1.04] text-ink lg:text-6xl xl:text-7xl">High-Rise Condo Management in <em className="font-medium text-gold-600">Chicago</em></h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg font-light leading-relaxed text-slate-600">High-rises are operating systems, not just collections of units. Stellar coordinates the people, equipment, finances, and board decisions that keep complex Chicago condominium buildings dependable.</p>

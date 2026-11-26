@@ -185,7 +185,7 @@ export default function Pricing() {
           <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> The Cost, Explained</p>
           <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">How much does condo management cost in Chicago?</h2>
           <p className="text-lg text-slate-600 font-light leading-relaxed max-w-3xl">
-            Chicago condo management is priced as a monthly fee per association, usually quoted per unit, and Stellar&rsquo;s starts at ${business.priceFrom} per unit per month as a customized flat fee.
+            Chicago condo management is priced as a monthly fee per association, usually quoted per unit, and Stellar&rsquo;s starts at ${business.priceFrom} per unit per month, {business.priceTerms}.
           </p>
 
           <h3 className="font-display text-2xl text-ink mt-14 mb-5">The four pricing models boards are offered</h3>

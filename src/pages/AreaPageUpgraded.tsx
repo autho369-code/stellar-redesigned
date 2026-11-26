@@ -55,8 +55,8 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
 
   // Direct-answer first sentence. Variant A needs the owner's numbers.
   const lead = content.managed
-    ? `Stellar manages ${content.managed.associations} condo and HOA associations in ${name}, ${locale}, each with a dedicated manager, monthly board-ready financials and a flat fee from ${price}.`
-    : `Stellar provides condo, HOA and townhome management to ${name} boards from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly board-ready financials and a flat fee from ${price}.`;
+    ? `Stellar manages ${content.managed.associations} condo and HOA associations in ${name}, ${locale}, each with a dedicated manager, monthly board-ready financials and a flat fee starting at ${price}, ${business.priceTerms}.`
+    : `Stellar provides condo, HOA and townhome management to ${name} boards from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly board-ready financials and a flat fee starting at ${price}, ${business.priceTerms}.`;
 
   const links = [...officialLinks, ...(content.hasHighRises ? [exteriorWallLink] : [])];
   const dataPoints = publishedStellarData();
@@ -121,7 +121,7 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
             </nav>
             <h1 className="mb-9 text-balance font-display text-5xl font-light leading-[1.04] text-ink lg:text-6xl">
               Condo &amp; HOA Management in{' '}
-              <em className="font-medium text-gold-600">{name}{isSuburb ? '' : ','}</em>{isSuburb ? '' : ' Chicago'}
+              <em className="font-medium text-gold-600">{name},</em> {locale}
             </h1>
             <p data-area-lead className="max-w-3xl text-xl font-light leading-relaxed text-ink">{lead}</p>
             <p className="mt-5 max-w-3xl text-lg font-light leading-relaxed text-slate-600">{content.context}</p>
