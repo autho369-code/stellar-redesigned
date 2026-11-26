@@ -35,10 +35,23 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       `scripts/check-links.mjs` runs in the build. Details in PROJECT-STATE.md.
 - [ ] **Phase 2 is PR #46**, rebased onto `main` after Phase 1 was merged.
       Mirsad merges it (or says "merge 46").
-- [ ] **Phases 3 and 4 wait for Mirsad's "go"** — one at a time. Phase 3 =
-      10 area pages (starts with a claims audit he must answer). Phase 4 =
-      switch guide + cost section on /pricing. The brief's "$20" is now $30
-      everywhere; the "$24 average fee" line needs his approval.
+- [x] Nov 26: **Growth brief, Phase 3, Batch 1 built** (Rogers Park,
+      Edgewater, Lincoln Square, Lakeview, Lincoln Park). Branch
+      `phase-3-area-pages` (PR #47), stacked on Phase 2. Content in
+      `src/data/areas/<slug>.ts`, layout `src/pages/AreaPageUpgraded.tsx`,
+      `scripts/check-uniqueness.mjs` in the build. Details in PROJECT-STATE.md.
+- [ ] **Phase 3 is waiting for Mirsad's answers** — the claims audit and
+      fill-in sheet: `docs/area-claims-audit-2026-11-26.md`. Every unconfirmed
+      fact is null and hidden. When he answers: fill the content files, remove
+      or soften the NOT TRUE sentences in `src/data/neighborhoods.ts`.
+- [ ] **Batch 2** (Evanston, Uptown, Andersonville, Ravenswood, Gold Coast)
+      starts only after Mirsad has reviewed Batch 1. Gold Coast is on HOLD
+      until the claims audit is answered. Watch uniqueness: the closest
+      Batch 1 pair shares 33% of its text; the limit is 35%.
+- [ ] **Phase 4 waits for Mirsad's "go"** (switch guide + cost section on
+      /pricing). The brief's "$20" is now $30 everywhere. The brief's "$24
+      average fee" is BELOW the $30 starting fee — do not publish it as
+      written; ask him.
 - [ ] New guide? Add it to ONE cluster in `src/data/clusters.ts` (three area
       slugs) and to `src/data/post-silos.ts`. The build fails if it is missing.
 - [ ] Before every PR: `npm run build` may update
@@ -93,6 +106,10 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
+- [ ] **Phase 3 fill-in:** mark the claims in
+      `docs/area-claims-audit-2026-11-26.md` true / not true, and answer the
+      fill-in sheet at the bottom (associations per neighborhood, issues, fee
+      ranges, photos).
 - [ ] **Phase 2 questions:** (1) Old Town was not in the brief's area lists —
       Claude put it with the vintage neighborhoods. OK? (2) The live guide
       "Why Stellar Runs on Portier369" says Stellar runs on Portier369; the

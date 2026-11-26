@@ -19,6 +19,49 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (growth brief Phase 3, Batch 1: upgraded area pages)
+
+Branch `phase-3-area-pages`, stacked on Phase 2. Five pages upgraded: Rogers
+Park, Edgewater, Lincoln Square, Lakeview, Lincoln Park. No slug changed.
+
+- **Step 0, claims audit:** `docs/area-claims-audit-2026-11-26.md` lists 31
+  sentences on the 10 pages that say or imply Stellar manages or has special
+  expertise in the neighborhood. Mirsad marks each true / not true. Until
+  then the upgraded pages show none of them and use the neutral "Stellar
+  provides ... management to X boards from our Chicago office" sentence
+  (the brief's variant B).
+- **Content model:** `src/data/areas/<slug>.ts` (types in `types.ts`). Every
+  block is optional and hidden when its data is null or empty. Owner facts
+  (associations managed nearby, fee ranges, photos, extra building types) are
+  null with `TODO(Jojo)` comments. `src/data/stellarData.ts` holds the data
+  block; unapproved fields are null.
+- **Layout:** `src/pages/AreaPageUpgraded.tsx`, used by `NeighborhoodPage`
+  when a content file exists. Sections: direct-answer first sentence,
+  buildings, issues (each linked to its cluster guide), cost (from $30, link
+  to /pricing), three local FAQs (visible text = FAQPage JSON-LD), services,
+  Stellar in numbers, official links, curated guides, proposal block
+  (`?source=area-<slug>`). The five name-swapped standard FAQs and the
+  generic "why choose" section are not on upgraded pages.
+- **Sources:** building types come from each page's earlier copy. Issue and
+  FAQ text restates the linked guide. One new fact: Chicago's exterior wall
+  rules cover buildings 80 feet or more in height (Municipal Code text and
+  the City's exterior wall program page).
+- **Two-way links:** a guide linked from an upgraded page's issues or FAQs
+  gets that area added to its "nearby neighborhoods" module
+  (`getAreasLinkingPost`).
+- **Titles:** the brief's proposed titles with "| Stellar" are 63-69
+  characters, over its own 62 limit. The titles drop "| Stellar":
+  "Condo Management in <Name>, Chicago | From $30/Unit" (53-59 characters).
+- **Checks in the build:** `scripts/check-uniqueness.mjs` (5-word shingles on
+  the built main text, every pair, limit 35% of the smaller page; closest
+  pair today is Lakeview / Lincoln Park at 33.3%). `check-links.mjs` also
+  checks each upgraded page: 4+ cluster guides, /pricing, /contact, a service
+  page, two-way links, title 62 or fewer, meta 140-155, FAQ text = JSON-LD,
+  no aggregateRating.
+- **Honest gap:** the neighborhood-specific copy is about 450-500 words per
+  page, under the brief's 700-900, because every unconfirmed fact is hidden.
+  It grows when Mirsad answers the fill-in sheet. No photos yet.
+
 ## Status update — 2026-11-26 (growth brief Phase 2: reverse-silo links)
 
 Branch `phase-2-reverse-silo`, stacked on the Phase 1 branch. Links and small

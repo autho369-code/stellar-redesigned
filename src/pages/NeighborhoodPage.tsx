@@ -7,6 +7,8 @@ import { getNeighborhoodServices } from '../data/neighborhood-services';
 import { blogPosts } from '../data/blog-posts';
 import { contentClusters, getNeighborhoodCluster } from '../data/content-silos';
 import { getAreaGuides } from '../data/clusters';
+import { getAreaContent } from '../data/areas';
+import AreaPageUpgraded from './AreaPageUpgraded';
 
 const whyChoose = [
   {
@@ -80,6 +82,22 @@ export default function NeighborhoodPage() {
     .map((slug) => guideBySlug.get(slug))
     .filter((guide): guide is (typeof blogPosts)[number] => !!guide);
   const neighborhoodClusterConfig = contentClusters[neighborhoodCluster];
+
+  // Upgraded pages (growth brief, Phase 3) have their own content file and
+  // layout. Every other area page keeps the standard template below.
+  const upgraded = getAreaContent(neighborhood.slug);
+  if (upgraded) {
+    return (
+      <AreaPageUpgraded
+        neighborhood={neighborhood}
+        content={upgraded}
+        guides={neighborhoodGuides}
+        guideTitles={new Map(blogPosts.map((guide) => [guide.slug, guide.title]))}
+        services={localServices.map(({ title, link }) => ({ title, link }))}
+        relatedNeighborhoods={relatedNeighborhoods.map(({ slug: relatedSlug, name }) => ({ slug: relatedSlug, name }))}
+      />
+    );
+  }
 
   // Chicago neighborhoods are "<Name>, Chicago"; North Shore suburbs are
   // their own municipalities — "<Name>, Illinois".

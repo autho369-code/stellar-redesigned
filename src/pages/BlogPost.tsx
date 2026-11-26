@@ -12,6 +12,7 @@ import ProposalCta from '../components/ProposalCta';
 import SeriesNav from '../components/seo/SeriesNav';
 import NearbyAreas from '../components/seo/NearbyAreas';
 import { getClusterFor, getNearbyAreas, getSeriesNav } from '../data/clusters';
+import { getAreasLinkingPost } from '../data/areas';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -105,7 +106,9 @@ export default function BlogPost() {
   );
   const seriesNav = clusterEntry ? getSeriesNav(post.slug, linkedInBody) : null;
   const guideTitles = new Map(blogPosts.map((guide) => [guide.slug, guide.title]));
-  const nearbyAreas = getNearbyAreas(post.slug)
+  // The brief's area pages for this guide, plus any upgraded area page that
+  // links this guide, so those links are always two-way.
+  const nearbyAreas = [...new Set([...getNearbyAreas(post.slug), ...(clusterEntry ? getAreasLinkingPost(post.slug) : [])])]
     .map((slug) => neighborhoods.find((neighborhood) => neighborhood.slug === slug))
     .filter((neighborhood): neighborhood is (typeof neighborhoods)[number] => !!neighborhood)
     .map(({ slug, name }) => ({ slug, name }));
