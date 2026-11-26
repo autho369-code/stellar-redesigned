@@ -39,6 +39,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>The first question every board asks is what percentage of owners must approve. The answer depends on where the building sits, and getting it wrong wastes months.</p>
 
+      <p>While a sale is being studied, the association still has its regular obligations to meet. Our <a href="/blog/chicago-condo-association-compliance-calendar">Chicago condominium association compliance calendar</a> shows how to track them.</p>
       <h2>75% under state law, 85% in Chicago</h2>
 
       <p>Section 15 of the Illinois Condominium Property Act (765 ILCS 605/15) sets the threshold at <strong>75% of unit owners</strong> for condominiums of four or more units. That is the number across most of Illinois.</p>
@@ -205,6 +206,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
     content: `
       <p>Every few years a board runs into something its declaration will not let it do. Leasing has got out of hand, the rules have no teeth, an obsolete provision is blocking a project. Someone says "we should amend the declaration," and the board discovers the process is less obvious than it looked.</p>
 
+      <p>An amendment adds its own notice and voting dates to the board’s year. Our <a href="/blog/chicago-condo-association-compliance-calendar">Chicago condominium association compliance calendar</a> shows how to keep all of those dates in one place.</p>
       <h2>The default is two-thirds — but check your own documents first</h2>
 
       <p>Section 27 of the Illinois Condominium Property Act sets the general amendment threshold at an affirmative vote of <strong>two-thirds of voting unit owners</strong>. That is the default, and it applies unless your condominium instruments specify a different figure.</p>
@@ -298,6 +300,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
 
       <p>It is one of the few board actions where the benefit goes straight to owners' own tax bills rather than into the association budget — which makes it one of the easiest things a board ever has to explain at an annual meeting.</p>
 
+      <p>In a small building this job can land on one volunteer. If your board wants help carrying the workload, see our <a href="/services/small-condo-association-management">small condo association management</a> service.</p>
       <h2>How the association filing works</h2>
 
       <p>When an association files with the Cook County Assessor's Office, the filing must include <strong>all the PINs in the association</strong>, except those belonging to owners who have opted out. Individual owners are strongly encouraged to file with their association, but they retain the right to opt out and appeal their own unit separately.</p>

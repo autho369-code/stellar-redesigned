@@ -27,11 +27,19 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
 - [ ] **After the Phase 1 PR is merged:** on the live site open DevTools >
       Network, click a phone link, and confirm a request to
       `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
-- [ ] **Phases 2, 3 and 4 of the growth brief wait for Mirsad's "go"** — one
-      phase at a time. Phase 2 = reverse-silo links (`clusters.ts`, SeriesNav,
-      NearbyAreas). Phase 3 = 10 area pages (starts with a claims audit).
-      Phase 4 = switch guide + cost section on /pricing. The brief's "$20"
-      is now $30 everywhere; the "$24 average fee" line needs his approval.
+- [x] Nov 26: **Growth brief, Phase 2 built** (reverse-silo links). Branch
+      `phase-2-reverse-silo`, stacked on Phase 1. `src/data/clusters.ts` holds
+      14 clusters / 75 guides; SeriesNav + NearbyAreas on every guide; curated
+      guides on the 43 area pages; 44 guides got a hand-written link sentence;
+      `scripts/check-links.mjs` runs in the build. Details in PROJECT-STATE.md.
+- [ ] **Merge order: Phase 1 PR first, then Phase 2.** After Phase 1 is
+      merged, rebase `phase-2-reverse-silo` onto `main` before merging it.
+- [ ] **Phases 3 and 4 wait for Mirsad's "go"** — one at a time. Phase 3 =
+      10 area pages (starts with a claims audit he must answer). Phase 4 =
+      switch guide + cost section on /pricing. The brief's "$20" is now $30
+      everywhere; the "$24 average fee" line needs his approval.
+- [ ] New guide? Add it to ONE cluster in `src/data/clusters.ts` (three area
+      slugs) and to `src/data/post-silos.ts`. The build fails if it is missing.
 - [ ] Before every PR: `npm run build` may update
       `scripts/sitemap-lastmod.json` (page dates). Commit it with the change.
 - [x] Nov 3: **daily publishing STOPPED** (Mirsad: Stellar site retiring for
@@ -84,6 +92,12 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
+- [ ] **Phase 2 questions:** (1) Old Town was not in the brief's area lists —
+      Claude put it with the vintage neighborhoods. OK? (2) The live guide
+      "Why Stellar Runs on Portier369" says Stellar runs on Portier369; the
+      brief says the portal is AppFolio. Which is right for the site?
+      (3) The brief's "duplicates" table (thin posts) and the 4 new post
+      topics wait for your decision — nothing was merged, deleted or written.
 - [ ] **Merge PR #45** when the preview looks right.
 - [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
       button click counts need the **Pro** plan. On Hobby, only form leads are

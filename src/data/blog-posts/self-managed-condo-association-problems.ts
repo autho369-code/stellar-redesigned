@@ -13,6 +13,7 @@ export const selfManagedCondoProblems = {
   content: `
 <p>As management costs rise, more Illinois associations — especially smaller condo buildings — are choosing to self-manage. On paper, the appeal is obvious: skip the management fee, keep the money in the association. And for a small, stable building with engaged volunteers, self-management can work for a while. The problem is what stays hidden until it suddenly is not.</p>
 
+<p>When a board decides it is time for outside help, our guide on <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a> covers the search, and our <a href="/services/condominium-management">condominium management services</a> page shows what a manager takes over.</p>
 <h2>Why Associations Self-Manage</h2>
 <p>The motivation is almost always cost. A management fee feels like a line item a tight budget can eliminate, and a capable, generous volunteer can make it look effortless. But self-management does not remove the work or the legal obligations — it simply moves all of them onto unpaid neighbors.</p>
 

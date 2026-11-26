@@ -14,6 +14,7 @@ export const illinoisCondoLawUpdates2026 = {
 <p>Few volunteer roles carry as much legal exposure as serving on an Illinois condominium board. Board members are fiduciaries, and the buildings they govern are regulated by a layered framework of state statutes, local ordinances, and the association's own governing documents. Heading into 2026, the smartest thing any board can do is revisit the fundamentals — because most legal disputes do not come from obscure rules. They come from well-known requirements that boards quietly let slip.</p>
 <p>This guide walks through the areas of Illinois condo law that most often create risk, and where boards should focus their attention this year.</p>
 
+<p>To turn each requirement into a dated task, pair this guide with our <a href="/blog/chicago-condo-association-compliance-calendar">Chicago condominium association compliance calendar</a>.</p>
 <h2>Know Which Law Governs Your Community</h2>
 <p>Illinois condominium associations are governed primarily by the <strong>Illinois Condominium Property Act</strong> (765 ILCS 605). Many townhome and homeowners associations that are not condominiums fall instead under the <strong>Common Interest Community Association Act</strong> (765 ILCS 160). The two statutes share a similar spirit but differ in their specifics, so the first step for any board is simply confirming which act applies — then reading the declaration and bylaws alongside it. Where a governing document conflicts with the statute, the statute generally controls.</p>
 

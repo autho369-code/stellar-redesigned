@@ -9,6 +9,9 @@ import { contentClusters, getPostCluster, getPostNeighborhoods, getPostRegion, g
 import { getPostSilo, getSiloSiblings, moneyPageLabels } from '../data/post-silos';
 import { ctaPosts, splitForMidCta, withoutClosingCta } from '../data/ctaPosts';
 import ProposalCta from '../components/ProposalCta';
+import SeriesNav from '../components/seo/SeriesNav';
+import NearbyAreas from '../components/seo/NearbyAreas';
+import { getClusterFor, getNearbyAreas, getSeriesNav } from '../data/clusters';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -93,6 +96,19 @@ export default function BlogPost() {
   const bodyHtml = cta ? withoutClosingCta(post.slug, fullBody) : fullBody;
   const bodyParts = cta ? splitForMidCta(bodyHtml) : null;
   const faqPairs = getFaqPairs(cta ? withoutClosingCta(post.slug, post.content) : post.content);
+
+  // Reverse-silo modules (src/data/clusters.ts). Guides not yet in a cluster
+  // (unpublished ones) keep the older related-posts and area sections below.
+  const clusterEntry = getClusterFor(post.slug);
+  const linkedInBody = new Set(
+    [...bodyHtml.matchAll(/href="\/blog\/([^"#?]+)"/g)].map((match) => match[1]),
+  );
+  const seriesNav = clusterEntry ? getSeriesNav(post.slug, linkedInBody) : null;
+  const guideTitles = new Map(blogPosts.map((guide) => [guide.slug, guide.title]));
+  const nearbyAreas = getNearbyAreas(post.slug)
+    .map((slug) => neighborhoods.find((neighborhood) => neighborhood.slug === slug))
+    .filter((neighborhood): neighborhood is (typeof neighborhoods)[number] => !!neighborhood)
+    .map(({ slug, name }) => ({ slug, name }));
   const faqSchema = faqPairs.length >= 2
     ? {
         '@context': 'https://schema.org',
@@ -228,13 +244,17 @@ export default function BlogPost() {
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
           {bodyParts ? (
             <>
-              <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[0] }} />
+              <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[0] }} />
               <ProposalCta variant="mid" source={`blog-${post.slug}-mid`} page={post.slug} hook={cta.hook} />
-              <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[1] }} />
+              <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[1] }} />
             </>
           ) : (
-            <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+            <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyHtml }} />
           )}
+          {seriesNav && clusterEntry && (
+            <SeriesNav links={seriesNav} clusterName={clusterEntry.cluster.name} titles={guideTitles} />
+          )}
+          <NearbyAreas areas={nearbyAreas} />
           {cta && <ProposalCta variant="end" source={`blog-${post.slug}-end`} page={post.slug} />}
           {post.sources && post.sources.length > 0 && (
             <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-sources">
@@ -322,13 +342,13 @@ export default function BlogPost() {
           </div>
           <div className="lg:col-span-7 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0 lg:pl-12">
             <p className="text-[10px] uppercase tracking-luxe text-slate-400 mb-5">Management in the communities we serve</p>
-            <div className="flex flex-wrap gap-3 mb-7">
+            {!clusterEntry && <div className="flex flex-wrap gap-3 mb-7">
               {locationLinks.map((neighborhood) => (
                 <Link key={neighborhood.slug} to={`/property-management-${neighborhood.slug}`} className="border border-slate-200 bg-white px-4 py-2 text-sm text-ink hover:border-gold-400 hover:text-gold-600 transition-colors">
                   {neighborhood.name}
                 </Link>
               ))}
-            </div>
+            </div>}
             <div className="flex flex-wrap gap-x-8 gap-y-3">
               {postRegion !== 'north-shore' && <Link to="/property-management-chicago" className="text-sm text-ink hover:text-gold-600">Chicago management</Link>}
               {postRegion !== 'chicago' && <Link to="/property-management-north-shore" className="text-sm text-ink hover:text-gold-600">North Shore management</Link>}
@@ -339,7 +359,7 @@ export default function BlogPost() {
       </section>
 
       {/* ── Related Posts ──────────────────────────────────────── */}
-      {relatedPosts.length > 0 && (
+      {!clusterEntry && relatedPosts.length > 0 && (
         <section className="bg-ivory-100 border-t border-slate-200 py-24 lg:py-32">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
             <div className="max-w-2xl mb-14">

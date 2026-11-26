@@ -19,6 +19,54 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (growth brief Phase 2: reverse-silo links)
+
+Branch `phase-2-reverse-silo`, stacked on the Phase 1 branch. Links and small
+modules only; no slug changed, nothing merged, deleted or redirected.
+
+- **`src/data/clusters.ts`** is the cluster map from the brief: 14 clusters
+  (A-N), 75 published guides, one pillar and one money page per cluster, area
+  pages per guide, named siblings, pillar cross-links, the extra money-page
+  links, and the area-type lists. The brief's tables matched the code exactly
+  (0 mismatches on "links to add").
+- **Body-link rule changed** (was: exactly one money page per guide). Now: one
+  PRIMARY money page (= the cluster money page) plus only the extras listed in
+  `also` in `post-silos.ts`. Nine guides moved to their cluster money page and
+  keep the old one in `also` (score, how-many, expectations, self-managed,
+  segregated-accounts → condominium management; porch-deck, emergency → high-rise;
+  snow-removal → HOA; fiduciary-audit → board support).
+- **44 guides got one hand-written paragraph** at the end of the intro (first
+  third of the body): 30 pillar links, 9 cluster money links, 23 extra
+  money-page links. No new legal claims; each sentence only points to what the
+  linked page covers.
+- **SeriesNav** ("More in this guide"): pillar + up to 3 siblings; a pillar
+  shows every member plus its cross-cluster links. **NearbyAreas**: the area
+  pages the brief assigns (3, or 7 in cluster J), text "<Name> condo and HOA
+  management". Both sit at the end of the article, above the proposal block.
+  They replace the old rotating area chips and "Related articles" on clustered
+  guides (unpublished guides keep the old sections).
+- **Area pages:** the guides block now shows the choosing-a-manager pillar + 5
+  guides from the page's area type, rotated by page index. The brief's lists
+  cover only 29 guides, which would have left 46 guides with no area-page link
+  (it was 18 before). So each remaining guide is also shown on ONE of the area
+  pages its own NearbyAreas links to: 0-3 extra per page.
+- **`scripts/check-links.mjs`** (in postbuild, also `npm run seo:check-links`)
+  reads the built HTML and fails on: a missing required link, a guide with no
+  area-page link, any broken internal link, or the same URL twice in an
+  article body. Tested by breaking five links on purpose: all five caught.
+- **Before → after (built site):** guides linking an area page inside the
+  article 0 → 75; guides with no area-page inlink 18 → 0; guides linking each
+  money page: /pricing 1 → 5, /board-toolkit 1 → 5, scorecard 1 → 4, townhome
+  1 → 3, HOA 1 → 3, high-rise 2 → 7, small-condo 2 → 6, resale 3 → 5,
+  condominium management 5 → 10.
+- **Judgment calls to confirm with Mirsad:** Old Town is not in the brief's
+  area lists (placed with vintage neighborhoods); for the combined
+  "townhome and HOA" row, late-fees → HOA page and rules → townhome page.
+- **Not done, needs Mirsad:** the brief's duplicates table (report only) and
+  the four new post topics. The draft the brief names
+  (`/workspace/stellar/drafts/2026-11-02-chicago-high-rise-condo-management.md`)
+  is not in this repo.
+
 ## Status update — 2026-11-26 (growth brief Phase 1; flat fee now starts at $30)
 
 Source: Mirsad's 33-page brief "Stellar Property Management: website growth

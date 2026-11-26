@@ -1,5 +1,8 @@
-// Reverse silo for the blog. Every guide supports exactly ONE money page
+// Reverse silo for the blog. Every guide supports ONE primary money page
 // (a service page, /pricing, or /condo-living) and links to it in the body.
+// For published guides the primary money page is its cluster's money page
+// (src/data/clusters.ts). A guide may also link the extra money pages listed
+// in `also` (growth brief Phase 2), and nothing else.
 // It may also link at most one area page, and it links to its siblings and,
 // when it belongs to an overlap cluster, to that cluster's pillar guide.
 // scripts/verify-content-silos.mjs fails the build when a guide breaks this,
@@ -42,6 +45,11 @@ export interface PostSilo {
   area?: string;
   /** Sibling and pillar guides the body must link. */
   links: string[];
+  /**
+   * Extra money pages the body also links, once each (growth brief Phase 2,
+   * 2026-11-26). The body may link no money page outside money + also.
+   */
+  also?: MoneyPage[];
 }
 
 const CHICAGO = '/property-management-chicago';
@@ -65,26 +73,26 @@ export const postSilos: Record<string, PostSilo> = {
   'condo-reserve-funds-explained': { money: FIN, links: ['how-to-read-condo-reserve-study', 'reasonable-reserves-illinois-condo-law'] },
   'reasonable-reserves-illinois-condo-law': { money: FIN, links: ['how-to-read-condo-reserve-study', 'condo-reserve-funds-explained'] },
   'condo-special-assessments-illinois': { money: FIN, links: ['how-to-read-condo-reserve-study', 'reasonable-reserves-illinois-condo-law'] },
-  'condo-hoa-capital-project-loan-preparation': { money: FIN, links: ['condo-special-assessments-illinois', 'how-to-read-condo-reserve-study'] },
-  'illinois-condo-hoa-budget-adoption-guide': { money: FIN, area: CHICAGO, links: ['condo-hoa-annual-budget-workbook', 'how-to-read-condo-reserve-study'] },
+  'condo-hoa-capital-project-loan-preparation': { money: FIN, links: ['condo-special-assessments-illinois', 'how-to-read-condo-reserve-study'], also: [HIGH_RISE] },
+  'illinois-condo-hoa-budget-adoption-guide': { money: FIN, area: CHICAGO, links: ['condo-hoa-annual-budget-workbook', 'how-to-read-condo-reserve-study'], also: [SMALL] },
   'condo-hoa-annual-budget-workbook': { money: FIN, area: CHICAGO, links: ['illinois-condo-hoa-budget-adoption-guide', 'how-to-read-condo-reserve-study'] },
-  'cook-county-property-tax-appeal-condo-association': { money: FIN, area: CHICAGO, links: ['illinois-condo-hoa-budget-adoption-guide'] },
+  'cook-county-property-tax-appeal-condo-association': { money: FIN, area: CHICAGO, links: ['illinois-condo-hoa-budget-adoption-guide'], also: [SMALL] },
   'read-condo-hoa-financial-statements': { money: FIN, links: ['illinois-condo-owners-independent-audit-rights', 'illinois-condo-hoa-budget-adoption-guide'] },
-  'illinois-condo-board-fiduciary-duty-audit': { money: FIN, area: CHICAGO, links: ['illinois-condo-owners-independent-audit-rights', 'read-condo-hoa-financial-statements'] },
+  'illinois-condo-board-fiduciary-duty-audit': { money: BOARD, area: CHICAGO, links: ['illinois-condo-owners-independent-audit-rights', 'read-condo-hoa-financial-statements'], also: [FIN] },
   'illinois-condo-owners-independent-audit-rights': { money: FIN, links: ['read-condo-hoa-financial-statements', 'illinois-association-fidelity-insurance-requirements'] },
   'illinois-association-fidelity-insurance-requirements': { money: FIN, links: ['illinois-condo-owners-independent-audit-rights', 'condo-hoa-directors-officers-insurance-guide'] },
   'condo-hoa-delinquency-escalation-process': { money: FIN, area: CHICAGO, links: ['illinois-condo-association-liens-delinquency', 'illinois-condo-assessment-collection-possession-action'] },
   'illinois-condo-association-liens-delinquency': { money: FIN, links: ['condo-hoa-delinquency-escalation-process', 'illinois-condo-assessment-collection-possession-action'] },
   'illinois-condo-assessment-collection-possession-action': { money: FIN, links: ['condo-hoa-delinquency-escalation-process', 'illinois-condo-hoa-collection-policy-january-2027'] },
-  'illinois-association-late-fees-interest-policy': { money: FIN, links: ['condo-hoa-delinquency-escalation-process', 'illinois-condo-hoa-collection-policy-january-2027'] },
-  'illinois-condo-hoa-collection-policy-january-2027': { money: FIN, area: CHICAGO, links: ['condo-hoa-delinquency-escalation-process', 'illinois-association-late-fees-interest-policy'] },
-  'condo-hoa-insurance-renewal-checklist': { money: FIN, area: CHICAGO, links: ['hoa-insurance-costs-illinois', 'condo-master-policy-vs-ho6-board-guide'] },
+  'illinois-association-late-fees-interest-policy': { money: FIN, links: ['condo-hoa-delinquency-escalation-process', 'illinois-condo-hoa-collection-policy-january-2027'], also: [HOA] },
+  'illinois-condo-hoa-collection-policy-january-2027': { money: FIN, area: CHICAGO, links: ['condo-hoa-delinquency-escalation-process', 'illinois-association-late-fees-interest-policy'], also: [RESALE] },
+  'condo-hoa-insurance-renewal-checklist': { money: FIN, area: CHICAGO, links: ['hoa-insurance-costs-illinois', 'condo-master-policy-vs-ho6-board-guide'], also: [SMALL] },
   'hoa-insurance-costs-illinois': { money: FIN, links: ['condo-hoa-insurance-renewal-checklist', 'condo-master-policy-vs-ho6-board-guide'] },
   'condo-master-policy-vs-ho6-board-guide': { money: FIN, area: CHICAGO, links: ['condo-hoa-insurance-renewal-checklist', 'illinois-association-fidelity-insurance-requirements'] },
   'condo-hoa-directors-officers-insurance-guide': { money: FIN, area: CHICAGO, links: ['condo-hoa-insurance-renewal-checklist', 'illinois-association-fidelity-insurance-requirements'] },
   'fannie-freddie-condo-eligibility-board-guide': { money: FIN, area: CHICAGO, links: ['fannie-freddie-condo-reserve-15-percent-2027', 'how-to-read-condo-reserve-study'] },
   'fannie-freddie-condo-reserve-15-percent-2027': { money: FIN, links: ['how-to-read-condo-reserve-study', 'fannie-freddie-condo-eligibility-board-guide'] },
-  'illinois-management-company-segregated-accounts-commingling': { money: FIN, links: ['illinois-association-fidelity-insurance-requirements'] },
+  'illinois-management-company-segregated-accounts-commingling': { money: CONDO, links: ['illinois-association-fidelity-insurance-requirements'], also: [FIN] },
   'illinois-association-reserve-funds-fdic-coverage': { money: FIN, links: ['illinois-management-company-segregated-accounts-commingling', 'how-to-read-condo-reserve-study'] },
   'illinois-condo-insurance-deductible-charge-owner': { money: FIN, links: ['condo-master-policy-vs-ho6-board-guide', 'condo-hoa-insurance-renewal-checklist'] },
   'illinois-association-annual-financial-report-email': { money: FIN, links: ['read-condo-hoa-financial-statements', 'illinois-condo-owners-independent-audit-rights'] },
@@ -100,9 +108,9 @@ export const postSilos: Record<string, PostSilo> = {
   'why-condo-boards-fail': { money: BOARD, links: ['new-condo-board-member-first-30-days', 'condo-hoa-board-communication-systems'] },
   'amend-illinois-condo-declaration-section-27': { money: BOARD, links: ['illinois-condo-law-updates-2026', 'illinois-condo-deconversion-75-or-85-percent'] },
   'illinois-condo-deconversion-75-or-85-percent': { money: BOARD, links: ['amend-illinois-condo-declaration-section-27', 'illinois-association-annual-meeting-guide'] },
-  'chicago-condo-association-compliance-calendar': { money: BOARD, area: CHICAGO, links: ['illinois-association-annual-meeting-guide', 'illinois-condo-board-elections-proxies-ballots'] },
+  'chicago-condo-association-compliance-calendar': { money: BOARD, area: CHICAGO, links: ['illinois-association-annual-meeting-guide', 'illinois-condo-board-elections-proxies-ballots'], also: [HIGH_RISE] },
   'condo-hoa-board-communication-systems': { money: BOARD, area: CHICAGO, links: ['illinois-association-annual-meeting-guide', 'illinois-condo-association-records-request-guide'] },
-  'condominium-property-management-chicago-what-board-members-should-expect': { money: BOARD, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'new-condo-board-member-first-30-days'] },
+  'condominium-property-management-chicago-what-board-members-should-expect': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'new-condo-board-member-first-30-days'], also: [BOARD, '/pricing'] },
   'electronic-voting-illinois-condo-hoa': { money: BOARD, area: CHICAGO, links: ['illinois-condo-board-elections-proxies-ballots', 'illinois-association-annual-meeting-guide'] },
   'illinois-association-annual-meeting-guide': { money: BOARD, area: CHICAGO, links: ['illinois-condo-board-elections-proxies-ballots', 'condo-hoa-board-communication-systems'] },
   'illinois-condo-association-records-request-guide': { money: BOARD, area: CHICAGO, links: ['illinois-association-annual-meeting-guide', 'illinois-condo-board-closed-session-guide'] },
@@ -119,20 +127,20 @@ export const postSilos: Record<string, PostSilo> = {
   'illinois-association-records-retention-schedule': { money: BOARD, links: ['illinois-condo-association-records-request-guide', 'illinois-association-website-requirement-2028'] },
 
   // ── Maintenance Coordination (pillar: emergency planning)
-  'condo-hoa-emergency-planning-checklist': { money: MAINT, area: CHICAGO, links: ['condo-hoa-vendor-rfp-checklist', 'who-pays-condo-water-leak-illinois'] },
+  'condo-hoa-emergency-planning-checklist': { money: HIGH_RISE, area: CHICAGO, links: ['condo-hoa-vendor-rfp-checklist', 'who-pays-condo-water-leak-illinois'], also: [MAINT] },
   'condo-hoa-vendor-rfp-checklist': { money: MAINT, area: CHICAGO, links: ['condo-hoa-emergency-planning-checklist', 'vintage-chicago-condo-capital-planning'] },
   'can-condo-boards-enter-your-unit-illinois': { money: MAINT, links: ['who-pays-condo-water-leak-illinois', 'condo-hoa-emergency-planning-checklist'] },
-  'illinois-condo-hoa-ev-charging-board-process': { money: MAINT, area: CHICAGO, links: ['condo-hoa-vendor-rfp-checklist', 'condo-hoa-emergency-planning-checklist'] },
+  'illinois-condo-hoa-ev-charging-board-process': { money: MAINT, area: CHICAGO, links: ['condo-hoa-vendor-rfp-checklist', 'condo-hoa-emergency-planning-checklist'], also: [HIGH_RISE] },
   'vintage-chicago-condo-capital-planning': { money: MAINT, area: CHICAGO, links: ['condo-hoa-vendor-rfp-checklist', 'condo-hoa-emergency-planning-checklist'] },
   'who-pays-condo-water-leak-illinois': { money: MAINT, area: CHICAGO, links: ['condo-hoa-emergency-planning-checklist', 'can-condo-boards-enter-your-unit-illinois'] },
-  'chicago-condo-porch-deck-safety-board-guide': { money: MAINT, area: CHICAGO, links: ['condo-hoa-emergency-planning-checklist', 'vintage-chicago-condo-capital-planning'] },
+  'chicago-condo-porch-deck-safety-board-guide': { money: HIGH_RISE, area: CHICAGO, links: ['condo-hoa-emergency-planning-checklist', 'vintage-chicago-condo-capital-planning'], also: [MAINT] },
   'chicago-condo-frozen-pipes-winter-checklist': { money: MAINT, area: CHICAGO, links: ['who-pays-condo-water-leak-illinois', 'condo-hoa-emergency-planning-checklist'] },
   'illinois-association-solar-panel-rights': { money: MAINT, links: ['illinois-condo-hoa-ev-charging-board-process'] },
   'illinois-association-snow-ice-sidewalk-liability': { money: MAINT, area: GLENVIEW, links: ['illinois-condo-hoa-snow-removal-vendor-guide', 'condo-hoa-vendor-rfp-checklist'] },
   'illinois-condo-smoke-carbon-monoxide-alarms': { money: MAINT, links: ['condo-hoa-emergency-planning-checklist', 'chicago-condo-frozen-pipes-winter-checklist'] },
 
   // ── Violation Management (pillar: adopting and enforcing rules)
-  'adopting-enforcing-condo-hoa-rules-illinois': { money: RULES, area: CHICAGO, links: ['are-hoa-condo-rules-enforceable-illinois', 'illinois-association-fines-notice-hearing'] },
+  'adopting-enforcing-condo-hoa-rules-illinois': { money: RULES, area: CHICAGO, links: ['are-hoa-condo-rules-enforceable-illinois', 'illinois-association-fines-notice-hearing'], also: [TOWNHOME] },
   'are-hoa-condo-rules-enforceable-illinois': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] },
   'common-condo-rule-violations-chicago': { money: RULES, area: CHICAGO, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] },
   'illinois-association-fines-notice-hearing': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'chicago-condo-short-term-rental-prohibited-buildings-list'] },
@@ -141,8 +149,8 @@ export const postSilos: Record<string, PostSilo> = {
   'illinois-association-flag-display-rules': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] },
 
   // ── Condominium Management (choosing and running management)
-  'switch-condo-management-companies-chicago': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'] },
-  'community-association-management-agreement-review': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'] },
+  'switch-condo-management-companies-chicago': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'], also: ['/pricing'] },
+  'community-association-management-agreement-review': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'verify-illinois-community-association-manager-license'], also: ['/pricing'] },
   'verify-illinois-community-association-manager-license': { money: CONDO, area: CHICAGO, links: ['community-association-management-agreement-review', 'switch-condo-management-companies-chicago'] },
   'ai-in-condo-management': { money: CONDO, links: ['the-technology-behind-our-management', 'verify-illinois-community-association-manager-license'] },
   'the-technology-behind-our-management': { money: CONDO, links: ['ai-in-condo-management', 'community-association-management-agreement-review'] },
@@ -151,7 +159,7 @@ export const postSilos: Record<string, PostSilo> = {
   // ── Condo Living (owners and buyers)
   'moving-into-chicago-condo-guide': { money: '/condo-living', area: CHICAGO, links: ['condo-repairs-owner-vs-association-illinois', 'first-time-condo-buyer-guide-chicago'] },
   'condo-repairs-owner-vs-association-illinois': { money: '/condo-living', links: ['first-time-condo-buyer-guide-chicago', 'moving-into-chicago-condo-guide'] },
-  'first-time-condo-buyer-guide-chicago': { money: '/condo-living', area: CHICAGO, links: ['illinois-section-22-1-disclosure-board-guide', 'condo-repairs-owner-vs-association-illinois'] },
+  'first-time-condo-buyer-guide-chicago': { money: '/condo-living', area: CHICAGO, links: ['illinois-section-22-1-disclosure-board-guide', 'condo-repairs-owner-vs-association-illinois'], also: [SMALL, RESALE] },
   'renting-out-your-condo-chicago-rules': { money: '/condo-living', area: CHICAGO, links: ['condo-repairs-owner-vs-association-illinois', 'first-time-condo-buyer-guide-chicago'] },
 
   // ── 22.1 Resale Disclosures (pillar: Section 22.1 board guide)
@@ -165,14 +173,14 @@ export const postSilos: Record<string, PostSilo> = {
   'chicago-condo-elevator-inspection-board-guide': { money: HIGH_RISE, area: CHICAGO, links: ['chicago-condo-life-safety-board-planning', 'chicago-condo-facade-compliance-board-guide'] },
 
   // ── Small Condo Association Management
-  'self-managed-condo-association-problems': { money: SMALL, links: ['how-many-associations-should-community-manager-handle'] },
-  'how-many-associations-should-community-manager-handle': { money: SMALL, area: CHICAGO, links: ['self-managed-condo-association-problems'] },
+  'self-managed-condo-association-problems': { money: CONDO, links: ['how-many-associations-should-community-manager-handle'], also: [SMALL] },
+  'how-many-associations-should-community-manager-handle': { money: CONDO, area: CHICAGO, links: ['self-managed-condo-association-problems'], also: [SMALL, '/pricing'] },
 
   // ── Townhome, HOA, Pricing
-  'illinois-condo-hoa-snow-removal-vendor-guide': { money: TOWNHOME, area: CHICAGO, links: [] },
-  'which-illinois-law-governs-condo-hoa-townhome': { money: HOA, area: CHICAGO, links: [] },
+  'illinois-condo-hoa-snow-removal-vendor-guide': { money: HOA, area: CHICAGO, links: [], also: [TOWNHOME] },
+  'which-illinois-law-governs-condo-hoa-townhome': { money: HOA, area: CHICAGO, links: [], also: [TOWNHOME] },
   'cicaa-small-association-exemptions-collection-policy': { money: HOA, area: GLENVIEW, links: ['which-illinois-law-governs-condo-hoa-townhome'] },
-  'score-condo-hoa-management-proposals': { money: '/pricing', area: CHICAGO, links: ['condominium-property-management-chicago-what-board-members-should-expect', 'switch-condo-management-companies-chicago'] },
+  'score-condo-hoa-management-proposals': { money: CONDO, area: CHICAGO, links: ['condominium-property-management-chicago-what-board-members-should-expect', 'switch-condo-management-companies-chicago'], also: ['/pricing'] },
 
   // ── Silo-support guides queued 2026-11-23 to 2026-12-08 (plan section 6)
   'high-rise-condo-management-chicago-whats-different': { money: HIGH_RISE, area: CHICAGO, links: ['chicago-condo-life-safety-board-planning', 'chicago-condo-facade-compliance-board-guide'] },

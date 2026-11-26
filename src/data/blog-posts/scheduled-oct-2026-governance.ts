@@ -432,6 +432,7 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
     content: `
       <p>Volunteer boards are made up of neighbours, and neighbours have businesses, spouses and children with businesses. Sooner or later a director, or someone close to one, wants to bid on association work. Illinois law does not prohibit that. It does impose a specific notice-and-petition procedure, and it holds every director to a fiduciary standard. Boards that follow the procedure protect both the contract and the director. Boards that skip it put both at risk.</p>
 
+      <p>If you have just joined the board, read this together with our <a href="/blog/new-condo-board-member-first-30-days">guide to a new condo board member’s first 30 days</a>.</p>
       <h2>Can an Illinois condo board contract with one of its own directors?</h2>
 
       <p>Yes, but only through a set procedure. Section 18(a)(16) of the Condominium Property Act says the board may not contract with a current director, or with a corporation or partnership in which a director or the director's immediate family holds a 25% or greater interest, unless owners are notified and given the chance to petition for a vote on the contract.</p>

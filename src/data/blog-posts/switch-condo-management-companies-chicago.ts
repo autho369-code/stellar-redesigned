@@ -14,6 +14,7 @@ export const switchCondoManagementCompaniesChicago = {
 
 <p>This guide gives board members a practical sequence for evaluating the current relationship, running a focused request for proposal, and moving to a new management partner with control. It is designed for Chicago condominium associations, but most of the framework also applies to townhome and homeowner associations.</p>
 
+<p>Three resources go with this guide: the <a href="/board-toolkit">board toolkit</a>, with an RFP outline, interview questions and a transition checklist; the <a href="/tools/compare-management-proposals">management proposal scorecard</a>; and our <a href="/pricing">management pricing</a> page, which shows how a flat fee is quoted.</p>
 <h2>First, Decide Whether the Problem Is the Manager or the Management System</h2>
 
 <p>Boards sometimes begin a search after one difficult meeting or a delayed repair. Look for a pattern before starting a transition. The most useful evidence is operational, not emotional.</p>

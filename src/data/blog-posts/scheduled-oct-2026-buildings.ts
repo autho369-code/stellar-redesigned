@@ -34,6 +34,7 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
 
       <p>This guide covers what the City of Chicago Department of Buildings says about porches, when a permit is required, what an inspector checks, and how a board should run a porch program. It is general information, not legal or engineering advice. Your declaration, your engineer and association counsel govern the specifics for your building.</p>
 
+      <p>This guide is written for low-rise buildings. For taller buildings, see our <a href="/blog/chicago-condo-facade-compliance-board-guide">Chicago facade compliance guide for condo boards</a> and our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> service.</p>
       <h2>Who is responsible for a condo building’s porches in Chicago?</h2>
 
       <p>In most Chicago condominiums the porches are common elements or limited common elements, which puts their maintenance, repair and replacement on the association. The Illinois Condominium Property Act makes the board responsible for the care, upkeep, maintenance and replacement of the common elements. Your declaration controls how costs are shared, so read it before assuming.</p>

@@ -16,6 +16,7 @@ export const condoPropertyManagementChicago = {
 
 <p>But what should board members actually expect when they hire a management company? How do you distinguish between a firm that delivers real value and one that merely collects fees? This comprehensive guide breaks down the core responsibilities of a professional property management company, what Chicago-specific factors matter, and what questions every board should ask before signing a management agreement.</p>
 
+<p>If your board is already comparing firms, see <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a>. Our own scope is set out under <a href="/services/condominium-management">condominium management services</a>, and our fee model is on the <a href="/pricing">management pricing</a> page.</p>
 <h2>Understanding the Role of a Property Management Company</h2>
 
 <p>A professional property management company serves as an extension of the board — not a replacement for it. The board retains fiduciary authority and decision-making power, while the management company handles execution, administration, and expert guidance. Think of it as the operational arm that carries out the board's vision while ensuring nothing falls through the cracks.</p>
