@@ -19,6 +19,28 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26: Google profile and Search Console cleanup
+
+No site content changed in this pass apart from robots.txt in PR #54.
+
+Google Business Profile description: edited to read 29 associations and approximately 1,422 residences. It had said 42 associations and 2,450+ residences. Nothing else in the description changed.
+
+Old figures in Google search snippets: a site search for 2,450 returned 33 pages, namely /about, /services, /ai-info and 30 area pages. All 150 sitemap URLs were fetched live and none contains 2,450, 42 associations or $20 per. Search Console showed /about last crawled 2026-10-09, before the 2026-11-03 fix, so these are old copies waiting for a recrawl.
+
+Indexing requested in Search Console and accepted for /about, /services, /ai-info, /services/condominium-management and the Evanston, Northbrook, Wilmette and Highland Park area pages. The daily quota then ran out. /services/hoa-management and /services/violation-management were refused and still need requesting.
+
+Search Console properties: the URL-prefix property for https://www.stellarpropertygroup.com/ was removed at Mirsad's request. The domain property stellarpropertygroup.com remains and covers every address variant.
+
+robots.txt: Search Console reported Syntax not understood on line 42, the RSS line added 2026-08-21 in #26. This PR removes it.
+
+Page indexing report, 109 not indexed: 47 redirects from old URLs, expected. 36 alternates, all /contact and /resources links with query strings, expected. 1 noindex, /reviews, last crawled 2026-08-15, and the live page is indexable. 16 crawled but not indexed, mostly old or redirected URLs plus /privacy-policy, /property-management-logan-square and one guide. 9 discovered but not indexed: three /services pages and six guides that Google has not crawled yet.
+
+Live audit of all 150 sitemap URLs: every page returns 200 with a correct canonical, one H1, a unique title and description, and alt text on every image. 33 meta descriptions run past 165 characters. /reviews is thin at about 330 words.
+
+Vercel project stellar-redesigned-abux: it builds the legacy-ops Next.js app from this repo and returns 500 MIDDLEWARE_INVOCATION_FAILED on every URL. It is not a copy of the marketing site. Left alone.
+
+Not acted on: stellarredisigned.netlify.app, an old Netlify copy, still shows for the brand search. It is not in the Netlify account for autho369@gmail.com, which has no projects.
+
 ## Status update — 2026-11-26 (homepage as a sales page, first pass)
 
 Branch `sales-homepage`. **Merged to `main` on 2026-11-26 ("MERGE ALL"),
