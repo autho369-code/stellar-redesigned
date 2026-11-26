@@ -46,9 +46,61 @@ const faqs = [
     answer: 'No. Stellar quotes a transparent flat monthly management fee. Our compensation does not increase simply because your association budget or capital-project spending increases.',
   },
   {
+    question: 'What is not included in the management fee?',
+    answer: 'Third-party costs. Contractors, engineers, architects, attorneys and permits remain association expenses. Every proposal lists the management scope that the flat monthly fee covers.',
+  },
+  {
+    question: 'How should our board compare management proposals?',
+    answer: 'Convert every proposal into an estimated annual cost, including the charges that sit outside the base fee, and score every firm against the same criteria. Our management proposal scorecard and our guide to comparing management companies show how.',
+  },
+  {
     question: 'Can our board compare Stellar’s proposal with our current contract?',
     answer: 'Yes. We encourage boards to compare total annual cost, included services, add-on fees, termination terms, manager assignment, and transition support—not just the headline monthly number.',
   },
+];
+
+// "How much does condo management cost in Chicago?" (growth brief, Phase 4B).
+// Neutral descriptions of the four pricing models boards are offered.
+const pricingModels = [
+  {
+    model: 'Flat monthly fee (per unit or per building)',
+    how: 'One set monthly fee for the agreed management scope.',
+    watch: 'What the base fee includes, and what is billed on top of it.',
+    stellar: `This is how we quote. Our flat fee starts at $${business.priceFrom} per unit per month.`,
+  },
+  {
+    model: 'Percentage of budget or project cost',
+    how: 'The fee rises with the association’s budget, or with the cost of a capital project.',
+    watch: 'The manager is paid more when the association spends more.',
+    stellar: 'We do not charge this.',
+  },
+  {
+    model: 'Finance-only or bookkeeping service',
+    how: 'The firm keeps the books and reports. The board runs everything else.',
+    watch: 'Who handles maintenance, vendors, meetings and emergencies.',
+    stellar: 'Our published starting fee is for full-service association management.',
+  },
+  {
+    model: 'On-site or staffed building',
+    how: 'A management fee, plus the cost of the building’s on-site staff.',
+    watch: 'Staff wages and benefits are a separate line from the management fee.',
+    stellar: 'Staffing is one of the factors that sets our flat fee.',
+  },
+];
+
+// Mirrors the cost checklist in the switch guide.
+const feeQuestions = [
+  ['Monthly management fee', 'What is the fee, and what scope does it cover?'],
+  ['Meeting attendance', 'How many scheduled and special meetings are included?'],
+  ['After-hours response', 'Is emergency response included or billed per call?'],
+  ['Postage and printing', 'Billed at cost, marked up, or included?'],
+  ['Resale and disclosure administration', 'Who is charged, and how much?'],
+  ['Collections work', 'What is included before a matter goes to counsel?'],
+  ['Project oversight', 'Is there a fee tied to a capital project’s cost?'],
+  ['Technology charges', 'Are the portal and software included?'],
+  ['Banking fees', 'Who pays account and transaction fees?'],
+  ['Transition fees', 'Is there an onboarding or record-transfer charge?'],
+  ['Annual escalators', 'How does the fee change each year of the agreement?'],
 ];
 
 const schema = {
@@ -113,7 +165,7 @@ export default function Pricing() {
                 <p className="font-display text-6xl lg:text-7xl text-ink leading-none">$30<span className="text-2xl text-gold-600">/unit</span></p>
                 <p className="text-sm text-slate-600 mt-4">per month, with a customized flat monthly fee</p>
               </div>
-              <p className="mt-6 text-sm text-slate-500 leading-relaxed">This starting price is informational and is not a binding quote. Every proposal defines the exact management scope and monthly fee before your board signs. Pricing information current as of August 2026.</p>
+              <p className="mt-6 text-sm text-slate-500 leading-relaxed">This starting price is informational and is not a binding quote. Every proposal defines the exact management scope and monthly fee before your board signs. Pricing information current as of November 2026.</p>
             </div>
             <div className="lg:col-span-7">
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">What determines your <em className="font-medium text-gold-600">exact fee?</em></h2>
@@ -123,6 +175,83 @@ export default function Pricing() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      {/* ── Chicago condo management cost (growth brief, Phase 4B) ─────── */}
+      <section id="chicago-condo-management-cost" className="py-24 lg:py-32 bg-ivory-50 border-t border-slate-200">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10">
+          <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> The Cost, Explained</p>
+          <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">How much does condo management cost in Chicago?</h2>
+          <p className="text-lg text-slate-600 font-light leading-relaxed max-w-3xl">
+            Chicago condo management is priced as a monthly fee per association, usually quoted per unit, and Stellar&rsquo;s starts at ${business.priceFrom} per unit per month as a customized flat fee.
+          </p>
+
+          <h3 className="font-display text-2xl text-ink mt-14 mb-5">The four pricing models boards are offered</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+              <thead>
+                <tr className="border-b-2 border-slate-300 text-ink">
+                  <th className="py-3 pr-4 font-display text-base font-normal">Model</th>
+                  <th className="py-3 pr-4 font-display text-base font-normal">How it works</th>
+                  <th className="py-3 pr-4 font-display text-base font-normal">What to watch</th>
+                  <th className="py-3 font-display text-base font-normal">Stellar&rsquo;s approach</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricingModels.map(({ model, how, watch, stellar }) => (
+                  <tr key={model} className="border-b border-slate-200 align-top">
+                    <td className="py-4 pr-4 text-ink">{model}</td>
+                    <td className="py-4 pr-4 font-light leading-relaxed text-slate-600">{how}</td>
+                    <td className="py-4 pr-4 font-light leading-relaxed text-slate-600">{watch}</td>
+                    <td className="py-4 font-light leading-relaxed text-slate-600">{stellar}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-display text-2xl text-ink mt-14 mb-5">What to ask every firm about fees</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[520px] border-collapse text-left text-sm">
+              <thead>
+                <tr className="border-b-2 border-slate-300 text-ink">
+                  <th className="py-3 pr-4 font-display text-base font-normal">Fee item</th>
+                  <th className="py-3 font-display text-base font-normal">What to ask</th>
+                </tr>
+              </thead>
+              <tbody>
+                {feeQuestions.map(([item, question]) => (
+                  <tr key={item} className="border-b border-slate-200 align-top">
+                    <td className="py-3 pr-4 text-ink">{item}</td>
+                    <td className="py-3 font-light leading-relaxed text-slate-600">{question}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-5 max-w-3xl text-sm text-slate-600 font-light leading-relaxed">
+            The same checklist is in our guide on{' '}
+            <Link to="/blog/switch-condo-management-companies-chicago" className="text-gold-600 underline underline-offset-2 hover:text-gold-500">how to switch condo management companies in Chicago</Link>.
+          </p>
+
+          <h3 className="font-display text-2xl text-ink mt-14 mb-5">Tools and guides for comparing cost</h3>
+          <ul className="grid gap-x-10 gap-y-3 sm:grid-cols-2 text-sm">
+            {[
+              ['/tools/compare-management-proposals', 'Management proposal scorecard'],
+              ['/board-toolkit', 'Board toolkit: RFP outline, interview questions, transition checklist'],
+              ['/blog/score-condo-hoa-management-proposals', 'How to compare Chicago condo and HOA management companies'],
+              ['/blog/community-association-management-agreement-review', 'What to review in a management agreement'],
+              ['/blog/how-many-associations-should-community-manager-handle', 'How many associations one manager should handle'],
+              ['/services/small-condo-association-management', 'Small condo association management'],
+              ['/services/high-rise-condominium-management', 'High-rise condominium management'],
+            ].map(([to, label]) => (
+              <li key={to}>
+                <Link to={to} className="text-gold-600 underline underline-offset-2 hover:text-gold-500">{label}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

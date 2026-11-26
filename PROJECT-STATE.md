@@ -19,6 +19,36 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (growth brief Phase 4: switch guide, cost section, titles)
+
+Branch `phase-4-switch-and-cost`. No slug changed.
+
+- **Posts can have a separate title tag:** `seoTitle?` on `BlogPost`
+  (`src/data/blog-posts/index.ts`); the H1 stays `title`.
+- **4A switch guide** (`switch-condo-management-companies-chicago`): title tag
+  "Switch Condo Management Companies in Chicago: A Board Guide", the brief's
+  meta description, a direct-answer first sentence, a "Switch timeline at a
+  glance" table (8 rows, built only from the guide's own content), links to
+  the agreement-review, manager-workload and segregated-accounts guides and to
+  the small-condo and high-rise pages, five question sections (they become
+  FAQPage JSON-LD through the existing question-heading rule, so visible text
+  and schema match), and "How Stellar handles a switch" with the published
+  30 to 60 day facts. The scorecard link moved from the intro into the table
+  so no URL appears twice in the body. `dateModified` 2026-11-26.
+- **4B /pricing:** new section `#chicago-condo-management-cost` — the four
+  pricing models, what to ask every firm about fees, links. Two FAQ entries
+  added. "Current as of November 2026". The 12 / 48 / 120-unit fee example
+  was removed on Mirsad's word (2026-11-26): he did not ask for it. Do not
+  add worked examples or extras that are not in the brief.
+  Portfolio average and competitor prices are NOT shown.
+- **4C titles and first sentences:** condominium-management service page
+  title; collection-policy, 22.1 checklist (also a new H1) and reserves posts
+  get the brief's direct-answer first sentence; facade and budget-workbook
+  posts get new title tags. Facts checked against each post's own text.
+- **Also in this branch:** the schema price fix (JSON-LD `price` / `minPrice`
+  now read `business.priceFrom`; the verifier fails on any other number), and
+  the verifier now decodes quotes before measuring a title.
+
 ## Status update — 2026-11-26 (growth brief Phase 3, Batch 1: upgraded area pages)
 
 Branch `phase-3-area-pages`, stacked on Phase 2. Five pages upgraded: Rogers

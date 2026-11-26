@@ -14,6 +14,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
     metaDescription:
       'Public Act 104-0734 bars Illinois associations from suing to collect assessments without a written collection policy. What it must say, by January 1, 2027.',
     date: '2026-10-22',
+    dateModified: '2026-11-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
     readTime: '9 min read',
@@ -38,7 +39,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Illinois has a new rule that affects every board that ever has to chase an unpaid assessment. <strong>Public Act 104-0734</strong> (Senate Bill 3527) was approved by the Governor on July 31, 2026 and takes effect on <strong>January 1, 2027</strong>. It requires condominium boards and common interest community association boards to adopt a written policy for collecting unpaid assessments — and it stops an association from going to court to collect until that policy exists and is being followed.</p>
+      <p>Illinois condo and HOA boards must adopt a written assessment collection policy by January 1, 2027, under Public Act 104-0734 (Senate Bill 3527), approved July 31, 2026. Illinois has a new rule that affects every board that ever has to chase an unpaid assessment. <strong>Public Act 104-0734</strong> (Senate Bill 3527) was approved by the Governor on July 31, 2026 and takes effect on <strong>January 1, 2027</strong>. It requires condominium boards and common interest community association boards to adopt a written policy for collecting unpaid assessments — and it stops an association from going to court to collect until that policy exists and is being followed.</p>
 
       <p>Most associations already have a collection habit. Far fewer have it written down in one place, adopted by the board, and matched to what actually happens. That gap is what this law closes.</p>
 
