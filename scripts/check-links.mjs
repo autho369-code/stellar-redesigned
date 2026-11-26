@@ -19,12 +19,12 @@ const dist = join(root, 'dist');
 const SITE = 'https://www.stellarpropertygroup.com';
 
 const bundleDir = mkdtempSync(join(tmpdir(), 'stellar-links-'));
-let clusters, extraMoneyLinks, getAreaGuides, getSeriesNav, neighborhoods;
+let clusters, extraMoneyLinks, getAreaGuides, getSeriesNav, neighborhoods, areaContent, getAreaPostLinks, getAreasLinkingPost;
 try {
   const outfile = join(bundleDir, 'links.mjs');
   await build({
     stdin: {
-      contents: `export { clusters, extraMoneyLinks, getAreaGuides, getSeriesNav } from './src/data/clusters';\nexport { neighborhoods } from './src/data/neighborhoods';`,
+      contents: `export { clusters, extraMoneyLinks, getAreaGuides, getSeriesNav } from './src/data/clusters';\nexport { neighborhoods } from './src/data/neighborhoods';\nexport { areaContent, getAreaPostLinks, getAreasLinkingPost } from './src/data/areas';`,
       resolveDir: root,
       loader: 'ts',
     },
@@ -34,7 +34,7 @@ try {
     outfile,
     logLevel: 'error',
   });
-  ({ clusters, extraMoneyLinks, getAreaGuides, getSeriesNav, neighborhoods } = await import(pathToFileURL(outfile).href));
+  ({ clusters, extraMoneyLinks, getAreaGuides, getSeriesNav, neighborhoods, areaContent, getAreaPostLinks, getAreasLinkingPost } = await import(pathToFileURL(outfile).href));
 } finally {
   rmSync(bundleDir, { recursive: true, force: true });
 }
@@ -113,12 +113,14 @@ for (const cluster of clusters) {
 
     const nearby = block(html, 'data-nearby-areas', '</nav>');
     const nearbyAnchors = anchors(nearby ?? '');
-    for (const area of member.areas) {
+    // The brief's area pages, plus upgraded area pages that link this guide.
+    const expectedAreas = [...new Set([...member.areas, ...getAreasLinkingPost(member.slug)])];
+    for (const area of expectedAreas) {
       const link = nearbyAnchors.find(({ href }) => href === `/property-management-${area}`);
       if (!link) problems.push(`${route}: "nearby neighborhoods" does not link /property-management-${area}`);
       else if (link.text !== `${areaName.get(area)} condo and HOA management`) problems.push(`${route}: wrong link text for ${area}: "${link.text}"`);
     }
-    if (nearbyAnchors.length !== member.areas.length) problems.push(`${route}: "nearby neighborhoods" shows ${nearbyAnchors.length} links, expected ${member.areas.length}`);
+    if (nearbyAnchors.length !== expectedAreas.length) problems.push(`${route}: "nearby neighborhoods" shows ${nearbyAnchors.length} links, expected ${expectedAreas.length}`);
   }
 }
 
@@ -140,6 +142,46 @@ for (const { slug } of neighborhoods) {
 }
 const withoutAreaLink = clusters.flatMap((cluster) => cluster.members.map((m) => m.slug)).filter((slug) => !inbound.has(`/blog/${slug}`));
 for (const slug of withoutAreaLink) problems.push(`/blog/${slug}: no area page links to this guide`);
+
+// ── 2b. Upgraded area pages (growth brief, Phase 3) ──────────────────────
+// Each links at least four cluster guides, /pricing, /contact and a service
+// page; every guide it links in its issues and FAQs links back through
+// "nearby neighborhoods" (checked above); the visible FAQ text and the
+// FAQPage JSON-LD are identical; title and meta description are in range.
+const clusterSlugs = new Set(clusters.flatMap((cluster) => cluster.members.map((m) => m.slug)));
+for (const area of Object.values(areaContent)) {
+  const route = `/property-management-${area.slug}`;
+  const html = read(route);
+  if (!html) continue;
+  const main = html.match(/<main\b[^>]*>([\s\S]*)<\/main>/)?.[1] ?? '';
+  const mainPaths = paths(main);
+  const issues = block(html, 'data-area-issues', '</section>') ?? '';
+  const issueGuides = [...paths(issues)].filter((path) => path.startsWith('/blog/') && clusterSlugs.has(path.slice(6)));
+  if (issueGuides.length < 4) problems.push(`${route}: links ${issueGuides.length} cluster guides in its issues (needs at least 4)`);
+  for (const required of ['/pricing', '/contact']) {
+    if (!mainPaths.has(required)) problems.push(`${route}: does not link ${required}`);
+  }
+  if (![...mainPaths].some((path) => path.startsWith('/services/'))) problems.push(`${route}: does not link a service page`);
+  for (const post of getAreaPostLinks(area)) {
+    if (!clusterSlugs.has(post)) problems.push(`${route}: links '${post}', which is not a published, clustered guide`);
+    else if (!mainPaths.has(`/blog/${post}`)) problems.push(`${route}: content file names /blog/${post} but the page does not link it`);
+  }
+  const title = decode(html.match(/<title[^>]*>([\s\S]*?)<\/title>/)?.[1] ?? '');
+  if (title !== area.title) problems.push(`${route}: title tag is "${title}"`);
+  if (title.length > 62) problems.push(`${route}: title is ${title.length} characters (maximum 62)`);
+  const description = decode(html.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/)?.[1] ?? '');
+  if (description.length < 140 || description.length > 155) problems.push(`${route}: meta description is ${description.length} characters (140 to 155)`);
+  if (!description.includes(neighborhoods.find((n) => n.slug === area.slug)?.name ?? '\u0000')) problems.push(`${route}: meta description does not name the neighborhood`);
+  // FAQPage JSON-LD must mirror the visible answers word for word.
+  const visibleAnswers = [...main.matchAll(/<p data-faq-answer[^>]*>([\s\S]*?)<\/p>/g)].map((m) => decode(m[1].replace(/<[^>]+>/g, '')).trim());
+  const ld = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+  const faqNode = ld.flatMap((doc) => doc['@graph'] ?? [doc]).find((node) => node['@type'] === 'FAQPage');
+  const ldAnswers = (faqNode?.mainEntity ?? []).map((q) => q.acceptedAnswer.text);
+  if (visibleAnswers.length !== area.faqs.length || JSON.stringify(visibleAnswers) !== JSON.stringify(ldAnswers)) {
+    problems.push(`${route}: FAQPage JSON-LD does not match the visible FAQ text`);
+  }
+  if (ld.some((doc) => JSON.stringify(doc).includes('aggregateRating'))) problems.push(`${route}: schema must not contain aggregateRating`);
+}
 
 // ── 3. No internal link may point at a missing page ──────────────────────
 const exists = (path) => {
@@ -174,4 +216,4 @@ if (problems.length) {
   process.exit(1);
 }
 
-console.log(`[links] ${guideCount} guides link their pillar, money page, series and nearby areas; ${neighborhoods.length} area pages show their curated guides; every guide has an area-page link; no broken internal links on ${pageCount} pages; no duplicate links in article bodies`);
+console.log(`[links] ${guideCount} guides link their pillar, money page, series and nearby areas; ${neighborhoods.length} area pages show their curated guides; every guide has an area-page link; no broken internal links on ${pageCount} pages; no duplicate links in article bodies; ${Object.keys(areaContent).length} upgraded area pages pass their link, title and FAQ checks`);
