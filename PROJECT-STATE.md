@@ -19,6 +19,23 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (homepage as a sales page, first pass)
+
+Branch `sales-homepage`, stacked on `gsc-priority-pages`. Not live until
+Mirsad says merge. The homepage earns 56% of all clicks (354 of 633), so it
+went first.
+
+- **Hero:** H1 "Condo and HOA management in Chicago, from $30 per unit a
+  month." One primary button ("Request a flat-fee proposal",
+  `/contact?source=home-hero`, fires Proposal CTA Click), the phone number as
+  a tap-to-call link (`data-track-location="hero"`), and "written proposal
+  within two business days". The old line about the stationary engineer left
+  the hero; it is still in "Who runs it".
+- **New section `#home-offer`:** three real steps (tell us, written proposal,
+  managed 30 to 60 day handover) and a price panel with the owner wording.
+- **Reviews** moved up, right under the offer.
+- Brand kept: same colors and typefaces. No new dependency.
+
 ## Status update — 2026-11-26 (Search Console priorities: titles, proposal blocks, four area pages)
 
 Branch `gsc-priority-pages`, stacked on `phase-4-switch-and-cost`. Not live
