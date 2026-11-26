@@ -125,7 +125,7 @@ const faqs = [
   },
   {
     q: 'How much does condo association management cost in Chicago?',
-    a: 'Stellar management starts at $20 per unit per month. We quote a customized flat monthly fee based on building size, amenities, staffing, financial complexity, and scope — never a percentage of your association’s budget. We do not add a separate capital-project planning or management-oversight fee.',
+    a: 'Stellar management starts at $30 per unit per month. We quote a customized flat monthly fee based on building size, amenities, staffing, financial complexity, and scope — never a percentage of your association’s budget. We do not add a separate capital-project planning or management-oversight fee.',
   },
   {
     q: 'What makes Stellar different from national property management chains in Chicago?',
@@ -524,7 +524,7 @@ export default function ChicagoPage() {
             to="/pricing"
             className="mt-4 sm:ml-8 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors"
           >
-            See pricing from $20 per unit monthly <ArrowRight className="w-4 h-4" />
+            See pricing from $30 per unit monthly <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

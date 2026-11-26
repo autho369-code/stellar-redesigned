@@ -28,7 +28,7 @@ const { render, llmsBusinessFacts } = await import(pathToFileURL(join(root, 'dis
 // (the one facts file), so a name or portfolio change is a single edit.
 for (const file of [join(root, 'public/llms.txt'), join(root, 'dist/llms.txt')]) {
   const src = readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
-  // Function replacement: the facts contain "$20", which a replacement
+  // Function replacement: the facts contain a "$" price, which a replacement
   // string would read as a capture-group reference.
   const next = src.replace(/(## Business facts\n\n)[\s\S]*?(\n\n## )/, (_m, head, tail) => `${head}${llmsBusinessFacts()}${tail}`);
   if (next === src && !src.includes(llmsBusinessFacts())) {

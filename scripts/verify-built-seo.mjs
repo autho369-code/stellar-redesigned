@@ -53,6 +53,11 @@ for (const url of urls) {
   if (/\b42 (Chicago-area |condominium, |condo, )?(associations|communities)|all 42\b|2,450|\b2450\b/i.test(html)) {
     errors.push(`${route}: contains a retired portfolio figure (42 associations / 2,450)`);
   }
+  // Retired starting fee (owner-confirmed 2026-11-26: the flat fee starts at
+  // $30 per unit per month). The price lives in src/data/business.ts.
+  if (/\$20(?![\d,])(?:\s*\/\s*unit|\s+per\s+unit|\s+a\s+unit)/i.test(html)) {
+    errors.push(`${route}: contains the retired $20 starting fee`);
+  }
   if (/href="\/contact-us(?:[/?#"])/i.test(html)) errors.push(`${route}: links internally to legacy /contact-us`);
 
   const priorRoute = titles.get(title);
@@ -78,7 +83,7 @@ for (const url of urls) {
 
 const llms = readFileSync(join(root, 'dist/llms.txt'), 'utf8');
 if (!llms.includes('- Portfolio: 29 associations, approximately 1,422 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
-if (!llms.includes('starting at $20 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
+if (!llms.includes('starting at $30 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
 if (/2,450|\b42 associations/.test(llms)) errors.push('llms.txt: contains a retired portfolio figure');
 
 if (urls.some((url) => /\/contact-us\/?$/.test(url))) errors.push('sitemap includes legacy /contact-us URL');

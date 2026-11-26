@@ -41,7 +41,7 @@ export const business = {
   associations: 29,
   residences: '1,422',
   retentionPercent: 96,
-  priceFrom: 20,
+  priceFrom: 30,
   software: 'AppFolio board and resident portal',
   notAffiliatedWith: ['Stellar Properties Inc. (Carol Stream, IL)', 'Stellar Management (New York)'],
 } as const;

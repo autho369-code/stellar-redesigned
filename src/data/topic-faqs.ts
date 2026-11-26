@@ -75,7 +75,7 @@ export const topicFaqs: Record<ContentCluster, ServiceFAQItem[]> = {
     },
     {
       question: 'What does association management actually cost in Chicago?',
-      answer: 'Stellar quotes a customized flat monthly fee starting at $20 per unit per month, based on building size, systems, staffing, amenities, financial complexity, and scope, rather than a percentage of the association’s budget. When comparing firms, the figure that matters is total annual cost including every separately billed item — a low base fee with unbundled charges frequently exceeds a higher all-in quote.',
+      answer: 'Stellar quotes a customized flat monthly fee starting at $30 per unit per month, based on building size, systems, staffing, amenities, financial complexity, and scope, rather than a percentage of the association’s budget. When comparing firms, the figure that matters is total annual cost including every separately billed item — a low base fee with unbundled charges frequently exceeds a higher all-in quote.',
     },
   ],
 };

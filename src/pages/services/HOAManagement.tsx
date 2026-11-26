@@ -89,8 +89,8 @@ export default function HOAManagement() {
   return (
     <>
       <SEOHead
-        title="Chicago HOA Management From $20/Unit | Stellar"
-        description="Chicago HOA management from $20 per unit with transparent financials, common-area operations, board support, and no separate project-oversight fee."
+        title="Chicago HOA Management From $30/Unit | Stellar"
+        description="Chicago HOA management from $30 per unit with transparent financials, common-area operations, board support, and no separate project-oversight fee."
         canonical="https://www.stellarpropertygroup.com/services/hoa-management"
       />
       <ServiceSchema name="Chicago HOA Management" description="Homeowners association management with governance, financial reporting, maintenance coordination, owner communication, and 24/7 response." canonical="https://www.stellarpropertygroup.com/services/hoa-management" serviceType="Homeowners Association Management" />
@@ -131,7 +131,7 @@ export default function HOAManagement() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
-              See pricing from $20 per unit <ArrowRight className="w-4 h-4" />
+              See pricing from $30 per unit <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -308,7 +308,7 @@ export default function HOAManagement() {
               Townhome community management <ArrowRight className="w-4 h-4" />
             </Link>
             <Link to="/pricing" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
-              Pricing from $20 per unit <ArrowRight className="w-4 h-4" />
+              Pricing from $30 per unit <ArrowRight className="w-4 h-4" />
             </Link>
             <Link to="/property-management-chicago" className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500 transition-colors">
               Chicago service areas <ArrowRight className="w-4 h-4" />

@@ -11,7 +11,7 @@ export const condominiumManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'How much does condominium management cost in Chicago?',
-    answer: 'Stellar condominium management starts at $20 per unit per month, quoted as a customized flat monthly fee based on your building’s size, systems, staffing, amenities, financial complexity, and service scope. We do not price as a percentage of your budget and we do not charge a separate capital-project planning or oversight fee. Third-party costs — contractors, engineers, attorneys, permits — remain association expenses.',
+    answer: 'Stellar condominium management starts at $30 per unit per month, quoted as a customized flat monthly fee based on your building’s size, systems, staffing, amenities, financial complexity, and service scope. We do not price as a percentage of your budget and we do not charge a separate capital-project planning or oversight fee. Third-party costs — contractors, engineers, attorneys, permits — remain association expenses.',
   },
   {
     question: 'Does hiring a management company mean the board gives up control?',
@@ -46,7 +46,7 @@ export const hoaManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'How much does HOA management cost in Chicago?',
-    answer: 'Stellar HOA management starts at $20 per unit per month, quoted as a flat monthly fee based on your community’s size, common areas, amenities, financial complexity, and service scope. We never price as a percentage of your budget, and we do not add a separate capital-project planning or oversight fee. Third-party costs such as contractors, engineers, and attorneys remain association expenses.',
+    answer: 'Stellar HOA management starts at $30 per unit per month, quoted as a flat monthly fee based on your community’s size, common areas, amenities, financial complexity, and service scope. We never price as a percentage of your budget, and we do not add a separate capital-project planning or oversight fee. Third-party costs such as contractors, engineers, and attorneys remain association expenses.',
   },
   {
     question: 'Can Stellar help an HOA enforce rules consistently?',
@@ -85,7 +85,7 @@ export const townhomeManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'How much does townhome association management cost?',
-    answer: 'Flat-fee proposals start at $20 per unit per month and are customized around the number of homes, shared components, meeting and communication needs, financial scope, and vendor responsibilities.',
+    answer: 'Flat-fee proposals start at $30 per unit per month and are customized around the number of homes, shared components, meeting and communication needs, financial scope, and vendor responsibilities.',
   },
   {
     question: 'Can Stellar take over from a self-managed townhome board?',
@@ -108,7 +108,7 @@ export const highRiseManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'How much does high-rise condominium management cost?',
-    answer: 'Stellar uses a customized flat monthly fee starting at $20 per unit. Staffing, amenities, mechanical systems, financial complexity, resident operations, meeting needs, and the final service scope determine the proposal.',
+    answer: 'Stellar uses a customized flat monthly fee starting at $30 per unit. Staffing, amenities, mechanical systems, financial complexity, resident operations, meeting needs, and the final service scope determine the proposal.',
   },
   {
     question: 'How do you transition a high-rise without disrupting operations?',
@@ -123,7 +123,7 @@ export const smallCondoManagementFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'Can a small association afford professional management?',
-    answer: 'Pricing starts at $20 per unit per month, with a customized flat monthly proposal based on the actual scope. The board can compare the fee with the time, continuity, reporting, collections, vendor, maintenance, and compliance responsibilities currently carried by volunteers.',
+    answer: 'Pricing starts at $30 per unit per month, with a customized flat monthly proposal based on the actual scope. The board can compare the fee with the time, continuity, reporting, collections, vendor, maintenance, and compliance responsibilities currently carried by volunteers.',
   },
   {
     question: 'What problems does management solve for a self-managed condo?',
