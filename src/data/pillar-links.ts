@@ -1,3 +1,4 @@
+import { getBody } from './article-bodies';
 import { getChicagoPublicationDate } from '../utils/publication-date';
 
 // Editorial assignments, not an inversion of every sibling relationship.
@@ -78,7 +79,7 @@ function escapeHtml(value: string): string {
 /** Body links only: never mutate authored content or bypass publication gates. */
 export function getPillarGuides<T extends Guide>(pillar: T, posts: T[], cutoff = getChicagoPublicationDate()): T[] {
   if (pillar.date > cutoff) return [];
-  const existing = new Set([...pillar.content.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["']/gi)]
+  const existing = new Set([...getBody(pillar).matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["']/gi)]
     .map((match) => match[1].replace(/^https:\/\/www\.stellarpropertygroup\.com/, '').replace(/[?#].*$/, '').replace(/\/$/, '')));
   const bySlug = new Map(posts.map((post) => [post.slug, post]));
   return [...new Set(pillarGuides[pillar.slug] ?? [])]
@@ -88,8 +89,8 @@ export function getPillarGuides<T extends Guide>(pillar: T, posts: T[], cutoff =
 
 export function getPillarContent<T extends Guide>(pillar: T, posts: T[], cutoff = getChicagoPublicationDate()): string {
   const guides = getPillarGuides(pillar, posts, cutoff);
-  if (!guides.length) return pillar.content;
-  return pillar.content + '<h2>More guidance on this topic</h2>' + guides.map((guide) =>
+  if (!guides.length) return getBody(pillar);
+  return getBody(pillar) + '<h2>More guidance on this topic</h2>' + guides.map((guide) =>
     `<p>${escapeHtml(guide.excerpt)} Read <a href="/blog/${escapeHtml(guide.slug)}">${escapeHtml(guide.title)}</a>.</p>`
   ).join('');
 }

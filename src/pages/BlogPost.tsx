@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import { getPillarContent, getPillarGuides } from '../data/pillar-links';
+import { getBody, hasBody, loadBody } from '../data/article-bodies';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, ChevronRight, Phone } from 'lucide-react';
@@ -74,6 +76,18 @@ export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPostBySlug(slug) : undefined;
 
+  // In the browser the bundle carries no article bodies. Arriving by a link
+  // inside the site, load this guide's body, then render again.
+  const [, setBodyLoads] = useState(0);
+  useEffect(() => {
+    if (!post || hasBody(post)) return;
+    let active = true;
+    loadBody(post.slug).then(() => active && setBodyLoads((n) => n + 1));
+    return () => {
+      active = false;
+    };
+  }, [post]);
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -100,7 +114,7 @@ export default function BlogPost() {
   const fullBody = getPillarContent(post, blogPosts);
   const bodyHtml = cta ? withoutClosingCta(post.slug, fullBody) : fullBody;
   const bodyParts = cta ? splitForMidCta(bodyHtml) : null;
-  const faqPairs = getFaqPairs(cta ? withoutClosingCta(post.slug, post.content) : post.content);
+  const faqPairs = getFaqPairs(cta ? withoutClosingCta(post.slug, getBody(post)) : getBody(post));
 
   // Reverse-silo modules (src/data/clusters.ts). Guides not yet in a cluster
   // (unpublished ones) keep the older related-posts and area sections below.

@@ -45,6 +45,13 @@ for (const slug of ctaSlugs) {
   if (!html.includes('data-track-location="cta-mid"') || !html.includes('data-track-location="cta-end"')) problems.push(`${path}: phone link tracking missing`);
 }
 
+// R2: each guide's body is its own small file; the guide page needs it to start.
+for (const slug of ctaSlugs.slice(0, 3)) {
+  const res = await fetch(`${BASE}/article-bodies/${slug}.json`);
+  const ok = res.ok && (res.headers.get('content-type') || '').includes('json') && ((await res.json()).content || '').length > 500;
+  if (!ok) problems.push(`/article-bodies/${slug}.json: missing or not JSON`);
+}
+
 const resources = await get('/resources');
 if (count(resources, 'data-proposal-cta=') < 1 || !resources.includes(PRICE)) problems.push('/resources: proposal block or price wording missing');
 
