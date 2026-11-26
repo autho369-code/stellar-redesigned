@@ -103,9 +103,6 @@ const feeQuestions = [
   ['Annual escalators', 'How does the fee change each year of the agreement?'],
 ];
 
-// Starting-point arithmetic only. Labelled on the page as an illustration.
-const illustrationUnits = [12, 48, 120];
-
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -237,20 +234,6 @@ export default function Pricing() {
           <p className="mt-5 max-w-3xl text-sm text-slate-600 font-light leading-relaxed">
             The same checklist is in our guide on{' '}
             <Link to="/blog/switch-condo-management-companies-chicago" className="text-gold-600 underline underline-offset-2 hover:text-gold-500">how to switch condo management companies in Chicago</Link>.
-          </p>
-
-          <h3 className="font-display text-2xl text-ink mt-14 mb-2">The starting point, in numbers</h3>
-          <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-5">Illustration, not a quote</p>
-          <ul className="max-w-xl border-t border-slate-200">
-            {illustrationUnits.map((units) => (
-              <li key={units} className="flex justify-between gap-6 border-b border-slate-200 py-3 text-slate-600">
-                <span>{units} units &times; ${business.priceFrom}</span>
-                <span className="text-ink">${(units * business.priceFrom).toLocaleString('en-US')} per month</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-5 max-w-3xl text-slate-600 font-light leading-relaxed">
-            The final fee is a scope-based flat fee, defined in the proposal before your board signs.
           </p>
 
           <h3 className="font-display text-2xl text-ink mt-14 mb-5">Tools and guides for comparing cost</h3>

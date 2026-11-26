@@ -36,9 +36,10 @@ Branch `phase-4-switch-and-cost`. No slug changed.
   30 to 60 day facts. The scorecard link moved from the intro into the table
   so no URL appears twice in the body. `dateModified` 2026-11-26.
 - **4B /pricing:** new section `#chicago-condo-management-cost` — the four
-  pricing models, what to ask every firm about fees, starting-point
-  arithmetic from `business.priceFrom` (labelled "illustration, not a
-  quote"), links. Two FAQ entries added. "Current as of November 2026".
+  pricing models, what to ask every firm about fees, links. Two FAQ entries
+  added. "Current as of November 2026". The 12 / 48 / 120-unit fee example
+  was removed on Mirsad's word (2026-11-26): he did not ask for it. Do not
+  add worked examples or extras that are not in the brief.
   Portfolio average and competitor prices are NOT shown.
 - **4C titles and first sentences:** condominium-management service page
   title; collection-policy, 22.1 checklist (also a new H1) and reserves posts
