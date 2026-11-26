@@ -42,6 +42,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
 
       <p>Most associations already have a collection habit. Far fewer have it written down in one place, adopted by the board, and matched to what actually happens. That gap is what this law closes.</p>
 
+      <p>Because the law also adds the policy to the resale disclosure lists, boards should update that packet at the same time. Our <a href="/services/resale-disclosures">Section 22.1 resale disclosure service</a> covers that workflow.</p>
       <h2>What exactly does the new Illinois law require?</h2>
 
       <p>Public Act 104-0734 adds a new subsection (t) to Section 18.4 of the Condominium Property Act and a new subsection (j) to Section 1-45 of the Common Interest Community Association Act (CICAA). Both say the same thing: to promote responsible governance, the board must adopt policies and procedures concerning the collection of unpaid assessments. The Act also adds the policy to the resale disclosure lists in Section 22.1 and Section 1-35.</p>

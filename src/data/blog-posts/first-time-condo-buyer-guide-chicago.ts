@@ -12,6 +12,7 @@ export const firstTimeCondoBuyerGuideChicago = {
   content: `
 <p>A condominium purchase is really two purchases. The first is the unit — the light, the layout, the block. The second, invisible at the showing, is a share of a small business: a not-for-profit corporation with a budget, a board, reserves, debts, and neighbors as co-shareholders. First-time buyers who inspect the second purchase as carefully as the first almost never regret the closing.</p>
 
+<p>Two of our pages explain the association’s side of a purchase: the <a href="/services/resale-disclosures">Section 22.1 resale disclosure service</a>, which is how the packet you receive gets assembled, and <a href="/services/small-condo-association-management">small condo association management</a>, for buyers looking at a small building.</p>
 <h2>What is a 22.1 disclosure in Illinois?</h2>
 <p>Section 22.1 of the Illinois Condominium Property Act (765 ILCS 605/22.1) entitles a resale buyer to a disclosure package from the association, on the seller's request, covering the essentials of the building's health: the governing documents, the current budget and financial statements, reserve balances, anticipated capital expenditures, pending litigation, and insurance coverage. It is the closest thing a condo buyer gets to reading the business's books — and buyers who skim it are buying blind.</p>
 

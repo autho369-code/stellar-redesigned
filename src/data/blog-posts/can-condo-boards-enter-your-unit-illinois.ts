@@ -13,6 +13,7 @@ export const condoBoardEnterUnit = {
   content: `
 <p>Few subjects generate more heat at a condo association than the question of who can enter a private unit. Owners value their privacy, and understandably so. Boards, meanwhile, have real responsibilities for the building as a whole. Knowing where the line sits keeps a tense situation from becoming a legal one.</p>
 
+<p>Entry questions come up during repairs and inspections. For how boards plan that work in older buildings, see <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condominium buildings</a>.</p>
 <h2>The Short Answer: Yes, but Not Whenever They Want</h2>
 <p>Illinois condominium associations generally do have a limited right of access to individual units. The key word is <strong>limited</strong>. The right exists for specific purposes, is usually tied to advance notice, and does not give the board a roaming key to enter on a whim. The exact terms come from your association's declaration read together with the Illinois Condominium Property Act.</p>
 

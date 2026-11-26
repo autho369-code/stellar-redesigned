@@ -31,6 +31,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>Boards get into trouble when they borrow a procedure from the wrong statute. A condominium board that follows an HOA-oriented checklist, or a townhome board that assumes the Condominium Property Act applies to it, can end up with a meeting, vote, or assessment action that does not match the law and documents actually controlling the property. Because the statutes were written separately and amended on different timelines, their provisions on notice, records, meetings, and enforcement are similar in spirit but not identical in text. Confirm the correct framework once, document it, and reuse it.</p>
 
+      <p>If your community is a townhome association, see how we work with those boards on our <a href="/services/townhome-management">townhome association management</a> page.</p>
       <h2>Start with the Recorded Declaration</h2>
       <p>The declaration recorded against your property is the controlling document for identifying the ownership form. A condominium declaration submits the property to the Condominium Property Act and creates units plus undivided interests in the common elements. A homeowners or townhome association declaration typically creates lots with an obligation to pay assessments to an association that owns or maintains common area, without submitting the property to condominium ownership.</p>
 
@@ -111,6 +112,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>What boards can control is the operational side: how requests are received, who reviews them, how sensitive information is protected, how the response is delivered, and how the whole exchange is documented. A disciplined process reduces avoidable disputes by giving the owner a complete and consistent answer.</p>
 
+      <p>Records are also one of the first things a new director should learn. See <a href="/blog/new-condo-board-member-first-30-days">the first 30 days for a new condo board member</a>.</p>
       <h2>Build a Single Intake Channel</h2>
       <p>Designate one channel for records requests, typically the management office, and require the request in writing. A written request creates a clear date stamp, a clear description of what is sought, and a record you can act on. Verbal requests at a meeting should be politely redirected to the written channel and noted in the file.</p>
 
@@ -326,6 +328,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>The distinction boards most often miss is between a rule and a restriction. A rule regulates conduct and the use of property within limits the declaration already establishes. A change to substantive property rights, such as altering what an owner may build or how common elements are allocated, usually requires a declaration amendment with an owner vote, not a board resolution. When in doubt, ask counsel which instrument you need.</p>
 
+      <p>Townhome communities face the same question with different shared elements. See how we work with those boards on our <a href="/services/townhome-management">townhome association management</a> page.</p>
       <h2>Test Your Authority First</h2>
       <p>Before drafting, locate the specific provision in the declaration or bylaws that empowers the board to regulate the subject at issue. Write it down. If you cannot find it, that is your answer: the board either needs a different approach or an amendment. Rules must also be consistent with applicable law, including fair housing requirements, which is another reason counsel should review any rule touching occupancy, accommodations, assistance animals, or accessibility.</p>
 
@@ -484,6 +487,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>Turnover is a leverage moment. Once the developer's involvement ends and personnel move on, reconstructing missing as-builts, warranty documentation, or accounting detail becomes expensive or impossible. Boards that show up with a written collection list and independent advisors get a materially better handoff than boards that accept a box of binders and a friendly meeting.</p>
 
+      <p>Once the documents are in hand, the new board’s next job is a calendar of recurring duties. See our <a href="/blog/chicago-condo-association-compliance-calendar">Chicago condominium association compliance calendar</a>.</p>
       <h2>Governance and Legal Records</h2>
       <ul>
         <li>Recorded declaration, bylaws, plat, and every recorded amendment.</li>
@@ -570,6 +574,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>The scope and contours of a director's duties come from the applicable statute, the association's governing documents, and Illinois corporate law where the association is incorporated. Your association's counsel should explain how those authorities apply to your board. What follows is an operational review a board can run on its own to test whether its habits match the standard it will be measured against.</p>
 
+      <p>New directors should start with our <a href="/blog/new-condo-board-member-first-30-days">guide to a new condo board member’s first 30 days</a>. If the audit shows gaps the board cannot close alone, see our <a href="/services/board-support">board support</a> service.</p>
       <h2>Duty of Care: Were Decisions Informed?</h2>
       <p>Care is about diligence. Pull the three largest decisions the board made in the last twelve months and ask, for each one: what information did the board have, was more than one option evaluated, was outside expertise obtained when the question exceeded the board's competence, and does the minute record reflect the basis for the decision? If a major contract was awarded without competitive proposals or a documented rationale, that is a gap worth fixing regardless of whether the vendor performed well.</p>
 
@@ -650,6 +655,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>Nearly every annual meeting dispute we see traces back to logistics rather than law: notice sent to a stale address, a quorum count nobody can reconstruct, a proxy form that did not match the bylaws, or minutes written weeks later from memory. Fix the logistics and the meeting takes care of itself.</p>
 
+      <p>If choosing or changing a management company is on this year’s agenda, our <a href="/board-toolkit">board toolkit</a> has the RFP outline, interview questions and transition checklist to bring to the meeting.</p>
       <h2>Build a Notice Plan Backward From the Meeting Date</h2>
       <p>Set the meeting date first, then work backward through candidate solicitation, the notice mailing or transmission, the candidate statement deadline, and the proxy or ballot return date. Confirm the required notice period with counsel and add margin; sending early is never a defect. Reconcile the owner roster against current recorded ownership before you send, and make sure owners who have not consented to electronic delivery receive notice in the traditional manner.</p>
 
@@ -727,6 +733,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>The board's spending authority in an emergency comes from your declaration, bylaws, and the applicable statute, so confirm with association counsel what your board may authorize without a meeting and whether ratification at the next meeting is required. Do that once, write the answer into the plan, and every future emergency starts from a known position.</p>
 
+      <p>Emergency planning sits beside the building’s other safety work. For exterior walls, see our <a href="/blog/chicago-condo-facade-compliance-board-guide">Chicago facade compliance guide for condo boards</a>. For towers, see our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> service.</p>
       <h2>Define Authority in Writing</h2>
       <p>Adopt a resolution, reviewed by counsel, that identifies who may authorize emergency work, the dollar threshold, and the notification and ratification steps that follow. Typically this designates the board president or a designated officer plus the managing agent, requires notice to the full board as soon as practicable, and requires ratification at the next board meeting with the action recorded in the minutes. Without this, well-intentioned directors either freeze or act outside their authority.</p>
 

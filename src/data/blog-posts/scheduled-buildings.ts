@@ -31,6 +31,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>The direct answer for boards: keep an always-current "lender packet" of financials, reserve information, insurance certificates, and a written, accurate statement of building condition and any special assessments, and assign one person to complete every questionnaire. Do not guess at answers to reach a favorable result. Requirements are set by Fannie Mae and Freddie Mac and change over time, so confirm the current standards through the agency guides linked below and with your association counsel and insurance professional before making representations.</p>
 
+      <p>Reserve figures are one of the items a lender reviews, so it helps to read this alongside our guide to <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois condo law</a>.</p>
       <h2>Why Project Eligibility Matters to Your Association</h2>
       <p>Condominium values depend on financing availability. If a project is deemed ineligible, buyers are pushed toward portfolio lenders, larger down payments, or cash offers, which narrows the buyer pool. Boards feel this as slower resales, price pressure, and frustrated owners who blame the association. Treating project eligibility as an ongoing governance responsibility rather than a scramble triggered by each contract is the single biggest improvement most boards can make.</p>
 
@@ -161,6 +162,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>Insurance is a separate layer on top of that. Even when the declaration assigns repair responsibility to one party, the association's master policy, the owner's HO-6 policy, or both may respond, and deductibles may shift the practical cost. Boards should resolve responsibility and insurance as two distinct analyses, with counsel interpreting the documents and the agent interpreting the policies.</p>
 
+      <p>For planning the repairs that prevent leaks in older buildings, see our guide to <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condominium buildings</a>.</p>
       <h2>Step One: Emergency Response, Not Adjudication</h2>
       <p>Mitigation comes first. Shut off the source, get a licensed plumber or restoration contractor on site, and protect adjacent units. Delay in mitigation can enlarge the loss and complicate a claim. Boards should have an after-hours protocol and a pre-vetted vendor list so a Saturday night leak does not depend on which director answers the phone.</p>
 
@@ -368,6 +370,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>The second thing every volunteer director should understand is that coverage terms vary substantially between carriers and forms. Two associations can both say "we have D and O" and have very different protection. Boards should read the policy with their agent and counsel, focusing on who is insured, what is excluded, and how defense costs work -- because in governance disputes, defense cost is often the dominant expense.</p>
 
+      <p>D&amp;O is one layer of the association’s insurance program. For the layers owners ask about most, see our guide to <a href="/blog/condo-master-policy-vs-ho6-board-guide">the condo master policy versus the owner’s HO-6</a>.</p>
       <h2>Who Is Actually Insured</h2>
       <p>Ask whether the policy covers the association entity, current directors and officers, former directors and officers, committee members, and volunteers. Boards often assume committee members and past directors are covered when the form may not include them. This matters most in disputes that surface long after a decision was made.</p>
 
@@ -432,6 +435,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>What boards can do independently is the engineering and administrative groundwork. Nearly every dispute over EV charging comes down to unanswered technical questions: does the building have capacity, who pays for the electricity, who owns and maintains the equipment, and what happens when the requesting owner sells the unit. Answer those in writing and the legal review becomes straightforward.</p>
 
+      <p>If the building’s electrical capacity needs an upgrade, that belongs in the capital plan; see <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condominium buildings</a>. For garages in larger towers, see our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> service.</p>
       <h2>Start With Electrical Capacity</h2>
       <p>Engage a licensed electrical engineer to evaluate the building's service capacity, the garage's existing distribution, and what infrastructure would be needed to support charging at a reasonable scale. Approving installations one at a time without a capacity study is how associations end up unable to accommodate the fifth requester after approving the first four. The study should describe both an individual-installation path and a shared-infrastructure path.</p>
 
@@ -493,6 +497,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>The second point boards underestimate is documentation. If a claim arises months later, the association's position depends on records: service logs with timestamps, material application records, photos, and communications. A vendor who cannot produce those on request is a liability regardless of how well they plow.</p>
 
+      <p>Who is responsible for which pavement starts with your governing documents, so first confirm <a href="/blog/which-illinois-law-governs-condo-hoa-townhome">which Illinois law governs your condo, HOA or townhome association</a>. Our <a href="/services/hoa-management">HOA management</a> page shows how we work with those communities.</p>
       <h2>Define the Scope Precisely</h2>
       <p>A workable scope specifies, at minimum:</p>
       <ul>
@@ -638,6 +643,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
 
       <p>The second discipline is treating the RFP as the first draft of the contract. Insurance requirements, payment terms, warranty, and dispute procedures belong in the solicitation so vendors price them, not in a negotiation after the board has already announced a winner. Have association counsel review the contract template once; reuse it for years.</p>
 
+      <p>The same approach works when the vendor is a management company: our <a href="/board-toolkit">board toolkit</a> has an RFP outline, interview questions and a transition checklist for that search.</p>
       <h2>Writing a Scope That Can Be Bid</h2>
       <p>A biddable scope typically includes: the work to be performed and explicit exclusions, materials and acceptable equivalents, applicable standards, site conditions and access constraints, schedule and working hours, resident notice requirements, cleanup and disposal, permits and who obtains them, inspection and acceptance criteria, and warranty terms. For technical projects -- envelope, roofing, mechanical, elevator, life safety -- engage an engineer or architect to author the specifications.</p>
 

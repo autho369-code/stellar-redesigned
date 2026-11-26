@@ -22,7 +22,10 @@ try {
       const guide = bySlug.get(target);
       assert(guide, `missing guide ${target}`);
       assert(pillar.date < guide.date, `pillar must predate ${target}`);
-      assert.equal(postSilos[slug].money, postSilos[target].money, `cross-silo ${slug} -> ${target}`);
+      // Same silo: the queued guide's money page is the pillar's primary
+      // money page or one of its extra ('also') money pages. Phase 2 moved a
+      // few pillars to their cluster money page and kept the old one in 'also'.
+      assert([postSilos[slug].money, ...(postSilos[slug].also ?? [])].includes(postSilos[target].money), `cross-silo ${slug} -> ${target}`);
       const before = new Date(`${guide.date}T12:00:00Z`); before.setUTCDate(before.getUTCDate() - 1);
       assert(!getPillarGuides(pillar, posts, before.toISOString().slice(0,10)).some(p => p.slug === target));
       const content = getPillarContent(pillar, posts, guide.date);

@@ -383,6 +383,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Start by asking your association's attorney a narrow question: under our declaration, bylaws, and the statute that governs us, what late charges and interest may this board impose, and what notice must we give? Everything in this article assumes you have that answer in writing. Do not derive it from what a neighboring association does.</p>
 
+      <p>If your community is a homeowners or townhome association rather than a condominium, see how we work with those boards on our <a href="/services/hoa-management">HOA management</a> page.</p>
       <h2>Authority comes from your documents plus the right statute</h2>
 
       <p>Illinois condominium associations operate under the Condominium Property Act. Many Illinois homeowners and townhome associations operate under CICAA. The two statutes are distinct, and each interacts differently with an association's recorded documents. A charge that is clearly supported for one association may lack support for another down the street.</p>
@@ -471,6 +472,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>That framing solves most delinquency problems before they become legal problems. Associations rarely fail at collections because the law is unfavorable. They fail because the ledger has unexplained adjustments, the notices were sent inconsistently, the board waived charges for some owners, or nobody can produce proof that the assessment was validly adopted.</p>
 
+      <p>Most of those failures are process failures, and a written policy is where the process lives. See our guide to <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the collection policy Illinois boards must adopt by January 1, 2027</a>.</p>
       <h2>The four record sets counsel will ask for</h2>
 
       <h3>1. Proof the assessment was validly adopted</h3>
@@ -641,6 +643,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Before any of it, confirm authority. Your association's power to borrow, to pledge assessment income, and to levy an assessment to service debt comes from your recorded documents read alongside the Illinois statute that governs your association -- the Condominium Property Act for condominiums, CICAA for many homeowners and townhome associations. Owner approval may be required for some or all of it. Have counsel answer this before the board spends time on term sheets.</p>
 
+      <p>A loan is one funding tool next to the reserve fund, so start with our guide to <a href="/blog/reasonable-reserves-illinois-condo-law">reasonable reserves under Illinois condo law</a>. Boards of larger buildings can also see our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> service.</p>
       <h2>Step one: define the project, not the aspiration</h2>
 
       <p>Lenders fund defined scopes. "Roof and facade work" is an aspiration. A defined scope has an engineer's or architect's assessment, a written scope of work, competitive bids, a schedule, and a contingency. Boards that arrive with a defined scope are also boards that avoid the far more common failure: borrowing an amount that turns out to be short mid-project.</p>

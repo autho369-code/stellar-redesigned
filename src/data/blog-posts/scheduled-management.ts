@@ -27,6 +27,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>The short answer for planning purposes: start roughly ninety days before your fiscal year begins, circulate a draft internally, distribute the proposed budget to owners in advance of the adoption meeting, and adopt it before the year starts so assessment statements go out on time. Your exact notice window and any owner-rejection or reserve-disclosure provisions depend on whether your community is governed by the Illinois Condominium Property Act or the Common Interest Community Association Act (CICAA), and on your own declaration and bylaws. Confirm the current requirements with association counsel before you set your calendar.</p>
 
+      <p>In a small building the same work falls on fewer volunteers. If that is your board, see our <a href="/services/small-condo-association-management">small condo association management</a> service.</p>
       <h2>Condominium Property Act vs. CICAA: Know Which Statute Applies</h2>
 
       <p>Illinois condominium associations are generally governed by the Illinois Condominium Property Act. Many non-condominium common interest communities, including a large share of townhome and single-family HOAs, are governed instead by CICAA. The two statutes are similar in spirit but not identical in their budget, notice, reserve, and assessment-increase provisions.</p>
@@ -131,6 +132,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Build it once, in a shared calendar the board and manager both see, with a named person on every entry. Then verify the specific city obligations that apply to your property, because they vary with building height, construction type, systems, age, and use. Chicago's Department of Buildings and Department of Business Affairs and Consumer Protection publish current requirements, and your association counsel can confirm which apply to you. Do not assume a checklist from another building transfers to yours.</p>
 
+      <p>For towers, see our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> service. If the board is looking for a firm to run the calendar, the <a href="/board-toolkit">board toolkit</a> has an RFP outline and interview questions.</p>
       <h2>Start by Identifying Which Obligations Apply</h2>
 
       <p>Chicago's requirements are building-specific. A four-flat conversion, a mid-rise with an elevator and a fire pump, and a high-rise with a life safety evaluation obligation do not share the same inspection schedule. Before scheduling anything, produce a written inventory of your building's regulated systems and features.</p>
@@ -236,6 +238,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Adopt the policy in open session, put it in writing, distribute it to all owners, and follow it without exception. What remedies are available to your association, what notices must precede them, and what charges may be added depend on whether the Illinois Condominium Property Act or the Common Interest Community Association Act governs your community, and on your declaration and bylaws. Have association counsel draft or review the policy before adoption, and involve counsel before any legal remedy is pursued.</p>
 
+      <p>Illinois boards must also adopt a written collection policy by January 1, 2027. Our guide to <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the Illinois collection policy law</a> explains what that policy has to cover.</p>
       <h2>Why Consistency Beats Aggressiveness</h2>
 
       <p>Boards frequently swing between two failure modes. One is avoidance, where a delinquency ages for a year because the treasurer knows the owner personally. The other is a sudden crackdown, where a board that ignored balances for months escalates one account hard. Both create problems. Avoidance shifts the shortfall onto paying owners. Selective escalation invites the argument that the board acted for reasons other than the balance.</p>
@@ -326,6 +329,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Read the agreement as a whole document, not as a price. Two proposals with identical monthly fees can differ substantially once ancillary charges, an auto-renewal clause, and a records-return provision are accounted for. Have association counsel review the final draft before the board signs. This article describes what to look for; counsel should tell you what the language means for your association.</p>
 
+      <p>If this review is part of a wider search, start with <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a>. To compare the terms in each draft, use the <a href="/tools/compare-management-proposals">management proposal scorecard</a>, and see how a flat fee is set out on our <a href="/pricing">management pricing</a> page.</p>
       <h2>Scope of Services: Included Versus Available</h2>
 
       <p>The most consequential distinction in any management agreement is between services included in the base fee and services available at additional cost. Vague scope language is where budget surprises originate.</p>
@@ -430,6 +434,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>That caution is deliberate. The Act has been the subject of significant legislative attention since it was passed, including provisions affecting its operation and duration. Rather than restate requirements that may no longer be in effect or may have changed, the practical guidance below focuses on what a board should confirm and on the internal complaint-policy discipline that serves the association well regardless of the Act's current status.</p>
 
+      <p>Directors who are new to these duties can start with our <a href="/blog/new-condo-board-member-first-30-days">new condo board member guide to the first 30 days</a>.</p>
       <h2>What the Act Was Designed to Do</h2>
 
       <p>In general terms, the legislation created an Office of the Condominium and Common Interest Community Ombudsperson within Illinois state government. The concept was to give unit owners and board members a neutral state resource for information about their rights and responsibilities under Illinois association law, and to encourage associations to have a defined internal process for handling owner complaints before disputes escalate.</p>
@@ -533,6 +538,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Do this before you sign, not after. Boards routinely verify a company's reputation and never check the credential the state actually issues. It is a short task with real consequences, and it is one of the few due-diligence steps you can complete yourself, for free, in a few minutes.</p>
 
+      <p>Once the license checks out, score the rest of each proposal with the <a href="/tools/compare-management-proposals">management proposal scorecard</a>.</p>
       <h2>Illinois Licenses Both Individuals and Firms</h2>
 
       <p>Illinois regulates community association management through IDFPR. Individual managers hold a community association manager license, and management companies hold a separate firm-level license or registration. Verifying only one leaves a gap.</p>
@@ -627,6 +633,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>The reason is straightforward. Conflict in associations rarely comes from directors who want different outcomes. It comes from ambiguity about what was decided, whether it was actually voted on, and whether owners were told. Structure removes the ambiguity. Note that meeting, notice, and records requirements differ between the Illinois Condominium Property Act and CICAA and are further shaped by your declaration and bylaws, so have counsel confirm your specific obligations before finalizing procedures.</p>
 
+      <p>Setting up these systems is a good early project for a new director. See our <a href="/blog/new-condo-board-member-first-30-days">new condo board member guide: the first 30 days</a>.</p>
       <h2>Meetings: Rhythm, Packet, Agenda</h2>
 
       <h3>Set a standing schedule</h3>
@@ -730,6 +737,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>Renewal is also a governance moment, not just a purchasing one. Your declaration dictates what the association must insure versus what unit owners insure, and getting that boundary wrong produces uncovered losses and disputes after a claim. Have association counsel confirm the insurance obligations in your governing documents and under the statute that applies to your community, and work with a licensed broker experienced with Illinois community associations on coverage decisions.</p>
 
+      <p>In a small building the renewal can fall to a single volunteer. If that is your board, see what our <a href="/services/small-condo-association-management">small condo association management</a> service takes on.</p>
       <h2>Start Early and Assemble the Package</h2>
 
       <p>The single highest-leverage renewal action is giving your broker time and information.</p>
@@ -839,6 +847,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>The reason to fix criteria in advance is behavioral. Boards that discuss proposals without a framework tend to anchor on the lowest fee or on whoever presented most smoothly, then reverse-engineer justifications. Independent scoring against agreed weights surfaces genuine disagreement early and produces a decision the board can explain to owners.</p>
 
+      <p>To see the scope a full-service proposal should describe, compare each one with our <a href="/services/condominium-management">condominium management services</a>.</p>
       <h2>Set the Criteria Before Proposals Arrive</h2>
 
       <p>Adopt your scoring rubric at a board meeting before the RFP goes out, and record it in the minutes. Here is a workable starting set of weights; adjust them to your community's priorities.</p>
@@ -948,6 +957,7 @@ export const scheduledManagementPosts: BlogPost[] = [
 
       <p>The useful question is not simply, “How many buildings do you manage?” It is, “What work is already committed across your portfolio, what support do you receive, and how will our association receive reliable attention when several communities need help at once?”</p>
 
+      <p>This question matters most when a board is choosing a firm. See <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a> for the full process, our <a href="/services/condominium-management">condominium management services</a> for what the service includes, and <a href="/pricing">management pricing</a> for how the fee is quoted.</p>
       <h2>Association Count Is Only the Starting Point</h2>
 
       <p>Two portfolios with the same number of communities may be entirely different jobs. A high-rise with elevators, life-safety systems, union or on-site staff, frequent moves, a large operating budget, and active facade work creates a different workload from a small townhome association with stable vendors and limited common property.</p>

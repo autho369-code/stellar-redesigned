@@ -26,8 +26,8 @@ if (neighborhoodSlugs.length !== 43 || new Set(neighborhoodSlugs).size !== 43) {
 }
 
 const requiredConnections = [
-  ['src/pages/BlogPost.tsx', ['getSiloSiblings', 'getPostNeighborhoods', 'getPostSilo', 'getPillarContent']],
-  ['src/pages/NeighborhoodPage.tsx', ['getNeighborhoodGuides', 'neighborhoodClusterConfig.servicePath']],
+  ['src/pages/BlogPost.tsx', ['getSiloSiblings', 'getPostNeighborhoods', 'getPostSilo', 'getPillarContent', 'getSeriesNav', 'getNearbyAreas']],
+  ['src/pages/NeighborhoodPage.tsx', ['getAreaGuides', 'neighborhoodClusterConfig.servicePath']],
   ['src/pages/services/BoardSupport.tsx', ['ClusterGuides cluster="governance"']],
   ['src/pages/services/FinancialManagement.tsx', ['ClusterGuides cluster="finance"']],
   ['src/pages/services/MaintenanceCoordination.tsx', ['ClusterGuides cluster="buildings"']],
@@ -50,11 +50,11 @@ for (const [file, markers] of requiredConnections) {
 // not link a guide that will still be unpublished on its own release day.
 const bundleDir = mkdtempSync(join(tmpdir(), 'stellar-silos-'));
 const bundlePath = join(bundleDir, 'silos.mjs');
-let allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta;
+let allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta, clusters, extraMoneyLinks, areaTypes, getAreaGuides;
 try {
   await build({
     stdin: {
-      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';\nexport { getPillarContent } from './src/data/pillar-links';\nexport { ctaPosts, splitForMidCta, withoutClosingCta } from './src/data/ctaPosts';`,
+      contents: `export { allBlogPosts } from './src/data/blog-posts/index';\nexport { postSilos, moneyPagePaths } from './src/data/post-silos';\nexport { getPillarContent } from './src/data/pillar-links';\nexport { ctaPosts, splitForMidCta, withoutClosingCta } from './src/data/ctaPosts';\nexport { clusters, extraMoneyLinks, areaTypes, getAreaGuides } from './src/data/clusters';`,
       resolveDir: root,
       loader: 'ts',
     },
@@ -64,7 +64,7 @@ try {
     outfile: bundlePath,
     logLevel: 'error',
   });
-  ({ allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta } = await import(pathToFileURL(bundlePath).href));
+  ({ allBlogPosts, postSilos, moneyPagePaths, getPillarContent, ctaPosts, splitForMidCta, withoutClosingCta, clusters, extraMoneyLinks, areaTypes, getAreaGuides } = await import(pathToFileURL(bundlePath).href));
 } finally {
   rmSync(bundleDir, { recursive: true, force: true });
 }
@@ -93,8 +93,13 @@ for (const post of allBlogPosts) {
   const areas = new Set(hrefs.filter((href) => href.startsWith('/property-management-')));
 
   if (!money.has(silo.money)) problems.push(`${post.slug}: body must link its money page ${silo.money}`);
+  // One primary money page, plus only the extra money pages listed in `also`.
+  const also = silo.also ?? [];
   for (const extra of money) {
-    if (extra !== silo.money) problems.push(`${post.slug}: body links a second money page ${extra}`);
+    if (extra !== silo.money && !also.includes(extra)) problems.push(`${post.slug}: body links a money page that is not its primary or in 'also': ${extra}`);
+  }
+  for (const extra of also) {
+    if (!money.has(extra)) problems.push(`${post.slug}: body must link its extra money page ${extra}`);
   }
   for (const area of areas) {
     if (area !== silo.area) problems.push(`${post.slug}: body links area page ${area}; allowed: ${silo.area ?? 'none'}`);
@@ -113,6 +118,63 @@ for (const post of allBlogPosts) {
     } else if (!knownPaths.has(href)) {
       problems.push(`${post.slug}: links unknown page ${href}`);
     }
+  }
+}
+
+// ── Clusters (src/data/clusters.ts) ──────────────────────────────────────
+// Every published guide is in exactly one cluster. A cluster's money page is
+// the primary money page of each member, and every member links its pillar
+// in the body. Named siblings, cross links and area pages must all exist.
+{
+  const seen = new Map();
+  const bodyLinks = (post) => new Set(
+    [...getPillarContent(post, allBlogPosts, today).matchAll(/<a\s[^>]*href="([^"]+)"/g)]
+      .map((match) => match[1].replace(/^https:\/\/www\.stellarpropertygroup\.com/, '').replace(/[#?].*$/, '')),
+  );
+  for (const cluster of clusters) {
+    const members = cluster.members.map((member) => member.slug);
+    if (!members.includes(cluster.pillar)) problems.push(`cluster ${cluster.id}: pillar ${cluster.pillar} is not listed in members`);
+    if (!moneyPagePaths.includes(cluster.money)) problems.push(`cluster ${cluster.id}: unknown money page ${cluster.money}`);
+    for (const member of cluster.members) {
+      const post = postsBySlug.get(member.slug);
+      if (!post) { problems.push(`cluster ${cluster.id}: '${member.slug}' is not a guide`); continue; }
+      if (post.date > today) problems.push(`cluster ${cluster.id}: '${member.slug}' is not published yet`);
+      if (seen.has(member.slug)) problems.push(`'${member.slug}' is in two clusters (${seen.get(member.slug)} and ${cluster.id})`);
+      seen.set(member.slug, cluster.id);
+      if (postSilos[member.slug]?.money !== cluster.money) problems.push(`${member.slug}: primary money page in post-silos.ts must be its cluster money page ${cluster.money}`);
+      if (member.areas.length < 3 || new Set(member.areas).size !== member.areas.length) problems.push(`${member.slug}: needs at least three different area pages`);
+      for (const area of member.areas) if (!neighborhoodSlugs.includes(area)) problems.push(`${member.slug}: unknown area page '${area}'`);
+      for (const sibling of member.siblings ?? []) {
+        if (!members.includes(sibling) || sibling === member.slug) problems.push(`${member.slug}: sibling '${sibling}' is not another guide in cluster ${cluster.id}`);
+      }
+      for (const cross of member.cross ?? []) {
+        const target = postsBySlug.get(cross);
+        if (!target || target.date > today || members.includes(cross)) problems.push(`${member.slug}: cross link '${cross}' must be a published guide in another cluster`);
+      }
+      const links = bodyLinks(post);
+      if (member.slug !== cluster.pillar && !links.has(`/blog/${cluster.pillar}`)) problems.push(`${member.slug}: body must link its cluster pillar /blog/${cluster.pillar}`);
+    }
+  }
+  for (const post of allBlogPosts) {
+    if (post.date <= today && !seen.has(post.slug)) problems.push(`${post.slug}: published guide is not in any cluster (src/data/clusters.ts)`);
+  }
+  for (const [page, slugs] of Object.entries(extraMoneyLinks)) {
+    if (!knownPaths.has(page)) problems.push(`extraMoneyLinks: unknown page ${page}`);
+    for (const slug of slugs) {
+      const post = postsBySlug.get(slug);
+      if (!post) problems.push(`extraMoneyLinks: '${slug}' is not a guide`);
+      else if (!bodyLinks(post).has(page)) problems.push(`${slug}: body must link ${page} (extraMoneyLinks)`);
+    }
+  }
+  // Area pages: each belongs to exactly one area type and shows six curated guides.
+  const typed = areaTypes.flatMap((type) => type.areas);
+  for (const slug of neighborhoodSlugs) {
+    if (typed.filter((area) => area === slug).length !== 1) problems.push(`area '${slug}' must be in exactly one area type (src/data/clusters.ts)`);
+    const { curated } = getAreaGuides(slug);
+    if (curated.length !== 6 || new Set(curated).size !== 6) problems.push(`area '${slug}' must show six different curated guides`);
+  }
+  for (const type of areaTypes) {
+    for (const guide of type.guides) if (!seen.has(guide)) problems.push(`area type ${type.id}: '${guide}' is not a published, clustered guide`);
   }
 }
 
@@ -139,4 +201,5 @@ if (problems.length) {
 }
 
 console.log(`Content silos verified: ${postSlugs.length} articles, ${neighborhoodSlugs.length} service areas, and 9 commercial/link surfaces.`);
-console.log(`Reverse silo verified: every article links one money page, at most one area page, and its sibling guides.`);
+console.log(`Reverse silo verified: every article links one primary money page, at most one area page, and its sibling guides.`);
+console.log(`Clusters verified: ${clusters.length} clusters, ${clusters.reduce((n, c) => n + c.members.length, 0)} published guides, each linking its pillar and money page.`);

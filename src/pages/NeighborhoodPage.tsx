@@ -5,7 +5,8 @@ import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { getNeighborhoodBySlug, getRelatedNeighborhoods } from '../data/neighborhoods';
 import { getNeighborhoodServices } from '../data/neighborhood-services';
 import { blogPosts } from '../data/blog-posts';
-import { contentClusters, getNeighborhoodCluster, getNeighborhoodGuides } from '../data/content-silos';
+import { contentClusters, getNeighborhoodCluster } from '../data/content-silos';
+import { getAreaGuides } from '../data/clusters';
 
 const whyChoose = [
   {
@@ -71,7 +72,13 @@ export default function NeighborhoodPage() {
   // stock, with localized anchor copy per card.
   const localServices = getNeighborhoodServices(neighborhood);
   const neighborhoodCluster = getNeighborhoodCluster(neighborhood);
-  const neighborhoodGuides = getNeighborhoodGuides(neighborhood, blogPosts, 3);
+  // Curated guides (src/data/clusters.ts): the choosing-a-manager pillar plus
+  // five guides for this area type, then any guides matched to this page.
+  const areaGuides = getAreaGuides(neighborhood.slug);
+  const guideBySlug = new Map(blogPosts.map((guide) => [guide.slug, guide]));
+  const neighborhoodGuides = [...areaGuides.curated, ...areaGuides.matched]
+    .map((slug) => guideBySlug.get(slug))
+    .filter((guide): guide is (typeof blogPosts)[number] => !!guide);
   const neighborhoodClusterConfig = contentClusters[neighborhoodCluster];
 
   // Chicago neighborhoods are "<Name>, Chicago"; North Shore suburbs are
@@ -395,10 +402,10 @@ export default function NeighborhoodPage() {
               <div className="lg:col-span-4">
                 <p className="eyebrow text-gold-600 mb-5 flex items-center gap-4"><span className="accent-rule" />Board Resource Path</p>
                 <h2 className="font-display font-light text-3xl lg:text-4xl text-ink leading-tight mb-5">Guidance for {neighborhood.name} boards.</h2>
-                <p className="text-slate-600 font-light leading-relaxed mb-6">A balanced selection of management, finance, governance, and building guidance for associations in this community.</p>
+                <p className="text-slate-600 font-light leading-relaxed mb-6">Board guides chosen for the building types in this community, plus our guide to choosing a management company.</p>
                 <Link to={neighborhoodClusterConfig.servicePath} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Explore {neighborhoodClusterConfig.serviceLabel} <ArrowRight className="w-4 h-4" /></Link>
               </div>
-              <div className="lg:col-span-8 border-t border-slate-200">
+              <div className="lg:col-span-8 border-t border-slate-200" data-area-guides>
                 {neighborhoodGuides.map((guide) => (
                   <Link key={guide.slug} to={`/blog/${guide.slug}`} className="group grid sm:grid-cols-12 gap-3 py-6 border-b border-slate-200">
                     <span className="sm:col-span-3 text-[10px] uppercase tracking-luxe text-gold-600">{guide.category}</span>

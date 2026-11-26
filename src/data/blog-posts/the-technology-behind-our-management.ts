@@ -14,6 +14,7 @@ export const technologyBehindOurManagement = {
 
 <p>Stellar runs its portfolio on <a href="https://portier369.com" target="_blank" rel="noopener">Portier369, an association management platform</a> built specifically for condominiums and HOAs — not adapted from rental-property software. Here is what that means in practice for the communities we manage.</p>
 
+<p>If your board is weighing a change of firm, technology is one item to compare. Our guide on <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a> covers the rest.</p>
 <h2>Owners get self-service, not phone tag</h2>
 <p>Every owner in a Stellar-managed community has a portal: pay assessments online, submit maintenance requests with photos, check account history, upload proof of insurance, and find governing documents — from a phone, with no app download required. The routine questions that used to be phone calls are now answered instantly.</p>
 

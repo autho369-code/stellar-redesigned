@@ -13,6 +13,7 @@ export const aiInCondoManagement = {
   content: `
 <p>Artificial intelligence has moved from buzzword to working tool in a remarkably short time, and community management is no exception. For condo and HOA boards, the question is no longer whether AI will touch how their building is managed, but how to adopt it sensibly — capturing the genuine efficiencies without creating new risks.</p>
 
+<p>If AI tools are part of a firm’s pitch to your board, weigh them with everything else in <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a>.</p>
 <h2>Where AI Is Showing Up in Community Management</h2>
 <ul>
 <li><strong>Violation processing.</strong> AI can help draft consistent violation notices and keep cases organized and tracked.</li>

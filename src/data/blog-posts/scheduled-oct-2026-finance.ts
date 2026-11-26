@@ -36,6 +36,7 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
     content: `
       <p>It usually starts with a petition or a pointed email: a group of owners has lost confidence in the numbers and wants an independent audit. Often the request says the law requires the board to order one once enough owners ask. Before a board agrees, refuses or argues, it should know what Illinois law actually provides, because the answer is narrower than many owners expect and broader than many boards assume.</p>
 
+      <p>For the budget process that produces the numbers an audit would examine, see <a href="/blog/illinois-condo-hoa-budget-adoption-guide">how Illinois association boards should adopt an annual budget</a>.</p>
       <h2>Can owners force an Illinois condo association to get an independent audit?</h2>
 
       <p><strong>Not under the Condominium Property Act on its own.</strong> The current text of the Act does not contain an owner-petition right to compel an independent audit. What it does require is an annual itemized accounting to every owner and broad owner access to the association's financial records. Your declaration or bylaws may go further, so read them before answering owners.</p>
@@ -133,6 +134,7 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
     content: `
       <p>Most association insurance protects against things that happen to the building: fire, water, liability claims. Fidelity coverage protects against something that happens to the money. It responds when a person entrusted with association funds steals them, whether that person is a volunteer treasurer, a bookkeeper or an employee of the management company. It is one of the few coverages Illinois law requires by name, and the requirements apply to both the association and its manager.</p>
 
+      <p>For how this coverage sits beside the building’s property insurance, see our guide to <a href="/blog/condo-master-policy-vs-ho6-board-guide">the condo master policy and the HO-6 policy</a>.</p>
       <h2>Does Illinois require condo associations to carry fidelity coverage?</h2>
 
       <p><strong>Yes, for associations with 6 or more dwelling units.</strong> Section 12(a)(3)(A) of the Condominium Property Act requires a fidelity bond covering the persons, including the managing agent and its employees, who control or disburse association funds, for the maximum amount of coverage available to protect funds in the association's custody or control plus the reserve fund.</p>
@@ -229,6 +231,7 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
     content: `
       <p>When a management firm fails, the first question every board asks is whether the association's money is safe. The answer depends almost entirely on one thing: whether the funds were held in accounts that belong to the association, or in accounts that belong to the firm. Illinois law addresses this directly, and a board can verify compliance without an audit.</p>
 
+      <p>Account structure is worth checking before a board signs with any firm. See <a href="/blog/switch-condo-management-companies-chicago">how to switch condo management companies in Chicago</a> for the full selection process, and our <a href="/services/condominium-management">condominium management services</a> for what our service covers.</p>
       <h2>Can a management company hold association money in its own account?</h2>
 
       <p><strong>No.</strong> Under Section 55(b) of the Community Association Manager Licensing and Disciplinary Act, a firm that manages more than one association must keep separate, segregated accounts for each one. The funds may not be commingled with the funds of the manager, the firm or any other association, the accounts are custodial, and each must be in the name of the respective association.</p>
@@ -330,6 +333,7 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
     content: `
       <p>Reserve funds take years to build. In a growing number of Chicago and North Shore buildings they now run well into seven figures, which is good planning and a new kind of exposure. Boards spend months on the reserve study that sets the contribution and very little time on where the money actually sits. This guide covers the deposit insurance facts every board should know and the decisions an investment policy should settle.</p>
 
+      <p>For the earlier question of how much the board should be setting aside, see our guide to <a href="/blog/reasonable-reserves-illinois-condo-law">reasonable reserves under Illinois condo law</a>.</p>
       <h2>How much of an association's money is FDIC insured?</h2>
 
       <p><strong>Up to $250,000 per insured bank, in total.</strong> The FDIC insures deposits up to $250,000 per depositor, per insured bank, for each ownership category. An association's deposits fall in the corporation, partnership and unincorporated association category, and the FDIC states that a homeowners' association's deposits at one bank are insured up to $250,000 in total, not $250,000 for each member.</p>
