@@ -1,3 +1,4 @@
+import { business } from '../../data/business';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone } from 'lucide-react';
 
@@ -11,10 +12,10 @@ interface CTASectionProps {
 
 export function CTASection({
   title = 'Ready to Elevate Your Community Management?',
-  description = 'Join the 29 Chicago-area associations that trust Stellar Property Management. Contact us today for a free consultation and discover why we maintain a 96% client retention rate since 2007.',
+  description = `Join the ${business.associations} Chicago-area associations that trust ${business.name}. Contact us today for a free consultation and discover why we maintain a ${business.retentionPercent}% client retention rate since 2007.`,
   primaryLink = '/contact?inquiry=quote&source=sitewide-cta',
   primaryText = 'Request a Board Consultation',
-  secondaryText = '773.728.0652',
+  secondaryText = business.phoneDotted,
 }: CTASectionProps) {
   const words = title.trim().split(' ');
   const lastWord = words.pop();

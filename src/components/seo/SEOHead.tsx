@@ -1,7 +1,8 @@
+import { brand } from '../../brand/brand.config';
 import { Helmet } from 'react-helmet-async';
 
 const DEFAULT_OG_IMAGE =
-  'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg';
+  `${brand.siteUrl}${brand.ogImage}`;
 
 interface SEOHeadProps {
   title: string;
@@ -28,7 +29,7 @@ export function SEOHead({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
-      <meta property="og:site_name" content="Stellar Property Management" />
+      <meta property="og:site_name" content={brand.name} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:image" content={ogImage} />
       {canonical && <meta property="og:url" content={canonical} />}

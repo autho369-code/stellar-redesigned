@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { business } from '../../data/business';
+import { business, ORG_ID, SITE_URL } from '../../data/business';
 
 interface ServiceSchemaProps {
   name: string;
@@ -19,7 +19,7 @@ export function ServiceSchema({ name, description, canonical, serviceType }: Ser
         description,
         url: canonical,
         serviceType,
-        provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
+        provider: { '@id': ORG_ID },
         areaServed: [
           { '@type': 'City', name: 'Chicago' },
           { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
@@ -38,8 +38,8 @@ export function ServiceSchema({ name, description, canonical, serviceType }: Ser
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.stellarpropertygroup.com/services' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
           { '@type': 'ListItem', position: 3, name, item: canonical },
         ],
       },

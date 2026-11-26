@@ -159,7 +159,7 @@ export default function CondominiumManagement() {
               <ul className="border-t border-slate-200">
                 {highlights.map((item, i) => (
                   <li key={item} className="py-4 border-b border-slate-200 flex items-baseline gap-5">
-                    <span className="font-display font-light text-sm text-gold-500 select-none">
+                    <span className="font-display font-light text-sm text-gold-600 select-none">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <span className="text-sm text-slate-600 font-light leading-relaxed">{item}</span>
@@ -189,7 +189,7 @@ export default function CondominiumManagement() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
             {features.map(({ title, description }, i) => (
               <div key={title} className="bg-white p-9 lg:p-10">
-                <span className="font-display font-light text-3xl text-gold-500 block mb-6 select-none">
+                <span className="font-display font-light text-3xl text-gold-600 block mb-6 select-none">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <h3 className="font-display text-xl text-ink mb-4">{title}</h3>

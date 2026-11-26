@@ -13,7 +13,7 @@ interface ProposalCtaProps {
   hook?: string;
 }
 
-const PHONE_HREF = 'tel:+17737280652';
+const PHONE_HREF = business.phoneHref;
 
 const buttonClass =
   'group inline-flex items-center gap-3 bg-ink px-7 py-3.5 text-sm font-medium tracking-wide text-paper no-underline transition-colors duration-300 hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-600';

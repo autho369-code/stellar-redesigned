@@ -1,10 +1,11 @@
+import { brand } from '../brand/brand.config';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { recordRoute } from '../lib/leadSource';
 import { trackEvent } from '../lib/track';
 
-const MAIN_PHONE_DIGITS = '7737280652';
-const MAIN_EMAIL = 'mirsad@stellarpropertygroup.com';
+const MAIN_PHONE_DIGITS = brand.phone.digits;
+const MAIN_EMAIL = brand.email;
 const LOCATIONS = ['header', 'footer', 'contact', 'cta-mid', 'cta-end', 'area-page'];
 
 function trackLocation(link: Element): string {

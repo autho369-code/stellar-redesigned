@@ -263,7 +263,7 @@ export default function Pricing() {
             <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4"><span className="accent-rule" /> Included Management</p>
             <h2 className="font-display font-light text-4xl lg:text-5xl leading-[1.08] mb-7">Capital oversight without the <em className="font-medium text-gold-300">percentage surcharge.</em></h2>
             <p className="text-paper/60 font-light leading-relaxed">Some management agreements add a percentage fee when an association undertakes a roof, façade, mechanical, or other capital project. Stellar does not add a separate capital-project planning or management-oversight fee. The management work is included in the agreed scope.</p>
-            <p className="text-paper/40 text-sm mt-5 leading-relaxed">Independent contractor, engineering, architecture, legal, permit, and other third-party project costs remain association expenses.</p>
+            <p className="text-paper/60 text-sm mt-5 leading-relaxed">Independent contractor, engineering, architecture, legal, permit, and other third-party project costs remain association expenses.</p>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-6">{includedServices.map((service) => <li key={service} className="flex gap-3 text-sm text-paper/70 font-light leading-relaxed"><Check className="w-4 h-4 mt-0.5 text-gold-300 shrink-0" />{service}</li>)}</ul>

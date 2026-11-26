@@ -8,9 +8,9 @@
 import { readFileSync } from 'node:fs';
 
 const BASE = (process.env.BASE_URL || 'https://www.stellarpropertygroup.com').replace(/\/$/, '');
-const business = readFileSync(new URL('../src/data/business.ts', import.meta.url), 'utf8');
-const priceFrom = business.match(/priceFrom:\s*(\d+)/)[1];
-const priceTerms = business.match(/priceTerms:\s*'([^']+)'/)[1];
+const brandFile = readFileSync(new URL('../src/brand/brand.config.ts', import.meta.url), 'utf8');
+const priceFrom = brandFile.match(/startingPerUnit:\s*(\d+)/)[1];
+const priceTerms = brandFile.match(/terms:\s*'([^']+)'/)[1];
 const PRICE = `$${priceFrom} per unit per month, ${priceTerms}`;
 const ctaSource = readFileSync(new URL('../src/data/ctaPosts.ts', import.meta.url), 'utf8');
 const ctaSlugs = [...ctaSource.slice(ctaSource.indexOf('export const ctaPosts')).matchAll(/^  '([a-z0-9-]+)': \{/gm)].map((m) => m[1]);

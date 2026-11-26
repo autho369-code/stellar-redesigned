@@ -1,3 +1,4 @@
+import { business } from '../data/business';
 import { useState } from 'react';
 import { Users, User, Mail, Phone, MapPin, FileText, Send, Award, CheckCircle, Printer } from 'lucide-react';
 
@@ -173,7 +174,7 @@ export function BoardNominationForm() {
           <div className="hidden print:block bg-white p-8">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Board Member Nomination Application</h1>
-              <p className="text-gray-600">Stellar Property Management</p>
+              <p className="text-gray-600">{business.name}</p>
               <p className="text-sm text-gray-500">Submitted on {new Date().toLocaleDateString()}</p>
             </div>
 
@@ -279,7 +280,7 @@ export function BoardNominationForm() {
       {submitStatus === 'error' && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
           <p className="font-semibold">Oops! Something went wrong.</p>
-          <p className="text-sm">Please try again or contact us directly at mirsad@stellarpropertygroup.com</p>
+          <p className="text-sm">Please try again or contact us directly at {business.email}</p>
           <p className="text-xs mt-2 text-gray-600">Check the browser console (F12) for more details.</p>
         </div>
       )}

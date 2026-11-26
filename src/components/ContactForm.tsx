@@ -1,3 +1,4 @@
+import { business } from '../data/business';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Building, Mail, MessageSquare, Phone, Send, User } from 'lucide-react';
@@ -182,7 +183,7 @@ export function ContactForm() {
       {submitStatus === 'error' && (
         <div role="alert" className="mb-7 border border-red-200 bg-red-50 p-5 text-red-900">
           <p className="font-semibold">The form could not be submitted.</p>
-          <p className="mt-1 text-sm">Please call 773.728.0652 or email mirsad@stellarpropertygroup.com.</p>
+          <p className="mt-1 text-sm">Please call {business.phoneDotted} or email {business.email}.</p>
         </div>
       )}
 

@@ -13,8 +13,8 @@ allowedRoutes.add('/knowledge');
 const errors = [];
 const titles = new Map();
 // The one starting fee, from src/data/business.ts.
-const priceFrom = Number(readFileSync(join(root, 'src/data/business.ts'), 'utf8').match(/priceFrom:\s*(\d+)/)?.[1]);
-if (!priceFrom) errors.push('business.ts: priceFrom not found');
+const priceFrom = Number(readFileSync(join(root, 'src/brand/brand.config.ts'), 'utf8').match(/startingPerUnit:\s*(\d+)/)?.[1]);
+if (!priceFrom) errors.push('brand.config.ts: pricing.startingPerUnit not found');
 
 function valueOf(html, pattern) {
   // Decode the entities React emits, so a title is measured as a reader sees it.
