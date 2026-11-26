@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { business } from '../data/business';
 
 const pricingFactors = [
   { title: 'Community size', description: 'Unit count helps establish the baseline workload and per-unit economics.' },
@@ -63,7 +64,7 @@ const schema = {
       offers: {
         '@type': 'Offer',
         url: 'https://www.stellarpropertygroup.com/pricing',
-        priceSpecification: { '@type': 'UnitPriceSpecification', minPrice: 20, priceCurrency: 'USD', unitText: 'per unit per month' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', minPrice: business.priceFrom, priceCurrency: 'USD', unitText: 'per unit per month' },
         description: 'Starting price; final flat monthly fee is based on the agreed association management scope.',
       },
     },

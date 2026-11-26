@@ -7,6 +7,7 @@ import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { smallCondoManagementFaqs } from '../../data/service-faqs';
+import { business } from '../../data/business';
 
 const problems = [
   ['Volunteer overload', 'Replace scattered owner spreadsheets, inboxes, and verbal handoffs with an operating calendar, documented responsibilities, and one accountable manager.'],
@@ -39,7 +40,7 @@ export default function SmallCondoManagement() {
         description: 'Full-service management for small Chicago condominium associations and vintage buildings, including finances, vendors, maintenance, compliance, and board continuity.',
         provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
         areaServed: { '@type': 'City', name: 'Chicago' },
-        offers: { '@type': 'Offer', priceSpecification: { '@type': 'UnitPriceSpecification', price: 20, priceCurrency: 'USD', unitText: 'per unit per month', description: 'Starting price; customized flat monthly proposal.' } },
+        offers: { '@type': 'Offer', priceSpecification: { '@type': 'UnitPriceSpecification', price: business.priceFrom, priceCurrency: 'USD', unitText: 'per unit per month', description: 'Starting price; customized flat monthly proposal.' } },
       },
       {
         '@type': 'BreadcrumbList',

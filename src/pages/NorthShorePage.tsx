@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Phone, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
+import { business } from '../data/business';
 
 // Glenview leads: it is the flagship North Shore market.
 const northShoreCommunities = neighborhoods
@@ -74,7 +75,7 @@ const schema = {
         '@type': 'Offer',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          minPrice: 20,
+          minPrice: business.priceFrom,
           priceCurrency: 'USD',
           unitText: 'unit per month',
         },

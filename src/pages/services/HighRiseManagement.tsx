@@ -7,6 +7,7 @@ import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceAreasStrip } from '../../components/seo/ServiceAreasStrip';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { highRiseManagementFaqs } from '../../data/service-faqs';
+import { business } from '../../data/business';
 
 const operatingPriorities = [
   ['Building systems', 'Preventive schedules and vendor coordination for elevators, boilers, pumps, fire and life-safety systems, roofs, façades, garages, and domestic-water infrastructure.'],
@@ -39,7 +40,7 @@ export default function HighRiseManagement() {
         description: 'High-rise condominium association management covering building systems, on-site teams, capital planning, financial controls, and 24/7 response.',
         provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
         areaServed: { '@type': 'City', name: 'Chicago' },
-        offers: { '@type': 'Offer', priceSpecification: { '@type': 'UnitPriceSpecification', price: 20, priceCurrency: 'USD', unitText: 'per unit per month', description: 'Starting price; customized flat monthly proposal.' } },
+        offers: { '@type': 'Offer', priceSpecification: { '@type': 'UnitPriceSpecification', price: business.priceFrom, priceCurrency: 'USD', unitText: 'per unit per month', description: 'Starting price; customized flat monthly proposal.' } },
       },
       {
         '@type': 'BreadcrumbList',

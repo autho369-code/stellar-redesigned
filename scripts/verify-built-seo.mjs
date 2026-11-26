@@ -12,6 +12,9 @@ allowedRoutes.add('/knowledge');
 
 const errors = [];
 const titles = new Map();
+// The one starting fee, from src/data/business.ts.
+const priceFrom = Number(readFileSync(join(root, 'src/data/business.ts'), 'utf8').match(/priceFrom:\s*(\d+)/)?.[1]);
+if (!priceFrom) errors.push('business.ts: priceFrom not found');
 
 function valueOf(html, pattern) {
   return html.match(pattern)?.[1]?.replace(/&amp;/g, '&').trim() ?? '';
@@ -57,6 +60,10 @@ for (const url of urls) {
   // $30 per unit per month). The price lives in src/data/business.ts.
   if (/\$20(?![\d,])(?:\s*\/\s*unit|\s+per\s+unit|\s+a\s+unit)/i.test(html)) {
     errors.push(`${route}: contains the retired $20 starting fee`);
+  }
+  // The starting fee inside JSON-LD (price / minPrice) must match business.ts.
+  for (const match of html.matchAll(/"(?:price|minPrice)":\s*"?(\d+(?:\.\d+)?)"?/g)) {
+    if (Number(match[1]) !== priceFrom) errors.push(`${route}: JSON-LD price ${match[1]} does not match the starting fee ${priceFrom}`);
   }
   if (/href="\/contact-us(?:[/?#"])/i.test(html)) errors.push(`${route}: links internally to legacy /contact-us`);
 
