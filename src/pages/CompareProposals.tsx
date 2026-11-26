@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Printer, RotateCcw } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { trackEvent } from '../lib/track';
 
 /**
  * Weighted scorecard for comparing management proposals.
@@ -135,8 +136,32 @@ export default function CompareProposals() {
     [scores],
   );
 
-  const setScore = (key: string, slot: number, value: number) =>
+  // Analytics: "started" on the first input of this visit, "completed" the
+  // first time a firm is fully scored (the result is shown) or the board
+  // prints or saves the scorecard. Each fires once per visit.
+  const started = useRef(false);
+  const completed = useRef(false);
+  const markStarted = () => {
+    if (started.current) return;
+    started.current = true;
+    trackEvent('Proposal Tool Started', { tool: 'scorecard' });
+  };
+  const markCompleted = () => {
+    if (completed.current) return;
+    completed.current = true;
+    trackEvent('Proposal Tool Completed', { tool: 'scorecard' });
+  };
+  const anyComplete = totals.some((t) => t.complete);
+  useEffect(() => {
+    // Only after a real input in this visit, never for scores restored from
+    // an earlier visit.
+    if (anyComplete && started.current) markCompleted();
+  }, [anyComplete]);
+
+  const setScore = (key: string, slot: number, value: number) => {
+    markStarted();
     setScores((prev) => ({ ...prev, [key]: { ...(prev[key] ?? {}), [slot]: value } }));
+  };
 
   const reset = () => {
     setFirms(['', '', '']);
@@ -204,7 +229,10 @@ export default function CompareProposals() {
                 <input
                   type="text"
                   value={firms[slot]}
-                  onChange={(e) => setFirms((p) => p.map((v, i) => (i === slot ? e.target.value : v)))}
+                  onChange={(e) => {
+                    markStarted();
+                    setFirms((p) => p.map((v, i) => (i === slot ? e.target.value : v)));
+                  }}
                   placeholder="Management company name"
                   className="w-full border border-slate-300 bg-paper px-4 py-3 text-ink outline-none transition-colors placeholder:text-slate-400 focus:border-gold-500"
                 />
@@ -283,7 +311,10 @@ export default function CompareProposals() {
             <div className="mt-8 flex flex-wrap gap-4 print:hidden">
               <button
                 type="button"
-                onClick={() => window.print()}
+                onClick={() => {
+                  markCompleted();
+                  window.print();
+                }}
                 className="inline-flex items-center gap-2 bg-ink px-7 py-3.5 text-sm font-medium text-paper transition-colors hover:bg-navy-700"
               >
                 <Printer className="h-4 w-4" /> Print or save as PDF

@@ -19,6 +19,53 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (growth brief Phase 1; flat fee now starts at $30)
+
+Source: Mirsad's 33-page brief "Stellar Property Management: website growth
+instructions for Claude" (Phases 1-4, from the Nov 25 traffic audit). One phase
+at a time; Phases 2-4 wait for his "go". Branch `phase-1-measure-and-capture`.
+
+- **Price:** the customized flat fee starts at **$30 per unit per month**
+  (Mirsad, 2026-11-26; the brief still says $20 — $30 wins). `business.priceFrom`
+  is 30; all hardcoded mentions updated; `verify-built-seo.mjs` fails the build
+  on "$20 per unit".
+- **Sitemap (1A):** `/reviews` is listed (150 URLs) and is now `index, follow`
+  (it was noindex since Nov 3; the brief asked for it). `<lastmod>` is per
+  page: guides use their own date; every other page uses
+  `scripts/sitemap-lastmod.json`, a hash of the page's visible main text plus
+  the day that text last changed. `scripts/update-sitemap-lastmod.mjs` runs in
+  postbuild and only moves a date when the text really changed. Seeded from
+  git history. **Commit the JSON when a build changes it.**
+- **Tracking (1B):** `src/lib/track.ts` `trackEvent()` — no-op in dev, fixed
+  event list, max 2 string properties, never personal data. Events: Contact
+  Form Submit, Phone Click, Email Click, Proposal CTA Click, Proposal Tool
+  Started, Proposal Tool Completed, Board Toolkit Download, Review Link Click.
+  `ConversionTracking.tsx` is the one delegated click listener;
+  `data-track-location` = header, footer, contact, cta-mid, cta-end,
+  area-page (else "other"). Old event names ("Proposal Form Submitted", the
+  generic "Proposal CTA Click" on every /contact link) are retired.
+- **Lead source:** the form sends `lead_source` = `?source=` value, else the
+  internal page the visitor came from, else `direct` (`src/lib/leadSource.ts`).
+  Submissions still go to the same Web3Forms inbox and the ops Supabase table.
+- **Thank-you page:** a successful submit goes to `/contact/thanks` (noindex,
+  nofollow, not in the sitemap). Its page views count leads on any Vercel plan.
+- **Proposal blocks (1C):** `ProposalCta` (mid card + end block) on the 11
+  guides in `src/data/ctaPosts.ts`. Button → `/contact?source=blog-<slug>-<mid|end>`.
+  The end block replaces each guide's own closing "contact us" sentence at
+  render time (`replacesClosing`); the authored post and its silo links are
+  untouched, and `verify-content-silos.mjs` fails if that sentence drifts.
+  Two guides (collection policy, Fannie/Freddie) keep their closing sentence
+  because it also carries the money-page link. Turnaround clause is null
+  (`PROPOSAL_TURNAROUND`, TODO for Mirsad) and hidden.
+- **Build checks added:** no `[[JOJO` text in built files; `/reviews` listed
+  once; `/contact/thanks` noindex and unlisted; every ctaPosts entry valid.
+- **Tested locally** in headless Chrome against the built site (form network
+  mocked, nothing sent): all 8 events fire with the right properties, the
+  hidden field fills, the redirect works. **Not yet tested:** the real
+  `/_vercel/insights/event` request on a Vercel deploy, and which Vercel plan
+  the project is on (the project is not in the Vercel account Claude can see).
+- 1D: no H1 spacing problems found in the prerendered pages; nothing changed.
+
 ## Status update — 2026-11-03 (AI-visibility facts: 29 associations, one facts file)
 
 From Mirsad's AI-visibility brief (owner-confirmed figures, Nov 2026):

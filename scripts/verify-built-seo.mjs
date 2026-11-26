@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -85,6 +85,29 @@ const llms = readFileSync(join(root, 'dist/llms.txt'), 'utf8');
 if (!llms.includes('- Portfolio: 29 associations, approximately 1,422 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
 if (!llms.includes('starting at $30 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
 if (/2,450|\b42 associations/.test(llms)) errors.push('llms.txt: contains a retired portfolio figure');
+
+// Unfilled owner placeholders ([[JOJO: ...]]) must never ship. Fields that
+// wait on the owner are stored as null and their block stays hidden.
+(function scanForPlaceholders(dir) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) scanForPlaceholders(full);
+    else if (/\.(html|txt|xml|json)$/.test(entry.name) && readFileSync(full, 'utf8').includes('[[JOJO')) {
+      errors.push(`${full.slice(join(root, 'dist').length)}: contains an unfilled [[JOJO placeholder`);
+    }
+  }
+})(join(root, 'dist'));
+
+// /reviews is indexable and listed exactly once; the form confirmation page
+// is noindex and never listed.
+if (urls.filter((url) => url === `${base}/reviews`).length !== 1) errors.push('sitemap must list /reviews exactly once');
+if (urls.some((url) => url.includes('/contact/thanks'))) errors.push('sitemap must not list /contact/thanks');
+const thanksFile = join(root, 'dist/contact/thanks.html');
+if (!existsSync(thanksFile)) errors.push('/contact/thanks: missing prerendered HTML');
+else if (!/<meta[^>]+name="robots"[^>]+content="noindex, nofollow"/i.test(readFileSync(thanksFile, 'utf8'))) {
+  errors.push('/contact/thanks: must be noindex, nofollow');
+}
+if (/<lastmod>(?!\d{4}-\d{2}-\d{2}<)/.test(sitemap)) errors.push('sitemap has a malformed <lastmod>');
 
 if (urls.some((url) => /\/contact-us\/?$/.test(url))) errors.push('sitemap includes legacy /contact-us URL');
 if (!urls.includes(`${base}/contact`)) errors.push('sitemap is missing canonical /contact URL');

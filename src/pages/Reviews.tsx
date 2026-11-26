@@ -36,7 +36,7 @@ export default function Reviews() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <title>Share Feedback | Stellar Property Management</title>
         <meta name="description" content="Share an honest Google review of your Stellar Property Management experience or send feedback directly to our Chicago team." />
-        <meta name="robots" content="noindex, follow, max-image-preview:large" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/reviews" />
       </Helmet>
 
@@ -50,7 +50,7 @@ export default function Reviews() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
-            <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer" className="group bg-white p-9 lg:p-12 hover:bg-ivory-50 transition-colors">
+            <a href={GOOGLE_REVIEW_URL} data-review-link="reviews-page" target="_blank" rel="noopener noreferrer" className="group bg-white p-9 lg:p-12 hover:bg-ivory-50 transition-colors">
               <Star className="w-9 h-9 text-gold-500 mb-8" strokeWidth={1.25} />
               <h2 className="font-display text-3xl text-ink mb-4">Post a Google review</h2>
               <p className="text-slate-600 font-light leading-relaxed mb-9">Describe your genuine experience publicly so boards, owners, and residents can make an informed decision.</p>

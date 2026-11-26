@@ -41,6 +41,7 @@ import Blog from './pages/Blog';
 import BlogTopic from './pages/BlogTopic';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
+import ContactThanks from './pages/ContactThanks';
 import Resources from './pages/Resources';
 import CondoLiving from './pages/CondoLiving';
 import AiInfo from './pages/AiInfo';
@@ -91,6 +92,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/blog/topic/:topic" element={<BlogTopic />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/thanks" element={<ContactThanks />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/condo-living" element={<CondoLiving />} />
             <Route path="/ai-info" element={<AiInfo />} />

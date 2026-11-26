@@ -105,6 +105,9 @@ for (const file of readdirSync(blogDir)) {
 const routes = [
   ...staticRoutes,
   '/knowledge',
+  // Form confirmation page: prerendered so a direct load carries its
+  // noindex, nofollow tag. Deliberately NOT in the sitemap.
+  '/contact/thanks',
   ...neighborhoodSlugs.map((s) => `/property-management-${s}`),
   ...blogSlugs.map((s) => `/blog/${s}`),
 ];

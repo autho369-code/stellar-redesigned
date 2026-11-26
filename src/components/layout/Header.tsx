@@ -213,6 +213,7 @@ export default function Header() {
                 payments remain under Resources. */}
             <a
               href="tel:+17737280652"
+              data-track-location="header"
               className="hidden xl:inline-flex items-center gap-2 text-[11px] font-semibold tracking-luxe text-ink/70 hover:text-gold-600 transition-colors duration-200"
             >
               <Phone className="w-3.5 h-3.5 text-gold-500" />
@@ -231,6 +232,7 @@ export default function Header() {
           <div className="flex items-center gap-1 lg:hidden">
             <a
               href="tel:+17737280652"
+              data-track-location="header"
               aria-label="Call Stellar Property Management at 773-728-0652"
               className="p-2 text-ink hover:text-gold-600 transition-colors duration-200"
             >

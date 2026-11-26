@@ -211,6 +211,7 @@ export default function NeighborhoodPage() {
                 </Link>
                 <a
                   href="tel:7737280652"
+              data-track-location="area-page"
                   className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 hover:text-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   <Phone className="w-4 h-4" /> 773.728.0652
@@ -514,6 +515,7 @@ export default function NeighborhoodPage() {
             </Link>
             <a
               href="tel:7737280652"
+              data-track-location="area-page"
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               <Phone className="w-4 h-4" /> Call 773.728.0652

@@ -70,6 +70,7 @@ export default function Footer() {
               </div>
               <a
                 href="tel:+17737280652"
+                data-track-location="footer"
                 className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
                 <Phone className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />
@@ -77,6 +78,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:mirsad@stellarpropertygroup.com"
+                data-track-location="footer"
                 className="flex items-center gap-3 text-sm text-paper/60 font-light hover:text-gold-300 transition-colors"
               >
                 <Mail className="w-4 h-4 text-gold-400 shrink-0" strokeWidth={1.5} />

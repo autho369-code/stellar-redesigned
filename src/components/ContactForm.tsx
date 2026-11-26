@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Building, Mail, MessageSquare, Phone, Send, User } from 'lucide-react';
 import { submitLeadToOps } from '../lib/leads';
-import { track } from '@vercel/analytics';
+import { resolveLeadSource } from '../lib/leadSource';
+import { trackEvent } from '../lib/track';
 
 type InquiryType = 'quote' | 'general';
 
@@ -51,11 +52,18 @@ export function ContactForm() {
   const [searchParams] = useSearchParams();
   const requestedInquiry = searchParams.get('inquiry');
   const initialInquiry: InquiryType = requestedInquiry === 'general' ? 'general' : 'quote';
-  const leadSource = searchParams.get('source') || 'contact-page';
+  const navigate = useNavigate();
+  const sourceParam = searchParams.get('source');
+  // Lead source: the ?source= value set by a CTA, else the internal page the
+  // visitor came from, else "direct". Resolved after mount so the prerendered
+  // markup and the first client render match.
+  const [leadSource, setLeadSource] = useState('direct');
+  useEffect(() => {
+    setLeadSource(resolveLeadSource(sourceParam));
+  }, [sourceParam]);
   const [formData, setFormData] = useState<FormData>(() => emptyForm(initialInquiry));
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [submittedEmail, setSubmittedEmail] = useState('');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'error'>('idle');
   const isBoardInquiry = formData.inquiry_type === 'quote';
 
   const setInquiryType = (inquiryType: InquiryType) => {
@@ -67,6 +75,7 @@ export function ContactForm() {
     event.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    const leadSource = resolveLeadSource(sourceParam);
 
     const leadSummary = isBoardInquiry
       ? [
@@ -82,6 +91,7 @@ export function ContactForm() {
           `How they found Stellar: ${formData.how_heard || 'Not provided'}`,
           `Phone: ${formData.phone || 'Not provided'}`,
           `Message: ${formData.message || 'No additional message'}`,
+          `Source: ${leadSource}`,
           `Landing page: ${window.location.href}`,
           `Referrer: ${document.referrer || 'Direct / unavailable'}`,
         ].join('\n')
@@ -119,14 +129,11 @@ export function ContactForm() {
 
       if (!emailResponse.ok) throw new Error('Form submission failed');
 
-      track('Proposal Form Submitted', {
-        inquiryType: formData.inquiry_type,
-        leadSource,
-        propertyType: formData.property_type || 'not-provided',
-      });
-      setSubmittedEmail(formData.email);
-      setSubmitStatus('success');
-      setFormData(emptyForm(formData.inquiry_type));
+      // Fires once, only after the submission request succeeded. No name,
+      // email, phone or message text is ever sent to analytics.
+      trackEvent('Contact Form Submit', { source: leadSource, page: window.location.pathname });
+      // A page view of /contact/thanks is the lead signal on any Vercel plan.
+      navigate('/contact/thanks');
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
@@ -172,13 +179,6 @@ export function ContactForm() {
         </button>
       </div>
 
-      {submitStatus === 'success' && (
-        <div role="status" className="mb-7 border border-green-200 bg-green-50 p-5 text-green-900">
-          <p className="font-semibold">Your request has been received.</p>
-          <p className="mt-1 text-sm">We will follow up at {submittedEmail} within one business day.</p>
-        </div>
-      )}
-
       {submitStatus === 'error' && (
         <div role="alert" className="mb-7 border border-red-200 bg-red-50 p-5 text-red-900">
           <p className="font-semibold">The form could not be submitted.</p>
@@ -188,6 +188,7 @@ export function ContactForm() {
 
       <form onSubmit={handleSubmit} className="space-y-7">
         <input type="hidden" name="inquiry_type" value={formData.inquiry_type} />
+        <input type="hidden" name="lead_source" value={leadSource} />
 
         <div className="grid gap-6 md:grid-cols-2">
           <div>

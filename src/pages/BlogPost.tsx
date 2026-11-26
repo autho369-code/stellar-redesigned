@@ -7,6 +7,8 @@ import { getBlogPostBySlug, allBlogPosts, blogPosts } from '../data/blog-posts';
 import { neighborhoods } from '../data/neighborhoods';
 import { contentClusters, getPostCluster, getPostNeighborhoods, getPostRegion, getRelatedClusterPosts } from '../data/content-silos';
 import { getPostSilo, getSiloSiblings, moneyPageLabels } from '../data/post-silos';
+import { ctaPosts, splitForMidCta, withoutClosingCta } from '../data/ctaPosts';
+import ProposalCta from '../components/ProposalCta';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -41,6 +43,16 @@ function getFaqPairs(content: string): Array<{ question: string; answer: string 
   });
 }
 
+const PROSE_CLASS = `
+  [&>h2]:font-display [&>h2]:font-light [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:text-ink [&>h2]:mt-14 [&>h2]:mb-5
+  [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-10 [&>h3]:mb-4
+  [&>p]:text-slate-600 [&>p]:font-light [&>p]:leading-relaxed [&>p]:mb-6 [&>p]:text-lg
+  [&>ul]:my-6 [&>ul]:space-y-3 [&>ul]:list-disc [&>ul]:pl-6
+  [&>ul>li]:text-slate-600 [&>ul>li]:font-light [&>ul>li]:text-lg [&>ul>li]:leading-relaxed
+  [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
+  [&_strong]:text-ink [&_strong]:font-semibold
+`;
+
 function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
   return date.toLocaleDateString('en-US', {
@@ -73,7 +85,14 @@ export default function BlogPost() {
   const servicePath = silo?.money ?? cluster.servicePath;
   const serviceLabel = silo ? moneyPageLabels[silo.money] : cluster.serviceLabel;
   const locationLinks = getPostNeighborhoods(post, neighborhoods, allBlogPosts);
-  const faqPairs = getFaqPairs(post.content);
+  // "Request a flat-fee proposal" blocks on the listed guides: the end block
+  // replaces the guide's own closing contact sentence, and the mid card sits
+  // before the heading nearest the middle (src/data/ctaPosts.ts).
+  const cta = ctaPosts[post.slug];
+  const fullBody = getPillarContent(post, blogPosts);
+  const bodyHtml = cta ? withoutClosingCta(post.slug, fullBody) : fullBody;
+  const bodyParts = cta ? splitForMidCta(bodyHtml) : null;
+  const faqPairs = getFaqPairs(cta ? withoutClosingCta(post.slug, post.content) : post.content);
   const faqSchema = faqPairs.length >= 2
     ? {
         '@context': 'https://schema.org',
@@ -207,18 +226,16 @@ export default function BlogPost() {
       {/* ── Post Content ───────────────────────────────────────── */}
       <article className="bg-white border-t border-slate-200 py-16 lg:py-24">
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
-          <div
-            className="
-              [&>h2]:font-display [&>h2]:font-light [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:text-ink [&>h2]:mt-14 [&>h2]:mb-5
-              [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-10 [&>h3]:mb-4
-              [&>p]:text-slate-600 [&>p]:font-light [&>p]:leading-relaxed [&>p]:mb-6 [&>p]:text-lg
-              [&>ul]:my-6 [&>ul]:space-y-3 [&>ul]:list-disc [&>ul]:pl-6
-              [&>ul>li]:text-slate-600 [&>ul>li]:font-light [&>ul>li]:text-lg [&>ul>li]:leading-relaxed
-              [&_a]:text-gold-600 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gold-300 hover:[&_a]:text-gold-500 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors
-              [&_strong]:text-ink [&_strong]:font-semibold
-            "
-            dangerouslySetInnerHTML={{ __html: getPillarContent(post, blogPosts) }}
-          />
+          {bodyParts ? (
+            <>
+              <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[0] }} />
+              <ProposalCta variant="mid" source={`blog-${post.slug}-mid`} page={post.slug} hook={cta.hook} />
+              <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[1] }} />
+            </>
+          ) : (
+            <div className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+          )}
+          {cta && <ProposalCta variant="end" source={`blog-${post.slug}-end`} page={post.slug} />}
           {post.sources && post.sources.length > 0 && (
             <aside className="mt-16 border-t border-slate-200 pt-8" aria-labelledby="article-sources">
               <h2 id="article-sources" className="font-display text-2xl text-ink mb-5">
