@@ -3,6 +3,12 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #53 merged to `main`** on Mirsad's word ("MERGE 53") and
+      checked live: Glenview and Avondale pages, the offer line on the service
+      and pricing pages, the new homepage title. Open PRs: none.
+- [ ] **Next (branch `off-site-packs`):** Google profile pack, directory
+      descriptions, review count for the Chicago map top three, four posts.
+      Build them as files in `docs/`. Post or submit nothing without his OK.
 - [x] Nov 26: **Five more upgraded area pages, picked from Search Console
       demand:** Avondale, River North, Morton Grove, Evanston, Glenview
       (flagship). In PR #53 with the offer line. 14 upgraded pages in total.
