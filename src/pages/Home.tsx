@@ -296,25 +296,25 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
             {/* Copy */}
             <div className="lg:col-span-7">
-              <p className="reveal-up eyebrow text-gold-300 mb-6 flex items-center gap-4">
+              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 Condominium &amp; HOA Management · Chicago
               </p>
 
-              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[2.6rem] leading-[1.05] sm:text-5xl lg:text-6xl xl:text-[4.25rem] text-paper mb-8 text-balance">
+              <h1 className="font-display font-light text-[2.6rem] leading-[1.05] sm:text-5xl lg:text-6xl xl:text-[4.25rem] text-paper mb-8 text-balance">
                 Condo and HOA management in Chicago, from ${business.priceFrom} per unit a month.
               </h1>
 
-              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-7 max-w-xl">
+              <p className="text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-7 max-w-xl">
                 {`A flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets a dedicated manager, monthly board-ready financials, and one phone number that answers building emergencies 24/7.`}
               </p>
 
-              <p className="reveal-up reveal-delay-2 text-base text-paper/75 font-light leading-relaxed mb-10 max-w-xl">
+              <p className="text-base text-paper/75 font-light leading-relaxed mb-10 max-w-xl">
                 Condominium, HOA and townhome associations are all we do. We do
                 not manage apartment rentals.
               </p>
 
-              <div className="reveal-up reveal-delay-3 flex flex-wrap items-center gap-x-7 gap-y-5">
+              <div className="flex flex-wrap items-center gap-x-7 gap-y-5">
                 <Link
                   to="/contact?source=home-hero"
                   data-proposal-cta="hero"
@@ -333,13 +333,13 @@ export default function Home() {
                   Call {business.phoneDisplay}
                 </a>
               </div>
-              <p className="reveal-up reveal-delay-3 mt-6 text-sm text-paper/60">
+              <p className="mt-6 text-sm text-paper/60">
                 You get a written proposal{PROPOSAL_TURNAROUND ? ` ${PROPOSAL_TURNAROUND}` : ''}. No obligation.
               </p>
             </div>
 
             {/* Arch-topped architectural photo */}
-            <div className="lg:col-span-5 reveal-up reveal-delay-2">
+            <div className="lg:col-span-5 ">
               <div className="relative max-w-sm mx-auto lg:ml-auto">
                 <div className="absolute -inset-4 border border-gold-300/40 rounded-t-full" aria-hidden />
                 {/* Source: Pexels photo 25853881, used under the Pexels license. */}
@@ -349,7 +349,7 @@ export default function Home() {
                     srcSet="/images/chicago-condo-building-400.webp 400w, /images/chicago-condo-building-600.webp 600w, /images/chicago-condo-building.webp 800w"
                     sizes="(min-width: 1024px) 384px, min(384px, calc(100vw - 40px))"
                     alt="Historic red brick and limestone facade of a vintage Chicago residential building"
-                    className="hero-photo w-full aspect-[3/4.2] object-cover rounded-t-full"
+                    className="w-full aspect-[3/4.2] object-cover rounded-t-full"
                     loading="eager"
                     width="800"
                     height="1120"

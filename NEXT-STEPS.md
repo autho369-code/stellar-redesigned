@@ -3,6 +3,30 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #62 (R1) merged** ("MERGE 62"); live check passed.
+- [x] Nov 26: **R2 part 1** (branch `r2-speed`): hero text, buttons and photo
+      paint at once (no fade-in) on the homepage, old area template and Condo
+      Living; the two above-the-fold fonts are preloaded (latin woff2).
+- [ ] **R2 part 2, the big one, NOT done:** split article bodies out of the
+      main bundle. Today `index-*.js` is about 231 KB gzip and every page also
+      loads `article-content-*.js` (about 168 KB gzip), because public routes
+      import eagerly so the prerendered HTML can hydrate in place, and blog
+      metadata and bodies live in the same modules (`src/data/blog-posts`).
+      Plan: keep metadata (slug, title, dates, excerpt, category) in one small
+      module; put each body in its own module loaded by `import.meta.glob`;
+      on a guide page, load that one body before `hydrateRoot`; the prerender
+      keeps full text. Then lazy-load the proposal scorecard and board
+      toolkit, and turn the Lighthouse warnings into errors (performance 0.9,
+      LCP 2500). Do this in a fresh session: it touches all 75 guides and needs
+      the full R0 suite plus a text diff of every prerendered guide.
+- Known layout shift (CLS about 0.15) on upgraded area pages: the intro
+  paragraph under the H1 moves after load (seen on /property-management-wilmette,
+  with or without the font preload). Likely the Fraunces heading reflowing on
+  font swap; fix in R2 part 2 with a size-adjusted fallback font, then re-measure.
+- Lighthouse on the GitHub runner is noisy; the config now takes 3 runs per page.
+- Speed numbers: GitHub runner before R2: home performance 0.71, LCP 5.2 s.
+  Local machine after part 1: home 87 (LCP 0.9 s, TBT 496 ms), /pricing 96.
+  Local and runner numbers are not comparable; trust the runner.
 - [x] Nov 26: **PR #61 (R0) merged** ("MERGE 61"); live check passed.
 - [x] Nov 26: **R1 built** (branch `r1-brand-config`): `src/brand/brand.config.ts`
       is the single brand source (`src/data/business.ts` now reads from it, so

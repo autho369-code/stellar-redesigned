@@ -210,23 +210,23 @@ export default function CondoLiving() {
 
           <div className="grid lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8">
-              <p className="reveal-up eyebrow text-gold-300 mb-6 flex items-center gap-4">
+              <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
                 The Owner&rsquo;s Companion
               </p>
-              <h1 className="reveal-up reveal-delay-1 font-display font-light text-[2.75rem] leading-[1.04] sm:text-6xl lg:text-7xl text-paper mb-8 text-balance">
+              <h1 className="font-display font-light text-[2.75rem] leading-[1.04] sm:text-6xl lg:text-7xl text-paper mb-8 text-balance">
                 Living well in a condo
                 {' '}<br />
                 is a <em className="font-medium text-gold-300">learnable art.</em>
               </h1>
-              <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed max-w-2xl">
+              <p className="text-lg lg:text-xl text-paper/60 font-light leading-relaxed max-w-2xl">
                 Nobody hands you a manual when you buy into a condominium or HOA.
                 So we wrote one — eight chapters on how shared buildings really
                 work, what your money does, where your rights begin, and how to
                 be the neighbor everyone hopes lives next door.
               </p>
             </div>
-            <div className="lg:col-span-3 lg:col-start-10 reveal-up reveal-delay-3">
+            <div className="lg:col-span-3 lg:col-start-10 ">
               <p className="text-[10px] uppercase tracking-luxe text-paper/50 mb-4">In this guide</p>
               <ol className="space-y-2.5">
                 {chapters.map(({ id, n, title }) => (
