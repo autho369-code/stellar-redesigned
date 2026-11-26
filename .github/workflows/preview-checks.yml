@@ -1,53 +1,50 @@
 name: Preview checks (R0 safety net)
 
-# Runs when Vercel finishes a preview deploy of the website project. Tests the
-# preview itself: all 150 URLs, tracking events, screenshots, accessibility
-# report and Lighthouse (warnings only). Read-only.
+# Builds the pull request exactly as Vercel does, serves it locally and tests
+# it: all 150 URLs, tracking events, screenshots, accessibility report and
+# Lighthouse (warnings only). Vercel previews sit behind a Vercel login, so
+# the checks run against this local build and not the preview URL. Read-only.
 on:
-  deployment_status:
+  pull_request:
 
 permissions:
   contents: read
 
 jobs:
-  e2e:
-    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview – stellar-redesigned'
+  checks:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: ${{ github.event.deployment_status.environment_url }}
+      BASE_URL: http://localhost:4173
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.deployment.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
       - run: npx playwright install --with-deps chromium
+      - name: Serve the build
+        run: |
+          npx vite preview --port 4173 --strictPort &
+          npx wait-on http://localhost:4173 --timeout 60000
       - run: npx playwright test
+      - run: node scripts/check-live-site.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-results
           path: test-results/
           retention-days: 14
-
-  lighthouse:
-    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview – stellar-redesigned'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.deployment.sha }}
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: ./lighthouserc.json
           temporaryPublicStorage: true
           urls: |
-            ${{ github.event.deployment_status.environment_url }}/
-            ${{ github.event.deployment_status.environment_url }}/pricing
-            ${{ github.event.deployment_status.environment_url }}/services/condominium-management
-            ${{ github.event.deployment_status.environment_url }}/property-management-wilmette
-            ${{ github.event.deployment_status.environment_url }}/blog/switch-condo-management-companies-chicago
-            ${{ github.event.deployment_status.environment_url }}/contact
+            http://localhost:4173/
+            http://localhost:4173/pricing
+            http://localhost:4173/services/condominium-management
+            http://localhost:4173/property-management-wilmette
+            http://localhost:4173/blog/switch-condo-management-companies-chicago
+            http://localhost:4173/contact
