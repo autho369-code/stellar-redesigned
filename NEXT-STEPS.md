@@ -12,6 +12,13 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       (8 event names in `src/lib/track.ts`), `lead_source` on the contact
       form, `/contact/thanks` page, and "Request a flat-fee proposal" blocks
       on 11 guides (`src/data/ctaPosts.ts`). Details in PROJECT-STATE.md.
+- [ ] **Phase 1 is PR #45** (open, not merged):
+      https://github.com/autho369-code/stellar-redesigned/pull/45
+- [ ] **No Vercel preview appeared on PR #45.** On Nov 4 Vercel built this
+      repo from two projects in team `aios2` (`stellar-redesigned` and
+      `stellar-redesigned-abux`). On Nov 26 neither project is in that team
+      any more. Find out where the live site deploys from now BEFORE
+      merging — a merge to `main` may no longer publish the site.
 - [ ] **After the Phase 1 PR is merged:** on the live site open DevTools >
       Network, click a phone link, and confirm a request to
       `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
@@ -72,7 +79,9 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
-- [ ] **Merge the Phase 1 PR** when the preview looks right.
+- [ ] **Vercel:** which Vercel account holds the Stellar website now? Claude
+      cannot find the project (see the note above). Needed for the preview.
+- [ ] **Merge PR #45** when the preview looks right.
 - [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
       button click counts need the **Pro** plan. On Hobby, only form leads are
       counted (as page views of `/contact/thanks`).
