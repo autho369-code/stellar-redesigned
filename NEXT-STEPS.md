@@ -3,6 +3,16 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [ ] **Kasra Dash plan (Mirsad asked Nov 26).** His Google Maps method, from
+      the written case study (YouTube pages could not be opened from the cloud
+      session): compare the Google Business Profile primary category with
+      competitors; list every service on the profile and pair each with a
+      site page and a weekly post; close the citation gap with a unique
+      description per listing; report positions and calls monthly. For
+      Claude: write the service list, 12 weekly posts, the citation gap list
+      and the descriptions. Posting and profile edits are outside-account
+      actions: Mirsad's OK first. Decide the business name before new
+      listings (planned name change).
 - [x] Nov 26: **Search Console pull + updated brief (37 pages) from Mirsad.**
       New order by real impressions. Branch `gsc-priority-pages` (stacked on
       Phase 4): titles / first lines on the HOA, high-rise, Chicago and
