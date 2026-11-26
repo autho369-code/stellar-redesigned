@@ -33,11 +33,13 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       14 clusters / 75 guides; SeriesNav + NearbyAreas on every guide; curated
       guides on the 43 area pages; 44 guides got a hand-written link sentence;
       `scripts/check-links.mjs` runs in the build. Details in PROJECT-STATE.md.
-- [ ] **Phase 2 is PR #46**, rebased onto `main` after Phase 1 was merged.
-      Mirsad merges it (or says "merge 46").
+- [x] Nov 26: **Phase 2 is LIVE.** PR #46 merged to `main` on Mirsad's
+      instruction ("merge 46"). Checked on the live site: the snow-removal
+      guide shows "More in this guide", seven nearby-area links and the new
+      intro links; the Old Town page shows its curated guides.
 - [x] Nov 26: **Growth brief, Phase 3, Batch 1 built** (Rogers Park,
       Edgewater, Lincoln Square, Lakeview, Lincoln Park). Branch
-      `phase-3-area-pages` (PR #47), stacked on Phase 2. Content in
+      `phase-3-area-pages` (PR #47), now based on `main`. Content in
       `src/data/areas/<slug>.ts`, layout `src/pages/AreaPageUpgraded.tsx`,
       `scripts/check-uniqueness.mjs` in the build. Details in PROJECT-STATE.md.
 - [ ] **Phase 3 is waiting for Mirsad's answers** — the claims audit and
