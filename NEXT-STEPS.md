@@ -3,6 +3,13 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Answers from Mirsad.** Vercel plan is **Pro**, so the custom
+      click events are recorded. Proposal turnaround "within two business
+      days" is true and is now in the end block (`PROPOSAL_TURNAROUND`).
+- [x] Nov 26: **Which Vercel project is live:** `stellar-redesigned` owns
+      www.stellarpropertygroup.com. `stellar-redesigned-abux` is a different
+      app: it builds the `legacy-ops` folder of this repo. It is not a copy of
+      the website.
 - [x] Nov 26: **the flat fee now starts at $30 per unit** (was $20) — Mirsad's
       instruction. `business.priceFrom` is 30 and every page says $30. The
       build fails if "$20 per unit" comes back.
@@ -18,9 +25,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       with /reviews.
 - [x] Nov 26: Vercel had lost its GitHub access to this repo (no builds
       after Nov 4). Mirsad reconnected it; pushes build again.
-- [ ] Two Vercel projects build this repo: `stellar-redesigned` and
-      `stellar-redesigned-abux`. Ask Mirsad which one serves the live domain
-      and whether the other can go.
 - [ ] **Still to check on the live site:** open DevTools >
       Network, click a phone link, and confirm a request to
       `/_vercel/insights/event`. Then look at Vercel > Analytics > Events.
@@ -95,11 +99,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       brief says the portal is AppFolio. Which is right for the site?
       (3) The brief's "duplicates" table (thin posts) and the 4 new post
       topics wait for your decision — nothing was merged, deleted or written.
-- [ ] **Vercel plan:** look at Vercel > Settings > Billing. Phone, email and
-      button click counts need the **Pro** plan. On Hobby, only form leads are
-      counted (as page views of `/contact/thanks`).
-- [ ] **Proposal turnaround:** is "within two business days" true? If yes,
-      tell Claude and the end block will say it. Until then it says nothing.
 - [ ] `/reviews` is now visible to Google (the brief asked for it; it was
       hidden on Nov 3). Say so if you want it hidden again.
 - [ ] **AI visibility (Oct 28 audit):** ask CondoControl to add Stellar to

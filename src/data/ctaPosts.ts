@@ -15,10 +15,10 @@ export interface CtaPost {
 }
 
 /**
- * TODO(Jojo): proposal turnaround, for example "within two business days".
- * Use only if true. While this is null the clause is left out of the block.
+ * Proposal turnaround, shown in the end block. Confirmed true by Mirsad on
+ * 2026-11-26. Set to null to leave the clause out.
  */
-export const PROPOSAL_TURNAROUND: string | null = null;
+export const PROPOSAL_TURNAROUND: string | null = 'within two business days';
 
 export const ctaPosts: Record<string, CtaPost> = {
   'illinois-condo-hoa-collection-policy-january-2027': {
