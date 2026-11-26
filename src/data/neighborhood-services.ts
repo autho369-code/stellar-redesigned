@@ -44,7 +44,7 @@ export const serviceCatalog: Record<string, ServiceDef> = {
   'small-condo-association-management': {
     title: 'Small Condo Management',
     type: null,
-    describe: (name) => `Right-sized professional management for boutique and self-managed ${name} buildings, from $30 per unit per month.`,
+    describe: (name) => `Right-sized professional management for boutique and self-managed ${name} buildings, from $30 per unit per month, everything included, with no extra fees.`,
   },
   'financial-management': {
     title: 'Financial Management',

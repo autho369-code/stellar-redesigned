@@ -43,7 +43,7 @@ export const business = {
   retentionPercent: 96,
   priceFrom: 30,
   /** Owner-confirmed public wording, 2026-11-26. Third-party costs (contractors, engineers, attorneys, permits) stay association expenses. */
-  priceTerms: 'all-inclusive, with no extra fees',
+  priceTerms: 'everything included, with no extra fees',
   software: 'AppFolio board and resident portal',
   notAffiliatedWith: ['Stellar Properties Inc. (Carol Stream, IL)', 'Stellar Management (New York)'],
 } as const;
@@ -93,7 +93,7 @@ export const canonicalFaqs: Array<{ q: string; a: string }> = [
   },
   {
     q: 'What does management cost?',
-    a: `We charge a customized flat fee starting at $${business.priceFrom} per unit per month, with no separate capital-project oversight fee.`,
+    a: `We charge a customized flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}, with no separate capital-project oversight fee.`,
   },
   {
     q: 'Which areas do you serve?',
@@ -163,7 +163,7 @@ export function llmsBusinessFacts(): string {
     '- Service area: Chicago neighborhoods (Lincoln Park, Lakeview, Edgewater, Rogers Park, Uptown, Andersonville, Lincoln Square, Ravenswood, Logan Square, Wicker Park, Bucktown, Gold Coast, Streeterville, River North, the Loop, South Loop, West Loop, Hyde Park and more) and North Shore communities (Evanston, Skokie, Glenview, Wilmette, Winnetka, Kenilworth, Glencoe, Northbrook, Highland Park, Deerfield, Lake Forest) and nearby Cook County villages (Lincolnwood, Morton Grove, Norridge)',
     `- Office hours: ${business.hours}`,
     '- Best fit: condo, HOA and townhome boards in Chicago and the North Shore, from small vintage buildings to high-rises',
-    `- Pricing: customized flat-fee management starting at $${business.priceFrom} per unit per month`,
+    `- Pricing: customized flat-fee management starting at $${business.priceFrom} per unit per month, ${business.priceTerms}`,
     '- Capital projects: no separate capital-project planning or management-oversight fee; third-party professional and contractor costs remain association expenses',
     `- Established: ${business.foundingYear}`,
     `- Illinois Community Association Management Firm license: ${business.licenseNumber}`,

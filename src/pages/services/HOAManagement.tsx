@@ -120,7 +120,7 @@ export default function HOAManagement() {
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
-                Stellar manages homeowners associations in Chicago and the North Shore for a flat fee starting at ${business.priceFrom} per unit per month, {business.priceTerms}. Your board gets transparent financials, common-area operations and board support.
+                {`Stellar manages homeowners associations in Chicago and the North Shore for a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets transparent financials, common-area operations and board support.`}
               </p>
             </div>
           </div>

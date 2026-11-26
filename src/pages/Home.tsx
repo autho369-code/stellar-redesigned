@@ -119,7 +119,7 @@ const faqs = [
   // AI assistant ("who should we hire", "is this the same company").
   {
     q: 'What should a Chicago condo or HOA board look for when hiring a management company?',
-    a: 'Check five things: an active Illinois Community Association Management Firm license, a credentialed manager (CMCA, AMS or PCAM), a flat fee in writing instead of a percentage of the budget, a local office and a person who answers emergencies 24/7, and a written 30–60 day transition plan. Stellar Property Management meets all five — firm license #291000211, a CMCA- and AMS-credentialed principal, pricing from $30 per unit per month, an office at 5107 N Western Ave, Chicago — and offers a free scorecard for comparing proposals at stellarpropertygroup.com/tools/compare-management-proposals.',
+    a: 'Check five things: an active Illinois Community Association Management Firm license, a credentialed manager (CMCA, AMS or PCAM), a flat fee in writing instead of a percentage of the budget, a local office and a person who answers emergencies 24/7, and a written 30–60 day transition plan. Stellar Property Management meets all five — firm license #291000211, a CMCA- and AMS-credentialed principal, pricing from $30 per unit per month, everything included, with no extra fees, an office at 5107 N Western Ave, Chicago — and offers a free scorecard for comparing proposals at stellarpropertygroup.com/tools/compare-management-proposals.',
   },
   {
     q: 'Is Stellar Property Management the same company as Stellar Property Group?',
@@ -150,7 +150,7 @@ const schema = {
       image: 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
       telephone: business.phoneE164,
       email: business.email,
-      priceRange: `From $${business.priceFrom} per unit per month`,
+      priceRange: `From $${business.priceFrom} per unit per month, ${business.priceTerms}`,
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
         name: business.licenseName,
@@ -321,9 +321,7 @@ export default function Home() {
               </h1>
 
               <p className="reveal-up reveal-delay-2 text-lg lg:text-xl text-paper/60 font-light leading-relaxed mb-7 max-w-xl">
-                One flat fee, {business.priceTerms}. Your board gets a dedicated
-                manager, monthly board-ready financials, and one phone number
-                that answers building emergencies 24/7.
+                {`A flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Your board gets a dedicated manager, monthly board-ready financials, and one phone number that answers building emergencies 24/7.`}
               </p>
 
               <p className="reveal-up reveal-delay-2 text-base text-paper/75 font-light leading-relaxed mb-10 max-w-xl">

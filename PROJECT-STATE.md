@@ -19,6 +19,16 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (pricing wording: "everything included, with no extra fees")
+
+Branch `pricing-wording-everything-included`. The owner's round-2 fix file
+names the exact public phrase and rules out "all-inclusive" as a second
+slogan. One fact (`business.priceTerms`), every $30 sentence in body copy,
+FAQs, schema descriptions, the concierge's canned answer and three guide
+sentences. Static HTML checked: the exact phrase is on the homepage, /pricing,
+both service money pages, location pages and all 16 CTA guides; no
+"all-inclusive", "$20 per unit", "$24" or BBB anywhere in the build.
+
 ## Status update — 2026-11-26 (five more area pages from Search Console demand)
 
 Same branch as the offer line (`sales-service-pages`, PR #53).
