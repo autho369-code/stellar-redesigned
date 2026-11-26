@@ -42,10 +42,15 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       `phase-3-area-pages` (PR #47), now based on `main`. Content in
       `src/data/areas/<slug>.ts`, layout `src/pages/AreaPageUpgraded.tsx`,
       `scripts/check-uniqueness.mjs` in the build. Details in PROJECT-STATE.md.
-- [ ] **Phase 3 is waiting for Mirsad's answers** — the claims audit and
-      fill-in sheet: `docs/area-claims-audit-2026-11-26.md`. Every unconfirmed
-      fact is null and hidden. When he answers: fill the content files, remove
-      or soften the NOT TRUE sentences in `src/data/neighborhoods.ts`.
+- [x] Nov 26: **Phase 3 Batch 1 published on Mirsad's instruction**
+      ("merge 47"). He will NOT mark the claims list one by one — do not ask
+      him again. Rule from now on: an upgraded area page never says Stellar
+      manages buildings in that neighborhood; it says Stellar serves boards
+      there from the Chicago office. Owner facts stay hidden until he
+      volunteers them.
+- [ ] **Old claim sentences** (`docs/area-claims-audit-2026-11-26.md`) are
+      still in `src/data/neighborhoods.ts` for pages not yet upgraded. Soften
+      each to "serve" wording when its page is upgraded.
 - [ ] **Batch 2** (Evanston, Uptown, Andersonville, Ravenswood, Gold Coast)
       starts only after Mirsad has reviewed Batch 1. Gold Coast is on HOLD
       until the claims audit is answered. Watch uniqueness: the closest
@@ -108,10 +113,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       appear in any of them on Oct 28).
 
 ## For Mirsad (only he can do these)
-- [ ] **Phase 3 fill-in:** mark the claims in
-      `docs/area-claims-audit-2026-11-26.md` true / not true, and answer the
-      fill-in sheet at the bottom (associations per neighborhood, issues, fee
-      ranges, photos).
 - [ ] **Phase 2 questions:** (1) Old Town was not in the brief's area lists —
       Claude put it with the vintage neighborhoods. OK? (2) The live guide
       "Why Stellar Runs on Portier369" says Stellar runs on Portier369; the
