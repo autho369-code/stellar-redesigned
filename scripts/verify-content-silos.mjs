@@ -20,9 +20,9 @@ for (const file of readdirSync(blogDir)) {
 if (postSlugs.length < 52 || new Set(postSlugs).size !== postSlugs.length) {
   throw new Error(`Expected at least 52 unique blog articles, found ${postSlugs.length}.`);
 }
-// Keep the intentional consolidated footprint at 43 service-area pages.
-if (neighborhoodSlugs.length !== 43 || new Set(neighborhoodSlugs).size !== 43) {
-  throw new Error(`Expected 43 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
+// Keep the intentional consolidated footprint at 42 service-area pages (Hyde Park removed at the owner's instruction, 2026-11-26).
+if (neighborhoodSlugs.length !== 42 || new Set(neighborhoodSlugs).size !== 42) {
+  throw new Error(`Expected 42 unique consolidated service-area pages, found ${neighborhoodSlugs.length}.`);
 }
 
 const requiredConnections = [

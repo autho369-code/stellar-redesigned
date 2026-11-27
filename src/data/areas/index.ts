@@ -5,14 +5,13 @@
  *
  * Batch 1 (2026-11-26): Rogers Park, Edgewater, Lincoln Square, Lakeview,
  * Lincoln Park. Search Console batch (2026-11-26, ordered by impressions):
- * Ravenswood, Hyde Park, Wilmette, Lake Forest. The Chicago city page has its
+ * Ravenswood, Wilmette, Lake Forest. The Chicago city page has its
  * own component (src/pages/ChicagoPage.tsx).
  */
 import { avondale } from './avondale';
 import { edgewater } from './edgewater';
 import { evanston } from './evanston';
 import { glenview } from './glenview';
-import { hydePark } from './hyde-park';
 import { lakeForest } from './lake-forest';
 import { lakeview } from './lakeview';
 import { lincolnPark } from './lincoln-park';
@@ -35,7 +34,7 @@ import type { AreaContent } from './types';
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, hydePark, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {

@@ -116,6 +116,11 @@
       "permanent": true
     },
     {
+      "source": "/property-management-hyde-park",
+      "destination": "/property-management-chicago",
+      "permanent": true
+    },
+    {
       "source": "/Andersonville",
       "destination": "/property-management-andersonville",
       "permanent": true

@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: 'Which Chicago neighborhoods does Stellar Property Management serve?',
-    a: 'We serve associations across Chicago, including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, South Loop, Edgewater, Andersonville, and Hyde Park. We also serve North Shore communities through our regional North Shore property-management hub.',
+    a: 'We serve associations across Chicago, including the Gold Coast, Streeterville, River North, Lincoln Park, Lakeview, the Loop, West Loop, South Loop, Edgewater, and Andersonville. We also serve North Shore communities through our regional North Shore property-management hub.',
   },
   {
     q: 'How much does condo association management cost in Chicago?',
@@ -279,7 +279,7 @@ export default function ChicagoPage() {
               <p className="text-slate-600 font-light leading-relaxed mb-10">
                 Since 2007 we have managed only Chicago-area community
                 associations — never rentals, never other markets. That focus is
-                why boards from the Gold Coast to Hyde Park keep us at a 96%
+                why boards from the Gold Coast to Rogers Park keep us at a 96%
                 retention rate.
               </p>
               <Link

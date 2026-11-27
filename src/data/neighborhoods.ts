@@ -463,41 +463,6 @@ export const neighborhoods: Neighborhood[] = [
     ]
   },
   {
-    name: 'Hyde Park',
-    slug: 'hyde-park',
-    description: 'Hyde Park is an intellectual hub anchored by the University of Chicago, featuring architecturally significant buildings and a diverse, engaged community. Property management here often involves working with sophisticated boards who expect data-driven decision-making and transparent financials. We thrive in Hyde Park\'s demanding environment, delivering professional management backed by clear reporting.',
-    propertyTypes: ['condominiums', 'high-rises', 'HOAs', 'townhomes'],
-    zipCodes: ['60615', '60637'],
-    localProof: [
-      {
-        title: 'Lakefront high-rise operations',
-        detail: 'East Hyde Park towers along Lake Park Avenue and South Shore Drive combine elevators, staffed entries, life-safety systems, and lakefront weather exposure. We organize those moving parts through preventive schedules, inspection calendars, and board-ready reporting.',
-      },
-      {
-        title: 'Capital planning for older buildings',
-        detail: 'Hyde Park\'s vintage masonry condominium associations need disciplined plans for facades, roofs, windows, risers, boilers, and elevators. We connect reserve assumptions to an actual multi-year project calendar instead of waiting for failures.',
-      },
-      {
-        title: 'Financial clarity for active boards',
-        detail: 'Hyde Park boards tend to ask detailed questions and expect decisions to be documented. Monthly variance reporting, bid comparisons, open-item registers, and clear meeting packets give directors the information to act confidently.',
-      },
-    ],
-    localFaq: [
-      {
-        q: 'Does Stellar manage Hyde Park high-rise condominium buildings?',
-        a: 'Yes. Our high-rise program covers building systems, staff and vendor coordination, life-safety and inspection calendars, resident operations, emergency response, monthly financial reporting, and long-range capital planning.',
-      },
-      {
-        q: 'Can Stellar help a Hyde Park association plan facade, riser, roof, or elevator work?',
-        a: 'Yes. We coordinate reserve-study inputs, develop a phased capital calendar, prepare comparable bid packages, track board approvals, and oversee authorized work. Stellar does not add a separate capital-project planning or management-oversight fee.',
-      },
-      {
-        q: 'What does Hyde Park association management cost?',
-        a: 'Customized flat-fee management starts at $30 per unit per month, everything included, with no extra fees. The proposal reflects the building\'s size, systems, staffing, amenities, financial complexity, meeting needs, and final service scope.',
-      },
-    ],
-  },
-  {
     name: 'Kenwood',
     slug: 'kenwood',
     description: 'Kenwood is one of Chicago\'s most historic and stately neighborhoods, featuring grand mansions and landmark buildings including the home of former President Obama. Property management in Kenwood requires attention to historic preservation and the expectations of a discerning residential community. We provide premium management services worthy of Kenwood\'s distinguished architectural heritage.',
