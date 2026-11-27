@@ -3,6 +3,15 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Portfolio numbers made durable** (branch `portfolio-numbers`).
+      Mirsad: the real counts are 30 associations and 1,495 residences (737
+      Ridge just signed), and he does not want a site edit for every new
+      building. The site now shows rounded figures everywhere: "30+
+      associations" and "approximately 1,500 residences". Exact counts live
+      only in `brand.stats`; the shown values are `associationsDisplay` and
+      `residencesDisplay`. The build fails if an exact count (29, 1,422,
+      1,495) comes back. Change the display values only at a big step (35
+      associations, 1,600 residences).
 - [x] Nov 26: **R3 parts C and D built** (this branch): `TrustBar` under the
       hero on the homepage (it replaced the old credentials strip), /pricing
       and the ten service pages; sticky phone bar now 64 px, safe-area aware,

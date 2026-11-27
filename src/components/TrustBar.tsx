@@ -7,7 +7,7 @@ import { brand } from '../brand/brand.config';
 export default function TrustBar() {
   const items = [
     'Condo & HOA only, no rentals',
-    `${brand.stats.associations} associations · about ${brand.stats.residences.toLocaleString('en-US')} residences`,
+    `${brand.stats.associationsDisplay} associations · about ${brand.stats.residencesDisplay} residences`,
     'Chicago office on N Western Ave',
     'Illinois-licensed · CAI member',
     `Flat fee from $${brand.pricing.startingPerUnit}/unit, everything included`,

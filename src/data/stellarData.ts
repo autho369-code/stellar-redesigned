@@ -23,7 +23,7 @@ export const stellarData: StellarDataPoint[] = [
   // (Aug-Oct 2026). NOTE: that average is below the published starting fee of
   // $30 per unit, so decide the wording before this is shown anywhere.
   { label: 'Average management fee across the portfolio', value: null, asOf: null },
-  // TODO(Jojo): units for each of the 29 associations, to compute min and max $/unit.
+  // TODO(Jojo): units for each of the 30+ associations, to compute min and max $/unit.
   { label: 'Fee range per unit across associations', value: null, asOf: null },
   // TODO(Jojo): median hours to first response, last 90 days, from AppFolio.
   { label: 'Typical owner request response time', value: null, asOf: null },

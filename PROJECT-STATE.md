@@ -9,8 +9,8 @@
 The public website for **Stellar Property Management** (formerly Stellar
 Property Group), a Chicago community association management firm — condos,
 HOAs, townhomes only, no rentals. Serving Chicago & the North Shore since
-2007. 29 associations, approximately 1,422 residences (owner-confirmed
-Nov 2026), 96% retention since 2007.
+2007. 30 associations, 1,495 residences (owner, 2026-11-26); the site shows
+the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 
 - **Live site:** https://www.stellarpropertygroup.com (Vercel, SPA + prerender)
 - **Repo:** https://github.com/autho369-code/stellar-redesigned (branch `main`)
@@ -18,6 +18,15 @@ Nov 2026), 96% retention since 2007.
 - **Phone:** 773.728.0652 (24/7 live emergency line)
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
+
+## Status update — 2026-11-26 (portfolio numbers: rounded, no more edits per building)
+
+Branch `portfolio-numbers` (PR open, not merged). Owner: 30 associations and
+1,495 residences after 737 Ridge; he does not want to change the site for
+every new building. All pages, schema, llms.txt, the AI-info page and the chat
+assistant's facts now say "30+ associations" and "approximately 1,500
+residences", from `brand.stats.associationsDisplay` / `residencesDisplay`.
+`scripts/verify-built-seo.mjs` rejects exact counts.
 
 ## Status update — 2026-11-26 (area pages batch 3: eight pages)
 
