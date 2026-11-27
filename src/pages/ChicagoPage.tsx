@@ -440,7 +440,10 @@ export default function ChicagoPage() {
                 ))}
               </div>
               <p className="mt-8 text-sm text-slate-600 font-light leading-relaxed">
-                Comparing firms on this?{' '}
+                Comparing firms on this? Start with{' '}
+                <Link to="/how-to-choose-condo-management-company-chicago" className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors">
+                  how to choose a condo management company in Chicago
+                </Link>.{' '}
                 <Link to="/blog/score-condo-hoa-management-proposals" className="text-gold-600 underline underline-offset-2 hover:text-gold-700 transition-colors">
                   Our scoring framework for management proposals
                 </Link>{' '}

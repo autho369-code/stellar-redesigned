@@ -104,6 +104,11 @@ const llms = readFileSync(join(root, 'dist/llms.txt'), 'utf8');
 if (!llms.includes('- Portfolio: 30+ associations, approximately 1,500 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
 if (!llms.includes('starting at $30 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
 if (/2,450|\b42 associations/.test(llms)) errors.push('llms.txt: contains a retired portfolio figure');
+const llmsFull = readFileSync(join(root, 'dist/llms-full.txt'), 'utf8');
+for (const needle of ['Starting at $30 per unit per month, everything included, with no extra fees', '30+ associations', 'license 291000211', 'CAI']) {
+  if (!llmsFull.includes(needle)) errors.push(`llms-full.txt: missing "${needle}"`);
+}
+if (/2,450|\b42 associations|\b29 associations|1,422|\$20 per unit|\$24\b|BBB/.test(llmsFull)) errors.push('llms-full.txt: contains a retired or forbidden figure');
 
 // Unfilled owner placeholders ([[JOJO: ...]]) must never ship. Fields that
 // wait on the owner are stored as null and their block stays hidden.

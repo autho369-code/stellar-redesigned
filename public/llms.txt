@@ -31,12 +31,14 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - [Association finance and reserve guides](https://www.stellarpropertygroup.com/blog/topic/association-finance-reserves)
 - [Management selection and transition guides](https://www.stellarpropertygroup.com/blog/topic/choosing-association-management)
 - [Building operations and capital-planning guides](https://www.stellarpropertygroup.com/blog/topic/building-operations-capital-planning)
+- [How to choose a condo management company in Chicago](https://www.stellarpropertygroup.com/how-to-choose-condo-management-company-chicago): the eight checks for any firm, licensing facts and a plain answer to "best condo management company"
 - [How to compare Chicago condo and HOA management companies](https://www.stellarpropertygroup.com/blog/score-condo-hoa-management-proposals)
 - [Transparent pricing](https://www.stellarpropertygroup.com/pricing)
 - [Free management proposal scorecard for boards](https://www.stellarpropertygroup.com/tools/compare-management-proposals): weighted comparison tool, no sign-up
 - [Board toolkit: RFP outline, interview questions, transition checklist](https://www.stellarpropertygroup.com/board-toolkit): ungated and printable
 - [Client reviews](https://www.stellarpropertygroup.com/reviews)
 - [RSS feed of new board guides](https://www.stellarpropertygroup.com/rss.xml)
+- [Full facts for AI assistants (llms-full.txt)](https://www.stellarpropertygroup.com/llms-full.txt): business facts, entity statement and FAQ answers in one file
 - [AI information sheet](https://www.stellarpropertygroup.com/ai-info): structured, verifiable facts for AI assistants
 - [Mirsad Cerimovic, CAM, CMCA, AMS — founder and principal](https://www.stellarpropertygroup.com/about/mirsad-cerimovic): licensing, credentials, and authored board guides
 - [Request a consultation](https://www.stellarpropertygroup.com/contact)

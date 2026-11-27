@@ -22,7 +22,7 @@ execSync('npx vite build --ssr src/entry-server.tsx --outDir dist-server --logLe
   stdio: 'inherit',
 });
 
-const { render, llmsBusinessFacts } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
+const { render, llmsBusinessFacts, llmsFullText } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
 
 // 1b. /llms.txt: the "## Business facts" section comes from src/data/business.ts
 // (the one facts file), so a name or portfolio change is a single edit.
@@ -36,6 +36,9 @@ for (const file of [join(root, 'public/llms.txt'), join(root, 'dist/llms.txt')])
   }
   writeFileSync(file, next);
 }
+
+// 1c. /llms-full.txt is generated whole from src/data/business.ts.
+for (const file of [join(root, 'public/llms-full.txt'), join(root, 'dist/llms-full.txt')]) writeFileSync(file, llmsFullText());
 
 // 2. Collect routes (same sources as generate-sitemap.mjs)
 const staticRoutes = [
@@ -70,6 +73,7 @@ const staticRoutes = [
   '/ai-info',
   '/tools/compare-management-proposals',
   '/board-toolkit',
+  '/how-to-choose-condo-management-company-chicago',
   '/privacy-policy',
   '/terms-of-service',
 ];

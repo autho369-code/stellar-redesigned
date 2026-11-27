@@ -79,6 +79,7 @@ export const boardResources: NavGroup = {
     { name: 'Finance & reserves', href: '/blog/topic/association-finance-reserves' },
     { name: 'Building operations', href: '/blog/topic/building-operations-capital-planning' },
     { name: 'Choosing management', href: '/blog/topic/choosing-association-management' },
+    { name: 'How to choose a management company', href: '/how-to-choose-condo-management-company-chicago' },
     { name: 'Board toolkit: RFP & checklists', href: '/board-toolkit' },
     { name: 'Proposal scorecard', href: '/tools/compare-management-proposals' },
   ],

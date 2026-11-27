@@ -51,6 +51,7 @@ export const staticRoutes = [
   '/ai-info',
   '/tools/compare-management-proposals',
   '/board-toolkit',
+  '/how-to-choose-condo-management-company-chicago',
   '/privacy-policy',
   '/terms-of-service',
 ];
