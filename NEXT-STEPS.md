@@ -3,6 +3,16 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **R3 parts C and D built** (this branch): `TrustBar` under the
+      hero on the homepage (it replaced the old credentials strip), /pricing
+      and the ten service pages; sticky phone bar now 64 px, safe-area aware,
+      `data-track-location="sticky-bar"`, `?source=sticky-bar`.
+- [ ] **R3 parts A, B and E are NOT done:** shadcn/ui kit, the new header
+      (six sentence-case menus, services mega-menu, utility row, mobile
+      sheet, "Get my flat-fee proposal" button), the four-column footer, and
+      the test that every old header and footer link still exists. Start a
+      fresh session for these: the header alone is a full rebuild.
+      Also put the trust bar under the hero of the area pages, hubs and guides.
 - [x] Nov 26: **Office photos from Mirsad are in the repo**
       (`public/images/office/`, webp; cropped and lightly corrected on Nov 26 at his request: storefront without the car, passer-by and neighbor sign, office without the bulletin boards; not placed on
       any page yet): `storefront-5107-n-western-*` (blue Stellar awning,
