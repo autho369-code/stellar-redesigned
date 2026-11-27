@@ -3,6 +3,23 @@
 Updated: 2026-11-27. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 27 (owner decisions, 9:30 AM CT, from Mirsad): **(1) Publishing freeze lifted**
+      (PR #91, `cbe46183`): `PUBLISHING_FROZEN_AT = null`; guides go live on their own
+      dates, no backdating, future-dated posts stay scheduled; verified live. **(2) The
+      23 thin area pages made rich** (PR #92, `a412095`): each has CMAP/ACS housing data, local
+      rules and reassessment timing, extra FAQs and source links (Albany Park, Andersonville,
+      Avondale, Bucktown, Edgewater, Evanston, Glenview, Highland Park, Lake Forest, Lake View,
+      Lincoln Park, Lincoln Square, Lincolnwood, Morton Grove, North Park, Northbrook, Old Town,
+      Ravenswood, River North, Rogers Park, Streeterville, Uptown, Wilmette). Nothing merged or
+      closed. Uniqueness: Lincolnwood / Morton Grove 28.1% (was 35.0%), closest pair in the
+      set 30.4% (Edgewater / Streeterville). **(3)** No team cards; per-area managed counts
+      are company-private, so `managed: null` stays and the TODO comments are removed; no
+      outreach of any kind; Stellar is a CAI member (a fact, nothing to do). Highland Park and
+      Lake Forest are in Lake County: never use the Cook reassessment calendar there.
+      **Blocker for Mirsad:** the GitHub workflow "Publish daily association guide" is still
+      disabled and the token cannot enable it (403). Enable it in the Actions UI, or guides
+      only appear when a deploy happens on or after their date. `chicago-condo-management-cost`
+      (dated Nov 28) goes live on the first deploy or run on Nov 28.
 - [x] Nov 27: **Shipped Nov 26-27 (PRs #83-#88, all squash-merged to main, CI green):**
       | PR | Merge sha | What |
       |----|-----------|------|
@@ -46,14 +63,13 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       Google profile edits, the "Ask Arthur" overlap and Lighthouse-as-error (design/CI
       policy).
 - **Open items (as of Nov 27):**
-  - [ ] **Team cards** on /about: need names, roles and photos from Mirsad.
-  - [ ] **Publishing freeze (Nov 3) still holding 2 guides**: "Financial-only vs full-service
-        condo and HOA management in Chicago" and "the first 60 days of a transition" are in
-        the repo but 404 live. Needs Mirsad's decision to lift the freeze.
+  - [x] **Team cards:** decided Nov 27 — there will be no team cards. Do not add them.
+  - [x] **Publishing freeze:** lifted Nov 27 (PR #91). Remaining: enable the "Publish daily
+        association guide" workflow in the Actions UI (token gets 403).
   - [ ] **Meho brand name** for the brand swap (company name is still typed by hand in about
         90 files, so the dry run fails). Stellar closes Dec 31, 2026.
-  - [ ] **Managed counts per area page:** `managed: null` on all upgraded area pages (no
-        numbers shown). Needs Mirsad's numbers, or confirmation to keep them off.
+  - [x] **Managed counts per area page:** decided Nov 27 — company-private, never shown.
+        `managed: null` stays; TODO comments removed (PR #92).
   - [ ] **Google reviews gap:** about 3.6 on Google against 4.3-4.5 for the leaders. Ethical
         review-growth plan needs Mirsad to send the link to owners (see his list).
   - [ ] **Ranking-list outreach: 7 drafts written, nothing sent.** Waiting for Mirsad to pick
@@ -62,16 +78,14 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
         to the 30+ / about 1,500 wording). Paid placements (HOA Explore, HOA Manager Check
         at $249+/month, The HOA Guide) are not recommended. Drafts go to him as email drafts
         he sends himself.
-  - [ ] **CAI Illinois membership:** the site says Stellar is a member but the CAI directory
-        does not list it. Ask Mirsad whether the company is a current member before any claim
-        or outreach relies on it.
+  - [x] **CAI membership:** Mirsad confirmed Nov 27 that Stellar is a CAI member (fact).
+        No action.
   - [ ] **GEO recheck in 3-7 days (about Nov 30 - Dec 4):** re-run the "condo management
         Chicago" queries. AI answers still quoted old copy ($20, 29 associations, 1,422
         residences) on Nov 27. Log to `/workspace/orion-kb/geo-log.md`.
-  - [ ] **Uniqueness limit:** Lincolnwood / Morton Grove share 35.0% (limit 35%, the check
-        passes at the limit). Any new text on either page, or any change to the shared
-        guide lists in `src/data/clusters.ts`, can tip it over. Run
-        `scripts/check-uniqueness.mjs` before shipping edits there.
+  - [x] **Uniqueness limit:** fixed in PR #92. Lincolnwood / Morton Grove now 28.1%; the
+        closest pair in the set is Edgewater / Streeterville at 30.4% (limit 35%). Run
+        `scripts/check-uniqueness.mjs` before editing area pages or `src/data/clusters.ts`.
   - [ ] Glenview office address is not published anywhere: needs Mirsad.
   - [ ] Search Console: request indexing again (quota was exceeded Nov 26).
 - [x] Nov 27: **Eight northwest-suburb area pages live** (PR #84): Park Ridge, Des Plaines,
@@ -472,8 +486,8 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       (249 impressions), Highland Park, Northbrook, Albany Park, North Park,
       Bucktown, Streeterville, Lincolnwood.
       -> Done Nov 27: all 50 area pages now use the upgraded template (PRs #84, #86, #87).
-- [ ] **22 weak area pages** (333 impressions, 2 clicks in 3 months): merge
-      into stronger neighbors only on Mirsad's word.
+- [x] **22 weak area pages** (333 impressions, 2 clicks in 3 months): Mirsad said Nov 27
+      not to merge or close any. All were upgraded instead (PRs #86, #87, #92).
 - Uniqueness note: suburb pages share a lot of template text. Similarity is
   shared / smaller page, so adding real text to the SHORTER page of a pair is
   what lowers it.
