@@ -123,7 +123,7 @@ export const selectionFaqs: Array<{ q: string; a: string }> = [
   },
   {
     q: 'How much does condo management cost in Chicago?',
-    a: `Firms price management per unit per month, as a flat monthly fee or as a percentage of dues, and what is included differs. Compare total annual cost from the same scope. Stellar’s price: ${priceSentence} The exact flat fee is set after a walkthrough of the building and comes in a written proposal.`,
+    a: `Firms price management per unit per month, as a flat monthly fee or as a percentage of dues, and what is included differs. Compare total annual cost from the same scope. Stellar’s price is a flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. The exact flat fee is set after a walkthrough of the building and comes in a written proposal.`,
   },
   {
     q: 'How do I check that a Chicago management company is licensed?',
