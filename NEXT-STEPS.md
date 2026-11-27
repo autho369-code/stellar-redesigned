@@ -4,7 +4,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
 - [x] Nov 26: **Office photos from Mirsad are in the repo**
-      (`public/images/office/`, webp at 400/800/1200 px wide; not placed on
+      (`public/images/office/`, webp; cropped and lightly corrected on Nov 26 at his request: storefront without the car, passer-by and neighbor sign, office without the bulletin boards; not placed on
       any page yet): `storefront-5107-n-western-*` (blue Stellar awning,
       "5107", phone number) and `office-work-area-*` (desks and partitions).
       **Storefront is a Google Street View image ("© 2023 Google" is printed
