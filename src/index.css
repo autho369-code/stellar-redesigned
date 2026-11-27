@@ -156,3 +156,14 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+/* ── Phone menu (sheet) ─────────────────────────────────────────
+   Slides in from the right; no movement for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .sheet-overlay[data-state='open'] { animation: fadeIn 0.2s ease-out; }
+  .sheet-panel[data-state='open'] { animation: sheetIn 0.25s cubic-bezier(0.22, 1, 0.36, 1); }
+}
+@keyframes sheetIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}

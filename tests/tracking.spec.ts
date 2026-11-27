@@ -17,9 +17,11 @@ test('tel click fires Phone Click', async ({ page }) => {
   await stub(page);
   await page.goto('/services/condominium-management');
   await page.waitForSelector('html[data-app-ready]');
-  await page.locator('a[href^="tel:"]').first().click({ force: true });
+  // First phone link on screen: the header one (the utility-row copy is hidden at this width).
+  await page.locator('a[href^="tel:"]:visible').first().click({ force: true });
   const hit = (await events(page)).find((e) => e.name === 'Phone Click');
   expect(hit, 'Phone Click fired').toBeTruthy();
+  expect(hit!.data.location, 'header phone keeps its location').toBe('header');
   expect(Object.keys(hit!.data).sort()).toEqual(['location', 'page']);
 });
 

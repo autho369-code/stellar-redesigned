@@ -19,6 +19,18 @@ Nov 2026), 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (R3: new header and footer)
+
+Branch `r3-header-footer` (PR open, not merged). PR #66 (trust bar, sticky
+phone bar) was merged the same day. New header: utility row, six sentence-case
+menus, services mega-menu, phone, "Get my flat-fee proposal"; phone menu is a
+sheet loaded on first tap. New footer: four link columns, NAP block from the
+brand file, resident portal and Google review buttons, sign-off. All header and
+footer links come from `src/data/navigation.ts`; `tests/link-inventory.spec.ts`
+fails if an old link disappears. Every menu link is in the static HTML. Main
+script 78 KB -> 80 KB gzip. Checks: typecheck, schedule, silos, build, 198
+tests passed, axe clean on header, open menus, phone menu and footer.
+
 ## Status update — 2026-11-26 (area pages batch 3: eight pages)
 
 Branch `area-pages-batch-3`. `src/data/areas/{old-town,highland-park,northbrook,
