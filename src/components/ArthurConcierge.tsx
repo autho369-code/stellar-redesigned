@@ -384,11 +384,14 @@ export default function ArthurConcierge() {
       {/* Launcher */}
       <button
         onClick={() => setOpen(!open)}
-        aria-label={open ? 'Close Arthur concierge chat' : 'Ask Arthur, Stellar concierge'}
-        className="fixed bottom-[calc(env(safe-area-inset-bottom)+88px)] md:bottom-6 right-6 z-[60] flex items-center gap-3 bg-ink text-paper pl-4 pr-5 py-3.5 shadow-glass hover:bg-navy-700 transition-colors duration-300"
+        aria-label={open ? 'Close Arthur chat' : 'Ask Arthur'}
+        data-chat-launcher
+        // Phones: a 48 px round icon in the corner, above the Call | Proposal bar,
+        // so it never sits on a button or phone link. Desktop: icon and label.
+        className="fixed right-3 bottom-[calc(env(safe-area-inset-bottom)+76px)] z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-ink text-paper shadow-glass ring-1 ring-paper/40 md:ring-0 transition-colors duration-300 hover:bg-navy-700 md:bottom-6 md:right-6 md:h-auto md:w-auto md:gap-3 md:rounded-none md:py-3.5 md:pl-4 md:pr-5"
       >
         {open ? <X className="w-5 h-5" strokeWidth={1.5} /> : <MessageCircle className="w-5 h-5 text-gold-300" strokeWidth={1.5} />}
-        <span className="text-[11px] font-semibold uppercase tracking-luxe">{open ? 'Close' : 'Ask Arthur'}</span>
+        <span className="sr-only text-[11px] font-semibold uppercase tracking-luxe md:not-sr-only">{open ? 'Close' : 'Ask Arthur'}</span>
       </button>
 
       {/* Panel */}
