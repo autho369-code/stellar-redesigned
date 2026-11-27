@@ -22,8 +22,9 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
 - **Owner, Nov 26: do NOT use the Google office photos** (storefront Street
   View, interior). "Bad and unprofessional." Do not ask for photos again; build
   without a photo until he sends one. The stock brick photo is off the homepage.
-- [ ] **R4 open points:** (1) the estimator goes down to 2 units ($60 per
-      month); ask once whether there is a minimum monthly fee. (2) The R4
+- [ ] **R4 open points:** (1) settled: the smallest association
+      Stellar manages is 8 units (`brand.pricing.minUnits`); the estimator
+      starts there and the event band is `8-24`. (2) The R4
       prompt names a "first ninety days" section that is not on the site; the
       existing three steps "From first call to a managed building" are used.
       (3) Board resources shows three fixed guides (`boardGuides` in

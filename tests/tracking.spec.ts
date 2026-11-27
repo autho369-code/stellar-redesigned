@@ -65,6 +65,12 @@ test('fee estimator: one Fee Estimator Used event per page view, and the contact
   expect(hits.length, 'fires once').toBe(1);
   expect(Object.keys(hits[0].data).sort()).toEqual(['page', 'units_band']);
   expect(hits[0].data.units_band).toBe('25-74');
+  // The smallest association managed is 8 units: lower numbers are raised to 8.
+  await card.locator('#estimator-units').fill('3');
+  await card.locator('#estimator-units').blur();
+  await expect(card.locator('#estimator-units')).toHaveValue('8');
+  await expect(card.locator('[data-estimate]')).toContainText('$240');
+  await card.locator('#estimator-units').fill('120');
   const href = await card.getByRole('link', { name: /Get my exact flat-fee proposal/ }).getAttribute('href');
   expect(href).toBe('/contact?source=estimator&units=120&type=hoa');
 

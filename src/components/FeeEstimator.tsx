@@ -5,7 +5,7 @@ import { brand } from '../brand/brand.config';
 import { PROPOSAL_TURNAROUND } from '../data/ctaPosts';
 import { trackEvent } from '../lib/track';
 
-const MIN_UNITS = 2;
+const MIN_UNITS = brand.pricing.minUnits;
 const MAX_UNITS = 2000;
 const DEFAULT_UNITS = 40;
 const TYPES = [
@@ -16,7 +16,7 @@ const TYPES = [
 
 const dollars = new Intl.NumberFormat('en-US');
 const clamp = (n: number) => Math.min(MAX_UNITS, Math.max(MIN_UNITS, Math.round(n)));
-const band = (units: number) => (units < 25 ? '2-24' : units < 75 ? '25-74' : units < 200 ? '75-199' : '200+');
+const band = (units: number) => (units < 25 ? '8-24' : units < 75 ? '25-74' : units < 200 ? '75-199' : '200+');
 
 /**
  * Instant fee estimate (R4): units x the starting per-unit price from the
