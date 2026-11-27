@@ -10,7 +10,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       days notice", the 6150 N Kenmore roof case study ($150,000 saved, live
       page planned at `/case-studies/6150-n-kenmore-roof` in R6), office
       photos. The R0-R9 prompts already had these facts.
-- [x] Nov 26: **Portfolio numbers made durable** (branch `portfolio-numbers`).
+- [x] Nov 26: **Portfolio numbers made durable (PR #68, "merge 68")**.
       Mirsad: the real counts are 30 associations and 1,495 residences (737
       Ridge just signed), and he does not want a site edit for every new
       building. The site now shows rounded figures everywhere: "30+
@@ -23,12 +23,34 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       hero on the homepage (it replaced the old credentials strip), /pricing
       and the ten service pages; sticky phone bar now 64 px, safe-area aware,
       `data-track-location="sticky-bar"`, `?source=sticky-bar`.
-- [ ] **R3 parts A, B and E are NOT done:** shadcn/ui kit, the new header
-      (six sentence-case menus, services mega-menu, utility row, mobile
-      sheet, "Get my flat-fee proposal" button), the four-column footer, and
-      the test that every old header and footer link still exists. Start a
-      fresh session for these: the header alone is a full rebuild.
-      Also put the trust bar under the hero of the area pages, hubs and guides.
+- [x] Nov 26: **PR #66 (R3 part 1) merged** ("Merge 66"); Vercel production
+      deploy succeeded. The live-site checker cannot reach the site from the
+      cloud session (proxy blocks it); the GitHub "live-site-check" workflow
+      is the check to read.
+- [x] Nov 26: **R3 header and footer built and merged (PR #67, "merge 67")**.
+      One link list: `src/data/navigation.ts`. Header
+      (`src/components/layout/Header.tsx`): 72 px desktop / 60 px phone, six
+      sentence-case menus, services mega-menu with the pricing card, utility
+      row (residents, agents and lenders, phone) that folds away on scroll,
+      "Get my flat-fee proposal" -> `/contact?source=header`. Phone menu is a
+      Radix sheet (`MobileMenu.tsx`, `ui/sheet.tsx`) loaded on first tap.
+      Footer: four columns, NAP from brand, portal and Google review buttons,
+      sign-off. `tests/link-inventory.spec.ts` holds every old header and
+      footer link. `brand.portalUrl` is new.
+      **Desktop menu is hand-built, not Radix navigation-menu:** Radix added
+      14 KB gzip and about 100 ms blocking time to every page. Do not swap it
+      back without measuring.
+- [ ] **R3 leftovers:** (1) the rest of the shadcn kit (button, card,
+      accordion, dialog, tabs, form fields...) is added when a phase first
+      needs each piece; only `sheet` exists. (2) Trust bar under the hero of
+      the area pages, hubs and guides. (3) Menu "Popular areas" is ordered by
+      Search Console impressions (clicks per page are too few); re-rank in
+      `topNeighborhoods` when clicks exist. (4) The header no longer shows the
+      tagline under the logo on desktop (it did not fit on one line with six
+      menus, phone and button); Mirsad can ask for it back in place of the
+      phone number. (5) The phone header no longer has the small "Proposal"
+      chip (`source=mobile-header-visible`); the sticky bar does that job.
+      (6) "Ask Arthur" covers the legal links at the very bottom of the page.
 - [x] Nov 26: **Office photos from Mirsad are in the repo**
       (`public/images/office/`, webp; cropped and lightly corrected on Nov 26 at his request: storefront without the car, passer-by and neighbor sign, office without the bulletin boards; not placed on
       any page yet): `storefront-5107-n-western-*` (blue Stellar awning,
@@ -43,7 +65,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       "type merge 65"); live check passed; real site tested in his Chrome
       (area page, click to /pricing, guide body and proposal blocks).
       Runner speed after R2: home 0.89, the other five templates 0.90 or more.
-- [ ] **R3 starts on this branch (`r3-components`)**: header, footer, trust
+- [x] **R3 started on branch `r3-components`** (merged as #66): header, footer, trust
       bar. Read `docs/redesign-prompts/00_CONTEXT_BLOCK.md` and
       `R3_components_header_footer_trustbar.md` first. The sticky phone bar
       already exists (`src/components/MobileCallBar.tsx`).
