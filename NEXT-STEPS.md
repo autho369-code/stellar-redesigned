@@ -3,6 +3,12 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Wilmette layout shift fixed.** Cause (Lighthouse named it):
+      the italic Fraunces file loaded late, the browser drew a fake italic
+      first, and the heading re-wrapped. `index.html` now preloads the italic
+      latin file too (45 KB). Local Lighthouse: Wilmette CLS 0.149 -> 0,
+      performance 0.82 -> 0.94; home, switch guide and condo service page all
+      CLS 0. Switch-guide LCP is still about 2.6 s (limit 2.5 s): not fixed.
 - [x] Nov 26: **D9 + D11 (rest that needs no owner input)**: `/blog` has
       topic chips above the guide list (links to the 4 hubs). `/about` has a
       three-point timeline (1997, 2007, today; confirmed dates only) and the

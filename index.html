@@ -12,6 +12,9 @@
       <!-- R2: the two fonts used above the fold, latin subset -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2" />
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2" />
+    <!-- The italic face too: most page headings have one italic word. Without
+         this it arrives late and the heading re-wraps (layout shift). -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-italic.woff2" />
   </head>
   <body>
     <div id="root"></div>
