@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { canonicalFaqs, faqPageSchema, SITE_URL } from '../data/business';
 import TrustBar from '../components/TrustBar';
+import { brand } from '../brand/brand.config';
 
 // Short FAQ for /about: the canonical answers about who the firm is.
 const aboutFaqs = canonicalFaqs.filter((f) =>
@@ -229,6 +230,20 @@ export default function About() {
               <p className="text-slate-600 font-light leading-relaxed mb-10">
                 Our growth has always been intentional. We only take on communities we can serve exceptionally, assigning a dedicated manager who knows every building, every board member, and every vendor by name. That personal approach is what sets us apart from national firms that treat your community as a line item.
               </p>
+              {/* Timeline: confirmed dates only. Add a point only on the owner's word. */}
+              <ol data-timeline className="mb-10 grid gap-px border border-slate-200 bg-slate-200 sm:grid-cols-3">
+                {[
+                  { when: '1997', what: 'Mirsad Cerimovic starts in Chicago community association management.' },
+                  { when: '2007', what: 'Stellar Property Management is founded.' },
+                  { when: 'Today', what: `${brand.stats.associationsDisplay} associations and approximately ${brand.stats.residencesDisplay} residences across Chicago and the North Shore.` },
+                ].map(({ when, what }) => (
+                  <li key={when} className="bg-paper p-6">
+                    <p className="font-display text-3xl text-gold-600">{when}</p>
+                    <p className="mt-3 text-sm font-light leading-relaxed text-slate-600">{what}</p>
+                  </li>
+                ))}
+              </ol>
+              <p className="mb-10 border-l-2 border-gold-500 pl-4 font-medium text-ink">{`${brand.contracts.line}.`}</p>
               <div className="flex flex-wrap items-center gap-5">
                 <Link
                   to="/services"

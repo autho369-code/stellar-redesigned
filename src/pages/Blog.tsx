@@ -109,6 +109,14 @@ export default function Blog() {
 
       <section className="py-24 lg:py-32 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <nav aria-label="Guide topics" className="mb-10 flex flex-wrap gap-3">
+            <span aria-current="page" className="border border-ink bg-ink px-4 py-2 text-sm text-paper">All guides</span>
+            {topics.map(([key, topic]) => (
+              <Link key={key} to={topic.path} className="border border-slate-300 bg-white px-4 py-2 text-sm text-ink transition-colors hover:border-gold-500 hover:text-gold-600">
+                {topic.label}
+              </Link>
+            ))}
+          </nav>
           <div className="border-t border-slate-200">
             {blogPosts.map((post) => (
               <Link
