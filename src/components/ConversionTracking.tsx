@@ -22,6 +22,8 @@ export default function ConversionTracking() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    // The app has hydrated and the click listener below is live (tests wait for this).
+    document.documentElement.setAttribute('data-app-ready', '');
     recordRoute(pathname);
   }, [pathname]);
 
