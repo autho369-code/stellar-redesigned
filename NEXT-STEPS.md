@@ -3,6 +3,16 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Office photos from Mirsad are in the repo**
+      (`public/images/office/`, webp at 400/800/1200 px wide; not placed on
+      any page yet): `storefront-5107-n-western-*` (blue Stellar awning,
+      "5107", phone number) and `office-work-area-*` (desks and partitions).
+      **Storefront is a Google Street View image ("© 2023 Google" is printed
+      on it): it must carry the Google attribution wherever it is shown, or be
+      replaced by a photo Mirsad takes himself.** The interior photo shows
+      bulletin boards with papers; keep it at card size so nothing on them can
+      be read, or crop the boards out. Use them in R3 (trust bar / footer) and
+      R8 (About, Contact).
 - [x] Nov 26: **PR #65 (R2 part 3) merged** (Mirsad: "LETS DO IT" in reply to
       "type merge 65"); live check passed; real site tested in his Chrome
       (area page, click to /pricing, guide body and proposal blocks).
