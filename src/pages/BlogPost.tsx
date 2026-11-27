@@ -16,6 +16,7 @@ import NearbyAreas from '../components/seo/NearbyAreas';
 import { getClusterFor, getNearbyAreas, getSeriesNav } from '../data/clusters';
 import { getAreasLinkingPost } from '../data/areas';
 import TrustBar from '../components/TrustBar';
+import ArticleToc, { type TocHeading } from '../components/ArticleToc';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -50,7 +51,30 @@ function getFaqPairs(content: string): Array<{ question: string; answer: string 
   });
 }
 
+// Give each h2 of the guide an id so the "On this page" list can link to it.
+// Runs after the mid-CTA split, so the split point never moves.
+function withHeadingIds(parts: string[]): { parts: string[]; headings: TocHeading[] } {
+  const headings: TocHeading[] = [];
+  const used = new Set<string>();
+  const out = parts.map((html) =>
+    html.replace(/<h2(\s[^>]*)?>([\s\S]*?)<\/h2>/g, (whole, attrs: string | undefined, inner: string) => {
+      const text = htmlToText(inner);
+      const existing = attrs?.match(/\bid="([^"]+)"/)?.[1];
+      let id = existing ?? (text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'section');
+      if (!existing) {
+        const base = id;
+        for (let n = 2; used.has(id); n += 1) id = `${base}-${n}`;
+      }
+      used.add(id);
+      headings.push({ id, text });
+      return existing ? whole : `<h2${attrs ?? ''} id="${id}">${inner}</h2>`;
+    }),
+  );
+  return { parts: out, headings };
+}
+
 const PROSE_CLASS = `
+  [&>h2]:scroll-mt-28
   [&>h2]:font-display [&>h2]:font-light [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:text-ink [&>h2]:mt-14 [&>h2]:mb-5
   [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-10 [&>h3]:mb-4
   [&>p]:text-slate-600 [&>p]:font-light [&>p]:leading-relaxed [&>p]:mb-6 [&>p]:text-lg
@@ -114,7 +138,11 @@ export default function BlogPost() {
   const cta = ctaPosts[post.slug];
   const fullBody = getPillarContent(post, blogPosts);
   const bodyHtml = cta ? withoutClosingCta(post.slug, fullBody) : fullBody;
-  const bodyParts = cta ? splitForMidCta(bodyHtml) : null;
+  const rawParts = cta ? splitForMidCta(bodyHtml) : null;
+  const { parts: idParts, headings: tocHeadings } = withHeadingIds(rawParts ?? [bodyHtml]);
+  const bodyParts = rawParts ? idParts : null;
+  const bodyWithIds = idParts[0];
+  const showToc = tocHeadings.length >= 3;
   const faqPairs = getFaqPairs(cta ? withoutClosingCta(post.slug, getBody(post)) : getBody(post));
 
   // Reverse-silo modules (src/data/clusters.ts). Guides not yet in a cluster
@@ -263,7 +291,12 @@ export default function BlogPost() {
       <TrustBar />
 
       {/* ── Post Content ───────────────────────────────────────── */}
-      <article className="bg-white border-t border-slate-200 py-16 lg:py-24">
+      <article className="relative bg-white border-t border-slate-200 py-16 lg:py-24">
+        {showToc && (
+          <div className="hidden xl:block absolute inset-y-0 left-[max(1.5rem,calc(50%-41rem))] w-56 py-24" aria-hidden={false}>
+            <ArticleToc headings={tocHeadings} />
+          </div>
+        )}
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
           {bodyParts ? (
             <>
@@ -272,7 +305,7 @@ export default function BlogPost() {
               <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[1] }} />
             </>
           ) : (
-            <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyHtml }} />
+            <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyWithIds }} />
           )}
           {seriesNav && clusterEntry && (
             <SeriesNav links={seriesNav} clusterName={clusterEntry.cluster.name} titles={guideTitles} />
@@ -329,7 +362,7 @@ export default function BlogPost() {
                   Founder &amp; Principal · Stellar Property Management
                 </p>
                 <p className="text-sm text-slate-600 font-light leading-relaxed">
-                  Mirsad founded Stellar in 2007 and manages 29 Chicago-area
+                  Mirsad founded Stellar in 2007 and manages more than 30 Chicago-area
                   condominium, HOA, and townhome associations. He is a licensed
                   Illinois Community Association Manager and writes the
                   firm&rsquo;s board guides on Illinois association law,

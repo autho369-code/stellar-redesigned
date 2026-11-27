@@ -28,6 +28,8 @@ function shingles(slug) {
   const words = main
     // The trust bar is the same strip on every page, like the header.
     .replace(/<section\b[^>]*\bdata-trust-bar\b[\s\S]*?<\/section>/gi, ' ')
+    // The guide's "On this page" list repeats its own headings.
+    .replace(/<nav\b[^>]*\bdata-toc\b[\s\S]*?<\/nav>/gi, ' ')
     .replace(/<(script|style|svg)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&[a-z#0-9]+;/gi, ' ')

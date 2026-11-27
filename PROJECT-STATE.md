@@ -19,6 +19,13 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (D9 guides: "On this page" list)
+- Guides: sticky "On this page" list on wide screens, built from each guide's
+  own h2 headings (`ArticleToc.tsx`). Hidden on phones and tablets. Titles, H1,
+  meta, canonicals, JSON-LD and proposal blocks unchanged (203 tests pass).
+- Fixed "manages 29" in the guide author box and founder FAQ ("more than 30").
+  Guard in `scripts/verify-built-seo.mjs` widened.
+
 ## Status update — 2026-11-26 (handoff D1, D2, D6)
 
 Phone chat button is a 48 px corner icon. Kenmore case study page is live at
