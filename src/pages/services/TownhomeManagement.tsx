@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -222,6 +223,7 @@ export default function TownhomeManagement() {
       <ServiceFAQ items={townhomeManagementFaqs} title="What townhome association boards should ask." />
       <ClusterGuides cluster="buildings" />
       <ServiceAreasStrip service="townhome-management" />
+      <ReviewSection placement="service-townhome-management" />
       <CTASection />
     </>
   );

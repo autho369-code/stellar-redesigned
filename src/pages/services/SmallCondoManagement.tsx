@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -128,6 +129,7 @@ export default function SmallCondoManagement() {
       <ServiceFAQ items={smallCondoManagementFaqs} title="What small condo boards ask before hiring management." />
       <ClusterGuides cluster="management" />
       <ServiceAreasStrip service="small-condo-association-management" />
+      <ReviewSection placement="service-small-condo-management" />
       <CTASection />
     </>
   );

@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -228,6 +229,7 @@ export default function BoardSupport() {
       <ClusterGuides cluster="governance" />
       <ServiceAreasStrip service="board-support" />
       <ServiceFAQ items={boardSupportFaqs} title="What Illinois boards ask about meetings and governance." />
+      <ReviewSection placement="service-board-support" />
       <CTASection />
     </>
   );

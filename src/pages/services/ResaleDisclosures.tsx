@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -263,6 +264,7 @@ export default function ResaleDisclosures() {
 
       <ServiceFAQ items={resaleDisclosureFaqs} title="Resale and lender questions we answer weekly." />
       <ClusterGuides cluster="finance" />
+      <ReviewSection placement="service-resale-disclosures" />
       <CTASection />
     </>
   );

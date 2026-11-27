@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import KenmoreCard from '../../components/KenmoreCard';
 import TrustBar from '../../components/TrustBar';
 import { business } from '../../data/business';
@@ -317,6 +318,7 @@ export default function CondominiumManagement() {
       <ServiceFAQ items={condominiumManagementFaqs} title="What Chicago condominium boards need to know." />
       <ClusterGuides cluster="management" />
       <ServiceAreasStrip service="condominium-management" />
+      <ReviewSection placement="service-condominium-management" />
       <CTASection />
     </>
   );

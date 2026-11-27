@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -128,6 +129,7 @@ export default function HighRiseManagement() {
       <ServiceFAQ items={highRiseManagementFaqs} title="What high-rise boards should confirm before changing managers." />
       <ClusterGuides cluster="buildings" />
       <ServiceAreasStrip service="high-rise-condominium-management" />
+      <ReviewSection placement="service-high-rise-management" />
       <CTASection />
     </>
   );
