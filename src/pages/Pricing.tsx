@@ -237,6 +237,7 @@ export default function Pricing() {
           <ul className="grid gap-x-10 gap-y-3 sm:grid-cols-2 text-sm">
             {[
               ['/tools/compare-management-proposals', 'Management proposal scorecard'],
+              ['/how-to-choose-condo-management-company-chicago', 'How to choose a condo management company in Chicago'],
               ['/board-toolkit', 'Board toolkit: RFP outline, interview questions, transition checklist'],
               ['/blog/score-condo-hoa-management-proposals', 'How to compare Chicago condo and HOA management companies'],
               ['/blog/community-association-management-agreement-review', 'What to review in a management agreement'],

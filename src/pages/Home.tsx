@@ -12,6 +12,7 @@ import { sixDisciplines } from '../data/six-disciplines';
 import {
   business,
   canonicalFaqs,
+  selectionFaqs,
   contactPoints,
   faqPageSchema,
   openingHoursSpecification,
@@ -56,6 +57,9 @@ const boardGuides = [
 // cover what the canonical set does not.
 const faqs = [
   ...canonicalFaqs,
+  // Head-query answers, same wording as /how-to-choose-condo-management-company-chicago.
+  selectionFaqs[0],
+  selectionFaqs[1],
   {
     q: 'How is Stellar different from large national management firms?',
     a: 'Every community receives a dedicated property manager, transparent flat-fee pricing instead of percentage-based fees, and a local Chicago office that answers 24/7. National firms manage by volume; we manage by standard — which is why we maintain a 96% client retention rate since 2007, today across 30+ associations.',
@@ -489,6 +493,11 @@ export default function Home() {
               <p className="mt-6 text-[15px]">
                 <Link to="/blog/switch-condo-management-companies-chicago" className="text-gold-600 underline underline-offset-4 hover:text-ink">
                   How a switch to a new manager works, step by step
+                </Link>
+              </p>
+              <p className="mt-3 text-[15px]">
+                <Link to="/how-to-choose-condo-management-company-chicago" className="text-gold-600 underline underline-offset-4 hover:text-ink">
+                  How to choose a condo management company in Chicago
                 </Link>
               </p>
             </div>

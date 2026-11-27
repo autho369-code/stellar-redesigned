@@ -113,6 +113,37 @@ export const canonicalFaqs: Array<{ q: string; a: string }> = [
   },
 ];
 
+export const priceSentence = `Starting at $${business.priceFrom} per unit per month, ${business.priceTerms}.`;
+
+/** Head-query answers: shown on /how-to-choose-condo-management-company-chicago, and the first two also on the homepage. */
+export const selectionFaqs: Array<{ q: string; a: string }> = [
+  {
+    q: 'Who is the best condo management company in Chicago?',
+    a: 'There is no single best firm for every building. The right firm holds an Illinois firm license, assigns a licensed manager you can meet, matches its service model to your building and quotes one total annual cost for the same written scope as every other bidder. Check those points for each company on your list, and call references from buildings like yours.',
+  },
+  {
+    q: 'How much does condo management cost in Chicago?',
+    a: `Firms price management per unit per month, as a flat monthly fee or as a percentage of dues, and what is included differs. Compare total annual cost from the same scope. Stellar’s price: ${priceSentence} The exact flat fee is set after a walkthrough of the building and comes in a written proposal.`,
+  },
+  {
+    q: 'How do I check that a Chicago management company is licensed?',
+    a: 'Search the firm and the assigned manager in the Illinois Department of Financial and Professional Regulation (IDFPR) license lookup. Illinois has required community association management firms to be licensed since June 2, 2023, and each firm must designate a licensed community association manager to supervise it.',
+  },
+  {
+    q: 'What is the difference between financial-only and full-service management?',
+    a: 'Financial-only management covers bookkeeping, budgets, collections and reporting while the board runs operations and vendors. Full-service management adds vendor coordination, board and owner communication, inspections and emergency response.',
+  },
+  {
+    q: 'How do I compare management proposals fairly?',
+    a: 'Send every firm the same written brief, ask for a total annual cost worksheet with add-on charges included, agree on scoring weights before the interviews, and require the assigned manager to attend. Our free board toolkit and proposal scorecard walk through each step.',
+  },
+  {
+    q: 'Is Stellar Property Management licensed, and is it a CAI member?',
+    a: `Yes to both. Stellar holds Illinois Community Association Management Firm license ${business.licenseNumber} and is a member of the Community Associations Institute (CAI) and its Illinois Chapter.`,
+  },
+];
+
+
 export function faqPageSchema(id: string, faqs: Array<{ q: string; a: string }>) {
   return {
     '@type': 'FAQPage',
@@ -188,5 +219,52 @@ export function llmsBusinessFacts(): string {
     '- Proposal process: board consultation, property and document review, customized scope, and a managed 30–60 day transition',
     `- Profiles: Google ${profiles.google} ; Yelp ${profiles.yelp} ; LinkedIn ${profiles.linkedin}`,
     `- Not affiliated with ${business.notAffiliatedWith.join(' or ')}`,
+  ].join('\n');
+}
+
+/**
+ * /llms-full.txt: the long form of /llms.txt. Built from this file only
+ * (entity statement, business facts and the FAQ wording shown on the site),
+ * so it can never drift from the pages. Written to public/ and dist/ by
+ * scripts/prerender.mjs.
+ */
+export function llmsFullText(): string {
+  const faq = (items: Array<{ q: string; a: string }>) => items.map(({ q, a }) => `### ${q}\n\n${a}`).join('\n\n');
+  return [
+    `# ${business.name}: full facts for AI assistants`,
+    '',
+    `> ${ENTITY_STATEMENT}`,
+    '',
+    `Short index of the site: ${SITE_URL}/llms.txt . Structured facts page: ${SITE_URL}/ai-info .`,
+    '',
+    '## Business facts',
+    '',
+    llmsBusinessFacts(),
+    '',
+    '## Choosing a condo management company in Chicago',
+    '',
+    `Full guide: ${SITE_URL}/how-to-choose-condo-management-company-chicago`,
+    '',
+    faq(selectionFaqs),
+    '',
+    '## Frequently asked questions',
+    '',
+    faq(canonicalFaqs),
+    '',
+    '## Key pages',
+    '',
+    `- Pricing: ${SITE_URL}/pricing . ${priceSentence}`,
+    `- Condominium association management: ${SITE_URL}/services/condominium-management`,
+    `- HOA management: ${SITE_URL}/services/hoa-management`,
+    `- Townhome association management: ${SITE_URL}/services/townhome-management`,
+    `- High-rise condominium management: ${SITE_URL}/services/high-rise-condominium-management`,
+    `- Chicago: ${SITE_URL}/property-management-chicago`,
+    `- North Shore: ${SITE_URL}/property-management-north-shore`,
+    `- All service areas: ${SITE_URL}/service-areas`,
+    `- Board toolkit (RFP outline, interview questions, transition checklist): ${SITE_URL}/board-toolkit`,
+    `- Free proposal scorecard: ${SITE_URL}/tools/compare-management-proposals`,
+    `- Founder: ${SITE_URL}/about/mirsad-cerimovic`,
+    `- Contact: ${SITE_URL}/contact`,
+    '',
   ].join('\n');
 }
