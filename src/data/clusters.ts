@@ -55,12 +55,12 @@ export const clusters: Cluster[] = [
     money: '/services/financial-management',
     members: [
       { slug: 'reasonable-reserves-illinois-condo-law', areas: ['edgewater', 'uptown', 'rogers-park'], cross: ['vintage-chicago-condo-capital-planning'] },
-      { slug: 'condo-reserve-funds-explained', areas: ['hyde-park', 'kenwood', 'south-loop'], siblings: ['fannie-freddie-condo-reserve-15-percent-2027'] },
+      { slug: 'condo-reserve-funds-explained', areas: ['kenwood', 'south-loop', 'edgewater'], siblings: ['fannie-freddie-condo-reserve-15-percent-2027'] },
       { slug: 'how-to-read-condo-reserve-study', areas: ['west-loop', 'loop', 'edgewater'], siblings: ['fannie-freddie-condo-reserve-15-percent-2027'] },
-      { slug: 'fannie-freddie-condo-reserve-15-percent-2027', areas: ['uptown', 'rogers-park', 'hyde-park'], siblings: ['condo-reserve-funds-explained'] },
+      { slug: 'fannie-freddie-condo-reserve-15-percent-2027', areas: ['uptown', 'rogers-park', 'edgewater'], siblings: ['condo-reserve-funds-explained'] },
       { slug: 'fannie-freddie-condo-eligibility-board-guide', areas: ['kenwood', 'south-loop', 'west-loop'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
       { slug: 'illinois-association-reserve-funds-fdic-coverage', areas: ['loop', 'edgewater', 'uptown'], siblings: ['condo-hoa-capital-project-loan-preparation', 'fannie-freddie-condo-eligibility-board-guide'] },
-      { slug: 'condo-hoa-capital-project-loan-preparation', areas: ['rogers-park', 'hyde-park', 'kenwood'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
+      { slug: 'condo-hoa-capital-project-loan-preparation', areas: ['rogers-park', 'kenwood', 'lakeview'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
       { slug: 'condo-special-assessments-illinois', areas: ['south-loop', 'west-loop', 'loop'], siblings: ['condo-hoa-capital-project-loan-preparation'] },
     ],
   },
@@ -154,9 +154,9 @@ export const clusters: Cluster[] = [
     money: '/services/maintenance-coordination',
     members: [
       { slug: 'vintage-chicago-condo-capital-planning', areas: ['rogers-park', 'lakeview', 'andersonville'], cross: ['chicago-condo-porch-deck-safety-board-guide'] },
-      { slug: 'who-pays-condo-water-leak-illinois', areas: ['ravenswood', 'lincoln-park', 'hyde-park'], siblings: ['condo-hoa-vendor-rfp-checklist'] },
+      { slug: 'who-pays-condo-water-leak-illinois', areas: ['ravenswood', 'lincoln-park', 'lakeview'], siblings: ['condo-hoa-vendor-rfp-checklist'] },
       { slug: 'can-condo-boards-enter-your-unit-illinois', areas: ['rogers-park', 'lakeview', 'andersonville'], siblings: ['condo-hoa-vendor-rfp-checklist'] },
-      { slug: 'condo-hoa-vendor-rfp-checklist', areas: ['ravenswood', 'lincoln-park', 'hyde-park'], siblings: ['illinois-condo-hoa-ev-charging-board-process', 'can-condo-boards-enter-your-unit-illinois'] },
+      { slug: 'condo-hoa-vendor-rfp-checklist', areas: ['ravenswood', 'lincoln-park', 'lincoln-square'], siblings: ['illinois-condo-hoa-ev-charging-board-process', 'can-condo-boards-enter-your-unit-illinois'] },
       { slug: 'illinois-condo-hoa-ev-charging-board-process', areas: ['rogers-park', 'lakeview', 'andersonville'], siblings: ['who-pays-condo-water-leak-illinois'] },
     ],
   },
@@ -206,10 +206,10 @@ export const clusters: Cluster[] = [
     money: '/services/board-support',
     members: [
       { slug: 'chicago-condo-association-compliance-calendar', areas: ['south-loop', 'west-loop', 'loop'], cross: ['which-illinois-law-governs-condo-hoa-townhome'] },
-      { slug: 'illinois-condo-law-updates-2026', areas: ['river-north', 'hyde-park', 'kenwood'], siblings: ['amend-illinois-condo-declaration-section-27'] },
+      { slug: 'illinois-condo-law-updates-2026', areas: ['river-north', 'kenwood', 'lakeview'], siblings: ['amend-illinois-condo-declaration-section-27'] },
       { slug: 'amend-illinois-condo-declaration-section-27', areas: ['logan-square', 'avondale', 'south-loop'], siblings: ['illinois-condo-developer-turnover-checklist'] },
       { slug: 'illinois-condo-deconversion-75-or-85-percent', areas: ['west-loop', 'loop', 'river-north'], siblings: ['illinois-condo-developer-turnover-checklist'] },
-      { slug: 'illinois-condo-developer-turnover-checklist', areas: ['hyde-park', 'kenwood', 'logan-square'], siblings: ['illinois-condo-deconversion-75-or-85-percent'] },
+      { slug: 'illinois-condo-developer-turnover-checklist', areas: ['kenwood', 'logan-square', 'west-loop'], siblings: ['illinois-condo-deconversion-75-or-85-percent'] },
     ],
   },
   {
@@ -287,7 +287,7 @@ export const areaTypes: Array<{ id: string; label: string; areas: string[]; guid
   {
     id: 'highrise',
     label: 'Lakefront and downtown high-rise',
-    areas: ['edgewater', 'uptown', 'gold-coast', 'streeterville', 'river-north', 'loop', 'south-loop', 'west-loop', 'hyde-park', 'kenwood'],
+    areas: ['edgewater', 'uptown', 'gold-coast', 'streeterville', 'river-north', 'loop', 'south-loop', 'west-loop', 'kenwood'],
     guides: [
       'chicago-condo-facade-compliance-board-guide',
       'chicago-condo-life-safety-board-planning',

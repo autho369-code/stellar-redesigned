@@ -7,8 +7,11 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
   footer** (`topNeighborhoods` in `src/data/navigation.ts`). Hyde Park was put
   there from Search Console numbers without asking him; he had it removed
   ("too far from us"). Do not add or promote an area without his word. The
-  `/property-management-hyde-park` page itself still exists (it was on the site
-  before); removing a page needs his decision and a redirect.
+  Hyde Park page removal is built on his word ("REMOVE HYDE PARK"): page,
+  area data, every text and schema mention; 301 to
+  `/property-management-chicago`; 42 area pages (silo check updated). Seven
+  guides that linked Hyde Park as a nearby area got a north-side area
+  instead (`src/data/clusters.ts`).
 - [x] Nov 26: **Trust bar now under every hero** (branch `r3-trustbar-rest`):
       added to the 43 area pages (both templates), Chicago, North Shore,
       Service Areas, Services, Blog, the 4 topic hubs, all guides and About.
