@@ -1,3 +1,4 @@
+import ReviewCards from '../components/ReviewCards';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageSquareText, Star } from 'lucide-react';
@@ -40,7 +41,7 @@ export default function Reviews() {
         <link rel="canonical" href="https://www.stellarpropertygroup.com/reviews" />
       </Helmet>
 
-      <section className="relative min-h-[78vh] bg-paper overflow-hidden flex items-center">
+      <section className="relative bg-paper overflow-hidden flex items-center">
         <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
         <div className="relative max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 pb-24 w-full">
           <div className="max-w-3xl mb-14">
@@ -69,6 +70,13 @@ export default function Reviews() {
             <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-gold-600 transition-colors">Read all public Google reviews</a>
             <a href="tel:+17737280652" className="text-slate-500 hover:text-gold-600 transition-colors">Call 773.728.0652</a>
           </div>
+        </div>
+      </section>
+
+      <section className="py-14 lg:py-20 bg-white border-t border-slate-200" aria-labelledby="what-boards-say">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10">
+          <h2 id="what-boards-say" className="font-display font-light text-4xl text-ink leading-[1.08] mb-10">What boards say</h2>
+          <ReviewCards placement="reviews-cards" />
         </div>
       </section>
     </>

@@ -2,7 +2,7 @@ export const whyCondoBoardsFail = {
   slug: 'why-condo-boards-fail',
   title: 'The #1 Reason Condo Boards Fail (And How to Fix It)',
   metaDescription:
-    'The most common reason condo and HOA boards fail is a breakdown of trust and transparency. Learn the warning signs of board dysfunction and the practical fixes that restore a healthy board.',
+    'Condo and HOA boards most often fail through a breakdown of trust and transparency. The warning signs of board dysfunction and the practical fixes.',
   date: '2023-03-14',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Board Governance',

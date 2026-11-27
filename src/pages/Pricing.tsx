@@ -1,3 +1,4 @@
+import KenmoreCard from '../components/KenmoreCard';
 import TrustBar from '../components/TrustBar';
 import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -278,6 +279,12 @@ export default function Pricing() {
           <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" /> Pricing Questions</p>
           <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-14">What Chicago boards ask <em className="font-medium text-gold-600">before requesting a proposal.</em></h2>
           <div className="border-t border-slate-200">{faqs.map(({ question, answer }) => <details key={question} className="group border-b border-slate-200"><summary className="flex items-center justify-between gap-6 py-7 cursor-pointer list-none [&::-webkit-details-marker]:hidden"><h3 className="font-display text-lg lg:text-xl text-ink group-open:text-gold-600 transition-colors">{question}</h3><span className="text-gold-600 text-2xl group-open:rotate-45 transition-transform">+</span></summary><p className="pb-8 text-slate-600 leading-relaxed font-light max-w-3xl">{answer}</p></details>)}</div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-paper border-t border-slate-200" aria-label="Client result">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <KenmoreCard />
         </div>
       </section>
 

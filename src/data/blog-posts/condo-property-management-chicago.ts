@@ -3,7 +3,7 @@ export const condoPropertyManagementChicago = {
   title:
     'Condominium Property Management in Chicago: What Board Members Should Expect From a Professional Management Company',
   metaDescription:
-    'Learn what Chicago condo board members should expect from a professional property management company, including financial oversight, maintenance coordination, legal compliance, and transparent communication.',
+    'What Chicago condo board members should expect from a management company: financial oversight, maintenance coordination, compliance and communication.',
   date: '2024-11-15',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Board Education',

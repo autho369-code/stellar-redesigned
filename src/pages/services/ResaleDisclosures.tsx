@@ -90,7 +90,7 @@ export default function ResaleDisclosures() {
     <>
       <SEOHead
         title="Condo Resale Disclosures & Lender Letters | Stellar"
-        description="Section 22.1 packets, paid assessment letters, lender questionnaires and insurance certificates for Chicago condo and community associations — answered by a named person."
+        description="Section 22.1 packets, paid assessment letters, lender questionnaires and insurance certificates for Chicago associations, answered by a named person."
         canonical="https://www.stellarpropertygroup.com/services/resale-disclosures"
       />
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>

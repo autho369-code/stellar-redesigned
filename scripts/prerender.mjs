@@ -58,6 +58,7 @@ const staticRoutes = [
   '/property-management-north-shore',
   '/pricing',
   '/reviews',
+  '/case-studies/6150-n-kenmore-roof',
   '/blog',
   '/blog/topic/board-governance-illinois-law',
   '/blog/topic/association-finance-reserves',

@@ -115,7 +115,7 @@ export default function Resources() {
     <>
       <SEOHead
         title="Owner & Resident Resources | Stellar Property Management"
-        description="Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions."
+        description="Owner and resident resources from Stellar Property Management: make payments, report violations, submit board nominations and find common answers."
         canonical="https://www.stellarpropertygroup.com/resources"
       />
 

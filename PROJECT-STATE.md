@@ -19,6 +19,13 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (handoff D1, D2, D6)
+
+Phone chat button is a 48 px corner icon. Kenmore case study page is live at
+`/case-studies/6150-n-kenmore-roof` with result cards on four pages. `/reviews`
+shows three Google reviews. Homepage social text updated, 32 meta descriptions
+shortened, `/privacy` and `/terms` redirect to the existing legal pages.
+
 ## Status update — 2026-11-26 (R4: shorter homepage and fee estimator)
 
 Branch `r4-homepage` (PR open). No fee calculator: the owner sets the fee only

@@ -3,6 +3,17 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D2 + D6 (handoff)**: Kenmore case study page
+      `/case-studies/6150-n-kenmore-roof` (three approved facts only, in
+      `src/data/case-studies.ts`; in sitemap; 150 URLs again) and `KenmoreCard`
+      on home, /pricing, the condo service page and /about. `/reviews` now
+      shows the three Google reviews (`ReviewCards`, data in
+      `src/data/reviews.ts`; no star number, no rating schema). Homepage
+      OG/Twitter text matches the offer. `/privacy` and `/terms` redirect to
+      the existing `/privacy-policy` and `/terms-of-service`. 32 long meta
+      descriptions cut to 140-158 characters. Build fails on `[CONFIRM`,
+      `[[JOJO`, `TODO(` or a calculated monthly fee. NOT done from D2, on his
+      word: 29/1,422 numbers, Hyde Park page.
 - **Nov 26, 9 PM: Mirsad sent `Stellar_Master_Handoff_for_Claude.md` (tasks
   D0-D14) and said: finish the job, do not stop, do not ask for merges
   (standing permission for this queue).** Where the handoff disagrees with

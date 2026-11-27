@@ -214,7 +214,7 @@ export default function AuthorMirsadCerimovic() {
     <>
       <SEOHead
         title="Mirsad Cerimovic, CMCA | Founder, Stellar Property Management"
-        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 30+ condo, HOA and townhome associations."
+        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS, managing 30+ condo and HOA associations."
         canonical={PROFILE_URL}
         ogType="profile"
         ogImage="https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg"

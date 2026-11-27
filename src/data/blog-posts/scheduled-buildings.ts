@@ -414,7 +414,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     slug: 'illinois-condo-hoa-ev-charging-board-process',
     title: 'EV Charging Requests: A Process for Illinois Association Boards',
     metaDescription:
-      'Illinois condo and HOA boards: how to build a consistent, documented process for EV charging requests covering electrical capacity, metering, insurance, and approvals.',
+      'How Illinois condo and HOA boards build a consistent, documented process for EV charging requests: electrical capacity, metering, insurance, approvals.',
     date: '2026-09-13',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',

@@ -2,7 +2,7 @@ export const condoRepairsOwnerVsAssociation = {
   slug: 'condo-repairs-owner-vs-association-illinois',
   title: 'Condo Repairs in Illinois: What Owners Fix vs. What the Association Fixes',
   metaDescription:
-    'Who pays for condo repairs in Illinois — the owner or the association? A plain-English map of units, common elements, and the limited-common gray zone, with examples.',
+    'Who pays for condo repairs in Illinois, the owner or the association? A plain-English map of units, common elements and limited common elements.',
   date: '2026-08-13',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Maintenance',

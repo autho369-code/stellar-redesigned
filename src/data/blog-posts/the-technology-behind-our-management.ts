@@ -2,7 +2,7 @@ export const technologyBehindOurManagement = {
   slug: 'the-technology-behind-our-management',
   title: 'The Technology Behind Our Management: Why Stellar Runs on Portier369',
   metaDescription:
-    'A look inside the platform Stellar Property Management uses to run Chicago condo and HOA associations — owner portals, board financials, violation workflows, and why we chose Portier369.',
+    'Inside the platform Stellar Property Management uses to run Chicago condo and HOA associations: owner portals, board financials and violation workflows.',
   date: '2026-07-06',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Technology',

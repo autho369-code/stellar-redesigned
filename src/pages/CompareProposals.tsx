@@ -192,7 +192,7 @@ export default function CompareProposals() {
     <>
       <SEOHead
         title="Management Proposal Scorecard for Condo & HOA Boards"
-        description="A free weighted scorecard for Illinois condo and HOA boards comparing management proposals across seven criteria. No sign-up, nothing emailed, scores stay in your browser."
+        description="A free weighted scorecard for Illinois condo and HOA boards comparing management proposals across seven criteria. No sign-up; scores stay in your browser."
         canonical="https://www.stellarpropertygroup.com/tools/compare-management-proposals"
       />
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>

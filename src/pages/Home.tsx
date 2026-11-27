@@ -4,6 +4,8 @@ import { PROPOSAL_TURNAROUND } from '../data/ctaPosts';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus, Building, Building2, Home as HomeIcon, Fence, Check } from 'lucide-react';
 import ProposalStarter from '../components/ProposalStarter';
+import KenmoreCard from '../components/KenmoreCard';
+import ReviewCards from '../components/ReviewCards';
 import { brand } from '../brand/brand.config';
 import { includedServices } from '../data/pricing';
 import { sixDisciplines } from '../data/six-disciplines';
@@ -30,12 +32,6 @@ const buildingTypes = [
   { icon: Fence, title: 'Townhome associations', desc: 'Shared roofs, grounds and reserves for townhome communities.', href: '/services/townhome-management' },
 ];
 
-/**
- * The one approved client result (owner, 2026-11-26). Use these facts only:
- * no year, unit count or vendor until the owner gives them.
- */
-const KENMORE_RESULT = 'At 6150 N Kenmore in Chicago, a roof replacement saved the association $150,000.';
-
 // Three cornerstone guides for boards choosing a manager. A fixed list keeps
 // the guide index out of the homepage's JavaScript.
 const boardGuides = [
@@ -53,21 +49,6 @@ const boardGuides = [
     title: 'How to Verify an Illinois Community Association Manager License',
     desc: 'Verifying licensure takes a few minutes and belongs in every management search.',
     href: '/blog/verify-illinois-community-association-manager-license',
-  },
-];
-
-const testimonials = [
-  {
-    quote: 'Financial reports provided are detailed and copies of each monthly invoice received.',
-    name: 'Halid E.', community: 'Google review', area: '254-unit condominium',
-  },
-  {
-    quote: 'Absolutely great company to manage any size of the building. We are very happy with them since 2014.',
-    name: 'Hasan H.', community: 'Google review', area: 'Long-term client',
-  },
-  {
-    quote: 'They managed multiple renovation and repair projects while being good stewards of our reserves.',
-    name: 'Barbara M.', community: 'Google review', area: 'Condominium association',
   },
 ];
 
@@ -256,7 +237,7 @@ export default function Home() {
         <meta name="theme-color" content="#0d2740" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/" />
         <meta property="og:title" content="Stellar Property Management | Chicago Condo & HOA Experts" />
-        <meta property="og:description" content="The art of a well-run building. White-glove association management for Chicago's finest addresses. 96% client retention since 2007." />
+        <meta property="og:description" content={`Chicago condo, HOA and townhome association management. A flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Chicago office, since 2007.`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Stellar Property Management" />
         <meta property="og:locale" content="en_US" />
@@ -265,6 +246,7 @@ export default function Home() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content={`Chicago condo, HOA and townhome association management. A flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Chicago office, since 2007.`} />
         <meta name="twitter:image" content="https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
@@ -344,35 +326,12 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-3">
-            {testimonials.map(({ quote, name, community, area }) => (
-              <figure key={area} className="flex flex-col rounded-[var(--radius-lg)] bg-surface p-8 shadow-card">
-                <blockquote className="font-display text-xl text-ink leading-relaxed mb-8 flex-1">
-                  &ldquo;{quote}&rdquo;
-                </blockquote>
-                <figcaption className="pt-5 border-t border-line">
-                  <p className="text-sm font-semibold text-ink">{name}</p>
-                  <p className="text-sm text-slate-600 mt-1">{community} · {area}</p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-[15px]">
-            <a
-              href={profiles.google}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-review-link="home-proof"
-              className="inline-flex items-center gap-2 font-semibold text-ink underline underline-offset-4 hover:text-gold-600"
-            >
-              Read all our Google reviews
-              <ArrowUpRight className="w-4 h-4" aria-hidden />
-            </a>
+          <ReviewCards placement="home-proof" />
+          <p className="mt-4 text-[15px]">
             <Link to="/reviews" className="text-gold-600 underline underline-offset-4 hover:text-ink">
               Share your experience
             </Link>
-          </div>
+          </p>
         </div>
       </section>
 
@@ -491,10 +450,7 @@ export default function Home() {
               <p className="font-display font-light text-5xl text-gold-300 leading-none">{business.retentionPercent}%</p>
               <p className="text-paper/85 leading-relaxed">{RETENTION.replace(/^\d+% /, '').replace(/^./, (c) => c.toUpperCase())}.</p>
             </div>
-            <div className="flex min-w-0 flex-col gap-4 rounded-[var(--radius-lg)] border border-paper/15 p-7 sm:flex-row sm:items-center sm:gap-6">
-              <p className="font-display font-light text-5xl text-gold-300 leading-none">$150,000</p>
-              <p className="text-paper/85 leading-relaxed">{KENMORE_RESULT}</p>
-            </div>
+            <KenmoreCard dark />
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ export const aiInCondoManagement = {
   slug: 'ai-in-condo-management',
   title: 'AI Is Coming to Condo Management — What Boards Need to Know',
   metaDescription:
-    'Artificial intelligence is entering condo and HOA management — from violation processing to owner communication. Learn the real benefits, the risks, and how boards should use AI responsibly.',
+    'AI is entering condo and HOA management, from violation processing to owner communication. The real benefits, the risks, and how boards should use it.',
   date: '2025-10-07',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Technology',

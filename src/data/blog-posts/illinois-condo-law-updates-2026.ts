@@ -2,7 +2,7 @@ export const illinoisCondoLawUpdates2026 = {
   slug: 'illinois-condo-law-updates-2026',
   title: 'Illinois Condo Law in 2026: What Every Board Must Know',
   metaDescription:
-    'A practical 2026 guide to Illinois condominium law for board members — covering the Condominium Property Act, owner record requests, meeting notices, elections, reserves, and insurance.',
+    'A practical 2026 guide to Illinois condominium law for board members: the Condominium Property Act, records, meeting notices, elections and reserves.',
   date: '2026-02-18',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Legal & Compliance',
