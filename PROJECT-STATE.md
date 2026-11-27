@@ -19,6 +19,11 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (R9 checks and launch notes)
+- `docs/LAUNCH-NOTES.md`: speed table for 13 page types, Rich Results Test
+  results, rollback commits, open items. Brand-swap dry run fails (97 files).
+  Request indexing blocked by Search Console quota.
+
 ## Status update — 2026-11-26 (blog chips, About timeline)
 - `/blog`: topic chips above the list. `/about`: timeline (1997, 2007, today)
   and the 60-day contract line. Titles, H1, meta and schema unchanged; 205
