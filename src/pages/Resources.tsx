@@ -8,6 +8,7 @@ import { ViolationReportForm } from '../components/ViolationReportForm';
 import { BoardNominationForm } from '../components/BoardNominationForm';
 import { SEOHead } from '../components/seo/SEOHead';
 import ProposalCta from '../components/ProposalCta';
+import { brand } from '../brand/brand.config';
 
 type ActiveTab = 'violation' | 'nomination' | null;
 
@@ -147,6 +148,7 @@ export default function Resources() {
                 Everything you need to manage your account, submit forms, and
                 stay connected with your community — all in one place.
               </p>
+              <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
             </div>
           </div>
         </div>
@@ -420,7 +422,7 @@ export default function Resources() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Contact Us
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

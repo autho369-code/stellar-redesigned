@@ -84,7 +84,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-22-1-disclosure-packet-checklist">What belongs in the 22.1 packet</a>; <a href="/blog/illinois-22-1-response-workflow">answering 22.1 requests quickly</a>.</p>
 
       <p>If your board wants a resale disclosure process that runs on a calendar instead of on adrenaline, our condominium management team can build one with you. <a href="/contact">Schedule a consultation</a> and we will review your current packet against your governing documents.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'how-to-read-condo-reserve-study',
@@ -169,7 +170,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/condo-reserve-funds-explained">Condo reserve funds explained</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
 
       <p>Our <a href="/services/financial-management">financial management</a> team builds reserve funding scenarios boards can actually vote on. If your association serves <a href="/property-management-chicago">Chicago</a> or North Shore owners and your reserve line has not changed in years, <a href="/contact">request a consultation</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-22-1-disclosure-packet-checklist',
@@ -274,7 +276,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Read next: <a href="/blog/illinois-section-22-1-disclosure-board-guide">The Illinois 22.1 disclosure guide</a>; <a href="/blog/illinois-22-1-response-workflow">a 22.1 response workflow</a>.</p>
 
       <p>Stellar's board support team maintains standing disclosure packets for the associations we manage so responses go out in days, not weeks. <a href="/contact">Talk to us</a> about auditing your current packet.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'reasonable-reserves-illinois-condo-law',
@@ -359,7 +362,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Related reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/condo-reserve-funds-explained">why so many reserve funds are underfunded</a>.</p>
 
       <p>Stellar's <a href="/services/financial-management">financial management</a> practice builds the documentation trail behind reserve decisions so boards can defend them years later. If your condominium association is heading into budget season without a current reserve basis, <a href="/contact">schedule a consultation</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-association-late-fees-interest-policy',
@@ -448,7 +452,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/condo-hoa-delinquency-escalation-process">The delinquency escalation steps</a>; <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the collection policy boards must adopt by January 1, 2027</a>.</p>
 
       <p>Whether you run a homeowners association or a condominium, Stellar can help implement the policy your counsel approves. <a href="/contact">Request a consultation</a> to review your current collections practice.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-association-liens-delinquency',
@@ -535,11 +540,13 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/condo-hoa-delinquency-escalation-process">A consistent delinquency escalation process</a>; <a href="/blog/illinois-condo-assessment-collection-possession-action">the Illinois possession action for unpaid assessments</a>.</p>
 
       <p>Stellar's <a href="/services/financial-management">financial management</a> team keeps ledgers, notices, and aging reports in a state where counsel can act on day one. <a href="/contact">Contact us</a> to review your association's delinquency records.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'read-condo-hoa-financial-statements',
     title: 'How Board Members Should Read Association Financial Statements',
+  seoTitle: 'How Board Members Should Read Association Financials',
     metaDescription:
       'A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement, and delinquency report in your monthly financial packet.',
     date: '2026-09-12',
@@ -619,7 +626,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Read next: <a href="/blog/illinois-condo-owners-independent-audit-rights">Owners’ right to demand an independent audit</a>; <a href="/blog/illinois-condo-hoa-budget-adoption-guide">the Illinois budget adoption steps</a>.</p>
 
       <p>Stellar delivers board packets built for this kind of reading -- reconciled, separated by fund, and aged. See our <a href="/services/financial-management">financial management</a> and board support services, or <a href="/contact">schedule a consultation</a> to review your current reporting.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-capital-project-loan-preparation',
@@ -708,7 +716,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Related reading: <a href="/blog/condo-special-assessments-illinois">How special assessments work in Illinois</a>; <a href="/blog/how-to-read-condo-reserve-study">how to read a condo reserve study</a>.</p>
 
       <p>Stellar supports condominium, HOA, and townhome boards through capital project planning and lender preparation. <a href="/contact">Request a consultation</a> to review your association's readiness.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-annual-budget-workbook',
@@ -800,7 +809,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-condo-hoa-budget-adoption-guide">Adopting the annual budget in Illinois</a>; <a href="/blog/how-to-read-condo-reserve-study">reading your reserve study before the budget</a>.</p>
 
       <p>Stellar builds budgets on this timeline with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to start your next cycle with three months of runway instead of three weeks.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-22-1-response-workflow',
@@ -900,7 +910,8 @@ export const scheduledFinancePosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/illinois-section-22-1-disclosure-board-guide">Section 22.1 disclosures</a>; <a href="/blog/illinois-22-1-disclosure-packet-checklist">the 22.1 packet checklist</a>.</p>
 
       <p>If your association's resale responses currently depend on whoever is available, Stellar can build the standing workflow instead. <a href="/contact">Schedule a consultation</a> with our team.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];
 

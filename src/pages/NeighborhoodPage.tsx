@@ -466,7 +466,7 @@ export default function NeighborhoodPage() {
                 </p>
                 <div className="flex flex-wrap gap-x-5 gap-y-1.5">
                   {related.propertyTypes.slice(0, 3).map((type) => (
-                    <span key={type} className="text-[10px] uppercase tracking-luxe text-slate-400">
+                    <span key={type} className="text-[11px] uppercase tracking-luxe text-slate-600">
                       {type}
                     </span>
                   ))}
@@ -476,7 +476,7 @@ export default function NeighborhoodPage() {
           </div>
 
           <div className="pt-8 border-t border-slate-200 flex flex-wrap items-center gap-x-10 gap-y-3">
-            <span className="text-[10px] uppercase tracking-luxe text-slate-400">Quick Links</span>
+            <span className="text-[11px] uppercase tracking-luxe text-slate-600">Quick Links</span>
             <Link
               to={parentHub}
               className="inline-flex items-center gap-2 text-sm font-light text-ink hover:text-gold-600 transition-colors"
@@ -535,7 +535,7 @@ export default function NeighborhoodPage() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Get Your Free Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

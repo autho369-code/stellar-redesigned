@@ -296,7 +296,7 @@ export function ContactForm() {
             <ol className="grid grid-cols-3 gap-2" aria-label="Form progress">
               {STEPS.map((label, index) => (
                 <li key={label} aria-current={step === index ? 'step' : undefined} className={`border-t-2 pt-3 text-xs font-semibold uppercase tracking-wide ${index <= step ? 'border-gold-500 text-ink' : 'border-slate-200 text-slate-500'}`}>
-                  <span className="block text-[10px] font-normal tracking-luxe text-slate-500">Step {index + 1} of {STEPS.length}</span>
+                  <span className="block text-[10px] font-normal tracking-luxe text-slate-600">Step {index + 1} of {STEPS.length}</span>
                   <span className="hidden sm:block mt-1">{label}</span>
                 </li>
               ))}
@@ -453,7 +453,7 @@ export function ContactForm() {
 
         {isBoardInquiry && (
           <div className="border border-slate-200 bg-ivory-50 p-5">
-            <p className="mb-2 text-[10px] uppercase tracking-luxe text-slate-500">Confidential</p>
+            <p className="mb-2 text-[10px] uppercase tracking-luxe text-slate-600">Confidential</p>
             <p className="text-sm font-light leading-relaxed text-slate-600">
               Most boards contact us while still under contract with their
               current manager. That is the normal case, not an awkward one. We

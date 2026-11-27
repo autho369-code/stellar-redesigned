@@ -54,11 +54,12 @@ export const firstTimeCondoBuyerGuideChicago = {
 <p>To see what good association management looks like, visit our <a href="/property-management-chicago">Chicago condominium association management</a> page.</p>
 
 <p>Related reading: <a href="/blog/illinois-section-22-1-disclosure-board-guide">The Illinois 22.1 disclosure guide</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   sources: [
     {
       title: 'Illinois Condominium Property Act, Section 22.1 (765 ILCS 605/22.1)',
-      url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2200',
+      url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62',
     },
     {
       title: 'Community Associations Institute — Homeowner Resources',

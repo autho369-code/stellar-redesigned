@@ -245,7 +245,7 @@ export default function BlogPost() {
         <div className="relative max-w-4xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-14 lg:pb-16">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-1.5 text-[10px] uppercase tracking-luxe text-slate-400 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[11px] uppercase tracking-luxe text-slate-600 flex-wrap">
               <li>
                 <Link to="/" className="hover:text-gold-600 transition-colors">
                   Home
@@ -397,7 +397,7 @@ export default function BlogPost() {
             </div>
           </div>
           <div className="lg:col-span-7 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0 lg:pl-12">
-            <p className="text-[10px] uppercase tracking-luxe text-slate-400 mb-5">Management in the communities we serve</p>
+            <p className="text-[11px] uppercase tracking-luxe text-slate-600 mb-5">Management in the communities we serve</p>
             {!clusterEntry && <div className="flex flex-wrap gap-3 mb-7">
               {locationLinks.map((neighborhood) => (
                 <Link key={neighborhood.slug} to={`/property-management-${neighborhood.slug}`} className="border border-slate-200 bg-white px-4 py-2 text-sm text-ink hover:border-gold-400 hover:text-gold-600 transition-colors">
@@ -485,7 +485,7 @@ export default function BlogPost() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Get a Free Consultation
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

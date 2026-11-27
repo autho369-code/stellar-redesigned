@@ -46,5 +46,6 @@ export const condoBoardEnterUnit = {
 <p>Also useful: <a href="/blog/who-pays-condo-water-leak-illinois">Who pays for a condo water leak</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">a board-ready emergency plan</a>.</p>
 
 <p>Boards avoid most entry disputes by being disciplined: adopt a written access policy, always give notice in writing, document every entry and its purpose, accompany any contractors, and communicate clearly with the owner before and after. Because access rules are governed by your specific declaration and the Act, boards should have the association attorney confirm the procedure. For coordinated, well-documented building access and repairs, Stellar Property Management's <a href="/services/maintenance-coordination">maintenance coordination</a> team can help — <a href="/contact">contact us</a> to learn more.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

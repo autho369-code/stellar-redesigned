@@ -51,5 +51,6 @@ export const selfManagedCondoProblems = {
 <p>Keep reading: <a href="/blog/how-many-associations-should-community-manager-handle">How many associations one manager should handle</a>.</p>
 
 <p>The goal is not to take authority away from the board. It is to give the board reliable execution and expert guidance so its decisions actually get carried out. To weigh whether professional condominium management is right for your association, <a href="/contact">contact Stellar Property Management</a> for a straightforward conversation.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

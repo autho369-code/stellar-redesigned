@@ -157,7 +157,7 @@ export default function ServiceAreas() {
                 {areas.map((neighborhood) => (
                   <Link key={neighborhood.slug} to={`/property-management-${neighborhood.slug}`} className="group block break-inside-avoid py-2.5">
                     <span className="font-light text-ink group-hover:text-gold-600 border-b border-transparent group-hover:border-gold-400 transition-colors duration-300">{neighborhood.name}</span>
-                    <span className="ml-2.5 text-[9px] uppercase tracking-luxe text-slate-400 whitespace-nowrap">{neighborhood.zipCodes.join(' · ')}</span>
+                    <span className="ml-2.5 text-[11px] uppercase tracking-luxe text-slate-600 whitespace-nowrap">{neighborhood.zipCodes.join(' · ')}</span>
                   </Link>
                 ))}
               </div>
@@ -193,7 +193,7 @@ export default function ServiceAreas() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Get a Free Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

@@ -53,5 +53,6 @@ export const illinoisCondoLawUpdates2026 = {
 <p>Also useful: <a href="/blog/illinois-condo-association-records-request-guide">Answering owner records requests</a>; <a href="/blog/illinois-condo-board-elections-proxies-ballots">board elections, proxies and secret ballots</a>.</p>
 
 <p>A professional management partner keeps those systems running so the board can focus on decisions rather than paperwork. Stellar Property Management helps Chicago-area boards stay compliant and organized. To talk through your association's needs, <a href="/contact">contact our team</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

@@ -3,7 +3,7 @@ import type { AreaContent } from './types';
 export const lincolnwood: AreaContent = {
   slug: 'lincolnwood',
   targetQuery: 'condo management lincolnwood il',
-  title: 'Condo Management in Lincolnwood, IL | From $30/Unit | Stellar',
+  title: 'Condo Management in Lincolnwood, IL | Stellar',
   metaDescription:
     'Condo, HOA and townhome management for Lincolnwood boards, a short drive from our Chicago office: taxes, snow, resales. Flat fee from $30 per unit a month.',
   // TODO(Jojo): how many associations and about how many units does Stellar

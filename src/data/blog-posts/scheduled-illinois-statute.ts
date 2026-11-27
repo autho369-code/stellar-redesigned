@@ -94,7 +94,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Read next: <a href="/blog/amend-illinois-condo-declaration-section-27">Amending the declaration under Section 27</a>; <a href="/blog/illinois-association-annual-meeting-guide">annual meeting notice, quorum and minutes</a>.</p>
 
       <p>If your board has received an offer, <a href="/contact">contact our office</a> to talk through the process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-assessment-collection-possession-action',
@@ -176,11 +177,13 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Related reading: <a href="/blog/condo-hoa-delinquency-escalation-process">A consistent delinquency escalation process</a>; <a href="/blog/illinois-condo-hoa-collection-policy-january-2027">the new collection policy law</a>.</p>
 
       <p>If delinquencies are building up, <a href="/contact">talk with us</a> about a consistent collection process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'amend-illinois-condo-declaration-section-27',
     title: 'Amending an Illinois Condo Declaration: What It Actually Takes',
+  seoTitle: 'Amending an Illinois Condo Declaration: What It Takes',
     metaDescription:
       'Section 27 sets the amendment threshold at two-thirds of voting owners unless your instruments say otherwise. And an amendment nobody records is not in force.',
     date: '2026-08-31',
@@ -268,7 +271,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-condo-law-updates-2026">The 2026 Illinois condo law updates</a>; <a href="/blog/illinois-condo-deconversion-75-or-85-percent">the 75% and 85% deconversion votes</a>.</p>
 
       <p>Planning an amendment? <a href="/contact">Talk with our team</a> before the vote is scheduled.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'cook-county-property-tax-appeal-condo-association',
@@ -356,7 +360,8 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/illinois-condo-hoa-budget-adoption-guide">Adopting the annual budget in Illinois</a>.</p>
 
       <p>Questions about your association&rsquo;s assessment calendar? <a href="/contact">Contact our office</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-short-term-rental-prohibited-buildings-list',
@@ -441,6 +446,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
       <p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">Adopting and enforcing association rules</a>; <a href="/blog/illinois-association-fines-notice-hearing">fining an owner the right way</a>.</p>
 
       <p>Questions about short-term rentals in your building? <a href="/contact">Contact Stellar Property Management</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

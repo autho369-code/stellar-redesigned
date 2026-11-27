@@ -100,11 +100,13 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <h2>How Stellar supports association finances</h2>
 
       <p>We prepare monthly financial packages, year-end accountings and audit support files for condominium, HOA and townhome boards across Chicago and the North Shore, and we coordinate directly with the association's independent CPA. Learn more about our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to talk through an audit request your board is facing. This article is general information, not legal advice; association counsel should review any formal demand before the board responds.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-association-fidelity-insurance-requirements',
     title: 'Fidelity Insurance for Illinois Associations and Their Manager',
+  seoTitle: 'Fidelity Insurance for Illinois Associations',
     metaDescription:
       'Illinois fidelity coverage rules for condo and HOA associations and management firms: Condo Act Section 12, CICAA 1-55 and the 2026 CAM Act change.',
     date: '2026-10-27',
@@ -197,11 +199,13 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <p>Related reading: <a href="/blog/illinois-condo-owners-independent-audit-rights">Owners’ right to demand an independent audit</a>; <a href="/blog/condo-hoa-directors-officers-insurance-guide">directors and officers insurance for volunteer boards</a>.</p>
 
       <p>We review fidelity limits against actual balances at each renewal, provide our own coverage certificates on request, and work with the association's broker so the board sees a clear comparison. See our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> for a review of your current coverage. This article is general information; the association's insurance broker and counsel should confirm that any specific policy satisfies the statutes and your governing documents.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-management-company-segregated-accounts-commingling',
     title: 'Association Money and Your Management Company: Illinois Rules',
+  seoTitle: 'Association Money and the Management Company: IL Rules',
     metaDescription:
       'Illinois requires managers to keep each association’s funds in separate custodial accounts in its own name. What 225 ILCS 427/55 means for boards.',
     date: '2026-10-29',
@@ -299,7 +303,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-association-fidelity-insurance-requirements">Illinois fidelity insurance requirements</a>.</p>
 
       <p>Every association we manage has its own accounts in its own name, with board-approved signers and statements the board can see directly. Learn more about our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to review how your association's money is held today. This article is general information, not legal advice; association counsel should confirm how these statutes apply to your community.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-association-reserve-funds-fdic-coverage',
@@ -397,7 +402,8 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <h2>How Stellar helps protect reserves</h2>
 
       <p>We report every reserve holding by bank and maturity each month, flag balances approaching the insurance limit, and prepare investment policy drafts for the board, its counsel and CPA to review. Explore our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> for a reserve safety review. This article is general information, not investment, legal or tax advice.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-insurance-deductible-charge-owner',
@@ -489,6 +495,7 @@ export const scheduledOct2026FinancePosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/condo-hoa-insurance-renewal-checklist">Preparing for insurance renewal</a>.</p>
 
       <p>We help boards draft deductible and owner insurance policies with counsel, document losses from the first call, run the notice and hearing process, and post charges accurately to owner ledgers. See our <a href="/services/financial-management">financial management services</a>, or <a href="/contact">contact us</a> to review your association's deductible approach. This article is general information, not legal advice; association counsel should review your declaration and any charge before it is issued.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

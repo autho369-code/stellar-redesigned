@@ -74,7 +74,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p><em>This article is educational information for association boards, not legal, financial, or insurance advice. Confirm current agency requirements with the applicable guides and consult your association counsel and insurance professional about your specific building.</em></p>
 
       <p>Want a review of how your association would answer today's questionnaire? <a href="/contact">Schedule a consultation</a> with our management team.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-master-policy-vs-ho6-board-guide',
@@ -134,7 +135,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p>Related reading: <a href="/blog/condo-hoa-insurance-renewal-checklist">An insurance renewal checklist for boards</a>; <a href="/blog/illinois-association-fidelity-insurance-requirements">fidelity coverage for the association and its manager</a>.</p>
 
       <p>Need help building an owner insurance communication your counsel can approve? <a href="/contact">Request a consultation</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'who-pays-condo-water-leak-illinois',
@@ -204,7 +206,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/condo-hoa-emergency-planning-checklist">A board-ready emergency plan</a>; <a href="/blog/can-condo-boards-enter-your-unit-illinois">when the association may enter a unit</a>.</p>
 
       <p><a href="/contact">Talk with our team</a> about building a water-event protocol for your association.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-facade-compliance-board-guide',
@@ -273,7 +276,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p><em>This article is educational information for association boards, not legal or engineering advice. Confirm current City of Chicago requirements with the department of buildings and retain a licensed design professional and association counsel for your building.</em></p>
 
       <p><a href="/contact">Schedule a consultation</a> to review your association's facade planning readiness.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'vintage-chicago-condo-capital-planning',
@@ -343,7 +347,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p>Read next: <a href="/blog/condo-hoa-vendor-rfp-checklist">Vendor scope, insurance and controls</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">association emergency planning</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to review your association's capital plan.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-directors-officers-insurance-guide',
@@ -408,7 +413,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p><em>This article is educational information for association boards, not legal or insurance advice. Coverage depends on your specific policy language; consult your association counsel and licensed insurance professional.</em></p>
 
       <p><a href="/contact">Schedule a consultation</a> to review your board's governance and documentation practices.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-hoa-ev-charging-board-process',
@@ -470,7 +476,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/condo-hoa-vendor-rfp-checklist">Writing a vendor RFP</a>; <a href="/blog/condo-hoa-emergency-planning-checklist">a board-ready emergency plan</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to build your association's EV charging process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-hoa-snow-removal-vendor-guide',
@@ -544,11 +551,13 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p><em>This article is educational information for association boards, not legal advice. Contract terms and liability questions depend on your facts and governing documents; consult association counsel and your insurance professional.</em></p>
 
       <p><a href="/contact">Talk with our team</a> before your next snow season bid.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-life-safety-board-planning',
     title: 'Chicago High-Rise Life-Safety Planning for Condominium Boards',
+  seoTitle: 'Chicago High-Rise Life-Safety Planning for Condo Boards',
     metaDescription:
       'Chicago high-rise condo boards: how to verify life-safety obligations, maintain systems and records, run resident education, and document board decisions.',
     date: '2026-09-21',
@@ -612,7 +621,8 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p><em>This article is educational information for association boards, not legal or engineering advice. Confirm current City of Chicago requirements with the applicable departments and retain a qualified fire-protection professional and association counsel for your building.</em></p>
 
       <p><a href="/contact">Schedule a consultation</a> to review your building's life-safety program.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-vendor-rfp-checklist',
@@ -687,6 +697,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
       <p>Read next: <a href="/blog/condo-hoa-emergency-planning-checklist">Association emergency planning</a>; <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago buildings</a>.</p>
 
       <p><a href="/contact">Request a consultation</a> to build your association's vendor procurement process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

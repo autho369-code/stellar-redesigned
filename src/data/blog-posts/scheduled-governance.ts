@@ -23,7 +23,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       },
       {
         title: 'Illinois General Not For Profit Corporation Act of 1986 (805 ILCS 105)',
-        url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2280&ChapterID=65',
+        url: 'https://www.ilga.gov/Legislation/ILCS/Details?ActID=2280&ChapterID=65',
       },
     ],
     content: `
@@ -84,7 +84,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Talk Through Your Documents With Us</h2>
       <p>Stellar Property Management supports boards across <a href="/property-management-chicago">Chicago</a> and the North Shore with condominium management, <a href="/services/hoa-management">HOA management</a>, and day-to-day board support. If your board is unsure which framework applies or wants a second set of eyes on its documents, <a href="/contact">schedule a consultation</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-association-records-request-guide',
@@ -158,7 +159,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Get Help Standardizing Your Process</h2>
       <p>Stellar Property Management runs records intake and production for condominium, HOA, and townhome boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your current policy and recordkeeping.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-board-closed-session-guide',
@@ -229,7 +231,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-association-annual-meeting-guide">Annual meeting notice, quorum and minutes</a>; <a href="/blog/illinois-condo-association-records-request-guide">answering owner records requests</a>.</p>
 
       <p>Stellar Property Management prepares agendas, packets, and minutes for condominium and HOA boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your meeting process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'electronic-voting-illinois-condo-hoa',
@@ -300,7 +303,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Plan Your Next Election With Support</h2>
       <p>Stellar Property Management coordinates notice, ballot, and meeting logistics for condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your election process.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'adopting-enforcing-condo-hoa-rules-illinois',
@@ -375,7 +379,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Review Your Rules With Us</h2>
       <p>Stellar Property Management helps condominium, HOA, and townhome boards consolidate and administer rules across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> for a rules and enforcement review.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'new-condo-board-member-first-30-days',
@@ -395,7 +400,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       },
       {
         title: 'Illinois General Not For Profit Corporation Act of 1986 (805 ILCS 105)',
-        url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2280&ChapterID=65',
+        url: 'https://www.ilga.gov/Legislation/ILCS/Details?ActID=2280&ChapterID=65',
       },
       {
         title: 'IDFPR Community Association Manager Licensing',
@@ -455,7 +460,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Onboarding Support for New Boards</h2>
       <p>Stellar Property Management provides orientation packets and ongoing <a href="/services/board-support">board support</a> for condominium and HOA boards in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to get your new directors up to speed.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-developer-turnover-checklist',
@@ -542,7 +548,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Support Through Transition</h2>
       <p>Stellar Property Management guides newly turned-over condominium, HOA, and townhome boards through document collection, vendor setup, and maintenance coordination in <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> before your turnover meeting.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-board-fiduciary-duty-audit',
@@ -566,7 +573,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       },
       {
         title: 'Illinois General Not For Profit Corporation Act of 1986 (805 ILCS 105)',
-        url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2280&ChapterID=65',
+        url: 'https://www.ilga.gov/Legislation/ILCS/Details?ActID=2280&ChapterID=65',
       },
     ],
     content: `
@@ -623,7 +630,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Run the Audit With Professional Support</h2>
       <p>Stellar Property Management helps condominium, HOA, and townhome boards build the documentation and <a href="/services/financial-management">financial controls</a> this review tests, across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> to review your governance practices.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-association-annual-meeting-guide',
@@ -647,7 +655,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
       },
       {
         title: 'Illinois General Not For Profit Corporation Act of 1986 (805 ILCS 105)',
-        url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2280&ChapterID=65',
+        url: 'https://www.ilga.gov/Legislation/ILCS/Details?ActID=2280&ChapterID=65',
       },
     ],
     content: `
@@ -701,7 +709,8 @@ export const scheduledGovernancePosts: BlogPost[] = [
       <p>Read next: <a href="/blog/illinois-condo-board-elections-proxies-ballots">How Illinois board elections work</a>; <a href="/blog/condo-hoa-board-communication-systems">board communication systems that reduce conflict</a>.</p>
 
       <p>Stellar Property Management handles notice packages, check-in, tabulation, and minutes for condominium, HOA, and townhome boards in <a href="/property-management-chicago">Chicago</a> and the North Shore, backed by ongoing <a href="/services/board-support">board support</a>. <a href="/contact">Schedule a consultation</a> before your next annual meeting.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-emergency-planning-checklist',
@@ -781,6 +790,7 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <h2>Build Your Plan With Us</h2>
       <p>Stellar Property Management builds and maintains emergency playbooks for condominium, HOA, and townhome boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore, supported by structured board processes. <a href="/contact">Schedule a consultation</a> to put a plan in place before you need it.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

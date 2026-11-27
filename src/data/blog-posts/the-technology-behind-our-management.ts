@@ -37,5 +37,6 @@ export const technologyBehindOurManagement = {
 <p>Read next: <a href="/blog/ai-in-condo-management">Where AI fits in condo management</a>; <a href="/blog/community-association-management-agreement-review">reviewing a management agreement</a>.</p>
 
 <p><em>Questions about how this works for your association? <a href="/contact">Contact us</a> — we are happy to show a board what their portal would look like.</em></p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

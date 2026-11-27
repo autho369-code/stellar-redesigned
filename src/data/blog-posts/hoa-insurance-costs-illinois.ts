@@ -1,6 +1,7 @@
 export const hoaInsuranceCosts = {
   slug: 'hoa-insurance-costs-illinois',
   title: 'Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois',
+  seoTitle: 'Why HOA and Condo Insurance Costs Are Rising in Illinois',
   metaDescription:
     'Association insurance premiums and deductibles are rising fast in Illinois. What drives the increases, how they hit budgets and HO-6 policies, what to do.',
   date: '2025-05-13',
@@ -49,5 +50,6 @@ export const hoaInsuranceCosts = {
 <p>Read next: <a href="/blog/condo-hoa-insurance-renewal-checklist">An insurance renewal checklist for boards</a>; <a href="/blog/condo-master-policy-vs-ho6-board-guide">the master policy versus HO-6 coverage</a>.</p>
 
 <p>Boards are not powerless. Work with a broker who specializes in community associations, review coverage, limits, and deductibles every year rather than auto-renewing, and invest in preventive maintenance to keep claims history clean. Budget realistically and fund reserves against the deductible exposure, and educate owners about HO-6 coverage. Disciplined <a href="/services/financial-management">financial management</a> turns an unpredictable renewal into a planned-for cost. To review your association's insurance and budgeting strategy, <a href="/contact">contact Stellar Property Management</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

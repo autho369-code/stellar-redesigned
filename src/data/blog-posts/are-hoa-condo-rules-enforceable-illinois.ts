@@ -48,5 +48,6 @@ export const hoaCondoRulesEnforceable = {
 <p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">Adopting and enforcing association rules</a>; <a href="/blog/illinois-association-fines-notice-hearing">the notice and hearing required before a fine</a>.</p>
 
 <p>Sound enforcement is systematic, not personal. That means a clearly written rulebook owners have actually received, a consistent and documented violation process, graduated enforcement from notice to hearing to fine, and an enforcement policy reviewed by the association attorney. Professional <a href="/services/violation-management">violation management</a> gives boards exactly that structure — fair, documented, and defensible. To put a consistent process in place, <a href="/contact">contact Stellar Property Management</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

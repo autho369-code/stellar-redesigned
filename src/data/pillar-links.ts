@@ -67,6 +67,8 @@ export const pillarGuides: Record<string, string[]> = {
     'evanston-condo-association-board-guide',
     'lakeview-condo-association-board-guide',
     'replace-condo-management-company-60-day-plan',
+    'financial-only-vs-full-service-condo-hoa-management-chicago',
+    'chicago-condo-management-transition-first-60-days',
   ],
 };
 

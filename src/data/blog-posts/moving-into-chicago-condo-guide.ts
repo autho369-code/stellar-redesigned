@@ -59,11 +59,12 @@ export const movingIntoChicagoCondoGuide = {
 <p>For the association side of a Chicago building, see our <a href="/property-management-chicago">Chicago condo association management</a> page.</p>
 
 <p>Keep reading: <a href="/blog/condo-repairs-owner-vs-association-illinois">Which repairs the owner pays and which the association pays</a>; <a href="/blog/first-time-condo-buyer-guide-chicago">what buyers should read before closing</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   sources: [
     {
       title: 'Illinois Condominium Property Act (765 ILCS 605)',
-      url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2200',
+      url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62',
     },
     {
       title: 'Community Associations Institute — Homeowner Resources',

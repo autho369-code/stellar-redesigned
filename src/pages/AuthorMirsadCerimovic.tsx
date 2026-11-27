@@ -5,6 +5,7 @@ import { SEOHead } from '../components/seo/SEOHead';
 import { ServiceFAQ } from '../components/seo/ServiceFAQ';
 import { founderFaqs } from '../data/founder-faqs';
 import { blogPosts } from '../data/blog-posts';
+import { brand } from '../brand/brand.config';
 
 const PROFILE_URL = 'https://www.stellarpropertygroup.com/about/mirsad-cerimovic';
 
@@ -213,7 +214,7 @@ export default function AuthorMirsadCerimovic() {
   return (
     <>
       <SEOHead
-        title="Mirsad Cerimovic, CMCA | Founder, Stellar Property Management"
+        title="Mirsad Cerimovic, CMCA | Founder | Stellar"
         description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS, managing 30+ condo and HOA associations."
         canonical={PROFILE_URL}
         ogType="profile"
@@ -266,6 +267,7 @@ export default function AuthorMirsadCerimovic() {
                 devoted exclusively to condominium, HOA, and townhome
                 associations.
               </p>
+              <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
             </div>
           </div>
         </div>
