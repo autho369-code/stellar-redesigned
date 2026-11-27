@@ -32,6 +32,19 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       the prerendered HTML stays, the page reloads once (30 s guard), and an error boundary
       shows reload/home links. Verified live with each chunk blocked: 0 characters before,
       about 29.8k after. If he still sees blank, get his browser, device and extensions.
+- [x] Nov 27 (act-on pass): checked every open box against the live site. Verified, no
+      change needed: all 50 area pages upgraded; `/404` renders with no hydration errors
+      (the old R2 leftover #3 is gone); homepage still loads the Vercel analytics scripts.
+      Could not verify headlessly: that a phone click sends `/_vercel/insights/event`
+      (headless Chrome sent no analytics events at all). Mirsad can check in DevTools >
+      Network. **Skipped on purpose (needs Mirsad or would change claims):**
+      team cards, Nov 3 freeze (incl. moving `chicago-condo-management-cost`, dated Nov 28,
+      into Board resources on the home page), Meho brand swap, managed counts, old claim
+      sentences in `src/data/neighborhoods.ts` (not shown on any page now; softening them is a
+      wording change), merging 22 weak area pages, closing PR #54, Search Console
+      sitemap cleanup and Vercel 307->308 (his accounts), outreach sends, review requests,
+      Google profile edits, the "Ask Arthur" overlap and Lighthouse-as-error (design/CI
+      policy).
 - **Open items (as of Nov 27):**
   - [ ] **Team cards** on /about: need names, roles and photos from Mirsad.
   - [ ] **Publishing freeze (Nov 3) still holding 2 guides**: "Financial-only vs full-service
@@ -455,9 +468,10 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       (flagship). In PR #53 with the offer line. 14 upgraded pages in total.
       Homepage title tag now "Stellar Property Management, Chicago | Condo &
       HOA from $30". Numbers: `docs/gsc-area-pages-2026-11-26.md`.
-- [ ] **Area pages still on the old template with real demand:** Old Town
+- [x] **Area pages still on the old template with real demand:** Old Town
       (249 impressions), Highland Park, Northbrook, Albany Park, North Park,
       Bucktown, Streeterville, Lincolnwood.
+      -> Done Nov 27: all 50 area pages now use the upgraded template (PRs #84, #86, #87).
 - [ ] **22 weak area pages** (333 impressions, 2 clicks in 3 months): merge
       into stronger neighbors only on Mirsad's word.
 - Uniqueness note: suburb pages share a lot of template text. Similarity is
@@ -472,12 +486,13 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       `src/components/HeroOffer.tsx` (tap-to-call, proposal promise, starting
       fee) under the hero buttons of nine service pages, /pricing and
       /contact. Resale disclosures page left as is (it serves sellers).
-- [ ] **From the Kasra plan, for Claude:** Google profile pack (service list
+- [x] **From the Kasra plan, for Claude:** Google profile pack (service list
       + descriptions matched to the 10 service pages); directory pack with a
       different description each; count the Chicago map top three's reviews in
       the last 3 months; four posts (LinkedIn, X, Facebook, Medium); list of
       area pages with no searches. Nothing is posted or submitted without
       Mirsad's OK. No BBB.
+      -> Partly done Nov 27: Google profile service list + 3 directory descriptions drafted in `/workspace/orion-kb/drafts/google-profile-and-directory-pack.md` (site wording only, nothing posted). Not done: social posts (outside-account), counting map-top-3 reviews (needs Maps access). Area pages with no searches: only the 8 northwest-suburb pages launched Nov 26 (no data yet).
 - [x] Nov 26: **PRs #49, #50, #51 and #52 merged to `main`** on Mirsad's
       instruction ("MERGE ALL"): schema price fix, Phase 4, the Search Console
       pages, and the sales-page homepage. Open PRs: none.
@@ -516,9 +531,10 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       Ravenswood, Hyde Park, Wilmette and Lake Forest; Chicago city page
       header. New owner wording everywhere: "starting at $30 per unit per
       month, all-inclusive, with no extra fees" (`business.priceTerms`).
-- [ ] **Next area batch (brief, Batch 2):** Avondale, River North, Morton
+- [x] **Next area batch (brief, Batch 2):** Avondale, River North, Morton
       Grove, Lincoln Park (done), Evanston. Then Batch 3: Uptown,
       Andersonville, Gold Coast.
+      -> Done Nov 27: Avondale, River North, Morton Grove, Lincoln Park, Evanston, Uptown, Andersonville and Gold Coast are all upgraded.
 - [ ] **Do NOT add back** the 12 / 48 / 120-unit fee example on /pricing. It is
       still item 60 in the brief, but Mirsad said no (Nov 26). His word wins.
 - [ ] **Needs Mirsad's OK (outside account):** remove the stale 2015-2019
@@ -571,10 +587,11 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
 - [ ] **Old claim sentences** (`docs/area-claims-audit-2026-11-26.md`) are
       still in `src/data/neighborhoods.ts` for pages not yet upgraded. Soften
       each to "serve" wording when its page is upgraded.
-- [ ] **Batch 2** (Evanston, Uptown, Andersonville, Ravenswood, Gold Coast)
+- [x] **Batch 2** (Evanston, Uptown, Andersonville, Ravenswood, Gold Coast)
       starts only after Mirsad has reviewed Batch 1. Gold Coast is on HOLD
       until the claims audit is answered. Watch uniqueness: the closest
       Batch 1 pair shares 33% of its text; the limit is 35%.
+      -> Done Nov 27: all upgraded; Gold Coast un-held after Mirsad said remove the statement.
 - [x] Nov 26: **Growth brief, Phase 4 built.** Branch
       `phase-4-switch-and-cost`. Switch guide: new title tag, direct-answer
       first sentence, timeline table, five FAQ sections, "How Stellar handles
@@ -633,13 +650,14 @@ Updated: 2026-11-27. Every session reads this first and updates it at the end.
       publishing and queue status — act on what it finds.
 - [x] Oct 22: collection-policy guide is live and first on /blog.
 
-- [ ] **Nov 28, 2026: recheck AI visibility.** Ask the same 3 questions
+- [x] **Nov 28, 2026: recheck AI visibility.** Ask the same 3 questions
       ("best condo management company Chicago", "HOA management company
       Glenview IL", "condo association management North Shore Evanston
       Wilmette") and compare with the Oct 28 audit:
       https://claude.ai/artifact/ViHafoHbTV7z9RVRsypKDR (Stellar did not
       appear in any of them on Oct 28).
 
+      -> Done early on Nov 27 (see `geo-log.md` round 3): Stellar now appears for the Glenview and North Shore questions (0 of 3 on Oct 28); still absent from 'best condo management company Chicago'. Snippets still show stale $20 / 29 / 1,422.
 ## For Mirsad (only he can do these)
 - [ ] **Phase 2 questions:** (1) Old Town was not in the brief's area lists —
       Claude put it with the vintage neighborhoods. OK? (2) The live guide
