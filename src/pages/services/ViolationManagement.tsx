@@ -53,7 +53,7 @@ export default function ViolationManagement() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />

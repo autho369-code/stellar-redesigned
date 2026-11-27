@@ -43,7 +43,7 @@ export default function Reviews() {
       </Helmet>
 
       <section className="relative bg-paper overflow-hidden flex items-center">
-        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
+        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
         <div className="relative max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 pb-24 w-full">
           <div className="max-w-3xl mb-14">
             <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" />Your Experience Matters</p>
@@ -70,7 +70,7 @@ export default function Reviews() {
 
           <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm">
             <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-gold-600 transition-colors">Read all public Google reviews</a>
-            <a href="tel:+17737280652" className="text-slate-500 hover:text-gold-600 transition-colors">Call 773.728.0652</a>
+            <a href={`tel:${brand.phone.e164}`} className="text-slate-500 hover:text-gold-600 transition-colors">Call {brand.phone.dotted}</a>
           </div>
         </div>
       </section>

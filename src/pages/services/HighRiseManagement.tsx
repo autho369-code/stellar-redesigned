@@ -66,7 +66,7 @@ export default function HighRiseManagement() {
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       <section className="relative overflow-hidden border-b border-slate-200 bg-paper">
-        <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
+        <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative mx-auto max-w-7xl px-5 pb-20 pt-36 sm:px-8 lg:px-10 lg:pb-24 lg:pt-44">
           <p className="eyebrow mb-6 flex items-center gap-4 text-gold-600"><span className="accent-rule" />Chicago Building-Type Expertise</p>
           <div className="grid items-end gap-10 lg:grid-cols-12">

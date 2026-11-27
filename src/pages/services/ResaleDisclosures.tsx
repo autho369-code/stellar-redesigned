@@ -8,6 +8,7 @@ import { CTASection } from '../../components/ui/CTASection';
 import { ClusterGuides } from '../../components/seo/ClusterGuides';
 import { ServiceFAQ } from '../../components/seo/ServiceFAQ';
 import { resaleDisclosureFaqs } from '../../data/service-faqs';
+import { brand } from '../../brand/brand.config';
 
 const documents = [
   {
@@ -97,7 +98,7 @@ export default function ResaleDisclosures() {
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       <section className="relative overflow-hidden border-b border-slate-200 bg-paper">
-        <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
+        <div className="absolute inset-0 opacity-[0.35]" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative mx-auto max-w-7xl px-5 pb-20 pt-36 sm:px-8 lg:px-10 lg:pb-24 lg:pt-44">
           <p className="eyebrow mb-6 flex items-center gap-4 text-gold-600"><span className="accent-rule" />For Sellers, Agents, Attorneys &amp; Lenders</p>
           <div className="grid items-end gap-10 lg:grid-cols-12">
@@ -116,7 +117,7 @@ export default function ResaleDisclosures() {
           </div>
           <div className="mt-12 flex flex-wrap gap-5">
             <Link to="/contact?inquiry=general&source=resale-disclosures" className="inline-flex items-center gap-3 bg-ink px-9 py-4 text-sm font-medium text-paper transition-colors hover:bg-navy-700">Request Documents <ArrowRight className="h-4 w-4" /></Link>
-            <a href="tel:+17737280652" className="inline-flex items-center gap-2 py-4 text-sm text-gold-600 hover:text-gold-500">Call 773.728.0652</a>
+            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 py-4 text-sm text-gold-600 hover:text-gold-500">Call {brand.phone.dotted}</a>
           </div>
         </div>
       </section>

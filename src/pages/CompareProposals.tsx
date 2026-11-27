@@ -199,7 +199,7 @@ export default function CompareProposals() {
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       <section className="relative overflow-hidden border-b border-slate-200 bg-paper print:border-0">
-        <div className="absolute inset-0 opacity-[0.35] print:hidden" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
+        <div className="absolute inset-0 opacity-[0.35] print:hidden" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative mx-auto max-w-5xl px-5 pb-16 pt-36 sm:px-8 lg:px-10 lg:pt-44 print:pt-8">
           <p className="eyebrow mb-6 flex items-center gap-4 text-gold-600 print:hidden"><span className="accent-rule" />A Free Tool For Boards</p>
           <h1 className="mb-7 text-balance font-display text-4xl font-light leading-[1.05] text-ink lg:text-6xl">

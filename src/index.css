@@ -10,7 +10,7 @@
 
   body {
     font-family: 'Inter Variable', 'Inter', system-ui, sans-serif;
-    background-color: #f6f8fa;
+    background-color: rgb(var(--color-paper));
     color: #0d2743;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

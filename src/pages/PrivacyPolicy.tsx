@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/seo/SEOHead';
+import { brand } from '../brand/brand.config';
 
 const sections = [
   {
@@ -110,7 +111,7 @@ const sections = [
         <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
           mirsad@stellarpropertygroup.com
         </a>{' '}
-        or 773.728.0652. Note that information forming part of an association&rsquo;s official
+        or {brand.phone.dotted}. Note that information forming part of an association&rsquo;s official
         records (such as violation reports or board nominations) may be subject to retention
         requirements under the association&rsquo;s governing documents and Illinois law, which can
         limit deletion.
@@ -169,7 +170,7 @@ export default function PrivacyPolicy() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -208,7 +209,7 @@ export default function PrivacyPolicy() {
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about this policy</p>
             <p className="text-slate-600 font-light leading-relaxed">
               Stellar Property Management · 5107 N Western Ave #1S, Chicago, IL 60625 ·{' '}
-              <a href="tel:+17737280652" className="text-gold-600 hover:text-gold-500">773.728.0652</a> ·{' '}
+              <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500">{brand.phone.dotted}</a> ·{' '}
               <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
                 mirsad@stellarpropertygroup.com
               </a>

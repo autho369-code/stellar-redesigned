@@ -12,6 +12,7 @@ import {
   type ContentCluster,
 } from '../data/content-silos';
 import TrustBar from '../components/TrustBar';
+import { brand } from '../brand/brand.config';
 
 const topicSeo: Record<ContentCluster, { title: string; description: string; intro: string }> = {
   governance: {
@@ -95,7 +96,7 @@ export default function BlogTopic() {
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       <header className="relative overflow-hidden bg-paper border-b border-slate-200">
-        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
+        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-24">
           <nav aria-label="Breadcrumb" className="mb-10">
             <ol className="flex items-center gap-1.5 text-[11px] uppercase tracking-luxe text-slate-600 flex-wrap">
@@ -170,7 +171,7 @@ export default function BlogTopic() {
           <p className="text-slate-600 font-light leading-relaxed mb-9">Tell us what your board is facing and request a management proposal built around your community.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to={`/contact?inquiry=quote&source=topic-${clusterKey}`} className="inline-flex items-center gap-2 bg-ink text-paper px-8 py-4 text-sm hover:bg-navy-700">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
-            <a href="tel:+17737280652" className="inline-flex items-center gap-2 border border-slate-300 text-ink px-8 py-4 text-sm hover:border-gold-500"><Phone className="w-4 h-4" />773.728.0652</a>
+            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 border border-slate-300 text-ink px-8 py-4 text-sm hover:border-gold-500"><Phone className="w-4 h-4" />{brand.phone.dotted}</a>
           </div>
         </div>
       </section>

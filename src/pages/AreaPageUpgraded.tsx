@@ -8,6 +8,7 @@ import type { AreaContent } from '../data/areas';
 import type { Neighborhood } from '../data/neighborhoods';
 import { publishedStellarData } from '../data/stellarData';
 import TrustBar from '../components/TrustBar';
+import { brand } from '../brand/brand.config';
 
 interface GuideLink { slug: string; title: string; category: string }
 
@@ -109,7 +110,7 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
         <section className="relative overflow-hidden bg-paper">
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.35]"
-            style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }}
+            style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }}
             aria-hidden
           />
           <div className={`relative ${innerClass} pb-16 pt-36 lg:pb-20 lg:pt-44`}>
@@ -135,11 +136,11 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
               </Link>
               <a
-                href="tel:7737280652"
+                href={`tel:${brand.phone.digits}`}
                 data-track-location="area-page"
                 className="inline-flex items-center gap-3 border border-slate-300 px-9 py-4 text-sm font-medium tracking-wide text-ink transition-colors duration-300 hover:border-gold-500 hover:text-gold-600"
               >
-                <Phone className="h-4 w-4" aria-hidden /> 773.728.0652
+                <Phone className="h-4 w-4" aria-hidden /> {brand.phone.dotted}
               </a>
             </div>
             <p className="mt-9 text-[10px] uppercase tracking-luxe text-slate-500">

@@ -230,7 +230,7 @@ export default function AuthorMirsadCerimovic() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -407,11 +407,11 @@ export default function AuthorMirsadCerimovic() {
                     mirsad@stellarpropertygroup.com
                   </a>
                   <a
-                    href="tel:+17737280652"
+                    href={`tel:${brand.phone.e164}`}
                     className="flex items-center gap-3 text-slate-600 hover:text-gold-600 transition-colors"
                   >
                     <Phone className="w-4 h-4 shrink-0" strokeWidth={1.5} />
-                    773.728.0652
+                    {brand.phone.dotted}
                   </a>
                   <a
                     href={LINKEDIN_URL}
