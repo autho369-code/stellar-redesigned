@@ -16,8 +16,8 @@ const contactDetails = [
   },
   {
     title: 'Phone',
-    lines: ['773.728.0652'],
-    href: 'tel:7737280652',
+    lines: [brand.phone.dotted],
+    href: `tel:${brand.phone.digits}`,
     linkLabel: 'Call Us',
     sub: 'Mon-Fri 9am-5pm CT',
   },
@@ -86,7 +86,7 @@ export default function Contact() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -202,12 +202,12 @@ export default function Contact() {
               </p>
               <div className="flex flex-wrap items-center gap-6">
                 <a
-                  href="tel:7737280652"
+                  href={`tel:${brand.phone.digits}`}
                   data-track-location="contact"
                   className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   <Phone className="w-4 h-4" strokeWidth={1.25} />
-                  Call 773.728.0652
+                  Call {brand.phone.dotted}
                 </a>
                 <p className="text-[10px] uppercase tracking-luxe text-slate-600">
                   Available 24 hours a day, 7 days a week

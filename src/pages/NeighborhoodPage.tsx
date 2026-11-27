@@ -10,6 +10,7 @@ import { getAreaGuides } from '../data/clusters';
 import { getAreaContent } from '../data/areas';
 import AreaPageUpgraded from './AreaPageUpgraded';
 import TrustBar from '../components/TrustBar';
+import { brand } from '../brand/brand.config';
 
 const whyChoose = [
   {
@@ -44,7 +45,7 @@ export default function NeighborhoodPage() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -138,7 +139,7 @@ export default function NeighborhoodPage() {
     },
     {
       q: `How do we switch our ${neighborhood.name} association to Stellar?`,
-      a: `Switching is a managed 30–60 day transition: once your board signs, we retrieve records from the outgoing firm, migrate banking and vendor relationships, notify owners, and open your board and resident portals. Call 773.728.0652 or request a proposal online to start.`,
+      a: `Switching is a managed 30–60 day transition: once your board signs, we retrieve records from the outgoing firm, migrate banking and vendor relationships, notify owners, and open your board and resident portals. Call ${brand.phone.dotted} or request a proposal online to start.`,
     },
     // Phrased the way boards ask an AI assistant for a recommendation.
     {
@@ -203,7 +204,7 @@ export default function NeighborhoodPage() {
           className="absolute inset-0 opacity-[0.35] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -236,11 +237,11 @@ export default function NeighborhoodPage() {
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href="tel:7737280652"
+                  href={`tel:${brand.phone.digits}`}
               data-track-location="area-page"
                   className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 hover:text-gold-600 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
-                  <Phone className="w-4 h-4" /> 773.728.0652
+                  <Phone className="w-4 h-4" /> {brand.phone.dotted}
                 </a>
               </div>
             </div>
@@ -517,7 +518,7 @@ export default function NeighborhoodPage() {
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-paper)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-paper)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
           aria-hidden
@@ -541,11 +542,11 @@ export default function NeighborhoodPage() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href="tel:7737280652"
+              href={`tel:${brand.phone.digits}`}
               data-track-location="area-page"
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-4 h-4" /> Call 773.728.0652
+              <Phone className="w-4 h-4" /> Call {brand.phone.dotted}
             </a>
           </div>
         </div>

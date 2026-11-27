@@ -134,7 +134,7 @@ export default function Pricing() {
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>
 
       <section className="relative bg-paper overflow-hidden border-b border-slate-200">
-        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
+        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-28">
           <div className="grid lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-7">
@@ -327,7 +327,7 @@ export default function Pricing() {
           <p className="eyebrow text-gold-600 mb-7 flex items-center justify-center gap-4"><span className="accent-rule" /> A Board-Specific Quote <span className="accent-rule" /></p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.06] mb-8">See your actual scope and <em className="font-medium text-gold-600">flat monthly fee.</em></h2>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-10 max-w-2xl mx-auto">Speak directly with a managing partner. We will review your current agreement, building needs, and board priorities before preparing a written proposal.</p>
-          <div className="flex flex-wrap justify-center gap-5"><Link to="/contact?inquiry=quote&source=pricing" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-9 py-4 text-sm font-medium transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link><a href="tel:7737280652" className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-9 py-4 text-sm font-medium transition-colors"><Phone className="w-4 h-4" /> 773.728.0652</a></div>
+          <div className="flex flex-wrap justify-center gap-5"><Link to="/contact?inquiry=quote&source=pricing" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-9 py-4 text-sm font-medium transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link><a href={`tel:${brand.phone.digits}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-9 py-4 text-sm font-medium transition-colors"><Phone className="w-4 h-4" /> {brand.phone.dotted}</a></div>
         </div>
       </section>
     </>

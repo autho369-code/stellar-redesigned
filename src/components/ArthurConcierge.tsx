@@ -8,6 +8,7 @@ import {
   type OwnerProfile,
 } from '../lib/ownerAuth';
 import { getSupabase } from '../lib/supabaseClient';
+import { brand } from '../brand/brand.config';
 
 /**
  * Arthur — the Stellar site concierge.
@@ -587,8 +588,8 @@ export default function ArthurConcierge() {
 
           {(authView === 'chat' || !!owner) && (
           <div className="px-5 pb-3 flex items-center justify-between">
-            <span className="text-[9px] text-slate-400 font-light">Building emergency? Call 773.728.0652</span>
-            <a href="tel:7737280652" className="text-[9px] uppercase tracking-luxe text-gold-600 inline-flex items-center gap-1">
+            <span className="text-[9px] text-slate-400 font-light">Building emergency? Call {brand.phone.dotted}</span>
+            <a href={`tel:${brand.phone.digits}`} className="text-[9px] uppercase tracking-luxe text-gold-600 inline-flex items-center gap-1">
               Call now <ArrowUpRight className="w-3 h-3" />
             </a>
           </div>

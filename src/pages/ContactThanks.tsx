@@ -23,7 +23,7 @@ export default function ContactThanks() {
       <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-paper">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.35]"
-          style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }}
+          style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }}
           aria-hidden
         />
         <div className="relative mx-auto w-full max-w-3xl px-5 pb-24 pt-36 sm:px-8 lg:px-10">

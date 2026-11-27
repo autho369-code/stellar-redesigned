@@ -196,7 +196,7 @@ export default function CondoLiving() {
           className="absolute inset-0 opacity-[0.06] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-paper)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-paper)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
         />
@@ -634,8 +634,8 @@ export default function CondoLiving() {
                     <p className="text-sm text-paper/60 font-light leading-relaxed">Everything else — dripping faucets, burnt-out hallway lights, amenity issues. Photos help; they cut diagnosis time in half.</p>
                   </div>
                 </div>
-                <a href="tel:7737280652" className="mt-8 inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-7 py-3.5 transition-colors duration-300 text-sm tracking-wide">
-                  <Phone className="w-4 h-4" /> 24/7 · 773.728.0652
+                <a href={`tel:${brand.phone.digits}`} className="mt-8 inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-7 py-3.5 transition-colors duration-300 text-sm tracking-wide">
+                  <Phone className="w-4 h-4" /> 24/7 · {brand.phone.dotted}
                 </a>
               </div>
               <p className="text-sm text-slate-500 font-light">
@@ -709,7 +709,7 @@ export default function CondoLiving() {
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
           style={{
             backgroundImage:
-              'linear-gradient(#f6f8fa 1px, transparent 1px), linear-gradient(90deg, #f6f8fa 1px, transparent 1px)',
+              'linear-gradient(rgb(var(--color-paper)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-paper)) 1px, transparent 1px)',
             backgroundSize: '96px 96px',
           }}
           aria-hidden

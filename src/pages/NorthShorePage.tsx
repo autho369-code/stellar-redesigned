@@ -6,6 +6,7 @@ import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business } from '../data/business';
 import TrustBar from '../components/TrustBar';
+import { brand } from '../brand/brand.config';
 
 // Glenview leads: it is the flagship North Shore market.
 const northShoreCommunities = neighborhoods
@@ -115,7 +116,7 @@ export default function NorthShorePage() {
       </Helmet>
 
       <section className="relative bg-paper overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
+        <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-24">
           <nav className="flex items-center gap-2 text-xs tracking-wide text-slate-500 mb-10">
             <Link to="/">Home</Link><span>/</span><Link to="/service-areas">Service Areas</Link><span>/</span><span className="text-ink">North Shore</span>
@@ -133,7 +134,7 @@ export default function NorthShorePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact?inquiry=quote&source=north-shore-hub" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-8 py-4 text-sm transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
-                <a href="tel:+17737280652" className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-8 py-4 text-sm transition-colors"><Phone className="w-4 h-4" />773.728.0652</a>
+                <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-8 py-4 text-sm transition-colors"><Phone className="w-4 h-4" />{brand.phone.dotted}</a>
               </div>
             </div>
           </div>

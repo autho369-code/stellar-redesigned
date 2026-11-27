@@ -3,6 +3,17 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 27: **Eight northwest-suburb area pages live** (PR #84): Park Ridge, Des Plaines,
+      Mount Prospect, Arlington Heights, Palatine, Buffalo Grove, Schaumburg, Northfield.
+      Each has a sourced housing snapshot (Census ACS via CMAP, DePaul IHS), village rules
+      with source links, issues tied to guides, 5 FAQs. They own the `northwest` guide list in
+      `src/data/clusters.ts` so curated guides differ from the North Shore pages (that cut the
+      shared text under the 35% limit). `managed: null` on all eight; no client counts. Review
+      the village facts once a year (fees and ordinances change).
+- [x] Nov 27: **R1 leftovers (safe part):** the hero grid colors and the page background use
+      the tokens instead of raw hex, and the phone number in JSX comes from `brand.phone`
+      (20 files). Prerendered HTML is identical to before. Still open: the company name is typed
+      by hand in about 90 component and page files, so the brand-swap dry run still fails.
 - [x] Nov 26: **R9 / D13 run.** Results, rollback commits and what is open
       are in `docs/LAUNCH-NOTES.md`. Open after R9: request indexing in
       Search Console (quota exceeded on Nov 26; try again), brand swap fails
