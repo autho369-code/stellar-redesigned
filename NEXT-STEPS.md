@@ -3,6 +3,14 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D9 (guides part)**: every guide with three or more
+      sections has a sticky "On this page" list on wide screens (xl and up),
+      `src/components/ArticleToc.tsx`; h2 ids are added after the mid-CTA
+      split so the proposal blocks did not move. The page-date and uniqueness
+      scripts skip `[data-toc]`. Fixed two leftover "manages 29" lines (guide
+      author box, founder FAQ) -> "more than 30"; the build guard now catches
+      "manages 29". Still open in D9: service-page sticky list, blog index
+      chips, static map (no map image source; not built).
 - [x] Nov 26: **D12 (part)**: Uptown and Andersonville upgraded
       (`src/data/areas/uptown.ts`, `andersonville.ts`); every issue rests on
       its linked guide; no client counts. Ravenswood got three supported

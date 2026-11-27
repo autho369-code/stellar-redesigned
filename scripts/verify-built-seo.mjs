@@ -61,7 +61,7 @@ for (const url of urls) {
   // Owner, 2026-11-26: public pages show rounded figures ("30+ associations",
   // "approximately 1,500 residences") so they do not change with each new
   // building. Exact counts must not come back.
-  if (/\b29 (Chicago-area |condominium, |condo, )?(associations|communities)|all 29\b|1,422|\b1422\b|1,495/i.test(html)) {
+  if (/\bmanag(?:es|ing) 29\b|\b29 (Chicago-area |condominium, |condo, )?(associations|communities)|all 29\b|1,422|\b1422\b|1,495/i.test(html)) {
     errors.push(`${route}: contains an exact portfolio count; use the rounded figures from the brand file`);
   }
   // Placeholders must never reach production.
