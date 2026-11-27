@@ -118,7 +118,7 @@ export default function NorthShorePage() {
       <section className="relative bg-paper overflow-hidden">
         <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(rgb(var(--color-ivory-200)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--color-ivory-200)) 1px, transparent 1px)', backgroundSize: '96px 96px' }} />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-24">
-          <nav className="flex items-center gap-2 text-xs tracking-wide text-slate-500 mb-10">
+          <nav className="flex items-center gap-2 text-xs tracking-wide text-slate-600 mb-10">
             <Link to="/">Home</Link><span>/</span><Link to="/service-areas">Service Areas</Link><span>/</span><span className="text-ink">North Shore</span>
           </nav>
           <div className="grid lg:grid-cols-12 gap-10 items-end">
@@ -134,7 +134,7 @@ export default function NorthShorePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact?inquiry=quote&source=north-shore-hub" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-8 py-4 text-sm transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
-                <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-8 py-4 text-sm transition-colors"><Phone className="w-4 h-4" />{brand.phone.dotted}</a>
+                <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-8 py-4 text-sm transition-colors"><Phone className="w-4 h-4" />{brand.phone.display}</a>
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function NorthShorePage() {
           <div className="lg:col-span-6 lg:col-start-7 bg-ivory-100 border border-slate-200 p-9 lg:p-11">
             <h3 className="font-display text-2xl text-ink mb-5">Local rules still matter.</h3>
             <p className="text-slate-600 font-light leading-relaxed mb-5">North Shore municipalities maintain their own permit, property-maintenance, and building-code processes. A board should confirm the current local requirements before authorizing common-element work.</p>
-            <p className="text-sm text-slate-500 font-light leading-relaxed mb-7">Stellar coordinates vendors and project administration; association counsel, engineers, architects, reserve specialists, and municipal officials remain the appropriate sources for legal and technical determinations.</p>
+            <p className="text-sm text-slate-600 font-light leading-relaxed mb-7">Stellar coordinates vendors and project administration; association counsel, engineers, architects, reserve specialists, and municipal officials remain the appropriate sources for legal and technical determinations.</p>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
               <a href="https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&Chapter=PROPERTY&ChapterID=62&MajorTopic=RIGHTS+AND+REMEDIES&Print=True" target="_blank" rel="noopener noreferrer" className="text-sm text-gold-600 hover:text-gold-500">Illinois Condominium Property Act</a>
               <a href="https://www.wilmette.gov/191/Permit-Submittals" target="_blank" rel="noopener noreferrer" className="text-sm text-gold-600 hover:text-gold-500">Example: Wilmette permit guidance</a>

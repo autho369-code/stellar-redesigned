@@ -142,7 +142,7 @@ export const smallCondoManagementFaqs: ServiceFAQItem[] = [
 export const maintenanceCoordinationFaqs: ServiceFAQItem[] = [
   {
     question: 'What happens when heat or hot water goes out in the building?',
-    answer: 'In nearly every condominium the boiler and distribution piping are common elements, which makes restoring service the association’s responsibility rather than an individual owner’s. Report it to the 24/7 emergency line at 773.728.0652 rather than waiting for business hours. From there the sequence is dispatch a licensed mechanical contractor, confirm the cause, authorize the repair under the board’s spending authority, and keep residents informed until service is back. A building without heat in cold weather is an emergency, not a work order.',
+    answer: 'In nearly every condominium the boiler and distribution piping are common elements, which makes restoring service the association’s responsibility rather than an individual owner’s. Report it to the 24/7 emergency line at 773-728-0652 rather than waiting for business hours. From there the sequence is dispatch a licensed mechanical contractor, confirm the cause, authorize the repair under the board’s spending authority, and keep residents informed until service is back. A building without heat in cold weather is an emergency, not a work order.',
   },
   {
     question: 'How are residents told about an outage and when service will return?',
@@ -154,7 +154,7 @@ export const maintenanceCoordinationFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'Who answers the emergency line after hours?',
-    answer: 'The 24/7 emergency line at 773.728.0652 reaches a person rather than a voicemail box checked the next morning. It is for conditions that threaten people or property and cannot wait for business hours: burst pipes, no heat in cold weather, flooding, elevator entrapment, fire and life-safety alarms, roof or facade failures, and power loss to common areas. For anything life-threatening, call 911 first and the emergency line second.',
+    answer: 'The 24/7 emergency line at 773-728-0652 reaches a person rather than a voicemail box checked the next morning. It is for conditions that threaten people or property and cannot wait for business hours: burst pipes, no heat in cold weather, flooding, elevator entrapment, fire and life-safety alarms, roof or facade failures, and power loss to common areas. For anything life-threatening, call 911 first and the emergency line second.',
   },
   {
     question: 'How are vendors selected, and does the board see the bids?',
@@ -270,6 +270,6 @@ export const resaleDisclosureFaqs: ServiceFAQItem[] = [
   },
   {
     question: 'Does Stellar charge for resale documents?',
-    answer: 'Charges for resale and lender documentation are set by each association\u2019s governing documents and board policy rather than by us, and Illinois regulates what may be charged in connection with these requests. We will tell you what applies to a specific building before any work begins. Contact us at 773.728.0652 or mirsad@stellarpropertygroup.com with the unit address.',
+    answer: 'Charges for resale and lender documentation are set by each association\u2019s governing documents and board policy rather than by us, and Illinois regulates what may be charged in connection with these requests. We will tell you what applies to a specific building before any work begins. Contact us at 773-728-0652 or mirsad@stellarpropertygroup.com with the unit address.',
   },
 ];

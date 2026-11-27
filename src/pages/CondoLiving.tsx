@@ -297,9 +297,9 @@ export default function CondoLiving() {
                   </div>
                 ))}
               </div>
-              <p className="mt-5 text-sm text-slate-500 font-light">
+              <p className="mt-5 text-sm text-slate-600 font-light">
                 In Stellar-managed buildings, all four live in your{' '}
-                <a href="https://stellarpropertygrp.appfolio.com/connect/" target="_blank" rel="noopener noreferrer" className="text-gold-600 hover:text-gold-500">resident portal&rsquo;s document library</a>.
+                <a href="https://stellarpropertygrp.appfolio.com/connect/" target="_blank" rel="noopener noreferrer" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">resident portal&rsquo;s document library</a>.
               </p>
             </div>
           </div>
@@ -327,12 +327,12 @@ export default function CondoLiving() {
                 usually a sign of borrowed time. Costs inflate, buildings age, and an
                 association that holds assessments flat for a decade is quietly
                 transferring today&rsquo;s costs to tomorrow&rsquo;s owners — often as a{' '}
-                <Link to="/blog/condo-special-assessments-illinois" className="text-gold-600 hover:text-gold-500">special assessment</Link>{' '}
+                <Link to="/blog/condo-special-assessments-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">special assessment</Link>{' '}
                 with a deadline attached.
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 The healthy pattern looks boring: modest, planned increases; a current{' '}
-                <Link to="/blog/condo-reserve-funds-explained" className="text-gold-600 hover:text-gold-500">reserve study</Link>;
+                <Link to="/blog/condo-reserve-funds-explained" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">reserve study</Link>;
                 and a budget owners can actually read. If your building has all three,
                 thank your board — that is what financial stewardship looks like from
                 the inside.
@@ -396,7 +396,7 @@ export default function CondoLiving() {
             ))}
           </div>
 
-          <p className="mt-8 text-sm text-slate-500 font-light max-w-3xl">
+          <p className="mt-8 text-sm text-slate-600 font-light max-w-3xl">
             One useful rule of thumb for water: the association typically owns the
             risers and stacks; you typically own everything from the branch line&rsquo;s
             shutoff valve into your unit. When water crosses a boundary — a riser
@@ -431,7 +431,7 @@ export default function CondoLiving() {
                 The strongest voice in any association is a seat at the table.
                 Boards are made entirely of owners who volunteered. If you have
                 ever left a meeting thinking <em>I could do this better</em> —{' '}
-                <Link to="/resources?form=nomination" className="text-gold-600 hover:text-gold-500">stand for election</Link>.
+                <Link to="/resources?form=nomination" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">stand for election</Link>.
                 Buildings are run by the people who show up.
               </p>
             </div>
@@ -453,11 +453,11 @@ export default function CondoLiving() {
                   </div>
                 ))}
               </div>
-              <p className="mt-5 text-sm text-slate-500 font-light">
+              <p className="mt-5 text-sm text-slate-600 font-light">
                 Deeper reading:{' '}
-                <Link to="/blog/can-condo-boards-enter-your-unit-illinois" className="text-gold-600 hover:text-gold-500">when a board may enter your unit</Link>
+                <Link to="/blog/can-condo-boards-enter-your-unit-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">when a board may enter your unit</Link>
                 {' '}and{' '}
-                <Link to="/blog/are-hoa-condo-rules-enforceable-illinois" className="text-gold-600 hover:text-gold-500">which rules are actually enforceable</Link>.
+                <Link to="/blog/are-hoa-condo-rules-enforceable-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">which rules are actually enforceable</Link>.
               </p>
             </div>
           </div>
@@ -500,7 +500,7 @@ export default function CondoLiving() {
             </div>
           </div>
 
-          <p className="text-sm text-slate-500 font-light max-w-3xl">
+          <p className="text-sm text-slate-600 font-light max-w-3xl">
             The homework: send your insurance agent the association&rsquo;s current
             certificate of insurance (in your portal) and ask them to align your
             HO-6 with the master policy&rsquo;s boundary and deductible. Ten minutes,
@@ -634,15 +634,15 @@ export default function CondoLiving() {
                     <p className="text-sm text-paper/60 font-light leading-relaxed">Everything else — dripping faucets, burnt-out hallway lights, amenity issues. Photos help; they cut diagnosis time in half.</p>
                   </div>
                 </div>
-                <a href={`tel:${brand.phone.digits}`} className="mt-8 inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-7 py-3.5 transition-colors duration-300 text-sm tracking-wide">
-                  <Phone className="w-4 h-4" /> 24/7 · {brand.phone.dotted}
+                <a href={`tel:${brand.phone.e164}`} className="mt-8 inline-flex items-center gap-3 border border-gold-400/50 text-gold-300 hover:bg-gold-500 hover:border-gold-500 hover:text-ink font-medium px-7 py-3.5 transition-colors duration-300 text-sm tracking-wide">
+                  <Phone className="w-4 h-4" /> 24/7 · {brand.phone.display}
                 </a>
               </div>
-              <p className="text-sm text-slate-500 font-light">
+              <p className="text-sm text-slate-600 font-light">
                 Residents of Stellar buildings can also{' '}
-                <Link to="/resources?form=violation" className="text-gold-600 hover:text-gold-500">report a violation</Link>{' '}
+                <Link to="/resources?form=violation" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">report a violation</Link>{' '}
                 or reach their manager through the{' '}
-                <Link to="/resources" className="text-gold-600 hover:text-gold-500">resource center</Link>.
+                <Link to="/resources" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">resource center</Link>.
               </p>
             </div>
           </div>

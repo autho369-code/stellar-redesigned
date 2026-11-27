@@ -38,12 +38,12 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['portal', 'login', 'log in', 'appfolio', 'account', 'password', 'invitation', 'access'],
     answer:
-      'The owner & resident portal is at stellarpropertygrp.appfolio.com/connect/ — payments, autopay, maintenance requests, and documents. New residents receive an email invitation during onboarding; if you need one, call 773.728.0652 or email mirsad@stellarpropertygroup.com and we\'ll send it within one business day.',
+      'The owner & resident portal is at stellarpropertygrp.appfolio.com/connect/ — payments, autopay, maintenance requests, and documents. New residents receive an email invitation during onboarding; if you need one, call 773-728-0652 or email mirsad@stellarpropertygroup.com and we\'ll send it within one business day.',
   },
   {
     keywords: ['emergency', 'flood', 'flooding', 'fire', 'elevator', 'boiler', 'leak', 'urgent', 'burst'],
     answer:
-      'For life-threatening emergencies call 911 first. For building emergencies — flooding, fire damage, elevator entrapment, boiler failure — call our 24/7 line at 773.728.0652. A live member of our Chicago team answers around the clock and dispatches vetted crews immediately.',
+      'For life-threatening emergencies call 911 first. For building emergencies — flooding, fire damage, elevator entrapment, boiler failure — call our 24/7 line at 773-728-0652. A live member of our Chicago team answers around the clock and dispatches vetted crews immediately.',
   },
   {
     keywords: ['violation', 'complaint', 'noise', 'report', 'neighbor', 'rules', 'airbnb', 'sublet'],
@@ -53,12 +53,12 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['maintenance', 'repair', 'request', 'broken', 'fix', 'work order'],
     answer:
-      'Submit maintenance requests through the AppFolio portal (stellarpropertygrp.appfolio.com/connect/) under "Maintenance Requests" — you can attach photos and track progress. For after-hours emergencies, call 773.728.0652 any time.',
+      'Submit maintenance requests through the AppFolio portal (stellarpropertygrp.appfolio.com/connect/) under "Maintenance Requests" — you can attach photos and track progress. For after-hours emergencies, call 773-728-0652 any time.',
   },
   {
     keywords: ['price', 'pricing', 'cost', 'fee', 'quote', 'how much', 'charge'],
     answer:
-      'We quote a customized flat monthly fee based on your building\'s size, amenities, and service scope — never a percentage of your budget. For exact pricing, request a free proposal at stellarpropertygroup.com/contact or call 773.728.0652.',
+      'We quote a customized flat monthly fee based on your building\'s size, amenities, and service scope — never a percentage of your budget. For exact pricing, request a free proposal at stellarpropertygroup.com/contact or call 773-728-0652.',
   },
   {
     keywords: ['switch', 'change', 'transition', 'leave', 'current manager', 'new management', 'proposal', 'hire'],
@@ -88,7 +88,7 @@ const KB: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['contact', 'phone', 'email', 'office', 'address', 'call', 'speak', 'human', 'person'],
     answer:
-      'Reach us at 773.728.0652 (24/7 for emergencies) or mirsad@stellarpropertygroup.com. Office: 5107 N Western Ave #1S, Chicago, IL 60625. Or use the contact form at stellarpropertygroup.com/contact.',
+      'Reach us at 773-728-0652 (24/7 for emergencies) or mirsad@stellarpropertygroup.com. Office: 5107 N Western Ave #1S, Chicago, IL 60625. Or use the contact form at stellarpropertygroup.com/contact.',
   },
   {
     keywords: ['service', 'what do you do', 'manage', 'offer', 'condo', 'hoa', 'townhome', 'rental', 'apartment'],
@@ -105,7 +105,7 @@ function kbAnswer(text: string): string {
     if (score > best.score) best = { score, answer: entry.answer };
   }
   if (best.score > 0) return best.answer;
-  return 'I can help with payments, the resident portal, maintenance, violations, our service areas, or getting a management proposal for your association. Which of those can I help with? For anything else, call 773.728.0652 or email mirsad@stellarpropertygroup.com.';
+  return 'I can help with payments, the resident portal, maintenance, violations, our service areas, or getting a management proposal for your association. Which of those can I help with? For anything else, call 773-728-0652 or email mirsad@stellarpropertygroup.com.';
 }
 
 const GREETING: Msg = {
@@ -167,6 +167,15 @@ function linkify(text: string) {
 
 export default function ArthurConcierge() {
   const [open, setOpen] = useState(false);
+  // Phones: the launcher stays out of the way until the visitor scrolls (or tabs to it), so it
+  // never sits on a hero button when a page opens. Desktop always shows it.
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => { if (window.scrollY > 160) setScrolled(true); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   const [messages, setMessages] = useState<Msg[]>(loadStoredMessages);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
@@ -367,13 +376,13 @@ export default function ArthurConcierge() {
         ...m,
         {
           role: 'assistant',
-          content: `Thank you, ${lead.name.split(' ')[0]} — your request is with our managing partners and you'll hear from us within one business day. If it's time-sensitive, call 773.728.0652.`,
+          content: `Thank you, ${lead.name.split(' ')[0]} — your request is with our managing partners and you'll hear from us within one business day. If it's time-sensitive, call 773-728-0652.`,
         },
       ]);
     } catch {
       setMessages((m) => [
         ...m,
-        { role: 'assistant', content: 'Something went wrong sending that — please call 773.728.0652 or email mirsad@stellarpropertygroup.com and we\'ll take care of you.' },
+        { role: 'assistant', content: 'Something went wrong sending that — please call 773-728-0652 or email mirsad@stellarpropertygroup.com and we\'ll take care of you.' },
       ]);
       setLeadMode(false);
     }
@@ -387,9 +396,10 @@ export default function ArthurConcierge() {
         onClick={() => setOpen(!open)}
         aria-label={open ? 'Close Arthur chat' : 'Ask Arthur'}
         data-chat-launcher
+        onFocus={() => setScrolled(true)}
         // Phones: a 48 px round icon in the corner, above the Call | Proposal bar,
         // so it never sits on a button or phone link. Desktop: icon and label.
-        className="fixed right-3 bottom-[calc(env(safe-area-inset-bottom)+76px)] z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-ink text-paper shadow-glass ring-1 ring-paper/40 md:ring-0 transition-colors duration-300 hover:bg-navy-700 md:bottom-6 md:right-6 md:h-auto md:w-auto md:gap-3 md:rounded-none md:py-3.5 md:pl-4 md:pr-5"
+        className={`fixed right-3 bottom-[calc(env(safe-area-inset-bottom)+76px)] z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-ink text-paper shadow-glass ring-1 ring-paper/40 md:ring-0 transition-colors duration-300 hover:bg-navy-700 md:bottom-6 md:right-6 md:h-auto md:w-auto md:gap-3 md:rounded-none md:py-3.5 md:pl-4 md:pr-5 max-md:transition-opacity ${scrolled || open ? '' : 'max-md:pointer-events-none max-md:opacity-0'}`}
       >
         {open ? <X className="w-5 h-5" strokeWidth={1.5} /> : <MessageCircle className="w-5 h-5 text-gold-300" strokeWidth={1.5} />}
         <span className="sr-only text-[11px] font-semibold uppercase tracking-luxe md:not-sr-only">{open ? 'Close' : 'Ask Arthur'}</span>
@@ -588,8 +598,8 @@ export default function ArthurConcierge() {
 
           {(authView === 'chat' || !!owner) && (
           <div className="px-5 pb-3 flex items-center justify-between">
-            <span className="text-[9px] text-slate-400 font-light">Building emergency? Call {brand.phone.dotted}</span>
-            <a href={`tel:${brand.phone.digits}`} className="text-[9px] uppercase tracking-luxe text-gold-600 inline-flex items-center gap-1">
+            <span className="text-[9px] text-slate-400 font-light">Building emergency? Call {brand.phone.display}</span>
+            <a href={`tel:${brand.phone.e164}`} className="text-[9px] uppercase tracking-luxe text-gold-600 inline-flex items-center gap-1">
               Call now <ArrowUpRight className="w-3 h-3" />
             </a>
           </div>

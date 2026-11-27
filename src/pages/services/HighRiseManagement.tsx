@@ -60,7 +60,7 @@ export default function HighRiseManagement() {
     <>
       <SEOHead
         title="Chicago High-Rise Condo Management | From $30/Unit"
-        description="High-rise condominium association management in Chicago: building systems, staff and vendor coordination, capital planning, financial controls, and 24/7 response."
+        description="High-rise condominium management in Chicago: building systems, staff and vendor coordination, capital planning, financial controls and 24/7 response."
         canonical="https://www.stellarpropertygroup.com/services/high-rise-condominium-management"
       />
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>

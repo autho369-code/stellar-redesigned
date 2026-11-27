@@ -114,7 +114,7 @@ const sections = [
       <p>
         We want this website to be usable by everyone. We aim to follow the Web Content
         Accessibility Guidelines (WCAG) 2.1 AA and continue to improve accessibility over time. If
-        you encounter difficulty using any part of this site, contact us at {brand.phone.dotted} or{' '}
+        you encounter difficulty using any part of this site, contact us at {brand.phone.display} or{' '}
         <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
           mirsad@stellarpropertygroup.com
         </a>{' '}
@@ -190,8 +190,8 @@ export default function TermsOfService() {
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about these terms</p>
             <p className="text-slate-600 font-light leading-relaxed">
               Stellar Property Management · 5107 N Western Ave #1S, Chicago, IL 60625 ·{' '}
-              <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500">{brand.phone.dotted}</a> ·{' '}
-              <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
+              <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500 underline underline-offset-4">{brand.phone.display}</a> ·{' '}
+              <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
                 mirsad@stellarpropertygroup.com
               </a>
             </p>

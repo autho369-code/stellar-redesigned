@@ -136,11 +136,11 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
               </Link>
               <a
-                href={`tel:${brand.phone.digits}`}
+                href={`tel:${brand.phone.e164}`}
                 data-track-location="area-page"
                 className="inline-flex items-center gap-3 border border-slate-300 px-9 py-4 text-sm font-medium tracking-wide text-ink transition-colors duration-300 hover:border-gold-500 hover:text-gold-600"
               >
-                <Phone className="h-4 w-4" aria-hidden /> {brand.phone.dotted}
+                <Phone className="h-4 w-4" aria-hidden /> {brand.phone.display}
               </a>
             </div>
             <p className="mt-9 text-[10px] uppercase tracking-luxe text-slate-500">

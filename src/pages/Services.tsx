@@ -307,10 +307,10 @@ export default function Services() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href={`tel:${brand.phone.digits}`}
+              href={`tel:${brand.phone.e164}`}
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-4 h-4" /> {brand.phone.dotted}
+              <Phone className="w-4 h-4" /> {brand.phone.display}
             </a>
           </div>
         </div>

@@ -5,7 +5,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     slug: 'fannie-freddie-condo-eligibility-board-guide',
     title: 'Fannie Mae and Freddie Mac Condo Eligibility: A Board Readiness Guide',
     metaDescription:
-      'How Illinois condo boards prepare for Fannie Mae and Freddie Mac project reviews: reserves, questionnaires, insurance, litigation, and deferred maintenance answers.',
+      'How Illinois condo boards prepare for Fannie Mae and Freddie Mac project reviews: reserves, questionnaires, insurance, litigation and deferred maintenance.',
     date: '2026-08-20',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -81,7 +81,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     slug: 'condo-master-policy-vs-ho6-board-guide',
     title: 'Condo Master Policy vs. HO-6: What the Board Should Explain',
     metaDescription:
-      'Illinois condo boards: how the association master policy and an owner HO-6 policy fit together, what the declaration controls, and how to communicate coverage gaps.',
+      'How an Illinois condo association’s master policy and an owner’s HO-6 policy fit together, what the declaration controls, and how to explain coverage gaps.',
     date: '2026-08-24',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
@@ -214,7 +214,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     title: 'Chicago Facade Compliance: How Condo Boards Can Stay Project-Ready',
     seoTitle: 'Chicago Facade Ordinance for Condo Boards: Compliance Guide',
     metaDescription:
-      'Chicago condo boards and facade compliance: how to confirm current City requirements, hire the right professionals, budget for repairs, and document board decisions.',
+      'Chicago condo boards and facade compliance: confirm current City requirements, hire the right professionals, budget for repairs and document board decisions.',
     date: '2026-09-01',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',
@@ -628,7 +628,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     slug: 'condo-hoa-vendor-rfp-checklist',
     title: 'Vendor RFPs for Condo and HOA Boards: Scope, Insurance, and Controls',
     metaDescription:
-      'A vendor RFP framework for Illinois condo and HOA boards: writing scope, requiring insurance, comparing bids fairly, and building financial controls into contracts.',
+      'A vendor RFP framework for Illinois condo and HOA boards: write the scope, require insurance, compare bids fairly and build financial controls into contracts.',
     date: '2026-09-25',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',

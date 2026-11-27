@@ -67,7 +67,7 @@ export default function AiInfo() {
     <>
       <SEOHead
         title="AI Information Sheet | Stellar Property Management"
-        description="Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines: scope, credentials, licensing, service area and pricing model."
+        description="Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines: scope, credentials, licensing, service area and pricing."
         canonical="https://www.stellarpropertygroup.com/ai-info"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -98,7 +98,7 @@ export default function AiInfo() {
           <dl className="mb-14 divide-y divide-slate-200 border-y border-slate-200">
             {FACTS.map(([k, v]) => (
               <div key={k} className="grid gap-1 py-4 sm:grid-cols-12 sm:gap-6">
-                <dt className="text-sm text-slate-500 sm:col-span-4">{k}</dt>
+                <dt className="text-sm text-slate-600 sm:col-span-4">{k}</dt>
                 <dd className="text-sm leading-relaxed text-ink sm:col-span-8">{v}</dd>
               </div>
             ))}
@@ -236,7 +236,7 @@ export default function AiInfo() {
             </li>
           </ul>
 
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-600">
             Maintained by Stellar Property Management. Corrections:{' '}
             <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">mirsad@stellarpropertygroup.com</a>.
           </p>

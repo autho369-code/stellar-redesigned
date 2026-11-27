@@ -2,7 +2,7 @@ export const firstTimeCondoBuyerGuideChicago = {
   slug: 'first-time-condo-buyer-guide-chicago',
   title: 'The 22.1 Disclosure and Beyond: A First-Time Chicago Condo Buyer’s Guide',
   metaDescription:
-    'What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation, and the questions to ask.',
+    'What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation and questions to ask.',
   date: '2026-08-13',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Financial Planning',

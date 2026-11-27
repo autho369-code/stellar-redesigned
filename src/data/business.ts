@@ -33,7 +33,7 @@ export const business = {
   },
   addressLine: `${brand.address.street} ${brand.address.unit}, ${brand.address.city}, ${brand.address.state} ${brand.address.zip}`,
   phoneDisplay: brand.phone.display,
-  phoneDotted: brand.phone.dotted,
+  phoneDotted: brand.phone.display,
   phoneE164: '+1-773-728-0652',
   phoneHref: `tel:${brand.phone.e164}`,
   email: brand.email,

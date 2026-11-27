@@ -60,6 +60,25 @@ Rollback". Useful commits on `main`:
 - `ecd5c5e` before the new header, footer and homepage (end of R2).
 - `eeac687` before the whole redesign program (before R0).
 
+## Rollback update (Nov 27, 2026)
+Newest first; all squash merges on `main`. To roll back in git instead of Vercel:
+`git revert <sha>` on a branch, PR, merge.
+- `51c5a60` docs (#95), `35fcc10` AEO guide, FAQs, llms-full (#94).
+- `a412095` 23 area pages upgraded (#92), `cbe4618` publishing freeze lifted (#91).
+- `4903cf7` blank-page fix (#88): do not roll back past this one.
+- `6bca362` schema, favicon, /pricing links (#83).
+The production deployment ID is not recorded here: the Vercel project for this
+site is not visible to the bot's connected account. To record it, open Vercel →
+project → Deployments, copy the ID of the current Production deployment and add
+it above. Instant Rollback works from that list without a rebuild.
+
+## Not an owner decision, now built
+- `npm run brand:dry-run` rehearses a rename end to end (docs/BRAND-SWAP.md).
+- `npm run seo:diff` lists every title, H1, description, canonical, robots or
+  JSON-LD change against `tests/fixtures/urls.json`.
+- Full-site crawl: `npx unlighthouse --site https://www.stellarpropertygroup.com`
+  (monthly, not in CI).
+
 ## Still needs Mirsad
 - Team names, roles and photos for the About page.
 - Gold Coast page: is "some of the Gold Coast's most distinguished addresses" true?

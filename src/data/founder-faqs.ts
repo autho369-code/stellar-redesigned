@@ -43,6 +43,6 @@ export const founderFaqs: ServiceFAQItem[] = [
   {
     question: 'How do I contact Mirsad Cerimovic?',
     answer:
-      'By email at mirsad@stellarpropertygroup.com or by phone at 773.728.0652. The office is at 5107 N Western Avenue, Suite 1S, Chicago, Illinois 60625. Association boards requesting a management proposal, and owners with a concern their manager has not resolved, can both reach him directly.',
+      'By email at mirsad@stellarpropertygroup.com or by phone at 773-728-0652. The office is at 5107 N Western Avenue, Suite 1S, Chicago, Illinois 60625. Association boards requesting a management proposal, and owners with a concern their manager has not resolved, can both reach him directly.',
   },
 ];

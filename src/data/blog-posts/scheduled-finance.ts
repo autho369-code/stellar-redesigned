@@ -369,7 +369,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     slug: 'illinois-association-late-fees-interest-policy',
     title: 'Late Fees and Interest: Building a Defensible Association Policy',
     metaDescription:
-      'How Illinois condo and HOA boards build a late fee and interest policy that is authorized by their documents, applied consistently, and survives owner challenge.',
+      'How Illinois condo and HOA boards build a late fee and interest policy that their documents authorize, that is applied consistently and that survives challenge.',
     date: '2026-09-04',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -459,7 +459,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     slug: 'illinois-condo-association-liens-delinquency',
     title: 'Association Liens and Delinquencies: What Boards Need Organized',
     metaDescription:
-      'Illinois condo and HOA boards can protect assessment income by keeping delinquency records, ledgers, and lien documentation organized before counsel gets involved.',
+      'Illinois condo and HOA boards can protect assessment income by organizing delinquency records, ledgers and lien documentation before counsel gets involved.',
     date: '2026-09-08',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -548,7 +548,7 @@ export const scheduledFinancePosts: BlogPost[] = [
     title: 'How Board Members Should Read Association Financial Statements',
   seoTitle: 'How Board Members Should Read Association Financials',
     metaDescription:
-      'A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement, and delinquency report in your monthly financial packet.',
+      'A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement and delinquency report in the monthly financial packet.',
     date: '2026-09-12',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',

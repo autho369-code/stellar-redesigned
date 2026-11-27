@@ -153,7 +153,7 @@ const faqs = [
   },
   {
     q: 'How does a Chicago association switch to Stellar Property Management?',
-    a: 'Through a managed 30–60 day transition: records retrieval from your outgoing firm, banking migration, vendor transfers, owner communication, and portal setup — your board only signs. Call ' + brand.phone.dotted + ' or request a proposal at stellarpropertygroup.com/contact.',
+    a: 'Through a managed 30–60 day transition: records retrieval from your outgoing firm, banking migration, vendor transfers, owner communication, and portal setup — your board only signs. Call ' + brand.phone.display + ' or request a proposal at stellarpropertygroup.com/contact.',
   },
 ];
 
@@ -214,7 +214,7 @@ export default function ChicagoPage() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-16 lg:pb-20">
-          <nav className="flex items-center gap-2 text-xs tracking-wide text-slate-500 mb-10">
+          <nav className="flex items-center gap-2 text-xs tracking-wide text-slate-600 mb-10">
             <Link to="/" className="hover:text-gold-600 transition-colors">Home</Link>
             <span>/</span>
             <Link to="/service-areas" className="hover:text-gold-600 transition-colors">Service Areas</Link>
@@ -249,7 +249,7 @@ export default function ChicagoPage() {
               {stats.map(({ value, label }) => (
                 <div key={label} className="py-8 px-4 lg:px-10 text-center lg:text-left">
                   <dd className="font-display text-3xl lg:text-4xl font-light text-ink mb-1">{value}</dd>
-                  <dt className="text-[10px] uppercase tracking-luxe text-slate-500">{label}</dt>
+                  <dt className="text-[10px] uppercase tracking-luxe text-slate-600">{label}</dt>
                 </div>
               ))}
             </dl>
@@ -423,7 +423,7 @@ export default function ChicagoPage() {
                 this year &mdash; usually without anyone explaining that the
                 clock is already running.
               </p>
-              <p className="text-sm text-slate-500 font-light leading-relaxed">
+              <p className="text-sm text-slate-600 font-light leading-relaxed">
                 Requirements vary by building height, construction type and use.
                 Confirm how each applies to your property with your association
                 attorney and the Department of Buildings.
@@ -570,10 +570,10 @@ export default function ChicagoPage() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href={`tel:${brand.phone.digits}`}
+              href={`tel:${brand.phone.e164}`}
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-4 h-4" /> Call {brand.phone.dotted}
+              <Phone className="w-4 h-4" /> Call {brand.phone.display}
             </a>
           </div>
         </div>

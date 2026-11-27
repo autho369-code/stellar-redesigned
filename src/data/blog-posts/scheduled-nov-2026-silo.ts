@@ -16,7 +16,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'high-rise-condo-management-chicago-whats-different',
     title: 'High-Rise Condo Management in Chicago: What Is Different',
     metaDescription:
-      'Why a Chicago high-rise condominium needs a different kind of management than a walk-up: staff, building systems, City inspection programs, capital planning and 24/7 response.',
+      'Why a Chicago high-rise condominium needs different management than a walk-up: staff, building systems, City inspections, capital planning and 24/7 response.',
     date: '2026-11-23',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',
@@ -68,7 +68,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'chicago-condo-heat-outage-protocol',
     title: 'No Heat in a Chicago Condo Building: A Board Protocol',
     metaDescription:
-      'What Chicago’s Heat Ordinance requires (68°F day, 66°F night, Sept. 15 to June 1), and a step-by-step protocol for condo boards when central heat or hot water fails.',
+      'What Chicago’s Heat Ordinance requires (68°F day, 66°F night, Sept. 15 to June 1) and a step-by-step protocol for condo boards when heat or hot water fails.',
     date: '2026-11-24',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',
@@ -141,7 +141,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'small-condo-association-professional-manager',
     title: 'Does a Small Condo Association Need a Professional Manager?',
     metaDescription:
-      'An honest look at when a small Chicago condo association (6 to 30 units) can self-manage, when it should hire a manager, and what professional management actually changes.',
+      'When a small Chicago condo association (6 to 30 units) can self-manage, when to hire a manager and what professional management actually changes.',
     date: '2026-11-25',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -189,7 +189,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'glenview-townhome-hoa-board-guide',
     title: 'Running a Glenview Townhome or HOA Board: A Local Guide',
     metaDescription:
-      'A guide for Glenview townhome, HOA and condo boards: master and sub-associations at The Glen, aging townhome roofs and roads, snow contracts, and which Illinois law applies.',
+      'A guide for Glenview townhome, HOA and condo boards: master and sub-associations at The Glen, aging roofs and roads, snow contracts and which law applies.',
     date: '2026-11-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
@@ -236,7 +236,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     slug: 'illinois-resale-disclosure-fees-turnaround',
     title: 'Resale Disclosure Fees and Deadlines in Illinois: Condo vs. HOA',
     metaDescription:
-      'Illinois condo 22.1 disclosures: 10 business days, fee capped at $375 adjusted by CPI, $100 rush within 72 hours. HOAs under CICAA 1-35: 30 days and a reasonable cost-based fee.',
+      'Illinois condo 22.1 disclosures: 10 business days, fee capped at $375 adjusted by CPI, $100 rush in 72 hours. HOAs under CICAA 1-35: 30 days, cost-based fee.',
     date: '2026-11-27',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',

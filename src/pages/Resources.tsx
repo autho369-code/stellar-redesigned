@@ -15,11 +15,11 @@ type ActiveTab = 'violation' | 'nomination' | null;
 const faqs = [
   {
     q: 'How do I make a payment?',
-    a: 'Log in to the AppFolio resident portal to make one-time or recurring payments via bank transfer or credit card. If you need portal access, contact our office at 773.728.0652 or email mirsad@stellarpropertygroup.com.',
+    a: 'Log in to the AppFolio resident portal to make one-time or recurring payments via bank transfer or credit card. If you need portal access, contact our office at 773-728-0652 or email mirsad@stellarpropertygroup.com.',
   },
   {
     q: 'How do I submit a maintenance request?',
-    a: 'Maintenance requests can be submitted through the AppFolio portal under "Maintenance Requests." For after-hours emergencies (flooding, fire, elevator issues), call 773.728.0652 directly.',
+    a: 'Maintenance requests can be submitted through the AppFolio portal under "Maintenance Requests." For after-hours emergencies (flooding, fire, elevator issues), call 773-728-0652 directly.',
   },
   {
     q: 'Where can I find my association\'s governing documents?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: 'How do I report an emergency?',
-    a: 'For life-threatening emergencies, call 911 first. For building emergencies (flooding, fire damage, elevator entrapment), call our 24/7 emergency line at 773.728.0652. A real person will answer and dispatch help.',
+    a: 'For life-threatening emergencies, call 911 first. For building emergencies (flooding, fire damage, elevator entrapment), call our 24/7 emergency line at 773-728-0652. A real person will answer and dispatch help.',
   },
 ];
 
@@ -261,20 +261,20 @@ export default function Resources() {
             </div>
 
             <div className="lg:col-span-7">
-              <p className="text-[10px] uppercase tracking-luxe text-slate-500 pb-4 border-b border-slate-200">
+              <p className="text-[10px] uppercase tracking-luxe text-slate-600 pb-4 border-b border-slate-200">
                 When setting up Bill Pay, please use:
               </p>
               <dl>
                 <div className="flex flex-col gap-1 py-6 sm:flex-row sm:gap-8 border-b border-slate-200">
-                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-500 pt-1.5">Payee</dt>
+                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-600 pt-1.5">Payee</dt>
                   <dd className="font-display text-xl text-ink">&ldquo;Your Association Name&rdquo;</dd>
                 </div>
                 <div className="flex flex-col gap-1 py-6 sm:flex-row sm:gap-8 border-b border-slate-200">
-                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-500 pt-1.5">Mailing Address</dt>
+                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-600 pt-1.5">Mailing Address</dt>
                   <dd className="font-display text-xl text-ink">5107 N. Western Avenue, Suite 1S, Chicago, IL 60625</dd>
                 </div>
                 <div className="flex flex-col gap-1 py-6 sm:flex-row sm:gap-8 border-b border-slate-200">
-                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-500 pt-1.5">Memo</dt>
+                  <dt className="w-44 shrink-0 text-[10px] uppercase tracking-luxe text-slate-600 pt-1.5">Memo</dt>
                   <dd className="font-display text-xl text-ink">
                     Association 4-number address (for example &ldquo;1740&rdquo;) and Unit Number ###
                   </dd>
@@ -346,7 +346,7 @@ export default function Resources() {
 
           {!activeTab && (
             <div className="text-center py-16 border border-slate-200 bg-ivory-50">
-              <p className="text-slate-500 text-sm font-light max-w-md mx-auto px-6">
+              <p className="text-slate-600 text-sm font-light max-w-md mx-auto px-6">
                 Select a form above to get started, or use the quick links to access the owner portal.
               </p>
             </div>
@@ -428,10 +428,10 @@ export default function Resources() {
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
-              href={`tel:${brand.phone.digits}`}
+              href={`tel:${brand.phone.e164}`}
               className="inline-flex items-center gap-3 border border-paper/25 text-paper hover:border-gold-400 hover:text-gold-300 font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
-              <Phone className="w-4 h-4" strokeWidth={1.25} /> Call {brand.phone.dotted}
+              <Phone className="w-4 h-4" strokeWidth={1.25} /> Call {brand.phone.display}
             </a>
           </div>
         </div>
