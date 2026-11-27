@@ -186,7 +186,7 @@ export default function Pricing() {
           </p>
 
           <h3 className="font-display text-2xl text-ink mt-14 mb-5">The four pricing models boards are offered</h3>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Scrollable table: the four pricing models">
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b-2 border-slate-300 text-ink">
@@ -210,7 +210,7 @@ export default function Pricing() {
           </div>
 
           <h3 className="font-display text-2xl text-ink mt-14 mb-5">What to ask every firm about fees</h3>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Scrollable table: questions to ask about fees">
             <table className="w-full min-w-[520px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b-2 border-slate-300 text-ink">
@@ -328,7 +328,7 @@ export default function Pricing() {
           <p className="eyebrow text-gold-600 mb-7 flex items-center justify-center gap-4"><span className="accent-rule" /> A Board-Specific Quote <span className="accent-rule" /></p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.06] mb-8">See your actual scope and <em className="font-medium text-gold-600">flat monthly fee.</em></h2>
           <p className="text-lg text-slate-600 font-light leading-relaxed mb-10 max-w-2xl mx-auto">Speak directly with a managing partner. We will review your current agreement, building needs, and board priorities before preparing a written proposal.</p>
-          <div className="flex flex-wrap justify-center gap-5"><Link to="/contact?inquiry=quote&source=pricing" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-9 py-4 text-sm font-medium transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link><a href={`tel:${brand.phone.digits}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-9 py-4 text-sm font-medium transition-colors"><Phone className="w-4 h-4" /> {brand.phone.dotted}</a></div>
+          <div className="flex flex-wrap justify-center gap-5"><Link to="/contact?inquiry=quote&source=pricing" className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-9 py-4 text-sm font-medium transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link><a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-3 border border-slate-300 text-ink hover:border-gold-500 px-9 py-4 text-sm font-medium transition-colors"><Phone className="w-4 h-4" /> {brand.phone.display}</a></div>
         </div>
       </section>
     </>

@@ -31,7 +31,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'illinois-association-website-requirement-2028',
     title: 'Illinois Associations Must Have a Website by January 1, 2028',
     metaDescription:
-      'Public Act 104-0797 requires Illinois condo and common interest community boards to provide a website with meeting information and approved minutes by January 1, 2028. What must be on it.',
+      'Public Act 104-0797 requires Illinois condo and common interest community boards to provide a website with meeting information and minutes by Jan. 1, 2028.',
     date: '2026-11-07',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
@@ -152,7 +152,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'illinois-association-annual-financial-report-email',
     title: 'Illinois Boards Must Email the Annual Accounting From 2027',
     metaDescription:
-      'Public Act 104-0797 requires Illinois condo and HOA boards to supply the annual itemized accounting by electronic transmission to owners who authorized it, starting January 1, 2027.',
+      'Public Act 104-0797 requires Illinois condo and HOA boards to send the annual itemized accounting electronically to owners who authorize it, from Jan. 1, 2027.',
     date: '2026-11-08',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -262,7 +262,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'illinois-association-police-firefighter-vehicle-parking',
     title: 'New Illinois Law: Marked Police and Fire Vehicles Can Park',
     metaDescription:
-      'From January 1, 2027, Public Act 104-0580 voids association rules that treat a marked police or firefighter vehicle under 12,000 pounds as a commercial vehicle. What boards must change.',
+      'From Jan. 1, 2027, Public Act 104-0580 voids association rules that treat a marked police or firefighter vehicle under 12,000 pounds as commercial.',
     date: '2026-11-09',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
@@ -364,7 +364,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'illinois-condo-accessible-parking-policy',
     title: 'Illinois Condo Boards Must Have an Accessible Parking Policy',
     metaDescription:
-      'Section 18.12 of the Illinois Condominium Property Act requires every condo board to adopt an accessible parking policy with a review period of no more than 45 days. What it must contain.',
+      'Section 18.12 of the Illinois Condominium Property Act requires every condo board to adopt an accessible parking policy with a review period under 45 days.',
     date: '2026-11-10',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Operations',
@@ -470,7 +470,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'collection-policy-board-decisions-payment-plans',
     title: 'Five Collection Policy Decisions Your Board Must Make',
     metaDescription:
-      'The new Illinois collection policy law lists what the policy must cover but leaves the hard choices to the board. The five decisions to settle before January 1, 2027.',
+      'The new Illinois collection policy law lists what the policy must cover but leaves the hard choices to the board. Five decisions to settle before Jan. 1, 2027.',
     date: '2026-11-11',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
@@ -595,7 +595,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'cicaa-small-association-exemptions-collection-policy',
     title: 'Is Our Small HOA Exempt From the Illinois Association Act?',
     metaDescription:
-      'CICAA exempts some small Illinois HOAs and townhome associations. The 10-unit, $100,000 and $50,000 thresholds in Section 1-75, and what they mean for the 2027 collection policy.',
+      'CICAA exempts some small Illinois HOAs and townhome associations. The 10-unit, $100,000 and $50,000 thresholds in Section 1-75 and the 2027 collection policy.',
     date: '2026-11-12',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
@@ -721,7 +721,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'reserve-study-lender-will-accept-2027',
     title: 'Ordering a Reserve Study a Lender Will Accept in 2027',
     metaDescription:
-      'Fannie Mae will accept a reserve study instead of the reserve percentage test only on strict conditions: three years, no baseline funding, and the highest recommended allocation in the budget.',
+      'Fannie Mae accepts a reserve study in place of the reserve percentage test only on strict conditions: three years, no baseline funding, top allocation.',
     date: '2026-11-13',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Reserve Planning',
@@ -855,7 +855,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
     slug: 'condo-critical-repairs-lender-questionnaire',
     title: 'Critical Repairs: What Disqualifies a Condo Building',
     metaDescription:
-      'Fannie Mae treats a project needing critical repairs as ineligible. The definition, the $10,000-per-unit threshold, the three-year inspection rule, and what boards should fix first.',
+      'Fannie Mae treats a project needing critical repairs as ineligible. The definition, the $10,000-per-unit threshold, the inspection rule and what to fix first.',
     date: '2026-11-14',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',

@@ -50,7 +50,7 @@ export const movingIntoChicagoCondoGuide = {
 <li><strong>Read the rules once, cover to cover.</strong> Quiet hours, pet registration, grill policies, renovation approvals — every building differs, and the rules you know can't surprise you. Our guide to <a href="/blog/common-condo-rule-violations-chicago">common Chicago condo rule violations</a> covers the ones that catch new residents most often.</li>
 <li><strong>Register what needs registering.</strong> Pets, vehicles, tenants, and sometimes bicycles. Registration is usually painless; discovery usually isn't.</li>
 <li><strong>Find the shutoffs.</strong> Your unit's water shutoff and electrical panel, located before you need them at 2 AM.</li>
-<li><strong>Note the emergency line.</strong> In a Stellar building, 773.728.0652 reaches a live person around the clock for floods, heat outages, and elevator entrapments.</li>
+<li><strong>Note the emergency line.</strong> In a Stellar building, 773-728-0652 reaches a live person around the clock for floods, heat outages, and elevator entrapments.</li>
 <li><strong>Show up once.</strong> Attend one board meeting in your first quarter. You will learn more about your investment in that hour than in any document.</li>
 </ul>
 

@@ -16,8 +16,8 @@ const contactDetails = [
   },
   {
     title: 'Phone',
-    lines: [brand.phone.dotted],
-    href: `tel:${brand.phone.digits}`,
+    lines: [brand.phone.display],
+    href: `tel:${brand.phone.e164}`,
     linkLabel: 'Call Us',
     sub: 'Mon-Fri 9am-5pm CT',
   },
@@ -202,12 +202,12 @@ export default function Contact() {
               </p>
               <div className="flex flex-wrap items-center gap-6">
                 <a
-                  href={`tel:${brand.phone.digits}`}
+                  href={`tel:${brand.phone.e164}`}
                   data-track-location="contact"
                   className="inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
                 >
                   <Phone className="w-4 h-4" strokeWidth={1.25} />
-                  Call {brand.phone.dotted}
+                  Call {brand.phone.display}
                 </a>
                 <p className="text-[10px] uppercase tracking-luxe text-slate-600">
                   Available 24 hours a day, 7 days a week

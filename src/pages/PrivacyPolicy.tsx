@@ -111,7 +111,7 @@ const sections = [
         <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
           mirsad@stellarpropertygroup.com
         </a>{' '}
-        or {brand.phone.dotted}. Note that information forming part of an association&rsquo;s official
+        or {brand.phone.display}. Note that information forming part of an association&rsquo;s official
         records (such as violation reports or board nominations) may be subject to retention
         requirements under the association&rsquo;s governing documents and Illinois law, which can
         limit deletion.
@@ -209,8 +209,8 @@ export default function PrivacyPolicy() {
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about this policy</p>
             <p className="text-slate-600 font-light leading-relaxed">
               Stellar Property Management · 5107 N Western Ave #1S, Chicago, IL 60625 ·{' '}
-              <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500">{brand.phone.dotted}</a> ·{' '}
-              <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500">
+              <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500 underline underline-offset-4">{brand.phone.display}</a> ·{' '}
+              <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
                 mirsad@stellarpropertygroup.com
               </a>
             </p>

@@ -157,7 +157,7 @@ export default function ChooseManagementCompany() {
             <p className="mb-6 font-light leading-relaxed text-slate-600">
               Run the same eight checks on every firm, including ours. Write the answers down so the board compares like with like.
             </p>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Scrollable table: eight checks">
               <table className="w-full min-w-[640px] border-collapse text-left text-sm">
                 <thead>
                   <tr className="border-b border-slate-300 text-ink">
@@ -184,7 +184,7 @@ export default function ChooseManagementCompany() {
             <p className="mb-6 font-light leading-relaxed text-slate-600">
               Chicago firms sell three models. A proposal that does not say which one it is describing cannot be compared with the others.
             </p>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Scrollable table: service models">
               <table className="w-full min-w-[560px] border-collapse text-left text-sm">
                 <thead>
                   <tr className="border-b border-slate-300 text-ink">

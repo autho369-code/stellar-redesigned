@@ -248,7 +248,7 @@ export default function AuthorMirsadCerimovic() {
                 alt="Mirsad Cerimovic, founder and principal of Stellar Property Management"
                 width={112}
                 height={112}
-                fetchPriority="high"
+                {...{ fetchpriority: "high" }}
                 decoding="async"
                 className="w-28 h-28 mb-8 border border-slate-300 object-cover"
               />
@@ -411,7 +411,7 @@ export default function AuthorMirsadCerimovic() {
                     className="flex items-center gap-3 text-slate-600 hover:text-gold-600 transition-colors"
                   >
                     <Phone className="w-4 h-4 shrink-0" strokeWidth={1.5} />
-                    {brand.phone.dotted}
+                    {brand.phone.display}
                   </a>
                   <a
                     href={LINKEDIN_URL}
@@ -583,7 +583,7 @@ export default function AuthorMirsadCerimovic() {
             <div className="lg:col-span-4 lg:col-start-9 flex flex-wrap gap-4">
               <Link
                 to="/contact?inquiry=proposal&source=founder-profile"
-                className="group inline-flex items-center gap-3 bg-gold-500 text-ink hover:bg-gold-400 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
+                className="group inline-flex items-center gap-3 bg-gold-300 text-ink hover:bg-gold-200 font-medium px-9 py-4 transition-colors duration-300 text-sm tracking-wide"
               >
                 Request a Proposal
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

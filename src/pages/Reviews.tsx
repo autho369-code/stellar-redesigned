@@ -70,7 +70,7 @@ export default function Reviews() {
 
           <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm">
             <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-gold-600 transition-colors">Read all public Google reviews</a>
-            <a href={`tel:${brand.phone.e164}`} className="text-slate-500 hover:text-gold-600 transition-colors">Call {brand.phone.dotted}</a>
+            <a href={`tel:${brand.phone.e164}`} className="text-slate-500 hover:text-gold-600 transition-colors">Call {brand.phone.display}</a>
           </div>
         </div>
       </section>

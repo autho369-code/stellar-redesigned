@@ -26,7 +26,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-condo-master-policy-section-12-requirements',
     title: 'What Illinois Law Requires Your Condo Master Policy to Cover',
     metaDescription:
-      'Section 12 of the Illinois Condominium Property Act sets minimum master policy coverage: full insurable replacement cost, demolition and increased cost of construction, and $1,000,000 liability.',
+      'Section 12 of the Illinois Condominium Property Act sets minimum master policy coverage: full replacement cost, demolition cost and $1,000,000 liability.',
     date: '2026-11-15',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
@@ -155,7 +155,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-condo-115-percent-assessment-petition',
     title: 'The 115% Rule: When Owners Can Reject an Assessment',
     metaDescription:
-      'Illinois owners can petition to vote on a budget or special assessment that pushes total assessments above 115% of last year. The 20% petition, the deadlines and the exceptions.',
+      'Illinois owners can petition to vote on a budget or special assessment above 115% of last year’s total. The 20% petition, deadlines and exceptions.',
     date: '2026-11-16',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -265,7 +265,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-condo-assessments-after-foreclosure-sale',
     title: 'Six Months of Assessments After an Illinois Foreclosure',
     metaDescription:
-      'Section 9(g) of the Illinois Condominium Property Act sets what a foreclosure purchaser owes an association: assessments from the month after the sale, plus up to six months of arrears.',
+      'Section 9(g) of the Illinois Condominium Act sets what a foreclosure purchaser owes the association: post-sale assessments plus up to six months of arrears.',
     date: '2026-11-17',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -374,7 +374,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-association-records-retention-schedule',
     title: 'How Long Must an Illinois Association Keep Its Records?',
     metaDescription:
-      'Section 19 of the Illinois Condominium Property Act sets retention periods: 7 years of minutes, 10 fiscal years of books and records, 12 months of ballots. The full schedule for boards.',
+      'Illinois Condominium Act Section 19 retention periods: 7 years of minutes, 10 fiscal years of books and records, 12 months of ballots. The full schedule.',
     date: '2026-11-18',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
@@ -510,7 +510,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-association-flag-display-rules',
     title: 'Flags and Flagpoles: What Illinois Owners May Display',
     metaDescription:
-      'Illinois law bars condo and HOA boards from prohibiting the American flag, military flags and flagpoles on limited common elements. What boards may still regulate, and what the law omits.',
+      'Illinois law bars condo and HOA boards from prohibiting the American flag, military flags and flagpoles on limited common elements. What boards can regulate.',
     date: '2026-11-19',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
@@ -628,7 +628,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-association-solar-panel-rights',
     title: 'Solar Panels in Illinois Associations: Who Has the Right',
     metaDescription:
-      'The Illinois Homeowners’ Energy Policy Statement Act bars associations from prohibiting solar — but not for buildings over 60 feet or with a shared roof. The policy, the deadlines and the limits.',
+      'The Illinois Homeowners’ Energy Policy Statement Act bars associations from prohibiting solar, with limits for buildings over 60 feet or shared roofs.',
     date: '2026-11-20',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',
@@ -743,7 +743,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-association-snow-ice-sidewalk-liability',
     title: 'Snow and Ice: What Illinois Law Actually Protects',
     metaDescription:
-      'The Illinois Snow and Ice Removal Act protects residential sidewalk clearing from liability unless willful or wanton. Chicago requires clearing by 10 p.m. or 10 a.m. with a 5-foot path.',
+      'The Illinois Snow and Ice Removal Act shields residential sidewalk clearing from liability unless willful or wanton. Chicago sets clearing deadlines.',
     date: '2026-11-21',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
@@ -873,7 +873,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
     slug: 'illinois-condo-smoke-carbon-monoxide-alarms',
     title: 'Smoke and CO Alarms in Illinois Condo Buildings',
     metaDescription:
-      'Illinois law requires alarms within 15 feet of every sleeping room and a smoke detector at the top of every interior stairwell. Who installs and maintains them in a condominium.',
+      'Illinois law requires alarms within 15 feet of every sleeping room and a smoke detector at the top of every interior stairwell. Who installs and maintains them.',
     date: '2026-11-22',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',

@@ -3,7 +3,7 @@ export const financialOnlyVsFullService = {
   title: 'Financial-Only vs Full-Service Condo and HOA Management in Chicago',
   seoTitle: 'Financial-Only vs Full-Service Management in Chicago',
   metaDescription:
-    'A Chicago board guide to financial-only versus full-service association management: what each includes, how to compare proposals, and when a fuller scope is a better fit.',
+    'A Chicago board guide to financial-only vs full-service association management: what each includes, how to compare proposals and when a fuller scope fits.',
   date: '2026-11-26',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Choosing Management',

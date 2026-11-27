@@ -118,7 +118,7 @@ export default function BlogTopic() {
       </header>
       <TrustBar />
 
-      <main className="bg-white py-20 lg:py-28">
+      <div className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-14 lg:gap-20">
           <section className="lg:col-span-8" aria-labelledby="topic-guides">
             <div className="flex items-end justify-between gap-6 mb-8">
@@ -160,7 +160,7 @@ export default function BlogTopic() {
             </div>
           </aside>
         </div>
-      </main>
+      </div>
 
       <ServiceFAQ items={topicFaqs[clusterKey]} title={`What boards ask about ${cluster.label.toLowerCase()}.`} />
 
@@ -171,7 +171,7 @@ export default function BlogTopic() {
           <p className="text-slate-600 font-light leading-relaxed mb-9">Tell us what your board is facing and request a management proposal built around your community.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to={`/contact?inquiry=quote&source=topic-${clusterKey}`} className="inline-flex items-center gap-2 bg-ink text-paper px-8 py-4 text-sm hover:bg-navy-700">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
-            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 border border-slate-300 text-ink px-8 py-4 text-sm hover:border-gold-500"><Phone className="w-4 h-4" />{brand.phone.dotted}</a>
+            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 border border-slate-300 text-ink px-8 py-4 text-sm hover:border-gold-500"><Phone className="w-4 h-4" />{brand.phone.display}</a>
           </div>
         </div>
       </section>

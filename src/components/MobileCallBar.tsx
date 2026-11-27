@@ -12,7 +12,7 @@ export default function MobileCallBar() {
   if (pathname.startsWith('/contact')) return null;
   const source = 'sticky-bar';
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 border-t border-paper/15 bg-ink pb-[env(safe-area-inset-bottom)] md:hidden" data-mobile-call-bar>
+    <nav aria-label="Quick contact" className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 border-t border-paper/15 bg-ink pb-[env(safe-area-inset-bottom)] md:hidden" data-mobile-call-bar>
       <a
         href={business.phoneHref}
         data-track-location="sticky-bar"
@@ -29,6 +29,6 @@ export default function MobileCallBar() {
       >
         Get a flat-fee proposal
       </Link>
-    </div>
+    </nav>
   );
 }

@@ -20,7 +20,9 @@
     "check:live": "node scripts/check-live-site.mjs",
     "test:fixture": "node scripts/make-url-fixture.mjs",
     "test:e2e": "playwright test",
-    "build:stats": "ANALYZE=1 vite build"
+    "build:stats": "ANALYZE=1 vite build",
+    "brand:dry-run": "node scripts/brand-swap-dry-run.mjs",
+    "seo:diff": "node scripts/seo-diff.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

@@ -33,7 +33,7 @@
   },
   {
    "path": "/about/mirsad-cerimovic",
-   "title": "Mirsad Cerimovic, CMCA | Founder, Stellar Property Management",
+   "title": "Mirsad Cerimovic, CMCA | Founder | Stellar",
    "h1": "Mirsad Cerimovic.",
    "h1Count": 1,
    "description": "Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS, managing 30+ condo and HOA associations.",
@@ -161,7 +161,7 @@
    "title": "Chicago High-Rise Condo Management | From $30/Unit",
    "h1": "High-Rise Condo Management in Chicago",
    "h1Count": 1,
-   "description": "High-rise condominium association management in Chicago: building systems, staff and vendor coordination, capital planning, financial controls, and 24/7 response.",
+   "description": "High-rise condominium management in Chicago: building systems, staff and vendor coordination, capital planning, financial controls and 24/7 response.",
    "canonical": "https://www.stellarpropertygroup.com/services/high-rise-condominium-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -207,6 +207,7 @@
    "canonical": "https://www.stellarpropertygroup.com/service-areas",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
+    "FAQPage",
     "Service"
    ]
   },
@@ -282,7 +283,7 @@
    "title": "Illinois Condo & HOA Board Guides | Stellar",
    "h1": "Insights for Board Members & Community Leaders.",
    "h1Count": 1,
-   "description": "Illinois condominium, HOA, and townhome association guidance for Chicagoland board members: governance, reserves, maintenance, compliance, and community management.",
+   "description": "Illinois condo, HOA and townhome association guidance for Chicagoland board members: governance, reserves, maintenance, compliance and community management.",
    "canonical": "https://www.stellarpropertygroup.com/blog",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -392,7 +393,7 @@
    "title": "AI Information Sheet | Stellar Property Management",
    "h1": "AI information sheet.",
    "h1Count": 1,
-   "description": "Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines: scope, credentials, licensing, service area and pricing model.",
+   "description": "Structured, verifiable facts about Stellar Property Management for AI assistants and answer engines: scope, credentials, licensing, service area and pricing.",
    "canonical": "https://www.stellarpropertygroup.com/ai-info",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -422,6 +423,20 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "HowTo"
+   ]
+  },
+  {
+   "path": "/how-to-choose-condo-management-company-chicago",
+   "title": "How to Choose a Condo Management Company in Chicago",
+   "h1": "How to choose a condo management company in Chicago.",
+   "h1Count": 1,
+   "description": "How a Chicago condo, HOA or townhome board picks a management company: licenses, the assigned manager, service model, total cost, contract terms and references.",
+   "canonical": "https://www.stellarpropertygroup.com/how-to-choose-condo-management-company-chicago",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "BreadcrumbList",
+    "FAQPage"
    ]
   },
   {
@@ -572,10 +587,10 @@
   },
   {
    "path": "/property-management-roscoe-village",
-   "title": "Condo & HOA Management in Roscoe Village, Chicago | Stellar",
+   "title": "Condo Management in Roscoe Village, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Roscoe Village , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Roscoe Village, Chicago (ZIP 60618, 60657). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Roscoe Village boards: greystone walk-ups, vintage two-flats and townhome infill. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-roscoe-village",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -600,10 +615,10 @@
   },
   {
    "path": "/property-management-wicker-park",
-   "title": "Condo & HOA Management in Wicker Park, Chicago | Stellar",
+   "title": "Condo Management in Wicker Park, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Wicker Park , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Wicker Park, Chicago (ZIP 60622, 60647). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Wicker Park boards: Victorian conversions, lofts and new mid-rises near the landmark district. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-wicker-park",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -614,10 +629,10 @@
   },
   {
    "path": "/property-management-logan-square",
-   "title": "Condo & HOA Management in Logan Square, Chicago | Stellar",
+   "title": "Condo Management in Logan Square, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Logan Square , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Logan Square, Chicago (ZIP 60647, 60618). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Logan Square boards: two-flats, three-flats and courtyard buildings on landmark boulevards. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-logan-square",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -628,10 +643,10 @@
   },
   {
    "path": "/property-management-ukrainian-village",
-   "title": "Condo & HOA Management in Ukrainian Village, Chicago | Stellar",
+   "title": "Condo Management in Ukrainian Village, Chicago | $30/Unit",
    "h1": "Condo & HOA Management in Ukrainian Village , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Ukrainian Village, Chicago (ZIP 60622, 60612). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Ukrainian Village boards: historic walk-ups and cottages in a Chicago landmark district. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-ukrainian-village",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -670,10 +685,10 @@
   },
   {
    "path": "/property-management-gold-coast",
-   "title": "Condo & HOA Management in Gold Coast, Chicago | Stellar",
+   "title": "Condo Management in the Gold Coast, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Gold Coast , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Gold Coast, Chicago (ZIP 60610, 60611). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Gold Coast boards: pre-war masonry buildings, Lake Shore Drive towers and landmark rowhouse blocks. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-gold-coast",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -698,10 +713,10 @@
   },
   {
    "path": "/property-management-loop",
-   "title": "Condo & HOA Management in Loop, Chicago | Stellar",
+   "title": "Condo Management in the Loop, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Loop , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Loop, Chicago (ZIP 60601, 60602, 60603, 60604). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Loop boards: converted office towers, historic landmarks and new high-rises downtown. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-loop",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -712,10 +727,10 @@
   },
   {
    "path": "/property-management-south-loop",
-   "title": "Condo & HOA Management in South Loop, Chicago | Stellar",
+   "title": "Condo Management in the South Loop, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in South Loop , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in South Loop, Chicago (ZIP 60605, 60616). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for South Loop boards: converted printing-house lofts, townhome blocks and 1990s to 2010s high-rises. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-south-loop",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -726,10 +741,10 @@
   },
   {
    "path": "/property-management-west-loop",
-   "title": "Condo & HOA Management in West Loop, Chicago | Stellar",
+   "title": "Condo Management in the West Loop, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in West Loop , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in West Loop, Chicago (ZIP 60607, 60661). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for West Loop boards: Fulton Market loft conversions, new towers and townhome blocks. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-west-loop",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -740,10 +755,10 @@
   },
   {
    "path": "/property-management-kenwood",
-   "title": "Condo & HOA Management in Kenwood, Chicago | Stellar",
+   "title": "Condo Management in Kenwood, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Kenwood , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Kenwood, Chicago (ZIP 60615, 60653). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Kenwood boards: lakefront high-rises, mid-century mid-rises and historic houses. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-kenwood",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -754,10 +769,10 @@
   },
   {
    "path": "/property-management-edison-park",
-   "title": "Condo & HOA Management in Edison Park, Chicago | Stellar",
+   "title": "Condo Management in Edison Park, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Edison Park , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Edison Park, Chicago (ZIP 60631). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Edison Park boards: small garden buildings and townhomes on Chicago’s far northwest edge. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-edison-park",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -768,10 +783,10 @@
   },
   {
    "path": "/property-management-portage-park",
-   "title": "Condo & HOA Management in Portage Park, Chicago | Stellar",
+   "title": "Condo Management in Portage Park, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Portage Park , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Portage Park, Chicago (ZIP 60634, 60641). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Portage Park boards: two-flats, bungalow-era conversions and small walk-ups on the northwest side. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-portage-park",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -782,10 +797,10 @@
   },
   {
    "path": "/property-management-irving-park",
-   "title": "Condo & HOA Management in Irving Park, Chicago | Stellar",
+   "title": "Condo Management in Irving Park, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Irving Park , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Irving Park, Chicago (ZIP 60618, 60641). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Irving Park boards: vintage two-flats, courtyard walk-ups and the Villa landmark district. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-irving-park",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -824,10 +839,10 @@
   },
   {
    "path": "/property-management-mayfair",
-   "title": "Condo & HOA Management in Mayfair, Chicago | Stellar",
+   "title": "Condo Management in Mayfair, Chicago | From $30/Unit",
    "h1": "Condo & HOA Management in Mayfair , Chicago",
    "h1Count": 1,
-   "description": "Condo, HOA & townhome association management in Mayfair, Chicago (ZIP 60630, 60646). Dedicated local manager, flat-fee pricing, 24/7 response.",
+   "description": "Condo and HOA management for Mayfair boards: brick two-flats, courtyard walk-ups and small apartment-style buildings. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-mayfair",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -852,10 +867,10 @@
   },
   {
    "path": "/property-management-skokie",
-   "title": "Condo & HOA Management in Skokie, IL | Stellar",
-   "h1": "Condo & HOA Management in Skokie",
+   "title": "Condo Management in Skokie, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Skokie , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Skokie, Illinois (ZIP 60076, 60077). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Skokie boards: 4,700 homes in large buildings and a village rental rule with a condo exemption. From $30 per unit.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-skokie",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -866,7 +881,7 @@
   },
   {
    "path": "/property-management-lincolnwood",
-   "title": "Condo Management in Lincolnwood, IL | From $30/Unit | Stellar",
+   "title": "Condo Management in Lincolnwood, IL | Stellar",
    "h1": "Condo & HOA Management in Lincolnwood , Illinois",
    "h1Count": 1,
    "description": "Condo, HOA and townhome management for Lincolnwood boards, a short drive from our Chicago office: taxes, snow, resales. Flat fee from $30 per unit a month.",
@@ -880,7 +895,7 @@
   },
   {
    "path": "/property-management-morton-grove",
-   "title": "Condo Management in Morton Grove, IL | From $30/Unit | Stellar",
+   "title": "Condo Management in Morton Grove, IL | Stellar",
    "h1": "Condo & HOA Management in Morton Grove , Illinois",
    "h1Count": 1,
    "description": "Condo, HOA and townhome management for Morton Grove boards: reserves, Cook County tax appeals and budgets. Flat fee from $30 per unit per month.",
@@ -894,10 +909,10 @@
   },
   {
    "path": "/property-management-norridge",
-   "title": "Condo & HOA Management in Norridge, IL | Stellar",
-   "h1": "Condo & HOA Management in Norridge",
+   "title": "Condo Management in Norridge, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Norridge , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Norridge, Illinois (ZIP 60706). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Norridge boards: 800 homes in large buildings and a village rental license that reaches condos. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-norridge",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -936,10 +951,10 @@
   },
   {
    "path": "/property-management-winnetka",
-   "title": "Condo & HOA Management in Winnetka, IL | Stellar",
-   "h1": "Condo & HOA Management in Winnetka",
+   "title": "Condo Management in Winnetka, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Winnetka , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Winnetka, Illinois (ZIP 60093). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Winnetka boards: about 440 homes in multi-unit buildings, plus a village-owned electric and water utility. From $30 per unit.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-winnetka",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -978,10 +993,10 @@
   },
   {
    "path": "/property-management-glencoe",
-   "title": "Condo & HOA Management in Glencoe, IL | Stellar",
-   "h1": "Condo & HOA Management in Glencoe",
+   "title": "Condo Management in Glencoe, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Glencoe , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Glencoe, Illinois (ZIP 60022). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Glencoe boards: a small condo stock in a village with a $60 to $70 million stormwater plan. From $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-glencoe",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -992,10 +1007,10 @@
   },
   {
    "path": "/property-management-kenilworth",
-   "title": "Condo & HOA Management in Kenilworth, IL | Stellar",
-   "h1": "Condo & HOA Management in Kenilworth",
+   "title": "Condo Management in Kenilworth, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Kenilworth , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Kenilworth, Illinois (ZIP 60043). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Kenilworth boards: a village of 762 homes where multi-unit buildings are rare. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-kenilworth",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1006,7 +1021,7 @@
   },
   {
    "path": "/property-management-lake-forest",
-   "title": "Condo Management in Lake Forest, IL | From $30/Unit | Stellar",
+   "title": "Condo Management in Lake Forest, IL | Stellar",
    "h1": "Condo & HOA Management in Lake Forest , Illinois",
    "h1Count": 1,
    "description": "Condo, HOA and townhome management for Lake Forest boards: winter contracts, insurance renewals and budget season. Flat fee from $30 per unit per month.",
@@ -1020,11 +1035,123 @@
   },
   {
    "path": "/property-management-deerfield",
-   "title": "Condo & HOA Management in Deerfield, IL | Stellar",
-   "h1": "Condo & HOA Management in Deerfield",
+   "title": "Condo Management in Deerfield, IL | From $30/Unit | Stellar",
+   "h1": "Condo & HOA Management in Deerfield , Illinois",
    "h1Count": 1,
-   "description": "Flat-fee condo, HOA & townhome association management in Deerfield, Illinois (ZIP 60015). Dedicated North Shore manager and 24/7 response since 2007.",
+   "description": "Condo and HOA management for Deerfield boards: 1,200 homes in large buildings and a Cook and Lake County split. Flat fee from $30 per unit a month.",
    "canonical": "https://www.stellarpropertygroup.com/property-management-deerfield",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-park-ridge",
+   "title": "Condo Management in Park Ridge, IL | Stellar",
+   "h1": "Condo & HOA Management in Park Ridge , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Park Ridge boards: mid-century buildings, Appearance Commission review and flood planning. Flat fee from $30 per unit a month.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-park-ridge",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-des-plaines",
+   "title": "Condo Management in Des Plaines, IL | Stellar",
+   "h1": "Condo & HOA Management in Des Plaines , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Des Plaines boards: rental licensing for investor-owned units, river floodplain rules, 1960s buildings. From $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-des-plaines",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-mount-prospect",
+   "title": "Condo Management in Mount Prospect, IL | Stellar",
+   "h1": "Condo & HOA Management in Mount Prospect , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Mount Prospect boards: village rental inspections, Weller Creek drainage and aging garden buildings. Flat fee from $30/unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-mount-prospect",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-arlington-heights",
+   "title": "Condo Management in Arlington Heights, IL | Stellar",
+   "h1": "Condo & HOA Management in Arlington Heights , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Arlington Heights boards: 1970s mid-rises, the 30-day minimum rental rule and flood planning. Flat fee from $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-arlington-heights",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-palatine",
+   "title": "Condo Management in Palatine, IL | Stellar",
+   "h1": "Condo & HOA Management in Palatine , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Palatine boards: a third of homes are condos, with village rental licensing and creek flood planning. From $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-palatine",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-buffalo-grove",
+   "title": "Condo Management in Buffalo Grove, IL | Stellar",
+   "h1": "Condo & HOA Management in Buffalo Grove , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Buffalo Grove boards: coach homes, village rental licensing, private stormwater basins, two counties. From $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-buffalo-grove",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-schaumburg",
+   "title": "Condo Management in Schaumburg, IL | Stellar",
+   "h1": "Condo & HOA Management in Schaumburg , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Schaumburg boards: association rental licenses, detention inspections and 1970s quad and townhome stock. From $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-schaumburg",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "FAQPage",
+    "Service"
+   ]
+  },
+  {
+   "path": "/property-management-northfield",
+   "title": "Condo Management in Northfield, IL | Stellar",
+   "h1": "Condo & HOA Management in Northfield , Illinois",
+   "h1Count": 1,
+   "description": "Condo and HOA management for Northfield boards: a small village with two flood basins, low-rise condos and owner-occupied streets. From $30 per unit.",
+   "canonical": "https://www.stellarpropertygroup.com/property-management-northfield",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "BreadcrumbList",
@@ -1063,6 +1190,18 @@
    "h1Count": 1,
    "description": "Can an Illinois condo association enter your unit? When it has a right of access, when notice is required, how emergencies differ, and owner privacy.",
    "canonical": "https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article"
+   ]
+  },
+  {
+   "path": "/blog/chicago-condo-management-transition-first-60-days",
+   "title": "A Chicago Condo Management Transition: The First 60 Days",
+   "h1": "What a Chicago Condo Management Transition Looks Like: The First 60 Days",
+   "h1Count": 1,
+   "description": "What Illinois condo and HOA boards should expect in the first 60 days after they hire a new manager: records, funds, vendors, notices and a clean handoff.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-management-transition-first-60-days",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article"
@@ -1131,11 +1270,23 @@
    ]
   },
   {
+   "path": "/blog/financial-only-vs-full-service-condo-hoa-management-chicago",
+   "title": "Financial-Only vs Full-Service Management in Chicago",
+   "h1": "Financial-Only vs Full-Service Condo and HOA Management in Chicago",
+   "h1Count": 1,
+   "description": "A Chicago board guide to financial-only vs full-service association management: what each includes, how to compare proposals and when a fuller scope fits.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/financial-only-vs-full-service-condo-hoa-management-chicago",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article"
+   ]
+  },
+  {
    "path": "/blog/first-time-condo-buyer-guide-chicago",
    "title": "The 22.1 Disclosure and Beyond: A First-Time Chicago Condo…",
    "h1": "The 22.1 Disclosure and Beyond: A First-Time Chicago Condo Buyer’s Guide",
    "h1Count": 1,
-   "description": "What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation, and the questions to ask.",
+   "description": "What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation and questions to ask.",
    "canonical": "https://www.stellarpropertygroup.com/blog/first-time-condo-buyer-guide-chicago",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1145,7 +1296,7 @@
   },
   {
    "path": "/blog/hoa-insurance-costs-illinois",
-   "title": "Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois",
+   "title": "Why HOA and Condo Insurance Costs Are Rising in Illinois",
    "h1": "Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois",
    "h1Count": 1,
    "description": "Association insurance premiums and deductibles are rising fast in Illinois. What drives the increases, how they hit budgets and HO-6 policies, what to do.",
@@ -1198,7 +1349,7 @@
    "title": "Fannie Mae and Freddie Mac Condo Eligibility: A Board Readi…",
    "h1": "Fannie Mae and Freddie Mac Condo Eligibility: A Board Readiness Guide",
    "h1Count": 1,
-   "description": "How Illinois condo boards prepare for Fannie Mae and Freddie Mac project reviews: reserves, questionnaires, insurance, litigation, and deferred maintenance answers.",
+   "description": "How Illinois condo boards prepare for Fannie Mae and Freddie Mac project reviews: reserves, questionnaires, insurance, litigation and deferred maintenance.",
    "canonical": "https://www.stellarpropertygroup.com/blog/fannie-freddie-condo-eligibility-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1210,7 +1361,7 @@
    "title": "Condo Master Policy vs. HO-6: What the Board Should Explain",
    "h1": "Condo Master Policy vs. HO-6: What the Board Should Explain",
    "h1Count": 1,
-   "description": "Illinois condo boards: how the association master policy and an owner HO-6 policy fit together, what the declaration controls, and how to communicate coverage gaps.",
+   "description": "How an Illinois condo association’s master policy and an owner’s HO-6 policy fit together, what the declaration controls, and how to explain coverage gaps.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-master-policy-vs-ho6-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1234,7 +1385,7 @@
    "title": "Chicago Facade Ordinance for Condo Boards: Compliance Guide",
    "h1": "Chicago Facade Compliance: How Condo Boards Can Stay Project-Ready",
    "h1Count": 1,
-   "description": "Chicago condo boards and facade compliance: how to confirm current City requirements, hire the right professionals, budget for repairs, and document board decisions.",
+   "description": "Chicago condo boards and facade compliance: confirm current City requirements, hire the right professionals, budget for repairs and document board decisions.",
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-facade-compliance-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1291,7 +1442,7 @@
   },
   {
    "path": "/blog/chicago-condo-life-safety-board-planning",
-   "title": "Chicago High-Rise Life-Safety Planning for Condominium Boards",
+   "title": "Chicago High-Rise Life-Safety Planning for Condo Boards",
    "h1": "Chicago High-Rise Life-Safety Planning for Condominium Boards",
    "h1Count": 1,
    "description": "Chicago high-rise condo boards: how to verify life-safety obligations, maintain systems and records, run resident education, and document board decisions.",
@@ -1306,7 +1457,7 @@
    "title": "Vendor RFPs for Condo and HOA Boards: Scope, Insurance, and…",
    "h1": "Vendor RFPs for Condo and HOA Boards: Scope, Insurance, and Controls",
    "h1Count": 1,
-   "description": "A vendor RFP framework for Illinois condo and HOA boards: writing scope, requiring insurance, comparing bids fairly, and building financial controls into contracts.",
+   "description": "A vendor RFP framework for Illinois condo and HOA boards: write the scope, require insurance, compare bids fairly and build financial controls into contracts.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-vendor-rfp-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1392,7 +1543,7 @@
    "title": "Late Fees and Interest: Building a Defensible Association P…",
    "h1": "Late Fees and Interest: Building a Defensible Association Policy",
    "h1Count": 1,
-   "description": "How Illinois condo and HOA boards build a late fee and interest policy that is authorized by their documents, applied consistently, and survives owner challenge.",
+   "description": "How Illinois condo and HOA boards build a late fee and interest policy that their documents authorize, that is applied consistently and that survives challenge.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-late-fees-interest-policy",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1404,7 +1555,7 @@
    "title": "Association Liens and Delinquencies: What Boards Need Organ…",
    "h1": "Association Liens and Delinquencies: What Boards Need Organized",
    "h1Count": 1,
-   "description": "Illinois condo and HOA boards can protect assessment income by keeping delinquency records, ledgers, and lien documentation organized before counsel gets involved.",
+   "description": "Illinois condo and HOA boards can protect assessment income by organizing delinquency records, ledgers and lien documentation before counsel gets involved.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-association-liens-delinquency",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1413,10 +1564,10 @@
   },
   {
    "path": "/blog/read-condo-hoa-financial-statements",
-   "title": "How Board Members Should Read Association Financial Statements",
+   "title": "How Board Members Should Read Association Financials",
    "h1": "How Board Members Should Read Association Financial Statements",
    "h1Count": 1,
-   "description": "A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement, and delinquency report in your monthly financial packet.",
+   "description": "A plain-language guide for condo and HOA board members: how to read the balance sheet, income statement and delinquency report in the monthly financial packet.",
    "canonical": "https://www.stellarpropertygroup.com/blog/read-condo-hoa-financial-statements",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1606,7 +1757,7 @@
   },
   {
    "path": "/blog/amend-illinois-condo-declaration-section-27",
-   "title": "Amending an Illinois Condo Declaration: What It Actually Takes",
+   "title": "Amending an Illinois Condo Declaration: What It Takes",
    "h1": "Amending an Illinois Condo Declaration: What It Actually Takes",
    "h1Count": 1,
    "description": "Section 27 sets the amendment threshold at two-thirds of voting owners unless your instruments say otherwise. And an amendment nobody records is not in force.",
@@ -1642,7 +1793,7 @@
   },
   {
    "path": "/blog/illinois-condo-hoa-budget-adoption-guide",
-   "title": "How Illinois Association Boards Should Adopt an Annual Budget",
+   "title": "How Illinois Boards Should Adopt an Annual Budget",
    "h1": "How Illinois Association Boards Should Adopt an Annual Budget",
    "h1Count": 1,
    "description": "A practical guide for Illinois condo and HOA boards on building, noticing, and adopting an annual budget, plus the owner notice steps to confirm with counsel.",
@@ -1678,7 +1829,7 @@
   },
   {
    "path": "/blog/community-association-management-agreement-review",
-   "title": "What to Review in a Community Association Management Agreement",
+   "title": "What to Review in a Community Association Agreement",
    "h1": "What to Review in a Community Association Management Agreement",
    "h1Count": 1,
    "description": "A clause-by-clause guide for Illinois condo and HOA boards reviewing a management agreement: fees, scope, termination, records and insurance.",
@@ -1761,12 +1912,324 @@
    ]
   },
   {
+   "path": "/blog/illinois-association-website-requirement-2028",
+   "title": "Illinois Associations Must Have a Website by January 1, 2028",
+   "h1": "Illinois Associations Must Have a Website by January 1, 2028",
+   "h1Count": 1,
+   "description": "Public Act 104-0797 requires Illinois condo and common interest community boards to provide a website with meeting information and minutes by Jan. 1, 2028.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-website-requirement-2028",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-annual-financial-report-email",
+   "title": "Illinois Boards Must Email the Annual Accounting From 2027",
+   "h1": "Illinois Boards Must Email the Annual Accounting From 2027",
+   "h1Count": 1,
+   "description": "Public Act 104-0797 requires Illinois condo and HOA boards to send the annual itemized accounting electronically to owners who authorize it, from Jan. 1, 2027.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-annual-financial-report-email",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-police-firefighter-vehicle-parking",
+   "title": "New Illinois Law: Marked Police and Fire Vehicles Can Park",
+   "h1": "New Illinois Law: Marked Police and Fire Vehicles Can Park",
+   "h1Count": 1,
+   "description": "From Jan. 1, 2027, Public Act 104-0580 voids association rules that treat a marked police or firefighter vehicle under 12,000 pounds as commercial.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-police-firefighter-vehicle-parking",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-condo-accessible-parking-policy",
+   "title": "Illinois Condo Boards Must Have an Accessible Parking Policy",
+   "h1": "Illinois Condo Boards Must Have an Accessible Parking Policy",
+   "h1Count": 1,
+   "description": "Section 18.12 of the Illinois Condominium Property Act requires every condo board to adopt an accessible parking policy with a review period under 45 days.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-accessible-parking-policy",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/collection-policy-board-decisions-payment-plans",
+   "title": "Five Collection Policy Decisions Your Board Must Make",
+   "h1": "Five Collection Policy Decisions Your Board Must Make",
+   "h1Count": 1,
+   "description": "The new Illinois collection policy law lists what the policy must cover but leaves the hard choices to the board. Five decisions to settle before Jan. 1, 2027.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/collection-policy-board-decisions-payment-plans",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/cicaa-small-association-exemptions-collection-policy",
+   "title": "Is Our Small HOA Exempt From the Illinois Association Act?",
+   "h1": "Is Our Small HOA Exempt From the Illinois Association Act?",
+   "h1Count": 1,
+   "description": "CICAA exempts some small Illinois HOAs and townhome associations. The 10-unit, $100,000 and $50,000 thresholds in Section 1-75 and the 2027 collection policy.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/cicaa-small-association-exemptions-collection-policy",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/reserve-study-lender-will-accept-2027",
+   "title": "Ordering a Reserve Study a Lender Will Accept in 2027",
+   "h1": "Ordering a Reserve Study a Lender Will Accept in 2027",
+   "h1Count": 1,
+   "description": "Fannie Mae accepts a reserve study in place of the reserve percentage test only on strict conditions: three years, no baseline funding, top allocation.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/reserve-study-lender-will-accept-2027",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/condo-critical-repairs-lender-questionnaire",
+   "title": "Critical Repairs: What Disqualifies a Condo Building",
+   "h1": "Critical Repairs: What Disqualifies a Condo Building",
+   "h1Count": 1,
+   "description": "Fannie Mae treats a project needing critical repairs as ineligible. The definition, the $10,000-per-unit threshold, the inspection rule and what to fix first.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/condo-critical-repairs-lender-questionnaire",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/high-rise-condo-management-chicago-whats-different",
+   "title": "High-Rise Condo Management in Chicago: What Is Different",
+   "h1": "High-Rise Condo Management in Chicago: What Is Different",
+   "h1Count": 1,
+   "description": "Why a Chicago high-rise condominium needs different management than a walk-up: staff, building systems, City inspections, capital planning and 24/7 response.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/high-rise-condo-management-chicago-whats-different",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/chicago-condo-heat-outage-protocol",
+   "title": "No Heat in a Chicago Condo Building: A Board Protocol",
+   "h1": "No Heat in a Chicago Condo Building: A Board Protocol",
+   "h1Count": 1,
+   "description": "What Chicago’s Heat Ordinance requires (68°F day, 66°F night, Sept. 15 to June 1) and a step-by-step protocol for condo boards when heat or hot water fails.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-heat-outage-protocol",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/small-condo-association-professional-manager",
+   "title": "Does a Small Condo Association Need a Professional Manager?",
+   "h1": "Does a Small Condo Association Need a Professional Manager?",
+   "h1Count": 1,
+   "description": "When a small Chicago condo association (6 to 30 units) can self-manage, when to hire a manager and what professional management actually changes.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/small-condo-association-professional-manager",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/glenview-townhome-hoa-board-guide",
+   "title": "Running a Glenview Townhome or HOA Board: A Local Guide",
+   "h1": "Running a Glenview Townhome or HOA Board: A Local Guide",
+   "h1Count": 1,
+   "description": "A guide for Glenview townhome, HOA and condo boards: master and sub-associations at The Glen, aging roofs and roads, snow contracts and which law applies.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/glenview-townhome-hoa-board-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-resale-disclosure-fees-turnaround",
+   "title": "Resale Disclosure Fees and Deadlines in Illinois: Condo vs.…",
+   "h1": "Resale Disclosure Fees and Deadlines in Illinois: Condo vs. HOA",
+   "h1Count": 1,
+   "description": "Illinois condo 22.1 disclosures: 10 business days, fee capped at $375 adjusted by CPI, $100 rush in 72 hours. HOAs under CICAA 1-35: 30 days, cost-based fee.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-resale-disclosure-fees-turnaround",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-condo-master-policy-section-12-requirements",
+   "title": "What Illinois Law Requires Your Condo Master Policy to Cover",
+   "h1": "What Illinois Law Requires Your Condo Master Policy to Cover",
+   "h1Count": 1,
+   "description": "Section 12 of the Illinois Condominium Property Act sets minimum master policy coverage: full replacement cost, demolition cost and $1,000,000 liability.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-master-policy-section-12-requirements",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-condo-115-percent-assessment-petition",
+   "title": "The 115% Rule: When Owners Can Reject an Assessment",
+   "h1": "The 115% Rule: When Owners Can Reject an Assessment",
+   "h1Count": 1,
+   "description": "Illinois owners can petition to vote on a budget or special assessment above 115% of last year’s total. The 20% petition, deadlines and exceptions.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-115-percent-assessment-petition",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-condo-assessments-after-foreclosure-sale",
+   "title": "Six Months of Assessments After an Illinois Foreclosure",
+   "h1": "Six Months of Assessments After an Illinois Foreclosure",
+   "h1Count": 1,
+   "description": "Section 9(g) of the Illinois Condominium Act sets what a foreclosure purchaser owes the association: post-sale assessments plus up to six months of arrears.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-assessments-after-foreclosure-sale",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-records-retention-schedule",
+   "title": "How Long Must an Illinois Association Keep Its Records?",
+   "h1": "How Long Must an Illinois Association Keep Its Records?",
+   "h1Count": 1,
+   "description": "Illinois Condominium Act Section 19 retention periods: 7 years of minutes, 10 fiscal years of books and records, 12 months of ballots. The full schedule.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-records-retention-schedule",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-flag-display-rules",
+   "title": "Flags and Flagpoles: What Illinois Owners May Display",
+   "h1": "Flags and Flagpoles: What Illinois Owners May Display",
+   "h1Count": 1,
+   "description": "Illinois law bars condo and HOA boards from prohibiting the American flag, military flags and flagpoles on limited common elements. What boards can regulate.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-flag-display-rules",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-solar-panel-rights",
+   "title": "Solar Panels in Illinois Associations: Who Has the Right",
+   "h1": "Solar Panels in Illinois Associations: Who Has the Right",
+   "h1Count": 1,
+   "description": "The Illinois Homeowners’ Energy Policy Statement Act bars associations from prohibiting solar, with limits for buildings over 60 feet or shared roofs.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-solar-panel-rights",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-association-snow-ice-sidewalk-liability",
+   "title": "Snow and Ice: What Illinois Law Actually Protects",
+   "h1": "Snow and Ice: What Illinois Law Actually Protects",
+   "h1Count": 1,
+   "description": "The Illinois Snow and Ice Removal Act shields residential sidewalk clearing from liability unless willful or wanton. Chicago sets clearing deadlines.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-snow-ice-sidewalk-liability",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-condo-smoke-carbon-monoxide-alarms",
+   "title": "Smoke and CO Alarms in Illinois Condo Buildings",
+   "h1": "Smoke and CO Alarms in Illinois Condo Buildings",
+   "h1Count": 1,
+   "description": "Illinois law requires alarms within 15 feet of every sleeping room and a smoke detector at the top of every interior stairwell. Who installs and maintains them.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-smoke-carbon-monoxide-alarms",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
    "path": "/blog/chicago-condo-porch-deck-safety-board-guide",
    "title": "Chicago Condo Porch and Deck Safety: What Boards of 3-Flats…",
    "h1": "Chicago Condo Porch and Deck Safety: What Boards of 3-Flats and Courtyard Buildings Should Do",
    "h1Count": 1,
    "description": "Chicago porch rules for condo boards: when a permit is required, what City inspectors check, the 100 psf live load, and a yearly porch checklist.",
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-porch-deck-safety-board-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/chicago-condo-elevator-inspection-board-guide",
+   "title": "Chicago Elevator Inspections and Certificates: What a Condo…",
+   "h1": "Chicago Elevator Inspections and Certificates: What a Condo Board Is Responsible For",
+   "h1Count": 1,
+   "description": "How elevator inspection works for Chicago condo buildings: City inspection, the Annual Inspection Certification program, and what the board must track.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-elevator-inspection-board-guide",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/chicago-condo-frozen-pipes-winter-checklist",
+   "title": "Preventing Frozen and Burst Pipes in Chicago Condo Building…",
+   "h1": "Preventing Frozen and Burst Pipes in Chicago Condo Buildings: A Winter Checklist for Boards",
+   "h1Count": 1,
+   "description": "A winter checklist for Chicago condo boards to prevent frozen and burst pipes, what to do when one bursts, and where the who-pays answer comes from.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-frozen-pipes-winter-checklist",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "Article",
+    "FAQPage"
+   ]
+  },
+  {
+   "path": "/blog/illinois-community-association-manager-what-they-can-do",
+   "title": "What an Illinois Licensed Community Association Manager Can…",
+   "h1": "What an Illinois Licensed Community Association Manager Can and Cannot Do",
+   "h1Count": 1,
+   "description": "What an Illinois licensed manager does under the CAM Act, what support staff and boards keep, and the firm, insurance and disclosure rules to know.",
+   "canonical": "https://www.stellarpropertygroup.com/blog/illinois-community-association-manager-what-they-can-do",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
@@ -1788,7 +2251,7 @@
   },
   {
    "path": "/blog/illinois-association-fidelity-insurance-requirements",
-   "title": "Fidelity Insurance for Illinois Associations and Their Manager",
+   "title": "Fidelity Insurance for Illinois Associations",
    "h1": "Fidelity Insurance for Illinois Associations and Their Manager",
    "h1Count": 1,
    "description": "Illinois fidelity coverage rules for condo and HOA associations and management firms: Condo Act Section 12, CICAA 1-55 and the 2026 CAM Act change.",
@@ -1801,7 +2264,7 @@
   },
   {
    "path": "/blog/illinois-management-company-segregated-accounts-commingling",
-   "title": "Association Money and Your Management Company: Illinois Rules",
+   "title": "Association Money and the Management Company: IL Rules",
    "h1": "Association Money and Your Management Company: Illinois Rules",
    "h1Count": 1,
    "description": "Illinois requires managers to keep each association’s funds in separate custodial accounts in its own name. What 225 ILCS 427/55 means for boards.",

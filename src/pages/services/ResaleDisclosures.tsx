@@ -117,7 +117,7 @@ export default function ResaleDisclosures() {
           </div>
           <div className="mt-12 flex flex-wrap gap-5">
             <Link to="/contact?inquiry=general&source=resale-disclosures" className="inline-flex items-center gap-3 bg-ink px-9 py-4 text-sm font-medium text-paper transition-colors hover:bg-navy-700">Request Documents <ArrowRight className="h-4 w-4" /></Link>
-            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 py-4 text-sm text-gold-600 hover:text-gold-500">Call {brand.phone.dotted}</a>
+            <a href={`tel:${brand.phone.e164}`} className="inline-flex items-center gap-2 py-4 text-sm text-gold-600 hover:text-gold-500">Call {brand.phone.display}</a>
           </div>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default function ResaleDisclosures() {
               </div>
             ))}
           </div>
-          <p className="mt-10 max-w-3xl text-sm font-light leading-relaxed text-slate-500">
+          <p className="mt-10 max-w-3xl text-sm font-light leading-relaxed text-slate-600">
             We produce these documents for associations Stellar manages. If your
             building is managed by another firm, the request goes to them — but
             if you are a board weighing a change because resale requests keep
@@ -250,7 +250,7 @@ export default function ResaleDisclosures() {
             </p>
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
-            <p className="mb-5 text-[10px] uppercase tracking-luxe text-slate-500">Questions worth asking your manager</p>
+            <p className="mb-5 text-[10px] uppercase tracking-luxe text-slate-600">Questions worth asking your manager</p>
           <ul className="border-t border-slate-200">
             {askYourManager.map((item) => (
               <li key={item} className="flex gap-4 border-b border-slate-200 py-5 text-slate-600">

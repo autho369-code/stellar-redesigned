@@ -212,7 +212,7 @@ export default function CompareProposals() {
             instead, and the disagreements surface early enough to matter.
           </p>
           <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
-          <p className="mt-5 max-w-2xl font-light leading-relaxed text-slate-500 print:hidden">
+          <p className="mt-5 max-w-2xl font-light leading-relaxed text-slate-600 print:hidden">
             Nothing is sent anywhere. There is no sign-up and no email capture —
             your scores stay in this browser. Print or save the page when you are
             done and bring it to the meeting.
@@ -225,7 +225,7 @@ export default function CompareProposals() {
           <div className="mb-10 grid gap-4 sm:grid-cols-3">
             {FIRM_SLOTS.map((slot) => (
               <label key={slot} className="block">
-                <span className="mb-2 block text-[10px] uppercase tracking-luxe text-slate-500">
+                <span className="mb-2 block text-[10px] uppercase tracking-luxe text-slate-600">
                   Firm {String.fromCharCode(65 + slot)}
                 </span>
                 <input
@@ -254,7 +254,7 @@ export default function CompareProposals() {
                 <div className="grid gap-5 sm:grid-cols-3">
                   {FIRM_SLOTS.map((slot) => (
                     <fieldset key={slot} className="border border-slate-200 bg-paper p-4">
-                      <legend className="px-2 text-[10px] uppercase tracking-luxe text-slate-500">{named[slot]}</legend>
+                      <legend className="px-2 text-[10px] uppercase tracking-luxe text-slate-600">{named[slot]}</legend>
                       <div className="flex gap-1.5" role="group" aria-label={`${c.label} score for ${named[slot]}`}>
                         {SCALE.map(({ v, t }) => {
                           const active = scores[c.key]?.[slot] === v;
@@ -268,7 +268,7 @@ export default function CompareProposals() {
                               className={`flex-1 border py-2 text-sm font-semibold tabular-nums transition-colors ${
                                 active
                                   ? 'border-gold-600 bg-gold-600 text-white'
-                                  : 'border-slate-300 bg-white text-slate-500 hover:border-gold-500 hover:text-gold-600'
+                                  : 'border-slate-300 bg-white text-slate-600 hover:border-gold-500 hover:text-gold-600'
                               }`}
                             >
                               {v}
@@ -291,12 +291,12 @@ export default function CompareProposals() {
                 const { total, complete, weightScored } = totals[slot];
                 return (
                   <div key={slot} className="bg-white p-7">
-                    <p className="mb-3 text-sm text-slate-500">{named[slot]}</p>
+                    <p className="mb-3 text-sm text-slate-600">{named[slot]}</p>
                     <p className="font-display text-5xl font-light tabular-nums text-ink">
                       {weightScored ? total : '—'}
                       {weightScored ? <span className="text-2xl text-slate-400">/100</span> : null}
                     </p>
-                    <p className="mt-3 text-xs text-slate-500">
+                    <p className="mt-3 text-xs text-slate-600">
                       {weightScored === 0
                         ? 'Not yet scored'
                         : complete
@@ -330,7 +330,7 @@ export default function CompareProposals() {
               </button>
             </div>
 
-            <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-slate-500">
+            <p className="mt-8 max-w-3xl text-sm font-light leading-relaxed text-slate-600">
               A number is a prompt for discussion, not a verdict. Have each
               director score independently before anyone talks, then compare —
               the places where directors disagree are usually where the real
@@ -410,7 +410,7 @@ export default function CompareProposals() {
             <div className="lg:col-span-4 lg:text-right">
               <Link
                 to="/contact?inquiry=proposal&source=scorecard"
-                className="group inline-flex items-center gap-3 bg-gold-500 px-8 py-4 text-sm font-medium text-ink transition-colors hover:bg-gold-400"
+                className="group inline-flex items-center gap-3 bg-gold-300 px-8 py-4 text-sm font-medium text-ink transition-colors hover:bg-gold-200"
               >
                 Request a proposal
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
