@@ -50,33 +50,22 @@ test('guide proposal button fires Proposal CTA Click', async ({ page }) => {
 // submission, because a real one emails the owner.
 test.fixme('contact submit fires Contact Form Submit and goes to /contact/thanks', async () => {});
 
-test('fee estimator: one Fee Estimator Used event per page view, and the contact form is prefilled', async ({ page }) => {
+test('hero card: no fee is calculated, and the contact form is prefilled', async ({ page }) => {
   await stub(page);
   await page.goto('/');
   await page.waitForSelector('html[data-app-ready]');
-  const card = page.locator('[data-fee-estimator]');
-  await expect(card.locator('[data-estimate]')).toContainText('$1,200');
-  await card.getByRole('button', { name: 'One unit more' }).click();
-  await card.getByRole('button', { name: 'One unit more' }).click();
+  const card = page.locator('[data-proposal-starter]');
+  await card.locator('#starter-units').fill('120');
   await card.getByRole('button', { name: 'HOA' }).click();
-  await card.locator('#estimator-units').fill('120');
-  await expect(card.locator('[data-estimate]')).toContainText('$3,600');
-  const hits = (await events(page)).filter((e) => e.name === 'Fee Estimator Used');
-  expect(hits.length, 'fires once').toBe(1);
-  expect(Object.keys(hits[0].data).sort()).toEqual(['page', 'units_band']);
-  expect(hits[0].data.units_band).toBe('25-74');
-  // The smallest association managed is 8 units: lower numbers are raised to 8.
-  await card.locator('#estimator-units').fill('3');
-  await card.locator('#estimator-units').blur();
-  await expect(card.locator('#estimator-units')).toHaveValue('8');
-  await expect(card.locator('[data-estimate]')).toContainText('$240');
-  await card.locator('#estimator-units').fill('120');
-  const href = await card.getByRole('link', { name: /Get my exact flat-fee proposal/ }).getAttribute('href');
-  expect(href).toBe('/contact?source=estimator&units=120&type=hoa');
+  // Owner rule: the site never multiplies units by a price.
+  await expect(card).not.toContainText('$3,600');
+  await expect(page.locator('main')).not.toContainText('Starting at $');
+  const href = await card.getByRole('link', { name: /Request a walkthrough and proposal/ }).getAttribute('href');
+  expect(href).toBe('/contact?source=home-hero-card&units=120&type=hoa');
 
   await page.goto(href!);
   await page.waitForSelector('html[data-app-ready]');
   await expect(page.locator('#number_of_units')).toHaveValue('120');
   await expect(page.locator('#property_type')).toHaveValue('Homeowners association');
-  await expect(page.locator('input[name="lead_source"]')).toHaveValue('estimator');
+  await expect(page.locator('input[name="lead_source"]')).toHaveValue('home-hero-card');
 });

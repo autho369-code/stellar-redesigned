@@ -19,7 +19,6 @@ export const EVENT_PROPERTIES = {
   'Proposal Tool Completed': ['tool'],
   'Board Toolkit Download': ['file'],
   'Review Link Click': ['location'],
-  'Fee Estimator Used': ['units_band', 'page'],
 } as const;
 
 export type TrackEventName = keyof typeof EVENT_PROPERTIES;

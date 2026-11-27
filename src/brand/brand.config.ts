@@ -31,7 +31,7 @@ export const brand = {
   stats: { associations: 30, residences: 1495, associationsDisplay: '30+', residencesDisplay: '1,500', retentionPercent: 96 },
   pricing: {
     startingPerUnit: 30,
-    /** Smallest association we manage (owner, 2026-11-26). The fee estimator starts here. */
+    /** Smallest association we manage (owner, 2026-11-26). */
     minUnits: 8,
     terms: 'everything included, with no extra fees',
     line: 'starting at $30 per unit per month, everything included, with no extra fees',

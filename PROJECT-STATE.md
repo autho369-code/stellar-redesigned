@@ -21,7 +21,8 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 
 ## Status update — 2026-11-26 (R4: shorter homepage and fee estimator)
 
-Branch `r4-homepage` (PR open). Homepage order: hero with the fee estimator,
+Branch `r4-homepage` (PR open). No fee calculator: the owner sets the fee only
+after a walkthrough. Homepage order: hero with a proposal-request card,
 trust bar, three Google reviews, "Who we manage" tiles, "Why boards switch to
 us" (four points, 96% retention and the approved Kenmore result), the three
 steps plus the pricing card with the included checklist, neighborhoods, board

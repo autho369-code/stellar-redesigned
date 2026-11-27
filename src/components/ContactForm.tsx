@@ -49,7 +49,7 @@ const emptyForm = (inquiryType: InquiryType): FormData => ({
 const inputClass = 'w-full border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-gold-500 focus:ring-1 focus:ring-gold-500';
 const labelClass = 'mb-2 flex items-center text-xs font-semibold uppercase tracking-wide text-slate-600';
 
-/** ?type= values from the fee estimator -> the "Property type" options below. */
+/** ?type= values from the homepage hero card -> the "Property type" options below. */
 const ESTIMATOR_TYPES: Record<string, string> = {
   condo: 'Condominium association',
   hoa: 'Homeowners association',
@@ -69,7 +69,7 @@ export function ContactForm() {
   useEffect(() => {
     setLeadSource(resolveLeadSource(sourceParam));
   }, [sourceParam]);
-  // The fee estimator sends ?units= and ?type=; fill those two fields in.
+  // The homepage hero card sends ?units= and ?type=; fill those two fields in.
   // Applied after mount so the prerendered markup and the first render match.
   const [formData, setFormData] = useState<FormData>(() => emptyForm(initialInquiry));
   const unitsParam = searchParams.get('units');

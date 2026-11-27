@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PROPOSAL_TURNAROUND } from '../data/ctaPosts';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus, Building, Building2, Home as HomeIcon, Fence, Check } from 'lucide-react';
-import FeeEstimator from '../components/FeeEstimator';
+import ProposalStarter from '../components/ProposalStarter';
 import { brand } from '../brand/brand.config';
 import { includedServices } from '../data/pricing';
 import { sixDisciplines } from '../data/six-disciplines';
@@ -269,7 +269,7 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      {/* ── 1. Hero: the offer on the left, the fee estimator on the right ── */}
+      {/* ── 1. Hero: the offer on the left, a proposal starter on the right (no fee calculation) ── */}
       <section className="relative bg-ink overflow-hidden">
         {/* faint drafting grid on ink */}
         <div
@@ -326,7 +326,7 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-5">
-              <FeeEstimator className="mx-auto max-w-md lg:ml-auto lg:mr-0" />
+              <ProposalStarter className="mx-auto max-w-md lg:ml-auto lg:mr-0" />
             </div>
           </div>
         </div>
