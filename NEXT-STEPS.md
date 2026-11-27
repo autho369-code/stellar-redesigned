@@ -3,6 +3,13 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Plan PDF replaced with the newer version** (18 pages, made
+      13:17; the one saved before was the 13:05 draft, 17 pages).
+      `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`. What is new in it:
+      founding year 2007 settled, "No long-term contracts — cancel with 60
+      days notice", the 6150 N Kenmore roof case study ($150,000 saved, live
+      page planned at `/case-studies/6150-n-kenmore-roof` in R6), office
+      photos. The R0-R9 prompts already had these facts.
 - [x] Nov 26: **Portfolio numbers made durable** (branch `portfolio-numbers`).
       Mirsad: the real counts are 30 associations and 1,495 residences (737
       Ridge just signed), and he does not want a site edit for every new
