@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -213,6 +214,7 @@ export default function ViolationManagement() {
       <ClusterGuides cluster="governance" />
       <ServiceAreasStrip service="violation-management" />
       <ServiceFAQ items={violationManagementFaqs} title="How rule enforcement actually works." />
+      <ReviewSection placement="service-violation-management" />
       <CTASection />
     </>
   );

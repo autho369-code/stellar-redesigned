@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { business } from '../../data/business';
@@ -358,6 +359,7 @@ export default function HOAManagement() {
       <ServiceFAQ items={hoaManagementFaqs} title="What HOA boards should ask a prospective manager." />
       <ClusterGuides cluster="governance" />
       <ServiceAreasStrip service="hoa-management" />
+      <ReviewSection placement="service-h-o-a-management" />
       <CTASection />
     </>
   );

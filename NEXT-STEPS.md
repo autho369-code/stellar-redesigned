@@ -3,6 +3,17 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D5 (pricing) + D6 placement**: /pricing has "Fees we do not
+      charge", the contract line callout and "How switching works" (three
+      existing steps, `switchSteps` in `src/data/pricing.ts`). No estimator
+      (owner rule). `ReviewSection` ("What boards say") sits above the final
+      call to action on the ten service pages, Chicago and North Shore.
+- [ ] **Handoff queue still open:** D9 (service/area/guide layouts: sticky
+      table of contents, author box, static map), D11 (About timeline, team
+      cards, 3-step proposal form; needs names, roles and photos from
+      Mirsad), D12 (Uptown, Andersonville, Gold Coast upgrades), D13 (final
+      QA, SEO diff, brand-swap dry run). Home speed on the runner not
+      re-measured since R4.
 - [x] Nov 26: **D2 + D6 (handoff)**: Kenmore case study page
       `/case-studies/6150-n-kenmore-roof` (three approved facts only, in
       `src/data/case-studies.ts`; in sitemap; 150 URLs again) and `KenmoreCard`

@@ -1,3 +1,4 @@
+import ReviewSection from '../components/ReviewSection';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Phone, Plus } from 'lucide-react';
@@ -222,6 +223,8 @@ export default function NorthShorePage() {
           <Link to="/blog/switch-condo-management-companies-chicago" className="mt-8 inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Read the management-company switching checklist <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </section>
+
+      <ReviewSection placement="north-shore-hub" />
 
       <section className="py-28 lg:py-36 bg-ink text-paper">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">

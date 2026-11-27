@@ -1,3 +1,4 @@
+import ReviewSection from '../components/ReviewSection';
 import { business } from '../data/business';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -529,6 +530,8 @@ export default function ChicagoPage() {
           </Link>
         </div>
       </section>
+
+      <ReviewSection placement="chicago-hub" />
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">

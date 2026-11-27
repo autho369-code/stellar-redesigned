@@ -6,7 +6,8 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business } from '../data/business';
-import { includedServices } from '../data/pricing';
+import { includedServices, switchSteps } from '../data/pricing';
+import { brand } from '../brand/brand.config';
 
 const pricingFactors = [
   { title: 'Community size', description: 'Unit count helps establish the baseline workload and per-unit economics.' },
@@ -263,6 +264,39 @@ export default function Pricing() {
             <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-6">{includedServices.map((service) => <li key={service} className="flex gap-3 text-sm text-paper/70 font-light leading-relaxed"><Check className="w-4 h-4 mt-0.5 text-gold-300 shrink-0" />{service}</li>)}</ul>
             <div className="mt-12 border-t border-paper/15 pt-8"><p className="text-paper/65 leading-relaxed">Already have a proposal? We will help your board compare the total annual cost, included services, manager assignment, transition obligations, and add-on charges line by line.</p></div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Fees we do not charge, the contract line, and how a switch works (R5) ── */}
+      <section className="py-20 lg:py-24 bg-white border-t border-slate-200" aria-labelledby="fees-not-charged">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
+            <div className="lg:col-span-7">
+              <h2 id="fees-not-charged" className="font-display font-light text-4xl text-ink leading-[1.08] mb-8">Fees we do not charge</h2>
+              <ul className="space-y-4 text-lg text-slate-700 leading-relaxed">
+                <li className="flex gap-3"><Check className="w-5 h-5 mt-1.5 shrink-0 text-gold-600" aria-hidden />No percentage of your budget. The fee is a flat monthly amount.</li>
+                <li className="flex gap-3"><Check className="w-5 h-5 mt-1.5 shrink-0 text-gold-600" aria-hidden />No separate capital-project planning or management-oversight fee.</li>
+              </ul>
+              <p className="mt-6 text-slate-600 leading-relaxed">Contractors, engineers, attorneys and permits stay association expenses.</p>
+            </div>
+            <aside className="lg:col-span-5 rounded-[var(--radius-lg)] bg-ink p-8 lg:p-10 text-paper" aria-label="Contract terms">
+              <p className="font-display text-3xl leading-tight">{brand.contracts.line}.</p>
+            </aside>
+          </div>
+
+          <h2 className="font-display font-light text-4xl text-ink leading-[1.08] mt-16 mb-10">How switching works</h2>
+          <ol className="grid gap-8 md:grid-cols-3 md:gap-0">
+            {switchSteps.map(([title, body], index) => (
+              <li key={title} className="border-t-2 border-gold-500 pt-6 md:pr-10">
+                <span className="font-display text-3xl font-light text-gold-600" aria-hidden>{index + 1}</span>
+                <h3 className="font-display text-xl text-ink mt-3 mb-2">{title}</h3>
+                <p className="text-slate-600 leading-relaxed">{body}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-8 text-[15px]">
+            <Link to="/blog/switch-condo-management-companies-chicago" className="text-gold-600 underline underline-offset-4 hover:text-ink">How a switch to a new manager works, step by step</Link>
+          </p>
         </div>
       </section>
 

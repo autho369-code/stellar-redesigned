@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -213,6 +214,7 @@ export default function FinancialManagement() {
       <ClusterGuides cluster="finance" />
       <ServiceAreasStrip service="financial-management" />
       <ServiceFAQ items={financialManagementFaqs} title="What Chicago boards ask about association finances." />
+      <ReviewSection placement="service-financial-management" />
       <CTASection />
     </>
   );

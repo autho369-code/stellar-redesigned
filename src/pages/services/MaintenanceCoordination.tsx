@@ -1,3 +1,4 @@
+import ReviewSection from '../../components/ReviewSection';
 import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
@@ -213,6 +214,7 @@ export default function MaintenanceCoordination() {
       <ClusterGuides cluster="buildings" />
       <ServiceAreasStrip service="maintenance-coordination" />
       <ServiceFAQ items={maintenanceCoordinationFaqs} title="Outages, repairs, and who is responsible." />
+      <ReviewSection placement="service-maintenance-coordination" />
       <CTASection />
     </>
   );
