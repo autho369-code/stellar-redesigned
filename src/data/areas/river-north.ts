@@ -6,11 +6,26 @@ export const riverNorth: AreaContent = {
   title: 'Condo Management in River North, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for River North boards: high-rises, converted lofts, short-term rentals and facade reports. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near River North? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'River North is Chicago’s gallery district and an entertainment destination. It has high-rise condominiums with amenity spaces such as rooftop decks and fitness centers, and converted loft buildings around Kinzie and Hubbard.',
+  housing: {
+    intro:
+      'River North does not have a community area of its own. It is part of the Near North Side, Community Area 8. The figures below are 2020 to 2024 American Community Survey estimates compiled by the Chicago Metropolitan Agency for Planning for the whole Near North Side, which also covers Old Town, Streeterville and the Gold Coast.',
+    stats: [
+      { label: 'Typical home was built in (median year)', value: '1989' },
+      { label: 'Mid-century homes, built 1940 to 1969', value: '12,507 (16.1%)' },
+      { label: 'Newer homes, built 2010 or later', value: '13,560 (17.5%)' },
+      { label: 'Mid-size buildings, five to nine units', value: '1,705 (2.2%)' },
+      { label: 'Larger buildings, ten to nineteen units', value: '1,707 (2.2%)' },
+      { label: 'Large buildings, twenty or more units', value: '69,343 (89.4%)' },
+      { label: 'Renter-occupied households', value: '44,142 (63.5%)' },
+      { label: 'Owner-occupied households', value: '25,410 (36.5%)' },
+    ],
+    takeaway:
+      'The Near North Side’s housing is much newer than the city’s overall (median year built 1953 citywide): the median home was built in 1989, 31.1 percent of homes date from 1990 to 2009 and 17.5 percent from 2010 or later, and 89.4 percent are in buildings of twenty or more units. River North’s towers and converted lofts sit on top of that profile, with amenity-heavy buildings and a majority of renter households (63.5 percent).',
+  },
   buildingTypes: [
     {
       name: 'High-rise condominiums',
@@ -61,6 +76,28 @@ export const riverNorth: AreaContent = {
       linkText: 'charging a master policy deductible to an owner',
     },
   ],
+  localItems: [
+    {
+      title: 'Elevator reporting',
+      body:
+        'Each year the City’s Annual Inspection Certification program has an owner hire a state-licensed third-party inspector and report the result through the Department of Buildings portal. A River North tower with several elevators carries that duty every year.',
+    },
+    {
+      title: 'Energy benchmarking',
+      body:
+        'A residential building of 50,000 square feet or more reports energy and water use each year by June 1. Condominiums are covered, and a licensed professional verifies the data every third year.',
+    },
+    {
+      title: 'Short-term rentals',
+      body:
+        'The City’s House Share Prohibited Buildings List excludes listed buildings from short-term-rental activity under the Shared Housing Ordinance. The City describes an affidavit process on its site.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024, and Cook County reassesses the city again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a River North loft building from the sidewalk; a high-rise street view near the river.
@@ -81,6 +118,23 @@ export const riverNorth: AreaContent = {
       a: 'Mainly two things: assessment income and the quality of governance. A board can improve both before its first conversation with a lender.',
       post: 'condo-hoa-capital-project-loan-preparation',
     },
+    {
+      q: 'Which River North towers have to benchmark energy use?',
+      a: 'Residential buildings of 50,000 square feet or more. Condominiums are covered, and the City expects a report each year with verification by a licensed professional every third year.',
+      post: 'chicago-condo-association-compliance-calendar',
+    },
+    {
+      q: 'What does a River North board do about amenity-space reserves?',
+      a: 'List each amenity as its own reserve line, such as the pool, deck and fitness equipment, with a replacement year and cost. Lenders and buyers read that detail.',
+      post: 'how-to-read-condo-reserve-study',
+    },
   ],
   hasHighRises: true,
+  sources: [
+    { label: 'Near North Side (River North) community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Near-North-Side.pdf' },
+    { label: 'Chicago Department of Buildings, annual elevator inspection reporting (AIC)', href: 'https://www.chicago.gov/city/en/depts/bldgs/provdrs/inspect/svcs/annual_inspectioncertificationaicprogramupdate.html' },
+    { label: 'Chicago Energy Benchmarking', href: 'https://www.chicago.gov/city/en/depts/env/supp_info/energy-benchmarking.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

@@ -6,8 +6,7 @@ export const buffaloGrove: AreaContent = {
   title: 'Condo Management in Buffalo Grove, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Buffalo Grove boards: coach homes, village rental licensing, private stormwater basins, two counties. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Buffalo Grove? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Buffalo Grove spans the Cook and Lake County line and was built mostly in the 1970s and 1980s, with more than half of its homes in single-family subdivisions. The condominium, townhome and coach-home associations around them share a village with unusually active stormwater and rental programs.',

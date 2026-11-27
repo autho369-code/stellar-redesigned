@@ -6,8 +6,7 @@ export const arlingtonHeights: AreaContent = {
   title: 'Condo Management in Arlington Heights, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Arlington Heights boards: 1970s mid-rises, the 30-day minimum rental rule and flood planning. Flat fee from $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Arlington Heights? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Arlington Heights has one of the biggest condominium markets in the northwest suburbs, with a quarter of its housing in condos and more than 7,000 homes in buildings of twenty or more units. Most of that stock was built in the 1970s and 1980s.',

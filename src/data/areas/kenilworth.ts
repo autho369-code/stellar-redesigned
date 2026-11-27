@@ -6,8 +6,7 @@ export const kenilworth: AreaContent = {
   title: 'Condo Management in Kenilworth, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Kenilworth boards: a village of 762 homes where multi-unit buildings are rare. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Kenilworth? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Kenilworth is a small lakefront village on the North Shore, built almost entirely with single-family houses. Its multi-unit stock is tiny, so a condominium board here is a rare case.',

@@ -6,8 +6,7 @@ export const loop: AreaContent = {
   title: 'Condo Management in the Loop, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Loop boards: converted office towers, historic landmarks and new high-rises downtown. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near the Loop? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'The Loop is Chicago’s downtown core, where residential towers share blocks with offices, hotels and theaters. Condominium buildings range from converted early-twentieth-century office towers to new high-rises.',

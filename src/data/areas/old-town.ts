@@ -6,11 +6,26 @@ export const oldTown: AreaContent = {
   title: 'Condo Management in Old Town, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Old Town boards: vintage buildings, the Old Town Triangle and Wells Street mixed-use. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Old Town? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Old Town is one of Chicago’s oldest neighborhoods, known for its historic row houses and the Old Town Triangle. Most associations here are small vintage buildings off Wells Street, and some sit above the shops and restaurants of the Wells Street corridor.',
+  housing: {
+    intro:
+      'Old Town does not have a community area of its own. It lies in the Near North Side, Community Area 8. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning, and cover the whole Near North Side, which also includes River North, Streeterville and the Gold Coast.',
+    stats: [
+      { label: 'Housing that predates 1940', value: '9,681 (12.5%)' },
+      { label: 'Median build year of the housing stock', value: '1989' },
+      { label: 'Three- and four-flats', value: '1,461 (1.9%)' },
+      { label: 'Five- to nine-unit buildings', value: '1,705 (2.2%)' },
+      { label: 'Ten- to nineteen-unit buildings', value: '1,707 (2.2%)' },
+      { label: 'Buildings with twenty or more units', value: '69,343 (89.4%)' },
+      { label: 'Owners among all households', value: '25,410 (36.5%)' },
+      { label: 'Renters among all households', value: '44,142 (63.5%)' },
+    ],
+    takeaway:
+      'In the Near North Side as a whole, 89.4 percent of homes are in buildings of twenty or more units. Old Town’s row houses, cottages and small walk-ups are part of the remaining 10.5 percent or so, which is why associations here are small buildings governed by a few owners rather than tower boards.',
+  },
   buildingTypes: [
     {
       name: 'Small vintage buildings',
@@ -66,6 +81,28 @@ export const oldTown: AreaContent = {
       linkText: 'a board’s guide to resale disclosures',
     },
   ],
+  localItems: [
+    {
+      title: 'Old Town Triangle landmark district',
+      body:
+        'The City designated the Old Town Triangle district on September 28, 1977. Exterior work on a building inside the district, such as windows, masonry or porches, is reviewed by the City’s historic preservation staff before a permit is issued.',
+    },
+    {
+      title: 'Hauling for buildings above four units',
+      body:
+        'The City collects from buildings of up to four units. A building above that size, including condominiums above Wells Street storefronts, contracts a private hauler.',
+    },
+    {
+      title: 'Closing a building to short-term rentals',
+      body:
+        'The City’s House Share Prohibited Buildings List excludes listed buildings from short-term-rental activity. The City describes an affidavit process on its site, and an association’s own rules apply in any case.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024, and Cook County reassesses the city again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a row of Old Town Triangle houses from the sidewalk; a vintage building off Wells Street.
@@ -91,6 +128,18 @@ export const oldTown: AreaContent = {
       a: 'The recorded declaration and any shared-facilities agreement set the split. Ask association counsel to confirm it, then show it as its own line in the budget.',
       post: 'illinois-condo-hoa-budget-adoption-guide',
     },
+    {
+      q: 'Does a condominium above a Wells Street shop have to hire its own hauler?',
+      a: 'If the building has five or more units, yes, because City crews serve only buildings of up to four. Mixed-use buildings often split the contract with the commercial space under the declaration.',
+      post: 'condo-hoa-annual-budget-workbook',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Near North Side (Old Town) community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Near-North-Side.pdf' },
+    { label: 'Chicago Landmarks, official list of landmark districts', href: 'https://webapps1.chicago.gov/landmarksweb/web/listings.htm' },
+    { label: 'City of Chicago garbage collection eligibility', href: 'https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/grid-garbage-collection.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

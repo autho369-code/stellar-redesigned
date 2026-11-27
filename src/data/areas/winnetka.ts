@@ -6,8 +6,7 @@ export const winnetka: AreaContent = {
   title: 'Condo Management in Winnetka, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Winnetka boards: about 440 homes in multi-unit buildings, plus a village-owned electric and water utility. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Winnetka? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Winnetka is a North Shore village with a walkable downtown and a lakefront. Condominiums are a small share of its homes.',

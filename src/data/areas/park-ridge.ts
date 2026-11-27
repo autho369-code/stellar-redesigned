@@ -6,8 +6,7 @@ export const parkRidge: AreaContent = {
   title: 'Condo Management in Park Ridge, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Park Ridge boards: mid-century buildings, Appearance Commission review and flood planning. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Park Ridge? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Park Ridge is a Cook County city of mostly single-family streets, so its condominium buildings are a small, older slice of the housing stock. Roughly one in six homes here is a condo, and most of that stock was built before 1970.',

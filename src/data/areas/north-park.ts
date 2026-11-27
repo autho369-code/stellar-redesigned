@@ -6,11 +6,26 @@ export const northPark: AreaContent = {
   title: 'Condo Management in North Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for North Park boards: condominium associations and townhome communities near the river. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near North Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'North Park is a quiet neighborhood on the North Branch of the Chicago River, home to North Park University and nature preserves. It has condominium associations and townhome communities, including the Peterson Park blocks.',
+  housing: {
+    intro:
+      'North Park is Community Area 13, bordered by the North Branch of the Chicago River. The figures below come from the Census Bureau’s 2020 to 2024 American Community Survey, compiled by the Chicago Metropolitan Agency for Planning for the whole community area.',
+    stats: [
+      { label: 'Median year of construction', value: '1952' },
+      { label: 'Built before 1940', value: '2,646 (34.8%)' },
+      { label: 'Built since 2010', value: '89 (1.2%)' },
+      { label: 'Living in two-unit buildings', value: '1,321 (17.4%)' },
+      { label: 'Living in three- and four-unit buildings', value: '919 (12.1%)' },
+      { label: 'Households that are owners', value: '3,283 (48.1%)' },
+      { label: 'Built 1970 to 1989', value: '830 (10.9%)' },
+      { label: 'Households that are renters', value: '3,542 (51.9%)' },
+    ],
+    takeaway:
+      'Three in ten North Park homes are detached houses, yet about one in five sits in a building of twenty or more units. Associations range from small two-flats to larger complexes, so a board’s needs depend heavily on which end of that range it is on.',
+  },
   buildingTypes: [
     {
       name: 'Condominium associations',
@@ -61,6 +76,23 @@ export const northPark: AreaContent = {
       linkText: 'reasonable reserves explained for boards',
     },
   ],
+  localItems: [
+    {
+      title: 'Garbage collection',
+      body:
+        'The City hauls for buildings of up to four units. A North Park building with five or more units pays a private hauler, and its board should rebid that contract on a schedule.',
+    },
+    {
+      title: 'Short-term rentals',
+      body:
+        'Chicago’s Shared Housing Ordinance includes a Prohibited Buildings List for buildings that have opted out of short-term-rental activity. The City’s affidavit process is described on its site and the declaration still governs owners.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024. Cook County next reassesses the city in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a North Park condominium building from the sidewalk; a residential street near the river.
@@ -86,6 +118,17 @@ export const northPark: AreaContent = {
       a: 'The yearly calendar, the vendor list with contract dates, where the records are kept, and who has access to the bank accounts. A new director should be able to take over from the page.',
       post: 'self-managed-condo-association-problems',
     },
+    {
+      q: 'How often should a small North Park board rebid its hauler or snow contract?',
+      a: 'Every two to three years is a reasonable rhythm, because prices drift and contracts auto-renew. A written scope that two vendors can price the same way makes the comparison honest.',
+      post: 'condo-hoa-vendor-rfp-checklist',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'North Park community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/North-Park.pdf' },
+    { label: 'City of Chicago garbage collection eligibility', href: 'https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/grid-garbage-collection.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

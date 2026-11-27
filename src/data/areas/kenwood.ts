@@ -6,8 +6,7 @@ export const kenwood: AreaContent = {
   title: 'Condo Management in Kenwood, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Kenwood boards: lakefront high-rises, mid-century mid-rises and historic houses. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Kenwood? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Kenwood is a South Side lakefront neighborhood of large historic houses and tall apartment buildings, next to Hyde Park. Condominiums here are mostly in mid-century and later high-rises and mid-rises.',

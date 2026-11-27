@@ -6,11 +6,26 @@ export const albanyPark: AreaContent = {
   title: 'Condo Management in Albany Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Albany Park boards: condominiums and multi-unit conversions near the river and the Brown Line. Flat fee from $30 per unit.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Albany Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Albany Park sits along the North Branch of the Chicago River with good transit access. It is one of Chicago’s most diverse neighborhoods, with a mix of condominiums and multi-unit conversions.',
+  housing: {
+    intro:
+      'Albany Park is Community Area 14, on the North Branch of the Chicago River. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning for the whole community area.',
+    stats: [
+      { label: 'Median construction year, all homes', value: '1931' },
+      { label: 'Homes built before 1940', value: '11,493 (60.8%)' },
+      { label: 'Homes built since 2010', value: '655 (3.5%)' },
+      { label: 'Homes in two-unit buildings', value: '3,262 (17.3%)' },
+      { label: 'Homes in three- and four-unit buildings', value: '3,589 (19.0%)' },
+      { label: 'Households that own their home', value: '7,624 (43.7%)' },
+      { label: 'Homes in buildings of five to nine units', value: '3,818 (20.2%)' },
+      { label: 'Households that rent their home', value: '9,811 (56.3%)' },
+    ],
+    takeaway:
+      'Six in ten Albany Park homes predate 1940, and the rest of the stock is spread almost evenly across two-flats (17.3 percent), three- and four-flats (19.0 percent) and buildings of five to nine units (20.2 percent). For a board, that points to pre-war buildings where roofs, porches and boilers are the main capital items.',
+  },
   buildingTypes: [
     {
       name: 'Multi-unit conversions',
@@ -61,6 +76,23 @@ export const albanyPark: AreaContent = {
       linkText: 'how to judge a manager’s workload',
     },
   ],
+  localItems: [
+    {
+      title: 'Garbage service depends on building size',
+      body:
+        'The City collects from buildings with up to four units and bills those units its monthly garbage fee. Buildings with five or more units hire a private hauler, so an Albany Park walk-up with six units budgets that contract itself.',
+    },
+    {
+      title: 'Closing a building to short-term rentals',
+      body:
+        'The City keeps a House Share Prohibited Buildings List under its Shared Housing Ordinance. A condominium can be added through the affidavit process the City describes, after which short-term-rental registrations for its units are refused.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024, and Cook County reassesses the city again in 2027. A board that plans a tax appeal for the building should note that date.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): an Albany Park courtyard or two-flat conversion from the sidewalk; a street near the river.
@@ -86,6 +118,16 @@ export const albanyPark: AreaContent = {
       a: 'Keep notices short and plain, send them more than one way, and follow the notice rules in your declaration and the statute. A translated summary can sit beside the official notice.',
       post: 'illinois-condo-hoa-budget-adoption-guide',
     },
+    {
+      q: 'Who is responsible for garbage in a six-unit building?',
+      a: 'The City collects from buildings of up to four units. A building with six units contracts and pays a private hauler, and the association budgets that contract with its other common expenses.',
+      post: 'condo-hoa-annual-budget-workbook',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'City of Chicago garbage collection eligibility', href: 'https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/grid-garbage-collection.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

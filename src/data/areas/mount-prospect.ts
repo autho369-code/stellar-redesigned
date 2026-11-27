@@ -6,8 +6,7 @@ export const mountProspect: AreaContent = {
   title: 'Condo Management in Mount Prospect, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Mount Prospect boards: village rental inspections, Weller Creek drainage and aging garden buildings. Flat fee from $30/unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Mount Prospect? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Mount Prospect has one of the largest shares of multi-family housing in the northwest suburbs: more than a third of its homes are in buildings of five or more units. Nearly a third of households rent, and the village inspects multi-family buildings on a set cycle.',

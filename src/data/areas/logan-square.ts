@@ -6,8 +6,7 @@ export const loganSquare: AreaContent = {
   title: 'Condo Management in Logan Square, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Logan Square boards: two-flats, three-flats and courtyard buildings on landmark boulevards. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Logan Square? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Logan Square is built around its boulevards and the square itself. Most buildings are brick two-flats, three-flats and courtyard buildings from the early twentieth century, and many have been converted to condominiums. A smaller group of newer buildings sits along the Milwaukee Avenue corridor.',

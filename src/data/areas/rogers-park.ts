@@ -6,11 +6,26 @@ export const rogersPark: AreaContent = {
   title: 'Condo Management in Rogers Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Rogers Park boards: vintage courtyard buildings, rear porches and reserves. Flat fee from $30 per unit. Chicago office.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Rogers Park? Needed for the "Stellar manages N ..." sentence.
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Rogers Park is on Chicago’s far north side. Its housing is a mix of vintage courtyard condominium buildings and lakefront buildings of many ages and styles.',
+  housing: {
+    intro:
+      'Rogers Park is Community Area 1, the city’s northernmost neighborhood on the lakefront. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, as compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Median build year of the housing stock', value: '1942' },
+      { label: 'Housing that predates 1940', value: '14,047 (48.5%)' },
+      { label: 'Housing from 2010 on', value: '935 (3.2%)' },
+      { label: 'Two-flats and duplexes', value: '945 (3.3%)' },
+      { label: 'Three- and four-flats', value: '2,860 (9.9%)' },
+      { label: 'Owners among all households', value: '7,372 (28.2%)' },
+      { label: 'Five- to nine-unit buildings', value: '6,437 (22.2%)' },
+      { label: 'Renters among all households', value: '18,814 (71.8%)' },
+    ],
+    takeaway:
+      'Rogers Park is a renter-majority community area: 71.8 percent of households rent. Almost half of all homes predate 1940, 36 percent sit in buildings of five to nineteen units and 42.4 percent in buildings of twenty or more. A condominium board here often governs an older building with a long maintenance list and owners with a wide range of budgets.',
+  },
   buildingTypes: [
     {
       name: 'Vintage courtyard condominium buildings',
@@ -58,6 +73,23 @@ export const rogersPark: AreaContent = {
       linkText: 'how to switch condo management companies in Chicago',
     },
   ],
+  localItems: [
+    {
+      title: 'Porch safety in courtyard buildings',
+      body:
+        'Chicago inspects porches after a complaint to 311, requires them to carry 100 pounds per square foot, and requires a permit and stamped plans for structural repairs. Rear porches on a Rogers Park courtyard building are common elements, so the association carries the repair.',
+    },
+    {
+      title: 'Elevators in larger buildings',
+      body:
+        'Buildings with elevators fall under the City’s Annual Inspection Certification program, where the owner hires a state-licensed third-party inspector each year and reports through the City portal.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'The City of Chicago was reassessed in 2024 and will be reassessed again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range for a 12-, 24- and 48-unit building
   // in Rogers Park, from real recent proposals. Never estimate.
   feeRanges: null,
@@ -80,6 +112,22 @@ export const rogersPark: AreaContent = {
       a: 'It depends on the termination terms in the agreement your board signed. Review those terms with association counsel before the board announces a search.',
       post: 'switch-condo-management-companies-chicago',
     },
+    {
+      q: 'What should a board do when a 311 complaint brings a porch inspection?',
+      a: 'Get an engineer to assess the structure, find out whether the repair needs a permit with stamped plans, and decide whether the work is an association cost under the declaration. Owners should hear about it in writing early.',
+      post: 'chicago-condo-porch-deck-safety-board-guide',
+    },
+    {
+      q: 'How should a board handle owners with very different budgets?',
+      a: 'Phase large projects, publish the reserve plan, and adopt a written payment-plan policy before a hardship case arises. Consistent treatment protects the board.',
+      post: 'condo-special-assessments-illinois',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Rogers Park community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Rogers-Park.pdf' },
+    { label: 'Chicago porch safety and permits', href: 'https://www.chicago.gov/city/en/depts/bldgs/supp_info/porch-safety.html' },
+    { label: 'Chicago Department of Buildings, annual elevator inspection reporting (AIC)', href: 'https://www.chicago.gov/city/en/depts/bldgs/provdrs/inspect/svcs/annual_inspectioncertificationaicprogramupdate.html' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

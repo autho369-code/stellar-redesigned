@@ -3,7 +3,8 @@
  *
  * One file per page in this folder. Every section is optional: a field that
  * is null or an empty list hides its block. Facts that wait on the owner are
- * stored as null with a TODO(Jojo) comment and are never shown.
+ * stored as null and are never shown. Per-area managed counts are company-private
+ * (owner decision, Nov 27, 2026): `managed` stays null.
  *
  * Rules: no building, association, owner or board is ever named. No invented
  * facts. Building types come from the page's earlier copy unless confirmed.

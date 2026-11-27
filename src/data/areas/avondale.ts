@@ -6,11 +6,26 @@ export const avondale: AreaContent = {
   title: 'Condo Management in Avondale, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Avondale boards: condo conversions, new townhomes, capital plans and lender questions. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Avondale? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Avondale is a growing northwest side neighborhood known for its craft breweries and dining scene. It has a growing number of condominium conversions and new townhome developments.',
+  housing: {
+    intro:
+      'Avondale is Community Area 21, on the northwest side. These are 2020 to 2024 American Community Survey estimates for the whole community area, as compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Typical home was built in (median year)', value: '1934' },
+      { label: 'Share of homes that predate 1940', value: '9,190 (57.2%)' },
+      { label: 'Newer homes, built 2010 or later', value: '1,017 (6.3%)' },
+      { label: 'Two-flat style homes (two units)', value: '4,591 (28.6%)' },
+      { label: 'Three- and four-flat style homes', value: '4,661 (29.0%)' },
+      { label: 'Owner-occupied households', value: '6,540 (43.7%)' },
+      { label: 'Homes from the 1990 to 2009 building years', value: '1,565 (9.7%)' },
+      { label: 'Renter-occupied households', value: '8,425 (56.3%)' },
+    ],
+    takeaway:
+      'Two-flats and three- and four-flats make up more than half of Avondale’s homes, and 57 percent of all homes predate 1940. Only about 6 percent were built since 2010, so most associations are in older buildings and the newer townhome and infill projects are only now reaching their first capital work.',
+  },
   buildingTypes: [
     {
       name: 'Condominium conversions',
@@ -61,6 +76,23 @@ export const avondale: AreaContent = {
       linkText: 'how to score management proposals',
     },
   ],
+  localItems: [
+    {
+      title: 'Porches and the 311 process',
+      body:
+        'Chicago does not inspect porches on a schedule. Complaints to 311 trigger inspections, a porch must carry a load the code sets at 100 pounds per square foot, and structural repairs need a permit with stamped plans. In a converted two-flat, the rear porch is often the most expensive common element.',
+    },
+    {
+      title: 'Short-term rentals in a condominium',
+      body:
+        'Under the Shared Housing Ordinance the City lists buildings that have been excluded from short-term-rental activity. The City describes an affidavit process for adding a building, and the association’s declaration and rules still apply either way.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'The City of Chicago was reassessed in 2024. The next Cook County reassessment of the city is 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a converted Avondale building from the sidewalk; a new townhome row; a neighborhood street.
@@ -86,6 +118,17 @@ export const avondale: AreaContent = {
       a: 'Open the association’s own bank accounts, adopt a budget, confirm the insurance, and set a calendar for meetings and notices. Then decide who does the daily work.',
       post: 'illinois-condo-hoa-budget-adoption-guide',
     },
+    {
+      q: 'Who pays to rebuild a shared rear porch in a two-flat condominium?',
+      a: 'The declaration says whether the porch is a common element or belongs to one unit. Chicago requires a permit and stamped plans for structural porch work, so the board should settle who pays before it hires anyone.',
+      post: 'chicago-condo-porch-deck-safety-board-guide',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Avondale community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Avondale.pdf' },
+    { label: 'Chicago porch safety and permits', href: 'https://www.chicago.gov/city/en/depts/bldgs/supp_info/porch-safety.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

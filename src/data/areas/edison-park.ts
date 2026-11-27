@@ -6,8 +6,7 @@ export const edisonPark: AreaContent = {
   title: 'Condo Management in Edison Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Edison Park boards: small garden buildings and townhomes on Chicago’s far northwest edge. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Edison Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Edison Park is Chicago’s far northwest corner, a village-like neighborhood along Northwest Highway with a mostly residential street grid. Its condominium buildings are small garden-style complexes mixed among single-family blocks.',

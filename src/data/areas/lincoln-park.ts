@@ -6,11 +6,26 @@ export const lincolnPark: AreaContent = {
   title: 'Condo Management in Lincoln Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Lincoln Park boards, Sheffield to Wrightwood: resale disclosures, lender questions, reserves. Flat fee from $30 per unit.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Lincoln Park?
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Lincoln Park runs from vintage walk-ups to luxury high-rises along the lakefront. It includes Sheffield, the DePaul campus blocks, Ranch Triangle and Wrightwood.',
+  housing: {
+    intro:
+      'Lincoln Park is Community Area 7. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning for the whole community area.',
+    stats: [
+      { label: 'Median year of construction', value: '1970' },
+      { label: 'Built before 1940', value: '12,752 (34.0%)' },
+      { label: 'Built since 2010', value: '3,281 (8.8%)' },
+      { label: 'Living in three- and four-unit buildings', value: '5,481 (14.6%)' },
+      { label: 'Living in five- to nine-unit buildings', value: '4,866 (13.0%)' },
+      { label: 'Living in ten- to nineteen-unit buildings', value: '2,198 (5.9%)' },
+      { label: 'Living in buildings of twenty or more units', value: '16,044 (42.8%)' },
+      { label: 'Households that are owners', value: '15,117 (44.8%)' },
+    ],
+    takeaway:
+      'Lincoln Park’s housing is a wide mix: 10.7 percent of homes are detached houses, 8.9 percent are attached houses and 42.8 percent are in buildings of twenty or more units. About a third of the homes (34.0 percent) predate 1940, so a vintage row-house association and a lakefront tower can be a few blocks apart with very different obligations.',
+  },
   buildingTypes: [
     {
       name: 'Vintage walk-ups',
@@ -61,6 +76,28 @@ export const lincolnPark: AreaContent = {
       linkText: 'how to compare Chicago condo and HOA management companies',
     },
   ],
+  localItems: [
+    {
+      title: 'Mid-North and Armitage-Halsted districts',
+      body:
+        'Chicago designated the Mid-North district on August 31, 1977, the Armitage-Halsted district on February 5, 2003 and the Mid-North Extension on September 29, 2004. Exterior work on a building in one of these districts is reviewed by the City’s historic preservation staff before a permit is issued.',
+    },
+    {
+      title: 'Exterior wall inspections',
+      body:
+        'Buildings 80 feet or taller fall under Chicago’s facade ordinance, Municipal Code 13-196-032 through 037, with critical examinations every 4, 8 or 12 years depending on category.',
+    },
+    {
+      title: 'Energy benchmarking',
+      body:
+        'A residential building of 50,000 square feet or more reports energy and water use by June 1 each year. Condominiums are covered.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'The City was reassessed in 2024 and is reassessed again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range for a 12-, 24- and 48-unit building
   // in Lincoln Park, from real recent proposals. Never estimate.
   feeRanges: null,
@@ -83,6 +120,23 @@ export const lincolnPark: AreaContent = {
       a: 'Set the criteria and their weights before any proposal arrives. Then have each director score every firm independently before the board discusses them.',
       post: 'score-condo-hoa-management-proposals',
     },
+    {
+      q: 'Does our Lincoln Park building need City review for window or masonry work?',
+      a: 'Only if it is inside a landmark district such as Mid-North or Armitage-Halsted, or is an individual landmark. The City’s landmark listing shows the districts. Elsewhere the normal permit process applies.',
+      post: 'vintage-chicago-condo-capital-planning',
+    },
+    {
+      q: 'Which Lincoln Park buildings are covered by the facade ordinance?',
+      a: 'Buildings 80 feet or taller. The ordinance sets critical examination cycles of 4, 8 or 12 years depending on the building’s category, with short-form reports in between.',
+      post: 'chicago-condo-facade-compliance-board-guide',
+    },
   ],
   hasHighRises: true,
+  sources: [
+    { label: 'Lincoln Park community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Lincoln-Park.pdf' },
+    { label: 'Chicago Landmarks, official list of landmark districts', href: 'https://webapps1.chicago.gov/landmarksweb/web/listings.htm' },
+    { label: 'Chicago exterior wall inspection program', href: 'https://www.chicago.gov/city/en/depts/bldgs/provdrs/inspect/svcs/exterior_wall_program.html' },
+    { label: 'Chicago Energy Benchmarking', href: 'https://www.chicago.gov/city/en/depts/env/supp_info/energy-benchmarking.html' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

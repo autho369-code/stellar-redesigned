@@ -6,8 +6,7 @@ export const portagePark: AreaContent = {
   title: 'Condo Management in Portage Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Portage Park boards: two-flats, bungalow-era conversions and small walk-ups on the northwest side. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Portage Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Portage Park is a northwest-side neighborhood known for its park, its Six Corners shopping district and its blocks of brick bungalows and two-flats. Condominium associations are usually small buildings with a handful of owners.',

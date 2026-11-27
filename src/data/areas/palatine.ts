@@ -6,8 +6,7 @@ export const palatine: AreaContent = {
   title: 'Condo Management in Palatine, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Palatine boards: a third of homes are condos, with village rental licensing and creek flood planning. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Palatine? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Palatine is a condo town: more than a third of its housing is condominiums, according to DePaul’s housing data. Most of the housing was built in the 1970s and 1980s, and about a third of households rent.',

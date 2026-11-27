@@ -6,8 +6,7 @@ export const norridge: AreaContent = {
   title: 'Condo Management in Norridge, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Norridge boards: 800 homes in large buildings and a village rental license that reaches condos. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Norridge? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Norridge is a small village on Chicago’s northwest edge, surrounded by city neighborhoods and centered on Harlem Avenue. Its housing is mostly single-family homes from the 1950s and 1960s, with a group of larger multi-unit buildings.',

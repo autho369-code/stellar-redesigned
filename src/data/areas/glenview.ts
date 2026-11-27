@@ -6,11 +6,26 @@ export const glenview: AreaContent = {
   title: 'HOA & Condo Management in Glenview, IL | From $30/Unit',
   metaDescription:
     'HOA, townhome and condo management for Glenview boards: The Glen, snow contracts, roofing bids and reserves. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Glenview? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Glenview blends established tree-lined neighborhoods with newer master-planned communities like The Glen, built on the former Glenview Naval Air Station. Townhome and condominium associations are common, and the village has two Metra stations.',
+  housing: {
+    intro:
+      'Glenview is a Cook County village with about 18,400 occupied homes. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Typical home was built in (median year)', value: '1977' },
+      { label: 'Share of homes that predate 1940', value: '749 (3.9%)' },
+      { label: 'Mid-century homes, built 1940 to 1969', value: '6,888 (35.9%)' },
+      { label: 'Newer homes, built 2010 or later', value: '1,917 (10.0%)' },
+      { label: 'Homes that are detached houses', value: '11,869 (61.8%)' },
+      { label: 'Homes that are attached houses', value: '2,478 (12.9%)' },
+      { label: 'Large buildings, twenty or more units', value: '3,098 (16.1%)' },
+      { label: 'Owner-occupied households', value: '14,555 (78.9%)' },
+    ],
+    takeaway:
+      'Glenview is a village of owners: 78.9 percent of households own their home, 61.8 percent of homes are detached houses and another 12.9 percent are attached houses such as townhomes. A quarter of the housing (25.7 percent) went up between 1990 and 2009, and 10 percent since 2010, so many townhome and The Glen associations are now at the age when roofs, siding and roads come due.',
+  },
   buildingTypes: [
     {
       name: 'Townhome associations',
@@ -66,6 +81,23 @@ export const glenview: AreaContent = {
       linkText: 'an emergency plan for your association',
     },
   ],
+  localItems: [
+    {
+      title: 'Village refuse contract for multi-unit properties',
+      body:
+        'Glenview’s refuse contract covers single-family homes and buildings with up to two attached units. A property with three or more attached units can opt in if every household participates and it buys the Village carts, but under Chapter 58 of the Village Code the choice cannot be reversed. An association that opts out contracts a private hauler.',
+    },
+    {
+      title: 'Private haulers are licensed',
+      body:
+        'The Village licenses firms that collect from properties other than single-family homes, and a license can be cancelled by either side on 90 days’ written notice. A board bidding a hauler should confirm the firm holds the Village license.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Glenview’s townships are on Cook County’s north suburban calendar, which was reassessed in 2022 and 2025. The next reassessment is 2028.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a Glenview townhome street from the sidewalk; Gallery Park or The Glen Town Center (public view).
@@ -91,6 +123,17 @@ export const glenview: AreaContent = {
       a: 'Tell us the unit count, the age of the community and what is not working. We answer with a written flat-fee proposal and a defined scope, so your board can compare it with what it has today.',
       post: 'switch-condo-management-companies-chicago',
     },
+    {
+      q: 'Can a Glenview townhome association switch from the Village refuse program later?',
+      a: 'No. Under the Village Code, a property with three or more attached units that opts into the Village contract gives up the right to hire another hauler, so the board should compare prices before it applies.',
+      post: 'condo-hoa-vendor-rfp-checklist',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Glenview community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Glenview.pdf' },
+    { label: 'Glenview garbage and recycling, multi-family opt-in program', href: 'https://www.glenview.il.us/620/Garbage-Recycling' },
+    { label: 'Glenview Code of Ordinances, Chapter 58 Solid Waste', href: 'https://library.municode.com/IL/Glenview/codes/Code_of_Ordinances?nodeId=MUCO_CH58SOWA' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

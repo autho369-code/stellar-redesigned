@@ -6,8 +6,7 @@ export const northfield: AreaContent = {
   title: 'Condo Management in Northfield, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Northfield boards: a small village with two flood basins, low-rise condos and owner-occupied streets. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Northfield? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Northfield is a small Cook County village of about 2,300 households, nearly all of them owner-occupied. Its multi-unit housing is a small share of the total and mostly low-rise, in a village that flags two flood-hazard basins.',

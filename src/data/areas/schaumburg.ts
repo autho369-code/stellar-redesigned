@@ -6,8 +6,7 @@ export const schaumburg: AreaContent = {
   title: 'Condo Management in Schaumburg, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Schaumburg boards: association rental licenses, detention inspections and 1970s quad and townhome stock. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Schaumburg? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Schaumburg is the most rental-heavy suburb on our list, with 37 percent of households renting and one home in five attached to its neighbor. Most of its housing went up in the 1970s and 1980s, and the village asks associations for annual paperwork that few other suburbs require.',

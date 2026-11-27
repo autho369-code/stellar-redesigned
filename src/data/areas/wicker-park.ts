@@ -6,8 +6,7 @@ export const wickerPark: AreaContent = {
   title: 'Condo Management in Wicker Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Wicker Park boards: Victorian conversions, lofts and new mid-rises near the landmark district. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Wicker Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Wicker Park centers on the Six Corners intersection and the 606 trail. Its blocks hold Victorian and workers’ cottage conversions, brick walk-ups, converted lofts and a steady supply of newer elevator buildings.',

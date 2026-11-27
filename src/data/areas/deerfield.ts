@@ -6,8 +6,7 @@ export const deerfield: AreaContent = {
   title: 'Condo Management in Deerfield, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Deerfield boards: 1,200 homes in large buildings and a Cook and Lake County split. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Deerfield? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Deerfield is a family suburb on the Cook and Lake County line, with a walkable downtown. Most of its homes are single-family houses, with a group of townhome and condominium communities among them.',

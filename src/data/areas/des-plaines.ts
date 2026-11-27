@@ -6,8 +6,7 @@ export const desPlaines: AreaContent = {
   title: 'Condo Management in Des Plaines, IL | Stellar',
   metaDescription:
     'Condo and HOA management for Des Plaines boards: rental licensing for investor-owned units, river floodplain rules, 1960s buildings. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Des Plaines? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Des Plaines sits along the Des Plaines River next to O’Hare, with a mix of 1960s mid-rise condominiums, garden-style complexes and townhomes. One in five homes is a condo, and the city’s rental licensing and floodplain rules touch many of them.',

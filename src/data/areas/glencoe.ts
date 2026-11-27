@@ -6,8 +6,7 @@ export const glencoe: AreaContent = {
   title: 'Condo Management in Glencoe, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Glencoe boards: a small condo stock in a village with a $60 to $70 million stormwater plan. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Glencoe? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Glencoe is a lakefront North Shore village known for its gardens and large lots. Condominiums are a small part of the housing mix.',
