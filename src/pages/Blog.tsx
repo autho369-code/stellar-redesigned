@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { SEOHead } from '../components/seo/SEOHead';
 import { blogPosts } from '../data/blog-posts';
 import { contentClusters, getClusterPosts, type ContentCluster } from '../data/content-silos';
+import TrustBar from '../components/TrustBar';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString + 'T00:00:00');
@@ -74,6 +75,7 @@ export default function Blog() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── The Index ──────────────────────────────────────────── */}
       <section className="py-20 lg:py-24 bg-ivory-100 border-t border-slate-200" aria-labelledby="guide-topics">

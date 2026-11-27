@@ -9,6 +9,7 @@ import { contentClusters, getNeighborhoodCluster } from '../data/content-silos';
 import { getAreaGuides } from '../data/clusters';
 import { getAreaContent } from '../data/areas';
 import AreaPageUpgraded from './AreaPageUpgraded';
+import TrustBar from '../components/TrustBar';
 
 const whyChoose = [
   {
@@ -258,6 +259,7 @@ export default function NeighborhoodPage() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Services ───────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white border-t border-slate-200">

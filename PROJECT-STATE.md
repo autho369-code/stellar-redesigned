@@ -19,6 +19,14 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (R3: trust bar under every hero)
+
+Branch `r3-trustbar-rest`. `TrustBar` added under the hero of the area pages,
+Chicago, North Shore, Service Areas, Services, Blog, topic hubs, guides and
+About. `scripts/sitemap-lib.mjs` and `scripts/check-uniqueness.mjs` ignore the
+`[data-trust-bar]` block, so page dates and the 35% uniqueness limit are not
+affected by it. R3 is complete except the unused shadcn parts.
+
 ## Status update — 2026-11-26 (portfolio numbers: rounded, no more edits per building)
 
 PR #68. Owner: 30 associations and

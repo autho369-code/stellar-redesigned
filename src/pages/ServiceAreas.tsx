@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Phone } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
+import TrustBar from '../components/TrustBar';
 
 const sortedNeighborhoods = [...neighborhoods].sort((a, b) =>
   a.name.localeCompare(b.name)
@@ -105,6 +106,7 @@ export default function ServiceAreas() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Flagship: the City of Chicago ──────────────────────── */}
       <section className="bg-ink text-paper border-b border-paper/10">

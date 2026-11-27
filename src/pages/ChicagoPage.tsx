@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
+import TrustBar from '../components/TrustBar';
 
 const chicagoNeighborhoods = neighborhoods.filter((n) => n.region !== 'north-shore');
 
@@ -253,6 +254,7 @@ export default function ChicagoPage() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Chicago expertise ──────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white">
