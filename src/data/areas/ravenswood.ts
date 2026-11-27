@@ -42,21 +42,21 @@ export const ravenswood: AreaContent = {
     {
       title: 'Cook County property tax appeals',
       body:
-        'A single appeal can cover every unit in the building. The savings go to the owners and not into the association budget, so the board should decide early who files and how owners are told.',
+        'A single appeal can cover every unit in the building. The savings go to the owners and not into the association budget, so the board should decide early who files and how owners are told. The appeal runs in two stages, and the association should have an attorney prepare the filing.',
       post: 'cook-county-property-tax-appeal-condo-association',
       linkText: 'Cook County property tax appeals for condo boards',
     },
     {
       title: 'Insurance renewal',
       body:
-        'Carriers respond better to an association that arrives with organized records, finished maintenance and context for past losses than to a bare application sent two weeks before renewal.',
+        'Carriers respond better to an association that arrives with organized records, finished maintenance and context for past losses than to a bare application sent two weeks before renewal. Go through documentation, coverage, deductibles and the notice to owners well ahead of the date.',
       post: 'condo-hoa-insurance-renewal-checklist',
       linkText: 'the insurance renewal checklist for boards',
     },
     {
       title: 'Water leaks between units',
       body:
-        'Who pays for a leak starts with the declaration, not with what seems fair. Read the documents before anyone promises to cover a repair.',
+        'Who pays for a leak starts with the declaration, not with what seems fair. Read the documents before anyone promises to cover a repair, and treat the insurance question separately from the question of responsibility.',
       post: 'who-pays-condo-water-leak-illinois',
       linkText: 'who pays for a condo water leak',
     },
