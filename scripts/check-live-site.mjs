@@ -59,7 +59,8 @@ if (!/^index, follow/.test(robots(await get('/reviews')))) problems.push('/revie
 if (!/noindex/.test(robots(await get('/contact/thanks')))) problems.push('/contact/thanks: robots must be noindex');
 const sitemap = await get('/sitemap.xml');
 const urls = count(sitemap, '<loc>');
-if (urls < 150) problems.push(`sitemap.xml: ${urls} URLs, expected 150 or more`);
+// 149 since 2026-11-26: the Hyde Park page was removed at the owner's instruction.
+if (urls < 149) problems.push(`sitemap.xml: ${urls} URLs, expected 149 or more`);
 if (!sitemap.includes('/reviews</loc>')) problems.push('sitemap.xml: /reviews missing');
 if (sitemap.includes('/contact/thanks')) problems.push('sitemap.xml: /contact/thanks must not be listed');
 
