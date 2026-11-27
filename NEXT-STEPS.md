@@ -3,6 +3,13 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D12 (part)**: Uptown and Andersonville upgraded
+      (`src/data/areas/uptown.ts`, `andersonville.ts`); every issue rests on
+      its linked guide; no client counts. Ravenswood got three supported
+      sentences so the pair stays under the 35% limit. 23 upgraded area pages.
+      **Gold Coast is NOT upgraded:** the handoff holds it until Mirsad says
+      whether "We are proud to manage some of the Gold Coast's most
+      distinguished addresses" is true.
 - [x] Nov 26: **D5 (pricing) + D6 placement**: /pricing has "Fees we do not
       charge", the contract line callout and "How switching works" (three
       existing steps, `switchSteps` in `src/data/pricing.ts`). No estimator
@@ -11,7 +18,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
 - [ ] **Handoff queue still open:** D9 (service/area/guide layouts: sticky
       table of contents, author box, static map), D11 (About timeline, team
       cards, 3-step proposal form; needs names, roles and photos from
-      Mirsad), D12 (Uptown, Andersonville, Gold Coast upgrades), D13 (final
+      Mirsad), D12 (Gold Coast only, waits on the claims check), D13 (final
       QA, SEO diff, brand-swap dry run). Home speed on the runner not
       re-measured since R4.
 - [x] Nov 26: **D2 + D6 (handoff)**: Kenmore case study page

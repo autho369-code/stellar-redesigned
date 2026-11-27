@@ -29,12 +29,14 @@ import { northPark } from './north-park';
 import { bucktown } from './bucktown';
 import { streeterville } from './streeterville';
 import { lincolnwood } from './lincolnwood';
+import { uptown } from './uptown';
+import { andersonville } from './andersonville';
 import type { AreaContent } from './types';
 
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {
