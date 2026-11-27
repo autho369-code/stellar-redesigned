@@ -134,6 +134,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <p>After every outage, write one page: what failed, why, what it cost, and what will change. If the boiler is near the end of its life, put replacement in the reserve plan now, while it is a planned project and not an emergency. Our <a href="/blog/condo-hoa-emergency-planning-checklist">emergency planning checklist</a> has the template.</p>
 
       <p>This is everyday work in our <a href="/services/maintenance-coordination">maintenance coordination</a> for associations across <a href="/property-management-chicago">Chicago</a>, with a live person on our 24/7 line. <a href="/contact">Contact us</a> before the first cold snap.</p>
+<p>For the reserve and capital side of this topic, read <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condo buildings</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -296,8 +297,9 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
   {
     slug: 'chicago-condo-management-cost',
     title: 'What Condo Management Costs in Chicago — and What Drives the Fee',
+    seoTitle: 'Condo Management Fees in Chicago: What Drives the Price',
     metaDescription:
-      'How Chicago condo and HOA management fees are built: per-unit pricing, building systems, staffing, meetings and hidden add-ons. Stellar starts at $30 per unit per month, everything included, with no extra fees, flat.',
+      'How Chicago condo and HOA management fees are built and how to compare proposals. Starting at $30 per unit per month, everything included, with no extra fees.',
     date: '2026-11-28',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -305,11 +307,20 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
     excerpt:
       'Boards comparing management proposals often compare the wrong number. Here is what actually drives a management fee in Chicago, and how to find the full annual cost.',
     content: `
-      <p>“What does management cost?” is the first question most boards ask, and the headline number is usually the least useful answer. Two proposals with the same monthly fee can cost very different amounts over a year. This guide explains what drives the fee and how to see the real total.</p>
+      <p><strong>Short answer:</strong> Chicago condo and HOA management is usually quoted as a monthly fee built from a per-unit rate and adjusted for the building, and the number that matters is the full annual cost, not the monthly fee. Stellar’s pricing is starting at $30 per unit per month, everything included, with no extra fees; the exact flat fee comes in a written proposal after we review the property, the financials and the governing documents.</p>
 
-      <h2>How are condo management fees usually priced?</h2>
+      <p>“What does management cost?” is the first question most boards ask, and the headline number is usually the least useful answer. Two proposals with the same monthly fee can cost very different amounts over a year. This guide explains how fees are structured, what drives them and how to see the real total. It is about how to read a proposal; for our own price, see <a href="/pricing">management pricing</a>.</p>
 
-      <p>Most Chicago firms quote a monthly fee, often built from a per-unit figure and adjusted for the building’s complexity. Some add separate charges for meetings, mailings, violation letters, project oversight or transitions. Some take a percentage of capital project costs. The structure matters as much as the number.</p>
+      <h2>How are condo management fees structured in Chicago?</h2>
+
+      <p>Most firms quote one of four structures. Ask which one you are looking at before you compare anything.</p>
+
+      <ul>
+        <li><strong>Per-unit monthly rate.</strong> A rate per unit per month, multiplied by the unit count. Easy to compare, but it says nothing about what is excluded.</li>
+        <li><strong>Flat monthly fee.</strong> One monthly number for an agreed scope. Predictable for the budget, as long as the scope is written down.</li>
+        <li><strong>Tiered or à la carte.</strong> A low base fee with separate charges for meetings, mailings, violation letters, project oversight or transitions. The base fee looks small and the total is not.</li>
+        <li><strong>Percentage-based.</strong> A percentage of capital project costs or of the budget. The firm’s income rises when your spending rises, which is a conflict a board should understand before agreeing to it.</li>
+      </ul>
 
       <h2>What drives the fee for a particular building?</h2>
 
@@ -319,19 +330,43 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
         <li><strong>Staff.</strong> On-site staff need scheduling, payroll coordination and supervision.</li>
         <li><strong>Financial complexity.</strong> Multiple bank accounts, master and sub-associations, delinquencies and loans add work.</li>
         <li><strong>Meetings and communication.</strong> How many board and owner meetings the scope includes, and in what format.</li>
+        <li><strong>Building type.</strong> A high-rise with staff and amenities is a different job from a six-unit walk-up or a townhome community with private roads.</li>
       </ul>
 
-      <h2>What hidden costs should a board look for?</h2>
+      <h2>What is usually left out of the monthly fee?</h2>
 
-      <p>Ask every firm for the full annual cost, not the monthly fee. Look for per-item charges (copies, postage, letters), after-hours charges, transition or setup fees, resale disclosure fees that go to the manager, and any percentage taken on capital projects. Our guide to <a href="/blog/community-association-management-agreement-review">reviewing a management agreement</a> lists the clauses where these appear.</p>
+      <p>These are the items to look for in every proposal, because each can turn a low monthly fee into a high annual cost:</p>
+
+      <ul>
+        <li>Per-item charges: copies, postage, certified letters, violation notices.</li>
+        <li>After-hours, emergency or holiday charges.</li>
+        <li>Transition, setup or onboarding fees.</li>
+        <li>Charges for attending extra board or owner meetings.</li>
+        <li>Resale disclosure fees that go to the manager rather than the association. Our guide to <a href="/blog/illinois-resale-disclosure-fees-turnaround">Illinois resale disclosure fees</a> explains what the law allows.</li>
+        <li>A percentage taken on capital projects, or a separate project oversight fee.</li>
+      </ul>
+
+      <p>Our guide to <a href="/blog/community-association-management-agreement-review">reviewing a management agreement</a> lists the clauses where these appear.</p>
+
+      <h2>How do you work out the true annual cost of a proposal?</h2>
+
+      <ol>
+        <li>Take twelve months of the monthly fee.</li>
+        <li>Add every per-item, after-hours and extra-meeting charge you can reasonably expect in a year, using last year’s activity as the guide.</li>
+        <li>Add one-time transition or setup fees.</li>
+        <li>Add anything that is a separate line for the same work you expect (project oversight, resale paperwork).</li>
+        <li>Divide by units and by twelve to get a like-for-like monthly figure per unit, then compare that across firms.</li>
+      </ol>
+
+      <p>Put the numbers side by side in our <a href="/tools/compare-management-proposals">proposal comparison tool</a>, and score the non-price items with <a href="/blog/score-condo-hoa-management-proposals">a scoring method for management proposals</a>. Scope matters as much as price: <a href="/blog/financial-only-vs-full-service-condo-hoa-management-chicago">financial-only versus full-service management</a> are not the same product, and neither is a manager carrying twice as many buildings (see <a href="/blog/how-many-associations-should-community-manager-handle">how many associations a manager should handle</a>).</p>
 
       <h2>What does Stellar charge?</h2>
 
-      <p>Our management starts at <strong>$30 per unit per month, everything included, with no extra fees</strong>, quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. Details are on our <a href="/pricing">management pricing</a> page.</p>
+      <p>Starting at $30 per unit per month, everything included, with no extra fees. It is quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. No long-term contracts — cancel with 60 days notice. Details are on our <a href="/pricing">management pricing</a> page, and the scope is described on our <a href="/services/condominium-management">condominium management</a> page.</p>
 
       <h2>Is the cheapest proposal the best value?</h2>
 
-      <p>Rarely. A low fee with a manager carrying too many buildings, or with add-ons that double the real cost, is not cheap. The better test is the full annual cost against the scope you actually need. Use <a href="/blog/score-condo-hoa-management-proposals">a scoring method for management proposals</a> so the board compares like with like, and put the numbers in our <a href="/tools/compare-management-proposals">proposal comparison tool</a>.</p>
+      <p>Rarely. A low fee with a manager carrying too many buildings, or with add-ons that double the real cost, is not cheap. The better test is the full annual cost against the scope you actually need, plus how easy it is to leave if the work is not good. For the other half of the decision, read <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company in Chicago</a>.</p>
 
       <p>For associations across <a href="/property-management-chicago">Chicago</a>, we provide a written scope and flat fee after a walk-through. <a href="/contact">Request a proposal</a>.</p>
     `,
@@ -339,15 +374,22 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
   {
     slug: 'townhome-association-maintenance-responsibilities-illinois',
     title: 'Townhome Association Maintenance: Who Fixes What in Illinois',
+    seoTitle: 'Townhome Association Maintenance: Who Fixes What in Illinois',
     metaDescription:
-      'In an Illinois townhome association, the declaration decides who maintains roofs, siding, driveways and decks. A board checklist for reading it and building the budget around it.',
+      'Who maintains roofs, siding, driveways and decks in an Illinois townhome community? The declaration decides. How to read it, budget for it, avoid disputes.',
     date: '2026-11-29',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Operations',
     readTime: '7 min read',
     excerpt:
       'In townhome communities, the same roof can be the association’s job in one development and the owner’s in the next. Here is how boards can read their documents and avoid the arguments.',
+    sources: [
+      { title: 'Common Interest Community Association Act, 765 ILCS 160', url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=3273&ChapterID=62' },
+      { title: 'Condominium Property Act, 765 ILCS 605', url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62' },
+    ],
     content: `
+      <p><strong>Short answer:</strong> in an Illinois townhome community, the recorded declaration decides who maintains what. It assigns each component, such as roofs, siding, driveways and windows, to either the association or the owner, and the association’s budget follows that split.</p>
+
       <p>In a condominium, the building’s structure is usually common element and the association maintains it. Townhome communities are not that predictable. Some associations maintain every roof and wall; others maintain only the private roads and green space and leave each home to its owner. The answer is in your declaration, and it decides how big your budget needs to be.</p>
 
       <h2>Which document decides who maintains what?</h2>
@@ -382,6 +424,25 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <p>If the chart produces results nobody intended — for example, owners maintaining roofs that are physically shared — the board may want counsel to draft an amendment. Amendment rules depend on the governing law and the declaration, so start there.</p>
 
+            <h2>How do you read the maintenance clause in a declaration?</h2>
+
+      <ol>
+        <li>Find the article on maintenance, repair and replacement, and any article that defines the “unit” and the “common area” boundaries.</li>
+        <li>Read the definitions first. A component that sits outside the unit definition is usually the association’s, even if one owner uses it.</li>
+        <li>Check the insurance article. Who insures a component often tracks who maintains it, and the two should match.</li>
+        <li>Read every recorded amendment and the plat. Amendments change the split more often than boards remember.</li>
+        <li>Compare the rules and past practice to the declaration. If practice has drifted, the declaration controls; ask counsel before changing how it is applied.</li>
+      </ol>
+
+      <h2>What goes in a one-page responsibility chart?</h2>
+
+      <p>One row per component (roof, gutters, siding, trim and paint, windows, doors, garage doors, driveways, private roads, sidewalks, decks, patios, fences, landscaping, snow, shared utilities). Four columns: who maintains it, who pays, who insures it, and the declaration section that says so. Have counsel confirm the chart, send it to every owner and attach it to resale disclosure packets. Our <a href="/services/townhome-management">townhome management</a> keeps the chart and the vendor calendar together.</p>
+
+      <h2>How does a reserve plan follow the chart?</h2>
+
+      <p>Every component the association maintains belongs in the reserve study with an estimated life and replacement cost. Components owners maintain do not, but the board should still set a standard for appearance where the declaration allows it, so one failing roof does not hurt a whole row. For a lender’s view of reserves, see <a href="/blog/reserve-study-lender-will-accept-2027">what reserve study a lender will accept</a>, and for how a board pays for the big items, <a href="/blog/condo-special-assessments-illinois">special assessments in Illinois</a>.</p>
+      <p>Comparing management proposals for a townhome community? Start with <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a>.</p>
+
       <p>Planning shared exteriors and capital cycles is the core of our <a href="/services/townhome-management">townhome association management</a>. If your board wants a responsibility chart and reserve plan built from your documents, <a href="/contact">contact us</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
@@ -389,15 +450,22 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
   {
     slug: 'condo-pet-noise-smoking-complaints-illinois',
     title: 'Pet, Noise and Smoking Complaints: A Fair Process for Illinois Boards',
+    seoTitle: 'Condo Pet, Noise and Smoking Complaints: A Fair Process',
     metaDescription:
-      'How Illinois condo and HOA boards should handle neighbor complaints about pets, noise and smoke: check the rules, document, give notice and a hearing, and fine only consistently.',
+      'How an Illinois condo or HOA board should handle pet, noise and smoking complaints: confirm the rule, document, send a courtesy letter, then notice and hearing.',
     date: '2026-11-30',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Board Governance',
     readTime: '7 min read',
     excerpt:
       'Most association disputes start with a neighbor complaint: a barking dog, a heavy walker upstairs, smoke in the hallway. Here is a process that is fair, consistent and defensible.',
+    sources: [
+      { title: 'Condominium Property Act, 765 ILCS 605 (Section 18.4)', url: 'https://www.ilga.gov/ftp/ILCS/Ch%200765/Act%200605/076506050K18.4.html' },
+      { title: 'Common Interest Community Association Act, 765 ILCS 160', url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=3273&ChapterID=62' },
+    ],
     content: `
+      <p><strong>Short answer:</strong> handle every pet, noise or smoking complaint the same way: confirm that a rule covers the conduct, get the complaint in writing, send a courtesy letter, and only then start formal enforcement with notice and a chance to be heard.</p>
+
       <p>Few things take up more board time than complaints between neighbors. The dog barks all day. The owner upstairs walks loudly at midnight. Smoke drifts into the hallway. These are real problems for the people living with them, and they can turn into long disputes when the board handles each one differently. A written process fixes most of that.</p>
 
       <h2>Does the board have authority to act on a complaint?</h2>
@@ -429,6 +497,23 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <h2>How does the board stay fair?</h2>
 
       <p>Treat every owner the same, including board members and their friends. Keep the file factual. Decide at a properly noticed meeting. And keep the rule set small: rules nobody enforces teach owners that no rule matters. Read <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">adopting and enforcing association rules</a> for the full approach.</p>
+
+            <h2>What should a written complaint process include?</h2>
+
+      <ol>
+        <li><strong>Intake.</strong> One place complaints go (a manager, an email address or a portal form), with the date, time, unit and details recorded.</li>
+        <li><strong>Rule check.</strong> The responder names the rule or declaration section the complaint relies on. No section, no enforcement.</li>
+        <li><strong>Courtesy letter.</strong> A short, neutral letter to the owner or occupant that describes the complaint and the rule, without accusing anyone.</li>
+        <li><strong>Pattern review.</strong> If the conduct continues, the board reviews the log at its next meeting rather than one director acting alone.</li>
+        <li><strong>Notice and hearing.</strong> Written notice of the alleged violation, the proposed fine and the hearing date, then a decision recorded in the minutes.</li>
+        <li><strong>Follow-up.</strong> A letter confirming the result, and a diary date to check that the problem has stopped.</li>
+      </ol>
+
+      <h2>What records should the board keep?</h2>
+
+      <p>For each complaint: the written complaint, the rule relied on, every letter sent, proof of delivery, any hearing notice and minutes, and the outcome. The same file protects the board if an owner later says enforcement was selective. Owners may ask to see association records, so keep the file factual; our guide to <a href="/blog/illinois-condo-association-records-request-guide">records requests</a> explains what owners can ask for.</p>
+
+      <p>Our <a href="/services/violation-management">violation management</a> service runs this process for boards, and the board still makes every decision. If you are comparing firms for this work, start with <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a> and <a href="/pricing">what our pricing includes</a>.</p>
 
       <p>Our <a href="/services/violation-management">violation management</a> service runs this process with written notices, hearing scheduling and consistent records. This guide is educational, not legal advice. <a href="/contact">Contact us</a> if your board wants a complaint process in place.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>

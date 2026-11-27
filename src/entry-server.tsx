@@ -10,6 +10,7 @@
  * Prerendering writes real HTML — with Helmet meta and JSON-LD — for every
  * route so crawlers see the same page users do.
  */
+import { blogPosts } from './data/blog-posts';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -116,3 +117,11 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
 
 // Used by scripts/prerender.mjs to rewrite the Business facts section of /llms.txt.
 export { llmsBusinessFacts, llmsFullText } from './data/business';
+
+/** Published guides, newest first. prerender.mjs lists them in /llms.txt and /llms-full.txt, so a guide is added the day it goes live. */
+export function llmsPublishedGuides(limit = 30): Array<{ slug: string; title: string; date: string; summary: string }> {
+  return [...blogPosts]
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
+    .slice(0, limit)
+    .map((post) => ({ slug: post.slug, title: post.title, date: post.date, summary: post.metaDescription }));
+}

@@ -311,6 +311,7 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
       <p>Frozen pipes are one of the most preventable losses a Chicago condo association faces, but prevention depends on doing the fall checklist every year and responding fast when something fails. Stellar Property Management schedules winterization, coordinates plumbers and mitigation vendors, and manages the first hours of a water loss through our <a href="/services/maintenance-coordination">maintenance coordination service</a>. To get your building ready for winter, <a href="/contact">contact our team</a>.</p>
 
       <p>For associations in the city, see <a href="/property-management-chicago">condo management in Chicago</a>.</p>
+<p>For the reserve and capital side of this topic, read <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condo buildings</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -429,6 +430,7 @@ export const scheduledOct2026BuildingPosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/community-association-management-agreement-review">What to check in a management contract</a>.</p>
 
       <p>The Act gives boards a clear framework: licensed people administer, a designated manager supervises, association money stays in association accounts, and the board keeps the decisions. Stellar Property Management provides licensed management for condominium associations across Chicago and the North Shore through our <a href="/services/condominium-management">condominium management service</a>. To talk about how we structure accounts, insurance and board approvals, <a href="/contact">contact our team</a>.</p>
+<p>For how boards choose and change managers, read <a href="/blog/switch-condo-management-companies-chicago">switching condo management companies in Chicago</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },

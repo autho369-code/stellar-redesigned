@@ -49,7 +49,7 @@ try {
   }
   assert.equal(getPillarContent({...pillar, date:'2027-01-01'}, posts, '2026-12-09'), pillar.content);
   assert.equal(getChicagoCalendarDate(new Date('2026-11-07T05:59:59Z')), '2026-11-06');
-  assert.equal(getChicagoPublicationDate(new Date('2026-11-20T18:00:00Z')), '2026-11-03'); // publishing frozen
+  assert.equal(getChicagoPublicationDate(new Date('2026-11-20T18:00:00Z')), '2026-11-20'); // publishing resumed 2026-11-27 (freeze lifted), so the publication date is today
   assert.equal(getChicagoCalendarDate(new Date('2026-11-07T06:00:00Z')), '2026-11-07');
   console.log('Pillar links passed: 34 guides, release-day boundaries, 41 daily snapshots, silo integrity, duplicate suppression, Chicago cutoff.');
 } finally { rmSync(dir, { recursive: true, force: true }); }

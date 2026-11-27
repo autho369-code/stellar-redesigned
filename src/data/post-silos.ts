@@ -190,7 +190,7 @@ export const postSilos: Record<string, PostSilo> = {
   'small-condo-association-professional-manager': { money: SMALL, area: CHICAGO, links: ['self-managed-condo-association-problems', 'how-many-associations-should-community-manager-handle'] , also: ['/pricing'] },
   'glenview-townhome-hoa-board-guide': { money: TOWNHOME, area: GLENVIEW, links: ['illinois-condo-hoa-snow-removal-vendor-guide', 'which-illinois-law-governs-condo-hoa-townhome'] , also: ['/pricing'] },
   'illinois-resale-disclosure-fees-turnaround': { money: RESALE, links: ['illinois-section-22-1-disclosure-board-guide', 'illinois-22-1-response-workflow'] , also: ['/pricing'] },
-  'chicago-condo-management-cost': { money: '/pricing', area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'community-association-management-agreement-review'] },
+  'chicago-condo-management-cost': { money: CONDO, area: CHICAGO, links: ['score-condo-hoa-management-proposals', 'community-association-management-agreement-review'], also: ['/pricing'] },
   'townhome-association-maintenance-responsibilities-illinois': { money: TOWNHOME, links: ['which-illinois-law-governs-condo-hoa-townhome', 'condo-repairs-owner-vs-association-illinois'] , also: ['/pricing'] },
   'condo-pet-noise-smoking-complaints-illinois': { money: RULES, links: ['illinois-association-fines-notice-hearing', 'adopting-enforcing-condo-hoa-rules-illinois'] , also: ['/pricing'] },
   'evanston-condo-association-board-guide': { money: CONDO, area: '/property-management-evanston', links: ['vintage-chicago-condo-capital-planning', 'illinois-condo-association-records-request-guide'] , also: ['/pricing'] },

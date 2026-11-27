@@ -214,6 +214,18 @@ export default function BlogPost() {
       : {}),
   };
 
+  // Matches the visible breadcrumb: Home > Blog > topic hub > guide.
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.stellarpropertygroup.com/blog' },
+      { '@type': 'ListItem', position: 3, name: cluster.label, item: `https://www.stellarpropertygroup.com${cluster.path}` },
+      { '@type': 'ListItem', position: 4, name: post.title, item: `https://www.stellarpropertygroup.com/blog/${post.slug}` },
+    ],
+  };
+
   return (
     <>
       <SEOHead
@@ -225,6 +237,9 @@ export default function BlogPost() {
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
         {faqSchema && (
           <script type="application/ld+json">

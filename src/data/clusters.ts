@@ -16,6 +16,7 @@
  * from src/data/neighborhoods.ts. Do not put a guide in two clusters.
  */
 import type { MoneyPage } from './post-silos';
+import { blogPosts } from './blog-posts';
 
 export interface ClusterMember {
   slug: string;
@@ -36,7 +37,7 @@ export interface Cluster {
   members: ClusterMember[];
 }
 
-export const clusters: Cluster[] = [
+const allClusters: Cluster[] = [
   {
     id: 'A',
     name: 'Section 22.1 resale disclosures',
@@ -46,6 +47,7 @@ export const clusters: Cluster[] = [
       { slug: 'illinois-section-22-1-disclosure-board-guide', areas: ['lincoln-park', 'lakeview', 'lincoln-square'], cross: ['illinois-condo-hoa-collection-policy-january-2027', 'first-time-condo-buyer-guide-chicago'] },
       { slug: 'illinois-22-1-disclosure-packet-checklist', areas: ['logan-square', 'wicker-park', 'bucktown'] },
       { slug: 'illinois-22-1-response-workflow', areas: ['roscoe-village', 'old-town', 'lincoln-park'] },
+      { slug: 'illinois-resale-disclosure-fees-turnaround', areas: ['lincoln-park', 'lakeview', 'lincoln-square'] },
     ],
   },
   {
@@ -62,6 +64,8 @@ export const clusters: Cluster[] = [
       { slug: 'illinois-association-reserve-funds-fdic-coverage', areas: ['loop', 'edgewater', 'uptown'], siblings: ['condo-hoa-capital-project-loan-preparation', 'fannie-freddie-condo-eligibility-board-guide'] },
       { slug: 'condo-hoa-capital-project-loan-preparation', areas: ['rogers-park', 'kenwood', 'lakeview'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
       { slug: 'condo-special-assessments-illinois', areas: ['south-loop', 'west-loop', 'loop'], siblings: ['condo-hoa-capital-project-loan-preparation'] },
+      { slug: 'reserve-study-lender-will-accept-2027', areas: ['uptown', 'rogers-park', 'edgewater'] },
+      { slug: 'condo-critical-repairs-lender-questionnaire', areas: ['kenwood', 'south-loop', 'west-loop'] },
     ],
   },
   {
@@ -75,6 +79,8 @@ export const clusters: Cluster[] = [
       { slug: 'illinois-condo-association-liens-delinquency', areas: ['edison-park', 'ukrainian-village', 'avondale'], siblings: ['illinois-association-late-fees-interest-policy'] },
       { slug: 'illinois-condo-assessment-collection-possession-action', areas: ['irving-park', 'portage-park', 'mayfair'], siblings: ['illinois-association-late-fees-interest-policy', 'illinois-condo-association-liens-delinquency'] },
       { slug: 'illinois-association-late-fees-interest-policy', areas: ['north-park', 'albany-park', 'edison-park'], siblings: ['illinois-condo-assessment-collection-possession-action'] },
+      { slug: 'collection-policy-board-decisions-payment-plans', areas: ['avondale', 'irving-park', 'portage-park'] },
+      { slug: 'illinois-condo-assessments-after-foreclosure-sale', areas: ['mayfair', 'north-park', 'albany-park'] },
     ],
   },
   {
@@ -88,6 +94,8 @@ export const clusters: Cluster[] = [
       { slug: 'read-condo-hoa-financial-statements', areas: ['ravenswood', 'andersonville', 'lincoln-square'], siblings: ['cook-county-property-tax-appeal-condo-association', 'condo-hoa-annual-budget-workbook'] },
       { slug: 'cook-county-property-tax-appeal-condo-association', areas: ['roscoe-village', 'bucktown', 'wicker-park'], siblings: ['illinois-condo-owners-independent-audit-rights', 'read-condo-hoa-financial-statements'] },
       { slug: 'illinois-condo-owners-independent-audit-rights', areas: ['ravenswood', 'andersonville', 'lincoln-square'], siblings: ['cook-county-property-tax-appeal-condo-association'] },
+      { slug: 'illinois-association-annual-financial-report-email', areas: ['ravenswood', 'andersonville', 'lincoln-square'] },
+      { slug: 'illinois-condo-115-percent-assessment-petition', areas: ['roscoe-village', 'bucktown', 'wicker-park'] },
     ],
   },
   {
@@ -102,6 +110,7 @@ export const clusters: Cluster[] = [
       { slug: 'condo-hoa-directors-officers-insurance-guide', areas: ['streeterville', 'old-town', 'loop'], siblings: ['hoa-insurance-costs-illinois'] },
       { slug: 'illinois-association-fidelity-insurance-requirements', areas: ['south-loop', 'lakeview', 'gold-coast'], siblings: ['illinois-condo-insurance-deductible-charge-owner'] },
       { slug: 'illinois-condo-insurance-deductible-charge-owner', areas: ['river-north', 'streeterville', 'old-town'], siblings: ['illinois-association-fidelity-insurance-requirements'] },
+      { slug: 'illinois-condo-master-policy-section-12-requirements', areas: ['gold-coast', 'river-north', 'streeterville'] },
     ],
   },
   {
@@ -120,6 +129,13 @@ export const clusters: Cluster[] = [
       { slug: 'the-technology-behind-our-management', areas: ['evanston', 'uptown', 'andersonville'], siblings: ['illinois-management-company-segregated-accounts-commingling', 'self-managed-condo-association-problems'] },
       { slug: 'illinois-management-company-segregated-accounts-commingling', areas: ['rogers-park', 'edgewater', 'lakeview'], siblings: ['ai-in-condo-management', 'the-technology-behind-our-management'] },
       { slug: 'ai-in-condo-management', areas: ['lincoln-park', 'lincoln-square', 'evanston'], siblings: ['illinois-management-company-segregated-accounts-commingling'] },
+      { slug: 'financial-only-vs-full-service-condo-hoa-management-chicago', areas: ['lincoln-park', 'lakeview', 'evanston'] },
+      { slug: 'chicago-condo-management-transition-first-60-days', areas: ['rogers-park', 'uptown', 'lincoln-square'] },
+      { slug: 'illinois-community-association-manager-what-they-can-do', areas: ['edgewater', 'andersonville', 'ravenswood'] },
+      { slug: 'chicago-condo-management-cost', areas: ['gold-coast', 'river-north', 'loop'] },
+      { slug: 'evanston-condo-association-board-guide', areas: ['evanston', 'skokie', 'wilmette'] },
+      { slug: 'lakeview-condo-association-board-guide', areas: ['lakeview', 'roscoe-village', 'lincoln-park'] },
+      { slug: 'replace-condo-management-company-60-day-plan', areas: ['logan-square', 'wicker-park', 'bucktown'] },
     ],
   },
   {
@@ -133,6 +149,9 @@ export const clusters: Cluster[] = [
       { slug: 'illinois-association-fines-notice-hearing', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], siblings: ['common-condo-rule-violations-chicago', 'are-hoa-condo-rules-enforceable-illinois'] },
       { slug: 'common-condo-rule-violations-chicago', areas: ['bucktown', 'roscoe-village', 'lakeview'], siblings: ['chicago-condo-short-term-rental-prohibited-buildings-list'] },
       { slug: 'chicago-condo-short-term-rental-prohibited-buildings-list', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], siblings: ['common-condo-rule-violations-chicago'] },
+      { slug: 'illinois-association-police-firefighter-vehicle-parking', areas: ['bucktown', 'roscoe-village', 'lakeview'] },
+      { slug: 'illinois-association-flag-display-rules', areas: ['wicker-park', 'logan-square', 'ukrainian-village'] },
+      { slug: 'condo-pet-noise-smoking-complaints-illinois', areas: ['avondale', 'irving-park', 'portage-park'] },
     ],
   },
   {
@@ -145,6 +164,11 @@ export const clusters: Cluster[] = [
       { slug: 'chicago-condo-life-safety-board-planning', areas: ['streeterville', 'river-north', 'loop'], siblings: ['chicago-condo-porch-deck-safety-board-guide'] },
       { slug: 'chicago-condo-porch-deck-safety-board-guide', areas: ['south-loop', 'west-loop', 'edgewater'], siblings: ['chicago-condo-life-safety-board-planning'] },
       { slug: 'condo-hoa-emergency-planning-checklist', areas: ['uptown', 'gold-coast', 'streeterville'], siblings: ['chicago-condo-porch-deck-safety-board-guide'] },
+      { slug: 'chicago-condo-elevator-inspection-board-guide', areas: ['gold-coast', 'streeterville', 'river-north'] },
+      { slug: 'high-rise-condo-management-chicago-whats-different', areas: ['loop', 'south-loop', 'west-loop'] },
+      { slug: 'chicago-condo-annual-building-inspection-checklist', areas: ['uptown', 'kenwood', 'edgewater'] },
+      { slug: 'condo-move-in-move-out-elevator-policy', areas: ['river-north', 'streeterville', 'loop'] },
+      { slug: 'edgewater-lakefront-condo-board-guide', areas: ['edgewater', 'uptown', 'rogers-park'] },
     ],
   },
   {
@@ -158,6 +182,11 @@ export const clusters: Cluster[] = [
       { slug: 'can-condo-boards-enter-your-unit-illinois', areas: ['rogers-park', 'lakeview', 'andersonville'], siblings: ['condo-hoa-vendor-rfp-checklist'] },
       { slug: 'condo-hoa-vendor-rfp-checklist', areas: ['ravenswood', 'lincoln-park', 'lincoln-square'], siblings: ['illinois-condo-hoa-ev-charging-board-process', 'can-condo-boards-enter-your-unit-illinois'] },
       { slug: 'illinois-condo-hoa-ev-charging-board-process', areas: ['rogers-park', 'lakeview', 'andersonville'], siblings: ['who-pays-condo-water-leak-illinois'] },
+      { slug: 'chicago-condo-frozen-pipes-winter-checklist', areas: ['lakeview', 'lincoln-park', 'roscoe-village'] },
+      { slug: 'chicago-condo-heat-outage-protocol', areas: ['rogers-park', 'edgewater', 'uptown'] },
+      { slug: 'illinois-condo-smoke-carbon-monoxide-alarms', areas: ['logan-square', 'avondale', 'irving-park'] },
+      { slug: 'illinois-association-solar-panel-rights', areas: ['evanston', 'skokie', 'park-ridge'] },
+      { slug: 'illinois-association-snow-ice-sidewalk-liability', areas: ['glenview', 'northbrook', 'deerfield'] },
     ],
   },
   {
@@ -168,6 +197,8 @@ export const clusters: Cluster[] = [
     members: [
       { slug: 'which-illinois-law-governs-condo-hoa-townhome', areas: ['evanston', 'skokie', 'lincolnwood', 'morton-grove', 'norridge', 'glenview', 'wilmette'] },
       { slug: 'illinois-condo-hoa-snow-removal-vendor-guide', areas: ['winnetka', 'northbrook', 'highland-park', 'glencoe', 'kenilworth', 'lake-forest', 'deerfield'] },
+      { slug: 'cicaa-small-association-exemptions-collection-policy', areas: ['glenview', 'northbrook', 'deerfield'] },
+      { slug: 'illinois-hoa-board-duties-cicaa', areas: ['skokie', 'lincolnwood', 'morton-grove'] },
     ],
   },
   {
@@ -197,6 +228,9 @@ export const clusters: Cluster[] = [
       { slug: 'illinois-condominium-ombudsperson-act-board-duties', areas: ['irving-park', 'avondale', 'mayfair'], siblings: ['illinois-condo-board-fiduciary-duty-audit'] },
       { slug: 'condo-hoa-board-communication-systems', areas: ['north-park', 'rogers-park', 'edgewater'], siblings: ['why-condo-boards-fail', 'illinois-condominium-ombudsperson-act-board-duties'] },
       { slug: 'why-condo-boards-fail', areas: ['uptown', 'albany-park', 'irving-park'], siblings: ['illinois-condo-board-fiduciary-duty-audit'] },
+      { slug: 'illinois-association-website-requirement-2028', areas: ['wilmette', 'winnetka', 'glencoe'] },
+      { slug: 'illinois-association-records-retention-schedule', areas: ['kenilworth', 'highland-park', 'lake-forest'] },
+      { slug: 'illinois-condo-accessible-parking-policy', areas: ['kenwood', 'south-loop', 'west-loop'] },
     ],
   },
   {
@@ -224,7 +258,36 @@ export const clusters: Cluster[] = [
       { slug: 'first-time-condo-buyer-guide-chicago', areas: ['lincoln-park', 'logan-square', 'wicker-park'], siblings: ['renting-out-your-condo-chicago-rules'] },
     ],
   },
+  {
+    id: 'O',
+    name: 'Small and vintage buildings',
+    pillar: 'small-condo-association-professional-manager',
+    money: '/services/small-condo-association-management',
+    members: [
+      { slug: 'small-condo-association-professional-manager', areas: ['lincoln-square', 'ravenswood', 'andersonville'] },
+      { slug: 'lincoln-park-vintage-condo-board-guide', areas: ['lincoln-park', 'old-town', 'roscoe-village'] },
+    ],
+  },
+  {
+    id: 'P',
+    name: 'Townhome communities',
+    pillar: 'glenview-townhome-hoa-board-guide',
+    money: '/services/townhome-management',
+    members: [
+      { slug: 'glenview-townhome-hoa-board-guide', areas: ['glenview', 'northbrook', 'wilmette'] },
+      { slug: 'townhome-association-maintenance-responsibilities-illinois', areas: ['park-ridge', 'des-plaines', 'mount-prospect'] },
+    ],
+  },
 ];
+
+// A scheduled guide can be listed here before its date. It joins its cluster,
+// the series navigation, the nearby-area links and the area pages on the day it
+// is published, because every list below is built from the published members.
+const publishedSlugs = new Set(blogPosts.map((post) => post.slug));
+export const clusters: Cluster[] = allClusters.map((cluster) => ({
+  ...cluster,
+  members: cluster.members.filter((member) => publishedSlugs.has(member.slug)),
+}));
 
 /**
  * Extra contextual money-page links the brief asks for, on top of each

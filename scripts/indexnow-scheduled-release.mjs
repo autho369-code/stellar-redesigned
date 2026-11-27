@@ -64,7 +64,7 @@ async function waitForProduction(paths) {
 
 await waitForProduction(releasedToday);
 
-const paths = ['/', '/blog', '/sitemap.xml', '/llms.txt', ...releasedToday];
+const paths = ['/', '/blog', '/sitemap.xml', '/llms.txt', '/llms-full.txt', ...releasedToday];
 const result = spawnSync(process.execPath, [join(root, 'scripts/indexnow-submit.mjs'), ...paths], {
   cwd: root,
   stdio: 'inherit',

@@ -145,6 +145,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
       <p>Stellar's managed associations already have an owner portal with meeting notices and minutes, so for most of our boards this law is a confirmation rather than a project. For boards joining us, we set the site up, load the current minutes, and build the posting step into the monthly routine so it keeps happening after the first month. If your board needs this handled before January 1, 2028, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a>. We serve associations across the city through Chicago property management and on the <a href="/property-management-north-shore">North Shore</a>.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Public Act 104-0797 as enacted; your declaration, bylaws and circumstances matter, and the subsection numbering in Section 18.4 is unsettled. Have association counsel advise your board on how the website duty applies to your association.</em></p>
+<p>For the wider board-duties picture, read <a href="/blog/new-condo-board-member-first-30-days">what new board members should do in their first 30 days</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -463,6 +464,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
       <p>Stellar inventories each association's parking, works with counsel on the written policy, logs every request against the statutory clock so a decision is never late by accident, and keeps the documented record of the board's efforts where a self-managed board would have nothing to show. If your board needs an accessible parking policy on the books, <a href="/contact">contact our office</a> or see how we support boards through <a href="/services/board-support">board support</a> and condominium management.</p>
 
       <p><em>This article is general information for Illinois condominium boards and is not legal advice. It summarizes Section 18.12 of the Condominium Property Act and Public Act 104-0598 as enacted. Accommodation requests raise fair housing questions this article does not address — have association counsel advise your board before responding to one.</em></p>
+<p>For the wider board-duties picture, read <a href="/blog/new-condo-board-member-first-30-days">what new board members should do in their first 30 days</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -990,6 +992,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
       <p>Stellar keeps a current repair and compliance picture for each association, so a questionnaire can be answered from a file rather than reconstructed, and so the board hears about an eligibility problem months before a buyer's lender does. If your board wants that review before the selling season, <a href="/contact">contact our office</a> or see our maintenance coordination and <a href="/services/financial-management">financial management</a> services.</p>
 
       <p><em>This article is general information for community association boards and is not lending, engineering or legal advice. It summarizes the Fannie Mae Selling Guide as published; the agencies update their guides and lenders may apply overlays of their own. Whether a particular condition is a critical repair is a judgment a lender makes on the documents in front of it.</em></p>
+<p>For the reserve side of this topic, read <a href="/blog/reasonable-reserves-illinois-condo-law">what Illinois law means by reasonable reserves</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
