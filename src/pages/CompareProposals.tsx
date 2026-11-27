@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Printer, RotateCcw } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { trackEvent } from '../lib/track';
+import { brand } from '../brand/brand.config';
 
 /**
  * Weighted scorecard for comparing management proposals.
@@ -210,6 +211,7 @@ export default function CompareProposals() {
             the justification. Score them independently against agreed weights
             instead, and the disagreements surface early enough to matter.
           </p>
+          <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
           <p className="mt-5 max-w-2xl font-light leading-relaxed text-slate-500 print:hidden">
             Nothing is sent anywhere. There is no sign-up and no email capture —
             your scores stay in this browser. Print or save the page when you are

@@ -180,7 +180,7 @@ export default function NorthShorePage() {
             {northShoreCommunities.map((area) => (
               <Link key={area.slug} to={`/property-management-${area.slug}`} className="group bg-white p-8 hover:bg-ivory-50 transition-colors">
                 <h3 className="font-display text-2xl text-ink group-hover:text-gold-600 transition-colors mb-3">{area.name}</h3>
-                <p className="text-[10px] uppercase tracking-luxe text-slate-400 mb-5">{area.zipCodes.join(' · ')}</p>
+                <p className="text-[11px] uppercase tracking-luxe text-slate-600 mb-5">{area.zipCodes.join(' · ')}</p>
                 <p className="text-sm text-slate-600 font-light leading-relaxed line-clamp-3">{area.description}</p>
               </Link>
             ))}
@@ -231,7 +231,7 @@ export default function NorthShorePage() {
           <p className="eyebrow text-gold-300 mb-8 flex items-center justify-center gap-4"><span className="accent-rule" />A Board-Level Consultation <span className="accent-rule" /></p>
           <h2 className="font-display font-light text-4xl sm:text-5xl lg:text-6xl leading-[1.06] mb-8">Bring clearer management to your <em className="font-medium text-gold-300">North Shore community.</em></h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12">We will review your property, current operating model, and board priorities before preparing a tailored proposal.</p>
-          <Link to="/contact?inquiry=quote&source=north-shore-hub-bottom" className="inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-9 py-4 text-sm transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
+          <Link to="/contact?inquiry=quote&source=north-shore-hub-bottom" className="inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-9 py-4 text-sm transition-colors">Request a Proposal <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </section>
     </>

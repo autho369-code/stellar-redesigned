@@ -13,7 +13,7 @@ try {
   const assigned = Object.values(pillarGuides).flat();
   assert.equal(new Set(assigned).size, assigned.length, 'one editorial pillar per guide');
   const queue = posts.filter(p => p.date >= '2026-11-07' && p.date <= '2026-12-08');
-  assert.equal(queue.length, 32);
+  assert.equal(queue.length, 34);
   for (const guide of queue) assert(assigned.includes(guide.slug), `missing assignment: ${guide.slug}`);
   for (const [slug, targets] of Object.entries(pillarGuides)) {
     const pillar = bySlug.get(slug);
@@ -51,5 +51,5 @@ try {
   assert.equal(getChicagoCalendarDate(new Date('2026-11-07T05:59:59Z')), '2026-11-06');
   assert.equal(getChicagoPublicationDate(new Date('2026-11-20T18:00:00Z')), '2026-11-03'); // publishing frozen
   assert.equal(getChicagoCalendarDate(new Date('2026-11-07T06:00:00Z')), '2026-11-07');
-  console.log('Pillar links passed: 32 guides, release-day boundaries, 41 daily snapshots, silo integrity, duplicate suppression, Chicago cutoff.');
+  console.log('Pillar links passed: 34 guides, release-day boundaries, 41 daily snapshots, silo integrity, duplicate suppression, Chicago cutoff.');
 } finally { rmSync(dir, { recursive: true, force: true }); }

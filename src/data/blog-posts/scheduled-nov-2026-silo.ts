@@ -61,7 +61,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <p>Good signals: inspection dates are found by accident, the reserve study is more than a few years old, owners hear about large projects late, or the board spends meetings on vendor problems instead of decisions. Any one of these is worth a conversation. For the wider picture, see how we manage <a href="/property-management-chicago">condominium associations in Chicago</a>.</p>
 
       <p>If your building is reviewing its management, <a href="/contact">contact Stellar Property Management</a> for a walk-through and a written scope.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-heat-outage-protocol',
@@ -133,7 +134,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <p>After every outage, write one page: what failed, why, what it cost, and what will change. If the boiler is near the end of its life, put replacement in the reserve plan now, while it is a planned project and not an emergency. Our <a href="/blog/condo-hoa-emergency-planning-checklist">emergency planning checklist</a> has the template.</p>
 
       <p>This is everyday work in our <a href="/services/maintenance-coordination">maintenance coordination</a> for associations across <a href="/property-management-chicago">Chicago</a>, with a live person on our 24/7 line. <a href="/contact">Contact us</a> before the first cold snap.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'small-condo-association-professional-manager',
@@ -180,7 +182,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <h2>How should a small board decide?</h2>
 
       <p>Write down every task the association must do in a year, who does it today, and how long it takes. If the list depends on one person, or if anything on it has been late twice, the building has already outgrown self-management. For buildings across <a href="/property-management-chicago">Chicago</a>, we are glad to walk through that list with you — <a href="/contact">contact us</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'glenview-townhome-hoa-board-guide',
@@ -226,7 +229,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       </ul>
 
       <p>Glenview is home for us — I live here. Our <a href="/services/townhome-management">townhome association management</a> covers shared-exterior planning, transparent financials and capital project oversight with no separate oversight fee. See our <a href="/property-management-glenview">Glenview association management</a> page, or <a href="/contact">contact us</a> to talk with a local manager.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-resale-disclosure-fees-turnaround',
@@ -286,7 +290,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       </ul>
 
       <p>For the full packet and process, see <a href="/blog/illinois-section-22-1-disclosure-board-guide">the Illinois 22.1 disclosure guide</a> and <a href="/blog/illinois-22-1-response-workflow">a 22.1 response workflow</a>. Our <a href="/services/resale-disclosures">resale disclosure service</a> answers these requests with a named person responsible. This guide is educational, not legal advice; confirm details with association counsel. Questions? <a href="/contact">Contact our office</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-management-cost',
@@ -378,7 +383,8 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <p>If the chart produces results nobody intended — for example, owners maintaining roofs that are physically shared — the board may want counsel to draft an amendment. Amendment rules depend on the governing law and the declaration, so start there.</p>
 
       <p>Planning shared exteriors and capital cycles is the core of our <a href="/services/townhome-management">townhome association management</a>. If your board wants a responsibility chart and reserve plan built from your documents, <a href="/contact">contact us</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-pet-noise-smoking-complaints-illinois',
@@ -425,6 +431,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <p>Treat every owner the same, including board members and their friends. Keep the file factual. Decide at a properly noticed meeting. And keep the rule set small: rules nobody enforces teach owners that no rule matters. Read <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">adopting and enforcing association rules</a> for the full approach.</p>
 
       <p>Our <a href="/services/violation-management">violation management</a> service runs this process with written notices, hearing scheduling and consistent records. This guide is educational, not legal advice. <a href="/contact">Contact us</a> if your board wants a complaint process in place.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

@@ -139,14 +139,22 @@ export const contactPoints = [
     '@type': 'ContactPoint',
     telephone: business.phoneE164,
     contactType: 'customer service',
-    areaServed: 'US-IL',
+    areaServed: [
+      { '@type': 'City', name: 'Chicago' },
+      { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+      { '@type': 'AdministrativeArea', name: 'Cook County, Illinois' },
+    ],
     availableLanguage: 'en',
   },
   {
     '@type': 'ContactPoint',
     telephone: business.phoneE164,
     contactType: 'emergency',
-    areaServed: 'US-IL',
+    areaServed: [
+      { '@type': 'City', name: 'Chicago' },
+      { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+      { '@type': 'AdministrativeArea', name: 'Cook County, Illinois' },
+    ],
     availableLanguage: 'en',
     hoursAvailable: {
       '@type': 'OpeningHoursSpecification',

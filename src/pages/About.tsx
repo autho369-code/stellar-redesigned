@@ -273,7 +273,7 @@ export default function About() {
                   width="800"
                   height="600"
                 />
-                <figcaption className="mt-6 text-[10px] uppercase tracking-luxe text-slate-400 text-center">
+                <figcaption className="mt-6 text-[11px] uppercase tracking-luxe text-slate-600 text-center">
                   Chicago North Side · Brick Three-Flat
                 </figcaption>
               </figure>
@@ -431,7 +431,7 @@ export default function About() {
                   </div>
                 ))}
               </dl>
-              <p className="mt-4 text-xs text-slate-400">
+              <p className="mt-4 text-xs text-slate-600">
                 Association and unit counts: Foundation for Community
                 Association Research, 2025 U.S. National and State Statistical
                 Review. Reprinted with permission.
@@ -614,7 +614,7 @@ export default function About() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

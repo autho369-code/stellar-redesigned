@@ -54,7 +54,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       </ul>
 
       <p>Our <a href="/services/condominium-management">condominium management</a> gives Evanston boards detailed monthly reporting, capital planning across every era of building, and 24/7 live emergency response. See our <a href="/property-management-evanston">Evanston association management</a> page, or <a href="/contact">contact us</a> to meet a manager.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-annual-building-inspection-checklist',
@@ -105,7 +106,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <p>The usual results are violations, fines and rushed repairs at premium prices, plus questions from lenders and insurers later. A missed date is rarely about money at first. It becomes about money when it is found late.</p>
 
       <p>Keeping this calendar is part of our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> for buildings across <a href="/property-management-chicago">Chicago</a>. If your board wants its checklist built from the City’s records, <a href="/contact">contact us</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'lincoln-park-vintage-condo-board-guide',
@@ -143,7 +145,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <p>Buildings near DePaul’s campus see more move-ins and move-outs. Clear move rules, a deposit for common-area damage if your documents allow it, and quick communication with new occupants prevent most problems.</p>
 
       <p>Our <a href="/services/small-condo-association-management">small condo association management</a> is built for 6-to-24-unit vintage buildings, with budgets sized to match. See our <a href="/property-management-lincoln-park">Lincoln Park association management</a> page, or <a href="/contact">contact us</a> for a walk-through.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-move-in-move-out-elevator-policy',
@@ -183,7 +186,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <p>Send the move policy with the welcome packet and include it in resale disclosures, so buyers know it before closing. Our <a href="/blog/moving-into-chicago-condo-guide">guide to moving into a Chicago condo</a> is a good companion for new owners.</p>
 
       <p>Running reservations, elevator staging and damage inspections is part of our <a href="/services/high-rise-condominium-management">high-rise condominium management</a>. <a href="/contact">Contact us</a> if your building wants a move policy that works.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'lakeview-condo-association-board-guide',
@@ -216,7 +220,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <p>Clear rules and quick communication. Many Lakeview buildings see regular move-ins, so a written move policy, an owner portal and a simple welcome packet do a lot of work. Consistent rule enforcement matters too — see <a href="/blog/common-condo-rule-violations-chicago">the most common rule violations in Chicago buildings</a>.</p>
 
       <p>Our <a href="/services/condominium-management">condominium management</a> serves Lakeview associations of every size with a dedicated manager and 24/7 live emergency response. See our <a href="/property-management-lakeview">Lakeview association management</a> page, or <a href="/contact">contact us</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-hoa-board-duties-cicaa',
@@ -266,7 +271,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       </ul>
 
       <p>Our <a href="/services/hoa-management">HOA management</a> keeps CICAA deadlines on one calendar for townhome and single-family communities. This guide is educational, not legal advice; confirm details with counsel. <a href="/contact">Contact us</a> with questions.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'edgewater-lakefront-condo-board-guide',
@@ -302,7 +308,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <h2>What should an Edgewater board expect from management?</h2>
 
       <p>A board-approved capital calendar, staff and vendor oversight, financial reporting that stands up to engaged owners, and 24/7 response. That is the scope of our <a href="/services/high-rise-condominium-management">Chicago high-rise condominium management</a>. We serve condominium associations in Edgewater; we do not manage co-op buildings. See our <a href="/property-management-edgewater">Edgewater association management</a> page, or <a href="/contact">contact us</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'replace-condo-management-company-60-day-plan',
@@ -358,6 +365,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <p>Set the standard early: a first monthly packet, a list of open items, and a meeting calendar for the year. The first 90 days show whether the change was worth it.</p>
 
       <p>When an association moves to Stellar, we coordinate the 30–60 day handoff and track missing items until they arrive. Read about our <a href="/services/condominium-management">Chicago condominium management</a>, see how we work across <a href="/property-management-chicago">Chicago</a>, or <a href="/contact">contact us</a> to start.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

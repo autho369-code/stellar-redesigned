@@ -3,7 +3,7 @@ import type { AreaContent } from './types';
 export const lakeForest: AreaContent = {
   slug: 'lake-forest',
   targetQuery: 'condo management lake forest il',
-  title: 'Condo Management in Lake Forest, IL | From $30/Unit | Stellar',
+  title: 'Condo Management in Lake Forest, IL | Stellar',
   metaDescription:
     'Condo, HOA and townhome management for Lake Forest boards: winter contracts, insurance renewals and budget season. Flat fee from $30 per unit per month.',
   // TODO(Jojo): how many associations and about how many units does Stellar

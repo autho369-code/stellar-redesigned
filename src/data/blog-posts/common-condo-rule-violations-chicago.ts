@@ -51,5 +51,6 @@ export const commonCondoViolationsChicago = {
 <p>Keep reading: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">How to adopt rules that hold up</a>; <a href="/blog/illinois-association-fines-notice-hearing">fining an owner the right way</a>.</p>
 
 <p>Effective enforcement is calm, consistent, and documented. That means a clearly written set of rules that every owner has received, a defined reporting channel, objective documentation of each violation, and a graduated process — notice, opportunity to be heard, then fines — applied identically to everyone. Stellar Property Management's <a href="/services/violation-management">violation management</a> gives boards that structure, and residents can file a formal report through the form on our <a href="/resources">owner resources</a> page. To set up a fair, defensible process, <a href="/contact">contact our team</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

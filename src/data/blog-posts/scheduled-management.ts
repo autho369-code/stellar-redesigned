@@ -4,6 +4,7 @@ export const scheduledManagementPosts: BlogPost[] = [
   {
     slug: 'illinois-condo-hoa-budget-adoption-guide',
     title: 'How Illinois Association Boards Should Adopt an Annual Budget',
+  seoTitle: 'How Illinois Boards Should Adopt an Annual Budget',
     metaDescription:
       'A practical guide for Illinois condo and HOA boards on building, noticing, and adopting an annual budget, plus the owner notice steps to confirm with counsel.',
     date: '2026-08-21',
@@ -100,7 +101,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <h2>Talk Through Your Budget Season</h2>
 
       <p>If your board wants a budget packet that stands up to owner questions and a calendar that does not slip, we can help. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation before your next budget cycle begins.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'chicago-condo-association-compliance-calendar',
@@ -210,7 +212,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <h2>Build Your Calendar With Us</h2>
 
       <p>If your board is not certain which requirements apply to your building, that is the place to start. Stellar Property Management supports condominium boards throughout <a href="/property-management-chicago">Chicago</a>. <a href="/contact">Contact us</a> for a consultation and we will walk your board through building a compliance calendar it can actually maintain.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-delinquency-escalation-process',
@@ -297,11 +300,13 @@ export const scheduledManagementPosts: BlogPost[] = [
       <p>Read next: <a href="/blog/illinois-condo-association-liens-delinquency">Association liens and delinquency records</a>; <a href="/blog/illinois-condo-assessment-collection-possession-action">collecting through a possession action</a>.</p>
 
       <p>If your association is carrying balances nobody has addressed in months, the fix starts with a written policy and consistent execution. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'community-association-management-agreement-review',
     title: 'What to Review in a Community Association Management Agreement',
+  seoTitle: 'What to Review in a Community Association Agreement',
     metaDescription:
       'A clause-by-clause guide for Illinois condo and HOA boards reviewing a management agreement: fees, scope, termination, records and insurance.',
     date: '2026-09-02',
@@ -506,7 +511,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <p>Keep reading: <a href="/blog/illinois-condo-association-records-request-guide">Answering owner records requests</a>; <a href="/blog/condo-hoa-board-communication-systems">keeping board decisions from getting lost</a>.</p>
 
       <p>If your board is unsure what applies to your community today, that uncertainty is worth resolving once and documenting. Stellar Property Management works with association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'verify-illinois-community-association-manager-license',
@@ -605,7 +611,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <p>Also useful: <a href="/blog/community-association-management-agreement-review">Reviewing a management agreement</a>; <a href="/blog/switch-condo-management-companies-chicago">a controlled change of manager</a>.</p>
 
       <p>We are happy to provide our licensure information and walk your board through verifying it, whether or not you are considering us. Stellar Property Management serves boards throughout <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> for a consultation.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-board-communication-systems',
@@ -705,7 +712,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <p>Read next: <a href="/blog/illinois-association-annual-meeting-guide">Running the annual meeting</a>; <a href="/blog/illinois-condo-association-records-request-guide">the records request deadlines</a>.</p>
 
       <p>If your board is spending meetings relitigating decisions it already made, the fix is structural. Stellar Property Management works with boards across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Contact us</a> to schedule a consultation.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'condo-hoa-insurance-renewal-checklist',
@@ -815,7 +823,8 @@ export const scheduledManagementPosts: BlogPost[] = [
       <h2>Get Renewal Support</h2>
 
       <p>If your association has been renewing on autopilot, a structured renewal cycle is worth the effort. Stellar Property Management supports association boards across <a href="/property-management-chicago">Chicago</a> and the North Shore, including condominium and HOA communities. <a href="/contact">Contact us</a> to schedule a consultation.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'score-condo-hoa-management-proposals',

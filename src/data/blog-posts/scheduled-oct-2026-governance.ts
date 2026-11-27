@@ -109,7 +109,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p><em>This article is general information for Illinois association boards and is not legal advice. Your declaration and bylaws may add requirements, and statutes change. Confirm your election procedure with association counsel.</em></p>
 
       <p>Also useful: <a href="/blog/illinois-association-annual-meeting-guide">Running the annual meeting</a>; <a href="/blog/condo-hoa-board-communication-systems">board communication systems that reduce conflict</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-association-fines-notice-hearing',
@@ -209,7 +210,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p><em>This article is general information for Illinois association boards and is not legal advice. Have association counsel review your enforcement procedure and fine schedule before relying on them.</em></p>
 
       <p>Read next: <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">How to adopt rules that hold up</a>; <a href="/blog/chicago-condo-short-term-rental-prohibited-buildings-list">the City’s Prohibited Buildings List for short-term rentals</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-open-board-meetings-notice-comment',
@@ -307,7 +309,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p><em>This article is general information for Illinois association boards and is not legal advice. Confirm notice requirements and meeting procedures with association counsel.</em></p>
 
       <p>Related reading: <a href="/blog/illinois-condo-board-closed-session-guide">When a board may meet in closed session</a>; <a href="/blog/illinois-association-annual-meeting-guide">annual meeting notice, quorum and minutes</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'removing-illinois-condo-board-member',
@@ -402,7 +405,8 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p><em>This article is general information for Illinois association boards and owners and is not legal advice. Removal of a director should be planned with association counsel.</em></p>
 
       <p>Keep reading: <a href="/blog/illinois-condo-board-elections-proxies-ballots">How Illinois board elections work</a>; <a href="/blog/illinois-association-annual-meeting-guide">running the annual meeting</a>.</p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
   {
     slug: 'illinois-condo-board-conflicts-of-interest',
@@ -504,6 +508,7 @@ export const scheduledOct2026GovernancePosts: BlogPost[] = [
       <p>Managing related-party bids is routine work for a professional manager: collecting comparable proposals, documenting disclosures, drafting the owner notice and tracking the petition window. Our <a href="/services/board-support">board support team</a> handles this for associations across Chicago and the North Shore. If your board is weighing a contract with a director's business, <a href="/contact">contact us</a> before the vote.</p>
 
       <p><em>This article is general information for Illinois association boards and is not legal advice. Related-party contracts should be reviewed by association counsel before they are signed.</em></p>
-    `,
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+`,
   },
 ];

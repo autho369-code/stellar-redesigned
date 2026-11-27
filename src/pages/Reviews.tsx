@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, MessageSquareText, Star } from 'lucide-react';
 
 import { ORG_ID, profiles, SITE_URL, WEBSITE_ID } from '../data/business';
+import { brand } from '../brand/brand.config';
 
 const GOOGLE_REVIEW_URL = profiles.googleReview;
 const GOOGLE_MAPS_URL = profiles.google;
@@ -48,6 +49,7 @@ export default function Reviews() {
             <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4"><span className="accent-rule" />Your Experience Matters</p>
             <h1 className="font-display font-light text-5xl lg:text-6xl text-ink leading-[1.04] mb-8">Share honest <em className="font-medium text-gold-600">feedback.</em></h1>
             <p className="text-lg text-slate-600 font-light leading-relaxed">Whether your experience was positive, difficult, or somewhere in between, we want to hear it. Choose either option below—there is no incentive, screening step, or request for a particular rating.</p>
+            <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">

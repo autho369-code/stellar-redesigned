@@ -3,7 +3,7 @@ import type { AreaContent } from './types';
 export const mortonGrove: AreaContent = {
   slug: 'morton-grove',
   targetQuery: 'condo management morton grove',
-  title: 'Condo Management in Morton Grove, IL | From $30/Unit | Stellar',
+  title: 'Condo Management in Morton Grove, IL | Stellar',
   metaDescription:
     'Condo, HOA and townhome management for Morton Grove boards: reserves, Cook County tax appeals and budgets. Flat fee from $30 per unit per month.',
   // TODO(Jojo): how many associations and about how many units does Stellar

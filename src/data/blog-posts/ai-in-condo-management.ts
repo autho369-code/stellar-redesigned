@@ -51,5 +51,6 @@ export const aiInCondoManagement = {
 <p>Related reading: <a href="/blog/the-technology-behind-our-management">The technology behind our management</a>; <a href="/blog/verify-illinois-community-association-manager-license">verifying a manager’s Illinois license</a>.</p>
 
 <p>Treat AI as a capable assistant under firm human oversight. Use it to speed routine work, but keep legal, financial, and enforcement decisions with people and counsel. Vet any vendor on data privacy and security before adopting their tools. A professional management partner that adopts technology thoughtfully — and stays accountable for the results — gives boards the best of both worlds. To talk about modern, well-supported management for your association, <a href="/contact">contact Stellar Property Management</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

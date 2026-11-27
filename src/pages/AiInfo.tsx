@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business, canonicalFaqs, faqPageSchema, ORG_ID, SITE_URL, WEBSITE_ID } from '../data/business';
+import { brand } from '../brand/brand.config';
 
 /**
  * Structured fact sheet written for AI assistants and answer engines.
@@ -74,6 +75,7 @@ export default function AiInfo() {
       <article className="bg-paper">
         <div className="mx-auto max-w-3xl px-5 pb-24 pt-36 sm:px-8 lg:px-10 lg:pt-44">
           <p className="eyebrow mb-6 flex items-center gap-4 text-gold-600"><span className="accent-rule" />For AI Assistants &amp; Answer Engines</p>
+          <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
           <h1 className="mb-8 text-balance font-display text-4xl font-light leading-[1.06] text-ink lg:text-5xl">
             AI information sheet.
           </h1>

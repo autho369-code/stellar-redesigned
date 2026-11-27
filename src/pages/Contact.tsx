@@ -1,3 +1,4 @@
+import { brand } from '../brand/brand.config';
 import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -106,6 +107,7 @@ export default function Contact() {
                 association&rsquo;s current management concerns, timing, and priorities.
               </p>
               <HeroOffer className="mt-6" />
+              <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
             </div>
           </div>
         </div>

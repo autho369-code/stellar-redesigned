@@ -203,7 +203,7 @@ export default function Services() {
                   <p className="text-slate-600 font-light leading-relaxed mb-4">{description}</p>
                   <div className="flex flex-wrap gap-x-6 gap-y-1.5">
                     {scope.map((s) => (
-                      <span key={s} className="text-[10px] uppercase tracking-luxe text-slate-400">
+                      <span key={s} className="text-[11px] uppercase tracking-luxe text-slate-600">
                         {s}
                       </span>
                     ))}
@@ -300,7 +300,7 @@ export default function Services() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-gold-400 hover:bg-gold-300 text-ink font-medium px-10 py-4 transition-colors duration-300 text-sm tracking-wide"
             >
               Request a Proposal
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

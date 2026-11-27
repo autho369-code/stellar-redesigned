@@ -98,7 +98,7 @@ export default function BlogTopic() {
         <div className="absolute inset-0 opacity-[0.35] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#dfe8ef 1px, transparent 1px), linear-gradient(90deg, #dfe8ef 1px, transparent 1px)', backgroundSize: '96px 96px' }} aria-hidden />
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-20 lg:pb-24">
           <nav aria-label="Breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-1.5 text-[10px] uppercase tracking-luxe text-slate-400 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[11px] uppercase tracking-luxe text-slate-600 flex-wrap">
               <li><Link to="/" className="hover:text-gold-600">Home</Link></li>
               <li><ChevronRight className="w-3 h-3" /></li>
               <li><Link to="/blog" className="hover:text-gold-600">Board Guides</Link></li>
@@ -132,7 +132,7 @@ export default function BlogTopic() {
                 <Link key={post.slug} to={`/blog/${post.slug}`} className="group grid sm:grid-cols-12 gap-4 py-8 border-b border-slate-200 hover:bg-ivory-50 sm:px-5 sm:-mx-5 transition-colors">
                   <div className="sm:col-span-3">
                     <p className="text-[10px] uppercase tracking-luxe text-gold-600">{post.category}</p>
-                    <p className="text-xs text-slate-400 mt-2">{formatDate(post.date)}</p>
+                    <p className="text-xs text-slate-600 mt-2">{formatDate(post.date)}</p>
                   </div>
                   <div className="sm:col-span-8">
                     <h3 className="font-display text-2xl text-ink group-hover:text-gold-600 transition-colors">{post.title}</h3>

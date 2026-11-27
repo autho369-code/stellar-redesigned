@@ -4,6 +4,7 @@ import { Phone, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { Reveal } from '../components/ui/Reveal';
 import { blogPosts } from '../data/blog-posts';
+import { brand } from '../brand/brand.config';
 
 /**
  * The Owner's Companion — /condo-living
@@ -225,6 +226,7 @@ export default function CondoLiving() {
                 work, what your money does, where your rights begin, and how to
                 be the neighbor everyone hopes lives next door.
               </p>
+            <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
             </div>
             <div className="lg:col-span-3 lg:col-start-10 ">
               <p className="text-[10px] uppercase tracking-luxe text-paper/50 mb-4">In this guide</p>

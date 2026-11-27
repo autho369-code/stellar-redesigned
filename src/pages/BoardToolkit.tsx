@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Printer } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { trackEvent } from '../lib/track';
+import { brand } from '../brand/brand.config';
 
 /**
  * Ungated board toolkit. CAI gates its equivalent RFP guidance behind
@@ -190,6 +191,7 @@ export default function BoardToolkit() {
             transition checklist. Everything a board needs to run a management
             search properly — including against us.
           </p>
+          <p className="mt-3 text-sm text-slate-600">{brand.contracts.line}.</p>
           <p className="mt-5 max-w-2xl font-light leading-relaxed text-slate-500 print:hidden">
             No sign-up, no email, nothing gated. Print it, or save it as a PDF
             and send it round the board.

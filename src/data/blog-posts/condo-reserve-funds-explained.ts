@@ -50,5 +50,6 @@ export const condoReserveFundsExplained = {
 <p>Also useful: <a href="/blog/how-to-read-condo-reserve-study">How to read a condo reserve study</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
 
 <p>Recovery is straightforward, if not painless: commission a current reserve study, adjust assessments toward a realistic funding level over a planned period, fund reserves consistently, and stop deferring projects. Transparent communication matters too — owners accept gradual, well-explained increases far better than sudden special assessments. Stellar Property Management's <a href="/services/financial-management">financial management</a> team helps boards build and maintain reserve plans that hold up. To assess where your association stands, <a href="/contact">reach out for a consultation</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };

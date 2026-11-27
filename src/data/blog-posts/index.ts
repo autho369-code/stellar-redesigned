@@ -28,6 +28,8 @@ import { scheduledNov2026NewLawPosts } from './scheduled-nov-2026-new-laws';
 import { scheduledNov2026StatutePosts } from './scheduled-nov-2026-statute';
 import { scheduledNov2026SiloPosts } from './scheduled-nov-2026-silo';
 import { scheduledDec2026SiloPosts } from './scheduled-dec-2026-silo';
+import { financialOnlyVsFullService } from './financial-only-vs-full-service-condo-hoa-management-chicago';
+import { chicagoCondoManagementTransition } from './chicago-condo-management-transition-first-60-days';
 import { getChicagoPublicationDate } from '../../utils/publication-date';
 
 export interface BlogPost {
@@ -53,6 +55,8 @@ export interface BlogPost {
 export const ARTICLE_AUTHOR = 'Mirsad Cerimovic, CAM, CMCA, AMS';
 
 export const allBlogPosts: BlogPost[] = [
+  financialOnlyVsFullService,
+  chicagoCondoManagementTransition,
   ...scheduledGovernancePosts,
   ...scheduledFinancePosts,
   ...scheduledBuildingPosts,

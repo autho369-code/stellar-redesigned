@@ -107,7 +107,7 @@ const schema = {
       image: 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',
       telephone: business.phoneE164,
       email: business.email,
-      priceRange: `From $${business.priceFrom} per unit per month, ${business.priceTerms}`,
+      priceRange: `From $${business.priceFrom}/unit/month`,
       hasCredential: {
         '@type': 'EducationalOccupationalCredential',
         name: business.licenseName,

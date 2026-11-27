@@ -61,11 +61,12 @@ export const condoRepairsOwnerVsAssociation = {
 <p>Read next: <a href="/blog/first-time-condo-buyer-guide-chicago">A first-time Chicago condo buyer’s guide</a>; <a href="/blog/moving-into-chicago-condo-guide">moving into a Chicago condo</a>.</p>
 
 <p>For the full picture of how a well-run building divides its labor — assessments, rights, insurance, and etiquette included — read <a href="/condo-living">The Owner's Companion</a>, our complete guide to condo living. Boards that want responsibility questions answered this cleanly every time can learn about our condominium management practice or <a href="/contact">request a proposal</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   sources: [
     {
       title: 'Illinois Condominium Property Act (765 ILCS 605)',
-      url: 'https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2200',
+      url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2200&ChapterID=62',
     },
     {
       title: 'Community Associations Institute — Homeowner Resources',

@@ -53,5 +53,6 @@ export const condoSpecialAssessmentsIllinois = {
 <p>Keep reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">reasonable reserves under the Condominium Property Act</a>.</p>
 
 <p>Stellar Property Management helps Chicago-area boards build budgets and reserve plans that prevent financial shocks. To review your association's footing, <a href="/contact">request a consultation</a>.</p>
+<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
 };
