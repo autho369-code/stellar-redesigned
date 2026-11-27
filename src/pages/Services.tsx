@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import TrustBar from '../components/TrustBar';
+import SixDisciplines from '../components/SixDisciplines';
 
 interface ServiceItem {
   n: string;
@@ -269,6 +270,8 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      <SixDisciplines />
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">

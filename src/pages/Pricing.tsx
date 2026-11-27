@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business } from '../data/business';
+import { includedServices } from '../data/pricing';
 
 const pricingFactors = [
   { title: 'Community size', description: 'Unit count helps establish the baseline workload and per-unit economics.' },
@@ -13,16 +14,6 @@ const pricingFactors = [
   { title: 'Board service needs', description: 'Meeting cadence, communications, governance support, and transition needs are defined before quoting.' },
 ];
 
-const includedServices = [
-  'A dedicated association manager',
-  'Monthly financial reporting and budget support',
-  'Board meeting and governance support',
-  'Vendor bidding, coordination, and performance follow-up',
-  'Owner communications and online portal access',
-  'Assessment collection and account administration',
-  '24/7 emergency response coordination',
-  'Capital-project planning and management oversight',
-];
 
 const reviews = [
   { quote: 'Financial reports provided are detailed and copies of each monthly invoice received.', name: 'Halid E.', context: 'Google review · 254-unit condominium' },

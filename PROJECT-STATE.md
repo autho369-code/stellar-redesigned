@@ -19,6 +19,17 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (R4: shorter homepage and fee estimator)
+
+Branch `r4-homepage` (PR open). No fee calculator: the owner sets the fee only
+after a walkthrough. Homepage order: hero with a proposal-request card,
+trust bar, three Google reviews, "Who we manage" tiles, "Why boards switch to
+us" (four points, 96% retention and the approved Kenmore result), the three
+steps plus the pricing card with the included checklist, neighborhoods, board
+resources, FAQ, final CTA. H1, title, meta description and JSON-LD unchanged.
+6,983 px tall at 1440 (was about 12,200). No photo of a building or office is
+used (owner decision).
+
 ## Status update — 2026-11-26 (R3: trust bar under every hero)
 
 Branch `r3-trustbar-rest`. `TrustBar` added under the hero of the area pages,
