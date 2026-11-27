@@ -334,6 +334,22 @@ export const areaTypes: Array<{ id: string; label: string; areas: string[]; guid
       'illinois-condo-association-records-request-guide',
     ],
   },
+  {
+    id: 'northwest',
+    label: 'Northwest suburbs',
+    areas: ['park-ridge', 'des-plaines', 'mount-prospect', 'arlington-heights', 'palatine', 'buffalo-grove', 'schaumburg', 'northfield'],
+    guides: [
+      'condo-hoa-insurance-renewal-checklist',
+      'illinois-association-fines-notice-hearing',
+      'condo-special-assessments-illinois',
+      'fannie-freddie-condo-eligibility-board-guide',
+      'condo-hoa-delinquency-escalation-process',
+      'how-to-read-condo-reserve-study',
+      'condo-repairs-owner-vs-association-illinois',
+      'illinois-condo-insurance-deductible-charge-owner',
+      'adopting-enforcing-condo-hoa-rules-illinois',
+    ],
+  },
 ];
 
 const memberIndex = new Map<string, { cluster: Cluster; member: ClusterMember }>();

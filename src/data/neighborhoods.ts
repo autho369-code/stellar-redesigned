@@ -4,8 +4,8 @@ export interface Neighborhood {
   description: string;
   propertyTypes: string[];
   zipCodes: string[];
-  /** 'chicago' (default) = city neighborhood; 'north-shore' = suburb */
-  region?: 'chicago' | 'north-shore';
+  /** 'chicago' (default) = city neighborhood; 'north-shore' = North Shore suburb; 'northwest-suburb' = other suburban Cook/Lake communities */
+  region?: 'chicago' | 'north-shore' | 'northwest-suburb';
   /** Community-specific operating knowledge rendered as proof points on the area page. */
   localProof?: LocalProofPoint[];
   /** Neighborhood-specific Q&A rendered ahead of the standard FAQ set and emitted in FAQPage schema. */
@@ -781,8 +781,76 @@ export const neighborhoods: Neighborhood[] = [
     propertyTypes: ['townhomes', 'HOAs', 'condominiums'],
     zipCodes: ['60015'],
     region: 'north-shore'
-  }
+  },
+  {
+    name: 'Park Ridge',
+    slug: 'park-ridge',
+    description: 'Park Ridge is a Cook County suburb northwest of Chicago, with a downtown district and Metra service on the Union Pacific Northwest line.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60068'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Des Plaines',
+    slug: 'des-plaines',
+    description: 'Des Plaines is a Cook County suburb northwest of Chicago, adjacent to O\'Hare International Airport, with Metra service on the Union Pacific Northwest line and a downtown district.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60016', '60018'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Mount Prospect',
+    slug: 'mount-prospect',
+    description: 'Mount Prospect is a Cook County suburb northwest of Chicago, with Metra service on the Union Pacific Northwest line and a downtown district around the station.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60056'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Arlington Heights',
+    slug: 'arlington-heights',
+    description: 'Arlington Heights is a large Cook County suburb northwest of Chicago, with Metra service on the Union Pacific Northwest line and a downtown district around the station.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60004', '60005'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Palatine',
+    slug: 'palatine',
+    description: 'Palatine is a Cook County suburb northwest of Chicago, with Metra service on the Union Pacific Northwest line and a downtown district around the station.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60067', '60074'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Buffalo Grove',
+    slug: 'buffalo-grove',
+    description: 'Buffalo Grove is a village in Cook and Lake Counties, northwest of Chicago, with townhome, condominium and homeowner associations in a suburban residential setting.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60089'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Schaumburg',
+    slug: 'schaumburg',
+    description: 'Schaumburg is a large Cook County suburb northwest of Chicago and home to a major commercial center around Woodfield, with condominium, townhome and homeowner associations in several residential sections of the village.',
+    propertyTypes: ['condominiums', 'townhomes', 'HOAs'],
+    zipCodes: ['60173', '60193', '60194', '60195'],
+    region: 'northwest-suburb',
+  },
+  {
+    name: 'Northfield',
+    slug: 'northfield',
+    description: 'Northfield is a Cook County village on the North Shore, between Winnetka, Glenview and Northbrook, with condominium, townhome and homeowner associations in a primarily residential setting.',
+    propertyTypes: ['condominiums', 'HOAs', 'townhomes'],
+    zipCodes: ['60093'],
+    region: 'north-shore',
+  },
 ];
+
+export function isSuburb(neighborhood: Pick<Neighborhood, 'region'>): boolean {
+  return neighborhood.region === 'north-shore' || neighborhood.region === 'northwest-suburb';
+}
 
 export function getNeighborhoodBySlug(slug: string): Neighborhood | undefined {
   return neighborhoods.find((n) => n.slug === slug);
@@ -797,7 +865,9 @@ export function getRelatedNeighborhoods(currentSlug: string, count: number = 3):
   const regionalNeighborhoods = neighborhoods.filter((n) =>
     current.region === 'north-shore'
       ? n.region === 'north-shore'
-      : n.region !== 'north-shore'
+      : current.region === 'northwest-suburb'
+        ? n.region === 'northwest-suburb'
+        : !n.region || n.region === 'chicago'
   );
   const currentIndex = regionalNeighborhoods.findIndex((n) => n.slug === currentSlug);
 
