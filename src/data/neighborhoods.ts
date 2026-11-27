@@ -338,7 +338,7 @@ export const neighborhoods: Neighborhood[] = [
   {
     name: 'Gold Coast',
     slug: 'gold-coast',
-    description: 'The Gold Coast is Chicago\'s most exclusive residential neighborhood, featuring historic mansions, landmark buildings, and luxury high-rises along Lake Shore Drive. Property management here sets the highest standard, requiring expertise in historic preservation, premium vendor relationships, and discreet, professional service. We are proud to manage some of the Gold Coast\'s most distinguished addresses.',
+    description: 'The Gold Coast is Chicago\'s most exclusive residential neighborhood, featuring historic mansions, landmark buildings, and luxury high-rises along Lake Shore Drive. Property management here sets the highest standard, requiring expertise in historic preservation, premium vendor relationships, and discreet, professional service.',
     propertyTypes: ['condominiums', 'high-rises', 'HOAs'],
     zipCodes: ['60610', '60611'],
     localProof: [
