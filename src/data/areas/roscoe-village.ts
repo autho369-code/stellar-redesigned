@@ -6,8 +6,7 @@ export const roscoeVillage: AreaContent = {
   title: 'Condo Management in Roscoe Village, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Roscoe Village boards: greystone walk-ups, vintage two-flats and townhome infill. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Roscoe Village? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Roscoe Village is a family neighborhood on the north side, with a retail strip along Roscoe Street and a grid of walk-up blocks on either side. Renovated vintage buildings stand next to newer townhome developments.',

@@ -6,8 +6,7 @@ export const ukrainianVillage: AreaContent = {
   title: 'Condo Management in Ukrainian Village, Chicago | $30/Unit',
   metaDescription:
     'Condo and HOA management for Ukrainian Village boards: historic walk-ups and cottages in a Chicago landmark district. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Ukrainian Village? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Ukrainian Village is known for its onion-domed churches, its cottages and its tight, tree-lined blocks. Most condominium buildings here are brick walk-ups and converted houses that have stood for a century.',

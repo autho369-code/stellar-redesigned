@@ -6,8 +6,7 @@ export const irvingPark: AreaContent = {
   title: 'Condo Management in Irving Park, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Irving Park boards: vintage two-flats, courtyard walk-ups and the Villa landmark district. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Irving Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Irving Park is a northwest-side neighborhood of bungalows, two-flats and courtyard buildings, with a mix of owner-occupants and landlords. Condominium buildings here are mostly small and mostly old.',

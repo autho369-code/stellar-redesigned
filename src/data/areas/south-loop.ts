@@ -6,8 +6,7 @@ export const southLoop: AreaContent = {
   title: 'Condo Management in the South Loop, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for South Loop boards: converted printing-house lofts, townhome blocks and 1990s to 2010s high-rises. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near the South Loop? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'The South Loop grew from rail yards and warehouses into one of Chicago’s largest condominium neighborhoods. It mixes printing-house loft conversions, townhome streets and glass high-rises built over the past three decades.',

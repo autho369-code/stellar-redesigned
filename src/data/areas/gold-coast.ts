@@ -6,8 +6,7 @@ export const goldCoast: AreaContent = {
   title: 'Condo Management in the Gold Coast, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Gold Coast boards: pre-war masonry buildings, Lake Shore Drive towers and landmark rowhouse blocks. From $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near the Gold Coast? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'The Gold Coast runs along the lakefront just north of the Loop. Historic rowhouses on streets like Astor sit near high-rise condominiums along Lake Shore Drive, and the two kinds of building have very different maintenance calendars.',

@@ -6,11 +6,26 @@ export const andersonville: AreaContent = {
   title: 'Condo Management in Andersonville, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Andersonville boards: vintage conversions, capital plans, budgets, leaks and vendor bids. From $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Andersonville? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Andersonville is known for well-kept vintage buildings converted to condominiums along the side streets off Clark Street. Most associations here are small, and the same few owners tend to serve year after year.',
+  housing: {
+    intro:
+      'Andersonville does not have its own community area. It lies inside Edgewater, Community Area 77. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning for all of Edgewater, so they include the lakefront towers east of Broadway as well as the side streets around Clark Street.',
+    stats: [
+      { label: 'Typical home was built in (median year)', value: '1950' },
+      { label: 'Share of homes that predate 1940', value: '14,231 (42.6%)' },
+      { label: 'Two-flat style homes (two units)', value: '1,537 (4.6%)' },
+      { label: 'Three- and four-flat style homes', value: '3,269 (9.8%)' },
+      { label: 'Mid-size buildings, five to nine units', value: '4,390 (13.1%)' },
+      { label: 'Larger buildings, ten to nineteen units', value: '2,647 (7.9%)' },
+      { label: 'Owner-occupied households', value: '11,412 (37.4%)' },
+      { label: 'Newer homes, built 2010 or later', value: '849 (2.5%)' },
+    ],
+    takeaway:
+      'Across Edgewater as a whole, 42.6 percent of homes predate 1940 and 55.2 percent are in buildings of twenty or more units. The small vintage buildings on the Andersonville side streets belong to the remainder: about 35 percent of homes sit in buildings of two to nineteen units, and those buildings carry the same roofs, porches and boilers as any other.',
+  },
   buildingTypes: [
     {
       name: 'Vintage buildings converted to condominiums',
@@ -61,6 +76,23 @@ export const andersonville: AreaContent = {
       linkText: 'what Chicago condo boards should expect from a manager',
     },
   ],
+  localItems: [
+    {
+      title: 'Porches on small vintage buildings',
+      body:
+        'Chicago requires a porch to carry 100 pounds per square foot, inspects after a 311 complaint, and asks for a permit with stamped plans when the repair is structural. Many Andersonville side-street buildings have rear porches the association must maintain.',
+    },
+    {
+      title: 'Hauling for buildings above four units',
+      body:
+        'City crews collect from buildings of up to four units. A converted building with five or more units contracts with a private hauler, so the contract belongs in the association budget.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024, and Cook County reassesses the city again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a vintage conversion on a Clark Street side street; an Andersonville streetscape.
@@ -81,6 +113,22 @@ export const andersonville: AreaContent = {
       a: 'Write the scope of work yourselves before requesting bids. When each vendor writes its own scope, the board receives documents that cannot be compared and ends up choosing on price alone, which usually means choosing the narrowest scope.',
       post: 'condo-hoa-vendor-rfp-checklist',
     },
+    {
+      q: 'Does a six-flat on an Andersonville side street need a hauler contract?',
+      a: 'Yes. The City collects only from buildings of up to four units, so a six-unit building contracts a private hauler and pays it from the association budget.',
+      post: 'condo-hoa-annual-budget-workbook',
+    },
+    {
+      q: 'When does a porch repair need a permit?',
+      a: 'Chicago requires a permit and stamped plans for structural porch work, and inspections usually follow a complaint to 311. An engineer’s report tells the board whether a repair is structural.',
+      post: 'chicago-condo-porch-deck-safety-board-guide',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Edgewater (Andersonville) community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Edgewater.pdf' },
+    { label: 'Chicago porch safety and permits', href: 'https://www.chicago.gov/city/en/depts/bldgs/supp_info/porch-safety.html' },
+    { label: 'City of Chicago garbage collection eligibility', href: 'https://www.chicago.gov/city/en/depts/streets/provdrs/streets_san/svcs/grid-garbage-collection.html' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

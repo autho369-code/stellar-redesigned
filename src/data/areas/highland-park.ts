@@ -6,11 +6,26 @@ export const highlandPark: AreaContent = {
   title: 'Condo Management in Highland Park, IL | From $30/Unit',
   metaDescription:
     'Condo, HOA and townhome management for Highland Park boards: ravine and bluff sites, mature landscaping and reserves. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Highland Park? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Highland Park pairs lakefront ravines and an arts scene with condominium buildings, townhome enclaves and homeowner associations. Mature landscaping and ravine and bluff sites shape the work here, and many owners have lived in their homes for a long time.',
+  housing: {
+    intro:
+      'Highland Park is a Lake County city on the lakefront, with about 11,800 occupied homes. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Median year the housing stock was built', value: '1963' },
+      { label: 'Pre-1940 construction', value: '2,981 (23.9%)' },
+      { label: '1940 to 1969 construction', value: '4,392 (35.2%)' },
+      { label: 'Construction since 2010', value: '579 (4.6%)' },
+      { label: 'Single-family detached homes', value: '9,193 (73.6%)' },
+      { label: 'Single-family attached homes', value: '569 (4.6%)' },
+      { label: 'Buildings of twenty or more units', value: '1,385 (11.1%)' },
+      { label: 'Owner households', value: '9,875 (83.8%)' },
+    ],
+    takeaway:
+      'Nearly three quarters of Highland Park’s homes (73.6 percent) are detached houses and 83.8 percent of households own. Buildings of twenty or more units are 11.1 percent of the stock, so condominium and townhome associations are a minority that sits among single-family blocks, often with ravine, bluff and landscape work that a single-family street does not have.',
+  },
   buildingTypes: [
     {
       name: 'Condominium buildings',
@@ -61,6 +76,23 @@ export const highlandPark: AreaContent = {
       linkText: 'how boards decide what reserves are reasonable',
     },
   ],
+  localItems: [
+    {
+      title: 'Rental registration for units with their own entrance',
+      body:
+        'Highland Park Code Chapter 154 requires annual registration, on or before April 1, for a dwelling unit that is leased to someone other than an owner and has its own entrance to the outside, which takes in townhomes and condominium units that open directly outside. Each rented unit is registered separately.',
+    },
+    {
+      title: 'Short-term rentals',
+      body:
+        'Under the zoning code, a property cannot be used as a short-term rental unless it is first registered as a rental property under Chapter 154. An association’s own rules may be stricter.',
+    },
+    {
+      title: 'Lake County assessments',
+      body:
+        'Highland Park is in Lake County, not Cook County, so Cook County’s reassessment schedule does not apply. Assessments run through the township assessor and the Lake County Board of Review, and a board should confirm the township’s calendar before planning an appeal.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a Highland Park townhome street from the sidewalk; a wooded common area (public view).
@@ -86,6 +118,16 @@ export const highlandPark: AreaContent = {
       a: 'Every shared component with a life span: roofs, drives, drainage, retaining structures and major trees. Give each one a date and a cost, and update the list every year.',
       post: 'reasonable-reserves-illinois-condo-law',
     },
+    {
+      q: 'Does Cook County’s reassessment schedule apply to Highland Park associations?',
+      a: 'No. Highland Park is in Lake County, where assessments run through township assessors and the county Board of Review. Confirm the township calendar before planning a tax appeal.',
+      post: 'cook-county-property-tax-appeal-condo-association',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Highland Park community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Highland-Park.pdf' },
+    { label: 'Highland Park rental registration program', href: 'https://www.cityhpil.com/government/city_departments/community_development/rental_registration.php' },
+    { label: 'Lake County Illinois, Supervisor of Assessments', href: 'https://www.lakecountyil.gov/FAQ.aspx?QID=242' },
+  ],
 };

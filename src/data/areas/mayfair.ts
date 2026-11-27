@@ -6,8 +6,7 @@ export const mayfair: AreaContent = {
   title: 'Condo Management in Mayfair, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Mayfair boards: brick two-flats, courtyard walk-ups and small apartment-style buildings. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Mayfair? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Mayfair is a quiet residential neighborhood on the northwest side of Chicago. Brick two-flats, courtyard walk-ups and small apartment-style buildings fill most of its blocks.',

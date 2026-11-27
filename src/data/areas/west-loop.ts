@@ -6,8 +6,7 @@ export const westLoop: AreaContent = {
   title: 'Condo Management in the West Loop, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for West Loop boards: Fulton Market loft conversions, new towers and townhome blocks. Flat fee from $30 per unit a month.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near the West Loop? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'The West Loop grew from meatpacking and warehouse blocks into a restaurant and residential district. Today it combines loft conversions in old industrial buildings with new towers and rows of townhomes.',

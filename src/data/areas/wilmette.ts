@@ -6,11 +6,26 @@ export const wilmette: AreaContent = {
   title: 'Condo Management in Wilmette, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo, HOA and townhome management for Wilmette boards: vintage condos near the Metra, snow contracts and reserves. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Wilmette? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Wilmette is a North Shore village on the lakefront. It has vintage condominium buildings near the Metra and CTA, and townhome communities with shared exteriors.',
+  housing: {
+    intro:
+      'Wilmette is a Cook County village of about 10,300 occupied homes. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Typical home was built in (median year)', value: '1957' },
+      { label: 'Share of homes that predate 1940', value: '3,050 (28.6%)' },
+      { label: 'Mid-century homes, built 1940 to 1969', value: '4,828 (45.2%)' },
+      { label: 'Newer homes, built 2010 or later', value: '546 (5.1%)' },
+      { label: 'Homes that are detached houses', value: '8,144 (76.3%)' },
+      { label: 'Large buildings, twenty or more units', value: '1,524 (14.3%)' },
+      { label: 'Homes that are attached houses', value: '569 (5.3%)' },
+      { label: 'Owner-occupied households', value: '9,045 (87.9%)' },
+    ],
+    takeaway:
+      'Wilmette’s median home dates to 1957 and 28.6 percent were built before 1940, but the larger group is the 45.2 percent built between 1940 and 1969. Owners are 87.9 percent of households and 76.3 percent of homes are detached houses, so condominium and townhome associations sit within a village of long-held single-family homes.',
+  },
   buildingTypes: [
     {
       name: 'Vintage condominium buildings near the village center',
@@ -61,6 +76,23 @@ export const wilmette: AreaContent = {
       linkText: 'the board guide to Section 22.1 disclosures',
     },
   ],
+  localItems: [
+    {
+      title: 'Sewer laterals are the owner’s responsibility',
+      body:
+        'Under the Village Code, the property owner maintains the sewer lateral from the building up to and including the connection to the main sewer. For an association, that makes the lateral a common expense. The Village recommends cleaning and televising laterals regularly and keeps a list of firms that perform lateral cleaning, televising and flood assessments at fixed prices.',
+    },
+    {
+      title: 'Backups and street flooding',
+      body:
+        'East of Ridge Road, standing water in streets can be caused by inlet restrictors that protect basements from sewer backups, so the Village asks residents to call Public Works rather than assume a fault. The Village also asks owners to report any sewer backup, because it tracks them to judge its sewer improvements.',
+    },
+    {
+      title: 'Reassessment cycle',
+      body:
+        'Wilmette is in New Trier Township, on Cook County’s north suburban calendar. It was reassessed in 2022 and 2025, and the next reassessment is 2028.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a Wilmette residential street or courtyard from the sidewalk; a lakefront or downtown Wilmette view.
@@ -86,6 +118,16 @@ export const wilmette: AreaContent = {
       a: 'Yes. We send a written proposal with one flat monthly fee and a defined scope before your board decides anything.',
       post: 'score-condo-hoa-management-proposals',
     },
+    {
+      q: 'Who pays to repair a damaged sewer lateral at a Wilmette condominium?',
+      a: 'Under the Village Code the property owner maintains the lateral up to the connection to the main. For a condominium, that is usually the association as a common expense, subject to the declaration.',
+      post: 'condo-repairs-owner-vs-association-illinois',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Wilmette community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Wilmette.pdf' },
+    { label: 'Wilmette flooding and flood prevention', href: 'https://www.wilmette.gov/372/Flooding-Flood-Prevention' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };

@@ -6,8 +6,7 @@ export const skokie: AreaContent = {
   title: 'Condo Management in Skokie, IL | From $30/Unit | Stellar',
   metaDescription:
     'Condo and HOA management for Skokie boards: 4,700 homes in large buildings and a village rental rule with a condo exemption. From $30 per unit.',
-  // TODO(Mirsad): how many associations and about how many units does Stellar
-  // manage in or near Skokie? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Skokie is a north suburb bordering Chicago, with mid-century single-family blocks, garden apartments and larger multi-story buildings. Most of its housing dates from the 1950s and 1960s.',

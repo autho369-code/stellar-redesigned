@@ -6,11 +6,26 @@ export const lakeForest: AreaContent = {
   title: 'Condo Management in Lake Forest, IL | Stellar',
   metaDescription:
     'Condo, HOA and townhome management for Lake Forest boards: winter contracts, insurance renewals and budget season. Flat fee from $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Lake Forest? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Lake Forest is a historic North Shore community known for Market Square and long-standing property standards. Its condominium, townhome and homeowner associations expect careful financial reporting and well-kept common areas.',
+  housing: {
+    intro:
+      'Lake Forest is a Lake County city on the lakefront, with about 6,900 occupied homes. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Midpoint year of home construction', value: '1976' },
+      { label: 'Homes older than 1940', value: '1,310 (18.0%)' },
+      { label: 'Homes dating from 1940 to 1969', value: '1,794 (24.6%)' },
+      { label: 'Homes dating from 2010 or later', value: '452 (6.2%)' },
+      { label: 'Detached houses', value: '5,577 (76.6%)' },
+      { label: 'Attached houses (rowhouses and townhomes)', value: '490 (6.7%)' },
+      { label: 'Twenty-plus-unit buildings (homes)', value: '776 (10.7%)' },
+      { label: 'Owner-occupied homes', value: '6,124 (88.8%)' },
+    ],
+    takeaway:
+      'In Lake Forest 88.8 percent of households own, 76.6 percent of homes are detached houses and 6.7 percent are attached houses. Buildings of twenty or more units are 10.7 percent of homes, so an association is a small part of a town of large single-family lots.',
+  },
   buildingTypes: [
     {
       name: 'Condominium associations',
@@ -61,6 +76,23 @@ export const lakeForest: AreaContent = {
       linkText: 'the emergency planning checklist for associations',
     },
   ],
+  localItems: [
+    {
+      title: 'Certificate of Appropriateness for exterior work',
+      body:
+        'Under Chapter 155 of the Lake Forest Code, exterior alterations to a landmark or a structure inside a historic district need a Certificate of Appropriateness from the Historic Preservation Commission before the City issues a permit. Review looks at height, proportion, openings, materials and distinctive features.',
+    },
+    {
+      title: 'Historic districts and landmarks',
+      body:
+        'The Commission reviews projects inside the City’s historic districts and on individual landmarks, including demolitions, additions, new construction and building scale variances. A townhome or condominium board should ask the City whether its parcel is inside a district before it bids exterior work.',
+    },
+    {
+      title: 'Lake County assessments',
+      body:
+        'Lake Forest is in Lake County, not Cook County, so Cook County’s reassessment calendar does not apply. A board planning a tax appeal should confirm the township’s schedule with the county.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a residential street in Lake Forest from the sidewalk; a townhome or courtyard building from the sidewalk.
@@ -86,6 +118,17 @@ export const lakeForest: AreaContent = {
       a: 'Ask for a written flat-fee proposal with a defined scope, the name of the manager, and how after-hours calls are handled. Compare every firm on the same points.',
       post: 'score-condo-hoa-management-proposals',
     },
+    {
+      q: 'Does re-roofing a Lake Forest townhome community need Historic Preservation Commission review?',
+      a: 'It can, if the buildings are in a historic district or are landmarks and the work changes exterior appearance. The City’s planning staff can confirm before the board signs a contract.',
+      post: 'condo-hoa-capital-project-loan-preparation',
+    },
   ],
   hasHighRises: false,
+  sources: [
+    { label: 'Lake Forest community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Lake-Forest.pdf' },
+    { label: 'Lake Forest Historic Preservation Commission', href: 'https://www.cityoflakeforest.com/government/boards_and_commissions/historic_preservation_commission.php' },
+    { label: 'Lake Forest Code, Chapter 155 standards for review', href: 'https://codelibrary.amlegal.com/codes/lakeforest/latest/lakeforest_il/0-0-0-14364' },
+    { label: 'Lake County Illinois, Supervisor of Assessments', href: 'https://www.lakecountyil.gov/FAQ.aspx?QID=242' },
+  ],
 };

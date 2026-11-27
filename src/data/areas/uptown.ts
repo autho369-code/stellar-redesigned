@@ -6,11 +6,26 @@ export const uptown: AreaContent = {
   title: 'Condo Management in Uptown, Chicago | From $30/Unit',
   metaDescription:
     'Condo and HOA management for Uptown boards: historic buildings and new development, facade planning, reserves and turnover. From $30 per unit per month.',
-  // TODO(Jojo): how many associations and about how many units does Stellar
-  // manage in or near Uptown? Until then the page says "we serve boards here".
+  // Per-area managed counts are company-private (owner decision, Nov 27, 2026), so this stays null and nothing is shown.
   managed: null,
   context:
     'Uptown pairs historic architecture around its entertainment venues with a steady run of new development. Boards here often manage renovation work and day-to-day operations at the same time.',
+  housing: {
+    intro:
+      'Uptown is Community Area 3, on the lakefront. The figures below are Census Bureau American Community Survey estimates for 2020 to 2024, compiled by the Chicago Metropolitan Agency for Planning.',
+    stats: [
+      { label: 'Midpoint year of home construction', value: '1948' },
+      { label: 'Homes older than 1940', value: '16,259 (44.9%)' },
+      { label: 'Homes dating from 1940 to 1969', value: '8,273 (22.9%)' },
+      { label: 'Homes dating from 2010 or later', value: '2,187 (6.0%)' },
+      { label: 'Five-to-nine-unit buildings (homes)', value: '6,785 (18.7%)' },
+      { label: 'Twenty-plus-unit buildings (homes)', value: '21,175 (58.5%)' },
+      { label: 'Owner-occupied homes', value: '9,632 (29.3%)' },
+      { label: 'Renter-occupied homes', value: '23,263 (70.7%)' },
+    ],
+    takeaway:
+      'In Uptown, 58.5 percent of homes are in buildings of twenty or more units, another 27 percent are in buildings of five to nineteen units, and 44.9 percent of homes predate 1940. Boards here govern older buildings with big systems, and 70.7 percent of households rent.',
+  },
   buildingTypes: [
     {
       name: 'Historic buildings near the entertainment district',
@@ -66,6 +81,28 @@ export const uptown: AreaContent = {
       linkText: 'how to build a Chicago condo compliance calendar',
     },
   ],
+  localItems: [
+    {
+      title: 'Hutchinson Street landmark district',
+      body:
+        'Chicago designated the Hutchinson Street district, on the 600 to 900 blocks of West Hutchinson Street, on August 31, 1977. Exterior work on a building within the district is reviewed by the City’s historic preservation staff before a permit is issued.',
+    },
+    {
+      title: 'Exterior wall inspections',
+      body:
+        'Buildings 80 feet or taller fall under Chicago’s facade ordinance, with critical examinations every 4, 8 or 12 years depending on category.',
+    },
+    {
+      title: 'Closing a building to short-term rentals',
+      body:
+        'The City’s Prohibited Buildings List excludes listed buildings from short-term-rental activity. The City describes an affidavit process on its site.',
+    },
+    {
+      title: 'Reassessment',
+      body:
+        'Chicago was reassessed in 2024 and is reassessed again in 2027.',
+    },
+  ],
   // TODO(Jojo): typical monthly fee range from real recent proposals. Never estimate; never below the $30 starting fee.
   feeRanges: null,
   // TODO(Jojo): real photos only (public view): a historic building near Broadway; a new-construction building.
@@ -86,6 +123,23 @@ export const uptown: AreaContent = {
       a: 'No. Illinois law sets no fixed percentage. The Condominium Property Act asks boards to budget reasonable reserves in light of the association’s circumstances and to be able to show how they decided.',
       post: 'reasonable-reserves-illinois-condo-law',
     },
+    {
+      q: 'Is any part of Uptown a landmark district?',
+      a: 'Yes. The Hutchinson Street district, designated in 1977, is a Chicago Landmark district. A building inside it needs City review of exterior work, and the City’s landmark listing shows the boundaries.',
+      post: 'vintage-chicago-condo-capital-planning',
+    },
+    {
+      q: 'Can an Uptown condominium keep out short-term rentals?',
+      a: 'The declaration and rules decide what owners can do, and the City lets a building ask to be excluded from short-term-rental activity through its Prohibited Buildings List.',
+      post: 'chicago-condo-short-term-rental-prohibited-buildings-list',
+    },
   ],
   hasHighRises: true,
+  sources: [
+    { label: 'Uptown community data snapshot (CMAP, 2020 to 2024 ACS)', href: 'https://cmap.illinois.gov/wp-content/uploads/dlm_uploads/Uptown.pdf' },
+    { label: 'Chicago Landmarks, official list of landmark districts', href: 'https://webapps1.chicago.gov/landmarksweb/web/listings.htm' },
+    { label: 'Chicago exterior wall inspection program', href: 'https://www.chicago.gov/city/en/depts/bldgs/provdrs/inspect/svcs/exterior_wall_program.html' },
+    { label: 'City of Chicago House Share Prohibited Buildings List', href: 'https://data.cityofchicago.org/Buildings/House-Share-Prohibited-Buildings-List-Map/k75w-468b/about' },
+    { label: 'Cook County property tax system and reassessment schedule', href: 'https://www.cookcountyassessoril.gov/cook-county-property-tax-system' },
+  ],
 };
