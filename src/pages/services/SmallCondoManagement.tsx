@@ -1,3 +1,4 @@
+import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -82,6 +83,7 @@ export default function SmallCondoManagement() {
           <HeroOffer />
         </div>
       </section>
+      <TrustBar />
 
       <section className="bg-white py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">

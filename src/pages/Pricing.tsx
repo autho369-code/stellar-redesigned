@@ -1,3 +1,4 @@
+import TrustBar from '../components/TrustBar';
 import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -156,6 +157,7 @@ export default function Pricing() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

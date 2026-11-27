@@ -1,3 +1,4 @@
+import TrustBar from '../../components/TrustBar';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Check } from 'lucide-react';
@@ -118,6 +119,7 @@ export default function ResaleDisclosures() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       <section className="bg-white py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">

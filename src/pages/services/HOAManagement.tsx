@@ -1,3 +1,4 @@
+import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { business } from '../../data/business';
 import { Link } from 'react-router-dom';
@@ -139,6 +140,7 @@ export default function HOAManagement() {
           <HeroOffer />
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Intro ──────────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white">

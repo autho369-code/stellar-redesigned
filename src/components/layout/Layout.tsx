@@ -6,7 +6,7 @@ import MobileCallBar from '../MobileCallBar';
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen pb-14 md:pb-0">
+    <div className="flex flex-col min-h-screen pb-16 md:pb-0">
       <Header />
       <main className="flex-1">
         <Outlet />

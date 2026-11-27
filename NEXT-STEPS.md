@@ -3,6 +3,51 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **R3 parts C and D built** (this branch): `TrustBar` under the
+      hero on the homepage (it replaced the old credentials strip), /pricing
+      and the ten service pages; sticky phone bar now 64 px, safe-area aware,
+      `data-track-location="sticky-bar"`, `?source=sticky-bar`.
+- [ ] **R3 parts A, B and E are NOT done:** shadcn/ui kit, the new header
+      (six sentence-case menus, services mega-menu, utility row, mobile
+      sheet, "Get my flat-fee proposal" button), the four-column footer, and
+      the test that every old header and footer link still exists. Start a
+      fresh session for these: the header alone is a full rebuild.
+      Also put the trust bar under the hero of the area pages, hubs and guides.
+- [x] Nov 26: **Office photos from Mirsad are in the repo**
+      (`public/images/office/`, webp; cropped and lightly corrected on Nov 26 at his request: storefront without the car, passer-by and neighbor sign, office without the bulletin boards; not placed on
+      any page yet): `storefront-5107-n-western-*` (blue Stellar awning,
+      "5107", phone number) and `office-work-area-*` (desks and partitions).
+      **Storefront is a Google Street View image ("© 2023 Google" is printed
+      on it): it must carry the Google attribution wherever it is shown, or be
+      replaced by a photo Mirsad takes himself.** The interior photo shows
+      bulletin boards with papers; keep it at card size so nothing on them can
+      be read, or crop the boards out. Use them in R3 (trust bar / footer) and
+      R8 (About, Contact).
+- [x] Nov 26: **PR #65 (R2 part 3) merged** (Mirsad: "LETS DO IT" in reply to
+      "type merge 65"); live check passed; real site tested in his Chrome
+      (area page, click to /pricing, guide body and proposal blocks).
+      Runner speed after R2: home 0.89, the other five templates 0.90 or more.
+- [ ] **R3 starts on this branch (`r3-components`)**: header, footer, trust
+      bar. Read `docs/redesign-prompts/00_CONTEXT_BLOCK.md` and
+      `R3_components_header_footer_trustbar.md` first. The sticky phone bar
+      already exists (`src/components/MobileCallBar.tsx`).
+- **Photos (Mirsad, Nov 26): "photos are available on my Google Business
+  page."** Seen through his Chrome on Google Maps: the listing "Stellar
+  Property Management", 3.6 stars, 76 reviews, about 20 photos with tabs
+  All / Inside / Videos. How to get one into the repo: open the photo in
+  Maps, then use the Chrome tool's `zoom` action on the photo area with
+  `save_to_disk: true` and `scale: 1` (about 820 x 540 px; a smaller scale
+  saves a smaller file). The shell cannot download from Google.
+  **Open point before using building photos:** the first building photo
+  (white townhomes) looks like a sample image, not a known Stellar building.
+  The site rule is real photos only, and a managed building needs the board's
+  permission. Until Mirsad says which building photos are real and allowed,
+  use only the office photos (the "Inside" tab) and never present a building
+  as managed by Stellar.
+- Competitor scorecard (his spreadsheet): Stellar 70/100, rank 4. Leaders 76,
+  72, 71. Points to gain: lead capture (15% weight, now 3/5), trust signals
+  (15%, 3/5), Google reviews (15%, 2/5, his part), speed (10%, 4/5 before R2),
+  design (10%, 3/5).
 - [x] Nov 26: **PR #64 (R2 part 2) merged** ("MERGE 64"); live check passed.
 - [x] Nov 26: **R2 part 3 built** (branch `r2-part-3`): every page is its own
       chunk. `src/App.tsx` wraps each page in `page(() => import(...))`; the

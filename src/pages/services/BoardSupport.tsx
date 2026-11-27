@@ -1,3 +1,4 @@
+import TrustBar from '../../components/TrustBar';
 import HeroOffer from '../../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../../components/seo/SEOHead';
@@ -84,6 +85,7 @@ export default function BoardSupport() {
           <HeroOffer />
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Intro ──────────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white">

@@ -1,3 +1,4 @@
+import TrustBar from '../components/TrustBar';
 import { Link } from 'react-router-dom';
 import { PROPOSAL_TURNAROUND } from '../data/ctaPosts';
 import { Helmet } from 'react-helmet-async';
@@ -388,14 +389,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Credentials strip ────────────────────────────────── */}
-      <section className="bg-ivory-100 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-wrap items-center justify-center gap-x-14 gap-y-2">
-          {['CAI Member', 'CAI Illinois Chapter', 'Illinois Licensed CAM Firm', 'Serving Chicago Since 2007'].map((c) => (
-            <span key={c} className="text-[10px] uppercase tracking-luxe text-slate-600">{c}</span>
-          ))}
-        </div>
-      </section>
+      {/* ── Trust bar (R3) ───────────────────────────────────── */}
+      <TrustBar />
 
       {/* ── Offer: what happens after a board asks ───────────── */}
       <section className="py-20 lg:py-28 bg-paper" aria-labelledby="home-offer">
