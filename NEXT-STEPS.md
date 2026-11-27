@@ -3,6 +3,17 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- **Nov 26, 9 PM: Mirsad sent `Stellar_Master_Handoff_for_Claude.md` (tasks
+  D0-D14) and said: finish the job, do not stop, do not ask for merges
+  (standing permission for this queue).** Where the handoff disagrees with
+  what he told Claude directly the same evening, HIS WORDS WIN:
+  no fee calculator and no units-times-price anywhere (handoff D4/D5/D9/D10
+  ask for one); numbers stay "30+ / about 1,500" (handoff says 29 / 1,422);
+  Hyde Park stays removed (handoff says restore it); no Google office photos
+  (handoff D4/D11 say use them).
+- [x] Nov 26: **D1** chat button on phones is a 48 px corner icon above the
+      Call | Proposal bar (`data-chat-launcher`); `tests/chat-overlap.spec.ts`
+      checks 7 pages at 320/360/390/430 px.
 - **OWNER RULE, Nov 26: he picks which areas are shown in the menu and
   footer** (`topNeighborhoods` in `src/data/navigation.ts`). Hyde Park was put
   there from Search Console numbers without asking him; he had it removed
