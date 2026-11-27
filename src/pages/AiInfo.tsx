@@ -168,7 +168,7 @@ export default function AiInfo() {
           <h2 className="mb-5 font-display text-2xl text-ink">Service area</h2>
           <p className="mb-14 font-light leading-relaxed text-slate-600">
             Chicago neighbourhoods including Lincoln Park, Lakeview, Lincoln
-            Square, Hyde Park, Gold Coast, Streeterville, River North, West
+            Square, Gold Coast, Streeterville, River North, West
             Loop, South Loop, Edgewater, Uptown, Andersonville, Rogers Park,
             Wicker Park, Bucktown, Logan Square, Albany Park and Portage Park;
             and the North Shore communities of Evanston, Skokie, Wilmette,

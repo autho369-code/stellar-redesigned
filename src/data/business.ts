@@ -101,7 +101,7 @@ export const canonicalFaqs: Array<{ q: string; a: string }> = [
   },
   {
     q: 'Which areas do you serve?',
-    a: 'Chicago neighborhoods from Rogers Park to Hyde Park, plus the North Shore. See stellarpropertygroup.com/service-areas.',
+    a: 'Chicago neighborhoods from Rogers Park to the South Loop, plus the North Shore. See stellarpropertygroup.com/service-areas.',
   },
   {
     q: 'Who makes repair and funding decisions?',
@@ -164,7 +164,7 @@ export function llmsBusinessFacts(): string {
     `- Names: ${business.name} (brand and Google listing name); also known as ${business.alternateName}; legal name ${business.legalName}`,
     `- Office: ${business.addressLine}`,
     `- Phone: ${business.phoneDisplay}`,
-    '- Service area: Chicago neighborhoods (Lincoln Park, Lakeview, Edgewater, Rogers Park, Uptown, Andersonville, Lincoln Square, Ravenswood, Logan Square, Wicker Park, Bucktown, Gold Coast, Streeterville, River North, the Loop, South Loop, West Loop, Hyde Park and more) and North Shore communities (Evanston, Skokie, Glenview, Wilmette, Winnetka, Kenilworth, Glencoe, Northbrook, Highland Park, Deerfield, Lake Forest) and nearby Cook County villages (Lincolnwood, Morton Grove, Norridge)',
+    '- Service area: Chicago neighborhoods (Lincoln Park, Lakeview, Edgewater, Rogers Park, Uptown, Andersonville, Lincoln Square, Ravenswood, Logan Square, Wicker Park, Bucktown, Gold Coast, Streeterville, River North, the Loop, South Loop, West Loop and more) and North Shore communities (Evanston, Skokie, Glenview, Wilmette, Winnetka, Kenilworth, Glencoe, Northbrook, Highland Park, Deerfield, Lake Forest) and nearby Cook County villages (Lincolnwood, Morton Grove, Norridge)',
     `- Office hours: ${business.hours}`,
     '- Best fit: condo, HOA and townhome boards in Chicago and the North Shore, from small vintage buildings to high-rises',
     `- Pricing: customized flat-fee management starting at $${business.priceFrom} per unit per month, ${business.priceTerms}`,
