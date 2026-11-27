@@ -59,7 +59,7 @@ export function ServiceAreasStrip({ service }: ServiceAreasStripProps) {
                       {area.name}
                     </span>
                     <span className="text-[10px] uppercase tracking-luxe text-slate-400">
-                      {area.region === 'north-shore' ? 'North Shore' : 'Chicago'} · {area.zipCodes[0]}
+                      {area.region === 'north-shore' ? 'North Shore' : area.region === 'northwest-suburb' ? 'Northwest suburbs' : 'Chicago'} · {area.zipCodes[0]}
                     </span>
                   </span>
                   <ArrowUpRight

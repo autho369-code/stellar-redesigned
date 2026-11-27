@@ -8,7 +8,15 @@
  * Ravenswood, Wilmette, Lake Forest. The Chicago city page has its
  * own component (src/pages/ChicagoPage.tsx).
  */
+import { arlingtonHeights } from './arlington-heights';
 import { avondale } from './avondale';
+import { buffaloGrove } from './buffalo-grove';
+import { desPlaines } from './des-plaines';
+import { mountProspect } from './mount-prospect';
+import { northfield } from './northfield';
+import { palatine } from './palatine';
+import { parkRidge } from './park-ridge';
+import { schaumburg } from './schaumburg';
 import { edgewater } from './edgewater';
 import { evanston } from './evanston';
 import { glenview } from './glenview';
@@ -36,7 +44,7 @@ import type { AreaContent } from './types';
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville, parkRidge, desPlaines, mountProspect, arlingtonHeights, palatine, buffaloGrove, schaumburg, northfield].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {

@@ -119,6 +119,6 @@ export function getServiceNeighborhoods(serviceSlug: string, count = 8): Neighbo
   const rank = (n: Neighborhood) => (type ? n.propertyTypes.indexOf(type) : 0);
   const sorted = [...eligible].sort((a, b) => rank(a) - rank(b));
   const northShore = sorted.filter((n) => n.region === 'north-shore').slice(0, 2);
-  const chicago = sorted.filter((n) => n.region !== 'north-shore').slice(0, count - northShore.length);
+  const chicago = sorted.filter((n) => !n.region || n.region === 'chicago').slice(0, count - northShore.length);
   return [...chicago, ...northShore];
 }

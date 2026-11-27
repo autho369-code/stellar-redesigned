@@ -47,7 +47,7 @@ const textLinkClass = 'text-gold-600 underline decoration-gold-300 underline-off
  */
 export default function AreaPageUpgraded({ neighborhood, content, guides, guideTitles, services, relatedNeighborhoods }: AreaPageUpgradedProps) {
   const { name, slug } = neighborhood;
-  const isSuburb = neighborhood.region === 'north-shore';
+  const isSuburb = neighborhood.region === 'north-shore' || neighborhood.region === 'northwest-suburb';
   const locale = isSuburb ? 'Illinois' : 'Chicago';
   const placeName = isSuburb ? `${name}, IL` : `${name}, Chicago, IL`;
   const url = `${SITE}/property-management-${slug}`;
@@ -59,7 +59,7 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
     ? `Stellar manages ${content.managed.associations} condo and HOA associations in ${name}, ${locale}, each with a dedicated manager, monthly board-ready financials and a flat fee starting at ${price}, ${business.priceTerms}.`
     : `Stellar provides condo, HOA and townhome management to ${name} boards from our Chicago office at 5107 N Western Ave, with a dedicated manager, monthly board-ready financials and a flat fee starting at ${price}, ${business.priceTerms}.`;
 
-  const links = [...officialLinks, ...(content.hasHighRises ? [exteriorWallLink] : [])];
+  const links = [...(content.sources ?? []), ...officialLinks, ...(content.hasHighRises ? [exteriorWallLink] : [])];
   const dataPoints = publishedStellarData();
 
   const schema = {
@@ -149,6 +149,25 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
         </section>
         <TrustBar />
 
+        {/* ── Housing snapshot (sourced census data; hidden when absent) ── */}
+        {content.housing && (
+          <section className={`${sectionClass} bg-ivory-50`} data-area-housing>
+            <div className={innerClass}>
+              <h2 className={h2Class}>The housing stock in {name}</h2>
+              <p className="mt-6 max-w-3xl text-lg font-light leading-relaxed text-slate-600">{content.housing.intro}</p>
+              <dl className="mt-8 border-t border-slate-200">
+                {content.housing.stats.map(({ label, value }) => (
+                  <div key={label} className="grid gap-2 border-b border-slate-200 py-4 sm:grid-cols-12">
+                    <dt className="text-slate-600 sm:col-span-7">{label}</dt>
+                    <dd className="font-display text-xl text-ink sm:col-span-5">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-6 max-w-3xl font-light leading-relaxed text-slate-600">{content.housing.takeaway}</p>
+            </div>
+          </section>
+        )}
+
         {/* ── Buildings ────────────────────────────────────────── */}
         {content.buildingTypes.length > 0 && (
           <section className={`${sectionClass} bg-white`}>
@@ -182,6 +201,23 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
                   </article>
                 ))}
               </div>
+            </div>
+          </section>
+        )}
+
+        {/* ── Village, county and utility items (hidden when absent) ── */}
+        {content.localItems && content.localItems.length > 0 && (
+          <section className={`${sectionClass} bg-white`} data-area-local>
+            <div className={innerClass}>
+              <h2 className={h2Class}>Local rules and dates for {name} boards</h2>
+              <dl className="mt-8 border-t border-slate-200">
+                {content.localItems.map(({ title, body }) => (
+                  <div key={title} className="grid gap-3 border-b border-slate-200 py-6 sm:grid-cols-12">
+                    <dt className="font-display text-xl text-ink sm:col-span-4">{title}</dt>
+                    <dd className="font-light leading-relaxed text-slate-600 sm:col-span-8">{body}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
           </section>
         )}
@@ -343,9 +379,11 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
                   {related.name}
                 </Link>
               ))}
-              <Link to={isSuburb ? '/property-management-north-shore' : '/property-management-chicago'} className="text-ink transition-colors hover:text-gold-600">
-                {isSuburb ? 'North Shore property management' : 'Chicago property management'}
-              </Link>
+              {neighborhood.region !== 'northwest-suburb' && (
+                <Link to={isSuburb ? '/property-management-north-shore' : '/property-management-chicago'} className="text-ink transition-colors hover:text-gold-600">
+                  {isSuburb ? 'North Shore property management' : 'Chicago property management'}
+                </Link>
+              )}
               <Link to="/service-areas" className="text-ink transition-colors hover:text-gold-600">All service areas</Link>
             </div>
           </div>

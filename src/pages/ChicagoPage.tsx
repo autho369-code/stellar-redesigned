@@ -7,7 +7,7 @@ import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
 import TrustBar from '../components/TrustBar';
 
-const chicagoNeighborhoods = neighborhoods.filter((n) => n.region !== 'north-shore');
+const chicagoNeighborhoods = neighborhoods.filter((n) => !n.region || n.region === 'chicago');
 
 const stats = [
   { value: '30+', label: 'Associations under management' },

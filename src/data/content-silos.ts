@@ -133,7 +133,7 @@ export function getPostNeighborhoods(
   const cluster = getPostCluster(post);
   const eligible = (candidate: Neighborhood) =>
     cluster !== 'buildings' || candidate.propertyTypes.some((type) => /condominium|high-rise/i.test(type));
-  const chicago = neighborhoods.filter((candidate) => candidate.region !== 'north-shore' && eligible(candidate));
+  const chicago = neighborhoods.filter((candidate) => (!candidate.region || candidate.region === 'chicago') && eligible(candidate));
   const northShore = neighborhoods.filter((candidate) => candidate.region === 'north-shore' && eligible(candidate));
   const clusterPosts = posts
     .filter((candidate) => getPostCluster(candidate) === cluster)

@@ -102,7 +102,7 @@ export default function NeighborhoodPage() {
 
   // Chicago neighborhoods are "<Name>, Chicago"; North Shore suburbs are
   // their own municipalities — "<Name>, Illinois".
-  const isSuburb = neighborhood.region === 'north-shore';
+  const isSuburb = neighborhood.region === 'north-shore' || neighborhood.region === 'northwest-suburb';
   const locale = isSuburb ? 'Illinois' : 'Chicago';
   const placeName = isSuburb ? `${neighborhood.name}, IL` : `${neighborhood.name}, Chicago, IL`;
   const atlasLabel = isSuburb ? 'The Atlas · North Shore' : 'The Atlas · Chicago';

@@ -9,8 +9,9 @@ const sortedNeighborhoods = [...neighborhoods].sort((a, b) =>
   a.name.localeCompare(b.name)
 );
 
-const chicagoNeighborhoods = sortedNeighborhoods.filter((n) => n.region !== 'north-shore');
+const chicagoNeighborhoods = sortedNeighborhoods.filter((n) => !n.region || n.region === 'chicago');
 const northShoreCommunities = sortedNeighborhoods.filter((n) => n.region === 'north-shore');
+const northwestSuburbCommunities = sortedNeighborhoods.filter((n) => n.region === 'northwest-suburb');
 
 const stats = [
   { value: String(neighborhoods.length), label: 'Neighborhoods Served' },
@@ -33,7 +34,7 @@ export default function ServiceAreas() {
     provider: { '@id': 'https://www.stellarpropertygroup.com/#organization' },
     areaServed: neighborhoods.map((n) => ({
       '@type': 'Place',
-      name: n.region === 'north-shore' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
+      name: n.region && n.region !== 'chicago' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
     }))
   };
 
@@ -147,11 +148,14 @@ export default function ServiceAreas() {
           {[
             { title: 'Chicago Neighborhoods', areas: chicagoNeighborhoods, hub: '/property-management-chicago' },
             { title: 'North Shore Communities', areas: northShoreCommunities, hub: '/property-management-north-shore' },
+            { title: 'Northwest suburban communities', areas: northwestSuburbCommunities, hub: '/service-areas' },
           ].map(({ title, areas, hub }) => (
             <div key={title} className="border-t border-slate-200 py-12 first:pt-0 first:border-t-0">
               <div className="flex flex-wrap items-baseline justify-between gap-5 mb-8">
                 <h2 className="font-display font-light text-3xl lg:text-4xl text-ink">{title}</h2>
-                <Link to={hub} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Explore the regional hub <ArrowRight className="w-4 h-4" /></Link>
+                {hub !== '/service-areas' && (
+                  <Link to={hub} className="inline-flex items-center gap-2 text-sm text-gold-600 hover:text-gold-500">Explore the regional hub <ArrowRight className="w-4 h-4" /></Link>
+                )}
               </div>
               <div className="columns-2 md:columns-3 lg:columns-4 gap-x-10 border-t border-slate-200 pt-7">
                 {areas.map((neighborhood) => (
