@@ -3,6 +3,15 @@
 Updated: 2026-11-27. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 27 PM: **AEO push (PR #94, `35fcc10`):** new `/how-to-choose-condo-management-company-chicago`
+      (answer block, eight checks, service models, IDFPR / 225 ILCS 427/50 sources, FAQPage + Article
+      + Breadcrumb schema); homepage FAQ answers for "best condo management company in Chicago" and
+      "how much does condo management cost in Chicago" (same wording as the guide, in the FAQPage
+      schema); `llms.txt` lists both; `llms-full.txt` is generated from `src/data/business.ts`.
+      IndexNow sent for 20 URLs. Repo has no remaining $20 / 29 / 1,422 copy; search caches still show
+      "From $20" on /pricing and two service pages. GEO log round 4 in `/workspace/orion-kb/geo-log.md`.
+      Recheck Dec 1-4. Never use the capitalised "Starting at $" in homepage text (a Playwright test
+      guards it); lowercase is fine.
 - [x] Nov 27 (owner decisions, 9:30 AM CT, from Mirsad): **(1) Publishing freeze lifted**
       (PR #91, `cbe46183`): `PUBLISHING_FROZEN_AT = null`; guides go live on their own
       dates, no backdating, future-dated posts stay scheduled; verified live. **(2) The
