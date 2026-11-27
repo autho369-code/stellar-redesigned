@@ -29,6 +29,7 @@ export const brand = {
     line: 'starting at $30 per unit per month, everything included, with no extra fees',
   },
   reviewUrl: 'https://g.page/r/CXsN7jc7d5JTEBM/review',
+  portalUrl: 'https://stellarpropertygrp.appfolio.com/connect/',
   signOff: 'Your Property Management Team',
 } as const;
 
