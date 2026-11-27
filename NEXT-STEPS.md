@@ -1,8 +1,66 @@
 # Stellar — next steps (the one to-do list)
 
-Updated: 2026-11-26. Every session reads this first and updates it at the end.
+Updated: 2026-11-27. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 27: **Shipped Nov 26-27 (PRs #83-#88, all squash-merged to main, CI green):**
+      | PR | Merge sha | What |
+      |----|-----------|------|
+      | #83 | `6bca362` | SEO: schema, favicon, /pricing links, contract line ("cancel with 60 days notice"), two dated guides (held back by the Nov 3 freeze, see open items) |
+      | #84 | `e63054d` | 8 northwest-suburb area pages with sourced local content |
+      | #85 | `f48a627` | R1 leftovers: grid colors from tokens, phone from brand config |
+      | #86 | `c4ae27b` | 18 area pages upgraded with unique sourced local content (12 Chicago, 6 suburbs) |
+      | #87 | `8470506` | Gold Coast page upgraded; AEO changes (below) |
+      | #88 | `4903cf7` | Blank-page fix (below) |
+- [x] Nov 27: **Gold Coast:** the sentence "some of Chicago's most distinguished addresses"
+      is removed (`src/data/neighborhoods.ts`) **with Mirsad's approval** ("remove that
+      statement"). The page now has its own sourced content (Near North Side housing data,
+      Astor Street and East Lake Shore Drive landmark districts, local rules, FAQs).
+      19 area pages are now upgraded in total (18 in #86 + Gold Coast). Do not put that
+      sentence back.
+- [x] Nov 27: **AEO changes (PR #87):** `public/llms.txt` now lists all 44 area pages and
+      carries the contract-terms line (from `brand.contracts.line` via
+      `llmsBusinessFacts()` in `src/data/business.ts`); `/service-areas` has a "Quick answers"
+      block with FAQPage schema built from `canonicalFaqs`. Audited and left unchanged:
+      `robots.txt` already allows the major AI crawlers (GPTBot, ClaudeBot, PerplexityBot and
+      others); Organization / LocalBusiness / FAQPage / HowTo schema was already consistent.
+      20 key URLs were submitted to IndexNow to speed up re-crawling. No claims were added.
+- [x] Nov 27: **Blank-page fix (PR #88, `src/main.tsx` only):** Mirsad reported
+      `/about/mirsad-cerimovic` blank. It did not reproduce on fresh loads (Chrome desktop and
+      mobile, Firefox). Root cause found: every page is a lazy chunk, and if its fetch fails
+      (flaky network, blocker, tab open across a deploy) the whole React tree unmounted. Now
+      the prerendered HTML stays, the page reloads once (30 s guard), and an error boundary
+      shows reload/home links. Verified live with each chunk blocked: 0 characters before,
+      about 29.8k after. If he still sees blank, get his browser, device and extensions.
+- **Open items (as of Nov 27):**
+  - [ ] **Team cards** on /about: need names, roles and photos from Mirsad.
+  - [ ] **Publishing freeze (Nov 3) still holding 2 guides**: "Financial-only vs full-service
+        condo and HOA management in Chicago" and "the first 60 days of a transition" are in
+        the repo but 404 live. Needs Mirsad's decision to lift the freeze.
+  - [ ] **Meho brand name** for the brand swap (company name is still typed by hand in about
+        90 files, so the dry run fails). Stellar closes Dec 31, 2026.
+  - [ ] **Managed counts per area page:** `managed: null` on all upgraded area pages (no
+        numbers shown). Needs Mirsad's numbers, or confirmation to keep them off.
+  - [ ] **Google reviews gap:** about 3.6 on Google against 4.3-4.5 for the leaders. Ethical
+        review-growth plan needs Mirsad to send the link to owners (see his list).
+  - [ ] **Ranking-list outreach: 7 drafts written, nothing sent.** Waiting for Mirsad to pick
+        which to send. Top two: CondoControl Top 10 Chicago list (free request to add
+        Stellar) and CompareHOAManagers (lists 42 communities / 2,450 units; free correction
+        to the 30+ / about 1,500 wording). Paid placements (HOA Explore, HOA Manager Check
+        at $249+/month, The HOA Guide) are not recommended. Drafts go to him as email drafts
+        he sends himself.
+  - [ ] **CAI Illinois membership:** the site says Stellar is a member but the CAI directory
+        does not list it. Ask Mirsad whether the company is a current member before any claim
+        or outreach relies on it.
+  - [ ] **GEO recheck in 3-7 days (about Nov 30 - Dec 4):** re-run the "condo management
+        Chicago" queries. AI answers still quoted old copy ($20, 29 associations, 1,422
+        residences) on Nov 27. Log to `/workspace/orion-kb/geo-log.md`.
+  - [ ] **Uniqueness limit:** Lincolnwood / Morton Grove share 35.0% (limit 35%, the check
+        passes at the limit). Any new text on either page, or any change to the shared
+        guide lists in `src/data/clusters.ts`, can tip it over. Run
+        `scripts/check-uniqueness.mjs` before shipping edits there.
+  - [ ] Glenview office address is not published anywhere: needs Mirsad.
+  - [ ] Search Console: request indexing again (quota was exceeded Nov 26).
 - [x] Nov 27: **Eight northwest-suburb area pages live** (PR #84): Park Ridge, Des Plaines,
       Mount Prospect, Arlington Heights, Palatine, Buffalo Grove, Schaumburg, Northfield.
       Each has a sourced housing snapshot (Census ACS via CMAP, DePaul IHS), village rules
