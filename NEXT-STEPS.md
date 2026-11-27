@@ -3,6 +3,18 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D11 (form part)**: the board path of the contact form is
+      three steps (Your association / Timing and priorities / You) with a
+      progress bar, Back, inline errors, a per-tab draft (`sessionStorage`)
+      and a hidden bot field. Same field names posted to Web3Forms, same
+      `lead_source`, same `/contact/thanks`, same one `Contact Form Submit`.
+      Only name and email are required, as before. General inquiry stays one
+      step. No new libraries (the handoff named react-hook-form + zod; not
+      needed). The submit test is now real: `tests/tracking.spec.ts` mocks the
+      form request and checks fields, redirect and event. The Next and send
+      buttons have separate React keys on purpose (see the comment) so a click
+      on Next can never send the form. Still open in D11: About timeline and
+      team cards (need names, roles, photos from Mirsad).
 - [x] Nov 26: **D9 (guides part)**: every guide with three or more
       sections has a sticky "On this page" list on wide screens (xl and up),
       `src/components/ArticleToc.tsx`; h2 ids are added after the mid-CTA
