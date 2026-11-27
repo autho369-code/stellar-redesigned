@@ -1,3 +1,4 @@
+import KenmoreCard from '../../components/KenmoreCard';
 import TrustBar from '../../components/TrustBar';
 import { business } from '../../data/business';
 import HeroOffer from '../../components/HeroOffer';
@@ -273,6 +274,12 @@ export default function CondominiumManagement() {
         </div>
       </section>
 
+
+      <section className="py-12 bg-paper border-t border-slate-200" aria-label="Client result">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <KenmoreCard />
+        </div>
+      </section>
 
       {/* ── Related services — index rows ──────────────────────── */}
       <section className="py-24 lg:py-32 bg-ivory-100 border-t border-slate-200">

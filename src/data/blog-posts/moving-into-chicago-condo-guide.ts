@@ -2,7 +2,7 @@ export const movingIntoChicagoCondoGuide = {
   slug: 'moving-into-chicago-condo-guide',
   title: 'Moving Into a Chicago Condo: The Complete First-Month Guide',
   metaDescription:
-    'Elevator reservations, mover insurance certificates, move fees, portal setup, and the first-month checklist — how to move into a Chicago condo building the right way.',
+    'Elevator reservations, mover insurance certificates, move fees, portal setup and a first-month checklist: how to move into a Chicago condo building.',
   date: '2026-08-13',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Building Operations',

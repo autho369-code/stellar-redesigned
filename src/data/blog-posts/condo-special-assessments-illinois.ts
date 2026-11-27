@@ -2,7 +2,7 @@ export const condoSpecialAssessmentsIllinois = {
   slug: 'condo-special-assessments-illinois',
   title: 'Special Assessments: Why Illinois Condo Owners Are Suddenly Paying Thousands',
   metaDescription:
-    'Why special assessments are surging for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how associations can avoid the special-assessment spiral.',
+    'Why special assessments are rising for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how to avoid them.',
   date: '2024-09-24',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Financial Planning',

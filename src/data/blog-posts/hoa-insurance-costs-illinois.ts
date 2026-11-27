@@ -2,7 +2,7 @@ export const hoaInsuranceCosts = {
   slug: 'hoa-insurance-costs-illinois',
   title: 'Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois',
   metaDescription:
-    'Association insurance premiums and deductibles are rising fast in Illinois. Learn what is driving the increases, how they hit your budget and HO-6 policy, and what boards can do about it.',
+    'Association insurance premiums and deductibles are rising fast in Illinois. What drives the increases, how they hit budgets and HO-6 policies, what to do.',
   date: '2025-05-13',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Insurance',

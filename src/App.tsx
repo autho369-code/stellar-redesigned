@@ -49,6 +49,7 @@ const ChicagoPage = page(() => import('./pages/ChicagoPage'));
 const NorthShorePage = page(() => import('./pages/NorthShorePage'));
 const Pricing = page(() => import('./pages/Pricing'));
 const Reviews = page(() => import('./pages/Reviews'));
+const CaseStudyKenmore = page(() => import('./pages/CaseStudyKenmore'));
 const NeighborhoodPage = page(() => import('./pages/NeighborhoodPage'));
 const Blog = page(() => import('./pages/Blog'));
 const BlogTopic = page(() => import('./pages/BlogTopic'));
@@ -103,6 +104,7 @@ const PRELOAD_ROUTES: [string, Preloadable][] = [
   ['/property-management-north-shore', NorthShorePage],
   ['/pricing', Pricing],
   ['/reviews', Reviews],
+  ['/case-studies/6150-n-kenmore-roof', CaseStudyKenmore],
   ['/blog', Blog],
   ['/blog/topic/:topic', BlogTopic],
   ['/blog/:slug', BlogPost],
@@ -176,6 +178,7 @@ export default function App() {
           <Route path="/property-management-north-shore" element={<NorthShorePage />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/case-studies/6150-n-kenmore-roof" element={<CaseStudyKenmore />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/topic/:topic" element={<BlogTopic />} />
           <Route path="/blog/:slug" element={<BlogPost />} />

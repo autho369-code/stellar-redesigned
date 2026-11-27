@@ -100,7 +100,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
     slug: 'illinois-condo-assessment-collection-possession-action',
     title: 'Collecting Unpaid Assessments in Illinois: The Possession Action',
     metaDescription:
-      'Illinois lets a condo association take possession of a delinquent unit and lease it to recover the debt. How the Section 9-102 process works and where boards go wrong.',
+      'Illinois lets a condo association take possession of a delinquent unit and lease it to recover the debt. How the Section 9-102 process works.',
     date: '2026-08-31',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
@@ -274,7 +274,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
     slug: 'cook-county-property-tax-appeal-condo-association',
     title: 'Cook County Property Tax Appeals: What Condo Boards Should Know',
     metaDescription:
-      'A Cook County condo association can appeal on behalf of every unit in one filing. How the two-stage process works, what the filing must include, and why you need an attorney.',
+      'A Cook County condo association can appeal property taxes for every unit in one filing. How the two-stage process works and what the filing must include.',
     date: '2026-08-31',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Association Finance',
@@ -362,7 +362,7 @@ export const scheduledIllinoisStatutePosts: BlogPost[] = [
     slug: 'chicago-condo-short-term-rental-prohibited-buildings-list',
     title: 'Stopping Airbnb in Your Chicago Condo: The Prohibited Buildings List',
     metaDescription:
-      'Chicago lets a condo association opt its entire building out of short-term rentals. Over 90,000 units are already on the Prohibited Buildings List. How a board gets there.',
+      'Chicago lets a condo association opt its whole building out of short-term rentals. Over 90,000 units are on the Prohibited Buildings List. How to join.',
     date: '2026-09-26',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Rules & Leasing',

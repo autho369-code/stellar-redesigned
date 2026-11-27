@@ -59,7 +59,7 @@ export default function SmallCondoManagement() {
     <>
       <SEOHead
         title="Small Condo Association Management Chicago | Stellar"
-        description="Full-service management for small Chicago condo associations and vintage buildings: finances, vendors, maintenance, compliance, owner communication, and board continuity."
+        description="Full-service management for small Chicago condo associations and vintage buildings: finances, vendors, maintenance, compliance and board continuity."
         canonical="https://www.stellarpropertygroup.com/services/small-condo-association-management"
       />
       <Helmet><script type="application/ld+json">{JSON.stringify(schema)}</script></Helmet>

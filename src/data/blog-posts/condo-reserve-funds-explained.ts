@@ -2,7 +2,7 @@ export const condoReserveFundsExplained = {
   slug: 'condo-reserve-funds-explained',
   title: 'Condo Reserve Funds Explained: Why So Many Associations Are Underfunded',
   metaDescription:
-    'A clear guide to condo reserve funds and reserve studies — what they are, why so many Illinois associations are underfunded, and how underfunding hurts property values and financing.',
+    'A clear guide to condo reserve funds and reserve studies: what they are, why many Illinois associations are underfunded, and what underfunding costs.',
   date: '2025-01-28',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Reserve Planning',

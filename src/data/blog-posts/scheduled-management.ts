@@ -106,7 +106,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'chicago-condo-association-compliance-calendar',
     title: 'Chicago Condominium Association Compliance Calendar',
     metaDescription:
-      'A year-round compliance calendar framework for Chicago condominium association boards, covering city ordinance obligations, inspections, records, and annual governance tasks.',
+      'A year-round compliance calendar for Chicago condo association boards: city ordinance obligations, inspections, records and annual governance tasks.',
     date: '2026-08-25',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Building Compliance',
@@ -216,7 +216,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'condo-hoa-delinquency-escalation-process',
     title: 'Delinquency Escalation: A Consistent Process for Association Boards',
     metaDescription:
-      'How Illinois condo and HOA boards can build a written, consistently applied delinquency escalation policy that protects cash flow and reduces the risk of selective enforcement claims.',
+      'How Illinois condo and HOA boards build a written, consistently applied delinquency escalation policy that protects cash flow and limits legal risk.',
     date: '2026-08-29',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Financial Management',
@@ -303,7 +303,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'community-association-management-agreement-review',
     title: 'What to Review in a Community Association Management Agreement',
     metaDescription:
-      'A clause-by-clause guide for Illinois condo and HOA boards reviewing a community association management agreement, including fees, scope, termination, records, and insurance.',
+      'A clause-by-clause guide for Illinois condo and HOA boards reviewing a management agreement: fees, scope, termination, records and insurance.',
     date: '2026-09-02',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -408,7 +408,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'illinois-condominium-ombudsperson-act-board-duties',
     title: 'The Illinois Condominium Ombudsperson Act: Current Board Duties',
     metaDescription:
-      'What Illinois condominium and common interest community boards should understand about the Condominium and Common Interest Community Ombudsperson Act and how to verify current duties.',
+      'What Illinois condo and common interest community boards should know about the Ombudsperson Act, and how to verify the duties that apply today.',
     date: '2026-09-06',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Illinois Association Law',
@@ -512,7 +512,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'verify-illinois-community-association-manager-license',
     title: 'How to Verify an Illinois Community Association Manager License',
     metaDescription:
-      'A step-by-step guide for Illinois condo and HOA boards on verifying community association manager and management firm licensure through IDFPR before signing an agreement.',
+      'A step-by-step guide for Illinois condo and HOA boards: verify a community association manager and management firm license with IDFPR before signing.',
     date: '2026-09-10',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -711,7 +711,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'condo-hoa-insurance-renewal-checklist',
     title: 'Preparing for Insurance Renewal: An Association Board Checklist',
     metaDescription:
-      'A preparation checklist for Illinois condo and HOA boards heading into insurance renewal, covering documentation, coverage review, deductibles, and owner communication.',
+      'A preparation checklist for Illinois condo and HOA boards before insurance renewal: documentation, coverage review, deductibles and owner communication.',
     date: '2026-09-18',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Insurance',
@@ -821,7 +821,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'score-condo-hoa-management-proposals',
     title: 'How to Compare Chicago Condo & HOA Management Companies',
     metaDescription:
-      'Compare Chicago condo and HOA management companies with a board-ready scorecard covering manager capacity, service scope, financial controls, references, and total cost.',
+      'Compare Chicago condo and HOA management companies with a board-ready scorecard: manager capacity, service scope, financial controls and total cost.',
     date: '2026-08-14',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',
@@ -935,7 +935,7 @@ export const scheduledManagementPosts: BlogPost[] = [
     slug: 'how-many-associations-should-community-manager-handle',
     title: 'How Many Associations Should One Community Manager Handle?',
     metaDescription:
-      'A board guide to evaluating a community association manager\'s workload, portfolio capacity, support team, response standards, and coverage before hiring a management company.',
+      'A board guide to evaluating a community association manager\'s workload, portfolio size, support team, response standards and coverage before you hire.',
     date: '2026-09-22',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Choosing Management',

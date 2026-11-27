@@ -64,6 +64,10 @@ for (const url of urls) {
   if (/\b29 (Chicago-area |condominium, |condo, )?(associations|communities)|all 29\b|1,422|\b1422\b|1,495/i.test(html)) {
     errors.push(`${route}: contains an exact portfolio count; use the rounded figures from the brand file`);
   }
+  // Placeholders must never reach production.
+  if (/\[CONFIRM|\[\[JOJO|TODO\(/.test(html)) errors.push(`${route}: contains an unfinished placeholder ([CONFIRM, [[JOJO or TODO()`);
+  // Owner rule 2026-11-26: no fee calculation. The site never multiplies units by a price.
+  if (/Starting at \$[\d,]{3,} per month/i.test(html)) errors.push(`${route}: shows a calculated monthly fee`);
   // Retired starting fee (owner-confirmed 2026-11-26: the flat fee starts at
   // $30 per unit per month). The price lives in src/data/business.ts.
   if (/\$20(?![\d,])(?:\s*\/\s*unit|\s+per\s+unit|\s+a\s+unit)/i.test(html)) {

@@ -2,7 +2,7 @@ export const selfManagedCondoProblems = {
   slug: 'self-managed-condo-association-problems',
   title: 'The Hidden Problems With Self-Managed Condo Associations',
   metaDescription:
-    'Self-managed condo associations save on management fees but carry hidden risks — collections gaps, compliance exposure, weak accounting, and volunteer burnout. Learn when to hire a manager.',
+    'Self-managed condo associations save on fees but carry hidden risks: collections gaps, compliance exposure, weak accounting and volunteer burnout.',
   date: '2024-06-11',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Property Management',

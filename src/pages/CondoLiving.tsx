@@ -182,7 +182,7 @@ export default function CondoLiving() {
     <>
       <SEOHead
         title="Condo Living Guide: The Owner's Companion | Stellar"
-        description="How to live well in a condo or HOA — assessments, who fixes what, HO-6 insurance, owner rights under Illinois law, etiquette, and what to do when something goes wrong."
+        description="How to live well in a condo or HOA: assessments, who fixes what, HO-6 insurance, owner rights under Illinois law, etiquette and what to do in a dispute."
         canonical="https://www.stellarpropertygroup.com/condo-living"
       />
       <Helmet>

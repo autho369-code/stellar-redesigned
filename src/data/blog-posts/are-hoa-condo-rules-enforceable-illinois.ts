@@ -2,7 +2,7 @@ export const hoaCondoRulesEnforceable = {
   slug: 'are-hoa-condo-rules-enforceable-illinois',
   title: 'Are HOA and Condo Rules Legally Enforceable in Illinois?',
   metaDescription:
-    'Illinois condo and HOA rules are enforceable — but only when properly adopted, reasonable, and consistently applied. Learn what makes a rule hold up and where boards go wrong.',
+    'Illinois condo and HOA rules are enforceable only when properly adopted, reasonable and consistently applied. What makes a rule hold up in practice.',
   date: '2023-07-25',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Legal & Compliance',

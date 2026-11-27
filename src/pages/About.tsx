@@ -1,3 +1,4 @@
+import KenmoreCard from '../components/KenmoreCard';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
@@ -561,6 +562,12 @@ export default function About() {
             </Link>
             .
           </p>
+        </div>
+      </section>
+
+      <section className="py-12 bg-paper border-t border-slate-200" aria-label="Client result">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <KenmoreCard />
         </div>
       </section>
 

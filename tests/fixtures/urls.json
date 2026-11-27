@@ -1,6 +1,6 @@
 {
  "origin": "https://www.stellarpropertygroup.com",
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "urls": [
   {
    "path": "/",
@@ -21,7 +21,7 @@
    "title": "About Stellar Property Management | Chicago Since 2007",
    "h1": "About Stellar Property Management",
    "h1Count": 1,
-   "description": "Meet Stellar Property Management: serving Chicago associations since 2007 with 29 associations, CAI membership, and Illinois CAM firm licensing.",
+   "description": "Meet Stellar Property Management: serving Chicago associations since 2007 with 30+ associations, CAI membership, and Illinois CAM firm licensing.",
    "canonical": "https://www.stellarpropertygroup.com/about",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -36,7 +36,7 @@
    "title": "Mirsad Cerimovic, CMCA | Founder, Stellar Property Management",
    "h1": "Mirsad Cerimovic.",
    "h1Count": 1,
-   "description": "Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 29 condo, HOA and townhome associations.",
+   "description": "Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS, managing 30+ condo and HOA associations.",
    "canonical": "https://www.stellarpropertygroup.com/about/mirsad-cerimovic",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -175,7 +175,7 @@
    "title": "Small Condo Association Management Chicago | Stellar",
    "h1": "Small Condo Association Management in Chicago.",
    "h1Count": 1,
-   "description": "Full-service management for small Chicago condo associations and vintage buildings: finances, vendors, maintenance, compliance, owner communication, and board continuity.",
+   "description": "Full-service management for small Chicago condo associations and vintage buildings: finances, vendors, maintenance, compliance and board continuity.",
    "canonical": "https://www.stellarpropertygroup.com/services/small-condo-association-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -189,7 +189,7 @@
    "title": "Condo Resale Disclosures & Lender Letters | Stellar",
    "h1": "Resale Disclosures & Lender Requests.",
    "h1Count": 1,
-   "description": "Section 22.1 packets, paid assessment letters, lender questionnaires and insurance certificates for Chicago condo and community associations — answered by a named person.",
+   "description": "Section 22.1 packets, paid assessment letters, lender questionnaires and insurance certificates for Chicago associations, answered by a named person.",
    "canonical": "https://www.stellarpropertygroup.com/services/resale-disclosures",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -259,6 +259,19 @@
    "description": "Share an honest Google review of your Stellar Property Management experience or send feedback directly to our Chicago team.",
    "canonical": "https://www.stellarpropertygroup.com/reviews",
    "robots": "index, follow, max-image-preview:large",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "WebPage"
+   ]
+  },
+  {
+   "path": "/case-studies/6150-n-kenmore-roof",
+   "title": "$150,000 Saved on a Roof Replacement | 6150 N Kenmore",
+   "h1": "A $150,000 savings on a roof replacement at 6150 N Kenmore, Chicago.",
+   "h1Count": 1,
+   "description": "At 6150 N Kenmore in Chicago, a roof replacement saved the association $150,000. See the result and request a flat-fee management proposal.",
+   "canonical": "https://www.stellarpropertygroup.com/case-studies/6150-n-kenmore-roof",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "BreadcrumbList",
     "WebPage"
@@ -355,7 +368,7 @@
    "title": "Owner & Resident Resources | Stellar Property Management",
    "h1": "Owner & Resident Resources.",
    "h1Count": 1,
-   "description": "Access owner and resident resources from Stellar Property Management. Make payments, report violations, submit board nominations, and find answers to common questions.",
+   "description": "Owner and resident resources from Stellar Property Management: make payments, report violations, submit board nominations and find common answers.",
    "canonical": "https://www.stellarpropertygroup.com/resources",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": []
@@ -365,7 +378,7 @@
    "title": "Condo Living Guide: The Owner's Companion | Stellar",
    "h1": "Living well in a condo is a learnable art.",
    "h1Count": 1,
-   "description": "How to live well in a condo or HOA — assessments, who fixes what, HO-6 insurance, owner rights under Illinois law, etiquette, and what to do when something goes wrong.",
+   "description": "How to live well in a condo or HOA: assessments, who fixes what, HO-6 insurance, owner rights under Illinois law, etiquette and what to do in a dispute.",
    "canonical": "https://www.stellarpropertygroup.com/condo-living",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -392,7 +405,7 @@
    "title": "Management Proposal Scorecard for Condo & HOA Boards",
    "h1": "Management proposal scorecard.",
    "h1Count": 1,
-   "description": "A free weighted scorecard for Illinois condo and HOA boards comparing management proposals across seven criteria. No sign-up, nothing emailed, scores stay in your browser.",
+   "description": "A free weighted scorecard for Illinois condo and HOA boards comparing management proposals across seven criteria. No sign-up; scores stay in your browser.",
    "canonical": "https://www.stellarpropertygroup.com/tools/compare-management-proposals",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1024,7 +1037,7 @@
    "title": "AI Is Coming to Condo Management — What Boards Need to Know",
    "h1": "AI Is Coming to Condo Management — What Boards Need to Know",
    "h1Count": 1,
-   "description": "Artificial intelligence is entering condo and HOA management — from violation processing to owner communication. Learn the real benefits, the risks, and how boards should use AI responsibly.",
+   "description": "AI is entering condo and HOA management, from violation processing to owner communication. The real benefits, the risks, and how boards should use it.",
    "canonical": "https://www.stellarpropertygroup.com/blog/ai-in-condo-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1036,7 +1049,7 @@
    "title": "Are HOA and Condo Rules Legally Enforceable in Illinois?",
    "h1": "Are HOA and Condo Rules Legally Enforceable in Illinois?",
    "h1Count": 1,
-   "description": "Illinois condo and HOA rules are enforceable — but only when properly adopted, reasonable, and consistently applied. Learn what makes a rule hold up and where boards go wrong.",
+   "description": "Illinois condo and HOA rules are enforceable only when properly adopted, reasonable and consistently applied. What makes a rule hold up in practice.",
    "canonical": "https://www.stellarpropertygroup.com/blog/are-hoa-condo-rules-enforceable-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1048,7 +1061,7 @@
    "title": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Ex…",
    "h1": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Explained",
    "h1Count": 1,
-   "description": "Can an Illinois condo association enter your unit? Learn when associations have a right of access, when advance notice is required, how emergencies differ, and what owner privacy rights remain.",
+   "description": "Can an Illinois condo association enter your unit? When it has a right of access, when notice is required, how emergencies differ, and owner privacy.",
    "canonical": "https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1060,7 +1073,7 @@
    "title": "The Most Common Condo Rule Violations in Chicago Buildings",
    "h1": "The Most Common Condo Rule Violations in Chicago Buildings",
    "h1Count": 1,
-   "description": "From smoking and short-term rentals to balcony storage and hallway clutter, here are the most common condo rule violations in Chicago buildings — and how boards should handle them fairly.",
+   "description": "From smoking and short-term rentals to balcony storage and hallway clutter: the most common condo rule violations in Chicago and how boards handle them.",
    "canonical": "https://www.stellarpropertygroup.com/blog/common-condo-rule-violations-chicago",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1072,7 +1085,7 @@
    "title": "Condominium Property Management in Chicago: What Board Memb…",
    "h1": "Condominium Property Management in Chicago: What Board Members Should Expect From a Professional Management Company",
    "h1Count": 1,
-   "description": "Learn what Chicago condo board members should expect from a professional property management company, including financial oversight, maintenance coordination, legal compliance, and transparent communication.",
+   "description": "What Chicago condo board members should expect from a management company: financial oversight, maintenance coordination, compliance and communication.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condominium-property-management-chicago-what-board-members-should-expect",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1084,7 +1097,7 @@
    "title": "Condo Repairs in Illinois: What Owners Fix vs. What the Ass…",
    "h1": "Condo Repairs in Illinois: What Owners Fix vs. What the Association Fixes",
    "h1Count": 1,
-   "description": "Who pays for condo repairs in Illinois — the owner or the association? A plain-English map of units, common elements, and the limited-common gray zone, with examples.",
+   "description": "Who pays for condo repairs in Illinois, the owner or the association? A plain-English map of units, common elements and limited common elements.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-repairs-owner-vs-association-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1097,7 +1110,7 @@
    "title": "Condo Reserve Funds Explained: Why So Many Associations Are…",
    "h1": "Condo Reserve Funds Explained: Why So Many Associations Are Underfunded",
    "h1Count": 1,
-   "description": "A clear guide to condo reserve funds and reserve studies — what they are, why so many Illinois associations are underfunded, and how underfunding hurts property values and financing.",
+   "description": "A clear guide to condo reserve funds and reserve studies: what they are, why many Illinois associations are underfunded, and what underfunding costs.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-reserve-funds-explained",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1109,7 +1122,7 @@
    "title": "Special Assessments: Why Illinois Condo Owners Are Suddenly…",
    "h1": "Special Assessments: Why Illinois Condo Owners Are Suddenly Paying Thousands",
    "h1Count": 1,
-   "description": "Why special assessments are surging for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how associations can avoid the special-assessment spiral.",
+   "description": "Why special assessments are rising for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how to avoid them.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-special-assessments-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1135,7 +1148,7 @@
    "title": "Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois",
    "h1": "Why HOA and Condo Insurance Costs Are Skyrocketing in Illinois",
    "h1Count": 1,
-   "description": "Association insurance premiums and deductibles are rising fast in Illinois. Learn what is driving the increases, how they hit your budget and HO-6 policy, and what boards can do about it.",
+   "description": "Association insurance premiums and deductibles are rising fast in Illinois. What drives the increases, how they hit budgets and HO-6 policies, what to do.",
    "canonical": "https://www.stellarpropertygroup.com/blog/hoa-insurance-costs-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1147,7 +1160,7 @@
    "title": "Illinois Condo Law in 2026: What Every Board Must Know",
    "h1": "Illinois Condo Law in 2026: What Every Board Must Know",
    "h1Count": 1,
-   "description": "A practical 2026 guide to Illinois condominium law for board members — covering the Condominium Property Act, owner record requests, meeting notices, elections, reserves, and insurance.",
+   "description": "A practical 2026 guide to Illinois condominium law for board members: the Condominium Property Act, records, meeting notices, elections and reserves.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-law-updates-2026",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1159,7 +1172,7 @@
    "title": "Moving Into a Chicago Condo: The Complete First-Month Guide",
    "h1": "Moving Into a Chicago Condo: The Complete First-Month Guide",
    "h1Count": 1,
-   "description": "Elevator reservations, mover insurance certificates, move fees, portal setup, and the first-month checklist — how to move into a Chicago condo building the right way.",
+   "description": "Elevator reservations, mover insurance certificates, move fees, portal setup and a first-month checklist: how to move into a Chicago condo building.",
    "canonical": "https://www.stellarpropertygroup.com/blog/moving-into-chicago-condo-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1257,7 +1270,7 @@
    "title": "EV Charging Requests: A Process for Illinois Association Bo…",
    "h1": "EV Charging Requests: A Process for Illinois Association Boards",
    "h1Count": 1,
-   "description": "Illinois condo and HOA boards: how to build a consistent, documented process for EV charging requests covering electrical capacity, metering, insurance, and approvals.",
+   "description": "How Illinois condo and HOA boards build a consistent, documented process for EV charging requests: electrical capacity, metering, insurance, approvals.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-ev-charging-board-process",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1584,7 +1597,7 @@
    "title": "Collecting Unpaid Assessments in Illinois: The Possession A…",
    "h1": "Collecting Unpaid Assessments in Illinois: The Possession Action",
    "h1Count": 1,
-   "description": "Illinois lets a condo association take possession of a delinquent unit and lease it to recover the debt. How the Section 9-102 process works and where boards go wrong.",
+   "description": "Illinois lets a condo association take possession of a delinquent unit and lease it to recover the debt. How the Section 9-102 process works.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-assessment-collection-possession-action",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1608,7 +1621,7 @@
    "title": "Cook County Property Tax Appeals: What Condo Boards Should…",
    "h1": "Cook County Property Tax Appeals: What Condo Boards Should Know",
    "h1Count": 1,
-   "description": "A Cook County condo association can appeal on behalf of every unit in one filing. How the two-stage process works, what the filing must include, and why you need an attorney.",
+   "description": "A Cook County condo association can appeal property taxes for every unit in one filing. How the two-stage process works and what the filing must include.",
    "canonical": "https://www.stellarpropertygroup.com/blog/cook-county-property-tax-appeal-condo-association",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1620,7 +1633,7 @@
    "title": "Stopping Airbnb in Your Chicago Condo: The Prohibited Build…",
    "h1": "Stopping Airbnb in Your Chicago Condo: The Prohibited Buildings List",
    "h1Count": 1,
-   "description": "Chicago lets a condo association opt its entire building out of short-term rentals. Over 90,000 units are already on the Prohibited Buildings List. How a board gets there.",
+   "description": "Chicago lets a condo association opt its whole building out of short-term rentals. Over 90,000 units are on the Prohibited Buildings List. How to join.",
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-short-term-rental-prohibited-buildings-list",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1644,7 +1657,7 @@
    "title": "Chicago Condominium Association Compliance Calendar",
    "h1": "Chicago Condominium Association Compliance Calendar",
    "h1Count": 1,
-   "description": "A year-round compliance calendar framework for Chicago condominium association boards, covering city ordinance obligations, inspections, records, and annual governance tasks.",
+   "description": "A year-round compliance calendar for Chicago condo association boards: city ordinance obligations, inspections, records and annual governance tasks.",
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-association-compliance-calendar",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1656,7 +1669,7 @@
    "title": "Delinquency Escalation: A Consistent Process for Associatio…",
    "h1": "Delinquency Escalation: A Consistent Process for Association Boards",
    "h1Count": 1,
-   "description": "How Illinois condo and HOA boards can build a written, consistently applied delinquency escalation policy that protects cash flow and reduces the risk of selective enforcement claims.",
+   "description": "How Illinois condo and HOA boards build a written, consistently applied delinquency escalation policy that protects cash flow and limits legal risk.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-delinquency-escalation-process",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1668,7 +1681,7 @@
    "title": "What to Review in a Community Association Management Agreement",
    "h1": "What to Review in a Community Association Management Agreement",
    "h1Count": 1,
-   "description": "A clause-by-clause guide for Illinois condo and HOA boards reviewing a community association management agreement, including fees, scope, termination, records, and insurance.",
+   "description": "A clause-by-clause guide for Illinois condo and HOA boards reviewing a management agreement: fees, scope, termination, records and insurance.",
    "canonical": "https://www.stellarpropertygroup.com/blog/community-association-management-agreement-review",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1680,7 +1693,7 @@
    "title": "The Illinois Condominium Ombudsperson Act: Current Board Du…",
    "h1": "The Illinois Condominium Ombudsperson Act: Current Board Duties",
    "h1Count": 1,
-   "description": "What Illinois condominium and common interest community boards should understand about the Condominium and Common Interest Community Ombudsperson Act and how to verify current duties.",
+   "description": "What Illinois condo and common interest community boards should know about the Ombudsperson Act, and how to verify the duties that apply today.",
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condominium-ombudsperson-act-board-duties",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1692,7 +1705,7 @@
    "title": "How to Verify an Illinois Community Association Manager Lic…",
    "h1": "How to Verify an Illinois Community Association Manager License",
    "h1Count": 1,
-   "description": "A step-by-step guide for Illinois condo and HOA boards on verifying community association manager and management firm licensure through IDFPR before signing an agreement.",
+   "description": "A step-by-step guide for Illinois condo and HOA boards: verify a community association manager and management firm license with IDFPR before signing.",
    "canonical": "https://www.stellarpropertygroup.com/blog/verify-illinois-community-association-manager-license",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1716,7 +1729,7 @@
    "title": "Preparing for Insurance Renewal: An Association Board Check…",
    "h1": "Preparing for Insurance Renewal: An Association Board Checklist",
    "h1Count": 1,
-   "description": "A preparation checklist for Illinois condo and HOA boards heading into insurance renewal, covering documentation, coverage review, deductibles, and owner communication.",
+   "description": "A preparation checklist for Illinois condo and HOA boards before insurance renewal: documentation, coverage review, deductibles and owner communication.",
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-insurance-renewal-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1728,7 +1741,7 @@
    "title": "How to Compare Chicago Condo & HOA Management Companies",
    "h1": "How to Compare Chicago Condo & HOA Management Companies",
    "h1Count": 1,
-   "description": "Compare Chicago condo and HOA management companies with a board-ready scorecard covering manager capacity, service scope, financial controls, references, and total cost.",
+   "description": "Compare Chicago condo and HOA management companies with a board-ready scorecard: manager capacity, service scope, financial controls and total cost.",
    "canonical": "https://www.stellarpropertygroup.com/blog/score-condo-hoa-management-proposals",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1740,7 +1753,7 @@
    "title": "How Many Associations Should One Community Manager Handle?",
    "h1": "How Many Associations Should One Community Manager Handle?",
    "h1Count": 1,
-   "description": "A board guide to evaluating a community association manager's workload, portfolio capacity, support team, response standards, and coverage before hiring a management company.",
+   "description": "A board guide to evaluating a community association manager's workload, portfolio size, support team, response standards and coverage before you hire.",
    "canonical": "https://www.stellarpropertygroup.com/blog/how-many-associations-should-community-manager-handle",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1895,7 +1908,7 @@
    "title": "The Hidden Problems With Self-Managed Condo Associations",
    "h1": "The Hidden Problems With Self-Managed Condo Associations",
    "h1Count": 1,
-   "description": "Self-managed condo associations save on management fees but carry hidden risks — collections gaps, compliance exposure, weak accounting, and volunteer burnout. Learn when to hire a manager.",
+   "description": "Self-managed condo associations save on fees but carry hidden risks: collections gaps, compliance exposure, weak accounting and volunteer burnout.",
    "canonical": "https://www.stellarpropertygroup.com/blog/self-managed-condo-association-problems",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1920,7 +1933,7 @@
    "title": "The Technology Behind Our Management: Why Stellar Runs on P…",
    "h1": "The Technology Behind Our Management: Why Stellar Runs on Portier369",
    "h1Count": 1,
-   "description": "A look inside the platform Stellar Property Management uses to run Chicago condo and HOA associations — owner portals, board financials, violation workflows, and why we chose Portier369.",
+   "description": "Inside the platform Stellar Property Management uses to run Chicago condo and HOA associations: owner portals, board financials and violation workflows.",
    "canonical": "https://www.stellarpropertygroup.com/blog/the-technology-behind-our-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -1932,7 +1945,7 @@
    "title": "The #1 Reason Condo Boards Fail (And How to Fix It)",
    "h1": "The #1 Reason Condo Boards Fail (And How to Fix It)",
    "h1Count": 1,
-   "description": "The most common reason condo and HOA boards fail is a breakdown of trust and transparency. Learn the warning signs of board dysfunction and the practical fixes that restore a healthy board.",
+   "description": "Condo and HOA boards most often fail through a breakdown of trust and transparency. The warning signs of board dysfunction and the practical fixes.",
    "canonical": "https://www.stellarpropertygroup.com/blog/why-condo-boards-fail",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [

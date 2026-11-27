@@ -36,6 +36,7 @@ import ChicagoPage from './pages/ChicagoPage';
 import NorthShorePage from './pages/NorthShorePage';
 import Pricing from './pages/Pricing';
 import Reviews from './pages/Reviews';
+import CaseStudyKenmore from './pages/CaseStudyKenmore';
 import NeighborhoodPage from './pages/NeighborhoodPage';
 import Blog from './pages/Blog';
 import BlogTopic from './pages/BlogTopic';
@@ -88,6 +89,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/property-management-north-shore" element={<NorthShorePage />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/reviews" element={<Reviews />} />
+            <Route path="/case-studies/6150-n-kenmore-roof" element={<CaseStudyKenmore />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/topic/:topic" element={<BlogTopic />} />
             <Route path="/blog/:slug" element={<BlogPost />} />

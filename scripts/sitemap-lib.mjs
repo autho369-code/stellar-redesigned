@@ -39,6 +39,7 @@ export const staticRoutes = [
   // "Share honest feedback" page (links to the Google review form). Indexable
   // and listed since 2026-11-26.
   '/reviews',
+  '/case-studies/6150-n-kenmore-roof',
   '/blog',
   '/blog/topic/board-governance-illinois-law',
   '/blog/topic/association-finance-reserves',
