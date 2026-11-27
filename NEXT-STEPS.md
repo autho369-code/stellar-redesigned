@@ -3,6 +3,10 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **R9 / D13 run.** Results, rollback commits and what is open
+      are in `docs/LAUNCH-NOTES.md`. Open after R9: request indexing in
+      Search Console (quota exceeded on Nov 26; try again), brand swap fails
+      (name hard-coded in 97 files), team cards and Gold Coast wait on Mirsad.
 - [x] Nov 26: **Wilmette layout shift fixed.** Cause (Lighthouse named it):
       the italic Fraunces file loaded late, the browser drew a fake italic
       first, and the heading re-wrapped. `index.html` now preloads the italic
