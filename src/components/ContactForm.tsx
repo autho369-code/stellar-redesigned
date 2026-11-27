@@ -49,6 +49,13 @@ const emptyForm = (inquiryType: InquiryType): FormData => ({
 const inputClass = 'w-full border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-gold-500 focus:ring-1 focus:ring-gold-500';
 const labelClass = 'mb-2 flex items-center text-xs font-semibold uppercase tracking-wide text-slate-600';
 
+/** ?type= values from the fee estimator -> the "Property type" options below. */
+const ESTIMATOR_TYPES: Record<string, string> = {
+  condo: 'Condominium association',
+  hoa: 'Homeowners association',
+  townhome: 'Townhome association',
+};
+
 export function ContactForm() {
   const [searchParams] = useSearchParams();
   const requestedInquiry = searchParams.get('inquiry');
@@ -62,7 +69,21 @@ export function ContactForm() {
   useEffect(() => {
     setLeadSource(resolveLeadSource(sourceParam));
   }, [sourceParam]);
+  // The fee estimator sends ?units= and ?type=; fill those two fields in.
+  // Applied after mount so the prerendered markup and the first render match.
   const [formData, setFormData] = useState<FormData>(() => emptyForm(initialInquiry));
+  const unitsParam = searchParams.get('units');
+  const typeParam = searchParams.get('type');
+  useEffect(() => {
+    const units = Number(unitsParam);
+    const propertyType = ESTIMATOR_TYPES[typeParam ?? ''];
+    if (!(Number.isInteger(units) && units >= 1 && units <= 5000) && !propertyType) return;
+    setFormData((current) => ({
+      ...current,
+      number_of_units: Number.isInteger(units) && units >= 1 && units <= 5000 && !current.number_of_units ? String(units) : current.number_of_units,
+      property_type: propertyType && !current.property_type ? propertyType : current.property_type,
+    }));
+  }, [unitsParam, typeParam]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'error'>('idle');
   const isBoardInquiry = formData.inquiry_type === 'quote';

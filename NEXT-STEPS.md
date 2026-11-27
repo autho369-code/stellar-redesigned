@@ -10,9 +10,29 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       uniqueness scripts now skip `[data-trust-bar]` (it is a sitewide strip,
       like the header), so adding it did not change any guide or area date.
       On phones the bar is six lines (about 190 px); shorten it if it hurts.
-- [ ] **Next phase: R4** (homepage redesign and fee estimator). Read
-      `docs/redesign-prompts/R4_homepage_redesign_and_fee_estimator.md` and
-      section 8.2 of the plan PDF first. Own branch, own preview.
+- [x] Nov 26: **R4 built** (branch `r4-homepage`): new homepage order and
+      `FeeEstimator` (`src/components/FeeEstimator.tsx`, hero right side;
+      event `Fee Estimator Used`; button -> `/contact?source=estimator&units=N&type=...`,
+      the contact form fills units and property type). Homepage 6,983 px at
+      1440 (was about 12,200). Local Lighthouse home 0.93-0.96 (before, same
+      machine: 0.85-0.87). JSON-LD on home is byte-identical.
+      "Six disciplines" moved to /services (`SixDisciplines.tsx`, data in
+      `src/data/six-disciplines.ts`, still feeds the home OfferCatalog schema).
+      `includedServices` now lives in `src/data/pricing.ts`.
+- **Owner, Nov 26: do NOT use the Google office photos** (storefront Street
+  View, interior). "Bad and unprofessional." Do not ask for photos again; build
+  without a photo until he sends one. The stock brick photo is off the homepage.
+- [ ] **R4 open points:** (1) the estimator goes down to 2 units ($60 per
+      month); ask once whether there is a minimum monthly fee. (2) The R4
+      prompt names a "first ninety days" section that is not on the site; the
+      existing three steps "From first call to a managed building" are used.
+      (3) Board resources shows three fixed guides (`boardGuides` in
+      `Home.tsx`), not the three latest: the guide index would add 25 KB to
+      the homepage. Swap in `chicago-condo-management-cost` after it
+      publishes. (4) Kenmore card has no link until R6 builds
+      `/case-studies/6150-n-kenmore-roof`.
+- [ ] **Next phase: R5** (pricing page). Read
+      `docs/redesign-prompts/R5_pricing_page.md` first. Reuse `FeeEstimator`.
 - [x] Nov 26: **Plan PDF replaced with the newer version** (18 pages, made
       13:17; the one saved before was the 13:05 draft, 17 pages).
       `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`. What is new in it:
