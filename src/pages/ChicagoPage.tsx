@@ -8,8 +8,8 @@ import { SEOHead } from '../components/seo/SEOHead';
 const chicagoNeighborhoods = neighborhoods.filter((n) => n.region !== 'north-shore');
 
 const stats = [
-  { value: '29', label: 'Associations under management' },
-  { value: '1,422', label: 'Residences (approx.)' },
+  { value: '30+', label: 'Associations under management' },
+  { value: '1,500', label: 'Residences (approx.)' },
   { value: '96%', label: 'Client retention since 2007' },
   { value: '2007', label: 'Serving Chicago since' },
 ];
@@ -118,7 +118,7 @@ const compliance = [
 const faqs = [
   {
     q: 'Who provides condominium and HOA management in Chicago?',
-    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 29 associations and approximately 1,422 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625.',
+    a: 'Stellar Property Management is a Chicago community association management firm serving condominium associations, HOAs, and townhome communities exclusively — 30+ associations and approximately 1,500 residences across the city and North Shore, with a 96% client retention rate since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625.',
   },
   {
     q: 'Which Chicago neighborhoods does Stellar Property Management serve?',

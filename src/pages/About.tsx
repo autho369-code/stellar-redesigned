@@ -46,8 +46,8 @@ const credentials = [
 ];
 
 const stats = [
-  { value: '29', label: 'Associations under management' },
-  { value: '1,422', label: 'Residences (approx.)' },
+  { value: '30+', label: 'Associations under management' },
+  { value: '1,500', label: 'Residences (approx.)' },
   { value: '96%', label: 'Client retention since 2007' },
   { value: '2007', label: 'Established · Local expertise' },
 ];
@@ -147,7 +147,7 @@ export default function About() {
     <>
       <SEOHead
         title="About Stellar Property Management | Chicago Since 2007"
-        description="Meet Stellar Property Management: serving Chicago associations since 2007 with 29 associations, CAI membership, and Illinois CAM firm licensing."
+        description="Meet Stellar Property Management: serving Chicago associations since 2007 with 30+ associations, CAI membership, and Illinois CAM firm licensing."
         canonical="https://www.stellarpropertygroup.com/about"
       />
       <Helmet>
@@ -215,13 +215,13 @@ export default function About() {
               <h2 className="font-display font-light text-4xl lg:text-5xl text-ink leading-[1.08] mb-8">
                 From a small firm to
                 {' '}<br />
-                29 <em className="font-medium text-gold-600">associations.</em>
+                30+ <em className="font-medium text-gold-600">associations.</em>
               </h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-5">
                 Stellar Property Management was founded in 2007 with a clear mission: deliver property management that Chicago condo boards, HOAs, and townhome associations actually deserve. At the time, most firms treated community management as a side business. We made it our only business.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
-                Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 29 associations and approximately 1,422 residences across Chicago and the North Shore. Our 96% client retention rate since 2007 speaks louder than any advertisement.
+                Starting with a handful of Chicago North Side associations, we grew through referrals and results — not marketing gimmicks. Today, we manage 30+ associations and approximately 1,500 residences across Chicago and the North Shore. Our 96% client retention rate since 2007 speaks louder than any advertisement.
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-10">
                 Our growth has always been intentional. We only take on communities we can serve exceptionally, assigning a dedicated manager who knows every building, every board member, and every vendor by name. That personal approach is what sets us apart from national firms that treat your community as a line item.

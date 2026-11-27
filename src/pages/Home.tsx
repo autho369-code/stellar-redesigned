@@ -21,8 +21,8 @@ import {
 /* ── Content ──────────────────────────────────────────────────── */
 
 const stats = [
-  { value: 29, suffix: '', label: 'Associations' },
-  { value: 1422, suffix: '', label: 'Residences (approx.)' },
+  { value: 30, suffix: '+', label: 'Associations' },
+  { value: 1500, suffix: '', label: 'Residences (approx.)' },
   { value: 96, suffix: '%', label: 'Client Retention Since 2007' },
 ];
 
@@ -87,7 +87,7 @@ const faqs = [
   ...canonicalFaqs,
   {
     q: 'How is Stellar different from large national management firms?',
-    a: 'Every community receives a dedicated property manager, transparent flat-fee pricing instead of percentage-based fees, and a local Chicago office that answers 24/7. National firms manage by volume; we manage by standard — which is why we maintain a 96% client retention rate since 2007, today across 29 associations.',
+    a: 'Every community receives a dedicated property manager, transparent flat-fee pricing instead of percentage-based fees, and a local Chicago office that answers 24/7. National firms manage by volume; we manage by standard — which is why we maintain a 96% client retention rate since 2007, today across 30+ associations.',
   },
   {
     q: 'How do we switch from our current management company to Stellar?',
@@ -130,7 +130,7 @@ const schema = {
       disambiguatingDescription:
         'Chicago community association (condo, HOA and townhome) management firm at 5107 N Western Ave. Not affiliated with Stellar Properties Inc. of Carol Stream or Stellar Management of New York.',
       description:
-        'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 29 associations and approximately 1,422 residences under management, with a 96% client retention rate since 2007. Community association management only.',
+        'Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since 2007. 30+ associations and approximately 1,500 residences under management, with a 96% client retention rate since 2007. Community association management only.',
       url: 'https://www.stellarpropertygroup.com',
       logo: 'https://www.stellarpropertygroup.com/logo-icon.svg',
       image: 'https://www.stellarpropertygroup.com/images/stellar-property-management-og.jpg',

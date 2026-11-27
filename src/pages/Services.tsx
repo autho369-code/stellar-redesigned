@@ -95,8 +95,8 @@ const services: ServiceItem[] = [
 ];
 
 const proofs = [
-  { value: '29', label: 'Associations under management' },
-  { value: '1,422', label: 'Residences (approx.)' },
+  { value: '30+', label: 'Associations under management' },
+  { value: '1,500', label: 'Residences (approx.)' },
   { value: '96%', label: 'Client retention rate' },
   { value: '24/7', label: 'Live emergency response' },
 ];
@@ -289,7 +289,7 @@ export default function Services() {
             <em className="font-medium text-gold-300">standard.</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            Discover why 29 Chicago-area associations trust Stellar Property
+            Discover why 30+ Chicago-area associations trust Stellar Property
             Management. A free, no-obligation consultation with our managing partners.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-5">

@@ -3,6 +3,22 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Plan PDF replaced with the newer version** (18 pages, made
+      13:17; the one saved before was the 13:05 draft, 17 pages).
+      `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`. What is new in it:
+      founding year 2007 settled, "No long-term contracts — cancel with 60
+      days notice", the 6150 N Kenmore roof case study ($150,000 saved, live
+      page planned at `/case-studies/6150-n-kenmore-roof` in R6), office
+      photos. The R0-R9 prompts already had these facts.
+- [x] Nov 26: **Portfolio numbers made durable (PR #68, "merge 68")**.
+      Mirsad: the real counts are 30 associations and 1,495 residences (737
+      Ridge just signed), and he does not want a site edit for every new
+      building. The site now shows rounded figures everywhere: "30+
+      associations" and "approximately 1,500 residences". Exact counts live
+      only in `brand.stats`; the shown values are `associationsDisplay` and
+      `residencesDisplay`. The build fails if an exact count (29, 1,422,
+      1,495) comes back. Change the display values only at a big step (35
+      associations, 1,600 residences).
 - [x] Nov 26: **R3 parts C and D built** (this branch): `TrustBar` under the
       hero on the homepage (it replaced the old credentials strip), /pricing
       and the ten service pages; sticky phone bar now 64 px, safe-area aware,
@@ -11,7 +27,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       deploy succeeded. The live-site checker cannot reach the site from the
       cloud session (proxy blocks it); the GitHub "live-site-check" workflow
       is the check to read.
-- [x] Nov 26: **R3 header and footer built** (branch `r3-header-footer`).
+- [x] Nov 26: **R3 header and footer built and merged (PR #67, "merge 67")**.
       One link list: `src/data/navigation.ts`. Header
       (`src/components/layout/Header.tsx`): 72 px desktop / 60 px phone, six
       sentence-case menus, services mega-menu with the pricing card, utility
@@ -35,9 +51,6 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       phone number. (5) The phone header no longer has the small "Proposal"
       chip (`source=mobile-header-visible`); the sticky bar does that job.
       (6) "Ask Arthur" covers the legal links at the very bottom of the page.
-- [ ] **Numbers to confirm with Mirsad:** the site and trust bar say 29
-      associations and about 1,422 residences. He has also said 30 and 1,495.
-      Change `brand.stats` only on his word.
 - [x] Nov 26: **Office photos from Mirsad are in the repo**
       (`public/images/office/`, webp; cropped and lightly corrected on Nov 26 at his request: storefront without the car, passer-by and neighbor sign, office without the bulletin boards; not placed on
       any page yet): `storefront-5107-n-western-*` (blue Stellar awning,

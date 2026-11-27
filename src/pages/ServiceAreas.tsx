@@ -14,7 +14,7 @@ const northShoreCommunities = sortedNeighborhoods.filter((n) => n.region === 'no
 const stats = [
   { value: String(neighborhoods.length), label: 'Neighborhoods Served' },
   { value: '2007', label: 'Established' },
-  { value: '29', label: 'Associations Managed' },
+  { value: '30+', label: 'Associations Managed' },
   { value: '24/7', label: 'Emergency Service' },
 ];
 

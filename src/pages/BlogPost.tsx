@@ -443,7 +443,7 @@ export default function BlogPost() {
             community <em className="font-medium text-gold-300">management?</em>
           </h2>
           <p className="text-paper/55 text-lg font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-            Join the 29 Chicago-area associations that trust Stellar Property
+            Join the 30+ Chicago-area associations that trust Stellar Property
             Management. Contact us today for a free consultation and discover why we
             maintain a 96% client retention rate since 2007.
           </p>

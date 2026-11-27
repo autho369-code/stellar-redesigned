@@ -41,8 +41,9 @@ export const business = {
   licenseNumber: '291000211',
   licenseName: 'Illinois Community Association Management Firm License',
   memberships: ['Community Associations Institute (CAI)', 'CAI Illinois Chapter'],
-  associations: brand.stats.associations,
-  residences: brand.stats.residences.toLocaleString('en-US'),
+  /** Rounded public figures ("30+", "1,500"); the exact counts stay in the brand file. */
+  associations: brand.stats.associationsDisplay,
+  residences: brand.stats.residencesDisplay,
   retentionPercent: brand.stats.retentionPercent,
   priceFrom: brand.pricing.startingPerUnit,
   /** Owner-confirmed public wording, 2026-11-26. Third-party costs (contractors, engineers, attorneys, permits) stay association expenses. */

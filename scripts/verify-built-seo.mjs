@@ -54,10 +54,15 @@ for (const url of urls) {
   if (canonical !== expectedCanonical) errors.push(`${route}: canonical is '${canonical}', expected '${expectedCanonical}'`);
   if (/noindex|nofollow/i.test(robots)) errors.push(`${route}: sitemap route has a blocking robots directive '${robots}'`);
   if (h1Count !== 1) errors.push(`${route}: expected one H1, found ${h1Count}`);
-  // Retired portfolio figures (owner-confirmed Nov 2026: 29 associations,
-  // approximately 1,422 residences). Stop them from coming back.
+  // Retired portfolio figures. Stop them from coming back.
   if (/\b42 (Chicago-area |condominium, |condo, )?(associations|communities)|all 42\b|2,450|\b2450\b/i.test(html)) {
     errors.push(`${route}: contains a retired portfolio figure (42 associations / 2,450)`);
+  }
+  // Owner, 2026-11-26: public pages show rounded figures ("30+ associations",
+  // "approximately 1,500 residences") so they do not change with each new
+  // building. Exact counts must not come back.
+  if (/\b29 (Chicago-area |condominium, |condo, )?(associations|communities)|all 29\b|1,422|\b1422\b|1,495/i.test(html)) {
+    errors.push(`${route}: contains an exact portfolio count; use the rounded figures from the brand file`);
   }
   // Retired starting fee (owner-confirmed 2026-11-26: the flat fee starts at
   // $30 per unit per month). The price lives in src/data/business.ts.
@@ -92,7 +97,7 @@ for (const url of urls) {
 }
 
 const llms = readFileSync(join(root, 'dist/llms.txt'), 'utf8');
-if (!llms.includes('- Portfolio: 29 associations, approximately 1,422 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
+if (!llms.includes('- Portfolio: 30+ associations, approximately 1,500 residences')) errors.push('llms.txt: Business facts section is missing the portfolio line');
 if (!llms.includes('starting at $30 per unit per month')) errors.push('llms.txt: pricing line is missing or damaged');
 if (/2,450|\b42 associations/.test(llms)) errors.push('llms.txt: contains a retired portfolio figure');
 

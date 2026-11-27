@@ -55,7 +55,7 @@ const focus = [
   },
   {
     title: 'Financial reporting standards',
-    desc: 'Sets and reviews the reporting standard applied to all 29 associations in the portfolio, so treasurers see the same statements in the same format every month.',
+    desc: 'Sets and reviews the reporting standard applied to all 30+ associations in the portfolio, so treasurers see the same statements in the same format every month.',
   },
   {
     title: 'Illinois statutory compliance',
@@ -214,7 +214,7 @@ export default function AuthorMirsadCerimovic() {
     <>
       <SEOHead
         title="Mirsad Cerimovic, CMCA | Founder, Stellar Property Management"
-        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 29 condo, HOA and townhome associations."
+        description="Mirsad Cerimovic founded Stellar Property Management in Chicago in 2007. Licensed Illinois CAM, CMCA and AMS designee managing 30+ condo, HOA and townhome associations."
         canonical={PROFILE_URL}
         ogType="profile"
         ogImage="https://www.stellarpropertygroup.com/images/mirsad-cerimovic.jpg"
@@ -298,8 +298,8 @@ export default function AuthorMirsadCerimovic() {
               </p>
               <p className="text-slate-600 font-light leading-relaxed mb-5">
                 Starting with a handful of North Side associations, the firm grew
-                through board referrals to the 29 associations and approximately
-                1,422 residences it manages today across Chicago and the North Shore.
+                through board referrals to the 30+ associations and approximately
+                1,500 residences it manages today across Chicago and the North Shore.
                 Mirsad still reviews the financial reporting standard applied to
                 every association in the portfolio and leads each incoming board
                 through its transition personally.

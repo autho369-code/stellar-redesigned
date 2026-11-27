@@ -17,7 +17,7 @@ const whyChoose = [
   },
   {
     title: 'Proven Track Record',
-    description: 'A focused portfolio of 29 associations and approximately 1,422 residences across Chicago and the North Shore.',
+    description: 'A focused portfolio of 30+ associations and approximately 1,500 residences across Chicago and the North Shore.',
   },
   {
     title: 'Transparent Communication',
@@ -125,7 +125,7 @@ export default function NeighborhoodPage() {
     ...(neighborhood.localFaq ?? []),
     {
       q: `Does Stellar Property Management serve ${neighborhood.name}?`,
-      a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 29 associations and approximately 1,422 residences under management, with a 96% client retention rate since 2007.`,
+      a: `Yes. Stellar Property Management provides condominium, HOA, and townhome association management in ${neighborhood.name}, ${locale} (ZIP ${neighborhood.zipCodes.join(', ')}), backed by a Chicago office that has served area communities since 2007 — 30+ associations and approximately 1,500 residences under management, with a 96% client retention rate since 2007.`,
     },
     {
       q: `What types of community associations does Stellar manage in ${neighborhood.name}?`,

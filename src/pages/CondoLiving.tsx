@@ -244,8 +244,8 @@ export default function CondoLiving() {
 
         <div className="relative border-t border-paper/10">
           <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-5 flex flex-wrap items-center gap-x-10 gap-y-2">
-            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Written by the managers of 29 Chicago-area associations</span>
-            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Approx. 1,422 residences · Since 2007</span>
+            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Written by the managers of 30+ Chicago-area associations</span>
+            <span className="text-[10px] uppercase tracking-luxe text-paper/50">Approx. 1,500 residences · Since 2007</span>
           </div>
         </div>
       </section>
