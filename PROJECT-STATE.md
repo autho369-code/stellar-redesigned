@@ -19,6 +19,11 @@ the rounded "30+" and "approximately 1,500". 96% retention since 2007.
 - **Email:** mirsad@stellarpropertygroup.com
 - **Resident portal (AppFolio):** https://stellarpropertygrp.appfolio.com/connect/
 
+## Status update — 2026-11-26 (D11: three-step proposal form)
+- `/contact` board form is three steps. Fields, lead source, thanks page and
+  analytics event are unchanged; only name and email required. Mocked submit
+  tests added (205 tests pass). No fee is shown or calculated anywhere.
+
 ## Status update — 2026-11-26 (D9 guides: "On this page" list)
 - Guides: sticky "On this page" list on wide screens, built from each guide's
   own h2 headings (`ArticleToc.tsx`). Hidden on phones and tablets. Titles, H1,

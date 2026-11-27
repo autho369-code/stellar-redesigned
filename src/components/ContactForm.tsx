@@ -1,7 +1,7 @@
 import { business } from '../data/business';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { ArrowRight, Building, Mail, MessageSquare, Phone, Send, User } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Building, Mail, MessageSquare, Phone, Send, User } from 'lucide-react';
 import { submitLeadToOps } from '../lib/leads';
 import { resolveLeadSource } from '../lib/leadSource';
 import { trackEvent } from '../lib/track';
@@ -49,6 +49,10 @@ const emptyForm = (inquiryType: InquiryType): FormData => ({
 const inputClass = 'w-full border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-gold-500 focus:ring-1 focus:ring-gold-500';
 const labelClass = 'mb-2 flex items-center text-xs font-semibold uppercase tracking-wide text-slate-600';
 
+const STEPS = ['Your association', 'Timing and priorities', 'You'] as const;
+const DRAFT_KEY = 'stellar-contact-draft';
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 /** ?type= values from the homepage hero card -> the "Property type" options below. */
 const ESTIMATOR_TYPES: Record<string, string> = {
   condo: 'Condominium association',
@@ -84,6 +88,46 @@ export function ContactForm() {
       property_type: propertyType && !current.property_type ? propertyType : current.property_type,
     }));
   }, [unitsParam, typeParam]);
+  // The board path is three short steps. Every field stays in the page (the
+  // other steps are only hidden), so nothing typed is lost going back.
+  const [step, setStep] = useState(0);
+  const [errors, setErrors] = useState<Partial<Record<'name' | 'email' | 'message', string>>>({});
+  const [honeypot, setHoneypot] = useState('');
+  const stepHeading = useRef<HTMLHeadingElement>(null);
+  // Keep a draft for this browser tab only, so a reload does not wipe the form.
+  const [draftRead, setDraftRead] = useState(false);
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(DRAFT_KEY) ?? 'null') as { data?: Partial<FormData>; step?: number } | null;
+      if (saved?.data) {
+        setFormData((current) => {
+          const next = { ...current };
+          for (const key of Object.keys(current) as (keyof FormData)[]) {
+            const value = saved.data![key];
+            if (key !== 'inquiry_type' && typeof value === 'string' && value && (!current[key] || key === 'preferred_contact')) (next[key] as string) = value;
+          }
+          return next;
+        });
+        if (typeof saved.step === 'number' && saved.step >= 0 && saved.step < STEPS.length) setStep(saved.step);
+      }
+    } catch {
+      // Storage is blocked or the draft is unreadable: start with an empty form.
+    }
+    setDraftRead(true);
+  }, []);
+  useEffect(() => {
+    if (!draftRead) return;
+    try {
+      sessionStorage.setItem(DRAFT_KEY, JSON.stringify({ data: formData, step }));
+    } catch {
+      // Storage is blocked: the form still works, it just is not kept on reload.
+    }
+  }, [draftRead, formData, step]);
+  const goToStep = (next: number) => {
+    setStep(next);
+    setSubmitStatus('idle');
+    requestAnimationFrame(() => stepHeading.current?.focus());
+  };
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'error'>('idle');
   const isBoardInquiry = formData.inquiry_type === 'quote';
@@ -95,6 +139,26 @@ export function ContactForm() {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    // Enter inside an earlier step moves on; only the last step sends.
+    if (isBoardInquiry && step < STEPS.length - 1) {
+      goToStep(step + 1);
+      return;
+    }
+    const found: typeof errors = {};
+    if (!formData.name.trim()) found.name = 'Please enter your name.';
+    if (!EMAIL_PATTERN.test(formData.email.trim())) found.email = 'Please enter a valid email address.';
+    if (!isBoardInquiry && !formData.message.trim()) found.message = 'Please enter a message.';
+    setErrors(found);
+    const firstError = (['name', 'email', 'message'] as const).find((field) => found[field]);
+    if (firstError) {
+      document.getElementById(firstError)?.focus();
+      return;
+    }
+    // A filled hidden field means a bot. Send nothing and show the thanks page.
+    if (honeypot) {
+      navigate('/contact/thanks');
+      return;
+    }
     setIsSubmitting(true);
     setSubmitStatus('idle');
     const leadSource = resolveLeadSource(sourceParam);
@@ -154,6 +218,11 @@ export function ContactForm() {
       // Fires once, only after the submission request succeeded. No name,
       // email, phone or message text is ever sent to analytics.
       trackEvent('Contact Form Submit', { source: leadSource, page: window.location.pathname });
+      try {
+        sessionStorage.removeItem(DRAFT_KEY);
+      } catch {
+        // Nothing to clear.
+      }
       // A page view of /contact/thanks is the lead signal on any Vercel plan.
       navigate('/contact/thanks');
     } catch (error) {
@@ -166,7 +235,12 @@ export function ContactForm() {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData((current) => ({ ...current, [event.target.name]: event.target.value }));
+    if (event.target.name in errors) setErrors((current) => ({ ...current, [event.target.name]: undefined }));
   };
+  const onStep = (index: number) => !isBoardInquiry || step === index;
+  const isLastStep = !isBoardInquiry || step === STEPS.length - 1;
+  const errorText = (field: 'name' | 'email' | 'message') =>
+    errors[field] ? <p id={`${field}-error`} role="alert" className="mt-2 text-sm text-red-700">{errors[field]}</p> : null;
 
   return (
     <div className="border border-slate-200 bg-paper p-7 sm:p-9 lg:p-11">
@@ -208,40 +282,37 @@ export function ContactForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-7">
+      <form onSubmit={handleSubmit} noValidate className="space-y-7">
         <input type="hidden" name="inquiry_type" value={formData.inquiry_type} />
         <input type="hidden" name="lead_source" value={leadSource} />
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <div>
-            <label htmlFor="name" className={labelClass}><User className="mr-2 h-4 w-4" />Full name *</label>
-            <input id="name" name="name" required autoComplete="name" value={formData.name} onChange={handleChange} className={inputClass} placeholder="Your name" />
-          </div>
-          <div>
-            <label htmlFor="email" className={labelClass}><Mail className="mr-2 h-4 w-4" />Email *</label>
-            <input type="email" id="email" name="email" required autoComplete="email" value={formData.email} onChange={handleChange} className={inputClass} placeholder="you@example.com" />
-          </div>
-          <div>
-            <label htmlFor="phone" className={labelClass}><Phone className="mr-2 h-4 w-4" />Phone</label>
-            <input type="tel" id="phone" name="phone" autoComplete="tel" value={formData.phone} onChange={handleChange} className={inputClass} placeholder="(773) 555-0123" />
-          </div>
-          <div>
-            <label htmlFor="company" className={labelClass}><Building className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Association name' : 'Organization'}</label>
-            <input id="company" name="company" value={formData.company} onChange={handleChange} className={inputClass} placeholder={isBoardInquiry ? 'Optional — you can leave this blank' : 'Optional'} />
-          </div>
+        {/* Hidden from people; bots fill it in. */}
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="botcheck">Leave this field empty</label>
+          <input id="botcheck" name="botcheck" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(event) => setHoneypot(event.target.value)} />
         </div>
 
         {isBoardInquiry && (
+          <div data-form-steps>
+            <ol className="grid grid-cols-3 gap-2" aria-label="Form progress">
+              {STEPS.map((label, index) => (
+                <li key={label} aria-current={step === index ? 'step' : undefined} className={`border-t-2 pt-3 text-xs font-semibold uppercase tracking-wide ${index <= step ? 'border-gold-500 text-ink' : 'border-slate-200 text-slate-500'}`}>
+                  <span className="block text-[10px] font-normal tracking-luxe text-slate-500">Step {index + 1} of {STEPS.length}</span>
+                  <span className="hidden sm:block mt-1">{label}</span>
+                </li>
+              ))}
+            </ol>
+            <h3 ref={stepHeading} tabIndex={-1} className="mt-7 scroll-mt-32 font-display text-xl text-ink outline-none">{STEPS[step]}</h3>
+            <p className="mt-2 text-sm font-light text-slate-600">
+              {step === 0 && 'These details let us research the property before we call. Every question on this step is optional.'}
+              {step === 1 && 'Tell us where things stand. Every question on this step is optional.'}
+              {step === 2 && 'Only your name and email are required.'}
+            </p>
+          </div>
+        )}
+
+        {isBoardInquiry && (
           <>
-            <div className="border-t border-slate-200 pt-7">
-              <h3 className="font-display text-xl text-ink">About your association</h3>
-              <p className="mt-2 text-sm font-light text-slate-600">These details let us research the property before we call.</p>
-            </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="md:col-span-2">
-                <label htmlFor="property_address" className={labelClass}>Property address</label>
-                <input id="property_address" name="property_address" value={formData.property_address} onChange={handleChange} className={inputClass} placeholder="Street address, city and ZIP" />
-              </div>
+            <div className={onStep(0) ? 'grid gap-6 md:grid-cols-2' : 'hidden'}>
               <div>
                 <label htmlFor="property_type" className={labelClass}>Property type</label>
                 <select id="property_type" name="property_type" value={formData.property_type} onChange={handleChange} className={inputClass}>
@@ -257,17 +328,30 @@ export function ContactForm() {
                 <label htmlFor="number_of_units" className={labelClass}>Number of units</label>
                 <input type="number" id="number_of_units" name="number_of_units" min="1" value={formData.number_of_units} onChange={handleChange} className={inputClass} placeholder="Approximate is fine" />
               </div>
-              <div>
-                <label htmlFor="board_role" className={labelClass}>Your role *</label>
-                <select id="board_role" name="board_role" value={formData.board_role} onChange={handleChange} className={inputClass}>
-                  <option value="">Select one</option>
-                  <option>Board president</option>
-                  <option>Board officer or director</option>
-                  <option>Committee member</option>
-                  <option>Unit owner</option>
-                  <option>Developer or authorized representative</option>
+              <div className="md:col-span-2">
+                <label htmlFor="property_address" className={labelClass}>Property address</label>
+                <input id="property_address" name="property_address" value={formData.property_address} onChange={handleChange} className={inputClass} placeholder="Street address, city and ZIP" />
+              </div>
+              <div className="md:col-span-2">
+                <label htmlFor="reason" className={labelClass}>What is prompting the search?</label>
+                <select id="reason" name="reason" value={formData.reason} onChange={handleChange} className={inputClass}>
+                  <option value="">Select one — optional</option>
+                  <option>Responsiveness — messages go unanswered</option>
+                  <option>Follow-through — work does not get done</option>
+                  <option>Financial reporting is late or unclear</option>
+                  <option>Fees increased, or charges we did not expect</option>
+                  <option>Our manager keeps changing</option>
+                  <option>Our management company was acquired</option>
+                  <option>Moving on from self-management</option>
+                  <option>Developer turnover to owner control</option>
+                  <option>Contract is up for renewal — reviewing options</option>
+                  <option>A specific project or problem we need help with</option>
+                  <option>Something else</option>
                 </select>
               </div>
+            </div>
+
+            <div className={onStep(1) ? 'grid gap-6 md:grid-cols-2' : 'hidden'}>
               <div>
                 <label htmlFor="contract_timing" className={labelClass}>Current contract timing</label>
                 <select id="contract_timing" name="contract_timing" value={formData.contract_timing} onChange={handleChange} className={inputClass}>
@@ -293,56 +377,78 @@ export function ContactForm() {
                   <option>General management proposal</option>
                 </select>
               </div>
-              <div>
-                <label htmlFor="preferred_contact" className={labelClass}>Preferred contact *</label>
-                <select id="preferred_contact" name="preferred_contact" required value={formData.preferred_contact} onChange={handleChange} className={inputClass}>
-                  <option value="email">Email</option>
-                  <option value="phone">Phone</option>
-                </select>
-              </div>
-              <div className="md:col-span-2">
-                <label htmlFor="preferred_time" className={labelClass}>Best day or time to reach you</label>
-                <input id="preferred_time" name="preferred_time" value={formData.preferred_time} onChange={handleChange} className={inputClass} placeholder="Example: Tuesday after 3 PM" />
-              </div>
-              <div className="md:col-span-2">
-                <label htmlFor="reason" className={labelClass}>What is prompting the search?</label>
-                <select id="reason" name="reason" value={formData.reason} onChange={handleChange} className={inputClass}>
-                  <option value="">Select one — optional</option>
-                  <option>Responsiveness — messages go unanswered</option>
-                  <option>Follow-through — work does not get done</option>
-                  <option>Financial reporting is late or unclear</option>
-                  <option>Fees increased, or charges we did not expect</option>
-                  <option>Our manager keeps changing</option>
-                  <option>Our management company was acquired</option>
-                  <option>Moving on from self-management</option>
-                  <option>Developer turnover to owner control</option>
-                  <option>Contract is up for renewal — reviewing options</option>
-                  <option>A specific project or problem we need help with</option>
-                  <option>Something else</option>
-                </select>
-              </div>
-              <div className="md:col-span-2">
-                <label htmlFor="how_heard" className={labelClass}>How did you find Stellar?</label>
-                <select id="how_heard" name="how_heard" value={formData.how_heard} onChange={handleChange} className={inputClass}>
-                  <option value="">Select one — optional</option>
-                  <option>Google or other search</option>
-                  <option>ChatGPT, Claude, Perplexity or another AI assistant</option>
-                  <option>Referral from another board</option>
-                  <option>Referral from our attorney</option>
-                  <option>Referral from a vendor or contractor</option>
-                  <option>CAI or CAI Illinois</option>
-                  <option>We read one of your board guides</option>
-                  <option>Someone at Stellar</option>
-                  <option>Other</option>
-                </select>
-              </div>
             </div>
           </>
         )}
 
-        <div>
+        <div className={onStep(2) ? undefined : 'hidden'}>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div>
+              <label htmlFor="name" className={labelClass}><User className="mr-2 h-4 w-4" />Full name *</label>
+              <input id="name" name="name" aria-required="true" aria-invalid={!!errors.name} aria-describedby={errors.name ? 'name-error' : undefined} autoComplete="name" value={formData.name} onChange={handleChange} className={inputClass} placeholder="Your name" />
+              {errorText('name')}
+            </div>
+            <div>
+              <label htmlFor="email" className={labelClass}><Mail className="mr-2 h-4 w-4" />Email *</label>
+              <input type="email" id="email" name="email" aria-required="true" aria-invalid={!!errors.email} aria-describedby={errors.email ? 'email-error' : undefined} autoComplete="email" value={formData.email} onChange={handleChange} className={inputClass} placeholder="you@example.com" />
+              {errorText('email')}
+            </div>
+            <div>
+              <label htmlFor="phone" className={labelClass}><Phone className="mr-2 h-4 w-4" />Phone</label>
+              <input type="tel" id="phone" name="phone" autoComplete="tel" value={formData.phone} onChange={handleChange} className={inputClass} placeholder="(773) 555-0123" />
+            </div>
+            <div>
+              <label htmlFor="company" className={labelClass}><Building className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Association name' : 'Organization'}</label>
+              <input id="company" name="company" value={formData.company} onChange={handleChange} className={inputClass} placeholder={isBoardInquiry ? 'Optional — you can leave this blank' : 'Optional'} />
+            </div>
+            {isBoardInquiry && (
+              <>
+                <div>
+                  <label htmlFor="board_role" className={labelClass}>Your role</label>
+                  <select id="board_role" name="board_role" value={formData.board_role} onChange={handleChange} className={inputClass}>
+                    <option value="">Select one</option>
+                    <option>Board president</option>
+                    <option>Board officer or director</option>
+                    <option>Committee member</option>
+                    <option>Unit owner</option>
+                    <option>Developer or authorized representative</option>
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="preferred_contact" className={labelClass}>Preferred contact</label>
+                  <select id="preferred_contact" name="preferred_contact" value={formData.preferred_contact} onChange={handleChange} className={inputClass}>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                  </select>
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="preferred_time" className={labelClass}>Best day or time to reach you</label>
+                  <input id="preferred_time" name="preferred_time" value={formData.preferred_time} onChange={handleChange} className={inputClass} placeholder="Example: Tuesday after 3 PM" />
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="how_heard" className={labelClass}>How did you find Stellar?</label>
+                  <select id="how_heard" name="how_heard" value={formData.how_heard} onChange={handleChange} className={inputClass}>
+                    <option value="">Select one — optional</option>
+                    <option>Google or other search</option>
+                    <option>ChatGPT, Claude, Perplexity or another AI assistant</option>
+                    <option>Referral from another board</option>
+                    <option>Referral from our attorney</option>
+                    <option>Referral from a vendor or contractor</option>
+                    <option>CAI or CAI Illinois</option>
+                    <option>We read one of your board guides</option>
+                    <option>Someone at Stellar</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+
+        <div className={isBoardInquiry && step !== 1 ? 'hidden' : undefined}>
           <label htmlFor="message" className={labelClass}><MessageSquare className="mr-2 h-4 w-4" />{isBoardInquiry ? 'Anything else we should know?' : 'Message *'}</label>
-          <textarea id="message" name="message" required={!isBoardInquiry} value={formData.message} onChange={handleChange} rows={isBoardInquiry ? 4 : 6} className={`${inputClass} resize-none`} placeholder={isBoardInquiry ? 'Optional context about your board, building, or current management concerns' : 'How can we help?'} />
+          <textarea id="message" name="message" aria-required={!isBoardInquiry} aria-invalid={!!errors.message} aria-describedby={errors.message ? 'message-error' : undefined} value={formData.message} onChange={handleChange} rows={isBoardInquiry ? 4 : 6} className={`${inputClass} resize-none`} placeholder={isBoardInquiry ? 'Optional context about your board, building, or current management concerns' : 'How can we help?'} />
+          {errorText('message')}
         </div>
 
         {isBoardInquiry && (
@@ -359,13 +465,28 @@ export function ContactForm() {
           </div>
         )}
 
-        <button type="submit" disabled={isSubmitting} className="flex w-full items-center justify-center gap-3 bg-gold-600 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-gold-700 disabled:cursor-not-allowed disabled:bg-slate-400">
-          {isSubmitting ? (
-            <><span className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />Submitting…</>
-          ) : (
-            <><Send className="h-5 w-5" />{isBoardInquiry ? 'Request My Board Consultation' : 'Send Inquiry'}</>
+        <div className="flex gap-3">
+          {isBoardInquiry && step > 0 && (
+            <button type="button" onClick={() => goToStep(step - 1)} className="flex items-center justify-center gap-2 border border-slate-300 bg-white px-6 py-4 text-sm font-semibold text-ink transition-colors hover:border-gold-500">
+              <ArrowLeft className="h-4 w-4" />Back
+            </button>
           )}
-        </button>
+          {/* Separate keys: React must not turn the Next button into the send
+              button in the middle of a click, or the click would send the form. */}
+          {isLastStep ? (
+            <button key="send" type="submit" disabled={isSubmitting} className="flex flex-1 items-center justify-center gap-3 bg-gold-600 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-gold-700 disabled:cursor-not-allowed disabled:bg-slate-400">
+              {isSubmitting ? (
+                <><span className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />Submitting…</>
+              ) : (
+                <><Send className="h-5 w-5" />{isBoardInquiry ? 'Request My Board Consultation' : 'Send Inquiry'}</>
+              )}
+            </button>
+          ) : (
+            <button key="next" type="button" data-step-next onClick={() => goToStep(step + 1)} className="flex flex-1 items-center justify-center gap-3 bg-gold-600 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-gold-700">
+              Next<ArrowRight className="h-5 w-5" />
+            </button>
+          )}
+        </div>
 
         <p className="text-center text-xs leading-relaxed text-slate-600">
           By submitting, you agree that Stellar may contact you about this request. See our <Link to="/privacy-policy" className="text-gold-600 underline underline-offset-2 hover:text-gold-500">privacy policy</Link>.
