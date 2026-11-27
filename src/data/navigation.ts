@@ -52,7 +52,9 @@ export const regionLinks: NavGroup = {
 };
 
 /**
- * The eight area pages shown in the menu and footer. Order: Search Console
+ * The area pages shown in the menu and footer. OWNER RULE (2026-11-26): the
+ * owner chooses this list. Do not add an area here without his word. Hyde
+ * Park was removed at his instruction (too far from the office). Order: Search Console
  * impressions, last 3 months (docs/gsc-area-pages-2026-11-26.md). Clicks per
  * page are still too few to rank by. Edit this list to change the menu.
  */
@@ -63,7 +65,6 @@ export const topNeighborhoods: NavGroup = {
     { name: 'Ravenswood', href: '/property-management-ravenswood' },
     { name: 'Lake Forest', href: '/property-management-lake-forest' },
     { name: 'Avondale', href: '/property-management-avondale' },
-    { name: 'Hyde Park', href: '/property-management-hyde-park' },
     { name: 'River North', href: '/property-management-river-north' },
     { name: 'Morton Grove', href: '/property-management-morton-grove' },
     { name: 'Old Town', href: '/property-management-old-town' },
