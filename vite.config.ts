@@ -110,7 +110,7 @@ function stripUnpublishedArticleContent(cutoff: string): Plugin {
 export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
     // R0: `npm run build:stats` writes stats.html with the gzip size of every chunk.
-    ...(process.env.ANALYZE ? [visualizer({ filename: 'stats.html', gzipSize: true }) as Plugin] : []),
+    ...(process.env.ANALYZE ? [visualizer({ filename: process.env.ANALYZE === 'json' ? 'stats.json' : 'stats.html', template: process.env.ANALYZE === 'json' ? 'raw-data' : 'treemap', gzipSize: true }) as Plugin] : []),
     react(),
     ...(isSsrBuild ? [] : [stripUnpublishedArticleContent(getChicagoPublicationDate())]),
   ],

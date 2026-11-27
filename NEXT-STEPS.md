@@ -3,6 +3,25 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **PR #64 (R2 part 2) merged** ("MERGE 64"); live check passed.
+- [x] Nov 26: **R2 part 3 built** (branch `r2-part-3`): every page is its own
+      chunk. `src/App.tsx` wraps each page in `page(() => import(...))`; the
+      page for the current URL is loaded before hydration (`preloadRoute` in
+      `src/main.tsx`), so markup matches the prerender; pages reached by a link
+      load on demand. Main chunk 238 KB gzip -> 78 KB gzip. All 153 HTML files
+      identical to before. Tracking tests now wait for `html[data-app-ready]`
+      (set in `ConversionTracking`). Local Lighthouse: home 99, Wilmette 93.
+- [ ] **R2 leftovers:** (1) area-page layout shift 0.149 under throttling: the
+      Fraunces H1 reflows when the font swaps in (real Chrome on a fast line
+      shows 0.005). Fix with a size-adjusted fallback face or
+      `font-display: optional`, then re-measure on the runner. (2) Turn the
+      Lighthouse warnings into errors once the runner shows 0.9. (3) The 404
+      page throws React hydration errors (#418/#423); they were there before
+      R2. (4) The contact-form submit test.
+- Mirsad's competitor spreadsheet is saved as
+  `docs/redesign-prompts/Competitor_Teardown.xlsx` (sheets: Scores, Details,
+  Speed_Mobile, Stellar_Pages, Rubric, Repos_Tools, Sources). It is the data
+  behind the plan PDF.
 - [x] Nov 26: **R2 part 2 built** (branch `r2-part-2-article-split`): article
       bodies are out of the browser bundle. `vite.config.ts` strips every body
       from the client build and writes `/article-bodies/<slug>.json` (75

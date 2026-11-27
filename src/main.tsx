@@ -7,7 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/fraunces/wght.css';
 import '@fontsource-variable/fraunces/wght-italic.css';
-import App from './App';
+import App, { preloadRoute } from './App';
 import { guideSlugFromPath, loadBody } from './data/article-bodies';
 import ConversionTracking from './components/ConversionTracking';
 import './index.css';
@@ -33,7 +33,7 @@ const app = (
 // A guide page needs its own article body before hydration (see
 // src/data/article-bodies.ts); every other page starts at once.
 const guideSlug = guideSlugFromPath(window.location.pathname);
-(guideSlug ? loadBody(guideSlug) : Promise.resolve()).then(() => {
+Promise.all([guideSlug ? loadBody(guideSlug) : undefined, preloadRoute(window.location.pathname).catch(() => undefined)]).then(() => {
   if (container.hasChildNodes()) {
     hydrateRoot(container, app);
   } else {

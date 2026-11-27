@@ -16,6 +16,7 @@ const events = (page: Page) => page.evaluate(() => ((window as unknown as { __ev
 test('tel click fires Phone Click', async ({ page }) => {
   await stub(page);
   await page.goto('/services/condominium-management');
+  await page.waitForSelector('html[data-app-ready]');
   await page.locator('a[href^="tel:"]').first().click({ force: true });
   const hit = (await events(page)).find((e) => e.name === 'Phone Click');
   expect(hit, 'Phone Click fired').toBeTruthy();
@@ -25,6 +26,7 @@ test('tel click fires Phone Click', async ({ page }) => {
 test('mailto click fires Email Click', async ({ page }) => {
   await stub(page);
   await page.goto('/contact');
+  await page.waitForSelector('html[data-app-ready]');
   await page.locator('a[href^="mailto:"]').first().click({ force: true });
   const hit = (await events(page)).find((e) => e.name === 'Email Click');
   expect(hit, 'Email Click fired').toBeTruthy();
@@ -34,6 +36,7 @@ test('mailto click fires Email Click', async ({ page }) => {
 test('guide proposal button fires Proposal CTA Click', async ({ page }) => {
   await stub(page);
   await page.goto('/blog/switch-condo-management-companies-chicago');
+  await page.waitForSelector('html[data-app-ready]');
   await page.locator('[data-proposal-cta="end"] a[href^="/contact"]').first().click({ force: true });
   const hit = (await events(page)).find((e) => e.name === 'Proposal CTA Click');
   expect(hit, 'Proposal CTA Click fired').toBeTruthy();

@@ -1,43 +1,69 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, lazy, Suspense } from 'react';
+import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
+import { useEffect, lazy, Suspense, type ComponentType } from 'react';
 import Layout from './components/layout/Layout';
 
 // Public pages are imported eagerly so the prerendered HTML hydrates in place
 // instead of suspending into a spinner (see main.tsx). Keep this route table in
 // sync with entry-server.tsx.
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import CondominiumManagement from './pages/services/CondominiumManagement';
-import HOAManagement from './pages/services/HOAManagement';
-import TownhomeManagement from './pages/services/TownhomeManagement';
-import FinancialManagement from './pages/services/FinancialManagement';
-import MaintenanceCoordination from './pages/services/MaintenanceCoordination';
-import BoardSupport from './pages/services/BoardSupport';
-import ViolationManagement from './pages/services/ViolationManagement';
-import HighRiseManagement from './pages/services/HighRiseManagement';
-import SmallCondoManagement from './pages/services/SmallCondoManagement';
-import ResaleDisclosures from './pages/services/ResaleDisclosures';
-import ServiceAreas from './pages/ServiceAreas';
-import ChicagoPage from './pages/ChicagoPage';
-import NorthShorePage from './pages/NorthShorePage';
-import Pricing from './pages/Pricing';
-import Reviews from './pages/Reviews';
-import NeighborhoodPage from './pages/NeighborhoodPage';
-import Blog from './pages/Blog';
-import BlogTopic from './pages/BlogTopic';
-import BlogPost from './pages/BlogPost';
-import Contact from './pages/Contact';
-import ContactThanks from './pages/ContactThanks';
-import Resources from './pages/Resources';
-import CondoLiving from './pages/CondoLiving';
-import AiInfo from './pages/AiInfo';
-import CompareProposals from './pages/CompareProposals';
-import BoardToolkit from './pages/BoardToolkit';
-import AuthorMirsadCerimovic from './pages/AuthorMirsadCerimovic';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
-import NotFound from './pages/NotFound';
+/**
+ * R2: each page is its own chunk. A page loaded before hydration renders
+ * directly, so the markup matches the prerendered HTML with no Suspense
+ * boundary in between. A page reached by a link inside the site loads on
+ * demand behind a small spinner. The prerender uses its own eager route table
+ * (src/entry-server.tsx).
+ */
+type Preloadable = ComponentType & { preload: () => Promise<void> };
+function page(loader: () => Promise<{ default: ComponentType }>): Preloadable {
+  let Loaded: ComponentType | null = null;
+  const Lazy = lazy(loader);
+  const Page = (() =>
+    Loaded ? (
+      <Loaded />
+    ) : (
+      <Suspense fallback={<LoadingFallback />}>
+        <Lazy />
+      </Suspense>
+    )) as unknown as Preloadable;
+  Page.preload = () =>
+    loader().then((module) => {
+      Loaded = module.default;
+    });
+  return Page;
+}
+
+const Home = page(() => import('./pages/Home'));
+const About = page(() => import('./pages/About'));
+const Services = page(() => import('./pages/Services'));
+const CondominiumManagement = page(() => import('./pages/services/CondominiumManagement'));
+const HOAManagement = page(() => import('./pages/services/HOAManagement'));
+const TownhomeManagement = page(() => import('./pages/services/TownhomeManagement'));
+const FinancialManagement = page(() => import('./pages/services/FinancialManagement'));
+const MaintenanceCoordination = page(() => import('./pages/services/MaintenanceCoordination'));
+const BoardSupport = page(() => import('./pages/services/BoardSupport'));
+const ViolationManagement = page(() => import('./pages/services/ViolationManagement'));
+const HighRiseManagement = page(() => import('./pages/services/HighRiseManagement'));
+const SmallCondoManagement = page(() => import('./pages/services/SmallCondoManagement'));
+const ResaleDisclosures = page(() => import('./pages/services/ResaleDisclosures'));
+const ServiceAreas = page(() => import('./pages/ServiceAreas'));
+const ChicagoPage = page(() => import('./pages/ChicagoPage'));
+const NorthShorePage = page(() => import('./pages/NorthShorePage'));
+const Pricing = page(() => import('./pages/Pricing'));
+const Reviews = page(() => import('./pages/Reviews'));
+const NeighborhoodPage = page(() => import('./pages/NeighborhoodPage'));
+const Blog = page(() => import('./pages/Blog'));
+const BlogTopic = page(() => import('./pages/BlogTopic'));
+const BlogPost = page(() => import('./pages/BlogPost'));
+const Contact = page(() => import('./pages/Contact'));
+const ContactThanks = page(() => import('./pages/ContactThanks'));
+const Resources = page(() => import('./pages/Resources'));
+const CondoLiving = page(() => import('./pages/CondoLiving'));
+const AiInfo = page(() => import('./pages/AiInfo'));
+const CompareProposals = page(() => import('./pages/CompareProposals'));
+const BoardToolkit = page(() => import('./pages/BoardToolkit'));
+const AuthorMirsadCerimovic = page(() => import('./pages/AuthorMirsadCerimovic'));
+const PrivacyPolicy = page(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = page(() => import('./pages/TermsOfService'));
+const NotFound = page(() => import('./pages/NotFound'));
 
 // Staff-only page keeps its own chunk: it pulls Supabase auth/storage that the
 // public bundle should never pay for.
@@ -55,6 +81,47 @@ function CatchAllRoute() {
     return <NeighborhoodPage />;
   }
   return <NotFound />;
+}
+
+const PRELOAD_ROUTES: [string, Preloadable][] = [
+  ['/', Home],
+  ['/about', About],
+  ['/about/mirsad-cerimovic', AuthorMirsadCerimovic],
+  ['/services', Services],
+  ['/services/condominium-management', CondominiumManagement],
+  ['/services/hoa-management', HOAManagement],
+  ['/services/townhome-management', TownhomeManagement],
+  ['/services/financial-management', FinancialManagement],
+  ['/services/maintenance-coordination', MaintenanceCoordination],
+  ['/services/board-support', BoardSupport],
+  ['/services/violation-management', ViolationManagement],
+  ['/services/high-rise-condominium-management', HighRiseManagement],
+  ['/services/small-condo-association-management', SmallCondoManagement],
+  ['/services/resale-disclosures', ResaleDisclosures],
+  ['/service-areas', ServiceAreas],
+  ['/property-management-chicago', ChicagoPage],
+  ['/property-management-north-shore', NorthShorePage],
+  ['/pricing', Pricing],
+  ['/reviews', Reviews],
+  ['/blog', Blog],
+  ['/blog/topic/:topic', BlogTopic],
+  ['/blog/:slug', BlogPost],
+  ['/contact', Contact],
+  ['/contact/thanks', ContactThanks],
+  ['/resources', Resources],
+  ['/condo-living', CondoLiving],
+  ['/ai-info', AiInfo],
+  ['/tools/compare-management-proposals', CompareProposals],
+  ['/board-toolkit', BoardToolkit],
+  ['/privacy-policy', PrivacyPolicy],
+  ['/terms-of-service', TermsOfService],
+];
+
+/** Load the page for this URL before React hydrates. */
+export function preloadRoute(pathname: string): Promise<void> {
+  const hit = PRELOAD_ROUTES.find(([path]) => matchPath({ path, end: true }, pathname));
+  if (hit) return hit[1].preload();
+  return pathname.startsWith('/property-management-') ? NeighborhoodPage.preload() : NotFound.preload();
 }
 
 function ScrollToTop() {
