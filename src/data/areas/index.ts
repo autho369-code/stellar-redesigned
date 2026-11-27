@@ -39,12 +39,30 @@ import { streeterville } from './streeterville';
 import { lincolnwood } from './lincolnwood';
 import { uptown } from './uptown';
 import { andersonville } from './andersonville';
+import { loganSquare } from './logan-square';
+import { wickerPark } from './wicker-park';
+import { ukrainianVillage } from './ukrainian-village';
+import { roscoeVillage } from './roscoe-village';
+import { irvingPark } from './irving-park';
+import { portagePark } from './portage-park';
+import { edisonPark } from './edison-park';
+import { mayfair } from './mayfair';
+import { kenwood } from './kenwood';
+import { loop } from './loop';
+import { southLoop } from './south-loop';
+import { westLoop } from './west-loop';
+import { deerfield } from './deerfield';
+import { glencoe } from './glencoe';
+import { kenilworth } from './kenilworth';
+import { norridge } from './norridge';
+import { skokie } from './skokie';
+import { winnetka } from './winnetka';
 import type { AreaContent } from './types';
 
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville, parkRidge, desPlaines, mountProspect, arlingtonHeights, palatine, buffaloGrove, schaumburg, northfield].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville, parkRidge, desPlaines, mountProspect, arlingtonHeights, palatine, buffaloGrove, schaumburg, northfield, loganSquare, wickerPark, ukrainianVillage, roscoeVillage, irvingPark, portagePark, edisonPark, mayfair, kenwood, loop, southLoop, westLoop, deerfield, glencoe, kenilworth, norridge, skokie, winnetka].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {

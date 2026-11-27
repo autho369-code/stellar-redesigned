@@ -316,6 +316,7 @@ export const areaTypes: Array<{ id: string; label: string; areas: string[]; guid
       'verify-illinois-community-association-manager-license',
       'new-condo-board-member-first-30-days',
       'condo-hoa-annual-budget-workbook',
+      'condo-repairs-owner-vs-association-illinois',
     ],
   },
   {
