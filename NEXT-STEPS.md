@@ -3,6 +3,13 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **D9 + D11 (rest that needs no owner input)**: `/blog` has
+      topic chips above the guide list (links to the 4 hubs). `/about` has a
+      three-point timeline (1997, 2007, today; confirmed dates only) and the
+      approved contract line from `brand.contracts.line`. NOT built, on
+      purpose: sticky list on service pages (full-width sections, 8-10 long
+      headings, it does not fit), static map on area pages (no map image),
+      team cards (need names, roles, photos), brand-swap dry run.
 - [x] Nov 26: **D11 (form part)**: the board path of the contact form is
       three steps (Your association / Timing and priorities / You) with a
       progress bar, Back, inline errors, a per-tab draft (`sessionStorage`)
