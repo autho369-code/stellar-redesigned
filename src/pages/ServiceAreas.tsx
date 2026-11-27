@@ -5,6 +5,10 @@ import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
 import TrustBar from '../components/TrustBar';
 import { brand } from '../brand/brand.config';
+import { canonicalFaqs, faqPageSchema, SITE_URL } from '../data/business';
+
+/** Answer-first Q&A: the same canonical wording the homepage and /ai-info use. */
+const quickAnswers = [0, 1, 4, 5].map((i) => canonicalFaqs[i]);
 
 const sortedNeighborhoods = [...neighborhoods].sort((a, b) =>
   a.name.localeCompare(b.name)
@@ -38,6 +42,7 @@ export default function ServiceAreas() {
       name: n.region && n.region !== 'chicago' ? `${n.name}, IL` : `${n.name}, Chicago, IL`
     }))
   };
+  const faqSchema = { '@context': 'https://schema.org', ...faqPageSchema(`${SITE_URL}/service-areas#faq`, quickAnswers) };
 
   return (
     <>
@@ -48,6 +53,7 @@ export default function ServiceAreas() {
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
@@ -168,6 +174,21 @@ export default function ServiceAreas() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Quick answers ──────────────────────────────────────── */}
+      <section className="py-16 lg:py-20 bg-paper border-t border-slate-200">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10">
+          <h2 className="font-display font-light text-3xl lg:text-4xl text-ink mb-8">Quick answers</h2>
+          <dl className="divide-y divide-slate-200 border-y border-slate-200">
+            {quickAnswers.map(({ q, a }) => (
+              <div key={q} className="py-5 grid gap-2 sm:grid-cols-12">
+                <dt className="font-display text-xl text-ink sm:col-span-5">{q}</dt>
+                <dd className="text-slate-700 sm:col-span-7">{a}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

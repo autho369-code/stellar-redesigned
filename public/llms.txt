@@ -49,6 +49,65 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - [Renting out your Chicago condo: association rules and city law](https://www.stellarpropertygroup.com/blog/renting-out-your-condo-chicago-rules)
 - [First-time Chicago condo buyer's guide to the 22.1 disclosure](https://www.stellarpropertygroup.com/blog/first-time-condo-buyer-guide-chicago)
 
+## Neighborhood and suburb pages
+
+Each page covers local housing data, municipal rules and FAQs for condo, HOA and townhome boards in that area.
+
+### Chicago neighborhoods
+
+- [Albany Park association management](https://www.stellarpropertygroup.com/property-management-albany-park)
+- [Andersonville association management](https://www.stellarpropertygroup.com/property-management-andersonville)
+- [Arlington Heights association management](https://www.stellarpropertygroup.com/property-management-arlington-heights)
+- [Avondale association management](https://www.stellarpropertygroup.com/property-management-avondale)
+- [Bucktown association management](https://www.stellarpropertygroup.com/property-management-bucktown)
+- [Buffalo Grove association management](https://www.stellarpropertygroup.com/property-management-buffalo-grove)
+- [Deerfield association management](https://www.stellarpropertygroup.com/property-management-deerfield)
+- [Des Plaines association management](https://www.stellarpropertygroup.com/property-management-des-plaines)
+- [Edison Park association management](https://www.stellarpropertygroup.com/property-management-edison-park)
+- [Glencoe association management](https://www.stellarpropertygroup.com/property-management-glencoe)
+- [Gold Coast association management](https://www.stellarpropertygroup.com/property-management-gold-coast)
+- [Highland Park association management](https://www.stellarpropertygroup.com/property-management-highland-park)
+- [Irving Park association management](https://www.stellarpropertygroup.com/property-management-irving-park)
+- [Kenilworth association management](https://www.stellarpropertygroup.com/property-management-kenilworth)
+- [Kenwood association management](https://www.stellarpropertygroup.com/property-management-kenwood)
+- [Lake Forest association management](https://www.stellarpropertygroup.com/property-management-lake-forest)
+- [Lincoln Square association management](https://www.stellarpropertygroup.com/property-management-lincoln-square)
+- [Lincolnwood association management](https://www.stellarpropertygroup.com/property-management-lincolnwood)
+- [Logan Square association management](https://www.stellarpropertygroup.com/property-management-logan-square)
+- [Loop association management](https://www.stellarpropertygroup.com/property-management-loop)
+- [Mayfair association management](https://www.stellarpropertygroup.com/property-management-mayfair)
+- [Morton Grove association management](https://www.stellarpropertygroup.com/property-management-morton-grove)
+- [Mount Prospect association management](https://www.stellarpropertygroup.com/property-management-mount-prospect)
+- [Norridge association management](https://www.stellarpropertygroup.com/property-management-norridge)
+- [North Park association management](https://www.stellarpropertygroup.com/property-management-north-park)
+- [Northbrook association management](https://www.stellarpropertygroup.com/property-management-northbrook)
+- [Northfield association management](https://www.stellarpropertygroup.com/property-management-northfield)
+- [Old Town association management](https://www.stellarpropertygroup.com/property-management-old-town)
+- [Palatine association management](https://www.stellarpropertygroup.com/property-management-palatine)
+- [Park Ridge association management](https://www.stellarpropertygroup.com/property-management-park-ridge)
+- [Portage Park association management](https://www.stellarpropertygroup.com/property-management-portage-park)
+- [Ravenswood association management](https://www.stellarpropertygroup.com/property-management-ravenswood)
+- [River North association management](https://www.stellarpropertygroup.com/property-management-river-north)
+- [Rogers Park association management](https://www.stellarpropertygroup.com/property-management-rogers-park)
+- [Roscoe Village association management](https://www.stellarpropertygroup.com/property-management-roscoe-village)
+- [Schaumburg association management](https://www.stellarpropertygroup.com/property-management-schaumburg)
+- [Skokie association management](https://www.stellarpropertygroup.com/property-management-skokie)
+- [South Loop association management](https://www.stellarpropertygroup.com/property-management-south-loop)
+- [Streeterville association management](https://www.stellarpropertygroup.com/property-management-streeterville)
+- [Ukrainian Village association management](https://www.stellarpropertygroup.com/property-management-ukrainian-village)
+- [Uptown association management](https://www.stellarpropertygroup.com/property-management-uptown)
+- [West Loop association management](https://www.stellarpropertygroup.com/property-management-west-loop)
+- [Wicker Park association management](https://www.stellarpropertygroup.com/property-management-wicker-park)
+- [Winnetka association management](https://www.stellarpropertygroup.com/property-management-winnetka)
+
+### North Shore communities
+
+
+
+### Northwest suburbs and nearby Cook County villages
+
+
+
 ## Business facts
 
 - Association management only: condominiums, HOAs, and townhome communities; no apartment-rental management
@@ -60,6 +119,7 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - Best fit: condo, HOA and townhome boards in Chicago and the North Shore, from small vintage buildings to high-rises
 - Pricing: customized flat-fee management starting at $30 per unit per month, everything included, with no extra fees
 - Capital projects: no separate capital-project planning or management-oversight fee; third-party professional and contractor costs remain association expenses
+- Contract terms: No long-term contracts — cancel with 60 days notice
 - Established: 2007
 - Illinois Community Association Management Firm license: 291000211
 - Memberships: Community Associations Institute and CAI Illinois Chapter

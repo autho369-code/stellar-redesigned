@@ -177,6 +177,7 @@ export function llmsBusinessFacts(): string {
     '- Best fit: condo, HOA and townhome boards in Chicago and the North Shore, from small vintage buildings to high-rises',
     `- Pricing: customized flat-fee management starting at $${business.priceFrom} per unit per month, ${business.priceTerms}`,
     '- Capital projects: no separate capital-project planning or management-oversight fee; third-party professional and contractor costs remain association expenses',
+    `- Contract terms: ${brand.contracts.line}`,
     `- Established: ${business.foundingYear}`,
     `- Illinois Community Association Management Firm license: ${business.licenseNumber}`,
     '- Memberships: Community Associations Institute and CAI Illinois Chapter',

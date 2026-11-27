@@ -57,12 +57,13 @@ import { kenilworth } from './kenilworth';
 import { norridge } from './norridge';
 import { skokie } from './skokie';
 import { winnetka } from './winnetka';
+import { goldCoast } from './gold-coast';
 import type { AreaContent } from './types';
 
 export type { AreaContent } from './types';
 
 export const areaContent: Record<string, AreaContent> = Object.fromEntries(
-  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville, parkRidge, desPlaines, mountProspect, arlingtonHeights, palatine, buffaloGrove, schaumburg, northfield, loganSquare, wickerPark, ukrainianVillage, roscoeVillage, irvingPark, portagePark, edisonPark, mayfair, kenwood, loop, southLoop, westLoop, deerfield, glencoe, kenilworth, norridge, skokie, winnetka].map((area) => [area.slug, area]),
+  [rogersPark, edgewater, lincolnSquare, lakeview, lincolnPark, ravenswood, wilmette, lakeForest, avondale, riverNorth, mortonGrove, evanston, glenview, oldTown, highlandPark, northbrook, albanyPark, northPark, bucktown, streeterville, lincolnwood, uptown, andersonville, parkRidge, desPlaines, mountProspect, arlingtonHeights, palatine, buffaloGrove, schaumburg, northfield, loganSquare, wickerPark, ukrainianVillage, roscoeVillage, irvingPark, portagePark, edisonPark, mayfair, kenwood, loop, southLoop, westLoop, deerfield, glencoe, kenilworth, norridge, skokie, winnetka, goldCoast].map((area) => [area.slug, area]),
 );
 
 export function getAreaContent(slug: string): AreaContent | undefined {
