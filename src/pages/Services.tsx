@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import TrustBar from '../components/TrustBar';
 
 interface ServiceItem {
   n: string;
@@ -177,6 +178,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── The Index ──────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white">

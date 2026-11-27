@@ -141,6 +141,8 @@ export function distFileFor(route) {
 export function contentHash(html) {
   const main = html.match(/<main\b[^>]*>([\s\S]*)<\/main>/i)?.[1] ?? html;
   const text = main
+    // The trust bar is the same strip on every page, like the header.
+    .replace(/<section\b[^>]*\bdata-trust-bar\b[\s\S]*?<\/section>/gi, ' ')
     .replace(/<(script|style|svg|noscript)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&nbsp;/g, ' ')

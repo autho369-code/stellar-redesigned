@@ -26,6 +26,8 @@ function shingles(slug) {
   if (!html.includes(`data-area-upgraded="${slug}"`)) throw new Error(`[uniqueness] ${slug} has a content file but did not render with the upgraded layout`);
   const main = html.match(/<main\b[^>]*>([\s\S]*)<\/main>/)?.[1] ?? '';
   const words = main
+    // The trust bar is the same strip on every page, like the header.
+    .replace(/<section\b[^>]*\bdata-trust-bar\b[\s\S]*?<\/section>/gi, ' ')
     .replace(/<(script|style|svg)\b[\s\S]*?<\/\1>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&[a-z#0-9]+;/gi, ' ')

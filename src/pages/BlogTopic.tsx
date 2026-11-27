@@ -11,6 +11,7 @@ import {
   getPostCluster,
   type ContentCluster,
 } from '../data/content-silos';
+import TrustBar from '../components/TrustBar';
 
 const topicSeo: Record<ContentCluster, { title: string; description: string; intro: string }> = {
   governance: {
@@ -114,6 +115,7 @@ export default function BlogTopic() {
           </div>
         </div>
       </header>
+      <TrustBar />
 
       <main className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-14 lg:gap-20">

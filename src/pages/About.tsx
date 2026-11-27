@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { canonicalFaqs, faqPageSchema, SITE_URL } from '../data/business';
+import TrustBar from '../components/TrustBar';
 
 // Short FAQ for /about: the canonical answers about who the firm is.
 const aboutFaqs = canonicalFaqs.filter((f) =>
@@ -202,6 +203,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       {/* ── Company Story ──────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white">

@@ -7,6 +7,7 @@ import { business, PORTFOLIO } from '../data/business';
 import type { AreaContent } from '../data/areas';
 import type { Neighborhood } from '../data/neighborhoods';
 import { publishedStellarData } from '../data/stellarData';
+import TrustBar from '../components/TrustBar';
 
 interface GuideLink { slug: string; title: string; category: string }
 
@@ -146,6 +147,7 @@ export default function AreaPageUpgraded({ neighborhood, content, guides, guideT
             </p>
           </div>
         </section>
+        <TrustBar />
 
         {/* ── Buildings ────────────────────────────────────────── */}
         {content.buildingTypes.length > 0 && (

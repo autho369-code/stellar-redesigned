@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, Phone, Plus } from 'lucide-react';
 import { neighborhoods } from '../data/neighborhoods';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business } from '../data/business';
+import TrustBar from '../components/TrustBar';
 
 // Glenview leads: it is the flagship North Shore market.
 const northShoreCommunities = neighborhoods
@@ -137,6 +138,7 @@ export default function NorthShorePage() {
           </div>
         </div>
       </section>
+      <TrustBar />
 
       <section className="py-24 lg:py-32 bg-white border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

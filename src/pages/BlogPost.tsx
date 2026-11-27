@@ -15,6 +15,7 @@ import SeriesNav from '../components/seo/SeriesNav';
 import NearbyAreas from '../components/seo/NearbyAreas';
 import { getClusterFor, getNearbyAreas, getSeriesNav } from '../data/clusters';
 import { getAreasLinkingPost } from '../data/areas';
+import TrustBar from '../components/TrustBar';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -259,6 +260,7 @@ export default function BlogPost() {
           </p>
         </div>
       </header>
+      <TrustBar />
 
       {/* ── Post Content ───────────────────────────────────────── */}
       <article className="bg-white border-t border-slate-200 py-16 lg:py-24">

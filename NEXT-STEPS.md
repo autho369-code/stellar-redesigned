@@ -3,6 +3,16 @@
 Updated: 2026-11-26. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 26: **Trust bar now under every hero** (branch `r3-trustbar-rest`):
+      added to the 43 area pages (both templates), Chicago, North Shore,
+      Service Areas, Services, Blog, the 4 topic hubs, all guides and About.
+      Not on contact, legal, tools or resident pages. The page-date and
+      uniqueness scripts now skip `[data-trust-bar]` (it is a sitewide strip,
+      like the header), so adding it did not change any guide or area date.
+      On phones the bar is six lines (about 190 px); shorten it if it hurts.
+- [ ] **Next phase: R4** (homepage redesign and fee estimator). Read
+      `docs/redesign-prompts/R4_homepage_redesign_and_fee_estimator.md` and
+      section 8.2 of the plan PDF first. Own branch, own preview.
 - [x] Nov 26: **Plan PDF replaced with the newer version** (18 pages, made
       13:17; the one saved before was the 13:05 draft, 17 pages).
       `docs/redesign-prompts/Stellar_Redesign_Plan.pdf`. What is new in it:
@@ -42,8 +52,7 @@ Updated: 2026-11-26. Every session reads this first and updates it at the end.
       back without measuring.
 - [ ] **R3 leftovers:** (1) the rest of the shadcn kit (button, card,
       accordion, dialog, tabs, form fields...) is added when a phase first
-      needs each piece; only `sheet` exists. (2) Trust bar under the hero of
-      the area pages, hubs and guides. (3) Menu "Popular areas" is ordered by
+      needs each piece; only `sheet` exists. (3) Menu "Popular areas" is ordered by
       Search Console impressions (clicks per page are too few); re-rank in
       `topNeighborhoods` when clicks exist. (4) The header no longer shows the
       tagline under the logo on desktop (it did not fit on one line with six
