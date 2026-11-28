@@ -1,4 +1,5 @@
 import { brand } from '../brand/brand.config';
+import OfficeHallwayImage from '../components/OfficeHallwayImage';
 import HeroOffer from '../components/HeroOffer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -177,6 +178,13 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Workspace image (decorative, general office photo) ─── */}
+      <section className="bg-white pb-24 lg:pb-32" aria-label="Workspace">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <OfficeHallwayImage />
         </div>
       </section>
 
