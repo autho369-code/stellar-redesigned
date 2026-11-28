@@ -1222,7 +1222,8 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
-    "BreadcrumbList"
+    "BreadcrumbList",
+    "VideoObject"
    ]
   },
   {
@@ -1263,7 +1264,8 @@
    "jsonLdTypes": [
     "Article",
     "BreadcrumbList",
-    "FAQPage"
+    "FAQPage",
+    "VideoObject"
    ]
   },
   {
@@ -1383,7 +1385,8 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
-    "BreadcrumbList"
+    "BreadcrumbList",
+    "VideoObject"
    ]
   },
   {

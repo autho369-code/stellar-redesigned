@@ -18,6 +18,8 @@ import { getAreasLinkingPost } from '../data/areas';
 import TrustBar from '../components/TrustBar';
 import ArticleToc, { type TocHeading } from '../components/ArticleToc';
 import { brand } from '../brand/brand.config';
+import GuideVideo from '../components/GuideVideo';
+import { getGuideVideo, videoObjectSchema } from '../data/guide-videos';
 
 const ENTITIES: Record<string, string> = {
   amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', rsquo: '’', lsquo: '‘',
@@ -101,6 +103,7 @@ function formatDate(dateString: string): string {
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPostBySlug(slug) : undefined;
+  const guideVideo = post ? getGuideVideo(post.slug) : undefined;
 
   // In the browser the bundle carries no article bodies. Arriving by a link
   // inside the site, load this guide's body, then render again.
@@ -246,6 +249,11 @@ export default function BlogPost() {
             {JSON.stringify(faqSchema)}
           </script>
         )}
+        {guideVideo && (
+          <script type="application/ld+json">
+            {JSON.stringify(videoObjectSchema(guideVideo))}
+          </script>
+        )}
       </Helmet>
 
       {/* ── Header ─────────────────────────────────────────────── */}
@@ -314,6 +322,7 @@ export default function BlogPost() {
           </div>
         )}
         <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
+          {guideVideo && <GuideVideo video={guideVideo} />}
           {bodyParts ? (
             <>
               <div data-article-body className={PROSE_CLASS} dangerouslySetInnerHTML={{ __html: bodyParts[0] }} />
