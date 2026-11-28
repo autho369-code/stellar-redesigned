@@ -151,6 +151,7 @@ export const scheduledDeadlines2027Posts: BlogPost[] = [
   {
     slug: 'fannie-freddie-condo-reserve-15-percent-2027',
     title: 'Fannie Mae and Freddie Mac Raise the Condo Reserve Minimum to 15%: What Boards Must Do for the 2027 Budget',
+    seoTitle: 'Fannie Mae 15% Condo Reserve Rule: 2027 Budget Steps',
     metaDescription:
       'Fannie Mae and Freddie Mac raise the condo reserve minimum from 10% to 15% for loan applications from January 4, 2027. What boards must change in budgets.',
     date: '2026-10-23',

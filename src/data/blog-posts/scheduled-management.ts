@@ -517,6 +517,7 @@ export const scheduledManagementPosts: BlogPost[] = [
   {
     slug: 'verify-illinois-community-association-manager-license',
     title: 'How to Verify an Illinois Community Association Manager License',
+    seoTitle: 'Verify an Illinois Association Manager (CAM) License',
     metaDescription:
       'A step-by-step guide for Illinois condo and HOA boards: verify a community association manager and management firm license with IDFPR before signing.',
     date: '2026-09-10',
