@@ -3,6 +3,22 @@
 Updated: 2026-11-27. Every session reads this first and updates it at the end.
 
 ## For Claude
+- [x] Nov 27 evening: **Full-scope audit pass (PRs #96, #97).** Status of every audit item:
+      `/workspace/orion-kb/full_scope_status_2026-11-27.md` (58 checks: 40 done, 9 fixed now,
+      5 need Mirsad, 4 excluded by owner rule). Shipped: chat launcher scroll-reveal on phones
+      (tests at 320-430 px pass on production), axe 0 findings on 185 live pages, tel: links in
+      +1 format, 34 meta descriptions trimmed, `npm run brand:dry-run` + `docs/BRAND-SWAP.md`,
+      `npm run seo:diff`, rollback notes. **Daily publisher fix (#97):** `seo:verify-silos`
+      (a step in the publish workflow, not in PR CI) was failing on main because 26 guides had
+      no cluster; all 112 guides are now clustered and a scheduled guide joins clusters on its
+      own day. Every publish day Nov 28 - Dec 9 was simulated end to end. The 11 scheduled guides
+      were upgraded (short answer first, depth, sources, links, titles <=60, meta <=160); the
+      replace-company guide was repositioned to avoid overlap with the switch guide.
+      BreadcrumbList on all guides; llms.txt and llms-full.txt list the 30 newest guides each
+      build. Before adding a guide: give it a `seoTitle`, a cluster entry (`clusters.ts`), a
+      `post-silos.ts` entry, one link per URL, and a link to its cluster pillar.
+      Still for Mirsad: privacy/terms keep-or-remove, own storefront photo, estimator multiplier,
+      Vercel production deployment ID (rollback note), duplicate blog post list.
 - [x] Nov 27 PM: **AEO push (PR #94, `35fcc10`):** new `/how-to-choose-condo-management-company-chicago`
       (answer block, eight checks, service models, IDFPR / 225 ILCS 427/50 sources, FAQPage + Article
       + Breadcrumb schema); homepage FAQ answers for "best condo management company in Chicago" and
