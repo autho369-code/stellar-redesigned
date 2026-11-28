@@ -69,7 +69,7 @@ export const edisonPark: AreaContent = {
       title: 'Enforcing rules evenly',
       body:
         'A written enforcement process helps the board treat every owner the same, which is the strongest defense when a rule is challenged.',
-      post: 'are-hoa-condo-rules-enforceable-illinois',
+      post: 'adopting-enforcing-condo-hoa-rules-illinois',
       linkText: 'whether HOA and condo rules are enforceable in Illinois',
     },
     {

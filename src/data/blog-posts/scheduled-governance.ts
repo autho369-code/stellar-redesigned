@@ -375,7 +375,10 @@ export const scheduledGovernancePosts: BlogPost[] = [
 
       <p>This article is educational information for Illinois association boards and is not legal advice. Rulemaking and enforcement provisions differ between the Illinois Condominium Property Act and CICAA, and your association's counsel should interpret your declaration, bylaws, and the current statute before your board adopts or enforces a rule.</p>
 
-      <p>Read next: <a href="/blog/are-hoa-condo-rules-enforceable-illinois">Whether association rules are enforceable</a>; <a href="/blog/illinois-association-fines-notice-hearing">the notice and hearing required before a fine</a>.</p>
+      <p>Read next: <a href="/blog/common-condo-rule-violations-chicago">the rule violations Chicago boards see most</a>; <a href="/blog/illinois-association-fines-notice-hearing">the notice and hearing required before a fine</a>.</p>
+
+      <h2>Where do rules most often run into trouble?</h2>
+      <p>Some limits sit above the association's rulebook entirely. A blanket "no pets" policy, for example, cannot override the federal Fair Housing Act, which requires associations to allow assistance animals as a reasonable accommodation for residents with disabilities. Leasing and short-term-rental restrictions are generally permissible in Illinois, but they must be validly adopted, and boards should get legal advice on how a new restriction applies to current owners. The most common failure point, though, is simpler: rules adopted without a proper meeting, or enforced against one owner while others are ignored.</p>
 
       <h2>Review Your Rules With Us</h2>
       <p>Stellar Property Management helps condominium, HOA, and townhome boards consolidate and administer rules across <a href="/property-management-chicago">Chicago</a> and the North Shore. <a href="/contact">Schedule a consultation</a> for a rules and enforcement review.</p>

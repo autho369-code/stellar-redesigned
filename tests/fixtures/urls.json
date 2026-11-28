@@ -444,7 +444,7 @@
    "title": "Privacy Policy | Stellar Property Management",
    "h1": "Privacy Policy.",
    "h1Count": 1,
-   "description": "How Stellar Property Management collects, uses, and protects personal information submitted through stellarpropertygroup.com. No advertising cookies or data selling.",
+   "description": "How Stellar Property Management collects, uses, and protects personal information from forms, chat and analytics on stellarpropertygroup.com. We do not sell your data.",
    "canonical": "https://www.stellarpropertygroup.com/privacy-policy",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": []
@@ -454,7 +454,7 @@
    "title": "Terms of Service | Stellar Property Management",
    "h1": "Terms of Service.",
    "h1Count": 1,
-   "description": "Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement.",
+   "description": "Terms of use for stellarpropertygroup.com: website use, chat and form rules, third-party portal terms, fair housing commitment, accessibility and Illinois governing law.",
    "canonical": "https://www.stellarpropertygroup.com/terms-of-service",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": []
@@ -1173,19 +1173,6 @@
    ]
   },
   {
-   "path": "/blog/are-hoa-condo-rules-enforceable-illinois",
-   "title": "Are HOA and Condo Rules Legally Enforceable in Illinois?",
-   "h1": "Are HOA and Condo Rules Legally Enforceable in Illinois?",
-   "h1Count": 1,
-   "description": "Illinois condo and HOA rules are enforceable only when properly adopted, reasonable and consistently applied. What makes a rule hold up in practice.",
-   "canonical": "https://www.stellarpropertygroup.com/blog/are-hoa-condo-rules-enforceable-illinois",
-   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-   "jsonLdTypes": [
-    "Article",
-    "BreadcrumbList"
-   ]
-  },
-  {
    "path": "/blog/can-condo-boards-enter-your-unit-illinois",
    "title": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Ex…",
    "h1": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Explained",
@@ -1249,19 +1236,6 @@
     "Article",
     "BreadcrumbList",
     "FAQPage"
-   ]
-  },
-  {
-   "path": "/blog/condo-reserve-funds-explained",
-   "title": "Condo Reserve Funds Explained: Why So Many Associations Are…",
-   "h1": "Condo Reserve Funds Explained: Why So Many Associations Are Underfunded",
-   "h1Count": 1,
-   "description": "A clear guide to condo reserve funds and reserve studies: what they are, why many Illinois associations are underfunded, and what underfunding costs.",
-   "canonical": "https://www.stellarpropertygroup.com/blog/condo-reserve-funds-explained",
-   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-   "jsonLdTypes": [
-    "Article",
-    "BreadcrumbList"
    ]
   },
   {

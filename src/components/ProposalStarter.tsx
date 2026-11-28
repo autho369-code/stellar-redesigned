@@ -35,8 +35,9 @@ export default function ProposalStarter({ className = '' }: { className?: string
     >
       <h2 className="font-display text-2xl leading-snug text-ink">Get your exact flat fee</h2>
       <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
-        Pricing starts at ${brand.pricing.startingPerUnit} per unit per month, {brand.pricing.terms}. Your exact flat fee is set after a
-        walkthrough of your building, and it comes in a written proposal.
+        Pricing starts at ${brand.pricing.startingPerUnit} per unit per month, {brand.pricing.terms}. The price goes up depending on your
+        building&rsquo;s condition and needs. Your exact flat fee is set after a walkthrough of your building, and it comes in a
+        written proposal.
       </p>
 
       <label htmlFor="starter-units" className="mt-6 block text-sm font-semibold text-ink">

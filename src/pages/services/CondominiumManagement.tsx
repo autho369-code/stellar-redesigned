@@ -259,7 +259,7 @@ export default function CondominiumManagement() {
             <Link to="/services/financial-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
               The financial management practice <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/blog/condo-reserve-funds-explained" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
+            <Link to="/blog/reasonable-reserves-illinois-condo-law" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">
               Why reserves fall behind — and how to fix it <ArrowRight className="w-4 h-4" />
             </Link>
             <Link to="/services/small-condo-association-management" className="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 transition-colors">

@@ -167,7 +167,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education and not legal, engineering, or accounting advice. Your association's governing documents control, and your attorney, reserve provider, and accountant should be consulted on your association's specific facts.</p>
 
-      <p>Also useful: <a href="/blog/condo-reserve-funds-explained">Condo reserve funds explained</a>; <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
+      <p>Also useful: <a href="/blog/reasonable-reserves-illinois-condo-law">what “reasonable reserves” means under Illinois law</a>.</p>
 
       <p>Our <a href="/services/financial-management">financial management</a> team builds reserve funding scenarios boards can actually vote on. If your association serves <a href="/property-management-chicago">Chicago</a> or North Shore owners and your reserve line has not changed in years, <a href="/contact">request a consultation</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
@@ -339,6 +339,17 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>Whether the board fully funds the study recommendation, phases toward it over a defined period, or adopts a lower contribution for stated reasons, the decision belongs in the minutes with its reasoning. "The board reviewed the 2026 reserve study, noted the projected 2031 elevator modernization, and adopted a three-year phase-in to the recommended contribution" is a defensible record. Silence is not.</p>
 
+      <h2>Why do so many associations end up underfunded?</h2>
+
+      <ul>
+        <li><strong>Dues kept artificially low.</strong> Boards and developers often hold assessments down to attract buyers or avoid owner backlash, leaving nothing for the future.</li>
+        <li><strong>No reserve study.</strong> If no one has measured the real number, the reserve target is a comfortable guess.</li>
+        <li><strong>Reserves used for operations.</strong> When the operating budget falls short, reserves get borrowed and rarely repaid.</li>
+        <li><strong>Inflation.</strong> Replacement costs have climbed faster than old funding plans assumed.</li>
+      </ul>
+
+      <p>State law is only part of the picture. Fannie Mae and Freddie Mac scrutinize reserves and deferred maintenance when reviewing condominium projects for financing eligibility. An underfunded association can make units harder to buy, sell, or refinance, which quietly erodes every owner’s property value.</p>
+
       <h2>Communicating the reserve line to owners</h2>
 
       <p>Reserve increases are the least popular line in any budget until owners understand the alternative. Frame it concretely: the choice is not between paying and not paying. It is between predictable monthly funding and an unpredictable special assessment that lands on whoever owns the unit that year. Show the projected low point from the study. Show the per-unit monthly difference. Owners who see the arithmetic argue less than owners who see only a percentage increase.</p>
@@ -359,7 +370,7 @@ export const scheduledFinancePosts: BlogPost[] = [
 
       <p>This article is general education for Illinois association boards and is not legal or accounting advice. Your governing documents control, and your association's attorney and accountant should confirm current requirements and apply them to your association's facts.</p>
 
-      <p>Related reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/condo-reserve-funds-explained">why so many reserve funds are underfunded</a>.</p>
+      <p>Related reading: <a href="/blog/how-to-read-condo-reserve-study">Reading your reserve study before the budget</a>; <a href="/blog/fannie-freddie-condo-reserve-15-percent-2027">Fannie Mae and Freddie Mac reserve requirements</a>.</p>
 
       <p>Stellar's <a href="/services/financial-management">financial management</a> practice builds the documentation trail behind reserve decisions so boards can defend them years later. If your condominium association is heading into budget season without a current reserve basis, <a href="/contact">schedule a consultation</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>

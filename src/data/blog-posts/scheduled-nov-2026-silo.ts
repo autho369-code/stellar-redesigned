@@ -472,7 +472,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <h2>Does the board have authority to act on a complaint?</h2>
 
-      <p>Only if a rule, the declaration or the bylaws covers the conduct. Before acting, find the provision: a pet rule, a nuisance clause, a flooring or noise rule, a smoking restriction. If nothing covers it, the board may be able to adopt a rule, but it cannot enforce one that does not exist yet. See <a href="/blog/are-hoa-condo-rules-enforceable-illinois">what makes a rule enforceable</a>.</p>
+      <p>Only if a rule, the declaration or the bylaws covers the conduct. Before acting, find the provision: a pet rule, a nuisance clause, a flooring or noise rule, a smoking restriction. If nothing covers it, the board may be able to adopt a rule, but it cannot enforce one that does not exist yet. See <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">what makes a rule enforceable</a>.</p>
 
       <h2>What should happen when a complaint comes in?</h2>
 
@@ -498,7 +498,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <h2>How does the board stay fair?</h2>
 
-      <p>Treat every owner the same, including board members and their friends. Keep the file factual. Decide at a properly noticed meeting. And keep the rule set small: rules nobody enforces teach owners that no rule matters. Read <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">adopting and enforcing association rules</a> for the full approach.</p>
+      <p>Treat every owner the same, including board members and their friends. Keep the file factual. Decide at a properly noticed meeting. And keep the rule set small: rules nobody enforces teach owners that no rule matters.</p>
 
             <h2>What should a written complaint process include?</h2>
 

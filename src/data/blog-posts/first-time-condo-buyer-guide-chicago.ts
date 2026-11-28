@@ -37,7 +37,7 @@ export const firstTimeCondoBuyerGuideChicago = {
 
 <h2>How to Read the Budget Like a Lender</h2>
 <ul>
-<li><strong>Reserve contribution:</strong> a meaningful monthly transfer to reserves is the single best indicator of a board that plans. Our <a href="/blog/condo-reserve-funds-explained">reserve fund guide</a> explains the benchmarks.</li>
+<li><strong>Reserve contribution:</strong> a meaningful monthly transfer to reserves is the single best indicator of a board that plans. Our <a href="/blog/reasonable-reserves-illinois-condo-law">reserve fund guide</a> explains the benchmarks.</li>
 <li><strong>Insurance line:</strong> current, adequate master coverage — underinsured buildings fail lender project reviews, which constrains your future buyer pool.</li>
 <li><strong>Special assessment history:</strong> ask for five years. A pattern of surprises is a management style, and you are buying it. Our <a href="/blog/condo-special-assessments-illinois">special assessments guide</a> covers what owners can expect.</li>
 <li><strong>Delinquency report:</strong> when neighbors don't pay, the building runs on the owners who do — including you.</li>

@@ -142,7 +142,7 @@ export default function Pricing() {
               <h1 className="font-display font-light text-5xl sm:text-6xl lg:text-7xl text-ink leading-[1.02] text-balance">Chicago condo management starting at <em className="font-medium text-gold-600">$30 per unit.</em></h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
-              <p className="text-lg text-slate-600 font-light leading-relaxed mb-3"><strong className="font-medium text-ink">Pricing starts at $30 per unit per month, everything included, with no extra fees.</strong> Your final price is a property-specific flat monthly fee based on the agreed management scope.</p>
+              <p className="text-lg text-slate-600 font-light leading-relaxed mb-3"><strong className="font-medium text-ink">Pricing starts at $30 per unit per month, everything included, with no extra fees.</strong> The price goes up depending on your building’s condition and needs, so your final price is a property-specific flat monthly fee based on the agreed management scope.</p>
               <p className="text-sm text-slate-500 leading-relaxed mb-8">No percentage-of-budget pricing and no separate capital-project oversight fee.</p>
               <Link to="/contact?inquiry=quote&source=pricing" className="group inline-flex items-center gap-3 bg-ink text-paper hover:bg-navy-700 px-8 py-4 text-sm font-medium transition-colors">Request Your Exact Quote <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /></Link>
               <HeroOffer className="mt-6" />
@@ -160,7 +160,7 @@ export default function Pricing() {
               <div className="border border-gold-300 bg-ivory-50 p-8 lg:p-10">
                 <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-4">Management starts at</p>
                 <p className="font-display text-6xl lg:text-7xl text-ink leading-none">$30<span className="text-2xl text-gold-600">/unit</span></p>
-                <p className="text-sm text-slate-600 mt-4">per month, with a customized flat monthly fee</p>
+                <p className="text-sm text-slate-600 mt-4">per month, with a customized flat monthly fee that goes up depending on building condition and needs</p>
               </div>
               <p className="mt-6 text-sm text-slate-500 leading-relaxed">This starting price is informational and is not a binding quote. Every proposal defines the exact management scope and monthly fee before your board signs. Pricing information current as of November 2026.</p>
             </div>

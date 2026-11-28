@@ -586,7 +586,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
         <li><strong>What is not covered.</strong> A plain statement that painted, lighted, landscaped or similar depictions, and flags other than those the statute defines, are governed by the association's architectural rules.</li>
       </ol>
 
-      <p>Have counsel review it, and adopt it through your ordinary rules process. Our guide to <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">adopting and enforcing rules in Illinois</a> covers that process, and <a href="/blog/are-hoa-condo-rules-enforceable-illinois">whether your rules are enforceable</a> covers why a rule that conflicts with a statute is not a rule.</p>
+      <p>Have counsel review it, and adopt it through your ordinary rules process. Our guide to <a href="/blog/adopting-enforcing-condo-hoa-rules-illinois">adopting and enforcing rules in Illinois</a> covers that process. A rule that conflicts with a statute is not a rule.</p>
 
       <h2>What about political signs, pride flags and other banners?</h2>
 

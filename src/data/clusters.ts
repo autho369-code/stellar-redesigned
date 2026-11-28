@@ -57,9 +57,8 @@ const allClusters: Cluster[] = [
     money: '/services/financial-management',
     members: [
       { slug: 'reasonable-reserves-illinois-condo-law', areas: ['edgewater', 'uptown', 'rogers-park'], cross: ['vintage-chicago-condo-capital-planning'] },
-      { slug: 'condo-reserve-funds-explained', areas: ['kenwood', 'south-loop', 'edgewater'], siblings: ['fannie-freddie-condo-reserve-15-percent-2027'] },
       { slug: 'how-to-read-condo-reserve-study', areas: ['west-loop', 'loop', 'edgewater'], siblings: ['fannie-freddie-condo-reserve-15-percent-2027'] },
-      { slug: 'fannie-freddie-condo-reserve-15-percent-2027', areas: ['uptown', 'rogers-park', 'edgewater'], siblings: ['condo-reserve-funds-explained'] },
+      { slug: 'fannie-freddie-condo-reserve-15-percent-2027', areas: ['uptown', 'rogers-park', 'edgewater'], siblings: ['how-to-read-condo-reserve-study'] },
       { slug: 'fannie-freddie-condo-eligibility-board-guide', areas: ['kenwood', 'south-loop', 'west-loop'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
       { slug: 'illinois-association-reserve-funds-fdic-coverage', areas: ['loop', 'edgewater', 'uptown'], siblings: ['condo-hoa-capital-project-loan-preparation', 'fannie-freddie-condo-eligibility-board-guide'] },
       { slug: 'condo-hoa-capital-project-loan-preparation', areas: ['rogers-park', 'kenwood', 'lakeview'], siblings: ['illinois-association-reserve-funds-fdic-coverage'] },
@@ -145,8 +144,7 @@ const allClusters: Cluster[] = [
     money: '/services/violation-management',
     members: [
       { slug: 'adopting-enforcing-condo-hoa-rules-illinois', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], cross: ['renting-out-your-condo-chicago-rules'] },
-      { slug: 'are-hoa-condo-rules-enforceable-illinois', areas: ['bucktown', 'roscoe-village', 'lakeview'], siblings: ['common-condo-rule-violations-chicago'] },
-      { slug: 'illinois-association-fines-notice-hearing', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], siblings: ['common-condo-rule-violations-chicago', 'are-hoa-condo-rules-enforceable-illinois'] },
+      { slug: 'illinois-association-fines-notice-hearing', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], siblings: ['common-condo-rule-violations-chicago'] },
       { slug: 'common-condo-rule-violations-chicago', areas: ['bucktown', 'roscoe-village', 'lakeview'], siblings: ['chicago-condo-short-term-rental-prohibited-buildings-list'] },
       { slug: 'chicago-condo-short-term-rental-prohibited-buildings-list', areas: ['wicker-park', 'logan-square', 'ukrainian-village'], siblings: ['common-condo-rule-violations-chicago'] },
       { slug: 'illinois-association-police-firefighter-vehicle-parking', areas: ['bucktown', 'roscoe-village', 'lakeview'] },

@@ -48,7 +48,7 @@ export const southLoop: AreaContent = {
       title: 'A generation of buildings out of warranty',
       body:
         'Many South Loop buildings were completed in the 1990s and 2000s. The first major roof, window and garage repairs arrive together, which is when reserves get tested.',
-      post: 'condo-reserve-funds-explained',
+      post: 'reasonable-reserves-illinois-condo-law',
       linkText: 'condo reserve funds explained',
     },
     {
