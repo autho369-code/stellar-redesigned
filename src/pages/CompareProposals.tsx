@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Printer, RotateCcw } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { SelectionCriteriaTable } from '../components/SelectionCriteriaTable';
 import { trackEvent } from '../lib/track';
 import { brand } from '../brand/brand.config';
 
@@ -217,6 +218,18 @@ export default function CompareProposals() {
             your scores stay in this browser. Print or save the page when you are
             done and bring it to the meeting.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white py-14 lg:py-16" aria-labelledby="checks">
+        <div className="mx-auto max-w-5xl px-5 sm:px-8 lg:px-10">
+          <h2 id="checks" className="mb-3 font-display text-3xl text-ink">Eight checks for any Chicago management company</h2>
+          <p className="mb-6 font-light leading-relaxed text-slate-600">
+            Run the same eight checks on every firm, including ours. Write the answers down so the board compares like with like.
+            The service models (financial-only, full-service and on-site) are compared in{' '}
+            <Link to="/how-to-choose-condo-management-company-chicago#models" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">how to choose a condo management company in Chicago</Link>.
+          </p>
+          <SelectionCriteriaTable caption="Scrollable table: eight checks" />
         </div>
       </section>
 

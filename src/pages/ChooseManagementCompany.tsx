@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
+import { SelectionCriteriaTable } from '../components/SelectionCriteriaTable';
 import { brand } from '../brand/brand.config';
 import { business, faqPageSchema, ORG_ID, PORTFOLIO, priceSentence, selectionFaqs as FAQS, SITE_URL } from '../data/business';
 
@@ -16,49 +17,6 @@ import { business, faqPageSchema, ORG_ID, PORTFOLIO, priceSentence, selectionFaq
 
 const URL = `${SITE_URL}/how-to-choose-condo-management-company-chicago`;
 const PUBLISHED = '2026-11-27';
-
-const CHECKS: Array<[string, string, string]> = [
-  [
-    'Illinois licenses',
-    'Does the firm hold an Illinois community association management firm license, and is the manager assigned to us a licensed community association manager?',
-    'Both numbers, which you confirm yourself in the IDFPR license lookup. Illinois requires a firm license and a designated licensed manager who supervises the firm.',
-  ],
-  [
-    'The manager you would get',
-    'Who will manage our building, how many associations do they handle, and who covers when they are out?',
-    'A named manager, a written portfolio size and a named backup. Meet the manager before you sign, not only a sales contact.',
-  ],
-  [
-    'Service model',
-    'Is this financial-only, full-service from a portfolio manager, or on-site management?',
-    'A model that matches your building (see the table below), written into the scope.',
-  ],
-  [
-    'Total annual cost',
-    'What is the fee, what is included, and what is billed on top of it?',
-    'One total annual figure from the same written scope as every other bid, with third-party costs (contractors, engineers, attorneys, permits) shown separately.',
-  ],
-  [
-    'Money controls and reporting',
-    'Whose name is on the bank accounts, who approves invoices, and when does the board get its financials each month?',
-    'Accounts held for the association, a written invoice-approval step and a delivery date for monthly statements, with live board access to them.',
-  ],
-  [
-    'After-hours coverage',
-    'Who answers at 2 a.m. when a pipe bursts or an elevator stops?',
-    'A named process, and whether a person on the firm’s team or an outside answering service takes the call.',
-  ],
-  [
-    'Contract terms',
-    'How long is the term, how much notice ends it, and how fast are records returned if we leave?',
-    'Notice and termination terms you can read in the agreement itself, and a records-return deadline in writing.',
-  ],
-  [
-    'References from buildings like yours',
-    'Can we call boards of similar size, age and type?',
-    'Two or three current references. Ask about the first ninety days, report timing, extra charges and manager turnover.',
-  ],
-];
 
 const MODELS: Array<[string, string, string]> = [
   [
@@ -157,26 +115,7 @@ export default function ChooseManagementCompany() {
             <p className="mb-6 font-light leading-relaxed text-slate-600">
               Run the same eight checks on every firm, including ours. Write the answers down so the board compares like with like.
             </p>
-            <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Scrollable table: eight checks">
-              <table className="w-full min-w-[640px] border-collapse text-left text-sm">
-                <thead>
-                  <tr className="border-b border-slate-300 text-ink">
-                    <th className="py-3 pr-4 font-medium">Check</th>
-                    <th className="py-3 pr-4 font-medium">Ask</th>
-                    <th className="py-3 font-medium">A good answer</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {CHECKS.map(([check, ask, good]) => (
-                    <tr key={check} className="border-b border-slate-200 align-top">
-                      <th scope="row" className="py-4 pr-4 font-medium text-ink">{check}</th>
-                      <td className="py-4 pr-4 font-light leading-relaxed text-slate-600">{ask}</td>
-                      <td className="py-4 font-light leading-relaxed text-slate-600">{good}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <SelectionCriteriaTable caption="Scrollable table: eight checks" />
           </section>
 
           <section aria-labelledby="models">

@@ -235,7 +235,7 @@ export function llmsFullText(): string {
     '',
     `> ${ENTITY_STATEMENT}`,
     '',
-    `Short index of the site: ${SITE_URL}/llms.txt . Structured facts page: ${SITE_URL}/ai-info .`,
+    `Short index of the site: ${SITE_URL}/llms.txt . Structured facts page: ${SITE_URL}/ai-info . Company fact sheet: ${SITE_URL}/fact-sheet .`,
     '',
     '## Business facts',
     '',
@@ -263,8 +263,108 @@ export function llmsFullText(): string {
     `- All service areas: ${SITE_URL}/service-areas`,
     `- Board toolkit (RFP outline, interview questions, transition checklist): ${SITE_URL}/board-toolkit`,
     `- Free proposal scorecard: ${SITE_URL}/tools/compare-management-proposals`,
+    `- Company fact sheet: ${SITE_URL}/fact-sheet`,
     `- Founder: ${SITE_URL}/about/mirsad-cerimovic`,
     `- Contact: ${SITE_URL}/contact`,
     '',
   ].join('\n');
+}
+
+export const FACT_SHEET_PATH = '/fact-sheet';
+export const FACT_SHEET_URL = `${SITE_URL}${FACT_SHEET_PATH}`;
+
+/** Copy-ready facts for the company fact sheet. Every value is already published on the site. */
+export function directoryFacts(): Array<[string, string]> {
+  return [
+    ['Legal name', `${business.legalName}, operating as ${business.name}`],
+    ['Also known as', business.alternateName],
+    ['Type', 'Community association management firm (condominium, homeowner and townhome associations)'],
+    ['Founded', business.foundingYear],
+    ['Founder & Principal', 'Mirsad Cerimovic, CAM, CMCA, AMS'],
+    ['Office', business.addressLine],
+    ['Telephone', business.phoneDisplay],
+    ['Office hours', business.hours],
+    ['Email', business.email],
+    ['Website', SITE_URL],
+    ['Geographic coverage', 'City of Chicago and the North Shore suburbs of Cook and Lake County, Illinois'],
+    ['Portfolio', `${business.associations} associations, approximately ${business.residences} residences`],
+    ['Client retention', `${business.retentionPercent} percent since ${business.foundingYear}`],
+    ['Board and resident software', 'AppFolio portal'],
+    ['Illinois CAM firm license', business.licenseNumber],
+    ['Illinois CAM individual license', '261000524 (Mirsad Cerimovic) — active, no disciplinary history'],
+    ['Pricing model', `Customized flat monthly fee, starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Never a percentage of the association budget.`],
+    ['Contract terms', brand.contracts.line],
+    ['Memberships', business.memberships.join('; ')],
+    ['Not affiliated with', business.notAffiliatedWith.join('; ')],
+  ];
+}
+
+/** The Organization node every page should point at. Values come from this file and brand.config. */
+export function organizationNode() {
+  return {
+    '@type': ['ProfessionalService', 'LocalBusiness'],
+    '@id': ORG_ID,
+    name: business.name,
+    legalName: business.legalName,
+    alternateName: [business.alternateName],
+    disambiguatingDescription:
+      `Chicago community association (condo, HOA and townhome) management firm at ${brand.address.street}. Not affiliated with Stellar Properties Inc. of Carol Stream or Stellar Management of New York.`,
+    description:
+      `Condominium, HOA, and townhome association management firm serving Chicago and the North Shore since ${business.foundingYear}. ${PORTFOLIO} under management, with a ${RETENTION}. Community association management only.`,
+    url: SITE_URL,
+    logo: `${SITE_URL}${brand.logo.src}`,
+    image: `${SITE_URL}${brand.ogImage}`,
+    telephone: business.phoneE164,
+    email: business.email,
+    priceRange: `From $${business.priceFrom}/unit/month`,
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: business.licenseName,
+      credentialCategory: 'Professional license',
+      identifier: business.licenseNumber,
+      recognizedBy: {
+        '@type': 'GovernmentOrganization',
+        name: 'Illinois Department of Financial and Professional Regulation',
+        url: 'https://idfpr.illinois.gov/profs/cam.html',
+      },
+    },
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Community Associations Institute',
+        url: 'https://www.caionline.org/',
+      },
+      {
+        '@type': 'Organization',
+        name: 'Community Associations Institute Illinois Chapter',
+        url: 'https://www.cai-illinois.org/',
+      },
+    ],
+    hasMap: profiles.google,
+    sameAs: [profiles.linkedin, profiles.google, profiles.yelp],
+    foundingDate: business.foundingYear,
+    founder: { '@id': `${SITE_URL}/about#mirsad-cerimovic` },
+    employee: { '@id': `${SITE_URL}/about#mirsad-cerimovic` },
+    slogan: 'The art of a well-run building.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: business.address.street,
+      addressLocality: business.address.city,
+      addressRegion: business.address.region,
+      postalCode: business.address.postalCode,
+      addressCountry: business.address.country,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 41.974506,
+      longitude: -87.6887278,
+    },
+    openingHoursSpecification,
+    contactPoint: contactPoints,
+    areaServed: [
+      { '@type': 'City', name: 'Chicago' },
+      { '@type': 'AdministrativeArea', name: 'North Shore, Illinois' },
+      { '@type': 'AdministrativeArea', name: 'Cook County, Illinois' },
+    ],
+  };
 }

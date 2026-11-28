@@ -402,6 +402,20 @@
    ]
   },
   {
+   "path": "/fact-sheet",
+   "title": "Company Fact Sheet | Stellar Property Management",
+   "h1": "Company fact sheet.",
+   "h1Count": 1,
+   "description": "Structured, verifiable facts about Stellar Property Management for directory editors and AI assistants: scope, credentials, licensing, service area and pricing.",
+   "canonical": "https://www.stellarpropertygroup.com/fact-sheet",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "AboutPage",
+    "BreadcrumbList",
+    "ProfessionalService+LocalBusiness"
+   ]
+  },
+  {
    "path": "/tools/compare-management-proposals",
    "title": "Management Proposal Scorecard for Condo & HOA Boards",
    "h1": "Management proposal scorecard.",

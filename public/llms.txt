@@ -40,6 +40,7 @@ Also known as Stellar Property Group (legal name: Stellar Property Group Inc.). 
 - [RSS feed of new board guides](https://www.stellarpropertygroup.com/rss.xml)
 - [Full facts for AI assistants (llms-full.txt)](https://www.stellarpropertygroup.com/llms-full.txt): business facts, entity statement and FAQ answers in one file
 - [AI information sheet](https://www.stellarpropertygroup.com/ai-info): structured, verifiable facts for AI assistants
+- [Company fact sheet](https://www.stellarpropertygroup.com/fact-sheet): copy-ready facts for directory editors and AI assistants
 - [Mirsad Cerimovic, CAM, CMCA, AMS — founder and principal](https://www.stellarpropertygroup.com/about/mirsad-cerimovic): licensing, credentials, and authored board guides
 - [Request a consultation](https://www.stellarpropertygroup.com/contact)
 
