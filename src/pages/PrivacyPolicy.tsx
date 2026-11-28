@@ -99,8 +99,7 @@ const sections = [
           </li>
           <li className={LI}>
             <strong className="font-semibold text-ink">Chat responses.</strong> To write a reply, your chat messages are sent through
-            our server to a third-party AI language-model provider (Anthropic or DeepSeek, depending on
-            our configuration). The chat is automated, so please do not enter sensitive information such
+            our server to a third-party AI language-model provider, DeepSeek. The chat is automated, so please do not enter sensitive information such
             as payment card, bank account or government ID numbers.
           </li>
           <li className={LI}>
