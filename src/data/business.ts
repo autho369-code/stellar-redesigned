@@ -60,6 +60,7 @@ export const profiles = {
   google: 'https://www.google.com/maps?cid=6022006747972898171',
   yelp: 'https://www.yelp.com/biz/stellar-property-management-chicago',
   linkedin: 'https://www.linkedin.com/company/stellar-property-group-inc',
+  youtube: 'https://www.youtube.com/@TheCondoFiles',
   googleReview: 'https://g.page/r/CXsN7jc7d5JTEBM/review',
 } as const;
 
@@ -67,6 +68,7 @@ export const profileLinks = [
   { label: 'Google', href: profiles.google },
   { label: 'Yelp', href: profiles.yelp },
   { label: 'LinkedIn', href: profiles.linkedin },
+  { label: 'YouTube', href: profiles.youtube },
 ] as const;
 
 /** Visible sitewide entity statement (footer). */
@@ -217,7 +219,7 @@ export function llmsBusinessFacts(): string {
     `- Client retention: ${business.retentionPercent}% since ${business.foundingYear}`,
     '- Management focus: community associations only; prospective rental-property clients should seek a rental-management specialist',
     '- Proposal process: board consultation, property and document review, customized scope, and a managed 30–60 day transition',
-    `- Profiles: Google ${profiles.google} ; Yelp ${profiles.yelp} ; LinkedIn ${profiles.linkedin}`,
+    `- Profiles: Google ${profiles.google} ; Yelp ${profiles.yelp} ; LinkedIn ${profiles.linkedin} ; YouTube channel ${profiles.youtube}`,
     `- Not affiliated with ${business.notAffiliatedWith.join(' or ')}`,
   ].join('\n');
 }
@@ -295,6 +297,7 @@ export function directoryFacts(): Array<[string, string]> {
     ['Pricing model', `Customized flat monthly fee, starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Never a percentage of the association budget.`],
     ['Contract terms', brand.contracts.line],
     ['Memberships', business.memberships.join('; ')],
+    ['YouTube channel', profiles.youtube],
     ['Not affiliated with', business.notAffiliatedWith.join('; ')],
   ];
 }
@@ -341,7 +344,7 @@ export function organizationNode() {
       },
     ],
     hasMap: profiles.google,
-    sameAs: [profiles.linkedin, profiles.google, profiles.yelp],
+    sameAs: [profiles.linkedin, profiles.google, profiles.yelp, profiles.youtube],
     foundingDate: business.foundingYear,
     founder: { '@id': `${SITE_URL}/about#mirsad-cerimovic` },
     employee: { '@id': `${SITE_URL}/about#mirsad-cerimovic` },

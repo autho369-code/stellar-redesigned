@@ -124,8 +124,10 @@ export default function FactSheet() {
                 <a href={profiles.google} target="_blank" rel="noopener noreferrer" className={linkClass}>Google</a>
                 {', '}
                 <a href={profiles.yelp} target="_blank" rel="noopener noreferrer" className={linkClass}>Yelp</a>
-                {' and '}
+                {', '}
                 <a href={profiles.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>LinkedIn</a>
+                {' and '}
+                <a href={profiles.youtube} target="_blank" rel="noopener noreferrer" className={linkClass}>YouTube channel</a>
                 .
               </li>
             </ul>
