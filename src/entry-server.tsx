@@ -51,6 +51,7 @@ import CompareProposals from './pages/CompareProposals';
 import BoardToolkit from './pages/BoardToolkit';
 import ChooseManagementCompany from './pages/ChooseManagementCompany';
 import FactSheet from './pages/FactSheet';
+import SiteMap from './pages/SiteMap';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import NotFound from './pages/NotFound';
@@ -105,6 +106,7 @@ export function render(url: string): { appHtml: string; helmet: HelmetServerStat
             <Route path="/board-toolkit" element={<BoardToolkit />} />
             <Route path="/how-to-choose-condo-management-company-chicago" element={<ChooseManagementCompany />} />
             <Route path="/fact-sheet" element={<FactSheet />} />
+            <Route path="/site-map" element={<SiteMap />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="*" element={<CatchAllRoute />} />

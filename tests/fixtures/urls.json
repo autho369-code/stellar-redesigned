@@ -4,10 +4,10 @@
  "urls": [
   {
    "path": "/",
-   "title": "Stellar Property Management, Chicago | Condo & HOA from $30",
+   "title": "Chicago Condo & HOA Management Company | Stellar, from $30",
    "h1": "Condo and HOA management in Chicago, from $ 30 per unit a month.",
    "h1Count": 1,
-   "description": "Stellar Property Management: Chicago condo, HOA, and townhome association management with dedicated managers, flat-fee pricing, and 24/7 response. Since 2007.",
+   "description": "Chicago condo, HOA and townhome association management company. Dedicated managers, flat-fee pricing, 24/7 response. Stellar Property Management, since 2007.",
    "canonical": "https://www.stellarpropertygroup.com/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -48,10 +48,10 @@
   },
   {
    "path": "/services",
-   "title": "Property Management Services | Stellar Property Management",
-   "h1": "Everything a community needs. Nothing it doesn’t.",
+   "title": "Condo & HOA Management Services in Chicago | Stellar",
+   "h1": "Condo & HOA management services in Chicago.",
    "h1Count": 1,
-   "description": "Nine professional community-management disciplines for Chicago condominiums, HOAs, townhomes, high-rises, and small associations.",
+   "description": "Condo, HOA and townhome management services for Chicago associations: financials, maintenance, board support, violations, high-rises and resale disclosures.",
    "canonical": "https://www.stellarpropertygroup.com/services",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
@@ -372,7 +372,10 @@
    "description": "Owner and resident resources from Stellar Property Management: make payments, report violations, submit board nominations and find common answers.",
    "canonical": "https://www.stellarpropertygroup.com/resources",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-   "jsonLdTypes": []
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "WebPage"
+   ]
   },
   {
    "path": "/condo-living",
@@ -413,6 +416,19 @@
     "AboutPage",
     "BreadcrumbList",
     "ProfessionalService+LocalBusiness"
+   ]
+  },
+  {
+   "path": "/site-map",
+   "title": "Site Map | Stellar Property Management, Chicago",
+   "h1": "Site map",
+   "h1Count": 1,
+   "description": "Every page on the Stellar site: condo, HOA and townhome management services, Chicago neighborhoods and suburbs we serve, and Illinois board guides.",
+   "canonical": "https://www.stellarpropertygroup.com/site-map",
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+   "jsonLdTypes": [
+    "BreadcrumbList",
+    "WebPage"
    ]
   },
   {
@@ -1188,7 +1204,7 @@
   },
   {
    "path": "/blog/can-condo-boards-enter-your-unit-illinois",
-   "title": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Ex…",
+   "title": "Can a Condo Board Enter Your Unit in Illinois?",
    "h1": "Can a Condo Board Enter Your Unit? Illinois Owner Rights Explained",
    "h1Count": 1,
    "description": "Can an Illinois condo association enter your unit? When it has a right of access, when notice is required, how emergencies differ, and owner privacy.",
@@ -1241,7 +1257,7 @@
   },
   {
    "path": "/blog/condo-repairs-owner-vs-association-illinois",
-   "title": "Condo Repairs in Illinois: What Owners Fix vs. What the Ass…",
+   "title": "Condo Repairs in Illinois: Owner or Association?",
    "h1": "Condo Repairs in Illinois: What Owners Fix vs. What the Association Fixes",
    "h1Count": 1,
    "description": "Who pays for condo repairs in Illinois, the owner or the association? A plain-English map of units, common elements and limited common elements.",
@@ -1283,7 +1299,7 @@
   },
   {
    "path": "/blog/first-time-condo-buyer-guide-chicago",
-   "title": "The 22.1 Disclosure and Beyond: A First-Time Chicago Condo…",
+   "title": "First-Time Chicago Condo Buyer Guide: What to Check",
    "h1": "The 22.1 Disclosure and Beyond: A First-Time Chicago Condo Buyer’s Guide",
    "h1Count": 1,
    "description": "What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation and questions to ask.",
@@ -1496,7 +1512,7 @@
   },
   {
    "path": "/blog/fannie-freddie-condo-reserve-15-percent-2027",
-   "title": "Fannie Mae and Freddie Mac Raise the Condo Reserve Minimum…",
+   "title": "Fannie Mae 15% Condo Reserve Rule: 2027 Budget Steps",
    "h1": "Fannie Mae and Freddie Mac Raise the Condo Reserve Minimum to 15%: What Boards Must Do for the 2027 Budget",
    "h1Count": 1,
    "description": "Fannie Mae and Freddie Mac raise the condo reserve minimum from 10% to 15% for loan applications from January 4, 2027. What boards must change in budgets.",
@@ -1901,7 +1917,7 @@
   },
   {
    "path": "/blog/verify-illinois-community-association-manager-license",
-   "title": "How to Verify an Illinois Community Association Manager Lic…",
+   "title": "Verify an Illinois Association Manager (CAM) License",
    "h1": "How to Verify an Illinois Community Association Manager License",
    "h1Count": 1,
    "description": "A step-by-step guide for Illinois condo and HOA boards: verify a community association manager and management firm license with IDFPR before signing.",

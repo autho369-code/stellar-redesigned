@@ -90,6 +90,7 @@ const staticRoutes = [
   '/condo-living',
   '/ai-info',
   '/fact-sheet',
+  '/site-map',
   '/tools/compare-management-proposals',
   '/board-toolkit',
   '/how-to-choose-condo-management-company-chicago',
