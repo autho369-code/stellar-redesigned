@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight, Phone } from 'lucide-react';
 import { SEOHead } from '../components/seo/SEOHead';
 import { canonicalFaqs, faqPageSchema, SITE_URL } from '../data/business';
 import TrustBar from '../components/TrustBar';
+import OfficeHallwayImage from '../components/OfficeHallwayImage';
 import { brand } from '../brand/brand.config';
 
 // Short FAQ for /about: the canonical answers about who the firm is.
@@ -279,6 +280,13 @@ export default function About() {
               </figure>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Workspace image (decorative, general office photo) ─── */}
+      <section className="bg-white pb-24 lg:pb-32" aria-label="Workspace">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+          <OfficeHallwayImage />
         </div>
       </section>
 
