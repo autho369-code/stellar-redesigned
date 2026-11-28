@@ -1,6 +1,6 @@
 {
  "origin": "https://www.stellarpropertygroup.com",
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "urls": [
   {
    "path": "/",
@@ -1168,7 +1168,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/ai-in-condo-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1180,7 +1181,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/are-hoa-condo-rules-enforceable-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1192,7 +1194,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/can-condo-boards-enter-your-unit-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1204,7 +1207,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-management-transition-first-60-days",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1216,7 +1220,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/common-condo-rule-violations-chicago",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1228,7 +1233,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condominium-property-management-chicago-what-board-members-should-expect",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1241,6 +1247,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1253,7 +1260,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-reserve-funds-explained",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1266,6 +1274,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1278,7 +1287,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/financial-only-vs-full-service-condo-hoa-management-chicago",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1291,6 +1301,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1303,7 +1314,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/hoa-insurance-costs-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1315,7 +1327,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-law-updates-2026",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1328,6 +1341,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1341,6 +1355,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1353,7 +1368,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/fannie-freddie-condo-eligibility-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1365,7 +1381,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-master-policy-vs-ho6-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1377,7 +1394,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/who-pays-condo-water-leak-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1389,7 +1407,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-facade-compliance-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1401,7 +1420,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/vintage-chicago-condo-capital-planning",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1413,7 +1433,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-directors-officers-insurance-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1425,7 +1446,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-ev-charging-board-process",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1437,7 +1459,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-snow-removal-vendor-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1449,7 +1472,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-life-safety-board-planning",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1461,7 +1485,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-vendor-rfp-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1474,6 +1499,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1487,6 +1513,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1499,7 +1526,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-section-22-1-disclosure-board-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1511,7 +1539,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/how-to-read-condo-reserve-study",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1523,7 +1552,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-22-1-disclosure-packet-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1535,7 +1565,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/reasonable-reserves-illinois-condo-law",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1547,7 +1578,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-late-fees-interest-policy",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1559,7 +1591,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-association-liens-delinquency",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1571,7 +1604,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/read-condo-hoa-financial-statements",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1583,7 +1617,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-capital-project-loan-preparation",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1595,7 +1630,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-annual-budget-workbook",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1607,7 +1643,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-22-1-response-workflow",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1619,7 +1656,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/which-illinois-law-governs-condo-hoa-townhome",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1631,7 +1669,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-association-records-request-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1643,7 +1682,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-board-closed-session-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1655,7 +1695,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/electronic-voting-illinois-condo-hoa",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1667,7 +1708,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/adopting-enforcing-condo-hoa-rules-illinois",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1679,7 +1721,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/new-condo-board-member-first-30-days",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1691,7 +1734,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-developer-turnover-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1704,6 +1748,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1716,7 +1761,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-association-annual-meeting-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1728,7 +1774,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-emergency-planning-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1740,7 +1787,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-deconversion-75-or-85-percent",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1752,7 +1800,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-assessment-collection-possession-action",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1764,7 +1813,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/amend-illinois-condo-declaration-section-27",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1776,7 +1826,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/cook-county-property-tax-appeal-condo-association",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1788,7 +1839,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-short-term-rental-prohibited-buildings-list",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1800,7 +1852,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condo-hoa-budget-adoption-guide",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1812,7 +1865,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/chicago-condo-association-compliance-calendar",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1824,7 +1878,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-delinquency-escalation-process",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1836,7 +1891,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/community-association-management-agreement-review",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1848,7 +1904,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/illinois-condominium-ombudsperson-act-board-duties",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1860,7 +1917,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/verify-illinois-community-association-manager-license",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1872,7 +1930,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-board-communication-systems",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1884,7 +1943,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/condo-hoa-insurance-renewal-checklist",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1896,7 +1956,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/score-condo-hoa-management-proposals",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1908,7 +1969,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/how-many-associations-should-community-manager-handle",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -1921,6 +1983,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1934,6 +1997,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1947,6 +2011,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1960,6 +2025,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1973,6 +2039,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1986,6 +2053,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -1999,6 +2067,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2012,6 +2081,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2025,6 +2095,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2038,6 +2109,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2051,6 +2123,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2064,6 +2137,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2077,6 +2151,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2090,6 +2165,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2103,6 +2179,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2116,6 +2193,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2129,6 +2207,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2142,6 +2221,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2155,6 +2235,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2168,6 +2249,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2181,6 +2263,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2194,6 +2277,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2207,6 +2291,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2220,6 +2305,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2233,6 +2319,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2246,6 +2333,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2259,6 +2347,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2272,6 +2361,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2285,6 +2375,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2298,6 +2389,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2311,6 +2403,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2324,6 +2417,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2337,6 +2431,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2350,6 +2445,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2363,6 +2459,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2375,7 +2472,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/self-managed-condo-association-problems",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -2388,6 +2486,7 @@
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
     "Article",
+    "BreadcrumbList",
     "FAQPage"
    ]
   },
@@ -2400,7 +2499,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/the-technology-behind-our-management",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   },
   {
@@ -2412,7 +2512,8 @@
    "canonical": "https://www.stellarpropertygroup.com/blog/why-condo-boards-fail",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "jsonLdTypes": [
-    "Article"
+    "Article",
+    "BreadcrumbList"
    ]
   }
  ]

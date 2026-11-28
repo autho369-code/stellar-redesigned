@@ -713,7 +713,7 @@ export const scheduledNov2026NewLawPosts: BlogPost[] = [
 
       <h2>How Stellar helps</h2>
 
-      <p>Stellar works through the Section 1-75 questions with the association's own documents and corporate record, gets counsel a clean set of facts instead of a guess, and manages the resulting obligations month to month. If your board is not sure which Illinois law reaches it, <a href="/contact">contact our office</a> or see our <a href="/services/hoa-management">HOA management</a> and townhome management services. We serve associations in <a href="/property-management-glenview">Glenview</a>, across the North Shore and throughout Chicago.</p>
+      <p>Stellar works through the Section 1-75 questions with the association's own documents and corporate record, gets counsel a clean set of facts instead of a guess, and manages the resulting obligations month to month. If your board is not sure which Illinois law reaches it, contact our office or see our <a href="/services/hoa-management">HOA management</a> and townhome management services. We serve associations in <a href="/property-management-glenview">Glenview</a>, across the North Shore and throughout Chicago.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Section 1-75 of the Common Interest Community Association Act and the 2026 Public Acts as enacted. Whether your association is exempt is a legal question that depends on your documents, your corporate status and your budget — have association counsel answer it in writing.</em></p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>

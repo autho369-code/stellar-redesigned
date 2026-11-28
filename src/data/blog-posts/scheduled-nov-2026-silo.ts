@@ -362,12 +362,13 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <h2>What does Stellar charge?</h2>
 
-      <p>Starting at $30 per unit per month, everything included, with no extra fees. It is quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. No long-term contracts — cancel with 60 days notice. Details are on our <a href="/pricing">management pricing</a> page, and the scope is described on our <a href="/services/condominium-management">condominium management</a> page.</p>
+      <p>Starting at $30 per unit per month, everything included, with no extra fees. It is quoted as a flat monthly fee for the agreed scope. That starting price is not a quote: we review the property, financials, governing documents and contracts first. Our compensation does not rise because your budget or capital spending rises, and there is no separate capital-project planning or oversight fee. No long-term contracts — cancel with 60 days notice. Details are on our management pricing page, and the scope is described on our <a href="/services/condominium-management">condominium management</a> page.</p>
 
       <h2>Is the cheapest proposal the best value?</h2>
 
       <p>Rarely. A low fee with a manager carrying too many buildings, or with add-ons that double the real cost, is not cheap. The better test is the full annual cost against the scope you actually need, plus how easy it is to leave if the work is not good. For the other half of the decision, read <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company in Chicago</a>.</p>
 
+      <p>Deciding whether to change managers at all? Read <a href="/blog/switch-condo-management-companies-chicago">switching condo management companies in Chicago</a> first.</p>
       <p>For associations across <a href="/property-management-chicago">Chicago</a>, we provide a written scope and flat fee after a walk-through. <a href="/contact">Request a proposal</a>.</p>
     `,
   },
@@ -441,9 +442,10 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
       <h2>How does a reserve plan follow the chart?</h2>
 
       <p>Every component the association maintains belongs in the reserve study with an estimated life and replacement cost. Components owners maintain do not, but the board should still set a standard for appearance where the declaration allows it, so one failing roof does not hurt a whole row. For a lender’s view of reserves, see <a href="/blog/reserve-study-lender-will-accept-2027">what reserve study a lender will accept</a>, and for how a board pays for the big items, <a href="/blog/condo-special-assessments-illinois">special assessments in Illinois</a>.</p>
+      <p>For a worked example of a townhome and HOA community, see our <a href="/blog/glenview-townhome-hoa-board-guide">Glenview townhome and HOA guide</a>.</p>
       <p>Comparing management proposals for a townhome community? Start with <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a>.</p>
 
-      <p>Planning shared exteriors and capital cycles is the core of our <a href="/services/townhome-management">townhome association management</a>. If your board wants a responsibility chart and reserve plan built from your documents, <a href="/contact">contact us</a>.</p>
+      <p>Planning shared exteriors and capital cycles is the core of our townhome association management. If your board wants a responsibility chart and reserve plan built from your documents, <a href="/contact">contact us</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -515,8 +517,7 @@ export const scheduledNov2026SiloPosts: BlogPost[] = [
 
       <p>Our <a href="/services/violation-management">violation management</a> service runs this process for boards, and the board still makes every decision. If you are comparing firms for this work, start with <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a> and <a href="/pricing">what our pricing includes</a>.</p>
 
-      <p>Our <a href="/services/violation-management">violation management</a> service runs this process with written notices, hearing scheduling and consistent records. This guide is educational, not legal advice. <a href="/contact">Contact us</a> if your board wants a complaint process in place.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Our violation management service runs this process with written notices, hearing scheduling and consistent records. This guide is educational, not legal advice. <a href="/contact">Contact us</a> if your board wants a complaint process in place.</p>
 `,
   },
 ];

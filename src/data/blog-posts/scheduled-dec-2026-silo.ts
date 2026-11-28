@@ -67,10 +67,10 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
       <h2>How does Evanston differ from a Chicago building?</h2>
 
       <p>The legal framework is the same state statute, but the City rules, permit offices and inspection programs are Evanston’s, not Chicago’s. A board that hires vendors who also work in Chicago should confirm Evanston’s permit requirements before every project. For the cost of management, see <a href="/pricing">pricing</a>.</p>
+      <p>Deciding whether to change managers at all? Read <a href="/blog/switch-condo-management-companies-chicago">switching condo management companies in Chicago</a> first.</p>
       <p>Choosing a manager for an Evanston building? Read <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company</a> first.</p>
 
-      <p>Our <a href="/services/condominium-management">condominium management</a> gives Evanston boards detailed monthly reporting, capital planning across every era of building, and 24/7 live emergency response. See our <a href="/property-management-evanston">Evanston association management</a> page, or <a href="/contact">contact us</a> to meet a manager.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Our <a href="/services/condominium-management">condominium management</a> gives Evanston boards detailed monthly reporting, capital planning across every era of building, and 24/7 live emergency response. See our Evanston association management page, or <a href="/contact">contact us</a> to meet a manager.</p>
 `,
   },
   {
@@ -137,8 +137,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
       <p>One named person: a director, or the manager if the building is professionally managed. Vendors do the work, but the calendar stays with someone who answers to the board. Our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> keeps the calendar and vendor records for managed buildings, and <a href="/pricing">our fee</a> includes vendor coordination. If you are choosing a manager partly for this work, read <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company</a>.</p>
 
-      <p>Keeping this calendar is part of our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> for buildings across <a href="/property-management-chicago">Chicago</a>. If your board wants its checklist built from the City’s records, <a href="/contact">contact us</a>.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Keeping this calendar is part of our high-rise condominium management for buildings across <a href="/property-management-chicago">Chicago</a>. If your board wants its checklist built from the City’s records, <a href="/contact">contact us</a>.</p>
 `,
   },
   {
@@ -185,7 +184,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
             <h2>Do Lincoln Park landmark districts affect exterior work?</h2>
 
-      <p>Chicago designated the Mid-North district on August 31, 1977, the Armitage-Halsted district on February 5, 2003 and the Mid-North Extension on September 29, 2004. Exterior work on a building in one of these districts is reviewed by the City’s historic preservation staff before a permit is issued. Elsewhere in Lincoln Park the normal permit process applies, so a board should check the City’s landmark listing before it writes a masonry or window scope. Build the review time into the project schedule and the bid request. See <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago buildings</a> for how to order the big items.</p>
+      <p>Chicago designated the Mid-North district on August 31, 1977, the Armitage-Halsted district on February 5, 2003 and the Mid-North Extension on September 29, 2004. Exterior work on a building in one of these districts is reviewed by the City’s historic preservation staff before a permit is issued. Elsewhere in Lincoln Park the normal permit process applies, so a board should check the City’s landmark listing before it writes a masonry or window scope. Build the review time into the project schedule and the bid request. See capital planning for vintage Chicago buildings for how to order the big items.</p>
 
       <h2>What should a small Lincoln Park board do first?</h2>
 
@@ -193,13 +192,12 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
         <li>Get a reserve study, even a simple one, and update it every few years.</li>
         <li>Put the City inspection items on a calendar (<a href="/blog/chicago-condo-annual-building-inspection-checklist">annual inspection checklist</a>).</li>
         <li>Decide who does the volunteer work and who backs them up.</li>
-        <li>Price professional help against the real hours; see <a href="/blog/small-condo-association-professional-manager">when a small association needs a professional manager</a> and our <a href="/pricing">pricing</a>.</li>
+        <li>Price professional help against the real hours; see when a small association needs a professional manager and our <a href="/pricing">pricing</a>.</li>
       </ol>
 
       <p>See our <a href="/property-management-lincoln-park">Lincoln Park association management</a> page for local service, or <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a> when you start comparing firms.</p>
 
-      <p>Our <a href="/services/small-condo-association-management">small condo association management</a> is built for 6-to-24-unit vintage buildings, with budgets sized to match. See our <a href="/property-management-lincoln-park">Lincoln Park association management</a> page, or <a href="/contact">contact us</a> for a walk-through.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Our <a href="/services/small-condo-association-management">small condo association management</a> is built for 6-to-24-unit vintage buildings, with budgets sized to match. See our Lincoln Park association management page, or <a href="/contact">contact us</a> for a walk-through.</p>
 `,
   },
   {
@@ -257,8 +255,8 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
       <p>Put it in the owner handbook, send it with the welcome packet, and apply it the same way to every owner, tenant and delivery. Keep a simple log of bookings and incidents. Where a rule needs enforcement, follow <a href="/blog/illinois-association-fines-notice-hearing">notice and hearing</a> before any fine. Our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> runs reservations and enforcement for boards, and <a href="/pricing">our pricing</a> covers the scope. For choosing a manager, see <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company</a>.</p>
 
-      <p>Running reservations, elevator staging and damage inspections is part of our <a href="/services/high-rise-condominium-management">high-rise condominium management</a>. <a href="/contact">Contact us</a> if your building wants a move policy that works.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>For the exterior side of a tall building, see <a href="/blog/chicago-condo-facade-compliance-board-guide">Chicago facade compliance for condo boards</a>.</p>
+      <p>Running reservations, elevator staging and damage inspections is part of our high-rise condominium management. <a href="/contact">Contact us</a> if your building wants a move policy that works.</p>
 `,
   },
   {
@@ -314,10 +312,10 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
         <li>What is in the monthly board packet, and what does the flat fee include?</li>
       </ul>
 
+      <p>Comparing firms for a Lakeview building? Start with <a href="/blog/switch-condo-management-companies-chicago">switching condo management companies in Chicago</a>.</p>
       <p>See <a href="/pricing">our pricing</a> and <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company</a>; for local service, our <a href="/property-management-lakeview">Lakeview association management</a> page.</p>
 
-      <p>Our <a href="/services/condominium-management">condominium management</a> serves Lakeview associations of every size with a dedicated manager and 24/7 live emergency response. See our <a href="/property-management-lakeview">Lakeview association management</a> page, or <a href="/contact">contact us</a>.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Our <a href="/services/condominium-management">condominium management</a> serves Lakeview associations of every size with a dedicated manager and 24/7 live emergency response. See our Lakeview association management page, or <a href="/contact">contact us</a>.</p>
 `,
   },
   {
@@ -382,8 +380,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
       <p>Put each item on one calendar and name the person responsible. Our <a href="/services/hoa-management">HOA management</a> runs that calendar for boards, and <a href="/pricing">our pricing</a> shows what the flat fee covers. For choosing a manager, start with <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a>.</p>
 
-      <p>Our <a href="/services/hoa-management">HOA management</a> keeps CICAA deadlines on one calendar for townhome and single-family communities. This guide is educational, not legal advice; confirm details with counsel. <a href="/contact">Contact us</a> with questions.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>Our HOA management keeps CICAA deadlines on one calendar for townhome and single-family communities. This guide is educational, not legal advice; confirm details with counsel. <a href="/contact">Contact us</a> with questions.</p>
 `,
   },
   {
@@ -428,7 +425,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
             <h2>What do Chicago’s exterior wall and elevator rules require of a tower board?</h2>
 
-      <p>Chicago’s exterior wall rules cover buildings 80 feet or more in height. A tower’s board should confirm its inspection cycle and filing dates with the City and a licensed engineer or architect, then treat facade work as a planned, multi-year program. On the lakefront, ask the engineer to look closely at the joints and sealant that face the wind. Elevator buildings also answer to the City’s annual inspection reporting program. Our guides to <a href="/blog/chicago-condo-facade-compliance-board-guide">facade compliance</a> and <a href="/blog/chicago-condo-elevator-inspection-board-guide">elevator inspections</a> go through both, and the <a href="/blog/chicago-condo-annual-building-inspection-checklist">annual inspection checklist</a> puts them on one calendar.</p>
+      <p>Chicago’s exterior wall rules cover buildings 80 feet or more in height. A tower’s board should confirm its inspection cycle and filing dates with the City and a licensed engineer or architect, then treat facade work as a planned, multi-year program. On the lakefront, ask the engineer to look closely at the joints and sealant that face the wind. Elevator buildings also answer to the City’s annual inspection reporting program. Our guides to facade compliance and elevator inspections go through both, and the <a href="/blog/chicago-condo-annual-building-inspection-checklist">annual inspection checklist</a> puts them on one calendar.</p>
 
       <h2>What should an Edgewater capital plan contain?</h2>
 
@@ -441,8 +438,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
       <p>Our <a href="/services/high-rise-condominium-management">high-rise condominium management</a> carries these calendars for managed towers, and <a href="/pricing">our pricing</a> covers capital-project oversight with no separate fee. See <a href="/how-to-choose-condo-management-company-chicago">how to choose a management company</a> and our <a href="/property-management-edgewater">Edgewater association management</a> page.</p>
 
-      <p>A board-approved capital calendar, staff and vendor oversight, financial reporting that stands up to engaged owners, and 24/7 response. That is the scope of our <a href="/services/high-rise-condominium-management">Chicago high-rise condominium management</a>. We serve condominium associations in Edgewater; we do not manage co-op buildings. See our <a href="/property-management-edgewater">Edgewater association management</a> page, or <a href="/contact">contact us</a>.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>A board-approved capital calendar, staff and vendor oversight, financial reporting that stands up to engaged owners, and 24/7 response. That is the scope of our Chicago high-rise condominium management. We serve condominium associations in Edgewater; we do not manage co-op buildings. See our Edgewater association management page, or <a href="/contact">contact us</a>.</p>
 `,
   },
   {
@@ -495,7 +491,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
         <li>Track missing items on a written list until every one is received.</li>
       </ul>
 
-      <p>For more detail, read <a href="/blog/switch-condo-management-companies-chicago">switching management companies in Chicago</a>.</p>
+      <p>For more detail, read switching management companies in Chicago.</p>
 
       <h2>What about the first month with the new firm?</h2>
 
@@ -509,8 +505,7 @@ export const scheduledDec2026SiloPosts: BlogPost[] = [
 
       <p>The handoff is a project in its own right: see <a href="/blog/chicago-condo-management-transition-first-60-days">what a management transition looks like in the first 60 days</a> for the first-month checklist. For what you will pay, <a href="/blog/chicago-condo-management-cost">condo management fees</a> and <a href="/pricing">our pricing</a> explain how to compare, and <a href="/how-to-choose-condo-management-company-chicago">how to choose a condo management company</a> covers the selection. Our <a href="/services/condominium-management">condominium management</a> proposals are flat-fee and written, and no long-term contracts — cancel with 60 days notice.</p>
 
-      <p>When an association moves to Stellar, we coordinate the 30–60 day handoff and track missing items until they arrive. Read about our <a href="/services/condominium-management">Chicago condominium management</a>, see how we work across <a href="/property-management-chicago">Chicago</a>, or <a href="/contact">contact us</a> to start.</p>
-<p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
+      <p>When an association moves to Stellar, we coordinate the 30–60 day handoff and track missing items until they arrive. Read about our Chicago condominium management, see how we work across <a href="/property-management-chicago">Chicago</a>, or <a href="/contact">contact us</a> to start.</p>
 `,
   },
 ];
