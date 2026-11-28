@@ -238,17 +238,19 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        {/* Entity-led title: /property-management-chicago owns the
-            "chicago condo & hoa management company" head term. */}
-        <title>Stellar Property Management, Chicago | Condo &amp; HOA from $30</title>
+        {/* Nov 27, 2026: Search Console shows Google ranks the homepage, not
+            /property-management-chicago, for "condo / HOA management companies
+            Chicago" (629 impressions, avg position 26.9), so the homepage now
+            carries that head term and the brand. */}
+        <title>{`Chicago Condo & HOA Management Company | ${brand.shortName}, from $${business.priceFrom}`}</title>
         <meta
           name="description"
-          content="Stellar Property Management: Chicago condo, HOA, and townhome association management with dedicated managers, flat-fee pricing, and 24/7 response. Since 2007."
+          content={`Chicago condo, HOA and townhome association management company. Dedicated managers, flat-fee pricing, 24/7 response. ${brand.name}, since 2007.`}
         />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="theme-color" content="#0d2740" />
         <link rel="canonical" href="https://www.stellarpropertygroup.com/" />
-        <meta property="og:title" content="Stellar Property Management | Chicago Condo & HOA Experts" />
+        <meta property="og:title" content={`Chicago Condo & HOA Management Company | ${brand.name}`} />
         <meta property="og:description" content={`Chicago condo, HOA and townhome association management. A flat fee starting at $${business.priceFrom} per unit per month, ${business.priceTerms}. Chicago office, since 2007.`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Stellar Property Management" />
@@ -279,7 +281,7 @@ export default function Home() {
             <div className="lg:col-span-7">
               <p className="eyebrow text-gold-300 mb-6 flex items-center gap-4">
                 <span className="accent-rule" />
-                Condominium &amp; HOA Management · Chicago
+                Condo &amp; HOA Management Company · Chicago
               </p>
 
               <h1 className="font-display font-light text-[2.4rem] leading-[1.08] sm:text-5xl lg:text-[3.5rem] lg:leading-[1.07] text-paper mb-7 text-balance">

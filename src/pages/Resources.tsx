@@ -8,7 +8,29 @@ import { ViolationReportForm } from '../components/ViolationReportForm';
 import { BoardNominationForm } from '../components/BoardNominationForm';
 import { SEOHead } from '../components/seo/SEOHead';
 import ProposalCta from '../components/ProposalCta';
+import BoardServiceLinks from '../components/BoardServiceLinks';
+import { Helmet } from 'react-helmet-async';
 import { brand } from '../brand/brand.config';
+
+const resourcesSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': 'https://www.stellarpropertygroup.com/resources#webpage',
+      url: 'https://www.stellarpropertygroup.com/resources',
+      name: 'Owner & Resident Resources',
+      isPartOf: { '@id': 'https://www.stellarpropertygroup.com/#website' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stellarpropertygroup.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Owner & Resident Resources', item: 'https://www.stellarpropertygroup.com/resources' },
+      ],
+    },
+  ],
+};
 
 type ActiveTab = 'violation' | 'nomination' | null;
 
@@ -119,6 +141,9 @@ export default function Resources() {
         description="Owner and resident resources from Stellar Property Management: make payments, report violations, submit board nominations and find common answers."
         canonical="https://www.stellarpropertygroup.com/resources"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(resourcesSchema)}</script>
+      </Helmet>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative bg-paper overflow-hidden">
@@ -395,6 +420,8 @@ export default function Resources() {
           />
         </div>
       </section>
+
+      <BoardServiceLinks />
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="relative py-28 lg:py-36 bg-ink text-paper overflow-hidden">

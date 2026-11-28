@@ -114,4 +114,5 @@ export const legalLinks: NavLink[] = [
   { name: 'Terms of Service', href: '/terms-of-service' },
   { name: 'AI Info', href: '/ai-info' },
   { name: 'Company fact sheet', href: '/fact-sheet' },
+  { name: 'Site map', href: '/site-map' },
 ];

@@ -107,7 +107,7 @@ const proofs = [
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Property Management Services — Stellar Property Management',
+  name: 'Condo & HOA Management Services in Chicago — Stellar Property Management',
   itemListElement: services.map((s, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -125,8 +125,8 @@ export default function Services() {
   return (
     <>
       <SEOHead
-        title="Property Management Services | Stellar Property Management"
-        description="Nine professional community-management disciplines for Chicago condominiums, HOAs, townhomes, high-rises, and small associations."
+        title={`Condo & HOA Management Services in Chicago | ${brand.shortName}`}
+        description="Condo, HOA and townhome management services for Chicago associations: financials, maintenance, board support, violations, high-rises and resale disclosures."
         canonical="https://www.stellarpropertygroup.com/services"
       />
       <Helmet>
@@ -151,13 +151,14 @@ export default function Services() {
                 The Practice · Nine Disciplines
               </p>
               <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance">
-                Everything a community
+                Condo &amp; HOA management
                 {' '}<br />
-                <em className="font-medium text-gold-600">needs.</em> Nothing it doesn&rsquo;t.
+                <em className="font-medium text-gold-600">services</em> in Chicago.
               </h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-lg text-slate-600 font-light leading-relaxed">
+                Everything a community needs, nothing it doesn&rsquo;t.
                 From day-to-day operations to long-term strategy — every
                 discipline practiced with the same standard: precise,
                 transparent, and in plain sight of your board.

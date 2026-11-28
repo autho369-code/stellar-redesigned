@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '../components/ContactForm';
+import BoardServiceLinks from '../components/BoardServiceLinks';
 import { SEOHead } from '../components/seo/SEOHead';
 import { business, contactPoints, openingHoursSpecification, ORG_ID } from '../data/business';
 
@@ -253,6 +254,11 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <BoardServiceLinks
+        heading="What we manage"
+        intro="Read how we run condominium, HOA and townhome associations before you call, or ask us in the form above."
+      />
 
       {/* ── Quick Links ────────────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-white border-t border-slate-200">

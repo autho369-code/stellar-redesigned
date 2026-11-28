@@ -63,6 +63,7 @@ const CompareProposals = page(() => import('./pages/CompareProposals'));
 const BoardToolkit = page(() => import('./pages/BoardToolkit'));
 const ChooseManagementCompany = page(() => import('./pages/ChooseManagementCompany'));
 const FactSheet = page(() => import('./pages/FactSheet'));
+const SiteMap = page(() => import('./pages/SiteMap'));
 const AuthorMirsadCerimovic = page(() => import('./pages/AuthorMirsadCerimovic'));
 const PrivacyPolicy = page(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = page(() => import('./pages/TermsOfService'));
@@ -119,6 +120,7 @@ const PRELOAD_ROUTES: [string, Preloadable][] = [
   ['/board-toolkit', BoardToolkit],
   ['/how-to-choose-condo-management-company-chicago', ChooseManagementCompany],
   ['/fact-sheet', FactSheet],
+  ['/site-map', SiteMap],
   ['/privacy-policy', PrivacyPolicy],
   ['/terms-of-service', TermsOfService],
 ];
@@ -195,6 +197,7 @@ export default function App() {
           <Route path="/board-toolkit" element={<BoardToolkit />} />
           <Route path="/how-to-choose-condo-management-company-chicago" element={<ChooseManagementCompany />} />
           <Route path="/fact-sheet" element={<FactSheet />} />
+          <Route path="/site-map" element={<SiteMap />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="*" element={<CatchAllRoute />} />

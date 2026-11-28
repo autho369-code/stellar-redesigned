@@ -1,6 +1,6 @@
 {
   "/": {
-    "hash": "b4c9023a5c733167",
+    "hash": "0dc524d46d3eff20",
     "lastmod": "2026-11-27"
   },
   "/about": {
@@ -12,7 +12,7 @@
     "lastmod": "2026-11-27"
   },
   "/services": {
-    "hash": "70a145cb19f2657d",
+    "hash": "997a67706e279745",
     "lastmod": "2026-11-27"
   },
   "/services/condominium-management": {
@@ -100,11 +100,11 @@
     "lastmod": "2026-11-27"
   },
   "/contact": {
-    "hash": "d60b152c19e3a19c",
+    "hash": "ee725250cf67b0a8",
     "lastmod": "2026-11-27"
   },
   "/resources": {
-    "hash": "90ba6b13619c6f26",
+    "hash": "de7fa78db75aaf1a",
     "lastmod": "2026-11-27"
   },
   "/condo-living": {
@@ -117,6 +117,10 @@
   },
   "/fact-sheet": {
     "hash": "9d62e96d8cf4cd29",
+    "lastmod": "2026-11-27"
+  },
+  "/site-map": {
+    "hash": "4c80d44f2043b1e7",
     "lastmod": "2026-11-27"
   },
   "/tools/compare-management-proposals": {
