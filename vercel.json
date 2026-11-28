@@ -41,6 +41,16 @@
   ],
   "redirects": [
     {
+      "source": "/blog/are-hoa-condo-rules-enforceable-illinois",
+      "destination": "/blog/adopting-enforcing-condo-hoa-rules-illinois",
+      "permanent": true
+    },
+    {
+      "source": "/blog/condo-reserve-funds-explained",
+      "destination": "/blog/reasonable-reserves-illinois-condo-law",
+      "permanent": true
+    },
+    {
       "source": "/home",
       "destination": "/",
       "permanent": true

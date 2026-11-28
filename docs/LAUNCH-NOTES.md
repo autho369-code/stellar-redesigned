@@ -67,10 +67,42 @@ Newest first; all squash merges on `main`. To roll back in git instead of Vercel
 - `a412095` 23 area pages upgraded (#92), `cbe4618` publishing freeze lifted (#91).
 - `4903cf7` blank-page fix (#88): do not roll back past this one.
 - `6bca362` schema, favicon, /pricing links (#83).
-The production deployment ID is not recorded here: the Vercel project for this
-site is not visible to the bot's connected account. To record it, open Vercel →
-project → Deployments, copy the ID of the current Production deployment and add
-it above. Instant Rollback works from that list without a rebuild.
+### Current production deployment
+- Deployment `dpl_HhRGnepzbiEQAv8XKFJFq8eoqmd5`, Vercel team `aios2`, project
+  `stellar-redesigned`, commit `cb5150f`, Nov 27, 2026 about 6:33 PM CT:
+  https://vercel.com/aios2/stellar-redesigned/HhRGnepzbiEQAv8XKFJFq8eoqmd5
+- Which project serves the domain: `stellar-redesigned`. The live site and
+  `https://stellar-redesigned.vercel.app` return the same ETag, and the live
+  `last-modified` matches that deployment. A second project,
+  `stellar-redesigned-abux`, also builds every push to `main`
+  (deployment `8K4K1ZZr7iVFwYFANdn1wRDnoM6x` for `cb5150f`), but
+  `stellar-redesigned-abux.vercel.app` answers HTTP 500 and is not the live site.
+- To find the deployment for any commit: open the commit on GitHub, click the
+  Vercel status (`Vercel – stellar-redesigned`), or call
+  `GET /repos/autho369-code/stellar-redesigned/commits/<sha>/status`; its
+  `target_url` is the deployment.
+- Roll back: https://vercel.com/aios2/stellar-redesigned/deployments → pick the
+  deployment → Instant Rollback (no rebuild), or `git revert` plus push.
+
+## Nov 27, 2026 evening: owner decisions
+- Privacy Policy and Terms stay. Canonical pair: `/privacy-policy` and
+  `/terms-of-service` (footer, contact-form consent, sitemap). `/privacy` and
+  `/terms` return 308 to them. Both pages were rewritten against the code
+  (forms via Web3Forms, lead copy and owner sign-in in Supabase, chat replies via
+  an AI provider, Vercel Analytics and Speed Insights, browser storage, no
+  advertising cookies, no sale of data, Illinois law), effective Nov 27, 2026.
+  Re-check them whenever a tool is added or removed.
+- Estimator and /pricing: no monthly total. The starting line is unchanged; the
+  copy now says the price goes up depending on building condition and needs.
+- Duplicate guides removed with 308s:
+  `/blog/condo-reserve-funds-explained` →
+  `/blog/reasonable-reserves-illinois-condo-law` and
+  `/blog/are-hoa-condo-rules-enforceable-illinois` →
+  `/blog/adopting-enforcing-condo-hoa-rules-illinois`. Their useful sections were
+  folded into the surviving guides. To undo, revert the dedupe PR.
+- Office photo: not added. The Google listing's gallery needs a signed-in Google
+  session; the public cover photo is of townhomes, not the office. Street View
+  and third-party listing photos are not used. Send the owner's own file to add it.
 
 ## Not an owner decision, now built
 - `npm run brand:dry-run` rehearses a rename end to end (docs/BRAND-SWAP.md).
@@ -86,8 +118,8 @@ it above. Instant Rollback works from that list without a rebuild.
   added Web3Forms to trusted senders; one real form test should confirm.
 
 ## Not built
-- Fee calculator, Hyde Park page, Google office photos, 29 / 1,422 numbers:
-  owner said no.
+- Fee calculator and monthly total, Hyde Park page, 29 / 1,422 numbers: owner
+  said no. Office photo: waiting on the owner's own file (see above).
 - Sticky "On this page" list on service pages (does not fit those layouts).
 - Static map on area pages (no map image).
 - Switch-guide main content time is about 2.6 s (target 2.5 s).

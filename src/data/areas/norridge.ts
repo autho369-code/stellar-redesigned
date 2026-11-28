@@ -118,7 +118,7 @@ export const norridge: AreaContent = {
     {
       q: 'Does Norridge have many high-rise condominiums?',
       a: 'Census data show 806 homes in buildings of twenty or more units. The count covers both condominiums and rental buildings.',
-      post: 'condo-reserve-funds-explained',
+      post: 'reasonable-reserves-illinois-condo-law',
     },
     {
       q: 'How do we start a management search?',

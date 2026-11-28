@@ -110,7 +110,7 @@ const ownerReadingSlugs = [
   'renting-out-your-condo-chicago-rules',
   'first-time-condo-buyer-guide-chicago',
   'condo-special-assessments-illinois',
-  'condo-reserve-funds-explained',
+  'reasonable-reserves-illinois-condo-law',
   'can-condo-boards-enter-your-unit-illinois',
 ];
 
@@ -332,7 +332,7 @@ export default function CondoLiving() {
               </p>
               <p className="text-lg text-slate-600 font-light leading-relaxed">
                 The healthy pattern looks boring: modest, planned increases; a current{' '}
-                <Link to="/blog/condo-reserve-funds-explained" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">reserve study</Link>;
+                <Link to="/blog/reasonable-reserves-illinois-condo-law" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">reserve study</Link>;
                 and a budget owners can actually read. If your building has all three,
                 thank your board — that is what financial stewardship looks like from
                 the inside.
@@ -457,7 +457,7 @@ export default function CondoLiving() {
                 Deeper reading:{' '}
                 <Link to="/blog/can-condo-boards-enter-your-unit-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">when a board may enter your unit</Link>
                 {' '}and{' '}
-                <Link to="/blog/are-hoa-condo-rules-enforceable-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">which rules are actually enforceable</Link>.
+                <Link to="/blog/adopting-enforcing-condo-hoa-rules-illinois" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">which rules are actually enforceable</Link>.
               </p>
             </div>
           </div>

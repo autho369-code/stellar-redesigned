@@ -118,7 +118,7 @@ export const kenwood: AreaContent = {
     {
       q: 'Why does a big building’s reserve matter to a buyer?',
       a: 'Lenders that sell loans to Fannie Mae and Freddie Mac review reserves, delinquency and litigation, so a weak record can make a unit harder to finance.',
-      post: 'condo-reserve-funds-explained',
+      post: 'reasonable-reserves-illinois-condo-law',
     },
     {
       q: 'Can a board keep all reserve funds in one bank?',

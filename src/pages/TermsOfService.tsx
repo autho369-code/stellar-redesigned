@@ -8,7 +8,7 @@ const sections = [
     title: 'Use of This Website',
     body: (
       <p>
-        This website is provided by Stellar Property Management, Inc. (&ldquo;Stellar&rdquo;) for
+        This website is provided by {brand.legalName} (&ldquo;{brand.shortName}&rdquo;) for
         general information about our community association management services and as a
         convenience for the boards, owners, and residents of the communities we manage. By using
         this website you agree to these Terms of Service. If you do not agree, please do not use
@@ -31,20 +31,24 @@ const sections = [
   },
   {
     n: '03',
-    title: 'Portals, Payments & Third-Party Services',
+    title: 'Chat, Portals, Payments & Third-Party Services',
     body: (
       <p>
+        The website chat (&ldquo;Arthur&rdquo;) is an automated assistant that answers general questions
+        about {brand.name} and this website. It can make mistakes, is not a person, and does not give
+        legal, financial or professional advice; for anything that matters, call us at {brand.phone.display}.
+        For emergencies in a building, call the 24/7 line, and 911 if anyone is in danger.{' '}
         Assessment payments, maintenance requests, and account access are provided through the
         AppFolio owner and resident portal, a third-party service governed by its own terms of use
-        and privacy policy. Stellar does not process or store payment card or bank account
+        and privacy policy. {brand.shortName} does not process or store payment card or bank account
         information on this website. Links to third-party websites are provided for convenience;
-        Stellar is not responsible for their content or practices.
+        {brand.shortName} is not responsible for their content or practices.
       </p>
     ),
   },
   {
     n: '04',
-    title: 'Form Submissions',
+    title: 'Form Submissions & Privacy',
     body: (
       <p>
         Information submitted through this website (contact requests, violation reports, board
@@ -52,7 +56,9 @@ const sections = [
         nominations become part of the relevant association&rsquo;s records and are handled in
         accordance with the association&rsquo;s governing documents and Illinois law. Knowingly
         submitting false or malicious reports is prohibited. Submitting a form does not create a
-        management, agency, or fiduciary relationship between you and Stellar.
+        management, agency, or fiduciary relationship between you and {brand.shortName}. How we handle
+        what you submit is described in our{' '}
+        <Link to="/privacy-policy" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">Privacy Policy</Link>.
       </p>
     ),
   },
@@ -61,8 +67,8 @@ const sections = [
     title: 'Intellectual Property',
     body: (
       <p>
-        The Stellar Property Management name, logo, and the content, design, and layout of this website
-        are the property of Stellar Property Management, Inc. or its licensors. You may not reproduce,
+        The {brand.name} name, logo, and the content, design, and layout of this website
+        are the property of {brand.legalName} or its licensors. You may not reproduce,
         distribute, or create derivative works from this website&rsquo;s content for commercial
         purposes without our prior written consent.
       </p>
@@ -87,10 +93,10 @@ const sections = [
         This website is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without
         warranties of any kind, express or implied. While we work to keep information current and
         accurate, we do not warrant that the site will be uninterrupted, error-free, or that
-        content is complete or up to date. To the fullest extent permitted by law, Stellar
-        Property Management shall not be liable for any indirect, incidental, consequential, or
+        content is complete or up to date. To the fullest extent permitted by law, {brand.name}
+        will not be liable for any indirect, incidental, consequential, or
         punitive damages arising from your use of this website. Nothing in these terms limits any
-        obligation Stellar owes under a written management agreement with an association.
+        obligation {brand.shortName} owes under a written management agreement with an association.
       </p>
     ),
   },
@@ -99,7 +105,7 @@ const sections = [
     title: 'Fair Housing Commitment',
     body: (
       <p>
-        Stellar Property Management is committed to compliance with the federal Fair Housing Act, the
+        {brand.name} is committed to compliance with the federal Fair Housing Act, the
         Illinois Human Rights Act, and the Chicago Fair Housing Ordinance. We conduct our business
         without regard to race, color, religion, national origin, sex, disability, familial
         status, or any other protected class, and we support the boards we serve in doing the
@@ -115,8 +121,8 @@ const sections = [
         We want this website to be usable by everyone. We aim to follow the Web Content
         Accessibility Guidelines (WCAG) 2.1 AA and continue to improve accessibility over time. If
         you encounter difficulty using any part of this site, contact us at {brand.phone.display} or{' '}
-        <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
-          mirsad@stellarpropertygroup.com
+        <a href={`mailto:${brand.email}`} className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
+          {brand.email}
         </a>{' '}
         and we will provide the information or assistance you need through an alternative method.
       </p>
@@ -141,8 +147,8 @@ export default function TermsOfService() {
   return (
     <>
       <SEOHead
-        title="Terms of Service | Stellar Property Management"
-        description="Terms of use for stellarpropertygroup.com, including form submission rules, third-party portal terms, fair housing commitment, and accessibility statement."
+        title={`Terms of Service | ${brand.name}`}
+        description="Terms of use for stellarpropertygroup.com: website use, chat and form rules, third-party portal terms, fair housing commitment, accessibility and Illinois governing law."
         canonical="https://www.stellarpropertygroup.com/terms-of-service"
       />
 
@@ -159,7 +165,7 @@ export default function TermsOfService() {
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-36 lg:pt-44 pb-16 lg:pb-20">
           <p className="eyebrow text-gold-600 mb-6 flex items-center gap-4">
             <span className="accent-rule" />
-            Legal · Effective July 3, 2026
+            Legal · Effective November 27, 2026
           </p>
           <h1 className="font-display font-light text-5xl lg:text-6xl xl:text-7xl text-ink leading-[1.04] text-balance mb-8">
             Terms of <em className="font-medium text-gold-600">Service.</em>
@@ -189,10 +195,10 @@ export default function TermsOfService() {
           <div className="mt-14 pt-2">
             <p className="text-[10px] uppercase tracking-luxe text-slate-500 mb-3">Questions about these terms</p>
             <p className="text-slate-600 font-light leading-relaxed">
-              Stellar Property Management · 5107 N Western Ave #1S, Chicago, IL 60625 ·{' '}
+              {brand.name} · {brand.address.street} {brand.address.unit}, {brand.address.city}, {brand.address.state} {brand.address.zip} ·{' '}
               <a href={`tel:${brand.phone.e164}`} className="text-gold-600 hover:text-gold-500 underline underline-offset-4">{brand.phone.display}</a> ·{' '}
-              <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
-                mirsad@stellarpropertygroup.com
+              <a href={`mailto:${brand.email}`} className="text-gold-600 hover:text-gold-500 underline underline-offset-4">
+                {brand.email}
               </a>
             </p>
             <p className="mt-6 text-sm text-slate-500 font-light">

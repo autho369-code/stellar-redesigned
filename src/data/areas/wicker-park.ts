@@ -108,7 +108,7 @@ export const wickerPark: AreaContent = {
     {
       q: 'Why does West Town have so many mid-size buildings?',
       a: 'The Census shows that about 23 percent of homes are in buildings of five to nine units, and 32 percent in buildings of three or four. The rest is split between larger buildings and single-family houses.',
-      post: 'condo-reserve-funds-explained',
+      post: 'reasonable-reserves-illinois-condo-law',
     },
     {
       q: 'Can an association with only a few units get a management proposal?',

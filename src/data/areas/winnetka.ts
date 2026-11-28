@@ -69,7 +69,7 @@ export const winnetka: AreaContent = {
       title: 'Reserves for large and small buildings',
       body:
         'Reserve contributions have to match building age and the real cost of replacing roofs, elevators and parking surfaces.',
-      post: 'condo-reserve-funds-explained',
+      post: 'reasonable-reserves-illinois-condo-law',
       linkText: 'condo reserve funds explained',
     },
     {

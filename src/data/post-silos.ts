@@ -71,9 +71,8 @@ export const postSilos: Record<string, PostSilo> = {
   'financial-only-vs-full-service-condo-hoa-management-chicago': { money: CONDO, area: CHICAGO, links: ['switch-condo-management-companies-chicago', 'community-association-management-agreement-review', 'score-condo-hoa-management-proposals'], also: ['/pricing', FIN] },
   'chicago-condo-management-transition-first-60-days': { money: CONDO, area: CHICAGO, links: ['switch-condo-management-companies-chicago', 'community-association-management-agreement-review'], also: ['/pricing', FIN] },
   // ── Financial Management (pillars: reserve study, delinquency, budget, insurance, Fannie/Freddie)
-  'how-to-read-condo-reserve-study': { money: FIN, area: CHICAGO, links: ['condo-reserve-funds-explained', 'reasonable-reserves-illinois-condo-law'] , also: ['/pricing'] },
-  'condo-reserve-funds-explained': { money: FIN, links: ['how-to-read-condo-reserve-study', 'reasonable-reserves-illinois-condo-law'] , also: ['/pricing'] },
-  'reasonable-reserves-illinois-condo-law': { money: FIN, links: ['how-to-read-condo-reserve-study', 'condo-reserve-funds-explained'] , also: ['/pricing'] },
+  'how-to-read-condo-reserve-study': { money: FIN, area: CHICAGO, links: ['reasonable-reserves-illinois-condo-law'] , also: ['/pricing'] },
+  'reasonable-reserves-illinois-condo-law': { money: FIN, links: ['how-to-read-condo-reserve-study', 'fannie-freddie-condo-reserve-15-percent-2027'] , also: ['/pricing'] },
   'condo-special-assessments-illinois': { money: FIN, links: ['how-to-read-condo-reserve-study', 'reasonable-reserves-illinois-condo-law'] , also: ['/pricing'] },
   'condo-hoa-capital-project-loan-preparation': { money: FIN, links: ['condo-special-assessments-illinois', 'how-to-read-condo-reserve-study'], also: ['/pricing', HIGH_RISE] },
   'illinois-condo-hoa-budget-adoption-guide': { money: FIN, area: CHICAGO, links: ['condo-hoa-annual-budget-workbook', 'how-to-read-condo-reserve-study'], also: ['/pricing', SMALL] },
@@ -142,8 +141,7 @@ export const postSilos: Record<string, PostSilo> = {
   'illinois-condo-smoke-carbon-monoxide-alarms': { money: MAINT, links: ['condo-hoa-emergency-planning-checklist', 'chicago-condo-frozen-pipes-winter-checklist'] , also: ['/pricing'] },
 
   // ── Violation Management (pillar: adopting and enforcing rules)
-  'adopting-enforcing-condo-hoa-rules-illinois': { money: RULES, area: CHICAGO, links: ['are-hoa-condo-rules-enforceable-illinois', 'illinois-association-fines-notice-hearing'], also: ['/pricing', TOWNHOME] },
-  'are-hoa-condo-rules-enforceable-illinois': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] , also: ['/pricing'] },
+  'adopting-enforcing-condo-hoa-rules-illinois': { money: RULES, area: CHICAGO, links: ['common-condo-rule-violations-chicago', 'illinois-association-fines-notice-hearing'], also: ['/pricing', TOWNHOME] },
   'common-condo-rule-violations-chicago': { money: RULES, area: CHICAGO, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] , also: ['/pricing'] },
   'illinois-association-fines-notice-hearing': { money: RULES, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'chicago-condo-short-term-rental-prohibited-buildings-list'] , also: ['/pricing'] },
   'chicago-condo-short-term-rental-prohibited-buildings-list': { money: RULES, area: CHICAGO, links: ['adopting-enforcing-condo-hoa-rules-illinois', 'illinois-association-fines-notice-hearing'] , also: ['/pricing'] },
