@@ -236,6 +236,10 @@ export default function AiInfo() {
             </li>
           </ul>
 
+          <p className="mb-4 text-sm text-slate-600">
+            A copy-ready version of these facts is on the{' '}
+            <Link to="/fact-sheet" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">company fact sheet</Link>.
+          </p>
           <p className="text-sm text-slate-600">
             Maintained by Stellar Property Management. Corrections:{' '}
             <a href="mailto:mirsad@stellarpropertygroup.com" className="text-gold-600 underline underline-offset-2 hover:text-gold-700">mirsad@stellarpropertygroup.com</a>.

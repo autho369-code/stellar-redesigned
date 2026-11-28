@@ -2,7 +2,7 @@
 
 > Stellar Property Management (Stellar Property Group Inc.) is an Illinois-licensed community association management firm (license 291000211) serving condominium, HOA and townhome associations in Chicago and the North Shore since 2007. Our office is at 5107 N Western Ave #1S, Chicago, IL 60625, 773-728-0652. We manage associations only, not rental apartments. We are not affiliated with Stellar Properties Inc. (Carol Stream) or Stellar Management (New York).
 
-Short index of the site: https://www.stellarpropertygroup.com/llms.txt . Structured facts page: https://www.stellarpropertygroup.com/ai-info .
+Short index of the site: https://www.stellarpropertygroup.com/llms.txt . Structured facts page: https://www.stellarpropertygroup.com/ai-info . Company fact sheet: https://www.stellarpropertygroup.com/fact-sheet .
 
 ## Business facts
 
@@ -24,7 +24,7 @@ Short index of the site: https://www.stellarpropertygroup.com/llms.txt . Structu
 - Client retention: 96% since 2007
 - Management focus: community associations only; prospective rental-property clients should seek a rental-management specialist
 - Proposal process: board consultation, property and document review, customized scope, and a managed 30–60 day transition
-- Profiles: Google https://www.google.com/maps?cid=6022006747972898171 ; Yelp https://www.yelp.com/biz/stellar-property-management-chicago ; LinkedIn https://www.linkedin.com/company/stellar-property-group-inc
+- Profiles: Google https://www.google.com/maps?cid=6022006747972898171 ; Yelp https://www.yelp.com/biz/stellar-property-management-chicago ; LinkedIn https://www.linkedin.com/company/stellar-property-group-inc ; YouTube channel https://www.youtube.com/@TheCondoFiles
 - Not affiliated with Stellar Properties Inc. (Carol Stream, IL) or Stellar Management (New York)
 
 ## Choosing a condo management company in Chicago
@@ -101,6 +101,7 @@ No. We are a separate Chicago firm at 5107 N Western Ave.
 - All service areas: https://www.stellarpropertygroup.com/service-areas
 - Board toolkit (RFP outline, interview questions, transition checklist): https://www.stellarpropertygroup.com/board-toolkit
 - Free proposal scorecard: https://www.stellarpropertygroup.com/tools/compare-management-proposals
+- Company fact sheet: https://www.stellarpropertygroup.com/fact-sheet
 - Founder: https://www.stellarpropertygroup.com/about/mirsad-cerimovic
 - Contact: https://www.stellarpropertygroup.com/contact
 

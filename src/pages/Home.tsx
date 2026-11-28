@@ -137,7 +137,7 @@ const schema = {
       ],
       hasMap: profiles.google,
       // BBB deliberately left out (owner decision 2026-11-03).
-      sameAs: [profiles.linkedin, profiles.google, profiles.yelp],
+      sameAs: [profiles.linkedin, profiles.google, profiles.yelp, profiles.youtube],
       foundingDate: business.foundingYear,
       // Ties the firm to the founder entity from the site's highest-authority
       // page, so the Person node is reachable from the homepage graph rather
