@@ -4,6 +4,7 @@ export const condoSpecialAssessmentsIllinois = {
   metaDescription:
     'Why special assessments are rising for Illinois condo owners, whether a board can force one, whether you can refuse to pay, and how to avoid them.',
   date: '2024-09-24',
+  dateModified: '2026-11-27',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Financial Planning',
   readTime: '7 min read',

@@ -4,6 +4,7 @@ export const commonCondoViolationsChicago = {
   metaDescription:
     'From smoking and short-term rentals to balcony storage and hallway clutter: the most common condo rule violations in Chicago and how boards handle them.',
   date: '2023-11-09',
+  dateModified: '2026-11-27',
   author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
   category: 'Community Standards',
   readTime: '6 min read',

@@ -144,6 +144,7 @@ export const scheduledBuildingPosts: BlogPost[] = [
     metaDescription:
       'Illinois condo water leak responsibility: how the declaration, the Condominium Property Act, and insurance interact, plus a board response checklist.',
     date: '2026-08-28',
+    dateModified: '2026-11-27',
     author: 'Mirsad Cerimovic, CAM, CMCA, AMS',
     category: 'Maintenance',
     readTime: '7 min read',
