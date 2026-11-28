@@ -22,7 +22,7 @@ execSync('npx vite build --ssr src/entry-server.tsx --outDir dist-server --logLe
   stdio: 'inherit',
 });
 
-const { render, llmsBusinessFacts, llmsFullText } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
+const { render, llmsBusinessFacts, llmsFullText, llmsPublishedGuides } = await import(pathToFileURL(join(root, 'dist-server/entry-server.js')).href);
 
 // 1b. /llms.txt: the "## Business facts" section comes from src/data/business.ts
 // (the one facts file), so a name or portfolio change is a single edit.
@@ -37,8 +37,26 @@ for (const file of [join(root, 'public/llms.txt'), join(root, 'dist/llms.txt')])
   writeFileSync(file, next);
 }
 
-// 1c. /llms-full.txt is generated whole from src/data/business.ts.
-for (const file of [join(root, 'public/llms-full.txt'), join(root, 'dist/llms-full.txt')]) writeFileSync(file, llmsFullText());
+// 1b-2. Latest guides: the 30 newest published guides, regenerated on every build,
+// so each scheduled guide appears in llms.txt and llms-full.txt on its publication day.
+const guides = llmsPublishedGuides(30);
+const guideLines = guides.map((g) => `- [${g.title}](https://www.stellarpropertygroup.com/blog/${g.slug}) (${g.date}): ${g.summary}`).join('\n');
+const GUIDES_START = '<!-- latest-guides:start -->';
+const GUIDES_END = '<!-- latest-guides:end -->';
+for (const file of [join(root, 'public/llms.txt'), join(root, 'dist/llms.txt')]) {
+  const src = readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
+  const block = `${GUIDES_START}\n${guideLines}\n${GUIDES_END}`;
+  const next = src.includes(GUIDES_START)
+    ? src.replace(new RegExp(`${GUIDES_START}[\\s\\S]*?${GUIDES_END}`), () => block)
+    : src.replace('## Owner and resident guides', () => `## Latest board guides\n\nNewest first; each guide opens with a short answer and ends with its sources.\n\n${block}\n\n## Owner and resident guides`);
+  if (next === src && !src.includes(block)) throw new Error(`[prerender] could not add latest guides to ${file}`);
+  writeFileSync(file, next);
+}
+
+// 1c. /llms-full.txt is generated whole from src/data/business.ts, plus the latest guides.
+for (const file of [join(root, 'public/llms-full.txt'), join(root, 'dist/llms-full.txt')]) {
+  writeFileSync(file, `${llmsFullText().replace(/\n+$/, '')}\n\n## Latest board guides\n\n${guideLines}\n`);
+}
 
 // 2. Collect routes (same sources as generate-sitemap.mjs)
 const staticRoutes = [

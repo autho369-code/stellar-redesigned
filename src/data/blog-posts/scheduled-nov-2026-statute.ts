@@ -503,6 +503,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
       <p>Stellar holds each association's records to the statutory list in one place, with the retention periods tracked, requests logged against the statutory clock, and the archive in a form that survives a change of board or manager. If your board is not sure what it has, <a href="/contact">contact our office</a> or see our <a href="/services/board-support">board support</a> service — and our guide to <a href="/blog/switch-condo-management-companies-chicago">switching management companies</a> if the gap turns out to be at your current one.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes Section 19 of the Condominium Property Act and Section 1-30(i) of the Common Interest Community Association Act as enacted. Before destroying any record, have association counsel confirm no litigation, audit or regulatory matter requires it to be kept.</em></p>
+<p>For the wider board-duties picture, read <a href="/blog/new-condo-board-member-first-30-days">what new board members should do in their first 30 days</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -736,6 +737,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
       <p>Stellar confirms which of an association's buildings fall inside the Act, works with counsel on an energy policy statement that meets the statutory minimums without giving away the board's legitimate authority, and runs the application clock so a 30-day deadline is never missed by inattention. If your board needs a policy in place, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and board support services.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes the Homeowners’ Energy Policy Statement Act as enacted; whether your buildings are exempt under Section 45, and what your policy statement should say, are questions for association counsel.</em></p>
+<p>For the reserve and capital side of this topic, read <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condo buildings</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -866,6 +868,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
       <p>Stellar puts snow contracts in writing with defined triggers, mapped areas and the city's deadlines built in, holds vendor insurance certificates on file, and keeps the per-event service log so the board has a record rather than a recollection. If your association needs its winter arrangements reviewed, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> service. We handle winters across Chicago and the North Shore, including <a href="/property-management-glenview">Glenview</a>.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal advice. It summarizes the Snow and Ice Removal Act and the City of Chicago’s published guidance on Municipal Code sections 4-4-310 and 10-8-180. Premises liability for snow and ice is largely governed by Illinois case law, which this article does not address — have association counsel advise your board.</em></p>
+<p>For the reserve and capital side of this topic, read <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condo buildings</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
@@ -978,6 +981,7 @@ export const scheduledNov2026StatutePosts: BlogPost[] = [
       <p>Stellar inventories common-area alarms by location and manufacture date, tests and logs them on a schedule, sends the annual owner notice on the association's behalf, and builds the hard-wired detector requirement into unit alteration approvals so a rehab does not quietly create a code problem. If your board does not know the age of its stairwell detectors, <a href="/contact">contact our office</a> or see our <a href="/services/maintenance-coordination">maintenance coordination</a> and high-rise management services.</p>
 
       <p><em>This article is general information for Illinois community association boards and is not legal or code advice. It summarizes the Smoke Detector Act and the Carbon Monoxide Alarm Detector Act as enacted. Who is responsible for alarms inside a separately owned unit, and what your local code requires, are questions for association counsel and your municipality.</em></p>
+<p>For the reserve and capital side of this topic, read <a href="/blog/vintage-chicago-condo-capital-planning">capital planning for vintage Chicago condo buildings</a>.</p>
 <p>Boards comparing management proposals can also review <a href="/pricing">what condo management costs in Chicago</a>.</p>
 `,
   },
