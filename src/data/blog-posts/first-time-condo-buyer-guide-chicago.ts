@@ -1,6 +1,7 @@
 export const firstTimeCondoBuyerGuideChicago = {
   slug: 'first-time-condo-buyer-guide-chicago',
   title: 'The 22.1 Disclosure and Beyond: A First-Time Chicago Condo Buyer’s Guide',
+  seoTitle: 'First-Time Chicago Condo Buyer Guide: What to Check',
   metaDescription:
     'What first-time Chicago condo buyers should read before closing: the Section 22.1 disclosure, reserve red flags, delinquencies, litigation and questions to ask.',
   date: '2026-08-13',

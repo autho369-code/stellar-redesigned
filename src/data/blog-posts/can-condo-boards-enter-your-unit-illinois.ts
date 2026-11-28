@@ -1,6 +1,7 @@
 export const condoBoardEnterUnit = {
   slug: 'can-condo-boards-enter-your-unit-illinois',
   title: 'Can a Condo Board Enter Your Unit? Illinois Owner Rights Explained',
+  seoTitle: 'Can a Condo Board Enter Your Unit in Illinois?',
   metaDescription:
     'Can an Illinois condo association enter your unit? When it has a right of access, when notice is required, how emergencies differ, and owner privacy.',
   date: '2024-02-20',

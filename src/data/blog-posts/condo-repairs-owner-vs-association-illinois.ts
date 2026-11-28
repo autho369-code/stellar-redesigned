@@ -1,6 +1,7 @@
 export const condoRepairsOwnerVsAssociation = {
   slug: 'condo-repairs-owner-vs-association-illinois',
   title: 'Condo Repairs in Illinois: What Owners Fix vs. What the Association Fixes',
+  seoTitle: 'Condo Repairs in Illinois: Owner or Association?',
   metaDescription:
     'Who pays for condo repairs in Illinois, the owner or the association? A plain-English map of units, common elements and limited common elements.',
   date: '2026-08-13',
